@@ -14,7 +14,7 @@ Sprawa zamiaru wzięcia aktywnego udziału przez Craiga Wrighta w walce na bitco
 
 - Jest mocno przeciwny *segwit* (i w ogóle całej strategii Bitcoin Core) i wkrótce ma zamiar uruchomić swój własny mining pool, za pomocą którego ma zamiar zwalczać *segwit*. Zapowiada, że ma możliwości finansowe pozwalające uzyskać 20% bitcoinwego *hash power*.
 - Uważa, że przyszłość Bitcoina jest chroniona przez jego masową popularność, a nie poprzez dużą liczbę node'ów potwierdzających transakcje. Czyli zgodnie z linią Bitcoin Unlimited i dokładnie odwrotnie niż zakłada to Bitcoin Core.
-- Jest niezadowolony z obecnego stanu Bitcoina i ma zamiar podjąć działania biznesowe, których celem jest otwarcie Bitcoina na mainstream. Uważa że istotą Bitcoina jest wolna konkurencja i że to rynek ostatecznie rozstrzygnie, które rozwiązanie wygra.
+- Jest niezadowolony z obecnego stanu Bitcoina i ma zamiar podjąć działania biznesowe, których celem jest otwarcie Bitcoina na masowe użycie. Uważa, że istotą Bitcoina jest wolna konkurencja i że to rynek ostatecznie rozstrzygnie, które rozwiązanie wygra.
 - Zapowiada opublikowanie artykułu na temat możliwości dostępu do *Turing completeness* w Bitcoinie i opublikowanie ogromnej ilości danych dotyczących genezy Bitcoina. Nie ujawnia czemu dokładnie te dane mają służyć - można się domyślać, że potwierdzą one rolę Craiga w genezie Bitcoina.  
 - Przyjął strategię niezaprzeczania i niepotwierdzania swojej tożsamości jako Satoshi Nakamoto. O tym dlaczego takie zachowanie ma sens, pisze Ian Grigg w artykule cytowanym poniżej.
 
