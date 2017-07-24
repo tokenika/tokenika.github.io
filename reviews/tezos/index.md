@@ -1,4 +1,4 @@
-### Tezos to zdecentralizowana platforma smart-kontraktowa z formalnie weryfikowalnym językiem programowania i ze zintegrowanym systemem samorządności. 
+## Tezos to zdecentralizowana platforma smart-kontraktowa z formalnie weryfikowalnym językiem programowania i ze zintegrowanym systemem samorządności. 
 
 Najlepiej zacząć od [krótkiej prezentacji promocyjnej Tezosa](https://www.youtube.com/watch?v=7m7EU4JWI88), dostępnej na YouTubie.
 
@@ -9,7 +9,7 @@ Czym się Tezos chce wyróżnić? Mamy trzy główne aspekty:
 - Sformalizowany system weryfikacji smart-kontraktów
 - Modułowa architektura
 
-### Sformalizowany system samorządności
+#### Sformalizowany system samorządności
 
 > Unlike other smart contract platforms, Tezos has a formal governance mechanism on the blockchain itself.
 
@@ -25,7 +25,7 @@ Wracając do Tezosa - to zatem duży atut, że troska o *governance issue* leży
 
 Czyli nawet będą reguły pozwalające zmienić reguły tworzenia reguł. To jest analogiczne do artykułu w konstytucji o trybie, w jakim mogą być dokonywane zmiany w konstytucji. Duży plus.
 
-### Sformalizowany system weryfikacji smart-kontraktów
+#### Sformalizowany system weryfikacji smart-kontraktów
 
 > Formal verification has been used in the aerospace industry, in medical devices, and other instances where the stakes are too high to fail. It can ensure the security of the platform by proving the correctness of its code.
 
@@ -41,7 +41,7 @@ Ważne rozróżnienie: platforma Tezos jest napisana w języku programowania [OC
 
 Istotna sprawa: Tezos nie daje 100% gwarancji wykrycia błędu w kodzie smart-kontraktu, daje jedynie zestaw narzędzi, które w sposób istotny zmniejszają możliwość powstania takiego błędu. Projektem, który ma ambicję osiągnąć 100% takiej gwarancji, jest [TauChain/Agoras](http://www.idni.org/), ale póki co nie wiadomo, czy to się uda.
 
-### Modułowa architektura
+#### Modułowa architektura
 
 > Because Tezos starts with a unique modular design, with cleanly separated layers, upgrading the protocol is as simple as changing out one layer for another.
 
@@ -55,7 +55,7 @@ To jest ciekawa rzecz. Na razie nie mam pojęcia, jakim cudem Tezos będzie w st
 
 Brzmi to dość intrygująco, ale brak jest wyjaśnień w jaki sposób zostało to osiągnięte, i czy zostało to przetestowane w praktyce.
 
-### Kim są ludzie którzy za tym stoją?
+#### Kim są ludzie którzy za tym stoją?
 
 Zlokalizowani we Francji, co jest dość nietypowe. Na pierwszy rzut oka [zespół nie wygląda imponująco](https://www.tezos.com/team). Dodatkowo nie podano, jakie są role poszczególnych osób.
 
@@ -69,17 +69,17 @@ Wyraźnie brakuje tu dużego kalibru developera, a CEO Arthur Breitman nie ma na
 
 Obszerny [wywiad Breitmana dla Epicenter](https://www.youtube.com/watch?v=3mgaDpuMSc0) też nie zrobił na mnie wrażenia. Breitman mówi słuszne rzeczy, ale brakuje w tym większego insight'u.
 
-### Whitepaper
+#### Whitepaper
 
 Z [whitepaperem](https://www.tezos.com/static/papers/white_paper.pdf) jest dość dziwnie: jest on całkiem dobrze napisany, ale osoba zadeklarowana jako jego autor (L.M Goodman) nie należy do zespołu Tezosa. Dodatkowo whitepaper jest mocno nieświeży: widnieje na nim data September 2014. Więc w sumie wygląda to dość podejrzanie i niepoważnie.
 
-### Parametry blockchaina
+#### Parametry blockchaina
 
 Mechanizm konsensusu to DPOS (Delegated Proof of Stake), czyli twórcy Tezosa idą śladami koncepcji Dana Larimera. To jest korzystne, bo to rozwiązanie sprawdziło się całkiem nieźle w praktyce.
 
 Nie znalazłem informacji o docelowej inflacji. W zakresie opłat transakcyjnych (w tym opłat za procesowanie smart-kontraktów) - wygląda na to, że Tezos zastosuje model podobny do ETH (chociaż nigdzie nie jest powiedziane, w jaki sposób opłaty transakcyjne zostaną odseparowane od wahań ceny tokena Tezosa).
 
-### Roadmap
+#### Roadmap
 
 > The development goals of Tezos follow five axes: security, scaling, privacy, usability, and features.
 
@@ -93,11 +93,11 @@ Widać w tym podejście podobne do tego, które reprezentuje EOS, czyli docelowo
 
 Wygląda na to, że w swoich planach Tezos idzie nawet dalej niż EOS. Jeśli te wyżej wymienione funkcjonalności będą docelowo wbudowane w system to nasuwa się pytanie, czy nie będzie to ewoluować w stronę monolitu, w przeciwieństwie do takiej przestrzeni jak ETH, gdzie jest nieograniczona konkurencja między aplikacjami.
 
-### Planowane uruchomienie
+#### Planowane uruchomienie
 
 Nie podano żadnych konkretnych terminów. Z opisu fundraisera wynika, że tempo i rozmach dalszych działań w duże mierze zależą od kwoty uzyskanej podczas ICO - a jest ono bez górnego limitu.
 
-### Podsumowując
+#### Podsumowując
 Tezos idzie w stronę obsługi smart-kontraktów, które wymagają największego stopnia bezpieczeństwa. Nie idzie więc w masowość i efektywność procesowania, w zamian stawia na jakość. Czyli pozycjonuje się jako najwyższa półka wśród platform smart-kontraktowych. Na drugim biegunie jest Lisk - ten nie przejmuje się zbytnio bezpieczeństwem i stawia na masowo znany z zastosowań webowych JavaScript.
 
 Tezos ma jeden duży minus: tworzenie nietrywialnych smart-kontraktów jest samo w sobie piekielnie trudne, a Tezos dodatkowo istotnie zwiększa tę trudność. No ale z drugiej strony można założyć, że ludzie, którzy są w stanie tworzyć smart-kontrakty, prawdopodobnie są też w stanie posługiwać się trudniejszymi językami programowania.
@@ -111,9 +111,9 @@ Moje wrażenia nie są aż tak negatywne, ale podzielam powyższy sentyment. Tez
 
 ![](concorde.jpg)
 
-Tezos kojarzy mi się to z [samolotem Concorde](https://en.wikipedia.org/wiki/Concorde) - ambitny design i niezły wyczyn inżynieryjny ale w sumie niepraktyczny w użyciu. Może Francuzi mają skłonność do tego rodzaju rzeczy.
+Tezos kojarzy mi się to z [samolotem Concorde](https://en.wikipedia.org/wiki/Concorde) - ambitny design i niezły wyczyn inżynieryjny ale w sumie może się okazać niepraktyczny w użyciu. Francuzi mają skłonność do tego rodzaju rzeczy.
 
-### Dodatkowe informacje
+#### Oficjalne źródła
 
 [Tezos - official website](https://www.tezos.com/)
 
@@ -121,6 +121,11 @@ Tezos kojarzy mi się to z [samolotem Concorde](https://en.wikipedia.org/wiki/Co
 
 [Tezos - main repository](https://github.com/tezos)
 
+#### Inne źródła
+
+[Tezos Token Sale: A smart contract platform with formal verification and a self-amending protocol](https://www.smithandcrown.com/sale/tezos/)
+
 [Billionaire investor Draper to participate in blockchain token sale for first time](http://www.reuters.com/article/us-tezos-blockchain-draper-idUSKBN181250)
 
 [A questionable story about Tezos](https://steemit.com/tezos/@kyle.anderson/we-don-t-need-to-hardfork-a-questionable-story-about-tezos-ico-july-1st)
+
