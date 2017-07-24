@@ -38,6 +38,14 @@ Na razie nie jest powiedziane jaki jest cel tego algorytmu, jedyne co wiemy to f
 
 > It was running until a few months ago. We had PSOs [[Particle Swarm Optimization](https://en.wikipedia.org/wiki/Particle_swarm_optimization)] in Bitcoin, running. Unfortunately they starved to death because of fees.
 
+#### Wpływ na cenę Bitcoina
+
+Z jednej strony pozytywną informacją jest fakt, że możliwości Bitcoina są znacznie większe niż do tej pory przyjmowaliśmy - teoretycznie ma on zdolności porównywalne z Ethereum.
+
+Z drugiej strony Craig Wright wyraźnie popiera jedną z dwóch opcji Bicoina (tj. Bitcoin Unlimited) i raczej nie należy do osób szukających kompromisu - co oznacza, że niepewność co do hard-forku raczej wzrasta niż maleje, szczególnie jeśli uda mu się zbudować własny mining pool i uzyskać 20% *hash power*.
+
+Dodatkowo wydaje się, że dla sporej liczby fanów Bitcoina jego poglądy (np. na temat roli minerów jako ośrodków decyzyjnych) są nie do zaakceptowania. Więc raczej zapowiada się pogłębienie politycznego kryzysu, i co za tym idzie - spadek ceny. No i mamy dylemat: który efekt przeważy?
+
 #### Źródła:
 
 [In Defense of Craig Wright - Part 1](https://steemit.com/bitcoin/@belerophon/in-defense-of-craig-wright-part-1) by belerophon on Steem
