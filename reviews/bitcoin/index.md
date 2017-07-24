@@ -26,7 +26,19 @@ Mimo dość kontrowersyjnej powierzchowności (może sprawiać wrażenie nonszal
 
 > Craig has more knowledge than just about anyone else I've come across in the field. Certainly of Bitcoin, and a lot besides. Here's the clanger: Craig S Wright has the capability to integrate many diverse fields. He's a polymath, which is the roadblock that stops most others no matter how good they are at their select discipline. That's what I mean by transcendent financial cryptographer on this blog (...). It's not about what you know, it's about how you integrate the disparate, discordant fields together. 
 
-Mimo niewątpliwego rozeznania w sprawach Bitcoina, wiele osób nie dopuszcza możliwości, że Craig Wright ma coś wspólnego z postacią Satoshi Nakamoto. Jak to celnie ujął Ian Grigg na swoim blogu: *Craig Wright is not the god you wanted him to be*.
+Mimo niewątpliwego rozeznania w sprawach Bitcoina, wiele osób nie dopuszcza możliwości, że Craig Wright ma coś wspólnego z postacią Satoshi Nakamoto. Jak to celnie ujął Ian Grigg na swoim blogu:
+
+> Craig is not the god you wanted. Like most geeks of extraordinary talent, he didn't get there by working on his social skills.
+
+#### Medialne fiasko
+
+Ciekawy jest *insight* Iana Grigga odnośnie zakończonej medialnym fiaskiem zeszłorocznej (maj 2016) próby udowodnienia, że Craig Wright to Satoshi Nakamoto: 
+
+> The 'fake signing' event was shocking. But it actually makes some sort of sense, if only you had the inside view. Here's some background: the 'big reveal' was not what CSW [Craig S. Wright] contracted for. He didn't want to 'out' at any time, but was persuaded this had to happen. (...) He also set limits on the public exposure: he contracted for one low key interview. Just. That's it. Only. Fair enough, right? Apparently not. The performance artists that did the reveal totally breached those limits. They created a circus. They took an insular, isolated maths code geek and turned him into a pop star.
+
+A tak uzasadnia swoją opinię że to nie był żart:
+
+> How do I now? A little thing called due diligence. I've now quizzed Craig on three outrageous statements. In each case, these statements have been founded. With serious arguments that change a lot of things.
 
 #### Autonomiczny algorytm optymalizacyjny
 
@@ -34,7 +46,7 @@ Poniżej graficzna manifestacja działania autonomicznego algorytmu, który wed�
 
 ![01_01_220_110.gif](https://steemitimages.com/DQmTpUuLxctY6qqEhrJHFYPD3csFYfXbsnhAarJNjhaB4Lg/01_01_220_110.gif)```Źródło: http://atlas.wolfram.com```
 
-Na razie nie jest powiedziane jaki jest cel tego algorytmu, jedyne co wiemy to fakt, że działał on autonomicznie przez długi czas (od początku istnienia Bitcoina?) i przestał działać z powodu wzrostu opłat transakcyjnych:
+Na razie nie jest powiedziane jaki jest cel tego algorytmu. Jedyne co wiemy to fakt, że działał on autonomicznie przez długi czas (od początku istnienia Bitcoina?) i przestał działać z powodu wzrostu opłat transakcyjnych:
 
 > It was running until a few months ago. We had PSOs [[Particle Swarm Optimization](https://en.wikipedia.org/wiki/Particle_swarm_optimization)] in Bitcoin, running. Unfortunately they starved to death because of fees.
 
