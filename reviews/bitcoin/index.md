@@ -15,14 +15,14 @@ Sprawa zamiaru wzięcia aktywnego udziału przez Craiga Wrighta w walce na bitco
 - Jest mocno przeciwny *segwit* (i w ogóle całej strategii Bitcoin Core) i wkrótce ma zamiar uruchomić swój własny mining pool, za pomocą którego ma zamiar zwalczać *segwit*. Zapowiada, że ma możliwości finansowe pozwalające uzyskać 20% bitcoinwego *hash power*.
 - Uważa, że przyszłość Bitcoina jest chroniona przez jego masową popularność, a nie poprzez dużą liczbę node'ów potwierdzających transakcje. Czyli zgodnie z linią Bitcoin Unlimited i dokładnie odwrotnie niż zakłada to Bitcoin Core.
 - Jest niezadowolony z obecnego stanu Bitcoina i ma zamiar podjąć działania biznesowe, których celem jest otwarcie Bitcoina na masowe użycie. Uważa, że istotą Bitcoina jest wolna konkurencja i że to rynek ostatecznie rozstrzygnie, które rozwiązanie wygra.
-- Zapowiada opublikowanie artykułu na temat możliwości dostępu do *Turing completeness* w Bitcoinie i opublikowanie ogromnej ilości danych dotyczących genezy Bitcoina. Nie ujawnia czemu dokładnie te dane mają służyć - można się domyślać, że potwierdzą one rolę Craiga w genezie Bitcoina.  
+- Zapowiada opublikowanie artykułu na temat możliwości dostępu do *Turing completeness* w Bitcoinie i opublikowanie ogromnej ilości danych dotyczących genezy Bitcoina. Nie ujawnia czemu dokładnie te dane mają służyć - można się domyślać, że potwierdzą one jego rolę w genezie Bitcoina.  
 - Przyjął strategię niezaprzeczania i niepotwierdzania swojej tożsamości jako Satoshi Nakamoto. O tym dlaczego takie zachowanie ma sens, pisze Ian Grigg w artykule cytowanym poniżej.
 
 Generalnie Wright używa dość barwnego języka i nie przebiera w słowach, np.:
 
 > Quite frankly, I don't care about Raspberry PIs. If you have been in Bitcoin since 2009 and you can't afford a $20,000 node to help this network, piss off.
 
-Mimo dość kontrowersyjnej powierzchowności Craiga Wrighta (może sprawiać wrażenie nonszalanckiego wariata), wszystko co on mówi (przynajmniej na razie) należy traktować na serio. Oto opinia Iana Grigga:
+Mimo dość kontrowersyjnej powierzchowności (może sprawiać wrażenie nonszalanckiego wariata), wszystko co Craig Wright mówi moim zdaniem warto (przynajmniej na razie) traktować na serio. Oto opinia Iana Grigga:
 
 > Craig has more knowledge than just about anyone else I've come across in the field. Certainly of Bitcoin, and a lot besides. Here's the clanger: Craig S Wright has the capability to integrate many diverse fields. He's a polymath, which is the roadblock that stops most others no matter how good they are at their select discipline. That's what I mean by transcendent financial cryptographer on this blog (...). It's not about what you know, it's about how you integrate the disparate, discordant fields together. 
 
@@ -46,9 +46,10 @@ Z drugiej strony Craig Wright wyraźnie popiera jedną z dwóch opcji Bicoina (t
 
 Dodatkowo wydaje się, że dla sporej liczby fanów Bitcoina jego poglądy (np. na temat roli minerów jako ośrodków decyzyjnych) są nie do zaakceptowania. Więc raczej zapowiada się pogłębienie politycznego kryzysu, i co za tym idzie - spadek ceny. No i mamy dylemat: który efekt przeważy?
 
-#### Źródła:
+#### Źródła
 
 [In Defense of Craig Wright - Part 1](https://steemit.com/bitcoin/@belerophon/in-defense-of-craig-wright-part-1) by belerophon on Steem
+
 [In Defense of Craig Wright - Part 2](https://steemit.com/bitcoin/@belerophon/in-defense-of-craig-wright-part-ii) by belerophon on Steem
 
 [Bitcoin is Turing Complete](https://steemit.com/crypto/@tonypat/bitcoin-is-turing-complete) by tonypat on Steem
