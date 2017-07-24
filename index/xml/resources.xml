@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet type="text/xsl" href="temp.xsl"?> -->
+<root>
+	<areas>
+		<area id="A">
+			<name>BitShares</name>
+			<items>
+				
+				<item>
+					<title>The Origin of BitShares</title>
+					<url>https://bitsharestalk.org/index.php/topic,14019.0.html</url>
+				</item>
+				<item>
+					<title>BM's blog: What is BitShares?</title>
+					<url>http://bytemaster.github.io/update/2014/12/18/What-is-BitShares</url>
+				</item>
+				<item>
+					<title>BM's blog: The Worlds First Decentralized Exchange</title>
+					<url>http://bytemaster.github.io/article/2015/01/07/The-Worlds-First-Decentalized-Exchange</url>
+				</item>
+				<item>
+					<title>Let's talk bitcoin interview E260 (October 31st, 2015)</title>
+					<url>https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-260-new-growth</url>
+				</item>
+				<item>
+					<title>Let's talk bitcoin interview E223 (June 20th, 2015)</title>
+					<url>https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-223-some-other-castle</url>
+				</item>
+				<item>
+					<title>BitShares TV</title>
+					<url>https://www.youtube.com/channel/UChtICzF0ZEhhgoMA8YWhULw</url>
+				</item>
+				<item>
+					<title>BitShares Peer to Peer Tour - 2015</title>
+					<url>https://www.youtube.com/watch?v=ivwuANB1Syo</url>
+				</item>
+				<item>
+					<title>Interview with Adam Kaleb Ernest from Follow My Vote</title>
+					<url>https://www.youtube.com/watch?v=TQMoKiP5q7Y</url>
+				</item>
+			</items>
+		</area>
+		
+		<area id="B">
+			<name>OpenLedger</name>
+			<items>
+				<item>
+					<title>Is The NanoCard Bitcoin's 'killer' app?</title>
+					<url>http://www.forbes.com/sites/rogeraitken/2015/07/16/is-the-nanocard-bitcoins-killer-app-can-it-transform-the-global-remittance-market/</url>
+				</item>
+				<item>
+					<title>Global Money summit</title>
+					<url>http://www.forbes.com/sites/rogeraitken/2015/09/16/bitcoin-exchange-ccedk-set-to-unveil-groundbreaking-crypto-platform-at-global-money-summit/</url>
+				</item>
+			</items>
+		</area>	
+		
+		<area id="C">
+			<name>Blockchain technology</name>
+			<items>
+				<item>
+					<title>IMF: Virtual Currencies and Beyond</title>
+					<url>http://www.imf.org/external/pubs/ft/sdn/2016/sdn1603.pdf</url>
+				</item>
+				<item>
+					<title>Linux Foundation Unites Industry Leaders to Advance Blockchain Technology</title>
+					<url>http://www.linuxfoundation.org/news-media/announcements/2015/12/linux-foundation-unites-industry-leaders-advance-blockchain</url>
+				</item>
+				<item>
+					<title>The Minimal Requirement for Decentralization of Bitcoin</title>
+					<url>http://bytemaster.github.io/article/2015/01/20/The-Minimal-Requirement-for-Decentalization</url>
+				</item>
+				<item>
+					<title>Blythe Masters on the Significance of Blockchains in Finance (full version)</title>
+					<url>https://www.youtube.com/watch?v=O1Yo8bt8JAU</url>
+				</item>
+				<item>
+					<title>Blythe Masters on the Significance of Blockchains in Finance (short version)</title>
+					<url>https://www.youtube.com/watch?v=PZ6WR2R1MnM</url>
+				</item>
+				<item>
+					<title>Adam Vaziri on Decentralized Financial Systems - A Regulatory Perspective</title>
+					<url>https://www.youtube.com/watch?v=vJwBjBaqSqc</url>
+				</item>
+				<item>
+					<title>Bitcoin: What you didn't know but always wanted to ask</title>
+					<url>http://securities.bnpparibas.com/quintessence/hot-topics/beyond/bitcoin-and-blockchain-what-you.html#.VaoxAvkYMeD</url>
+				</item>
+				<item>
+					<title>The Future of Money Isn't Bitcoin</title>
+					<url>http://cointelegraph.com/news/114696/the-dutch-national-b-word-congress-the-future-of-money-isnt-bitcoin</url>
+				</item>
+				<item>
+					<title>10 Big Banks That Are Seriously Looking into Blockchain Technology</title>
+					<url>http://cointelegraph.com/news/114889/10-big-banks-that-are-seriously-looking-into-blockchain-technology</url>
+				</item>
+				<item>
+					<title>Central banks looking at 'hybrid systems' using blockchain technology</title>
+					<url>http://www.ibtimes.co.uk/bank-england-central-banks-looking-hybrid-systems-using-bitcoins-blockchain-technology-1511195</url>
+				</item>
+				<item>
+					<title>How the likes of MasterCard and Visa slow the spread of bitcoin</title>
+					<url>http://www.ibtimes.co.uk/how-mastercard-visa-slow-spread-bitcoin-1505790</url>
+				</item>
+				<item>
+					<title>What Community Bankers Should Know About Virtual Currencies</title>
+					<url>https://cbcfrs.org/articles/2015/q2/virtual-currencies</url>
+				</item>
+				<item>
+					<title>Overstock.com and FNY Capital Conclude $5 Million Cryptobond Deal</title>
+					<url>http://globenewswire.com/news-release/2015/07/31/756843/10144107/en/Overstock-com-and-FNY-Capital-Conclude-5-Million-Cryptobond-Deal.html</url>
+				</item>
+				<item>
+					<title>Blockchain Thinking: The Brain as a DAC</title>
+					<url>http://ieet.org/index.php/IEET/more/swan20150402</url>
+				</item>
+				<item>
+					<title>Decentralized Autonomous Corporation</title>
+					<url>http://coinwiki.info/en/Decentralized_autonomous_corporation</url>
+				</item>
+				<item>
+					<title>The dawn of trustworthy computing</title>
+					<url>http://unenumerated.blogspot.com/2014/12/the-dawn-of-trustworthy-computing.html</url>
+				</item>
+				<item>
+					<title>Blockchain Technology: The Ultimate Disruption in the Financial System</title>
+					<url>https://www.bbvaresearch.com/wp-content/uploads/2015/07/150710_US_EW_BlockchainTechnology.pdf</url>
+				</item>
+				<item>
+					<title>Why Bitcoin Faces an Uphill Battle in the Remittance Market</title>
+					<url>http://www.coindesk.com/why-the-future-of-bitcoin-remittance-businesses-isnt-certain/</url>
+				</item>
+				<item>
+					<title>A simple explanation of Bitcoin sidechains</title>
+					<url>http://gendal.me/2014/10/26/a-simple-explanation-of-bitcoin-sidechains/</url>
+				</item>
+				<item>
+					<title>The Economist's articles about blockchain technology</title>
+					<url>http://www.economist.com/topics/bitcoins</url>
+				</item>
+				<item>
+					<title>The future will be decentralized by Charles Hoskinson at TEDx Bermuda</title>
+					<url>https://www.youtube.com/watch?v=97ufCT6lQcY</url>
+				</item>
+				<item>
+					<title>A Brief Introduction to Smart Contracts by Charles Hoskinson</title>
+					<url>https://www.youtube.com/watch?v=3bY66Zgr8Cs</url>
+				</item>
+				<item>
+					<title>SEC Approves Overstock.com Filing to Issue Shares Using Bitcoin Blockchain</title>
+					<url>https://bitcoinmagazine.com/articles/sec-approves-overstock-com-s-filing-to-issue-shares-using-bitcoin-blockchain-1449539558</url>
+				</item>
+				<item>
+					<title>Comparison table of all the 2.0 platforms</title>
+					<url>https://bitcointalk.org/index.php?topic=1153740.0</url>
+				</item>
+			</items>
+		</area>
+		
+		<area id="D">
+			<name>Source code &amp; other assets</name>
+			<items>
+				<item>
+					<title>BitShares 2.0</title>
+					<url>https://github.com/bitshares/bitshares-2</url>
+				</item>
+				<item>
+					<title>BitShares 2.0 GUI</title>
+					<url>https://github.com/cryptonomex/graphene-ui</url>
+				</item>
+				<item>
+					<title>BitShares 2.0 Infographics by Arlene Birt</title>
+					<url>https://bitshares.org/media/2015_bitshares_infographic_en.pdf</url>
+				</item>
+				<item>
+					<title>Meetup Brochure</title>
+					<url>https://rawgit.com/roadscape/bts-brochure/master/brochure.pdf</url>
+				</item>
+				<item>
+					<title>Meetup Brochure - editable version (Chrome only!)</title>
+					<url>https://rawgit.com/roadscape/bts-brochure/master/index.html</url>
+				</item>
+			</items>
+		</area>
+	</areas>
+</root>

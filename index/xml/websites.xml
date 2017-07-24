@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet type="text/xsl" href="temp.xsl"?> -->
+<root>
+	<groups>
+		<group id="A">
+			<name>Official</name>
+			<items>
+				<item>
+					<name>Website</name>
+					<description>Official BitShares website.</description>
+					<owner>cass</owner>
+					<comment></comment>
+					<url>http://bitshares.org</url>
+				</item>
+				<item>
+					<name>Documentation</name>
+					<description>Very detailed documentation. Also includes migration guides.</description>
+					<owner>xeroc</owner>
+					<comment>Still work-in-progress</comment>
+					<url>http://docs.bitshares.eu</url>
+				</item>
+				<item>
+					<name>Whitepaper</name>
+					<description>Official whitepaper by Fabian S &amp; Daniel Larimer</description>
+					<owner>xeroc</owner>
+					<comment>Still work-in-progress</comment>
+					<url>http://docs.bitshares.eu/_downloads/bitshares-financial-platform.pdf</url>
+				</item>
+				<item>
+					<name>Technology</name>
+					<description>Graphene - the technology behind BitShares 2.0</description>
+					<owner>bytemaster</owner>
+					<comment></comment>
+					<url>https://bitshares.org/technology</url>
+				</item>
+				<item>
+					<name>Referral Program</name>
+					<description></description>
+					<owner>bytemaster</owner>
+					<comment></comment>
+					<url>https://bitshares.org/referral-program</url>
+				</item>
+			</items>
+		</group>
+		
+		<group id="B">
+			<name>Community</name>
+			<items>
+				<item>
+					<name>Forum</name>
+					<description>Vibrant community. New ideas. Latest announcements.</description>
+					<owner>bitsapphire</owner>
+					<comment></comment>
+					<url>http://bitsharestalk.org</url>
+				</item>
+				<item>
+					<name>Hang-outs</name>
+					<description>Community hang-outs called 'Beyond Bitcoin'. Features weekly developers hang-outs with Daniel Larimer (bytemaster)</description>
+					<owner>fuzzy</owner>
+					<comment></comment>
+					<url>https://beyondbitcoin.org</url>
+				</item>
+				<item>
+					<name>Meet-ups</name>
+					<description>BitShares meet-ups worldwide</description>
+					<owner>roadscape</owner>
+					<comment></comment>
+					<url>http://www.meetup.com/TC-BitShares</url>
+				</item>
+			</items>
+		</group>
+		
+		<group id="C">
+			<name>Blockchain explorers / aggregators</name>
+			<items>
+				<item>
+					<name>Cryptofresh</name>
+					<description>A very comprehensive blockchain explorer.</description>
+					<owner>roadscape</owner>
+					<comment>Work in progress</comment>
+					<url>http://cryptofresh.com</url>
+				</item>
+				<item>
+					<name>BitShares Breakout</name>
+					<description>Market aggregator. Also includes basic market stats for various DEX pairs.</description>
+					<owner>Xeldal</owner>
+					<comment></comment>
+					<url>http://bitsharesbreakout.com</url>
+				</item>
+			</items>
+		</group>
+		
+		<group id="D">
+			<name>Blogs</name>
+			<items>
+				<item>
+					<name>BitShares blog</name>
+					<description>Unofficial BitShares blog.</description>
+					<owner></owner>
+					<comment></comment>
+					<url>http://bitsharesblog.com</url>
+				</item>
+				<item>
+					<name>BM's blog</name>
+					<description>About BitShares and the whole blockchain industry.</description>
+					<owner>bytemaster</owner>
+					<comment></comment>
+					<url>http://bytemaster.github.io</url>
+				</item>
+				<item>
+					<name>SmartCoin blog</name>
+					<description></description>
+					<owner>fav</owner>
+					<comment></comment>
+					<url>http://blog.smartcoin.pw</url>
+				</item>
+			</items>
+		</group>
+		
+		<group id="E">
+			<name>Informational sites</name>
+			<items>
+				<item>
+					<name>BitShares News</name>
+					<description></description>
+					<owner>BitShares News</owner>
+					<comment></comment>
+					<url>http://bitsharesnews.info</url>
+				</item>
+				<item>
+					<name>BitShares French ConneXion</name>
+					<description></description>
+					<owner>EstefanTT</owner>
+					<comment>In French</comment>
+					<url>http://www.bitsharesfcx.com/btsfcx.php</url>
+				</item>
+				<item>
+					<name>BitShares Munich</name>
+					<description></description>
+					<owner>kenCode</owner>
+					<comment>In German</comment>
+					<url>http://bitshares-munich.de</url>
+				</item>
+				<item>
+					<name>BitShares Korea</name>
+					<description></description>
+					<owner>clayop</owner>
+					<comment>In Korean</comment>
+					<url>http://www.bitshares.kr</url>
+				</item>
+				<item>
+					<name>BitShares Hong Kong</name>
+					<description></description>
+					<owner></owner>
+					<comment>In Chinese</comment>
+					<url>http://www.bts.hk</url>
+				</item>
+				<item>
+					<name>The Coming BitShares Revolution</name>
+					<description></description>
+					<owner>Thom</owner>
+					<comment></comment>
+					<url>http://thecomingbitsharesrevolution.website</url>
+				</item>
+				<item>
+					<name>DPOS Hub</name>
+					<description></description>
+					<owner>BunkerChain Labs, CryptoPrometheus</owner>
+					<comment>Not launched yet</comment>
+					<url>http://www.dposhub.com</url>
+				</item>
+			</items>
+		</group>
+	</groups>
+</root>

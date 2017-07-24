@@ -1,0 +1,176 @@
+/* --------------------------
+base styles 
+-------------------------- */
+body{
+	background-color:#fefefe;
+	font-family:Helvetica,Arial,sans-serif;
+}
+h1{
+	margin:0;
+	font-size:1.5em;
+	font-weight:500;
+}
+.todo{
+	text-align:left;
+	font-size:12px;
+	color:#333;
+	margin:10px 0;
+}
+.timestamp{
+	text-align:left;
+	font-size:12px;
+	color:#333;
+	margin:15px 0;
+}
+.source{
+	margin:15px 0;
+	font-size:12px;
+	color:#999;
+}
+
+.source a{
+	font-size:12px;
+	color:#666;
+	text-decoration:none;
+}
+
+/* --------------------------
+layout 
+-------------------------- */
+.container{
+	max-width:1000px;
+	margin:0 auto;
+}
+.header{
+	color:#888;
+	background-color:#ddd;
+	padding:1em 5%;
+	text-align:center;
+}
+.page{
+	float:left;
+	width:100%;
+}
+.footer{
+	clear:both;
+	background-color:#ddd;
+	padding:20px 5%;
+}
+
+/* --------------------------
+menu 
+-------------------------- */
+.menu{
+	color:#fff;
+	background-color:#669999;
+	padding:0px 5% 0px 5%;
+}
+.submenu {
+	margin-top:1px;
+}
+.menu a{
+	display:inline;
+	padding:0px 20px;
+	background-color:#444;
+	text-decoration:none;
+}
+.menu a:link{ 
+	color:white;
+}
+.menu a:visited{ 
+	color:white;
+}
+.menu a:hover{
+	color:black;
+	background-color:#777;
+}
+.menu a:active{
+	color:white;
+	background-color:#666;
+}
+.menu .selected{
+	color:black;
+	background-color:#999;
+}
+
+/* --------------------------
+table 
+-------------------------- */
+table{
+	border:1px solid #2C3539;
+	border-collapse:collapse;
+	font-size:80%;
+	margin-bottom:20px;
+}
+td,th{
+	border:1px solid #888;
+	border-collapse:collapse;
+	padding:5px;
+}	
+thead th{
+	background:#eee;
+	text-align:left;
+	color:#666;
+	font-style:italic;
+}
+tbody td{
+	background:#626666;
+	color:white;
+}
+tbody td.caption{
+	background:#fff;
+	color:#333;
+	font-size:120%;
+}
+tbody td p{
+	margin:0;
+}
+tbody td a{
+	text-decoration:none;
+}
+tbody td a.account{
+	color:#ffc;
+}
+tbody td a.entity{
+	color:#fff;
+}
+tbody td a.url{
+	color:#fff;
+}
+tbody td a.link{
+	color:#ddd;
+	padding-right:10px;
+}
+
+tbody tr.funded td{
+	background:#566D7E;
+}
+tbody tr.funded td a{
+
+}
+
+tbody tr.done td{
+	background:#92A9BA;
+	color:#444;
+}
+tbody tr.done td a{
+	color:#444;
+}
+
+tbody tr td.highlightTop{
+	color:#FFA62F;
+}
+tbody tr td.highlightMed{
+	color:yellow;
+}
+
+tbody tr td.highlightPos{
+	background:#566D7E;
+}
+tbody tr td.highlightNeg{
+	background:#92A9BA;
+	color:#444;
+}
+tbody tr td.highlightZero{
+
+}

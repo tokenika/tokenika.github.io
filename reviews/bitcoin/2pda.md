@@ -1,0 +1,54 @@
+###  Czy Craig Wright to ktoś więcej niż uzurpator? I czy Bitcoin jest Turing complete?
+
+Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Wright'a w zakresie bitcoinowego *Turing completeness* okaże się prawdziwe (na co się zanosi), to oznacza to, że ma on wiedzę i możliwości sugerujące jego aktywny udział w powstaniu Bitcoina.
+
+Na początek dla osób mniej zorientowanych:
+
+> Craig S. Wright - an Australian computer scientist and businessman. In 2016 he claimed to be the real person behind the pseudonym Satoshi Nakamoto, a claim that is disputed within the Bitcoin community. Many people believe that Wright was engaged in an elaborate hoax.
+
+> Ian Grigg - a financial cryptographer who has been building cryptographic ledger platforms for over 20 years. The inventor of the Ricardian Contract and the co-inventor of Triple-Entry Accounting. Currently one of the founders of [EOS](https://eos.io/).
+
+#### Opozycja wobec Bitcoin Core
+
+Sprawa zamiaru wzięcia aktywnego udziału przez Craiga Wrighta na bitcoinowej "scenie politycznej" (oraz związana z tym kwestia *Turing completeness*) została publicznie ujawniona podczas [niedawnej konferencji Bitcoina](https://www.ledgerjournal.org/ojs/index.php/ledger/announcement/view/13) w czerwcu 2017. Z [prezentacji Craiga Wrighta](https://www.youtube.com/watch?time_continue=343&v=v1_gxvx_QGo) dowiadujemy się, że:
+
+- Jest mocno przeciwny *segwit* (i w ogóle całej strategii Bitcoin Core) i wkrótce ma zamiar uruchomić swój własny mining pool, za pomocą którego ma zamiar zwalczać *segwit*. Zapowiada, że ma możliwości finansowe pozwalające uzyskać 20% bitcoinwego *hash power*.
+- Uważa, że przyszłość Bitcoina jest chroniona przez jego masową popularność, a nie poprzez dużą liczbę node'ów potwierdzających transakcje. Czyli zgodnie z linią Bitcoin Unlimited i dokładnie odwrotnie niż zakłada to Bitcoin Core.
+- Jest niezadowolony z obecnego stanu Bitcoina i ma zamiar podjąć działania biznesowe, których celem jest otwarcie Bitcoina na mainstream. Uważa że istotą Bitcoina jest wolna konkurencja i że to rynek ostatecznie rozstrzygnie, które rozwiązanie wygra.
+- Zapowiada opublikowanie artykułu na temat możliwości dostępu do *Turing completeness* w Bitcoinie i opublikowanie ogromnej ilości danych dotyczących genezy Bitcoina. Nie ujawnia czemu dokładnie te dane mają służyć - można się domyślać, że potwierdzą one rolę Craiga w genezie Bitcoina.  
+- Przyjął strategię niezaprzeczania i niepotwierdzania swojej tożsamości jako Satoshi Nakamoto. O tym dlaczego takie zachowanie ma sens, pisze Ian Grigg w artykule cytowanym poniżej.
+
+Generalnie Wright używa dość barwnego języka i nie przebiera w słowach, np.:
+
+> Quite frankly, I don't care about Raspberry PIs. If you have been in Bitcoin since 2009 and you can't afford a $20,000 node to help this network, piss off.
+
+Mimo dość kontrowersyjnej powierzchowności Craiga Wrighta (może sprawiać wrażenie nonszalanckiego wariata), wszystko co on mówi (przynajmniej na razie) należy traktować na serio. Oto opinia Iana Grigga:
+
+> Craig has more knowledge than just about anyone else I've come across in the field. Certainly of Bitcoin, and a lot besides. Here's the clanger: Craig S Wright has the capability to integrate many diverse fields. He's a polymath, which is the roadblock that stops most others no matter how good they are at their select discipline. That's what I mean by transcendent financial cryptographer on this blog (...). It's not about what you know, it's about how you integrate the disparate, discordant fields together. 
+
+Mimo niewątpliwego rozeznania w sprawach Bitcoina, wiele osób nie dopuszcza możliwości, że Craig Wright ma coś wspólnego z postacią Satoshi Nakamoto. Jak to celnie ujął Ian Grigg na swoim blogu: *Craig Wright is not the god you wanted him to be*.
+
+#### Autonomiczny algorytm optymalizacyjny
+
+Poniżej graficzna manifestacja działania autonomicznego algorytmu, który według Craiga Wrighta jest możliwy w ramach protokołu Bitcoina:
+
+![01_01_220_110.gif](https://steemitimages.com/DQmTpUuLxctY6qqEhrJHFYPD3csFYfXbsnhAarJNjhaB4Lg/01_01_220_110.gif)
+
+```Źródło: http://atlas.wolfram.com```
+
+Na razie nie jest powiedziane jaki jest cel tego algorytmu, jedyne co wiemy to fakt, że działał on autonomicznie przez długi czas (od początku istnienia Bitcoina?) i przestał działać z powodu wzrostu opłat transakcyjnych:
+
+> It was running until a few months ago. We had PSOs [[Particle Swarm Optimization](https://en.wikipedia.org/wiki/Particle_swarm_optimization)] in Bitcoin, running. Unfortunately they starved to death because of fees.
+
+#### Źródła:
+
+[In Defense of Craig Wright - Part 1](https://steemit.com/bitcoin/@belerophon/in-defense-of-craig-wright-part-1) by belerophon on Steem
+[In Defense of Craig Wright - Part 2](https://steemit.com/bitcoin/@belerophon/in-defense-of-craig-wright-part-ii) by belerophon on Steem
+
+[Bitcoin is Turing Complete](https://steemit.com/crypto/@tonypat/bitcoin-is-turing-complete) by tonypat on Steem
+
+[The plot thickens: Bitcoin = Turing Complete?](https://www.reddit.com/r/btc/comments/6kgb7q/the_plot_thickens_bitcoin_turing_complete/) by ForkiusMaximus on Reddit
+
+[Bitcoin is Turing complete](https://www.reddit.com/r/btc/comments/6lhdg8/bitcoin_is_turing_complete/) by silverjustice on Reddit
+
+[Oh no, not another bloody Satoshi sighting...](http://financialcryptography.com/mt/archives/001617.html) by Ian Grigg on financialcryptography.com
