@@ -28,7 +28,7 @@ Mimo dość kontrowersyjnej powierzchowności (może sprawiać wrażenie nonszal
 
 #### Not the god you wanted
 
-Mimo niewątpliwego rozeznania w sprawach Bitcoina, wiele osób nie dopuszcza możliwości, że Craig Wright ma coś wspólnego z postacią Satoshi Nakamoto. Określenia w stylu *jackass*, *sociopath* lub *government shill* wobec CSW są dość powszechne. Jak to celnie ujął Ian Grigg na swoim blogu:
+Mimo niewątpliwego rozeznania w sprawach Bitcoina, wiele osób nie dopuszcza możliwości, że Craig Wright ma coś wspólnego z postacią Satoshi Nakamoto. Określenia w stylu *jackass*, *sociopath* lub *government shill* są dość powszechne. Jak to celnie ujął Ian Grigg na swoim blogu:
 
 > Craig is not the god you wanted. Like most geeks of extraordinary talent, he didn't get there by working on his social skills.
 
