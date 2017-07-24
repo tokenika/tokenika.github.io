@@ -95,15 +95,15 @@ Neither of these Dapps will be operational until after the launch of the mainnet
 
 **Testnet release (June 2017)**
 
-- Potentially incomplete GUI, full RPC methods for contract insteractions
+- Potentially incomplete GUI, full RPC methods for contract interactions
 - Designed for developers, not consumers
 - Should be stable, but features and RPC layer subject to change from community feedback
 - SPV extended to support syncing contract state without full chain download
 
-**Mainet release (September 2017)**
+**Mainnet release (September 2017)**
 
 - GUI for smart contract interaction in wallet
-- GUI may not be perfect but will be imporved over time
+- GUI may not be perfect but will be improved over time
 - Stable RPC layer for developers
 
 **Qtum integration and API release (November 2017)**
@@ -124,7 +124,7 @@ Neither of these Dapps will be operational until after the launch of the mainnet
 **New VM implementations**
 
 - Adding new VMs beyond EVM
-- eSML, a new samrt-contract language with formal verification
+- eSML, a new smart-contract language with formal verification
 
 ![img](roadmap.jpg)
 
