@@ -1,6 +1,6 @@
 ##  Czy Craig Wright to ktoś więcej niż uzurpator? I czy Bitcoin jest *Turing complete*?
 
-Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Craiga Wrighta w zakresie bitcoinowego *Turing completeness* okaże się prawdziwe (na co się zanosi), to oznacza to, że ma on wiedzę i możliwości sugerujące jego aktywny udział w powstaniu Bitcoina.
+Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Craiga Wrighta w zakresie bitcoinowego *Turing completeness* okaże się prawdziwe (na co się zanosi), to oznacza to, że ma on wiedzę i umiejętności sugerujące jego aktywny udział w powstaniu Bitcoina.
 
 Na początek dla osób mniej zorientowanych:
 
@@ -26,7 +26,9 @@ Mimo dość kontrowersyjnej powierzchowności (może sprawiać wrażenie nonszal
 
 > Craig has more knowledge than just about anyone else I've come across in the field. Certainly of Bitcoin, and a lot besides. Here's the clanger: Craig S Wright has the capability to integrate many diverse fields. He's a polymath, which is the roadblock that stops most others no matter how good they are at their select discipline. That's what I mean by transcendent financial cryptographer on this blog (...). It's not about what you know, it's about how you integrate the disparate, discordant fields together. 
 
-Mimo niewątpliwego rozeznania w sprawach Bitcoina, wiele osób nie dopuszcza możliwości, że Craig Wright ma coś wspólnego z postacią Satoshi Nakamoto. Jak to celnie ujął Ian Grigg na swoim blogu:
+#### Not the god you wanted
+
+Mimo niewątpliwego rozeznania w sprawach Bitcoina, wiele osób nie dopuszcza możliwości, że Craig Wright ma coś wspólnego z postacią Satoshi Nakamoto. Określenia w stylu *jackass*, *sociopath* lub *government shill* wobec CSW są dość powszechne. Jak to celnie ujął Ian Grigg na swoim blogu:
 
 > Craig is not the god you wanted. Like most geeks of extraordinary talent, he didn't get there by working on his social skills.
 
