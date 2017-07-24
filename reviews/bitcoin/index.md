@@ -1,6 +1,6 @@
-##  Czy Craig Wright to ktoś więcej niż uzurpator? I czy Bitcoin jest Turing complete?
+##  Czy Craig Wright to ktoś więcej niż uzurpator? I czy Bitcoin jest *Turing complete*?
 
-Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Wright'a w zakresie bitcoinowego *Turing completeness* okaże się prawdziwe (na co się zanosi), to oznacza to, że ma on wiedzę i możliwości sugerujące jego aktywny udział w powstaniu Bitcoina.
+Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Craiga Wrighta w zakresie bitcoinowego *Turing completeness* okaże się prawdziwe (na co się zanosi), to oznacza to, że ma on wiedzę i możliwości sugerujące jego aktywny udział w powstaniu Bitcoina.
 
 Na początek dla osób mniej zorientowanych:
 
