@@ -19,7 +19,7 @@ Qtum will be a proof-of-stake (PoS), smart-contract compatible blockchain that c
 - **Bitcoin + Ethereum compatible**: Qtum uses many features of the Bitcoin core blockchain, particularly its UTXO approach for storing transactions. This makes individual coins traceable. Qtum has a layer that abstracts the UTXO data into something the Ethereum Virtual Machine can read. This allows it to interact with both Bitcoin-based and Ethereum-based applications. Qtum will actually make this feature open-source, so any UTXO chain can use it to integrate with an EVM.
 - **Protocol Governance**: Qtum will have a unique governance approach that is a hybrid of recognizable corporate governance, management models for open-source software, and blockchain-based consensus. The Qtum Blockchain Foundation, a Singapore non-profit, oversees the codebase, helps promote cohesion in the community, and represents Qtum to the external world. 50 people will staff one master committee and four sub-committees, with members serving two-year terms. Initial membership is already defined but the community will elect 50 representatives when their term is over.
 - **Master Contracts**: are smart contracts that can execute based on off-chain or on-chain factors. Current designs of smart contracts are limited to checking on-chain data, so sources of off-chain data (oracles) must publish data to the chain itself; then whenever the smart contract is executed and verified, it checks readily-available on-chain data. Qtum has proposed a way for trusted data entities, such as official institutions or organizations, to provide data off-chain that master contracts can access.
-- **Proof of Stake**: The team will use Blackcoin’s proof-of-stake consensus model. Their outreach has led them to conclude businesses are not comfortable with a proof-of-work consensus model. Using a PoS model with some semi-trusted nodes would assuage CEOs that a rogue mining outfit or state-sponsored hashpower attack couldn’t disrupt the network.
+- **Proof of Stake**: The team will use [Blackcoin](http://blackcoin.co/)’s proof-of-stake consensus model. Their outreach has led them to conclude businesses are not comfortable with a proof-of-work consensus model. Using a PoS model with some semi-trusted nodes would assuage CEOs that a rogue mining outfit or state-sponsored hashpower attack couldn’t disrupt the network.
 
 In the future, Qtum will also have a native identity module that will provide users who register with a special designation that dapp developers and businesses can integrate with their on-chain activities. Some businesses are understandably uncomfortable with the thought of anonymous users. Identity could be solved at the application layer, but a native module would take the burden off developers. Users could still use Qtum without registering.
 
@@ -93,20 +93,20 @@ Neither of these Dapps will be operational until after the launch of the mainnet
 
 ### Roadmap
 
-**Testnet release (June 2017)**:
+**Testnet release (June 2017)**
 
 - Potentially incomplete GUI, full RPC methods for contract insteractions
 - Designed for developers, not consumers
 - Should be stable, but features and RPC layer subject to change from community feedback
 - SPV extended to support syncing contract state without full chain download
 
-**Mainet release (September 2017)**:
+**Mainet release (September 2017)**
 
 - GUI for smart contract interaction in wallet
 - GUI may not be perfect but will be imporved over time
 - Stable RPC layer for developers
 
-**Qtum integration and API release (November 2017):**
+**Qtum integration and API release (November 2017)**
 
 - APIs for interaction with smart contracts for Javascript, iOS and Android
 - APIs will be developed in open source process
@@ -114,14 +114,14 @@ Neither of these Dapps will be operational until after the launch of the mainnet
 - Release SpringWall, an email integration
 - Smart-contract lifecycle management
 
-**Extedning Qtum for the future (2018 and beyond)**:
+**Extedning Qtum for the future (2018 and beyond)**
 
 - Each etension will be formally evaluated and timeframe determined
 - Adding new features and power to the Qtum AAL
 - First Class Oracles - oracle support on the blockchain beyond standard smart-contracts
 - Support community projects built on Qtum
 
-**New VM implementations**:
+**New VM implementations**
 
 - Adding new VMs beyond EVM
 - eSML, a new samrt-contract language with formal verification
