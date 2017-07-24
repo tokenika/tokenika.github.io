@@ -10,7 +10,7 @@ Na początek dla osób mniej zorientowanych:
 
 #### Opozycja wobec Bitcoin Core
 
-Sprawa zamiaru wzięcia aktywnego udziału przez Craiga Wrighta na bitcoinowej "scenie politycznej" (oraz związana z tym kwestia *Turing completeness*) została publicznie ujawniona podczas [niedawnej konferencji Bitcoina](https://www.ledgerjournal.org/ojs/index.php/ledger/announcement/view/13) w czerwcu 2017. Z [prezentacji Craiga Wrighta](https://www.youtube.com/watch?time_continue=343&v=v1_gxvx_QGo) dowiadujemy się, że:
+Sprawa zamiaru wzięcia aktywnego udziału przez Craiga Wrighta w walce na bitcoinowej "scenie politycznej" (oraz związana z tym kwestia *Turing completeness*) została publicznie ujawniona podczas [konferencji Bitcoina](https://www.ledgerjournal.org/ojs/index.php/ledger/announcement/view/13) w czerwcu 2017. Z [prezentacji Craiga Wrighta](https://www.youtube.com/watch?time_continue=343&v=v1_gxvx_QGo) dowiadujemy się, że:
 
 - Jest mocno przeciwny *segwit* (i w ogóle całej strategii Bitcoin Core) i wkrótce ma zamiar uruchomić swój własny mining pool, za pomocą którego ma zamiar zwalczać *segwit*. Zapowiada, że ma możliwości finansowe pozwalające uzyskać 20% bitcoinwego *hash power*.
 - Uważa, że przyszłość Bitcoina jest chroniona przez jego masową popularność, a nie poprzez dużą liczbę node'ów potwierdzających transakcje. Czyli zgodnie z linią Bitcoin Unlimited i dokładnie odwrotnie niż zakłada to Bitcoin Core.
@@ -32,9 +32,7 @@ Mimo niewątpliwego rozeznania w sprawach Bitcoina, wiele osób nie dopuszcza mo
 
 Poniżej graficzna manifestacja działania autonomicznego algorytmu, który według Craiga Wrighta jest możliwy w ramach protokołu Bitcoina:
 
-![01_01_220_110.gif](https://steemitimages.com/DQmTpUuLxctY6qqEhrJHFYPD3csFYfXbsnhAarJNjhaB4Lg/01_01_220_110.gif)
-
-```Źródło: http://atlas.wolfram.com```
+![01_01_220_110.gif](https://steemitimages.com/DQmTpUuLxctY6qqEhrJHFYPD3csFYfXbsnhAarJNjhaB4Lg/01_01_220_110.gif)```Źródło: http://atlas.wolfram.com```
 
 Na razie nie jest powiedziane jaki jest cel tego algorytmu, jedyne co wiemy to fakt, że działał on autonomicznie przez długi czas (od początku istnienia Bitcoina?) i przestał działać z powodu wzrostu opłat transakcyjnych:
 
