@@ -10,17 +10,17 @@
 
 ## [Cosmos](cosmos/index.md)
 
-## [EOS](eos/index.md)
-
 ## [Decent](decent/index.md)
+
+## [EOS](eos/index.md)
 
 ## [Golem](golem/index.md)
 
 ## [IOTA](iota/index.md)
 
-## [Tezos](tezos/index.md)
-
 ## [Qtum](qtum/index.md)
+
+## [Tezos](tezos/index.md)
 
 ---
 
