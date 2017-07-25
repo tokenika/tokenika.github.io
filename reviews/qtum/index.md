@@ -1,6 +1,6 @@
 ## Qtum aims to be a proof-of-stake, smart-contract compatible blockchain that can natively run both Bitcoin-based and Ethereum-based applications.
 
-> Poniższy tekst jest w dużej mierze oparty na [recenzji Qtum](https://www.smithandcrown.com/qtum-ico-building-first-utxo-proof-stake-smart-contract-platform/) wykonanej przez [*Smith+Crown*](https://www.smithandcrown.com/about). Oryginalny tekst jest na tyle solidny i dobrze ustrukturyzowany, że uznałem że nie ma sensu na siłę tworzyć własnego, prościej jest lekko przeredagować i uzupełnić tamten.
+> Poniższy tekst jest w dużej mierze oparty na [recenzji Qtum](https://www.smithandcrown.com/qtum-ico-building-first-utxo-proof-stake-smart-contract-platform/) wykonanej przez [*Smith+Crown*](https://www.smithandcrown.com/about). Oryginalny tekst jest na tyle solidny i dobrze ustrukturyzowany, że uznałem że nie ma sensu na siłę tworzyć własnego, prościej jest przeredagować i uzupełnić tamten.
 
 **Key Strengths**
 
@@ -49,7 +49,9 @@ Initially, only 51 percent of Qtum tokens will be allocated to ICO participants.
 
 Research and Outreach (9%): The 9 percent allocated for research and outreach will used to support the development of blockchain labs at universities in Asia. Outreach funds will also be used to foster relationships with Ubuntu, Linux, Firefox and other members of the opensource community.
 
-Business Development (20%): At least 10 percent of business development tokens will be used for third-party development on Qtum, with the exact programs to be developed and managed by the Qtum Foundation. Up to 10 percent of the tokens allocated for business development will be used to facilitate coin swaps with other blockchain networks, which the Qtum team hopes will encourage interchain collaboration. The swap will work like this: up to 10 percent of Qtum tokens will be used to obtain an equal proportion of tokens on another network, such as Ethereum. Qtum tokens will be distributed to all Ethereum users based on the size of their token holdings. Likewise, Qtum token holders will receive an allocation of Ether based on the size of their token holdings. Assuming that the leading communities of different blockchain networks could come to an agreement, this type of coin swap could benefit users on both networks. 
+Business Development (20%): At least 10 percent of business development tokens will be used for third-party development on Qtum, with the exact programs to be developed and managed by the Qtum Foundation.
+
+Up to 10 percent of the tokens allocated for business development will be used to facilitate coin swaps with other blockchain networks, which the Qtum team hopes will encourage interchain collaboration. The swap will work like this: up to 10 percent of Qtum tokens will be used to obtain an equal proportion of tokens on another network, such as Ethereum. Qtum tokens will be distributed to all Ethereum users based on the size of their token holdings. Likewise, Qtum token holders will receive an allocation of Ether based on the size of their token holdings. Assuming that the leading communities of different blockchain networks could come to an agreement, this type of coin swap could benefit users on both networks. 
 
 Team and Early backers (20%): By the end of the ICO, early backers will control 7-8% of Qtum tokens in return for their combined $1 million dollar seed investment. The founding team will control the remaining 12-13% of tokens.
 
