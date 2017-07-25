@@ -1,14 +1,16 @@
 ## Qtum aims to be a proof-of-stake, smart-contract compatible blockchain that can natively run both Bitcoin-based and Ethereum-based applications.
 
+> Poniższy teskt jest skróconą (i lekko przeredegowaną / uzupełnioną) wersją [recenzji Qtum](https://www.smithandcrown.com/qtum-ico-building-first-utxo-proof-stake-smart-contract-platform/) wykonanej przez [*Smith+Crown*](https://www.smithandcrown.com/about). Oryginalny tekst jest na tyle solidny i dobrze ustrukturyzowany, że uznałem że nie ma sensu na siłę tworzyć własnego.
+
 **Key Strengths**
 
-- Qtum is the first to implement a protocol based on both Bitcoin’s and Ethereum’s transaction models. Developers on either chain (or their variants) in theory should be able to port applications easily.
-- It is likely that the Chinese government will tend to support blockchain projects based in China. Qtum boasts technical innovations, a stellar team, and existing support within the Chinese blockchain community. If the Chinese government chooses to discourage blockchains not based in China, Qtum should make the cut–and be a platform of choice for a growing developer community.
+- Qtum is the first to implement a protocol based on both Bitcoin’s and Ethereum’s transaction models. Developers on either chain in theory should be able to port applications easily.
+- It is likely that the Chinese government will tend to support blockchain projects based in China. Qtum boasts technical innovations, a stellar team, and existing support within the Chinese blockchain community. If the Chinese government chooses to discourage blockchains not based in China, Qtum could easily become a platform of choice for a growing developer community.
 - Qtum has one of the most impressive advisory teams the blockchain industry has seen in awhile. The success of platform technologies like Qtum, especially enterprise-oriented ones, will depend on business adoption. Qtum’s team has a collective network that touches many of the world’s largest companies.
 
 **Key Concerns**
 
-- The token will not be distributed until the mainnet launches, slated for Q3/4 of 2017. Investors can’t exit early if progress is delayed or they get uncomfortable with holding the token: there is a real chance of having nothing if the project never reaches a mainnet. They will also need to trust all parties to not lose information about who invested how much and when. If those information are held by exchanges and not shared with Qtum, then investors must hope the exchanges don’t get hacked or shut down. 
+- The token will not be distributed until the mainnet launches, slated for Q3/4 of 2017. Investors can’t exit early if progress is delayed or they get uncomfortable with holding the token: there is a real chance of having nothing if the project never reaches a mainnet. They will also need to trust all parties to not lose information about who invested how much and when. If this information is held by exchanges and not shared with Qtum, then investors must hope the exchanges don’t get hacked or shut down. 
 - While the governance structure is billed as a DAO, coinholders are only guaranteed the ability to vote in the staff of the Qtum Foundation. In addition, only 51% of the tokens are available during the ICO: 49% are held by the development team or initial investors in some way, although 29% will be held in transparent wallets until they are spent for various services in support of Qtum. Finally, the initial governance membership is set for two years, so coinholders will not have a say for awhile. When the community will elect 50 delegates to serve across all relevant committees, those delegates will then elect among themselves who serves on the over-arching Judgement Committee. This all matches one of Qtum’s core tenents: businesses want certainty before building on a public blockchain. It’s also not clear whether the 29% being withheld to pay for future services will be used in staking.
 - The ‘capacity’ of the development community to build on yet another platform chain will be tested. Bitcoin and Ethereum have emerged as the primary platforms on which people can build, but more have emerged in 2016 (Waves, Lisk, Antshares) and more are in development (Cosmos, Rootstock, EOS). If each curates its own developer and user ecosystem, there will be large network effects that will leave some platforms niche or mostly empty. Qtum’s purported compatibility with both Ethereum and Bitcoin apps could mitigate this, though the team hasn’t released working app ports yet.
 
@@ -17,8 +19,13 @@
 Qtum will be a proof-of-stake (PoS), smart-contract compatible blockchain that can natively run both Bitcoin-based and Ethereum-based applications. The protocol uses Bitcoin’s [UXTO model](http://www.smithandcrown.com/definition/unspent-transaction-outputs-utxo/) of storing transactions, while also supporting oracles and two types of smart contracts. Applications built for Bitcoin, Etheruem, or either of their derivatives, should be able to port easily. The team is stacked with talent and experience, especially in business, and has framed Qtum as a the public ledger most prepared for business dapps.
 
 - **Bitcoin + Ethereum compatible**: Qtum uses many features of the Bitcoin core blockchain, particularly its UTXO approach for storing transactions. This makes individual coins traceable. Qtum has a layer that abstracts the UTXO data into something the Ethereum Virtual Machine can read. This allows it to interact with both Bitcoin-based and Ethereum-based applications. Qtum will actually make this feature open-source, so any UTXO chain can use it to integrate with an EVM.
+
 - **Protocol Governance**: Qtum will have a unique governance approach that is a hybrid of recognizable corporate governance, management models for open-source software, and blockchain-based consensus. The Qtum Blockchain Foundation, a Singapore non-profit, oversees the codebase, helps promote cohesion in the community, and represents Qtum to the external world. 50 people will staff one master committee and four sub-committees, with members serving two-year terms. Initial membership is already defined but the community will elect 50 representatives when their term is over.
+
+  > Mocne uzależnienie od *Qtum Blockchain Foundation* sugeruje dążenie do dość scentralizowanego (jak na blockchain) modelu podejmowania decyzji.
+
 - **Master Contracts**: are smart contracts that can execute based on off-chain or on-chain factors. Current designs of smart contracts are limited to checking on-chain data, so sources of off-chain data (oracles) must publish data to the chain itself; then whenever the smart contract is executed and verified, it checks readily-available on-chain data. Qtum has proposed a way for trusted data entities, such as official institutions or organizations, to provide data off-chain that master contracts can access.
+
 - **Proof of Stake**: The team will use [Blackcoin](http://blackcoin.co/)’s proof-of-stake consensus model. Their outreach has led them to conclude businesses are not comfortable with a proof-of-work consensus model. Using a PoS model with some semi-trusted nodes would assuage CEOs that a rogue mining outfit or state-sponsored hashpower attack couldn’t disrupt the network.
 
 In the future, Qtum will also have a native identity module that will provide users who register with a special designation that dapp developers and businesses can integrate with their on-chain activities. Some businesses are understandably uncomfortable with the thought of anonymous users. Identity could be solved at the application layer, but a native module would take the burden off developers. Users could still use Qtum without registering.
@@ -29,9 +36,7 @@ The Qtum token serves multiple roles on the network. It’s used to pay fees, de
 
 **Fees**
 
-Qtum tokens will be used to pay fees associated with executing smart contracts (similar to Ethereum’s Gas). Their draft white paper states: 
-
-> Although Qtum uses the gas model from Ethereum, it is expected that the gas schedule (gas price of each EVM opcode) will significantly differ from Ethereum. This is because in Qtum some operations are more expensive than in Ethereum, and some operations are cheaper.
+Qtum tokens will be used to pay fees associated with executing smart contracts (similar to Ethereum’s Gas). Their draft white paper states: *Although Qtum uses the gas model from Ethereum, it is expected that the gas schedule (gas price of each EVM opcode) will significantly differ from Ethereum. This is because in Qtum some operations are more expensive than in Ethereum, and some operations are cheaper*.
 
 **Proof of Stake Minting**
 
@@ -40,12 +45,6 @@ Token holders will be able to passively collect mining rewards by setting up a m
 **Governance**
 
 Many of the most important governance and business decisions will be made by the Qtum Judgment Committee, which serves many of the same functions as the board of directors would at a traditional corporation. The Judgement Committee consists of 9 core members. Every two years token holders will vote to elect 50 delegates. The delegates will then choose members to serve on the Judgement Committee. According to the [economy white paper](https://qtum.org/wp-content/uploads/2017/02/Qtum_blockchain_economy_whitepaper_20170217_EN.pdf), the weight of votes will depend on the “quantity and age of Qtum tokens possessed.”
-
-### What are the sale terms?
-
-At the time of writing, Qtum hasn’t released detailed sales terms. However, they have released a list of (primarily China-based) exchanges that will be participating in the ICO. Qtum tokens will be available to purchase during the ICO from [Bizhongchou](http://bizhongchou.com/), [Yunbi](http://yunbi.com/), [Yuanbao](http://www.yuanbao.com/), [Allcoin](http://allcoin.com/), and [ICO365](http://www.ico365.com/), though they say the list might change before the ICO start date.
-
-On March 2, they announced that they plan to conduct KYC on all customers (through the exchanges) and will *not* offer Qtum tokens through a ICO website.
 
 ### Token distribution
 
@@ -69,19 +68,11 @@ The Qtum token will be released with the mainnet, tentatively set for August / S
 
 Development of the Qtum core began in March of 2016. Since then, the Qtum team has expanded from a team of three developers to a team of more than a dozen developers with diverse backgrounds and specializations. In a recent interview with the Qtum team, Patrick Dai confirmed that they have a completed but “buggy” internal test net that isn’t public. A video of a [demo](https://qtum.org/en/videos/qtum-technical-introduction-and-demonstration) of the Qtum core test net was made available on the Qtum website. The video demonstrates how Qtum might be used by business to improve their supply chain management. Another demonstration video shows how Qtum has developed [mobile applications](https://qtum.org/en/videos/qtum-go-mobile-demo) that make it easy for developers to design smart contracts using an android smart phone, make payments using an apple watch, and manage accounts from a phone.
 
-According to Jordan Earls, the lead developer on the Qtum project, the mainnet will go public by the end of summer 2017. The testnet still needs to undergo significant debugging, stress testing, and optimization. Prior to the official release, around June 2017, a public testnet will be launched along side a bug bounty campaign. On Monday, March 13th, two days before the ICO begins, Qtum will publish a snapshot of their core code on Github. Patrick Dai and Jordan Earls say that the snapshot will prove that the team has made significant progress developing the Qtum network.
-
-The Qtum team has been criticized for not making their code publicly available on github. In an interview with Smith + Crown, the Qtum team gave three reasons for delaying the publication of their core code.
-
-1. **Maintain a competitive edge:** Qtum’s innovative accounts abstract layer, the technical solution that enables proof-of-stake consensus to work with an UTXO account model, could potentially be implemented on any blockchain using an UTXO model. The Qtum team wants to avoid competing with forks of their own technology before their products are market-ready.
-2. **Delaying management of developer communities:** Once the code is public, the Qtum team will need to devote resources to managing a comprehensive bug bounty campaign. For the time being, they are prioritizing development of the testnet.
-3. **Market-ready approach:** The Qtum aims to deliver a “complete product” at the time of code release. This will ultimately reduce the time required to complete the bug bounty campaign and third party code auditing, allowing the team to launch a mainnet as soon as possible.
+According to Jordan Earls, the lead developer on the Qtum project, the mainnet will go public by the end of summer 2017. The testnet still needs to undergo significant debugging, stress testing, and optimization. Prior to the official release, around June 2017, a public testnet will be launched alongside a bug bounty campaign.
 
 **Initial seed funding**
 
 Qtum has already undergone an initial round of funding. Their earliest backers are an impressive cohort of Blockchain entrepreneurs that includes [Anthony Di lorio](https://www.linkedin.com/in/anthonydiiorio1/), one of the original founders of Ethereum; and Weixing Chen the founder of [Kuaidi](https://www.kuaidi100.com/), a ride hailing service that [outcompeted Uber](http://www.forbes.com/sites/briansolomon/2016/08/01/uber-ends-billion-dollar-china-fight-makes-peace-with-rival-didi/#4a9ce4792ec0) and contributed to their decision to leave China.
-
-To date, Qtum has secured at least [$1 million](http://www.econotimes.com/Qtum-raises-1m-from-leading-blockchain-entrepreneurs-485187?from=groupmessage&isappinstalled=0) in seed funding in exchange for 7-8% of Qtum tokens, giving a rough valuation of $12 – 14 million.
 
 **Early projects**
 
@@ -130,11 +121,11 @@ Neither of these Dapps will be operational until after the launch of the mainnet
 
 ### Who is the team behind the project?
 
-Qtum has assembled an impressive advisory team from the Chinese Blockchain industry. However, in light of the issues surrounding Dai, there is obvious reason to doubt the credentials of the development team. The Qtum English webpage does not provide surnames, Chinese names, or links to third-party identify verification like LinkedIn or GitHub; however, full names of team members can be found in the economy and technical white paper. As we note above, we recommend the team provide full names, links to previous work, and verification of their involvement in the project. To our knowledge, no one has proven information in the brief team bios was falsified, though Dai’s former involvement in BitBay was not disclosed. 
+Qtum has assembled an impressive advisory team from the Chinese Blockchain industry. However, in light of [the issues surrounding Qtum's lead developer Patrick Dai](https://www.smithandcrown.com/qtum-controversy-patrick-dais-exit-bitbay/), there is obvious reason to doubt the credentials of the development team. The Qtum English webpage does not provide surnames, Chinese names, or links to third-party identify verification like LinkedIn or GitHub; however, full names of team members can be found in the economy and technical white paper. To our knowledge, no one has proven information in the brief team bios was falsified, though Patrick Dai’s former involvement in BitBay was not disclosed.
 
 **Connection to BitSe**
 
-The development team has close ties to [Bitse](https://bitse.com/team/), a Chinese based blockchain project targeting business applications. The idea for Qtum reportedly grew out of Patrick’s work as CTO at BitSe. Patrick, Neil Mahi (BitSe’s Chief Blockchain architect), and Jordan Earls decided to create Qtum based on their experience working together at BitSe. BitSe developer Time Markov is also now a developer for Qtum. Patrick Dai is still listed as the CTO at BitSe, and Neil, Time, and Jordan are all still listed on the BitSe website as team members. DJ Qian, the CEO of BitSe will be a member of the Qtum Foundations Judicial Committee, which was made transparent in the economy white paper. Based on Smith + Crown’s interview with the Qtum team, it seems like Qtum was incubated out of BitSe and has its full support for developers to work full-time on Qtum.
+The development team has close ties to [Bitse](https://bitse.com/team/), a Chinese based blockchain project targeting business applications. The idea for Qtum reportedly grew out of Patrick Dai’s work as CTO at BitSe. Patrick Dai, Neil Mahi (BitSe’s Chief Blockchain architect), and Jordan Earls decided to create Qtum based on their experience working together at BitSe. BitSe developer Time Markov is also now a developer for Qtum. Patrick Dai is still listed as the CTO at BitSe, and Neil, Time, and Jordan are all still listed on the BitSe website as team members. DJ Qian, the CEO of BitSe will be a member of the Qtum Foundations Judicial Committee, which was made transparent in the economy white paper. Based on Smith+Crown’s interview with the Qtum team, it seems like Qtum was incubated out of BitSe and has its full support for developers to work full-time on Qtum.
 
 **Team member identity**
 
@@ -149,10 +140,6 @@ Developer [Caspal](https://www.linkedin.com/in/caspal/) was formerly employed at
 [Roman Asadchiy](https://www.linkedin.com/in/roman-asadchiy-388a5844/) is a project manager at PixelPlex with a background in business analysis.
 
 [Brett Fincaryk](https://www.linkedin.com/in/brett-fincaryk-35942b7a/) has more than 11 years of experience in Linux server management at [Userful](https://www.userful.com/).
-
-### Controversy: Patrick Dai’s exit from Bitbay
-
-On February 21st, information surfaced on Twitter that linked Qtum lead Patrick Dai to the Steven Dai associated with the 2014 Bitbay scandal. Since then, accusations and suspicions have dogged the Qtum project. [Click here](https://www.smithandcrown.com/qtum-controversy-patrick-dais-exit-bitbay/) to read a summary of what happened and Smith + Crown’s five key takeaways for investors.
 
 ### Official resources
 
@@ -174,6 +161,6 @@ On February 21st, information surfaced on Twitter that linked Qtum lead Patrick 
 
 ### Original source
 
-Most of the content orginates from [Smith + Crown](https://www.smithandcrown.com/sale/tezos/).
+Most of the content orginates from [Qtum's review by Smith+Crown](https://www.smithandcrown.com/qtum-ico-building-first-utxo-proof-stake-smart-contract-platform/).
 
 
