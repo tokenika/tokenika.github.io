@@ -24,6 +24,8 @@
 
 ---
 
+[Aragon](https://coinmarketcap.com/assets/aragon/)
+
 [Ardor](https://coinmarketcap.com/assets/ardor/)
 
 [Augur](https://coinmarketcap.com/assets/augur/)
@@ -36,9 +38,13 @@
 
 [Counterparty](https://coinmarketcap.com/currencies/counterparty/)
 
+[Dash](https://coinmarketcap.com/currencies/dash/)
+
 [Emercoin](https://emercoin.com/)
 
 [Ethereum](https://www.ethereum.org/)
+
+[Ethereum Classic](https://coinmarketcap.com/currencies/ethereum-classic/)
 
 [Factom](https://coinmarketcap.com/currencies/factom/)
 
@@ -58,6 +64,8 @@
 
 [Melon](https://coinmarketcap.com/assets/melon/)
 
+[Monero](https://coinmarketcap.com/currencies/monero/)
+
 [NEM](https://www.nem.io/)
 
 [Numeraire](https://coinmarketcap.com/assets/numeraire/)
@@ -75,6 +83,8 @@
 [Storj](https://coinmarketcap.com/assets/storj/)
 
 [Stratis](http://stratisplatform.com/)
+
+[Synereo](https://coinmarketcap.com/assets/synereo/)
 
 [TauChain/Agoras](http://www.idni.org/)
 
