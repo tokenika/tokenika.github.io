@@ -1,23 +1,37 @@
 #### [Bitcoin](bitcoin/index.md)
 
+#### [Blocktix](blocktix/index.md)
+
+#### [Civic](civic/index.md)
+
+#### [Cosmos](cosmos/index.md)
+
+#### [Decent](decent/index.md)
+
 #### [Tezos](tezos/index.md)
 
 #### [Qtum](qtum/index.md)
 
 
 
+[Emercoin](https://emercoin.com/)
 
+[EOS](https://eos.io/)
 
-#### [Ethereum](https://www.ethereum.org/)
+[Ethereum](https://www.ethereum.org/)
 
-#### [EOS](https://eos.io/)
+[Lisk](https://lisk.io/)
 
-#### [Lisk](https://lisk.io/)
+[Rootstock](http://www.rsk.co/)
 
-#### [TauChain/Agoras](http://www.idni.org/)
+[Stratis](http://stratisplatform.com/)
 
-#### [Stratis](http://stratisplatform.com/)
+[TauChain/Agoras](http://www.idni.org/)
 
-#### [Rootstock](http://www.rsk.co/)
+#### 
 
-#### [Emercoin](https://emercoin.com/)
+#### 
+
+#### 
+
+#### 

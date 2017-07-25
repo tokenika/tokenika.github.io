@@ -160,6 +160,6 @@ Qtum competes in the increasingly more competitive domain of smart-contract plat
 
 ### Original source
 
-Most of the content orginates from [Qtum's review by Smith+Crown](https://www.smithandcrown.com/qtum-ico-building-first-utxo-proof-stake-smart-contract-platform/).
+[Smith+Crown Research Team](https://www.smithandcrown.com/qtum-ico-building-first-utxo-proof-stake-smart-contract-platform/)
 
 
