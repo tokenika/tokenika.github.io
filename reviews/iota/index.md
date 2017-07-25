@@ -286,6 +286,34 @@ If you’re interested in discussing possible attack vectors, the IOTA Foundatio
 
 ---
 
+*Please explain how can IoT devices be expected to do PoW?*
+
+The *network* can be supported with spammers which help transactions to approve. These network spammers are either using CPU or GPU. The latter are much faster and able to conduct lots of tx per second. When IOTA is beeing used in a global network and for industrial processes, JINN ternary processors are used to conduct ten-thousand tx/seconds. Since we have a great scalability, there is no speed limitation so that most transactions in the future are conducted in seconds. 
+
+*How can a device like this be part of the IOTA network because of the PoW requirement?*
+
+Small devices just need to receive and broadcast a tx, the network spammers such as JINN or GPU-spammer will do their PoW for them. The computational power is therefore outsourced from small and smallest devices.
+
+*How do IoT devices connect to the network since there is no automatic peer discovery? Does a manufacturer/user of these IoT devices have to manually configure every device with specific neighbours?*
+
+a) Peer discovery was shut off because the network topology was suffering. For now, people in the tangle can either look for neighbors manually in our slackchannel under #nodesharing to run a full wallet or they can use the integrated light wallet, which is only connected to one node. A list of supplied nodes is here: [http://iotasupport.com/lightwallet.shtml](http://iotasupport.com/lightwallet.shtml)
+
+b) Manufacturer most likely won’t need to look for single nodes for each and every device. Remember: the Jinn will be able to conduct thousands of tx a second so the solution will be somehow managed with that. I guess subtangles are part of the solution. But for this particular question, it would be your best option to ask one of our developers in our slackchannel. You can ask me (@limo) for help in slack. The invitation link for slack is under LINKS.
+
+*That means the current software is not yet ready for this? – because currently, to send iotas require PoW, even when using light wallet.*
+
+That tangle will be connected to a central server in your house, from there all sensors are connected to this server. So I guess companies who want to provide this kind of service have to create this special clientside-software for sensors on their own so that the sensors can be part of a subtangle or so. But I’m just guessing here.
+
+Right now the tangle and the software directly connected to it is beeing developed and tested. Services on top of that, like an e-car-wallet, or smart data applications need to be developed by the companies who collaborate with the IOTA foundation or companies who have the capabilities to deal with the code and its API etc.
+
+The user-software is fully functioning, by the way, so people can send and receive iotas, they can also try to build proof of concepts with it. IOTA has a javascript, python and C library, furthermore a working sandbox-environment. Needless to say, that core is improving the code and implementing new features all the time.
+
+
+
+>  Source: http://www.tangleblog.com/2017/01/03/byteball-vs-iota-token/
+
+---
+
 [Time Has Come For Blockchainless Technology: IOTA’s David Sønstebø](https://cointelegraph.com/news/time-has-come-for-blockchainless-technology-iotas-david-s%C3%B8nsteb%C3%B8)
 
 [The Blockchain-less Token IOTA is Ready to Take on the World](https://cointelegraph.com/news/iota-beta-internet-of-things)
