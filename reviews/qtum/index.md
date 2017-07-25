@@ -5,7 +5,7 @@
 **Key Strengths**
 
 - Qtum is the first to implement a protocol based on both Bitcoin’s and Ethereum’s transaction models. Developers on either chain in theory should be able to port applications easily.
-- It is likely that the Chinese government will tend to support blockchain projects based in China. Qtum boasts technical innovations, a stellar team, and existing support within the Chinese blockchain community. If the Chinese government chooses to discourage blockchains not based in China, Qtum could easily become a platform of choice for a growing developer community in this country.
+- It is likely that the Chinese government will tend to support blockchain projects based in China. If the Chinese government chooses to discourage blockchains not based in China, Qtum could easily become a platform of choice for a growing developer community in this country.
 - Qtum has one of the most impressive advisory teams the blockchain industry has seen in awhile. The success of platform technologies like Qtum, especially enterprise-oriented ones, will depend on business adoption. Qtum’s team has a collective network that touches many of the world’s largest companies.
 
 **Key Concerns**
