@@ -1,16 +1,16 @@
-#### [Bitcoin](bitcoin/index.md)
+## [Bitcoin](bitcoin/index.md)
 
-#### [Blocktix](blocktix/index.md)
+## [Blocktix](blocktix/index.md)
 
-#### [Civic](civic/index.md)
+## [Civic](civic/index.md)
 
-#### [Cosmos](cosmos/index.md)
+## [Cosmos](cosmos/index.md)
 
-#### [Decent](decent/index.md)
+## [Decent](decent/index.md)
 
-#### [Tezos](tezos/index.md)
+## [Tezos](tezos/index.md)
 
-#### [Qtum](qtum/index.md)
+## [Qtum](qtum/index.md)
 
 
 
@@ -28,10 +28,3 @@
 
 [TauChain/Agoras](http://www.idni.org/)
 
-#### 
-
-#### 
-
-#### 
-
-#### 
