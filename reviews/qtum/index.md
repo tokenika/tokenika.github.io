@@ -146,7 +146,7 @@ Developer [Caspal](https://www.linkedin.com/in/caspal/) was formerly employed at
 
 [Alex Dulub](https://www.linkedin.com/in/dulub/) is the CEO at[ PixelPlex Inc.](http://www.pixelplex.by/), a Belarus-based Blockchain development lab. He has more than 10 years of experience working as a full-stack web developer.
 
-[Roman Asadchiy](https://www.linkedin.com/in/roman-asadchiy-388a5844/) is a Project manager at PixelPlex with a background in business analysis.
+[Roman Asadchiy](https://www.linkedin.com/in/roman-asadchiy-388a5844/) is a project manager at PixelPlex with a background in business analysis.
 
 [Brett Fincaryk](https://www.linkedin.com/in/brett-fincaryk-35942b7a/) has more than 11 years of experience in Linux server management at [Userful](https://www.userful.com/).
 
