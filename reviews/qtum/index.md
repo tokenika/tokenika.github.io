@@ -1,6 +1,6 @@
 ## Qtum aims to be a proof-of-stake, smart-contract compatible blockchain that can natively run both Bitcoin-based and Ethereum-based applications.
 
-> Poniższy teskt jest w dużej mierze oparty na [recenzji Qtum](https://www.smithandcrown.com/qtum-ico-building-first-utxo-proof-stake-smart-contract-platform/) wykonanej przez [*Smith+Crown*](https://www.smithandcrown.com/about). Oryginalny tekst jest na tyle solidny i dobrze ustrukturyzowany, że uznałem że nie ma sensu na siłę tworzyć własnego, prościej jest lekko przeredagować i uzupełnić tamten.
+> Poniższy tekst jest w dużej mierze oparty na [recenzji Qtum](https://www.smithandcrown.com/qtum-ico-building-first-utxo-proof-stake-smart-contract-platform/) wykonanej przez [*Smith+Crown*](https://www.smithandcrown.com/about). Oryginalny tekst jest na tyle solidny i dobrze ustrukturyzowany, że uznałem że nie ma sensu na siłę tworzyć własnego, prościej jest lekko przeredagować i uzupełnić tamten.
 
 **Key Strengths**
 
@@ -122,7 +122,7 @@ Qtum has assembled an impressive advisory team from the Chinese Blockchain indus
 
 **Connection to BitSe**
 
-The development team has close ties to [Bitse](https://bitse.com/team/), a Chinese based blockchain project targeting business applications. The idea for Qtum reportedly grew out of Patrick Dai’s work as CTO at BitSe. Patrick Dai, Neil Mahi (BitSe’s Chief Blockchain architect), and Jordan Earls decided to create Qtum based on their experience working together at BitSe. BitSe developer Time Markov is also now a developer for Qtum. Patrick Dai is still listed as the CTO at BitSe, and Neil, Time, and Jordan are all still listed on the BitSe website as team members. DJ Qian, the CEO of BitSe will be a member of the Qtum Foundations Judicial Committee, which was made transparent in the economy white paper. Based on Smith+Crown’s interview with the Qtum team, it seems like Qtum was incubated out of BitSe and has its full support for developers to work full-time on Qtum.
+The development team has close ties to [Bitse](https://bitse.com/team/), a Chinese based blockchain project targeting business applications. The idea for Qtum reportedly grew out of Patrick Dai’s work as CTO at BitSe. Patrick Dai, Neil Mahi (BitSe’s Chief Blockchain architect), and Jordan Earls decided to create Qtum based on their experience working together at BitSe.
 
 **Team member identity**
 
@@ -132,11 +132,11 @@ It is possible to locate the [GitHub repository](https://github.com/Earlz) of[ J
 
 Developer [Caspal](https://www.linkedin.com/in/caspal/) was formerly employed at Baidu as a quality assurance developer, China’s most popular search engine, often described as the “Chinese Google”. He was also the target of accusations that Qtum faked his Rubik’s Cube record, but those claims were [debunked](https://www.smithandcrown.com/qtum-controversy-patrick-dais-exit-bitbay/).
 
-[Alex Dulub](https://www.linkedin.com/in/dulub/) is the CEO at[ PixelPlex Inc.](http://www.pixelplex.by/), a Belarus-based Blockchain development lab. He has more than 10 years of experience working as a full-stack web developer. [Roman Asadchiy](https://www.linkedin.com/in/roman-asadchiy-388a5844/) is a project manager at PixelPlex with a background in business analysis. [Brett Fincaryk](https://www.linkedin.com/in/brett-fincaryk-35942b7a/) has more than 11 years of experience in Linux server management at [Userful](https://www.userful.com/).
+[Alex Dulub](https://www.linkedin.com/in/dulub/) is the CEO at[ PixelPlex](http://www.pixelplex.by/), a Belarus-based Blockchain development lab. He has more than 10 years of experience working as a full-stack web developer. [Roman Asadchiy](https://www.linkedin.com/in/roman-asadchiy-388a5844/) is a project manager at PixelPlex with a background in business analysis. [Brett Fincaryk](https://www.linkedin.com/in/brett-fincaryk-35942b7a/) has more than 11 years of experience in Linux server management at [Userful](https://www.userful.com/).
 
 ### Competition
 
-Qtum competes in the increasing more competitive domain of smart-contract platforms, including Ethereum, Tezos, EOS, Lisk, Stratis etc. In terms of technology the most similar project seems to be [Rootstock](http://www.rsk.co), which also aims to add smart-contract capability to Bitcoin.
+Qtum competes in the increasingly more competitive domain of smart-contract platforms, including Ethereum, Tezos, EOS, Lisk, Stratis etc. In terms of technology the most similar project seems to be [Rootstock](http://www.rsk.co), which also aims to add smart-contract capability to Bitcoin.
 
 ### Official resources
 
