@@ -1,8 +1,8 @@
-# Cosmos: a blockchain able to interoperate with any other blockchain, communicate with any programming language, and support any token asset.
+# Cosmos: a blockchain capable to interoperate with any other blockchain.
 
 ### Project Description
 
-Cosmos is building a Tendermint-based proof-of-stake blockchain that will be interoperable with any blockchain, communicate with any programming language, and support any token asset. This is achieved through a network of “zones” connected to a main “hub”. The primary Cosmos blockchain will be the first hub on the network, but eventually there will be more. The hub acts as an intermediary between blockchain zones that otherwise would not be able to communicate with each other.
+Cosmos is building a [Tendermint-based](https://tendermint.com/) proof-of-stake blockchain that will be interoperable with any blockchain, communicate with any programming language, and support any token asset. This is achieved through a network of “zones” connected to a main “hub”. The primary Cosmos blockchain will be the first hub on the network, but eventually there will be more. The hub acts as an intermediary between blockchain zones that otherwise would not be able to communicate with each other.
 
 Zones are blockchains built using Tendermint consensus and connected to the main Cosmos hub, but which can be written in any coding language, maintain their own governance structure, and have an independent infrastructure of consensus nodes. Zones can have multiple functions. For example, a zone can be a new blockchain launched on the Cosmos platform, similar to launching an ER20 token on Ethereum. A zone can also function as a bridge between Cosmos and extra-ecosystem blockchains such as Bitcoin. The flexibility of zones and their ability to communicate to external blockchains as well as the primary Cosmos hub are what enable blockchain interoperability.
 
