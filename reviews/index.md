@@ -1,3 +1,5 @@
+## [Aventus](aventus/index.md)
+
 ## [Bitcoin](bitcoin/index.md)
 
 ## [Blocktix](blocktix/index.md)
