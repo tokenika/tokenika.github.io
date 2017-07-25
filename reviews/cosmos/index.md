@@ -1,4 +1,4 @@
-# Cosmos: total interoperability - a proof-of-stake blockchain that will be interoperable with any blockchain, communicate with any programming language, and support any token asset.
+# Cosmos: a blockchain able to interoperate with any other blockchain, communicate with any programming language, and support any token asset.
 
 ### Project Description
 
