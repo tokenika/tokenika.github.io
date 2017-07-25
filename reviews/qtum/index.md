@@ -120,7 +120,7 @@ Neither of these Dapps will be operational until after the launch of the mainnet
 
 ### Who is the team behind the project?
 
-Qtum has assembled an impressive advisory team from the Chinese Blockchain industry. However, in light of [the issues surrounding Qtum's lead developer Patrick Dai](https://www.smithandcrown.com/qtum-controversy-patrick-dais-exit-bitbay/), there is obvious reason to doubt the credentials of the development team. The Qtum English webpage does not provide surnames, Chinese names, or links to third-party identify verification like LinkedIn or GitHub; however, full names of team members can be found in the economy and technical white paper. To our knowledge, no one has proven information in the brief team bios was falsified, though Patrick Dai’s former involvement in BitBay was not disclosed.
+Qtum has assembled an impressive advisory team from the Chinese Blockchain industry. However, in light of [the issues surrounding Qtum's lead developer Patrick Dai](https://www.smithandcrown.com/qtum-controversy-patrick-dais-exit-bitbay/), there is obvious reason to doubt the credentials of the development team. To our knowledge, no one has proven information in the brief team bios was falsified, though Patrick Dai’s former involvement in BitBay was not disclosed.
 
 **Connection to BitSe**
 
@@ -134,7 +134,7 @@ It is possible to locate the [GitHub repository](https://github.com/Earlz) of[ J
 
 Developer [Caspal](https://www.linkedin.com/in/caspal/) was formerly employed at Baidu as a quality assurance developer, China’s most popular search engine, often described as the “Chinese Google”. He was also the target of accusations that Qtum faked his Rubik’s Cube record, but those claims were [debunked](https://www.smithandcrown.com/qtum-controversy-patrick-dais-exit-bitbay/).
 
-[Alex Dulub](https://www.linkedin.com/in/dulub/) is the CEO at[ PixelPlex](http://www.pixelplex.by/), a Belarus-based Blockchain development lab. He has more than 10 years of experience working as a full-stack web developer. [Roman Asadchiy](https://www.linkedin.com/in/roman-asadchiy-388a5844/) is a project manager at PixelPlex with a background in business analysis. [Brett Fincaryk](https://www.linkedin.com/in/brett-fincaryk-35942b7a/) has more than 11 years of experience in Linux server management at [Userful](https://www.userful.com/).
+[Alex Dulub](https://www.linkedin.com/in/dulub/) is the CEO at [PixelPlex](http://www.pixelplex.by/), a Belarus-based Blockchain development lab. He has more than 10 years of experience working as a full-stack web developer. [Roman Asadchiy](https://www.linkedin.com/in/roman-asadchiy-388a5844/) is a project manager at PixelPlex with a background in business analysis. [Brett Fincaryk](https://www.linkedin.com/in/brett-fincaryk-35942b7a/) has more than 11 years of experience in Linux server management at [Userful](https://www.userful.com/).
 
 ### Competition
 
