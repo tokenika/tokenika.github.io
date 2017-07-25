@@ -98,15 +98,15 @@ Neither of these Dapps will be operational until after the launch of the mainnet
 
 **Qtum integration and API release (November 2017)**
 
-- APIs for interaction with smart contracts for Javascript, iOS and Android
+- APIs for interaction with smart contracts for JavaScript, iOS and Android
 - APIs will be developed in open source process
 - Release Qloha, a WebChat wallet for mobile use
 - Release SpringWall, an email integration
 - Smart-contract lifecycle management
 
-**Extedning Qtum for the future (2018 and beyond)**
+**Extending Qtum for the future (2018 and beyond)**
 
-- Each etension will be formally evaluated and timeframe determined
+- Each extension will be formally evaluated and timeframe determined
 - Adding new features and power to the Qtum AAL
 - First Class Oracles - oracle support on the blockchain beyond standard smart-contracts
 - Support community projects built on Qtum
