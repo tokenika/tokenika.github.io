@@ -40,7 +40,7 @@ While the whole world has adopted the ‘Sharing Economy’ in areas like drivin
 
 The distributed ledger revolution has only barely begun, the vast majority of use-cases has not even been thought of yet, and with the next generation ledger that IOTA created developers will be able to invent even more solutions.
 
-> Source: https://iota.org/
+<span style="color:silver;font-size:11px">Source: [iota.org](https://iota.org/)</span>
 
 ---
 
@@ -84,7 +84,7 @@ Bitcoin-derived cryptocurrencies use its original script-based approach which al
 
 Storing of all state transitions leads to fast growth of data while does not increase stored balance information significantly. This inefficiency cannot be removed even with data pruning technique and high popularity of the currency may lead to its collapse.
 
-> Source: https://bitcointalk.org/index.php?topic=1216479.0
+<span style="color:silver;font-size:11px">Source: [bitcointalk.org](https://bitcointalk.org/index.php?topic=1216479.0)</span>
 
 ---
 
@@ -101,7 +101,7 @@ Apart from monetary transactions (which can be nano-transactions), IOTA also all
 
 Now for IoT I see a great synergy between Ethereum and IOTA. Ethereum could run in a kind of central controlling station while IOTA runs on all the tiny devices and connects them between each other and the Ethereum blockchain. That is exactly the kind of direction we are going towards, because we want maximum interoperability with other Blockchains to create an environment where IOTA is the backbone of the Internet of Things, and other aspects of an application are handled by different Blockchains (mostly smart contracts).
 
-> Source: https://forum.iota.org/t/eli5-iota-vs-slock-it/229/2
+<span style="color:silver;font-size:11px">Source: [forum.iota.org](https://forum.iota.org/t/eli5-iota-vs-slock-it/229/2)</span>
 
 ---
 
@@ -117,10 +117,13 @@ IOTA is not a direct competitor to Ethereum. IOTA is similar to Lightning Networ
 **Disadvantages of the IOTA network**:
 
 - Can’t do smart contracts
-- The promise of free transactions is highly theoretical and node pools with heavy weights in the DAG could force transactions through themselves and charge fees. This issue has yet to be addressed by the development team.
-- An attacker doesn't have to outpower the entire honest computational power of the network, but just the honest computational power of the network actively making transactions at any given time.
 
->  Source: [https://steemit.com/iota/@wolfofcrypto/iota-is-it-worth-one-iota](https://steemit.com/iota/@wolfofcrypto/iota-is-it-worth-one-iota)
+- The promise of free transactions is highly theoretical and node pools with heavy weights in the DAG could force transactions through themselves and charge fees. This issue has yet to be addressed by the development team.
+
+- An attacker doesn't have to outpower the entire honest computational power of the network, but just the honest computational power of the network actively making transactions at any given time
+
+
+<span style="color:silver;font-size:11px">Source: [steemit.com](https://steemit.com/iota/@wolfofcrypto/iota-is-it-worth-one-iota)</span>
 
 ---
 
@@ -128,7 +131,7 @@ It hasn't scaled yet. An Ethereum transaction is faster by an order of magnitude
 
 IOTA is dead in the water right now without the central light balanced server nodes that have been set up. That will obviously be fixed with more users and in more time.
 
-> Source: https://www.reddit.com/r/Iota/comments/6i0c0m/do_you_think_iota_could_become_the_1/
+<span style="color:silver;font-size:11px">Source: [reddit.com](https://www.reddit.com/r/Iota/comments/6i0c0m/do_you_think_iota_could_become_the_1/)</span>
 
 ---
 
@@ -140,7 +143,7 @@ Why is IOTA slow? Confirmation times depend on 3 main things:
 
 3) Your location in the Tangle. If you're located in one cluster, and you're trying to send to a node in a different cluster, it may take a very very long time for that transaction to confirm. If you're sending within your cluster, it can take a few seconds
 
-> Source: https://www.reddit.com/r/Iota/comments/6lr11x/super_slow_confirmation_timesor_is_it_just_me/
+<span style="color:silver;font-size:11px">Source: [reddit.com](https://www.reddit.com/r/Iota/comments/6lr11x/super_slow_confirmation_timesor_is_it_just_me/)</span>
 
 ---
 
@@ -158,7 +161,7 @@ For now, a nice number of legit companies and institutions that collaborate with
 
 We know that there are a lot more judging by the slack inhabitants that are not announced yet.
 
-> Source: http://www.tangleblog.com/2017/05/10/iota-a-summary-of-success/
+<span style="color:silver;font-size:11px">Source: [tangleblog.com](http://www.tangleblog.com/2017/05/10/iota-a-summary-of-success/)</span>
 
 ---
 
@@ -176,7 +179,7 @@ They have also specifically said themselves that it is protected from spam. They
 
 [Steel_Neuron](https://www.reddit.com/user/Steel_Neuron): I'm doubly skeptic of any blockchain technology that attempts to target IOT and general purpose embedded devices, as a professional embedded developer I'm aware of how old school and slow moving the industry is, which would put another 3-5 years before a technology like this is adopted in that space.
 
-> Source: https://www.reddit.com/r/CryptoMarkets/comments/6ity1k/iota_any_opinions/
+<span style="color:silver;font-size:11px">Source: [reddit.com](https://www.reddit.com/r/CryptoMarkets/comments/6ity1k/iota_any_opinions/)</span>
 
 ---
 
@@ -290,7 +293,7 @@ And for those, that are still unsatisfied, let me end with this:
 
 If you’re interested in discussing possible attack vectors, the IOTA Foundation is happy to discuss it and to provide you with funds to test those scenarios in order to develop a solution. For now, no attack vector has been proven successful.
 
->  Source: http://www.tangleblog.com/2017/01/25/the-tech-behind-iota-explained/
+<span style="color:silver;font-size:11px">Source: [tangleblog.com](http://www.tangleblog.com/2017/01/25/the-tech-behind-iota-explained/)</span>
 
 ---
 
@@ -316,9 +319,94 @@ Right now the tangle and the software directly connected to it is beeing develop
 
 The user-software is fully functioning, by the way, so people can send and receive iotas, they can also try to build proof of concepts with it. IOTA has a javascript, python and C library, furthermore a working sandbox-environment. Needless to say, that core is improving the code and implementing new features all the time.
 
+<span style="color:silver;font-size:11px">Source: [tangleblog.com](http://www.tangleblog.com/2017/01/03/byteball-vs-iota-token/)</span>
 
+---
 
->  Source: http://www.tangleblog.com/2017/01/03/byteball-vs-iota-token/
+### IOTA creates new possibilities that were previously impossible
+
+#### Machine economy
+
+* Micro payments
+  * House equipment rental
+    * Air BnB (washer, dryer, locks)
+  * Devices can buy goods themselves
+    * Smartfridge
+  * Gastronomy
+    * Coffee shop / Coca-Cola-Automat
+  * Gas / water / electricity
+    * Digital meters / water / gas clocks
+  * Pay on demand / stream on demand
+    * Streaming services / music contracts
+  * Electric charging
+    * Payment model from Innogy
+    * Customers may select cheap rates automatically
+* Machines are customers and sellers
+  * Industry processes are automated.
+    * As part of the 4th Industrial Revolution
+    * Technizations and innovations are difficult to stop
+  * Machines take over jobs from people
+    * Disruption everywhere.
+  * Machines are taxed
+    * For example, For each work step, for each product
+  * Taxes can be used for other things
+  * Universal Basic Income?
+  * Social changes
+  * Advanced future markets and a better system as a goal of transformation where everyone benefits.
+
+#### Sensory Data Markets / BigData
+
+* Statistics are valuable
+  * Data sales
+* Advertising
+  * Create profiles, sell data. (Glass customers, controversial)
+* Environmental data
+  * Weather stations, climate change, vulnerability data
+  * Free data for everyone, free of barriers, valuable for research
+* Security related Data
+  * Interpol, etc.
+
+#### User Statistics (also BigData)
+
+* Web pages
+* Infrastructure adaptations
+* Demography analysis
+* Market analysis
+* Location analysis
+* Financing is calculated by means of experience
+
+#### Decentralized Data-storage
+
+* Decentralized hard drives
+* Never again data loss
+* No changes to the data are possible
+
+#### Sharing economy
+
+* Photovoltaics
+* Equipment in the neighborhood
+* Air BnB
+* Car sharing
+* Unlimited sharing possible, higher standard of living for all
+* Consumption can be normalized / Disposable society
+
+#### Data Integrity
+
+* Everything is tamper-proof, because of a decentralized, synchronized network, which ensures the actuality of the data.
+
+#### Notary / legal applications
+
+* Why signatures if you have counterfeit-proof, unique transactions and hash values that are set up with time stamps irrevocably. (Also smart-contracts)
+
+#### Democracy
+
+* If a transaction is a voice, then a choice without election fraud can be ensured.
+* On all levels
+* Sensitive information can be sent and accepted fraudulently. (Fake news?)
+* credibility
+* emancipation
+
+<span style="color:silver;font-size:11px">Source: [Google Docs](https://docs.google.com/viewerng/viewer?url=https://powr.s3.amazonaws.com/app_images/resizable/9898ed58-86f2-4b49-a503-db8a26f1106a/use-cases%2Benglish.pdf)</span>
 
 ---
 
