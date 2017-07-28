@@ -39,9 +39,9 @@ The consensus algorithm used to protect from double-spends is based on establish
 
 ---
 
-## What Is Byteball?
+### What Is Byteball?
 
-**Byteball** is a decentralized system where you can store unique types of data – including everything from currencies to property titles to debt. The system, like other [blockchain technology](https://bitcoinexchangeguide.com/blockchain-distributed-ledger-technology/), allows you to store data in a tamper-proof way.
+Byteball is a decentralized system where you can store unique types of data – including everything from currencies to property titles to debt. The system, like other [blockchain technology](https://bitcoinexchangeguide.com/blockchain-distributed-ledger-technology/), allows you to store data in a tamper-proof way.
 
 Byteball storage units are linked to one another. Each storage unit includes one or more hashes of earlier storage units. This confirms earlier units and establishes their partial order. These sets of links form a directed acyclic graph, or DAG – similar to the blockchain.
 
@@ -57,7 +57,7 @@ His job is to revise historical records to make the past conform to the governme
 
 Basically, Byteball wants to bring the advantages of blockchain technology to database management. Today, that system has extended to meet the needs in a diverse range of markets.
 
-#### Byteball Features
+### Byteball Features
 
 Byteball offers all of the following features:
 
@@ -120,7 +120,7 @@ Byteball offers all of the following features:
 
   You can choose to lock your funds behind multiple signatures.
 
-#### Conclusion
+### Conclusion
 
 Byteball began as a system for decentralized immutable storage of arbitrary data – similar to other blockchains. Today, Byteball can be used to launch your own [digital currencies](https://bitcoinexchangeguide.com/cryptocurrency/), make bets with other users, and even buy insurance in a P2P marketplace. It’s a unique concept based on smart contracts, Slack, and blockchain technology.
 
