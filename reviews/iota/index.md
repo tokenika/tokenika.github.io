@@ -285,13 +285,9 @@ Background: [Winternitz OTSS](https://eprint.iacr.org/2011/191.pdf)
 
 ### Concerning a possible attack-vector, that has been discussed lately
 
-First, you should have a look at [The Transparency Compendium ](https://blog.iota.org/the-transparency-compendium-26aa5bb8e260?gi=4f0a3f696b4e)
+First, you should have a look at [The Transparency Compendium ](https://blog.iota.org/the-transparency-compendium-26aa5bb8e260?gi=4f0a3f696b4e). Then, take a look at [The Tangle is safe, a Commentary](http://www.tangleblog.com/2017/06/15/the-tangle-is-safe-a-commentary/). 
 
-Then, take a look at [The Tangle is safe, a Commentary](http://www.tangleblog.com/2017/06/15/the-tangle-is-safe-a-commentary/)
-
-And for those, that are still unsatisfied, let me end with this:
-
-If you’re interested in discussing possible attack vectors, the IOTA Foundation is happy to discuss it and to provide you with funds to test those scenarios in order to develop a solution. For now, no attack vector has been proven successful.
+And for those, that are still unsatisfied, let me end with this: If you’re interested in discussing possible attack vectors, the IOTA Foundation is happy to discuss it and to provide you with funds to test those scenarios in order to develop a solution. For now, no attack vector has been proven successful.
 
 <span style="color:silver;font-size:11px">Source: [tangleblog.com](http://www.tangleblog.com/2017/01/25/the-tech-behind-iota-explained/)</span>
 
@@ -329,82 +325,28 @@ The user-software is fully functioning, by the way, so people can send and recei
 
 * Micro payments
   * House equipment rental
-    * Air BnB (washer, dryer, locks)
   * Devices can buy goods themselves
-    * Smartfridge
   * Gastronomy
-    * Coffee shop / Coca-Cola-Automat
   * Gas / water / electricity
-    * Digital meters / water / gas clocks
   * Pay on demand / stream on demand
-    * Streaming services / music contracts
   * Electric charging
-    * Payment model from Innogy
-    * Customers may select cheap rates automatically
 * Machines are customers and sellers
   * Industry processes are automated.
-    * As part of the 4th Industrial Revolution
-    * Technizations and innovations are difficult to stop
   * Machines take over jobs from people
-    * Disruption everywhere.
-  * Machines are taxed
-    * For example, For each work step, for each product
-  * Taxes can be used for other things
-  * Universal Basic Income?
-  * Social changes
-  * Advanced future markets and a better system as a goal of transformation where everyone benefits.
+  * Machines can be taxed
 
 #### Sensory Data Markets / BigData
 
 * Statistics are valuable
-  * Data sales
 * Advertising
-  * Create profiles, sell data. (Glass customers, controversial)
 * Environmental data
-  * Weather stations, climate change, vulnerability data
-  * Free data for everyone, free of barriers, valuable for research
-* Security related Data
-  * Interpol, etc.
+* Security related data
 
-#### User Statistics (also BigData)
+#### User Statistics / BigData
 
-* Web pages
-* Infrastructure adaptations
 * Demography analysis
 * Market analysis
 * Location analysis
-* Financing is calculated by means of experience
-
-#### Decentralized Data-storage
-
-* Decentralized hard drives
-* Never again data loss
-* No changes to the data are possible
-
-#### Sharing economy
-
-* Photovoltaics
-* Equipment in the neighborhood
-* Air BnB
-* Car sharing
-* Unlimited sharing possible, higher standard of living for all
-* Consumption can be normalized / Disposable society
-
-#### Data Integrity
-
-* Everything is tamper-proof, because of a decentralized, synchronized network, which ensures the actuality of the data.
-
-#### Notary / legal applications
-
-* Why signatures if you have counterfeit-proof, unique transactions and hash values that are set up with time stamps irrevocably. (Also smart-contracts)
-
-#### Democracy
-
-* If a transaction is a voice, then a choice without election fraud can be ensured.
-* On all levels
-* Sensitive information can be sent and accepted fraudulently. (Fake news?)
-* credibility
-* emancipation
 
 <span style="color:silver;font-size:11px">Source: [Google Docs](https://docs.google.com/viewerng/viewer?url=https://powr.s3.amazonaws.com/app_images/resizable/9898ed58-86f2-4b49-a503-db8a26f1106a/use-cases%2Benglish.pdf)</span>
 
