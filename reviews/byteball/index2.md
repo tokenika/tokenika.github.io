@@ -1,4 +1,4 @@
-<span style="color:magenta">Dystrybucje Byteball są robione co miesiąc, pierwsza była w grudniu 2016. Do tej pory z powyższej darmowej dystrybucji skorzystało jedynie około 6% posiadaczy BTC a rozdystrybułowano w ten sposób 36% Bytaball (celem jest 98%).</span>
+<span style="background-color:yellow">Dystrybucje Byteball są robione co miesiąc, pierwsza była w grudniu 2016. Do tej pory z powyższej darmowej dystrybucji skorzystało jedynie około 6% posiadaczy BTC a rozdystrybułowano w ten sposób 36% Bytaball (celem jest 98%).</span>
 
 > The first distribution round took place on Dec 25, 2016 when the network launched, over 70,000 BTC was linked, and 10% of the total supply of bytes and blackbytes was distributed. In the subsequent rounds, the total distributed supply reached 36.6%:
 >
