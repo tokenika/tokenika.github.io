@@ -57,4 +57,8 @@ Operację linkowania adresu BTC do dystrybucji Byteball robi się w następując
 
 Z tego co się zorientowałem wynika, że udowodnienie posiadania dostępu do adresu bitcoinonego następuje poprzez przesłanie małej kwoty (0.000907 BTC) z tego adresu na adres podany przez bota.
 
+![img](bot.png)
+
 Po zakończeniu powyższej operacji linkowanie powinno być widoczne na [tej liście](http://transition.byteball.org/).
+
+<span style="color:silver;font-size:11px">Źródło: [bitcointalk.org](https://bitcointalk.org/index.php?topic=1608859.0)</span>

@@ -61,62 +61,62 @@ Basically, Byteball wants to bring the advantages of blockchain technology to da
 
 Byteball offers all of the following features:
 
-* Conditional Payments
+* ##### Conditional Payments
 
   Byteball has one feature that you can’t get in traditional currencies – conditional payments. You set a condition when the payee receives the money. If the condition is not met, you get your money back.
 
-* P2P Payments In Chat:
+* ##### P2P Payments In Chat:
 
   You can chat and pay from the same messaging app. Sending a payment is as easy as sending a message.
 
-* Prediction Markets:
+* ##### Prediction Markets:
 
   You can create a P2P smart contract that’s unlocked when a specific event occurs. Some people use this to bet on price movements. Others use it for insurance.
 
-* P2P Insurance:
+* ##### P2P Insurance:
 
   Byteball lets you buy insurance from peers and then get paid when a negative event occurs. You can also sell insurance for profit. Insurance is just a simple smart contract that can be unlocked by the insured – if the event in question *did *occur – or unlocked by the insurer – if the event *did not *occur.
 
   You can insure against flight delay, for example, by finding your counterpart in the #P2P_insurance channel on Byteball’s Slack. Create a contract. If your flight arrives late, you can chat with the Byteball flight delays oracle to have it post the data about the delay, then unlock the contract.
 
-* P2P Betting:
+* ##### P2P Betting:
 
   You can bet against other users on sports events. Again, you find your counterpart in the #prediction_markets channel on the Byteball Slack, then create a contract that’s unlocked by you or your peer based on the outcome of the game.
 
-* Chatbots:
+* ##### Chatbots:
 
   You can use Byteball to shop by chatting with a merchant’s bot, paying in just two clicks.
 
-* Bot Store:
+* ##### Bot Store:
 
   Add and discover new chatbots from the Byteball online store. Developers can instantly access all Byteball users by adding their chatbot to the bot store. There are chatbots for sports scores, for example, flight delays, BTC prices, and more.
 
-* Untraceable Currency Called Blackbytes:
+* ##### Untraceable Currency Called Blackbytes:
 
   Want to pay in complete privacy? Byteball uses something called blackbytes, described as “a cash-like untraceable currency whose transactions are not visible on the public database, they are sent peer-to-peer instead.”
 
 
-* Community Spirit:
+* ##### Community Spirit:
 
   Byteball doesn’t have a central entity that stores and processes all payments. Instead, transactions created by users are cryptographically linked to one another. Once you add your new transaction, the number of other transactions that link to it grows like a snowball.
 
 
-* Immutable Storage:
+* ##### Immutable Storage:
 
   As mentioned above, Byteball has an immutable storage system. Once data is added to Byteball, it can never be revised or removed.
 
 
-* Settlement Finality:
+* ##### Settlement Finality:
 
   Once certain criteria are met, a new transaction becomes final. That transaction cannot be revised even by an attacker with large computational power.
 
 
-* Regulated Assets:
+* ##### Regulated Assets:
 
   Byteball allows for the creation of regulated assets – like from financial institutions that need to meet KYC/AML requirements.
 
 
-* Multi-Signature:
+* ##### Multi-Signature:
 
   You can choose to lock your funds behind multiple signatures.
 
@@ -191,7 +191,11 @@ But Byteball’s field is set in currency-replacements, smart contracts, anonymo
 
 ---
 
-Essentially, Byteball is built on “peer-to-peer” relations. While the same is true for many other cryptocurrencies, there is one major difference here – conditional payments. One of the problems that many have found when dealing with these **digital currencies** is that the other party can’t always be trusted to fulfill their end of the deal, and with an irreversible payment, this can have consequences. **Byteball** eliminates this problem by setting allowing parties to make a condition, that if left unfulfilled, will allow them to get their money back in a set period of time. An example of this would be setting the condition that in order for the other party to receive payment, they must first send a certain amount of bytes, and if they do not within the timeframe of four hours, your money is returned. For individuals who are exchanging bytes and want to make sure the other partner fulfills their part of the “contract”, Byteball has stood out against other cryptocurrencies with this idea. Although the conditional payments may be the main attraction, Byteball also features no-fee crypto-exchanges, and blackbytes – which are for more private payments which won’t appear on a public database. There is also no central system that stores the payments with Byteball, but after a new transaction is made, it is cryptographically linked to other transactions – making a chain-like effect.
+Essentially, Byteball is built on “peer-to-peer” relations. While the same is true for many other cryptocurrencies, there is one major difference here – conditional payments. One of the problems that many have found when dealing with these digital currencies is that the other party can’t always be trusted to fulfill their end of the deal, and with an irreversible payment, this can have consequences. 
+
+Byteball eliminates this problem by setting allowing parties to make a condition, that if left unfulfilled, will allow them to get their money back in a set period of time. An example of this would be setting the condition that in order for the other party to receive payment, they must first send a certain amount of bytes, and if they do not within the timeframe of four hours, your money is returned. For individuals who are exchanging bytes and want to make sure the other partner fulfills their part of the “contract”, Byteball has stood out against other cryptocurrencies with this idea.
+
+Although the conditional payments may be the main attraction, Byteball also features no-fee crypto-exchanges, and blackbytes – which are for more private payments which won’t appear on a public database. There is also no central system that stores the payments with Byteball, but after a new transaction is made, it is cryptographically linked to other transactions – making a chain-like effect.
 
 <span style="color:silver;font-size:11px">Source: [ftreporter.com](http://ftreporter.com/cryptocurrency-review-byteball-and-its-features/)</span>
 
