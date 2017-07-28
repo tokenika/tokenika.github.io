@@ -1,4 +1,4 @@
-Dystrybucje Byteball są robione co miesiąc, pierwsza była w grudniu 2016. Do tej pory z powyższej darmowej dystrybucji skorzystało jedynie około 6% posiadaczy BTC a rozdystrybułowano w ten sposób 36% Bytaball (celem jest 98%).
+Dystrybucje Byteball są robione co miesiąc, pierwsza była w grudniu 2016. Do tej pory z dystrybucji skorzystało jedynie około 6% posiadaczy BTC, a rozdystrybuowano w ten sposób około 1/3 Bytaball (celem jest 98%).
 
 > The first distribution round took place on Dec 25, 2016 when the network launched, over 70,000 BTC was linked, and 10% of the total supply of bytes and blackbytes was distributed. In the subsequent rounds, the total distributed supply reached 36.6%:
 >
@@ -23,15 +23,17 @@ Kolejna będzie 7 sierpnia:
 
 <span style="color:silver">Źródło: [byteball.org](https://byteball.org/)</span>
 
-<span style="color:teal">Dodatkowo wygląda na to że te dystrybucje się kumulują:</span>
+Dodatkowo wygląda na to że te dystrybucje się kumulują:
 
 > If you already participated or bought bytes on an exchange, you can multiply your holdings. 
 
 <span style="color:silver">Źródło: [dailybyteball.blogspot.com](http://dailybyteball.blogspot.com/2017/05/participation-in-byteball-distribution.html)</span>
 
-Więc im wcześniej się w to wejdzie tym większa korzyść.
+Więc im wcześniej się w to wejdzie tym większa korzyść:
 
 > We will likely have more rounds until we distribute all 98%, the rules in the future rounds will change in favor of current holders of bytes.
+
+<span style="color:silver">Źródło: [byteball.org](https://byteball.org/)</span>
 
 A robi się to tak:
 
