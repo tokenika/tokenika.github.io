@@ -71,9 +71,7 @@ COO [Brian Fabian Crain](https://www.linkedin.com/in/bfcrain/)
 
 The Tendermint team also includes five software developers.
 
-### Token Details
-
-|                      |                                        |
+| Token Details        |                                        |
 | -------------------- | -------------------------------------- |
 | Role of the token    | Used to stake nodes in PoS Conesnsus   |
 | Token supply         | TBA                                    |
