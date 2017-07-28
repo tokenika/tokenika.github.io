@@ -47,10 +47,12 @@ Więc im wcześniej się w to wejdzie, tym potencjalnie większa korzyść:
 
 ---
 
-A robi się to tak:
+Operację linkowania adresu BTC do dystrybucji Byteball robi się w następujący sposób:
 
 (1) Najpierw trzeba sobie zainstalować portfel Byteball, dostępny na ich [oficjalnej stronie](https://byteball.org/) pod menu *Wallet*.
 
 (2) Następnie, w tym portfelu trzeba wejść do zakładki *Chat* i wybrać opcję *Transition bot*. Wtedy uruchomi się automat, który podpowie jakie są następne kroki. 
 
-Z tego co się zorientowałem wynika, że udowodninie posiadania dostępu do adresu bitcoinonego następuje poprzez przesłanie małej kwoty (0.000907 BTC) z tego adresu na adres podany przez bota.
+Z tego co się zorientowałem wynika, że udowodnienie posiadania dostępu do adresu bitcoinonego następuje poprzez przesłanie małej kwoty (0.000907 BTC) z tego adresu na adres podany przez bota.
+
+Po zakończeniu powyższej operacji linkowanie powinno być widoczne na [tej liście](http://transition.byteball.org/).
