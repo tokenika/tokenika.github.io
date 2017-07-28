@@ -1,4 +1,6 @@
-Byteball ma wycenę ponad 150 mln i z opisu wygląda bardzo ciekawie i solidnie. Także portfel Byteball jest dość porządnie zrobiony (przynajmniej w wersji Android). Ogólnie jest to token warty uwagi.
+## Jeśli jesteś posiadaczem BTC, to warto skorzystać z darmowej dystrybucji tokenu Byteball.
+
+[Byteball](https://byteball.org/) ma wycenę [ponad 150 mln USD](https://coinmarketcap.com/currencies/byteball/) i z opisu wygląda bardzo ciekawie i solidnie. Także portfel Byteball jest dość porządnie zrobiony (przynajmniej w wersji Android). Ogólnie jest to token warty uwagi.
 
 Dystrybucje Byteball dla posiadaczy BTC są robione regularnie co miesiąc, pierwsza była w grudniu 2016:
 
