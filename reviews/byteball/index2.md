@@ -1,4 +1,4 @@
-<span style="color:teal">Dystrybucje Byteball są robione co miesiąc, pierwsza była w grudniu 2016. Do tej pory z powyższej darmowej dystrybucji skorzystało jedynie około 6% posiadaczy BTC a rozdystrybułowano w ten sposób 36% Bytaball (celem jest 98%).</span>
+Dystrybucje Byteball są robione co miesiąc, pierwsza była w grudniu 2016. Do tej pory z powyższej darmowej dystrybucji skorzystało jedynie około 6% posiadaczy BTC a rozdystrybułowano w ten sposób 36% Bytaball (celem jest 98%).
 
 > The first distribution round took place on Dec 25, 2016 when the network launched, over 70,000 BTC was linked, and 10% of the total supply of bytes and blackbytes was distributed. In the subsequent rounds, the total distributed supply reached 36.6%:
 >
@@ -9,36 +9,34 @@
 > - 6th round on Jun 9, 2017: 453,621 BTC linked, 6.6% distributed;
 > - 7th round on Jul 9, 2017: 949,004 BTC linked, 11.0% distributed.
 
-Źródło: [byteball.org](https://byteball.org/)
+<span style="color:silver">Źródło: [byteball.org](https://byteball.org/)</span>
 
-<span style="color:teal">Tak jest opisany cel tej startegii:</span>
+Tak jest opisany cel tej startegii:</span>
 
 > Byteball aims to decentralise storage and transfer of value, and is interesting because of its new consensus algorithm approach. Byteball’s developers believe that the success of the currency depends on the number of people owning and using it. That’s why they decided against ICO crowdsale, but to distribute 98% of all currency **free of charge among Bitcoin holders** instead. 
 
 <span style="color:silver">Źródło: [Iconomy](https://medium.com/iconominet/iconomi-acquires-9-766-of-byteball-initial-distribution-free-of-charge-cd9c4a5d49ac)</span>
 
-<span style="color:teal">Kolejna będzie 7 sierpnia:</span>
+Kolejna będzie 7 sierpnia:
 
 > The 8th round is scheduled for the full moon of August (**Aug 7, 2017 at 18:10 UTC**). The balances will be snapshotted at the time of the first Bitcoin block after this date,
 
-Źródło: [byteball.org](https://byteball.org/)
+<span style="color:silver">Źródło: [byteball.org](https://byteball.org/)</span>
 
 <span style="color:teal">Dodatkowo wygląda na to że te dystrybucje się kumulują:</span>
 
 > If you already participated or bought bytes on an exchange, you can multiply your holdings. 
 
-Źródło: [dailybyteball.blogspot.com](http://dailybyteball.blogspot.com/2017/05/participation-in-byteball-distribution.html)
+<span style="color:silver">Źródło: [dailybyteball.blogspot.com](http://dailybyteball.blogspot.com/2017/05/participation-in-byteball-distribution.html)</span>
 
-<span style="color:teal">Więc im wcześniej się w to wejdzie tym większa korzyść.</span>
+Więc im wcześniej się w to wejdzie tym większa korzyść.
 
 > We will likely have more rounds until we distribute all 98%, the rules in the future rounds will change in favor of current holders of bytes.
 
-<span style="color:teal">A robi się to tak:
+A robi się to tak:
 
 (1) Najpierw trzeba sobie zainstalować portfel Byteball, dostępny na ich [oficjalnej stronie](https://byteball.org/) pod menu "Wallet".
 
 (2) Następnie, w tym portfelu trzeba wejść do zakładki "CHAT" i wybrać "Transition bot". Wtedy uruchomi się automat który napisze jakie są następne kroki. 
 
 Z tego co się zorientowałem ten bot poprosi żeby udowodnić posiadanie dostępu do adresu bitcoinonego poprzez przesłanie małej kwoty (0.000907 BTC) z tego adresu na adres podany przez bota.
-
-Byteball ma wycenę 150 mln (nie wiem dlaczego poprzednio mi się wydawało że 30 mln) i z opisu wygląda bardzo ciekawie i solidnie. Także portfel Byteball jest dość porządnie zrobiony (przynajmniej w wersji Android) - na pewno lepiej niż portfel Ioty.</span>
