@@ -1,4 +1,4 @@
-Dystrybucje Byteball są robione co miesiąc, pierwsza była w grudniu 2016. Do tej pory z dystrybucji skorzystało jedynie około 6% posiadaczy BTC, a rozdystrybuowano w ten sposób około 1/3 Bytaball (celem jest 98%):
+Dystrybucje Byteball są robione regularnie co miesiąc, pierwsza była w grudniu 2016. Do tej pory z dystrybucji skorzystało jedynie około 6% posiadaczy BTC, a rozdystrybuowano w ten sposób około 1/3 Bytaball (celem jest 98%):
 
 > The first distribution round took place on Dec 25, 2016 when the network launched, over 70,000 BTC was linked, and 10% of the total supply of bytes and blackbytes was distributed. In the subsequent rounds, the total distributed supply reached 36.6%:
 >
@@ -9,31 +9,31 @@ Dystrybucje Byteball są robione co miesiąc, pierwsza była w grudniu 2016. Do 
 > - 6th round on Jun 9, 2017: 453,621 BTC linked, 6.6% distributed;
 > - 7th round on Jul 9, 2017: 949,004 BTC linked, 11.0% distributed.
 
-<span style="color:silver;font-size:12px">Źródło: [byteball.org](https://byteball.org/)</span>
+<span style="color:silver;font-size:11px">Źródło: [byteball.org](https://byteball.org/)</span>
 
 Tak jest opisany cel tej startegii:
 
 > Byteball aims to decentralise storage and transfer of value, and is interesting because of its new consensus algorithm approach. Byteball’s developers believe that the success of the currency depends on the number of people owning and using it. That’s why they decided against ICO crowdsale, but to distribute 98% of all currency **free of charge among Bitcoin holders** instead. 
 
-<span style="color:silver;font-size:12px">Źródło: [Iconomy](https://medium.com/iconominet/iconomi-acquires-9-766-of-byteball-initial-distribution-free-of-charge-cd9c4a5d49ac)</span>
+<span style="color:silver;font-size:11px">Źródło: [Iconomy](https://medium.com/iconominet/iconomi-acquires-9-766-of-byteball-initial-distribution-free-of-charge-cd9c4a5d49ac)</span>
 
 Kolejna będzie 7 sierpnia:
 
 > The 8th round is scheduled for the full moon of August (**Aug 7, 2017 at 18:10 UTC**). The balances will be snapshotted at the time of the first Bitcoin block after this date,
 
-<span style="color:silver;font-size:10px">Źródło: [byteball.org](https://byteball.org/)</span>
+<span style="color:silver;font-size:11px">Źródło: [byteball.org](https://byteball.org/)</span>
 
 Dodatkowo wygląda na to że te dystrybucje się kumulują:
 
 > If you already participated or bought bytes on an exchange, you can multiply your holdings. 
 
-<span style="color:silver;font-size:10px">Źródło: [dailybyteball.blogspot.com](http://dailybyteball.blogspot.com/2017/05/participation-in-byteball-distribution.html)</span>
+<span style="color:silver;font-size:11px">Źródło: [dailybyteball.blogspot.com](http://dailybyteball.blogspot.com/2017/05/participation-in-byteball-distribution.html)</span>
 
 Więc im wcześniej się w to wejdzie tym większa korzyść:
 
 > We will likely have more rounds until we distribute all 98%, the rules in the future rounds will change in favor of current holders of bytes.
 
-<span style="color:silver;font-size:10px">Źródło: [byteball.org](https://byteball.org/)</span>
+<span style="color:silver;font-size:11px">Źródło: [byteball.org](https://byteball.org/)</span>
 
 A robi się to tak:
 
