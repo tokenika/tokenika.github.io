@@ -82,14 +82,14 @@ The Tendermint team also includes five software developers.
 | Mainnet release date | Eight months after ICO closes          |
 | Consensus method     | Tendermint                             |
 
-### ICO Details
-
-Sale period:				March 31st, 2017 to April 28th, 2017
-Token distribution date:	Vested at a constant rate per hour for two years
-Min investment goal:     	TBA
-Max investment cap:	 	TBA
-How are funds held:	 	TBA
-Bonus schedule:	 		TBA
+| ICO Details             |                                          |
+| ----------------------- | ---------------------------------------- |
+| Sale period             | March 31st, 2017 to April 28th, 2017     |
+| Token distribution date | Vested at a constant rate per hour for two years |
+| Min investment goal     | TBA                                      |
+| Max investment cap      | TBA                                      |
+| How are funds held      | TBA                                      |
+| Bonus schedule          | TBA                                      |
 
 ### Official Resources
 
