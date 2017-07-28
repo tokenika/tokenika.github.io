@@ -73,12 +73,14 @@ The Tendermint team also includes five software developers.
 
 ### Token Details
 
-Role of token:	 		Used to stake nodes in PoS Conesnsus
-Token supply:	 		TBA
-Distributed in ICO:	 	75%
-Emission rate:	 		Tokens vested gradually over two years
-Mainnet release date:     	Eight months after ICO closes
-Consensus method:	 	Tendermint
+|                      |                                        |
+| -------------------- | -------------------------------------- |
+| Role of the token    | Used to stake nodes in PoS Conesnsus   |
+| Token supply         | TBA                                    |
+| Distributed in ICO   | 75%                                    |
+| Emission rate        | Tokens vested gradually over two years |
+| Mainnet release date | Eight months after ICO closes          |
+| Consensus method     | Tendermint                             |
 
 ### ICO Details
 
