@@ -13,9 +13,11 @@ Dystrybucje Byteball są robione co miesiąc, pierwsza była w grudniu 2016. Do 
 
 Tak jest opisany cel tej startegii:
 
-> Byteball aims to decentralise storage and transfer of value, and is interesting because of its new consensus algorithm approach. Byteball’s developers believe that the success of the currency depends on the number of people owning and using it. That’s why they decided against ICO crowdsale, but to distribute 98% of all currency **free of charge among Bitcoin holders** instead. [^footnote]
+> Byteball aims to decentralise storage and transfer of value, and is interesting because of its new consensus algorithm approach. Byteball’s developers believe that the success of the currency depends on the number of people owning and using it. That’s why they decided against ICO crowdsale, but to distribute 98% of all currency **free of charge among Bitcoin holders** instead. 
 
-[^footnote]: Test teste tette and [link](https://google.com).
+
+
+Some Markdown text with <span style="color:blue">some *blue* text</span>.
 
 
 
