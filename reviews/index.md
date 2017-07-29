@@ -126,7 +126,7 @@ Golem is a very interesting project for many reasons with an end goal of buildin
 
 ---
 
-<span style="color:silver;font-size:12px">Blockchain-based social networks</span>
+<span style="color:silver;font-size:20px">Blockchain-based social networks</span>
 
 ---
 
