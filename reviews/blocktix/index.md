@@ -8,30 +8,11 @@ The TIX token issued during the sale will be used, along with ETH,  as a form of
 
 Funds raised in the token sale will be used for system development and for user acquisition measurements in the EU and in the US. The team includes Rob Schins and Ryno Mathee, both formerly of ShadowCash, which recently completed a token swap to restart as Particl.
 
-### Project Details
 
-Incorporation status:		Unclear
-Team openness:			Transparent identities but no public acknowledgement of involvement
-Blockchain Developer:	[Ryno Mathee](https://github.com/rynomster)
-Technical White Paper:	Only non-technical whitepaper
-Available Project Code:	[Yes](https://github.com/blocktix)
-Prototype:				Not available
-
-### Role of token
-
-The token gives holders a vote in governance decisions or protocol changes and is needed to pay fees for listing, selling, and advertising on the platform. Users can still buy tickets in ETH.
-
-### Token Details
-
-Token supply:			62.5 million
-Distributed in ICO:		40 million
-Emission rate:			No new coins created
-Blockchain:				Ethereum
-Consensus method:		Proof of Work
 
 ### Token Sale Details
 
-Sale period:				June 7th, 2017 to August 6th, 2017
+Sale period:				
 First price:				0.12 USD
 Accepted currencies:		ETH
 Investment Round:		First public Offering
@@ -40,6 +21,37 @@ Min investment goal:		2.5 million USD
 Max investment cap:		7.5 million USD
 How are funds held:		Unclear
 Minimal Viable Product:	Q4 2017
+
+| Project Details        |                                          |
+| ---------------------- | ---------------------------------------- |
+| Incorporation status   | Unclear                                  |
+| Team openness          | Transparent identities but no public acknowledgement of involvement |
+| Blockchain Developer   | [Ryno Mathee](https://github.com/rynomster) |
+| Technical White Paper  | Only non-technical whitepaper            |
+| Available Project Code | [Yes](https://github.com/blocktix)       |
+| Prototype              | Not available                            |
+
+| Token Details      |                                          |
+| ------------------ | ---------------------------------------- |
+| Role of the token  | Vote in governance decisions, protocol changes and fees. |
+| Token supply       | 62.5 million                             |
+| Distributed in ICO | 40 million                               |
+| Emission rate      | No new coins created                     |
+| Blockchain         | Ethereum                                 |
+| Consensus method   | Proof of Work                            |
+
+| ICO Details             |                                    |
+| ----------------------- | ---------------------------------- |
+| Sale period             | June 7th, 2017 to August 6th, 2017 |
+| First price             | 0.12 USD                           |
+| Accepted currencies     | ETH                                |
+| Investment Round        | First public offering              |
+| Token distribution date | August 30th, 2017                  |
+| Min investment goal     | 2.5 million USD                    |
+| Max investment cap      | 7.5 million USD                    |
+| How are funds held      | Unclear                            |
+| Minimal Viable Product  | Q4 2017                            |
+| Bonus schedule          | No Bonus                           |
 
 ### Official Resources
 
