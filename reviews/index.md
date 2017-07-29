@@ -154,7 +154,7 @@ The new way of publishing, intended for creative people, authors, bloggers, publ
 
 #### [While Iota is specialized for machine-to-machine use, Byteball is specialized for human-to-human applications](byteball/index.md)
 
-Byteball is a decentralized system where you can store unique types of data – including everything from currencies to property titles to debt. The system, like other [blockchain technology](https://bitcoinexchangeguide.com/blockchain-distributed-ledger-technology/), allows you to store data in a tamper-proof way.
+Byteball is a decentralized system where you can store unique types of data, including everything from currencies to property titles to debt. The system, like other blockchain technology, allows you to store data in a tamper-proof way.
 
 ---
 

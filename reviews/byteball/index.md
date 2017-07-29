@@ -6,7 +6,7 @@ Byteball data is stored and ordered using [directed acyclic graph](https://en.wi
 
 Blockless design is simpler because there are no blocks, there are only transactions. Users just add their transactions to the end of the DAG themselves, they don't have to wait when miners create a new block and there is no guesswork whether miners will include your transaction in the block.
 
-The consensus algorithm used to protect from double-spends is based on establishing a total order within the DAG. This is achieved by selecting a chain, called main chain, which gravitates towards units issued by commonly recognized reputable users — witnesses. See the [white paper](https://byteball.org/Byteball.pdf) for details.
+The consensus algorithm used to protect from double-spends is based on establishing a total order within the DAG. This is achieved by selecting a chain, called main chain, which gravitates towards units issued by commonly recognized reputable users: witnesses. See the [white paper](https://byteball.org/Byteball.pdf) for details.
 
 ## Core features
 
@@ -41,7 +41,7 @@ The consensus algorithm used to protect from double-spends is based on establish
 
 ### What Is Byteball?
 
-Byteball is a decentralized system where you can store unique types of data – including everything from currencies to property titles to debt. The system, like other [blockchain technology](https://bitcoinexchangeguide.com/blockchain-distributed-ledger-technology/), allows you to store data in a tamper-proof way.
+Byteball is a decentralized system where you can store unique types of data, including everything from currencies to property titles to debt. The system, like other [blockchain technology](https://bitcoinexchangeguide.com/blockchain-distributed-ledger-technology/), allows you to store data in a tamper-proof way.
 
 Byteball storage units are linked to one another. Each storage unit includes one or more hashes of earlier storage units. This confirms earlier units and establishes their partial order. These sets of links form a directed acyclic graph, or DAG – similar to the blockchain.
 
