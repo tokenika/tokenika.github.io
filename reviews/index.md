@@ -1,10 +1,10 @@
-<span style="color:silver;font-size:20px">Token sales (ICOs) and distributions (share-drops)?</span>
+<span style="color:silver;font-size:20px">Token sales (ICOs) and distributions (share-drops)</span>
 
 ---
 
 ## Aventus
 
-### [Blockchain-based event ticketing solution](aventus/index.md)
+#### [Blockchain-based event ticketing solution](aventus/index.md)
 
 Aventus aims to be a decentralized, autonomous protocol for the exchange of event tickets. The project’s main objective is to bridge the primary and secondary market for ticket sales by reducing the profitability of ticket scalping, fraud and other rent-seeking behaviors. The development team imagines Aventus as an open source protocol that will serve as the underlying layer for the online event ticket market.
 
@@ -90,9 +90,9 @@ Tezos jest niezależny od innych blockchainów, a jego kod źródłowy zbudowano
 
 ---
 
-### [Bitcoin](bitcoin/index.md)
+## Bitcoin
 
-#### Czy Craig Wright to ktoś więcej niż uzurpator? I czy Bitcoin jest *Turing complete*?
+#### [Czy Craig Wright to ktoś więcej niż uzurpator? I czy Bitcoin jest *Turing complete*?](bitcoin/index.md)
 
 Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Craiga Wrighta w zakresie bitcoinowego *Turing completeness* okaże się prawdziwe (na co się zanosi), to oznacza to, że ma on wiedzę i umiejętności sugerujące jego aktywny udział w powstaniu Bitcoina.
 
