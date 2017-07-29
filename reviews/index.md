@@ -1,96 +1,70 @@
-## [Aventus](aventus/index.md)
+<span style="color:silver;font-size:12px"><u>Token sales (ICOs) and distributions (share-drops)</u></span>
 
-## [Bitcoin](bitcoin/index.md)
+### [Aventus](aventus/index.md)
 
-## [Blocktix](blocktix/index.md)
+#### Blockchain-based event ticketing solution.
 
-## [Byteball](byteball/index.md)
+Aventus aims to be a decentralized, autonomous protocol for the exchange of event tickets. The project’s main objective is to bridge the primary and secondary market for ticket sales by reducing the profitability of ticket scalping, fraud and other rent-seeking behaviors. The development team imagines Aventus as an open source protocol that will serve as the underlying layer for the online event ticket market.
 
-## [Civic](civic/index.md)
+### [Blocktix](blocktix/index.md)
 
-## [Cosmos](cosmos/index.md)
+#### Ticket Distribution and Event Promotion on Blockchain
 
-## [Decent](decent/index.md)
+Blocktix will use Ethereum smart contracts for individuals and event hosting businesses to create, advertise, and transfer ownership of event tickets. It aims to build a single-source event hosting system that includes on-chain ticket distribution, a trustless p2p ticket exchange market, and incentivized advertising. Blocktix hopes to reduce distribution and promotion cost while increasing real-time accessibility of event tickets.
 
-## [EOS](eos/index.md)
+### [Byteball](byteball/distribution.md)
 
-## [Golem](golem/index.md)
+#### Darmowa dystrybucja tokenu Byteball dla posiadaczy BTC
 
-## [IOTA](iota/index.md)
+Byteball’s developers believe that the success of the currency depends on the number of people owning and using it. That’s why they decided against ICO crowdsale, but to distribute 98% of all currency free of charge among Bitcoin holders instead. 
 
-## [Qtum](qtum/index.md)
+### [Civic](civic/index.md)
 
-## [Tezos](tezos/index.md)
+#### Secure identity management platform built on the Rootstock protocol
+
+Civic is launching a platform on the Rootstock protocol for secure identity management that rewards users of the network for sharing and validating personal identifying information.  Any service provider that the user has interacted with in the past has the opportunity to earn CVC by validating user information through an attestation.
 
 ---
 
-[Aragon](https://coinmarketcap.com/assets/aragon/)
+<span style="color:silver;font-size:12px"><u>Blockchain-based smart-contract platforms</u></span>
 
-[Ardor](https://coinmarketcap.com/assets/ardor/)
+### [Cosmos](cosmos/index.md)
 
-[Augur](https://coinmarketcap.com/assets/augur/)
+### [EOS](eos/index.md)
 
-[Bancor](https://coinmarketcap.com/assets/bancor/)
+### [Qtum](qtum/index.md)
 
-[BAT](https://coinmarketcap.com/assets/basic-attention-token/)
+### [Tezos](tezos/index.md)
 
-[BitShares](https://coinmarketcap.com/currencies/bitshares/)
+---
 
-[Counterparty](https://coinmarketcap.com/currencies/counterparty/)
+<span style="color:silver;font-size:12px"><u>Blockchain-based payment solutions</u></span>
 
-[Dash](https://coinmarketcap.com/currencies/dash/)
+### [Bitcoin](bitcoin/index.md)
 
-[Emercoin](https://emercoin.com/)
+---
 
-[Ethereum](https://www.ethereum.org/)
+<span style="color:silver;font-size:12px"><u>Blockchain-based business solutions</u></span>
 
-[Ethereum Classic](https://coinmarketcap.com/currencies/ethereum-classic/)
+### [Golem](golem/index.md)
 
-[Factom](https://coinmarketcap.com/currencies/factom/)
+---
 
-[FunFair](https://coinmarketcap.com/assets/funfair/)
+<span style="color:silver;font-size:12px"><u>Blockchain-based social networks</u></span>
 
-[Gnosis](https://coinmarketcap.com/assets/gnosis-gno/)
+### [Decent](decent/index.md)
 
-[Hyperleger/Corda](https://www.hyperledger.org/)
+---
 
-[Iconomi](https://coinmarketcap.com/assets/iconomi/)
+<span style="color:silver;font-size:12px"><u>Non-blockchain DLTs</u></span>
 
-[LBRY](https://coinmarketcap.com/currencies/library-credit/)
+### [Byteball](byteball/index.md)
 
-[Lisk](https://lisk.io/)
+## [IOTA](iota/index.md)
 
-[MaidSafe](https://maidsafe.net/)
+---
 
-[Melon](https://coinmarketcap.com/assets/melon/)
-
-[Monero](https://coinmarketcap.com/currencies/monero/)
-
-[NEM](https://www.nem.io/)
-
-[Numeraire](https://coinmarketcap.com/assets/numeraire/)
-
-[Peerplays](https://coinmarketcap.com/currencies/peerplays-ppy/)
-
-[Ripple](https://ripple.com/)
-
-[Rootstock](http://www.rsk.co/)
-
-[Siacoin](https://coinmarketcap.com/currencies/siacoin/)
-
-[Steem](https://coinmarketcap.com/currencies/steem/)
-
-[Storj](https://coinmarketcap.com/assets/storj/)
-
-[Stratis](http://stratisplatform.com/)
-
-[Synereo](https://coinmarketcap.com/assets/synereo/)
-
-[TauChain/Agoras](http://www.idni.org/)
-
-[Waves](https://coinmarketcap.com/currencies/waves/)
-
-[Zcash](https://coinmarketcap.com/currencies/zcash/)
+<span style="color:silver">[Aragon](https://coinmarketcap.com/assets/aragon/) | [Ardor](https://coinmarketcap.com/assets/ardor/) | [Augur](https://coinmarketcap.com/assets/augur/) | [Bancor](https://coinmarketcap.com/assets/bancor/) | [BAT](https://coinmarketcap.com/assets/basic-attention-token/) [BitShares](https://coinmarketcap.com/currencies/bitshares/) | [Counterparty](https://coinmarketcap.com/currencies/counterparty/) | [Dash](https://coinmarketcap.com/currencies/dash/) | [Emercoin](https://emercoin.com/) | [Ethereum](https://www.ethereum.org/) \ [Ethereum Classic](https://coinmarketcap.com/currencies/ethereum-classic/) | [Factom](https://coinmarketcap.com/currencies/factom/) | [FunFair](https://coinmarketcap.com/assets/funfair/) | [Gnosis](https://coinmarketcap.com/assets/gnosis-gno/) | [Hyperleger/Corda](https://www.hyperledger.org/) | [Iconomi](https://coinmarketcap.com/assets/iconomi/) | [LBRY](https://coinmarketcap.com/currencies/library-credit/) | [Lisk](https://lisk.io/) | [MaidSafe](https://maidsafe.net/) | [Melon](https://coinmarketcap.com/assets/melon/) | [Monero](https://coinmarketcap.com/currencies/monero/) | [NEM](https://www.nem.io/) | [NEO/AntShares](https://coinmarketcap.com/currencies/neo/) | [Numeraire](https://coinmarketcap.com/assets/numeraire/) | [Peerplays](https://coinmarketcap.com/currencies/peerplays-ppy/) | [Ripple](https://ripple.com/) | [Rootstock](http://www.rsk.co/) | [Siacoin](https://coinmarketcap.com/currencies/siacoin/) | [Steem](https://coinmarketcap.com/currencies/steem/) | [Storj](https://coinmarketcap.com/assets/storj/) | [Stratis](http://stratisplatform.com/) | [Synereo](https://coinmarketcap.com/assets/synereo/) | [TauChain/Agoras](http://www.idni.org/) | [Waves](https://coinmarketcap.com/currencies/waves/) | [Zcash](https://coinmarketcap.com/currencies/zcash/)</span>
 
 ---
 
