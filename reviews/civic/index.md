@@ -59,8 +59,6 @@ The team is led by [CEO Vinny Lingham](https://www.linkedin.com/in/vinnylingham)
 
 Jonathan Smith’s bio speaks to his more than 15 years of experience working in banking and technology advisory. Their technical partners are Rootstock, Jaxx, and [Bloq](http://bloq.com/). People from each of these companies are on their technical advisory board.
 
-The project team made themselves available for an interview with the Smith + Crown research team.
-
 ### Official Resources
 
 - [Website](https://www.civic.com/)

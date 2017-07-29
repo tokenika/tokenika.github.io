@@ -92,36 +92,36 @@ UX design is being headed by [Mario Vassiliades](https://www.linkedin.com/in/mar
 
 Aventus also has relationships with a number of advisors with experience in cryptocurrency research, the economics of ticket sales, entertainment management and finance. The advisors includes [Diane Bowers](https://www.linkedin.com/in/dianembowers/), the director of Blue Horizon Entertainment.
 
-### Project Details
+| Project Details        |                                          |
+| ---------------------- | ---------------------------------------- |
+| Incorporation status   | Aventus Systems Limited, 2016, England   |
+| Team openness          | Fully transparent                        |
+| Blockchain Developer   | Alan Vey and Annika Monari               |
+| Technical White Paper  | Mainly Non-Technical, Algorithmic parameters are explained |
+| Available Project Code | Not avaliable                            |
+| Prototype              | Alpha version avaliable                  |
 
-Incorporation status:			Aventus Systems Limited, 2016, England
-Team openness:				Fully transparent
-Blockchain Developer:		Alan Vey and Annika Monari
-Technical White Paper:		Mainly Non-Technical, Algorithmic parameters are explained
-Available Project Code:		Not avaliable
-Prototype:					Alpha version avaliable
+| Token Details      |                                 |
+| ------------------ | ------------------------------- |
+| Role of the token  | Access rights and voting rights |
+| Token supply       | 10 million                      |
+| Distributed in ICO | 6 million                       |
+| Emission rate      | No new coins created            |
+| Blockchain         | Ethereum                        |
+| Consensus method   | Proof of Work                   |
 
-### Token Details
-
-Role of token:				Access rights and Voting rights
-Token supply:				10 million
-Distributed in ICO:			6 million
-Emission rate:				No new coins created
-Blockchain:					Ethereum
-Consensus method:			Proof of Work
-
-### ICO Details
-
-Sale period:					[Sale delayed to late August / early September](https://blog.aventus.io/postponing-the-aventus-crowd-sale-696934d20c42)
-First price:					1 ETH : 92 AVT
-Accepted currencies:			ETH
-Investment Round:			First public offering
-Token distribution date:		July 24th, 2017
-Min investment goal:			7.5 million USD
-Max investment cap:			15 million USD
-How are funds held:			Unclear
-Minimal Viable Product:		First event tickets will be hosted in 2018
-Bonus schedule:				No Bonus
+| ICO Details             |                                          |
+| ----------------------- | ---------------------------------------- |
+| Sale period             | [Sale delayed to late August / early September](https://blog.aventus.io/postponing-the-aventus-crowd-sale-696934d20c42) |
+| First price             | 1 ETH : 92 AVT                           |
+| Accepted currencies     | ETH                                      |
+| Investment Round        | First public offering                    |
+| Token distribution date | July 24th, 2017                          |
+| Min investment goal     | 7.5 million USD                          |
+| Max investment cap      | 15 million USD                           |
+| How are funds held      | Unclear                                  |
+| Minimal Viable Product  | First event tickets will be hosted in 2018 |
+| Bonus schedule          | No Bonus                                 |
 
 ### Official Resources
 
