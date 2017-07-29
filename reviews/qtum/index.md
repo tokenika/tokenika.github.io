@@ -1,7 +1,5 @@
 ## Qtum aims to be a proof-of-stake, smart-contract compatible blockchain that can natively run both Bitcoin-based and Ethereum-based applications.
 
-> Poniższy tekst jest w dużej mierze oparty na [recenzji Qtum](https://www.smithandcrown.com/qtum-ico-building-first-utxo-proof-stake-smart-contract-platform/) wykonanej przez [*Smith+Crown*](https://www.smithandcrown.com/about). Oryginalny tekst jest na tyle solidny i dobrze ustrukturyzowany, że uznałem że nie ma sensu na siłę tworzyć własnego, prościej jest przeredagować i uzupełnić tamten.
-
 **Key Strengths**
 
 - Qtum is the first to implement a protocol based on both Bitcoin’s and Ethereum’s transaction models. Developers on either chain in theory should be able to port applications easily.

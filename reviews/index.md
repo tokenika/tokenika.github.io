@@ -1,28 +1,34 @@
 <span style="color:silver;font-size:12px"><u>Token sales (ICOs) and distributions (share-drops)</u></span>
 
-### [Aventus: Blockchain-based event ticketing solution](aventus/index.md)
+---
+
+## Aventus
+
+### [Blockchain-based event ticketing solution](aventus/index.md)
 
 Aventus aims to be a decentralized, autonomous protocol for the exchange of event tickets. The project’s main objective is to bridge the primary and secondary market for ticket sales by reducing the profitability of ticket scalping, fraud and other rent-seeking behaviors. The development team imagines Aventus as an open source protocol that will serve as the underlying layer for the online event ticket market.
 
 ---
 
-##### <u>Blocktix</u>
+## Blocktix
 
-### [Ticket Distribution and Event Promotion on Blockchain](blocktix/index.md)
+#### [Ticket distribution and event promotion on blockchain](blocktix/index.md)
 
 Blocktix will use Ethereum smart contracts for individuals and event hosting businesses to create, advertise, and transfer ownership of event tickets. It aims to build a single-source event hosting system that includes on-chain ticket distribution, a trustless p2p ticket exchange market, and incentivized advertising. Blocktix hopes to reduce distribution and promotion cost while increasing real-time accessibility of event tickets.
 
 ---
 
-### [Byteball](byteball/distribution.md)
+## Bytebal
 
-#### Darmowa dystrybucja tokenu Byteball dla posiadaczy BTC
+#### [Darmowa dystrybucja tokenu Byteball dla posiadaczy BTC](byteball/distribution.md)
 
 Byteball’s developers believe that the success of the currency depends on the number of people owning and using it. That’s why they decided against ICO crowdsale, but to distribute 98% of all currency free of charge among Bitcoin holders instead. 
 
-### [Civic](civic/index.md)
+---
 
-#### Secure identity management platform built on the Rootstock protocol
+## Civic
+
+#### [Secure identity management platform built on the Rootstock protocol](civic/index.md)
 
 Civic is launching a platform on the Rootstock protocol for secure identity management that rewards users of the network for sharing and validating personal identifying information.  Any service provider that the user has interacted with in the past has the opportunity to earn CVC by validating user information through an attestation.
 
@@ -32,15 +38,41 @@ Civic is launching a platform on the Rootstock protocol for secure identity mana
 
 <br/>
 
+---
+
 <span style="color:silver;font-size:12px"><u>Blockchain-based smart-contract platforms</u></span>
 
-### [Cosmos](cosmos/index.md)
+---
 
-### [EOS](eos/index.md)
+## Cosmos
 
-### [Qtum](qtum/index.md)
+#### [Blockchain capable to interoperate with any other blockchain](cosmos/index.md)
 
-### [Tezos](tezos/index.md)
+Cosmos is building a proof-of-stake blockchain that will be interoperable with any blockchain, communicate with any programming language, and support any token asset.
+
+---
+
+## EOS
+
+#### [Powerful infrastructure for decentralized applications](eos/index.md)
+
+EOS introduces a new blockchain architecture designed to enable vertical and horizontal scaling of decentralized applications. The software provides accounts, authentication, databases, asynchronous communication and the scheduling of applications across hundreds of CPU cores or clusters. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
+
+---
+
+## Qtum
+
+#### [Smart-contract compatible blockchain that can natively run both Bitcoin-based and Ethereum-based applications](qtum/index.md)
+
+Qtum will be a proof-of-stake (PoS), smart-contract compatible blockchain that can natively run both Bitcoin-based and Ethereum-based applications. The protocol uses Bitcoin’s UXTO model of storing transactions, while also supporting oracles and two types of smart contracts. Applications built for Bitcoin, Etheruem, or either of their derivatives, should be able to port easily. 
+
+---
+
+## Tezos
+
+#### [Zdecentralizowana platforma smart-kontraktowa z formalnie weryfikowalnym językiem programowania i ze zintegrowanym systemem samorządności](tezos/index.md)
+
+Tezos jest niezależny od innych blockchainów, a jego kod źródłowy zbudowano od zera (czyli nie jest to klon innego projektu). Do tworzenia kontraktów wymagane jest użycie specjalnego języka skryptowego (odpowiednik języka *Solidity* na ETH).
 
 ---
 
