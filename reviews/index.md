@@ -1,5 +1,3 @@
----
-
 <span style="color:silver;font-size:25px">Token sales (ICOs) and distributions (share-drops)?</span>
 
 ---
