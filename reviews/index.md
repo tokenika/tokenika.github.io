@@ -4,7 +4,7 @@
 
 ---
 
-## Aventus
+## Aventus?
 
 ### [Blockchain-based event ticketing solution](aventus/index.md)
 
