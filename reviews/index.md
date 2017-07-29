@@ -1,4 +1,6 @@
-<span style="color:silver;font-size:12px"><u>Token sales (ICOs) and distributions (share-drops)</u></span>
+---
+
+<span style="color:silver;font-size:25px">Token sales (ICOs) and distributions (share-drops)</span>
 
 ---
 
@@ -38,9 +40,11 @@ Civic is launching a platform on the Rootstock protocol for secure identity mana
 
 <br/>
 
+<br/>
+
 ---
 
-<span style="color:silver;font-size:12px"><u>Blockchain-based smart-contract platforms</u></span>
+<span style="color:silver;font-size:30px"><u>Blockchain-based smart-contract platforms</u></span>
 
 ---
 
@@ -76,7 +80,7 @@ Tezos jest niezależny od innych blockchainów, a jego kod źródłowy zbudowano
 
 ---
 
-<span style="color:silver;font-size:12px"><u>Blockchain-based payment solutions</u></span>
+<span style="color:silver;font-size:20px"><u>Blockchain-based payment solutions</u></span>
 
 ### [Bitcoin](bitcoin/index.md)
 
@@ -86,7 +90,17 @@ Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Crai
 
 ---
 
-<span style="color:silver;font-size:12px"><u>Blockchain-based business solutions</u></span>
+<br/>
+
+<br/>
+
+<br/>
+
+---
+
+<span style="color:silver;font-size:22px"><u>Blockchain-based business solutions</u></span>
+
+---
 
 ### [Golem](golem/index.md)
 
