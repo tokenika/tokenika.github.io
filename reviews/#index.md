@@ -1,8 +1,8 @@
-<span style="color:silver;font-size:20px">Token sales (ICOs) and distributions (share-drops)?</span>
+<span style="color:silver;font-size:25px">Token sales (ICOs) and distributions (share-drops)?</span>
 
 ---
 
-## Aventus
+## Aventus?
 
 ### [Blockchain-based event ticketing solution](aventus/index.md)
 
@@ -42,7 +42,7 @@ Civic is launching a platform on the Rootstock protocol for secure identity mana
 
 ---
 
-<span style="color:silver;font-size:20px">Blockchain-based smart-contract platforms</span>
+<span style="color:silver;font-size:30px">Blockchain-based smart-contract platforms</span>
 
 ---
 
@@ -106,7 +106,7 @@ Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Crai
 
 ---
 
-<span style="color:silver;font-size:20px">Blockchain-based business solutions</span>
+<span style="color:silver;font-size:22px">Blockchain-based business solutions</span>
 
 ---
 
@@ -146,7 +146,7 @@ The new way of publishing, intended for creative people, authors, bloggers, publ
 
 ---
 
-<span style="color:silver;font-size:20px">Non-blockchain DLTs</span>
+<span style="color:silver;font-size:12px">Non-blockchain DLTs</span>
 
 ---
 
