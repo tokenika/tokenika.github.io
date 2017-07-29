@@ -31,14 +31,14 @@ Minimal Viable Product:	Q4 2017
 | Available Project Code | [Yes](https://github.com/blocktix)       |
 | Prototype              | Not available                            |
 
-| Token Details      |                                          |
-| ------------------ | ---------------------------------------- |
-| Role of the token  | Vote in governance decisions, protocol changes and fees. |
-| Token supply       | 62.5 million                             |
-| Distributed in ICO | 40 million                               |
-| Emission rate      | No new coins created                     |
-| Blockchain         | Ethereum                                 |
-| Consensus method   | Proof of Work                            |
+| Token Details      |                                       |
+| ------------------ | ------------------------------------- |
+| Role of the token  | Fees and vote in governance decisions |
+| Token supply       | 62.5 million                          |
+| Distributed in ICO | 40 million                            |
+| Emission rate      | No new coins created                  |
+| Blockchain         | Ethereum                              |
+| Consensus method   | Proof of Work                         |
 
 | ICO Details             |                                    |
 | ----------------------- | ---------------------------------- |
