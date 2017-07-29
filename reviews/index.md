@@ -44,7 +44,7 @@ Civic is launching a platform on the Rootstock protocol for secure identity mana
 
 ---
 
-<span style="color:silver;font-size:30px"><u>Blockchain-based smart-contract platforms</u></span>
+<span style="color:silver;font-size:30px">Blockchain-based smart-contract platforms</span>
 
 ---
 
@@ -80,7 +80,17 @@ Tezos jest niezależny od innych blockchainów, a jego kod źródłowy zbudowano
 
 ---
 
-<span style="color:silver;font-size:20px"><u>Blockchain-based payment solutions</u></span>
+<br/>
+
+<br/>
+
+<br/>
+
+---
+
+<span style="color:silver;font-size:20px">Blockchain-based payment solutions</span>
+
+---
 
 ### [Bitcoin](bitcoin/index.md)
 
@@ -98,7 +108,7 @@ Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Crai
 
 ---
 
-<span style="color:silver;font-size:22px"><u>Blockchain-based business solutions</u></span>
+<span style="color:silver;font-size:22px">Blockchain-based business solutions</span>
 
 ---
 
@@ -106,17 +116,47 @@ Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Crai
 
 ---
 
-<span style="color:silver;font-size:12px"><u>Blockchain-based social networks</u></span>
+<br/>
+
+<br/>
+
+<br/>
+
+---
+
+<span style="color:silver;font-size:12px">Blockchain-based social networks</span>
+
+---
 
 ### [Decent](decent/index.md)
 
 ---
 
-<span style="color:silver;font-size:12px"><u>Non-blockchain DLTs</u></span>
+<br/>
+
+<br/>
+
+<br/>
+
+---
+
+<span style="color:silver;font-size:12px">Non-blockchain DLTs</span>
+
+---
 
 ### [Byteball](byteball/index.md)
 
-## [IOTA](iota/index.md)
+---
+
+### [IOTA](iota/index.md)
+
+---
+
+<br/>
+
+<br/>
+
+<br/>
 
 ---
 
