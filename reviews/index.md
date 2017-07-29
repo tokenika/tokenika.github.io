@@ -112,7 +112,11 @@ Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Crai
 
 ---
 
-### [Golem](golem/index.md)
+## Golem
+
+#### [Decentralized supercomputer and a software service marketplace](golem/index.md)
+
+Golem is a very interesting project for many reasons with an end goal of building a decentralized supercomputer and a software service marketplace for the next generation of the web (web 3.0, aka the decentralised web). It’s very ambitious, they have an open and inclusive approach and in the end I think they will contribute a lot back to the Ethereum community.
 
 ---
 
@@ -128,7 +132,11 @@ Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Crai
 
 ---
 
-### [Decent](decent/index.md)
+## Decent
+
+#### [Decentralized blockchain-based communication protocol for anyone who wants to share or publish any digital data on the internet](decent/index.md)
+
+The new way of publishing, intended for creative people, authors, bloggers, publicists and their fans and followers. It allows borderless publishing of any text, picture, video or music content.
 
 ---
 
@@ -144,11 +152,19 @@ Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Crai
 
 ---
 
-### [Byteball](byteball/index.md)
+## Byteball
+
+#### [While Iota is specialized for machine-to-machine use, Byteball is specialized for human-to-human applications](byteball/index.md)
+
+Byteball is a decentralized system where you can store unique types of data – including everything from currencies to property titles to debt. The system, like other [blockchain technology](https://bitcoinexchangeguide.com/blockchain-distributed-ledger-technology/), allows you to store data in a tamper-proof way.
 
 ---
 
-### [IOTA](iota/index.md)
+## IOTA
+
+#### [Micro-transaction crypto-token optimized for the Internet-of-Things](iota/index.md)
+
+IOTA aims to become the backbone of Economy-of-Things and the world standard for micro-transactions. Its creators maintain they've achieved remarkable results in such important areas as: scalability, storage, bandwidth and fees (actually there are no fees, just like Steem). IOTA’s design diverged radically from other blockchain crypto-currencies. It's a blockchain but without blocks - it makes use of Directed Acyclic Graph.
 
 ---
 

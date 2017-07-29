@@ -1,6 +1,8 @@
-# Golem:  a decentralized supercomputer and a software service marketplace. In other words: decentralised Amazon Web Services.
+# Golem:  a decentralized supercomputer and a software service marketplace.
 
 Golem is a very interesting project for many reasons with an end goal of building a decentralized supercomputer and a software service marketplace for the next generation of the web (web 3.0, aka the decentralised web). It’s very ambitious, they have an open and inclusive approach and in the end I think they will contribute a lot back to the Ethereum community.
+
+In other words: Golem is Amazon Web Services but decentralised.
 
 A few weeks ago they released a [draft white paper](https://blog.golemproject.net/golem-crowdfunding-whitepaper-draft-release-f5b7b8a0cb06#.62qpvo1kq) for the upcoming ICO and asked for feedback. That’s a great initiative in my opinion. No one knows (yet) the ultimate strategy and mechanics for crowdfundings that will give the right balance of information and expectations to participants as well as give the project the highest long term chance of success. Being open to improve this process is a great step forward.
 
