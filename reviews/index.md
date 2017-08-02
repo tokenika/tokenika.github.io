@@ -62,6 +62,14 @@ EOS introduces a new blockchain architecture designed to enable vertical and hor
 
 ---
 
+## NEO
+
+#### [Distributed network for the Smart Economy](neo/index.md)
+
+NEO is the use of blockchain technology and digital identity to digitize assets, the use of smart contracts for digital assets to be self-managed, to achieve "smart economy" with a distributed network.
+
+---
+
 ## Qtum
 
 #### [Smart-contract compatible blockchain that can natively run both Bitcoin-based and Ethereum-based applications](qtum/index.md)
