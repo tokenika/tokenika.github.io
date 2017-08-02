@@ -128,13 +128,13 @@ NeoVM is a lightweight, general-purpose virtual machine whose architecture is ve
 
 **InteropService - Interoperable Services:**
 
-Used to load the blockchain ledger, digital assets, digital identity, persistent storage area and other underlying services. They are like virtual machines that are provided for virtual machines, enabling smart contracts to access these services at run time to achieve some advanced functionality. Through this low-coupling design, **NeoVM can be ported to any blockchain or even non-blockchain system used, increasing the utility of the smart contracts.**
+Used to load the blockchain ledger, digital assets, digital identity, persistent storage area and other underlying services. They are like virtual machines that are provided for virtual machines, enabling smart contracts to access these services at run time to achieve some advanced functionality. Through this low-coupling design, NeoVM can be ported to any blockchain or even non-blockchain system used, increasing the utility of the smart contracts.
 
 **DevPack - Compiler and IDE plugin:**
 
-DevPack includes the high-level language compiler and the IDE plug-in. Because NeoVM's architecture is very similar to JVM and .NET Runtime, the compilers in DevPack can compile Java byte code and .NET MSIL into NeoVM's instruction set. Java / Kotlin, C# developers do not need to learn new languages and will be able to immediately start developing smart contracts in VS, Eclipse and other familiar IDE environments. **This greatly reduces the learning curve for developing smart contracts, allowing us to easily build a vibrant community around NeoContract.**
+DevPack includes the high-level language compiler and the IDE plug-in. Because NeoVM's architecture is very similar to JVM and .NET Runtime, the compilers in DevPack can compile Java byte code and .NET MSIL into NeoVM's instruction set. Java / Kotlin, C# developers do not need to learn new languages and will be able to immediately start developing smart contracts in VS, Eclipse and other familiar IDE environments. This greatly reduces the learning curve for developing smart contracts, allowing us to easily build a vibrant community around NeoContract.
 
-NeoContract can create a smart contract call tree through static analysis before running a smart contract. **Through the deterministic call tree, the NEO node can dynamically fragment the smart contract to achieve theoretically unlimited expansion**, which overcomes the "jamming effect" caused by the static fragmentation of other block chain systems.
+NeoContract can create a smart contract call tree through static analysis before running a smart contract. Through the deterministic call tree, the NEO node can dynamically fragment the smart contract to achieve theoretically unlimited expansion, which overcomes the "jamming effect" caused by the static fragmentation of other block chain systems.
 
 ### Cross-chain interoperability agreement: NeoX
 
@@ -170,19 +170,19 @@ NEO is a distributed network that combines digital assets, digital identities an
 
 ## Collaborations
 
-### **Alibaba**
+#### Alibaba
 
 In October of 2016, Jack Ma from Alibaba announced that it would use a blockchain called the Law Chain, with development partners Microsoft and China’s [open-source blockchain Antshares](https://www.antshares.org/), as an email repository for its Ali Cloud platform. By backing up its email and cloud services on the Law Chain, Alibaba will enable large scale adoption of digital evidence and emails in Chinese courts.
 
 This has significant implications for Chinese society. Ali Cloud is one of China’s top providers of computing services, domain services, emails, network security and big data analysis. With its data and emails preserved for judicial departments as courtroom evidence, this may be the first instance of blockchain being utilized by a state judiciary.
 
-### **Microsoft**
+#### Microsoft
 
 The Antshares team has teamed-up with Microsoft to work on R&D, specifically with their Azure PaaS. The team will be working on ‘The Legal Chain’, a consortium chain developed by Fadada (China’s leading online legal service firm), Onchain (a for-profit entity created by the Antshares team), and Microsoft Azure that provides a blockchain-powered digital legal evidence repository.
 
 The team is also working with Microsoft in several other confidential initiatives like direct utilization of the Antshares blockchain. According to Da Hongfei, the creator of Antshares, their blockchain project will enable interoperability in the future that is increasingly heading towards a multi-chain environment.
 
-### **WINGS**
+#### WINGS
 
 Not only that, Antshares has also partnered with WINGS, a decentralized platform to create, join and manage decentralized autonomous organizations (DAO).
 
@@ -268,31 +268,31 @@ Due to NEO’s corporate partners –  among whom are included Microsoft, etc. �
 
 Antshares bridges the gap between digital and traditional financial ecosystems by allowing the creation of digital assets and conversion of real-world financial assets to virtual ones. People can register, deposit, transfer, trade and even make settlement of digital assets over Antshares network.
 
-##### E-contracts and Fiat Currency Support
+#### E-contracts and Fiat Currency Support
 
 Activities on [Antshares network are registered as e-contracts](https://www.antshares.org/) on the underlying distributed ledger. These e-contracts can be used to maintain a record of transactions and rights associated with digital assets like equities, claims, securities, financial contracts, credit points, bills and currencies.
 
-##### User-controlled Identity Authentication
+#### User-controlled Identity Authentication
 
 Antshares platform closely matches with the existing structures to ensure ease of migration from conventional documentation procedures to digital ones.
 
-##### Joint Bookkeeping
+#### Joint Bookkeeping
 
 Antshares deviates from the existing bookkeeping norms set by the likes of Bitcoin, Ethereum and Bitshares by allowing joint book-keeping where more than one person is involved in the process.
 
-##### Antshares dBFT Consensus Algorithm
+#### Antshares dBFT Consensus Algorithm
 
 The use distributed Byzantine Fault Tolerance (dBFT) Consensus Algorithm increases the fault tolerance of the distributed ledger. It allows Antshares to separate bookkeeping nodes from ordinary listening nodes that match orders and generate blocks to be added later on to the bookkeeping node. It also makes the platform more energy and time efficient.
 
-##### Division of Labor of Nodes
+#### Division of Labor of Nodes
 
 The blockchain network in Antshares is further optimized by the clear demarcation of tasks to prevent unnecessary exploitation of members’ storage space and processing power. The bookkeeping nodes and full nodes are operated and maintained by service providers.
 
-##### Scalability
+#### Scalability
 
 The low latency and high throughput architecture of Antshares, brought about by the use of weak trust based consensus mechanism will allow unlimited scalability of the network. With a block interval of 15 seconds, Antshares blockchain is capable of processing tens of thousands of requests per minute.
 
-##### Superconducting Transactions
+#### Superconducting Transactions
 
 In order to cut the processing time and power, the order book-keeping and order matching is delegated to a secondary layer of the blockchain instead of core bookkeeping nodes. The use of multiple layers offers [greater control over transactions to Antshares users](https://www.antshares.org/). During a transaction, orders are matched by the secondary layer of the blockchain, which then sends it to the primary book-keeping nodes for clearance and settlement. Users can decide to cancel a transaction by launching a double spend attack before the transaction is cleared by book-keeping nodes.
 
