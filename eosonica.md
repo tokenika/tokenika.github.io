@@ -48,6 +48,9 @@ Nasza przestrzeń działania wygląda następująco:
 
 Z jednej strony działanie biznesowe ukierunkowane na jednego klienta stwarza spore ryzyko (bo nasz sukces jest uwarunkowany sukcesem EOSa), ale z drugiej strony mamy bardzo precyzyjnie zdefiniowaną przestrzeń działania i jedynym naszym zmartwieniem jest uzyskanie przewagi nad konkurencyjnymi podmiotami.
 
-Spodziewamy się, że konkurencja o rolę witnessa będzie spora, ale jest istotna okoliczność działająca na naszą korzyść: nawet jeśli nie odniesiemy natychmiastowego sukcesu w czerwcu 2018, to uzyskane doświadczenie i reputacja pozwolą nam na ubieganie się o pozycję witnessa w przyszłości albo przesunięcie uwagi na budowę biznesów działających na bazie EOSa.  
+Spodziewamy się, że konkurencja o rolę witnessa będzie spora, ale jest istotna okoliczność działająca na naszą korzyść: nawet jeśli nie odniesiemy natychmiastowego sukcesu w czerwcu 2018, to uzyskane doświadczenie, know-how i reputacja pozwolą nam na:
 
-Tak więc jedynym nieusuwalnym ryzykiem jest kwestia sukcesu samego EOSa - to jest coś na co nie mamy bezpośredniego wpływu.
+- ubieganie się o pozycję witnessa w przyszłości 
+- i/lub budowę biznesów działających na bazie EOSa.  
+
+Tak więc jedynym nieusuwalnym ryzykiem jest kwestia sukcesu samego EOSa - to jest coś, na co nie mamy bezpośredniego wpływu.

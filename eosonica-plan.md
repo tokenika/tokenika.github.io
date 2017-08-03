@@ -4,7 +4,7 @@ Plan na najbliższe 3 miesiące - od sierpnia do października 2017:
 
 #### Sprawy biznesowe
 
-- wybór nazwy/brandu (wstępne propozycje: eos-europe, eos-ventures, eos-enterprise, eosonica)
+- wybór nazwy/brandu (wstępne propozycje: *eos-europe*, *eos-ventures*, *eos-enterprise*, *eosonica*)
 - rozpisanie i akceptacja budżetu (ewentualnie decyzja o chęci pozyskania dodatkowego kapitału)
 - uruchomienie strony webowej (na początek tylko wersja angielska)
 - rekrutacja developera C++ (lub profesjonalnego audytora kodu C++)
@@ -21,15 +21,14 @@ Plan na najbliższe 3 miesiące - od sierpnia do października 2017:
 
 ## Harmonogram
 
-| Zadanie                                  | Termin      | Odpowiedzialny | Status |      |
-| ---------------------------------------- | ----------- | -------------- | ------ | ---- |
-| Ustalenie nazwy witnessa                 | 9 sierpnia  | Jakub          |        |      |
-| Przygotowanie propozycji budżetu         | 9 sierpnia  | Jakub          |        |      |
-| Wstępny projekt strony webowej           | 9 sierpnia  | Jakub          |        |      |
-| Uruchomienie strony webowej              | 16 sierpnia | Jakub          |        |      |
-| Kompilacja kodu i uzyskanie gotowości do testnetu | 16 sierpnia | Jakub          |        |      |
-| Rezerwacja udziału w Warsaw Startup Weekend | 16 sierpnia | Jakub/Marcin   |        |      |
-| Research docelowej infrastruktury IT     | 31 sierpnia | Marcin         |        |      |
-| Zbudowanie contentu dla strony webowej   | 6 września  | Jakub          |        |      |
-| Bilety (lotnicze + VIP) na Szanghai i/lub Londyn | 16 sierpnia | Jakub, Tomek   |        |      |
-|                                          |             |                |        |      |
+| Zadanie                                  | Termin      | Odpowiedzialny | Status |
+| ---------------------------------------- | ----------- | -------------- | ------ |
+| Ustalenie nazwy witnessa                 | 9 sierpnia  | Jakub          |        |
+| Przygotowanie propozycji budżetu         | 9 sierpnia  | Jakub          |        |
+| Wstępny projekt strony webowej           | 9 sierpnia  | Jakub          |        |
+| Uruchomienie strony webowej              | 16 sierpnia | Jakub          |        |
+| Kompilacja kodu i uzyskanie gotowości do testnetu | 16 sierpnia | Jakub          |        |
+| Rezerwacja udziału w Warsaw Startup Weekend | 16 sierpnia | Jakub, Marcin  |        |
+| Research docelowej infrastruktury IT     | 31 sierpnia | Marcin         |        |
+| Zbudowanie contentu dla strony webowej   | 6 września  | Jakub          |        |
+| Bilety (lotnicze + VIP) na Szanghai i/lub Londyn | 16 sierpnia | Jakub, Tomek   |        |
