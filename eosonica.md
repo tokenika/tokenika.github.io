@@ -63,7 +63,7 @@ Tak więc jedynym nieusuwalnym ryzykiem jest kwestia sukcesu samego EOSa - to je
 
 #### Sprawy technologiczne
 
-- wynajem prostego serwera, kompilacja kodu, dołączenie do testnetu (Jakub, do 16 sierpnia)
+- wynajem prostego serwera, kompilacja kodu, dołączenie do testnetu
 - research w zakresie infrastruktury IT potrzebnej do pełnienia roli witnessa w wersji live
 
 #### Networking
@@ -73,15 +73,16 @@ Tak więc jedynym nieusuwalnym ryzykiem jest kwestia sukcesu samego EOSa - to je
 
 ## Harmonogram
 
-| Zadanie                                | Termin      | Odpowiedzialny | Status |      |
-| -------------------------------------- | ----------- | -------------- | ------ | ---- |
-| Ustalenie nazwy                        | 9 sierpnia  | Jakub          |        |      |
-| Przygotowanie propozycji budżetu       | 9 sierpnia  | Jakub          |        |      |
-| Wstępny projekt strony webowej         | 9 sierpnia  | Jakub          |        |      |
-| Uruchomienie strony webowej            | 16 sierpnia | Jakub          |        |      |
-| Kompilacja kodu i gotowość do testnetu | 16 sierpnia | Jakub          |        |      |
-| Rezerwacja Warsaw Startup Weekend      | 16 sierpnia | Jakub/Marcin   |        |      |
-| Research docelowej infrastruktury IT   | 31 sierpnia | Marcin         |        |      |
-| Zbudowanie contentu dla strony webowej | 6 września  | Jakub          |        |      |
-| Bilety VIP na Szanghai i/lub Londyn    | 16 sierpnia | Jakub          |        |      |
-| Bilety lotnicze Szanghai               | 16 sierpnia | Tomek          |        |      |
+| Zadanie                                  | Termin      | Odpowiedzialny | Status |      |
+| ---------------------------------------- | ----------- | -------------- | ------ | ---- |
+| Ustalenie nazwy witnessa                 | 9 sierpnia  | Jakub          |        |      |
+| Przygotowanie propozycji budżetu         | 9 sierpnia  | Jakub          |        |      |
+| Wstępny projekt strony webowej           | 9 sierpnia  | Jakub          |        |      |
+| Uruchomienie strony webowej              | 16 sierpnia | Jakub          |        |      |
+| Kompilacja kodu i uzyskanie gotowości do testnetu | 16 sierpnia | Jakub          |        |      |
+| Rezerwacja udziału w Warsaw Startup Weekend | 16 sierpnia | Jakub/Marcin   |        |      |
+| Research docelowej infrastruktury IT     | 31 sierpnia | Marcin         |        |      |
+| Zbudowanie contentu dla strony webowej   | 6 września  | Jakub          |        |      |
+| Bilety (lotnicze + VIP) na Szanghai i/lub Londyn | 16 sierpnia | Jakub, Tomek   |        |      |
+|                                          |             |                |        |      |
+
