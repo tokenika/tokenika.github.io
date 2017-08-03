@@ -1,6 +1,6 @@
 ## Główny cel
 
-Ogólnym celem jest stworzenie w ciągu najbliższych 10 miesięcy reputacji wartościowego kontrybutora ekosystemu EOSa, tak aby uzyskać status witnessa EOSa w czerwcu 2018, gdy EOS ruszy w wersji live.
+Głównym celem jest stworzenie w ciągu najbliższych 10 miesięcy reputacji wartościowego kontrybutora ekosystemu EOSa, tak aby uzyskać status witnessa EOSa w czerwcu 2018, gdy EOS ruszy w wersji live.
 
 ## Trzy domeny działania
 
@@ -28,6 +28,7 @@ Cel: reputacja przydatności
 
 - serwis analogiczny do [etherscan](https://etherscan.io/) lub [steemdb](https://steemdb.com/)
 - albo inny serwis inspirowany tym co jest wymienione na [steemtools.com](http://steemtools.com/)
+- w przyszłości, gdy zdobędziemy większe doświadczenie, będziemy dążyć do uruchomienia własnego biznesu na EOSie, najprawdpodobniej poprzez emisję własnego tokenu
 
 ## Przestrzeń działania
 
@@ -37,10 +38,11 @@ Jedyna różnica między nami a normalnym start-upem jest taka, że w odróżnie
 
 Nasza przestrzeń działania wygląda następująco:
 
-- mamy dość unikalne zasoby (w postaci dostępu do kapitału, wiedzy i doświadczenia, reputacji, kontaktów i położenia geograficznego)
-- mamy jednego klienta ale mnogość po stronie konkurencji
-- będziemy musieli ponieść wymierne koszty przez pierwsze 10 miesięcy (do momentu EOS live, tj. czerwiec 2018)
-- istnieje realna perspektywa wysokich przychodów (z których większość zapewne warto będzie reinwestować żeby utrzymać uzyskaną pozycję)
+- Mamy dość unikalne zasoby (w postaci dostępu do kapitału, wiedzy i doświadczenia, reputacji, kontaktów i położenia geograficznego).
+- Mamy jednego odbiorcę naszych usług (tj. społeczność EOS) ale mnogość po stronie konkurencji.
+- Będziemy musieli ponieść wymierne koszty przez pierwsze 10 miesięcy (do momentu EOS live, tj. czerwiec 2018). 
+- Możemy spodziewać się, że część kosztów marketingowych zostanie nam zrekompensowana bezpośrednio przez założycieli EOSa, tj. spółkę BlockOne.
+- Istnieje realna perspektywa wysokich przychodów, z których większość zapewne warto będzie reinwestować żeby utrzymać uzyskaną pozycję.
 
 ## Ryzyko
 
@@ -49,40 +51,3 @@ Z jednej strony działanie biznesowe ukierunkowane na jednego klienta stwarza sp
 Spodziewamy się, że konkurencja o rolę witnessa będzie spora, ale jest istotna okoliczność działająca na naszą korzyść: nawet jeśli nie odniesiemy natychmiastowego sukcesu w czerwcu 2018, to uzyskane doświadczenie i reputacja pozwolą nam na ubieganie się o pozycję witnessa w przyszłości albo przesunięcie uwagi na budowę biznesów działających na bazie EOSa.  
 
 Tak więc jedynym nieusuwalnym ryzykiem jest kwestia sukcesu samego EOSa - to jest coś na co nie mamy bezpośredniego wpływu.
-
-## Najbliższe kroki
-
- Plan krótkookresowy na najbliższe 3 miesiące - do października 2017:
-
-#### Sprawy biznesowe
-
-- wybór nazwy/brandu (wstępne propozycje: eos-europe, eos-ventures, eos-enterprise, eosonica)
-- rozpisanie i akceptacja budżetu (ewentualnie decyzja o chęci pozyskania dodatkowego kapitału)
-- uruchomienie strony webowej (na początek tylko wersja angielska)
-- rekrutacja audytora kodu c++ lub developera c++
-
-#### Sprawy technologiczne
-
-- wynajem prostego serwera, kompilacja kodu, dołączenie do testnetu
-- research w zakresie infrastruktury IT potrzebnej do pełnienia roli witnessa w wersji live
-
-#### Networking
-
-- udział w konferencji EOS w [Szanghaju](http://blockchainlabs.org/summit2017/en/index_en.html) i/lub [Londynie](https://blockchainlive.com/adopter-agenda/)
-- udział w październikowym  [Warsaw Startup Weekend](http://swwaw.com/), który w tym roku ma być poświęcony [tematowi Fintech i blockchain](https://www.facebook.com/StartupWeekendWarsaw/?hc_ref=ARQ3SlBsXfmfHyXozIEvzHnzrnEm74CqOhhLeKjB9ZtSzTJBohO4GeH75j7Krx4Txcc&fref=nf)
-
-## Harmonogram
-
-| Zadanie                                  | Termin      | Odpowiedzialny | Status |      |
-| ---------------------------------------- | ----------- | -------------- | ------ | ---- |
-| Ustalenie nazwy witnessa                 | 9 sierpnia  | Jakub          |        |      |
-| Przygotowanie propozycji budżetu         | 9 sierpnia  | Jakub          |        |      |
-| Wstępny projekt strony webowej           | 9 sierpnia  | Jakub          |        |      |
-| Uruchomienie strony webowej              | 16 sierpnia | Jakub          |        |      |
-| Kompilacja kodu i uzyskanie gotowości do testnetu | 16 sierpnia | Jakub          |        |      |
-| Rezerwacja udziału w Warsaw Startup Weekend | 16 sierpnia | Jakub/Marcin   |        |      |
-| Research docelowej infrastruktury IT     | 31 sierpnia | Marcin         |        |      |
-| Zbudowanie contentu dla strony webowej   | 6 września  | Jakub          |        |      |
-| Bilety (lotnicze + VIP) na Szanghai i/lub Londyn | 16 sierpnia | Jakub, Tomek   |        |      |
-|                                          |             |                |        |      |
-
