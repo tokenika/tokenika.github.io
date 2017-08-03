@@ -1,4 +1,4 @@
-## Plan krótkookresowy
+# Plan krótkookresowy
 
 Plan na najbliższe 3 miesiące - od sierpnia do października 2017:
 
@@ -19,11 +19,11 @@ Plan na najbliższe 3 miesiące - od sierpnia do października 2017:
 - udział w konferencji EOS w [Szanghaju](http://blockchainlabs.org/summit2017/en/index_en.html) i/lub [Londynie](https://blockchainlive.com/adopter-agenda/)
 - udział w październikowym  [Warsaw Startup Weekend](http://swwaw.com/), który w tym roku ma być poświęcony [tematowi Fintech i blockchain](https://www.facebook.com/StartupWeekendWarsaw/?hc_ref=ARQ3SlBsXfmfHyXozIEvzHnzrnEm74CqOhhLeKjB9ZtSzTJBohO4GeH75j7Krx4Txcc&fref=nf)
 
-## Harmonogram
+# Harmonogram
 
 | Zadanie                                  | Termin      | Odpowiedzialny | Status |
 | ---------------------------------------- | ----------- | -------------- | ------ |
-| Ustalenie nazwy witnessa                 | 9 sierpnia  | Jakub          |        |
+| Ustalenie nazwy witnessa                 | 9 sierpnia  | wszyscy        |        |
 | Przygotowanie propozycji budżetu         | 9 sierpnia  | Jakub          |        |
 | Wstępny projekt strony webowej           | 9 sierpnia  | Jakub          |        |
 | Uruchomienie strony webowej              | 16 sierpnia | Jakub          |        |
