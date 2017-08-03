@@ -31,9 +31,11 @@ Cel: reputacja przydatności
 
 ## Działamy w roli start-upu
 
-Można traktować nasze przedsięwziecie jako bardzo mocno osadzony w rzeczywistości start-up. Jedyna różnica jest taka, że w odróżnieniu od większości start-upów, mamy tylko jednego klienta - jest nim EOS.
+Można traktować nasze przedsięwzięcie jako dość precyzyjnie zdefiniowany start-up: mamy klarowny cel i plan jak go osiągnąć.
 
-Przestrzeń działania wygląda następująco:
+Jedyna różnica między nami a normalnym start-upem jest taka, że w odróżnieniu od większości start-upów, mamy tylko jednego klienta - jest nim EOS.
+
+Nasza przestrzeń działania wygląda następująco:
 
 - mamy dość unikalne zasoby (w postaci dostępu do kapitału, wiedzy i doświadczenia, reputacji, kontaktów i położenia geograficznego)
 - mamy jednego klienta ale mnogość po stronie konkurencji
@@ -44,7 +46,7 @@ Przestrzeń działania wygląda następująco:
 
 Z jednej strony działanie biznesowe ukierunkowane na jednego klienta stwarza spore ryzyko (bo nasz sukces jest uwarunkowany sukcesem EOSa), ale z drugiej strony mamy bardzo precyzyjnie zdefiniowaną przestrzeń działania i jedynym naszym zmartwieniem jest uzyskanie przewagi nad konkurencyjnymi podmiotami.
 
-Spodziewamy się że konkurencja o rolę witnessa będzie spora, ale jest istotna okoliczność działająca na naszą korzyść: nawet jeśli nie odniesiemy natychmiastowego sukcesu w czerwcu 2018, to uzyskane doświadczenie i reputacja pozwolą nam na ubieganie się o pozycję witnessa w przyszłości albo przesunięcie uwagi na budowę biznesów działających na bazie EOSa.  
+Spodziewamy się, że konkurencja o rolę witnessa będzie spora, ale jest istotna okoliczność działająca na naszą korzyść: nawet jeśli nie odniesiemy natychmiastowego sukcesu w czerwcu 2018, to uzyskane doświadczenie i reputacja pozwolą nam na ubieganie się o pozycję witnessa w przyszłości albo przesunięcie uwagi na budowę biznesów działających na bazie EOSa.  
 
 Tak więc jedynym nieusuwalnym ryzykiem jest kwestia sukcesu samego EOSa - to jest coś na co nie mamy bezpośredniego wpływu.
 
@@ -52,12 +54,19 @@ Tak więc jedynym nieusuwalnym ryzykiem jest kwestia sukcesu samego EOSa - to je
 
  Plan krótkookresowy na najbliższe 3 miesiące - do października 2017:
 
-- wybór nazwy/brandu (wstępne propozycje: eos-europe, eos-ventures, eos-enterprise, eosonica)
-- rozpisanie budżetu
+#### Sprawy biznesowe
 
+- wybór nazwy/brandu (wstępne propozycje: eos-europe, eos-ventures, eos-enterprise, eosonica)
+- rozpisanie i akceptacja budżetu (ewentualnie decyzja o chęci pozyskania dodatkowego kapitału)
+- uruchomienie strony webowej (na początek tylko wersja angielska)
+- rekrutacja audytora kodu c++ lub developera c++
+
+#### Sprawy technologiczne
 
 - wynajem prostego serwera, kompilacja kodu, dołączenie do testnetu
-- uruchomienie strony webowej (na początek tylko wersja angielska)
+- research w zakresie infrastruktury IT potrzebnej do pełnienia roli witnessa w wersji live
+
+#### Networking
+
 - udział w konferencji EOS w [Sznaghaju](http://blockchainlabs.org/summit2017/en/index_en.html) i/lub [Londynie](https://blockchainlive.com/adopter-agenda/)
-- rekrutacja audytora kodu c++ lub developera c++
 - udział w październikowym  [Warsaw Startup Weekend](http://swwaw.com/), który w tym roku ma być poświęcony [tematowi Fintech i blockchain](https://www.facebook.com/StartupWeekendWarsaw/?hc_ref=ARQ3SlBsXfmfHyXozIEvzHnzrnEm74CqOhhLeKjB9ZtSzTJBohO4GeH75j7Krx4Txcc&fref=nf)
