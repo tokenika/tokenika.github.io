@@ -29,9 +29,9 @@ Cel: reputacja przydatności
 - serwis analogiczny do [etherscan](https://etherscan.io/) lub [steemdb](https://steemdb.com/)
 - albo inny serwis inspirowany tym co jest wymienione na [steemtools.com](http://steemtools.com/)
 
-## Działamy w roli start-upu
+## Przestrzeń działania
 
-Można traktować nasze przedsięwzięcie jako dość precyzyjnie zdefiniowany start-up: mamy klarowny cel i plan jak go osiągnąć.
+Można traktować nasze przedsięwzięcie jako dość precyzyjnie zdefiniowany start-up: mamy klarowny cel, plan jak go osiągnąć i prosty sposób monetyzacji.
 
 Jedyna różnica między nami a normalnym start-upem jest taka, że w odróżnieniu od większości start-upów, mamy tylko jednego klienta - jest nim EOS.
 
