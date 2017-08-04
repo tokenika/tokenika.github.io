@@ -6,7 +6,7 @@ Głównym celem jest stworzenie w ciągu najbliższych 10 miesięcy reputacji wa
 
 Planujemy działać w trzech obszarach jednocześnie:
 
-#### 1. Rola huba informacyjnego
+#### 1. Hub informacyjny
 
 Cel: reputacja społecznościowa
 
@@ -14,7 +14,7 @@ Cel: reputacja społecznościowa
 - organizacja prezentacji/eventów promujących EOSa w Polsce
 - skupienie wokół siebie polskich developerów chętnych do eksperymentowania z EOSem
 
-#### 2. Rola eksperta technologicznego
+#### 2. Ekspert technologiczny
 
 Cel: reputacja technologiczna
 
@@ -22,9 +22,9 @@ Cel: reputacja technologiczna
 - audyt kodu, znajdowanie bugów i rozwiązań tych bugów
 - publikacje dokumentujące zdobytą wiedzę
 
-#### 3. Użyteczny serwis dla ekosystemu
+#### 3. Serwis dla ekosystemu
 
-Cel: reputacja przydatności
+Cel: reputacja użyteczności
 
 - serwis analogiczny do [etherscan](https://etherscan.io/) lub [steemdb](https://steemdb.com/)
 - albo inny serwis inspirowany tym co jest wymienione na [steemtools.com](http://steemtools.com/)
