@@ -4,7 +4,7 @@ Plan na najbliższe 3 miesiące - od sierpnia do października 2017:
 
 #### Sprawy biznesowe
 
-- wybór nazwy/brandu (wstępne propozycje: *eos-europe*, *eos-ventures*, *eos-enterprise*, *eosonica*)
+- wybór nazwy/brandu (wstępne propozycje: *eos-europe*, *eos-ventures*, *eos-enterprise*, *eosonica*, *tokenika*)
 - rozpisanie i akceptacja budżetu (ewentualnie decyzja o chęci pozyskania dodatkowego kapitału)
 - uruchomienie strony webowej (na początek tylko wersja angielska)
 - rekrutacja developera C++ (lub profesjonalnego audytora kodu C++)
@@ -16,7 +16,7 @@ Plan na najbliższe 3 miesiące - od sierpnia do października 2017:
 
 #### Networking
 
-- udział w konferencji EOS w [Szanghaju](http://blockchainlabs.org/summit2017/en/index_en.html) i/lub [Londynie](https://blockchainlive.com/adopter-agenda/)
+- udział w konferencji EOS w [Szanghaju](http://blockchainlabs.org/summit2017/index_en.html) i/lub [Londynie](https://blockchainlive.com/adopter-agenda/)
 - udział w październikowym  [Warsaw Startup Weekend](http://swwaw.com/), który w tym roku ma być poświęcony [tematowi Fintech i blockchain](https://www.facebook.com/StartupWeekendWarsaw/?hc_ref=ARQ3SlBsXfmfHyXozIEvzHnzrnEm74CqOhhLeKjB9ZtSzTJBohO4GeH75j7Krx4Txcc&fref=nf)
 
 # Harmonogram

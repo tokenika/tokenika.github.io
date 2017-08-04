@@ -1,8 +1,8 @@
-## Główny cel
+# Główny cel
 
 Głównym celem jest stworzenie w ciągu najbliższych 10 miesięcy reputacji wartościowego kontrybutora ekosystemu EOSa, tak aby uzyskać status witnessa EOSa w czerwcu 2018, gdy EOS ruszy w wersji live.
 
-## Trzy domeny działania
+# Trzy domeny działania
 
 Planujemy działać w trzech obszarach jednocześnie:
 
@@ -30,7 +30,7 @@ Cel: reputacja przydatności
 - albo inny serwis inspirowany tym co jest wymienione na [steemtools.com](http://steemtools.com/)
 - w przyszłości, gdy zdobędziemy większe doświadczenie, będziemy dążyć do uruchomienia własnego biznesu na EOSie, najprawdpodobniej poprzez emisję własnego tokenu
 
-## Przestrzeń działania
+# Przestrzeń działania
 
 Można traktować nasze przedsięwzięcie jako dość precyzyjnie zdefiniowany start-up: mamy klarowny cel, plan jak go osiągnąć i prosty sposób monetyzacji.
 
@@ -44,7 +44,7 @@ Nasza przestrzeń działania wygląda następująco:
 - Możemy spodziewać się, że część kosztów marketingowych zostanie nam zrekompensowana bezpośrednio przez założycieli EOSa, tj. spółkę BlockOne.
 - Istnieje realna perspektywa wysokich przychodów, z których większość zapewne warto będzie reinwestować żeby utrzymać uzyskaną pozycję.
 
-## Ryzyko
+# Ryzyko
 
 Z jednej strony działanie biznesowe ukierunkowane na jednego klienta stwarza spore ryzyko (bo nasz sukces jest uwarunkowany sukcesem EOSa), ale z drugiej strony mamy bardzo precyzyjnie zdefiniowaną przestrzeń działania i jedynym naszym zmartwieniem jest uzyskanie przewagi nad konkurencyjnymi podmiotami.
 
