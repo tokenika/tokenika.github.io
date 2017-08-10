@@ -106,6 +106,12 @@ Wbrew pozorom te dwa zagadnienia łączą się ze sobą. Jeśli twierdzenie Crai
 
 ---
 
+## OmiseGo
+
+#### [Hybrid of a decentralized exchange (a blockchain) and a payment platform (a wallet).](omisego/index.md)
+
+OmiseGo aims to create a platform for managing fiat and cryptocurrency assets. It combines a liquid on-chain decentralized exchange with an off-chain payment network.
+
 <br/>
 
 <br/>
