@@ -70,6 +70,14 @@ NEO is the use of blockchain technology and digital identity to digitize assets,
 
 ---
 
+## Plasma
+
+#### [Protocol for executable smart-contracts running atop an existing blockchain](plasma/index.md)
+
+Plasma will work similarly to the Lightning Network that Poon helped create, in that it is a series of executable distributed code contracts (EDCCs) running atop an existing blockchain. This ensures enforcement while simultaneously holding funds in a contractstate with a net settlement / withdrawal that is scheduled to take place at a specified later time.
+
+---
+
 ## Qtum
 
 #### [Smart-contract compatible blockchain that can natively run both Bitcoin-based and Ethereum-based applications](qtum/index.md)
