@@ -1,16 +1,28 @@
-## Plasma: a protocol for executable smart-contracts running atop an existing blockchain
+# Plasma: a protocol for executable smart-contracts running atop an existing blockchain
 
-The proposed Plasma framework will generate scalable autonomous executable distributed code contracts to allow for “potentially billions” of state updates per second on the Ethereum Blockchain.
+**The proposed Plasma framework will generate scalable autonomous executable distributed code contracts to allow for “potentially billions” of state updates per second on the Ethereum Blockchain.**
 
-To get around issues of trust that are involved in off-chain multiparty commitments, Buterin and Poon seek to design a system whereby computation occurs off-blockchain but is ultimately enforceable on-chain.
+**To get around issues of trust that are involved in off-chain multiparty commitments, Buterin and Poon seek to design a system whereby computation occurs off-blockchain but is ultimately enforceable on-chain.**
 
-According to the whitepaper, Plasma will work similarly to the Lightning Network that Poon helped create, in that it is a series of executable distributed code contracts (EDCCs) running atop an existing blockchain. This ensures enforcement while simultaneously holding funds in a contractstate with a net settlement / withdrawal that is scheduled to take place at a specified later time.
+**According to the whitepaper, Plasma will work similarly to the Lightning Network that Poon helped create, in that it is a series of executable distributed code contracts (EDCCs) running atop an existing blockchain. This ensures enforcement while simultaneously holding funds in a contractstate with a net settlement / withdrawal that is scheduled to take place at a specified later time.**
+
+---
+
+Conceptually, Plasma is very similar to the Bitcoin Core development team’s scaling solution Segregated Witness (SegWit) in the sense that it eliminates unnecessary data in smart contracts and only broadcast merkelized commitments to the public Ethereum blockchain.
+
+By decreasing the amount of information and the size of transactions passed on to the root blockchain of Ethereum, Buterin and Poon explained that the Ethereum Blockchain will be able to process smart contracts and transactions with lower costs and computation.
+
+Plasma is an on-chain scaling solution that scales the Ethereum blockchain by optimizing data passed onto the root blockchain. By doing so, it can reduce gas costs or transaction fees handled by smart contracts and decentralized applications, making the Ethereum ecosystem more flexible for developers and users.
+
+<span style="color:silver;font-size:11px">Source: [cointelegraph.com](https://cointelegraph.com/news/vitalik-buterin-bitcoins-lightning-network-author-reveal-ethereum-scaling-plans-analysis)</span>
 
 ---
 
 Plasma is a proposed framework for incentivized and enforced execution of smart contracts which is scalable to a significant amount of state updates per second (potentially billions) enabling the blockchain to be able to represent a significant amount of decentralized financial applications worldwide. These smart contracts are incentivized to continue operation autonomously via network transaction fees, which is ultimately reliant upon the underlying blockchain (e.g. Ethereum) to enforce transactional state transitions.
 
 We propose a method for decentralized autonomous applications to scale to process not only financial activity, but also construct economic incentives for globally persistent data services, which may produce an alternative to centralized server farms.
+
+As only merkleized commitments are broadcast periodically to the root blockchain (i.e. Ethereum) during non-faulty states, this can allow for incredibly scalable, low cost transactions and computation. Plasma enables persistently operating decentralized applications at high scale.
 
 <span style="color:silver;font-size:11px">Source: [plasma.io](http://plasma.io)</span>
 
