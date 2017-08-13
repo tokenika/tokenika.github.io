@@ -12,7 +12,7 @@ EOS does have a merkle tree over all the transactions within a block. This means
 
 We can make the analogy that Blockchain state is like [Schrödiger’s cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat): you can never actually observe it or prove anything about it except by opening the box to find out if the cat is dead or alive. More specifically, while you can prove what the state was 1 minute ago (when you last opened the box), you cannot prove what the state is right now. At any time a transaction could mutate that state and it will no longer be the same as when you read it. The only exception is the use of “time locks” that assert the state cannot be modified for some time. Heavy use of time locks will crush performance and is of limited application.
 
-#### Fifferent approach for blockchian state validation
+#### Different approach for blockchian state validation
 
 In Ethereum you have to trust the light clients are validating proofs and syncing from the proper blockchain. The merkle proofs you do generate about state are quickly dated and irrelevant.
 
