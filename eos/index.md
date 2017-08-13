@@ -26,12 +26,12 @@ DPOS, EOS consesnus mechanism, could easily be tweaked to emulate Casper, Ethere
 
 ---
 
-## [Dan Larimer's response to Vitalik's remarks on DPOS voting and EOS fees](reponse-to-vitaliks-remarks-on-dpos-voting-and-eos-fess/index.md)
+## [Dan Larimer's response to Vitalik's remarks on DPOS voting and EOS fees](response-to-vitaliks-remarks-on-dpos-voting-and-eos-fess/index.md)
 
 In his remarks Vitalik brings up the issue of DPOS voting (low voter participation, tragedy-of-the-commons vulnerabilities, misalignment between coin holder interests with user interests), and the consequences of lack of fees in EOS (e.g. how to handle unexpected spikes in demand).
 
 ---
 
-## [Dan Larimer's response to Vitalik's remarks on EOS](reponse-to-vitaliks-remarks-on-eos/index.md)
+## [Dan Larimer's response to Vitalik's remarks on EOS](response-to-vitaliks-remarks-on-eos/index.md)
 
 In his remarks Vitalik claims that EOS can process more transactions due to the fact that Ethereum has more features than EOS (and gives the lack of merkle trees as an example). Then he claims that in EOS there is no way to verify for yourself that everything is happening correctly, unless you run a resource-intensive full node. And finally, he claims that EOS scalability comes at the cost of reduced decentralization and thus increased vulnerability for the blockchain to be shut down by a government.
