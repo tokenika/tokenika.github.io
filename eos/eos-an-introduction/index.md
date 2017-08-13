@@ -4,7 +4,7 @@
 
 > The following text is an abbreviated (and slightly edited) version of Ian Grigg's article.
 
-#### What is it that our user needs?
+### What is it that our user needs?
 
 In the abstract, she wants to:
 
@@ -20,7 +20,7 @@ In the abstract, she wants to:
   * Pay for development effort up front with reasonable payback in the future.
   * Because she knows that things - contracts, assets, transactions, intents - go wrong, she wants to be able to fix her difficulties. Including, with her friends, her business, and her assets, and quickly, cheaply and without undue escalation.
 
-#### Current landscape
+### Current landscape
 
 It has become abundantly clear that for one reason or another, the promise of universal peer to peer contracting and money has been excluded to the wider Internet:
 
@@ -48,14 +48,14 @@ workflow. Instead of posting contracts and actions to a blockchain, parties exch
 
 Yet workflow works best with small numbers of parties, not large, and hence it is weaker on issuance of assets, especially cash and cash-denominated trading. Another weakness is that Corda’s walled garden approach stops it being an attractive mass market for small players.
 
-#### The vision
+### The vision
 
 What is needed is smart business for the everyday person. An everyday distributed application needs to live in a global blockchain that is open to everyone, has enough performance to build big business, is
 connected enough to bring people together and is safe and secure enough that businesses from different regions of the world can trade with each other.
 
 Thus, the vision before us is a single global contracting blockchain that can scale up to handle a long-tail of businesses negotiating contracts for mutual advantage in a safe and secure environment.
 
-#### Principal features
+### Principal features
 
 EOS design predicts a blockchain to handle thousands of transactions per second for business contracts that are captured in easy to use and easy to secure languages. The major features include:
 
@@ -136,7 +136,7 @@ This counterbalanced arrangement ensures that no party or group has total power.
 
 To make these institutions work, users have to agree to the Constitution, which empowers the producers to choose blocks, and reserves all disputes into the forum of arbitration. As well, the Constitution creates the legal rights expressed in the blockchain by stating that each member receives those rights properly accounted for, and in return each member supports the accounted rights of others. This trade of your rights for the rights of others becomes the cornerstone of the community, in that the community is defined by both the usage of the platform and the agreement to the Constitution.
 
-#### Use cases
+### Use cases
 
 An EOS blockchain is intended for highperformance messaging with business logic. Popular use cases will include supply chain, resource management, user messaging such as social media, asset issuance and trading, accounting for remittances, and gaming.
 
@@ -145,7 +145,7 @@ minimising any regulatory difficulties.
 
 Then, as the contracts can be bilateral, the business flow could be split up: tracking passengers in the market, tracking cars available, finding a match, negotiating a contract, performance, settlement, pricing, and social tracking could all be built as separate DApps that interact.
 
-#### Community
+### Community
 
 To support business, we need to solve problems. And to scale the solving of problems, it has to be done by the community itself, which means it has to be embeded in the architecture. To advance community, we must preserve open entry, but on entry provide the tools that users find useful for governance. 
 

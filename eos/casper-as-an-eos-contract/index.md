@@ -22,7 +22,7 @@ Thus the proposal process is what determines centralization of production and ce
 
 We can conclude from this that the vast majority of the real consensus problems fall within the responsibility of the proposal mechanism. We can also see that Casper does nothing to improve the performance. Lastly, by the time an Ethereum block is buried under 30 minutes of POW the probability of reversal is so small that the relative cost of "casper insurance" likely far outweighs the actual risks involved.
 
-#### Casper as an EOS Application
+#### Casper as an EOS application
 
 Given that Casper's proposal mechanism is abstract, it is trivial to replace it with DPOS. In other words, where Ethereum uses POW we can use DPOS.
 
