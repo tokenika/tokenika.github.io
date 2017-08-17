@@ -97,7 +97,7 @@ The testnet is about to be launched, and the ETA for live version is June 2018.
 
 # Buissness blog
 
-##### EOS.IO software will not suffer from Denial of Service (DOS) attacks like Ethereum
+#### EOS.IO software will not suffer from Denial of Service (DOS) attacks like Ethereum
 
 The problem Ethereum faces cannot be solved so long as it retains the current fee model and people insist on doing capped ICOs below market prices on a first-come, first-serve basis. These capped ICOs at below market prices might as well be million dollar giveaways.
 
@@ -107,19 +107,25 @@ The problem Ethereum faces cannot be solved so long as it retains the current fe
 
 # Developer blog
 
-##### EOS - Developer’s Log Stardate 20176.30
+#### EOS Development Sneak Peek for Very Early Developers
+
+Although the official test network is still in preparation, anyone can create their own test environment on a local node. Please understand things are likely to change; however, not drastically so.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eosdev/@dan/eos-development-sneak-peek-for-very-early-developers), by Dan Larimer, August 2017</span>
+
+#### EOS - Developer’s Log Stardate 20176.30
 
 This week block.one’s blockchain c++ development team has picked up 4 new members and has been interviewing a few more. The new recruits have already begun making contributions to the code.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/eos-developer-s-log-stardate-20176-30), by Dan Larimer, June 2017</span>
 
-##### EOS - Developer’s Log Stardate 201707.3
+#### EOS - Developer’s Log Stardate 201707.3
 
 Today I met with the team to discuss the challenges of making smart contracts both easy to develop and easy to execute in parallel. If you are familiar with the challenges associated with parallel execution then you know the general rule that all data must be owned by a single thread. In terms of blockchains, that means all accounts need to own their data. Owning data means that no other thread of execution may read or write the data except by asynchronous message passing.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/eos-developer-s-log-starday-201707-3), by Dan Larimer, July 2017</span>
 
-##### EOS - Developer Log, Stardate 201707.7
+#### EOS - Developer Log, Stardate 201707.7
 
 This week we made great strides toward refining the architecture of EOS and defining the developer API. In particular we have identified a programming model that should enable parallelism while maximizing ease of use and clarity of the code.
 
