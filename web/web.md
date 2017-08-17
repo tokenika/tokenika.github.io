@@ -50,7 +50,19 @@ The testnet is about to be launched, and the ETA for live version is June 2018.
 
 ---
 
-# News
+# Upcoming events
+
+
+
+---
+
+# Recent events
+
+
+
+---
+
+# Token Distribution
 
 
 
@@ -89,6 +101,39 @@ The testnet is about to be launched, and the ETA for live version is June 2018.
 
 ---
 
+# Resources
+
+#### The Official Website
+
+https://eos.io/
+
+#### Technical White Paper
+
+https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md
+
+#### EOS - An Introduction by Ian Grigg
+
+This paper outlines the context, vision and software architecture underlying EOS, which we are
+building to serve a broad and diverse group of users with smart business.
+
+<span style="color:silver;">Source: [iang.org](http://iang.org/papers/EOS_An_Introduction.pdf), by Ian Grigg, July 2017</span>
+
+#### EOS Shanghai Meetup July 2017
+
+Brendan Blumer, Ian Grigg and Michael Cao speak during a Shanghai Meetup in July 2017.
+
+<span style="color:silver;">Source: [youtube.com](https://www.youtube.com/watch?v=HUA52v-a2TA), July 2017</span>
+
+#### EOS Presentation from NY Consensus 2017
+
+Daniel Larimer introduces EOS.
+
+<span style="color:silver;">Source: [youtube.com](https://www.youtube.com/watch?v=MUZWZj1pu94), May 2017</span>
+
+
+
+---
+
 # Executive summaries
 
 
@@ -96,6 +141,18 @@ The testnet is about to be launched, and the ETA for live version is June 2018.
 ---
 
 # Buissness blog
+
+#### Who Should Control A Blockchain?
+
+Recently the topic of voting and control has been discussed by multiple blockchain projects. EOS, Ethereum, Bitcoin, and others all agree that blockchains must be controlled by voting, but who should do the voting?
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/who-should-control-a-blockchain), by Brendan Blumer, August 2017</span>
+
+#### Casper as an EOS Contract
+
+I recently reviewed the latest Casper Research Paper in light of an ongoing discussion with Vitalik Buterin over consensus mechinisms. It is my intent to be as objective and practical as possible while recognizing all factors of the greater picture.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/casper-as-an-eos-contract), by Dan Larimer, August 2017</span>
 
 #### EOS.IO software will not suffer from Denial of Service (DOS) attacks like Ethereum
 
@@ -112,6 +169,12 @@ The problem Ethereum faces cannot be solved so long as it retains the current fe
 Although the official test network is still in preparation, anyone can create their own test environment on a local node. Please understand things are likely to change; however, not drastically so.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eosdev/@dan/eos-development-sneak-peek-for-very-early-developers), by Dan Larimer, August 2017</span>
+
+#### EOS - Example Exchange Contract and Benefits of C++
+
+This week I have been focused on the API that smart contract developers will use to write contracts. To help facilitate the design of this API I have given myself an example contract to write. This time the example is a little bit more complex than just a currency contract, but a full up exchange between the native EOS currency and an example CURRENCY contract.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/eos-example-exchange-contract-and-benefits-of-c), by Dan Larimer, July 2017</span>
 
 #### EOS - Developer’s Log Stardate 20176.30
 
