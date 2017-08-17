@@ -85,6 +85,16 @@ The testnet is about to be launched, and the ETA for live version is June 2018.
 
 # Buissness blog
 
+##### EOS.IO software will not suffer from Denial of Service (DOS) attacks like Ethereum
+
+The problem Ethereum faces cannot be solved so long as it retains the current fee model and people insist on doing capped ICOs below market prices on a first-come, first-serve basis. These capped ICOs at below market prices might as well be million dollar giveaways.
+
+<span style="color:silver;font-size:11px">Source: [steemit.com](https://steemit.com/eos/@dantheman/eos-io-software-will-not-suffer-from-denial-of-service-dos-attacks-like-ethereum), by Dan Larimer, June 2017</span>
+
+<span style="color:silver;font-size:12px">Source: [steemit.com](https://steemit.com/eos/@dantheman/eos-io-software-will-not-suffer-from-denial-of-service-dos-attacks-like-ethereum), by Dan Larimer, June 2017</span>
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dantheman/eos-io-software-will-not-suffer-from-denial-of-service-dos-attacks-like-ethereum), by Dan Larimer, June 2017</span>
+
 
 
 # Developer blog
