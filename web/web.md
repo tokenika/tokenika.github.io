@@ -2,6 +2,8 @@
 
 In a nutshell, EOS is the blockchain for building commercial scale decentralized applications that are indistinguishable from centralized alternatives.
 
+---
+
 # Why EOS?
 
 Five reasons why choosing EOS makes sense:
@@ -40,13 +42,19 @@ While we are not hinding our strong commtiment for EOS, stil we aim to remain ob
 
 Odnośnie terminu live, informację tę warto interpretować następująco: Steem powstał z kodu BitShares w ciągu 3 miesięcy, co oznacza że zespół deweloperów EOSa działa bardzo sprawnie. Długi okres testów EOSa sugeruje że priorytetem jest jakość i że w momencie pójścia live EOS prawdopodobnie będzie bardzo zaawansowanym i stabilnym systemem. 
 
+---
+
 # Current status
 
 The testnet is about to be launched, and the ETA for live version is June 2018.
 
+---
+
 # News
 
 
+
+---
 
 # Roadmap
 
@@ -79,9 +87,13 @@ The testnet is about to be launched, and the ETA for live version is June 2018.
 
 <span style="color:silver;">Source: [github.com](https://github.com/EOSIO/Documentation/blob/master/Roadmap.md), June 2017</span>
 
+---
+
 # Executive summaries
 
 
+
+---
 
 # Buissness blog
 
@@ -91,7 +103,7 @@ The problem Ethereum faces cannot be solved so long as it retains the current fe
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dantheman/eos-io-software-will-not-suffer-from-denial-of-service-dos-attacks-like-ethereum), by Dan Larimer, June 2017</span>
 
-
+---
 
 # Developer blog
 
@@ -113,13 +125,19 @@ This week we made great strides toward refining the architecture of EOS and defi
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/eos-developer-log-stardate-201707-7), by Dan Larimer, July 2017</span>
 
+---
+
 # EOS tools
 
 
 
+---
+
 # About us
 
 
+
+---
 
 # Contact
 
