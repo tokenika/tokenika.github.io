@@ -178,15 +178,28 @@ This week we made great strides toward refining the architecture of EOS and defi
 
 # EOS tools
 
+#### EOSscan Service
 
+EOSscan is a service that helps you to purchase [EOS ](http://eos.io/)tokens at the most reasonable price. EOSscan offers you the current price of EOS tokens by analyzing transactions of EOS token purchases on the Ethereum blockchain.
+
+https://eosscan.io/
 
 ---
 
 # About us
 
+*Tokenika* is a group of entrepreneurs based in Poland, aming to contribute to the emerging EOS ecosystem and hopefully become an active EOS witness when the system goes live in June 2018.
 
+Our contribution includes the following domains:
+
+* running this website meant to be an aggregation of all usefull information about EOS 
+* participating in EOS testnet
+* building useful tools for the EOS ecosystem
+* holding public events aimed at promoting EOS in Eastern Europe
 
 ---
 
 # Contact
+
+You can reach us at eos@tokenika.io.
 
