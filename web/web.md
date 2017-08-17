@@ -1,6 +1,12 @@
 # What is EOS?
 
-In a nutshell, EOS is the blockchain for building commercial scale decentralized applications that are indistinguishable from centralized alternatives.
+[EOS](https://eos.io/) is the blockchain for building commercial scale decentralized applications that are indistinguishable from centralized alternatives.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@stellabelle/re-dantheman-re-kyriacos-re-dantheman-re-eosio-introducing-the-eos-blog-on-steemit-20170514t144829951z), by Dan Larimer, May 2017</span>
+
+The EOS.IO software introduces a new blockchain architecture designed to enable vertical and horizontal scaling of decentralized applications. This is achieved by creating an operating system-like construct upon which applications can be built. The software provides accounts, authentication, databases, asynchronous communication and the scheduling of applications across hundreds of CPU cores or clusters. The resulting technology is a blockchain architecture that scales to millions of transactions per second, eliminates user fees, and allows for quick and easy deployment of decentralized applications.
+
+<span style="color:silver;">Source: [github.com](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md), Technical White Paper, June 2017</span>
 
 ---
 
@@ -33,6 +39,8 @@ EOS wychodzi z założenia, że najważniejszym kryterium są wymagania biznesow
 
 Wszystkie inne niż EOS platformy smart-kontraktowe są budowane jako rozwiązanie generyczne. Czyli zaczynamy od abstrakcji a celem jest zbudowanie przestrzeni do implementacji konkretnych aplikacji. EOS idzie w odwrotnym kierunku: od implementacji do abstrakcji. Twórcy EOSa mają w swoim dorobku dwa działające blockchainy (BitShares i Steem), które w sumie procesują więcej transakcji niż Bitcoin i Ethereum. Tym samym EOS jest uogólnieniem dwóch konkretnych (i bardzo różnych) implementacji. Daje to duże prawdopodobieństwo, że EOS będzie czymś co rzeczywiście sprawdza się w praktyce.
 
+---
+
 # Known limitations
 
 While we are not hinding our strong commtiment for EOS, stil we aim to remain objective. Below are there are things you need to be aware of:
@@ -41,30 +49,6 @@ While we are not hinding our strong commtiment for EOS, stil we aim to remain ob
 * EOS is not live yet. The testnet is about to be launched, and the ETA for live version is June 2018.
 
 Odnośnie terminu live, informację tę warto interpretować następująco: Steem powstał z kodu BitShares w ciągu 3 miesięcy, co oznacza że zespół deweloperów EOSa działa bardzo sprawnie. Długi okres testów EOSa sugeruje że priorytetem jest jakość i że w momencie pójścia live EOS prawdopodobnie będzie bardzo zaawansowanym i stabilnym systemem. 
-
----
-
-# Current status
-
-The testnet is about to be launched, and the ETA for live version is June 2018.
-
----
-
-# Upcoming events
-
-
-
----
-
-# Recent events
-
-
-
----
-
-# Token Distribution
-
-
 
 ---
 
@@ -103,13 +87,11 @@ The testnet is about to be launched, and the ETA for live version is June 2018.
 
 # Resources
 
-#### The Official Website
-
-https://eos.io/
-
 #### Technical White Paper
 
-https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md
+The EOS.IO software introduces a new blockchain architecture designed to enable vertical and horizontal scaling of decentralized applications. This is achieved by creating an operating system-like construct upon which applications can be built.
+
+<span style="color:silver;">Source: [github.com](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md), June 2017</span>
 
 #### EOS - An Introduction by Ian Grigg
 
@@ -129,8 +111,6 @@ Brendan Blumer, Ian Grigg and Michael Cao speak during a Shanghai Meetup in July
 Daniel Larimer introduces EOS.
 
 <span style="color:silver;">Source: [youtube.com](https://www.youtube.com/watch?v=MUZWZj1pu94), May 2017</span>
-
-
 
 ---
 
