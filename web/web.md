@@ -99,10 +99,15 @@ The EOS.IO software introduces a new blockchain architecture designed to enable 
 
 #### EOS - An Introduction by Ian Grigg
 
-This paper outlines the context, vision and software architecture underlying EOS, which we are
-building to serve a broad and diverse group of users with smart business.
+This paper outlines the context, vision and software architecture underlying EOS, which we are building to serve a broad and diverse group of users with smart business.
 
 <span style="color:silver;">Source: [iang.org](http://iang.org/papers/EOS_An_Introduction.pdf), by Ian Grigg, July 2017</span>
+
+#### Introduction to EOS: the Epic (blockchain) Operating System
+
+EOS is a consensus blockchain operating system that provides databases, account permissions, scheduling, authentication, and internet-application communication to massively improve the efficiency of smart business development that uses parallelization to make possible blockchain scalability to millions of users and millions of transactions per second.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@trogdor/introduction-to-eos-the-epic-blockchain-operating-system), by trogdor, May 2017</span>
 
 #### EOS Shanghai Meetup July 2017
 
@@ -116,21 +121,53 @@ Daniel Larimer introduces EOS.
 
 <span style="color:silver;">Source: [youtube.com](https://www.youtube.com/watch?v=MUZWZj1pu94), May 2017</span>
 
+#### The EOS ICO for Dummies!
+
+The purpose of this post is primarily to focus on issues related to the Initial Coin Offering (ICO) of EOS , and not on specifics of EOS itself. 
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@trogdor/the-eos-ico-for-dummies), by @trogdor, June 2017</span>
+
 ---
 
-# Executive summaries
-
-
-
----
-
-# Business blog
+# Concepts
 
 #### Who Should Control A Blockchain?
 
 Recently the topic of voting and control has been discussed by multiple blockchain projects. EOS, Ethereum, Bitcoin, and others all agree that blockchains must be controlled by voting, but who should do the voting?
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/who-should-control-a-blockchain), by Brendan Blumer, August 2017</span>
+
+#### Logically Consistent Principles for Token Distributions
+
+The EOS Token distribution has been designed to hopefully create a distribution that is widely perceived to be fair based upon what we believe to be logically consistent principles.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/logically-consistent-principles-for-token-distributions), by block.one, June 2017</span>
+
+#### What could a blockchain Constitution look like?
+
+Traditional platforms such as Facebook and Twitter have a terms of service that define acceptable behavior of users. These terms of service create a hub and spoke model where Facebook and Twitter are the hub and the users are the spokes. A decentralized platform needs to have a peer-to-peer terms of service.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dantheman/what-could-a-blockchain-constitution-look-like), by Dan Larimer, June 2017</span>
+
+#### While A Constitution For A Blockchain May Seem Unusual, It Will Make Early Project Development Much Easier And Result In A More Responsive Platform.
+
+While a blockchain constitution can be compared to the terms of service that many websites use, the main advantage of utilizing a constitution is the ability to make necessary changes efficiently.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@cryptofreedom/while-a-constitution-for-a-blockchain-may-seem-unusual-it-will-make-early-project-development-much-easier-and-result-in-a-more), by @cryptofreedom, June 2017</span>
+
+#### On a Principled Approach to Blockchain Governance - 7 Requirements
+
+One of the things that I learnt in the CAcert adventure was that governance was critical to the safe operation of large communities. How large is large ... is a question of much debate, but to put it bluntly, this is needed beyond say a 2 digit size, which I’ve always seen as around 30, but certainly well before Dunbar’s number of 150
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@iang/on-a-principled-approach-to-blockchain-governance-7-requirements), by Ian Grigg, May 2017</span>
+
+---
+
+# Executive summaries
+
+
+
+# Business blog
 
 #### An Update from Block.one CEO, Brendan Blumer
 
@@ -144,17 +181,39 @@ This year, an estimated 4,000 delegates from over 50 countries came together for
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eosevents/@eosio/a-recap-eos-headlines-london-fintech-week-2017), by block.one, August 2017</span>
 
+#### Coindesk Libels Dan Larimer
+
+Earlier this week Coindesk published its first story covering EOS, written by Aaron Stanley. Considering that EOS was one of the sponsors of Consensus 2017, it was surprising to see that the coverage of EOS was more negative than I would have expected.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@belerophon/coindesk-libels-dan-larimer), by @belerophon, June 2017</span>
+
+#### Shedding some light on the EOS Token Purchase Agreement
+
+I ABSOLUTELY agree with everyone losing their minds at the Purchase Agreement. It appears to be madness and it says black on white that we are buying useless crap. What I’m saying here is WHY it is written like that. In a nutshell: Governments make everything financial illegal.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@cob/shedding-some-light-on-the-eos-token-purchase-agreement), by @cob, June 2017</span>
+
+#### My Approach to Acquiring EOS Tokens
+
+I've spent the past couple of weeks figuring out my approach to get the most cheap EOS tokens as possible, quickly realising there's no way to determine if the price is okay from one day to the next with its pro-rated distribution mechanism.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@kevinwong/my-approach-to-acquiring-eos-tokens), by @kevinwong, July 2017</span>
+
+---
+
+# Technology blog
+
+#### The Message is the Medium
+
+This post introduces what I think is a fundamental flaw in almost all blockchain designs. In brief, it is the emphasis on state as the ‘atomic element’, when we could also build using messages instead. The implications of this are quite severe, but also quite hard to understand because the computer science concepts are a bit inaccessible to the non-CS world.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@iang/the-message-is-the-medium), by Ian Grigg, May 2017</span>
+
 #### Web Assembly on EOS - 50,000 Transfers Per Second
 
 Over the past couple of weeks the EOS development team has pivoted away from the Wren programming language and embraced Web Assembly. Today we would like to update everyone on the progress and initial results we have achieved.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dantheman/web-assembly-on-eos-50-000-transfers-per-second), by Dan Larimer, May 2017</span>
-
-#### Storage Costs on Blockchains using EOS.IO Software
-
-The market will naturally and unavoidably imbue monetary properties to tokens created with the EOS.IO software. It will be necessary to implement dynamic pricing on the cost of consuming an additional unit of memory in order to keep prices practical for actual application development. This in combination with new memory technologies will ensure that the cost of storing data on EOS.IO based blockchains is reasonable for decentralized application developers.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/storage-costs-on-blockchains-using-eos-io-software), by block.one, July 2017</span>
 
 #### DPOS Consensus Algorithm - The Missing White Paper
 
@@ -198,30 +257,6 @@ The problem Ethereum faces cannot be solved so long as it retains the current fe
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dantheman/eos-io-software-will-not-suffer-from-denial-of-service-dos-attacks-like-ethereum), by Dan Larimer, June 2017</span>
 
-#### Logically Consistent Principles for Token Distributions
-
-The EOS Token distribution has been designed to hopefully create a distribution that is widely perceived to be fair based upon what we believe to be logically consistent principles.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/logically-consistent-principles-for-token-distributions), by block.one, June 2017</span>
-
-#### The Message is the Medium
-
-This post introduces what I think is a fundamental flaw in almost all blockchain designs. In brief, it is the emphasis on state as the ‘atomic element’, when we could also build using messages instead. The implications of this are quite severe, but also quite hard to understand because the computer science concepts are a bit inaccessible to the non-CS world.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@iang/the-message-is-the-medium), by Ian Grigg, May 2017</span>
-
-#### What could a blockchain Constitution look like?
-
-Traditional platforms such as Facebook and Twitter have a terms of service that define acceptable behavior of users. These terms of service create a hub and spoke model where Facebook and Twitter are the hub and the users are the spokes. A decentralized platform needs to have a peer-to-peer terms of service.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dantheman/what-could-a-blockchain-constitution-look-like), by Dan Larimer, June 2017</span>
-
-#### On a Principled Approach to Blockchain Governance - 7 Requirements
-
-One of the things that I learnt in the CAcert adventure was that governance was critical to the safe operation of large communities. How large is large ... is a question of much debate, but to put it bluntly, this is needed beyond say a 2 digit size, which I’ve always seen as around 30, but certainly well before Dunbar’s number of 150
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@iang/on-a-principled-approach-to-blockchain-governance-7-requirements), by Ian Grigg, May 2017</span>
-
 #### Blockchains should be designed like massively multiplayer games
 
 In my previous article I made a case about why general purpose blockchains shouldn’t use the UTXO transaction model. Now I will make the case that blockchains should not store state in transactions and I will do so by borrowing lessons learned from massively multiplayer online games.
@@ -233,6 +268,58 @@ In my previous article I made a case about why general purpose blockchains shoul
 Bitcoin was the first cryptocurrency to introduce the UTXO (Unspent Transaction Output) model for tracking database state. Every Bitcoin transaction consumes (spends) outputs from prior transactions and produces new outputs to be consumed by future transactions.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/blockchain/@dantheman/blockchains-should-be-designed-like-massively-multiplayer-games), by Dan Larimer, April 2017</span>
+
+#### EOS vs. Ethereum for Dummies!
+
+In this post I will describe some of the differences in technological capabilities and limitations, as well as differences in design philosophies between the EOS and Ethereum platforms.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@trogdor/eos-vs-ethereum-for-dummies), by @trogdor, June 2017</span>
+
+#### Centralization of Cryptocurrency - Bitcoin, Ethereum, and EOS
+
+This post is food for thought. A small group of individuals all met face to face in New York. This relatively small group decided the future of bitcoin which is now playing-out.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@crypto-investor/centralization-of-cryptocurrency-bitcoin-ethereum-and-eos), by @crypto-investor, August 2017</span>
+
+#### Individuals That Are Skeptical of The Upcoming EOS Project Simply Don't Understand The Fundamental Differences And Advantages That The EOS Network Will Offer.
+
+The amount of attention and investment the upcoming EOS project has already seen makes some individuals skeptical, but to me it validates the demand and faith that investors have in the upcoming smart contract platform.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@cryptofreedom/individuals-that-are-skeptical-of-the-upcoming-eos-project-simply-don-t-understand-the-fundamental-differences-and-advantages), by @cryptofreedom, August 2017</span>
+
+#### Could EOS Become the Most Widely Distributed ICO Ever?
+
+Last month I wrote about the Fear of Missing Out (FOMO) surrounding the EOS ICO. I was wrong. Well, at least I was wrong about my initial short term predictions. I figured, with a year long ICO, the price of EOS would surely drop below the initial 5-day ICO price.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@lukestokes/could-eos-become-the-most-widely-distributed-ico-ever), by @lukestokes, August 2017</span>
+
+#### EOS vs. Tezos vs. Tauchain: The Dummies' Simplification Of Possibly The Biggest Blockchain Launches Of 2017...
+
+As the blockchain revolution gains momentum, so has this year brought countless ICOs with mega-hype and mind-blowing multi-million dollar crowdfunding campaigns. It's been a ride. And it's tough to keep up with *everything* coming out. Yet, there are a few projects that stand out amongst the many.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@rok-sivante/eos-vs-tezos-vs-tauchain-the-dummies-simplification-of-possibly-the-biggest-blockchain-launches-of-2017), by @rok-sivante, August 2017</span>
+
+#### A Smart Contract Platform Without Transaction Costs or the Need For 'gas' Will Finally Offer Proper Incentive To DApp Developers.
+
+When developers must continually make micro-payments to continue to run and employ their DApps or contracts, price increases make it much less practical to continue to run and develop applications.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@cryptofreedom/a-smart-contract-platform-without-transaction-costs-or-the-need-for-gas-will-finally-make-dapp-development-practical-an), by @cryptofreedom, May 2017</span>
+
+---
+
+# Witness blogg
+
+#### Storage Costs on Blockchains using EOS.IO Software
+
+The market will naturally and unavoidably imbue monetary properties to tokens created with the EOS.IO software. It will be necessary to implement dynamic pricing on the cost of consuming an additional unit of memory in order to keep prices practical for actual application development. If an EOS.IO based blockchain reaches a 30 billion USD valuation, then 1M USD may be insignificant amount of money for a blockchain able to allocate 1.5 USD billion dollars per year to block producers (5% inflation).
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/storage-costs-on-blockchains-using-eos-io-software), by @eosio, July 2017</span>
+
+#### Heavy duty witness node infrastructure
+
+Witnesses are vulnerable to DDoS attacks. An attacker who knows the network location of your witness node can saturate your uplink to a level that makes you unable to produce blocks on time. Effectively, this means voting the witness out using a network-level attack.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/witness-category/@gtg/heavy-duty-witness-node-infrastructure), by @gtg, July 2017</span>
 
 ---
 
@@ -280,9 +367,45 @@ Today I would like to take a moment to explain the current structure of an EOS.I
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/eos-developer-s-log-stardate-201707-9), by Dan Larimer, July 2017</span>
 
+#### Easy Docker Guide for EOS
+
+My previous post [EOS Build Guide on Ubuntu](https://steemit.com/eoskorea/@clayop/eos-build-guide-on-ubunbu) provides instructions to build EOS on native machine. But Docker has many advantages, especially compatibility, so that providing information for Docker users sounds a good idea to me. 
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eoskorea/@clayop/easy-docker-guide-for-eos), by @clayop, 2017</span>
+
+#### EOS Build Guide on Ubuntu
+
+This is a brief guide of building EOS on Ubuntu 16.04 LTS (Google Compute Engine).
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eoskorea/@clayop/eos-build-guide-on-ubunbu), by @clayop, August 2017</span>
+
+#### EOS Build Guide on Mac OS
+
+Here is a brief guide to show you how to build the eos on MacOS Sierra 10.12.6.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eosdev/@skenan/eos-build-guide-on-mac-os), by @skenan, August 2017</span>
+
+#### Interested In Building An EOS Up Single-node Testnet But Don't Have Access To An Ubuntu Desktop?
+
+While an Ubuntu desktop can be installed on programs similar to VirtualBox on your local device, I decided to go with a cloud server because it is much more forgiving.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@cryptofreedom/interested-in-building-an-eos-up-single-node-testnet-but-don-t-have-access-to-an-ubuntu-desktop-i-had-success-deploying-a), by @cryptofreedom, June 2017</span>
+
+#### First Install & Run of EOS on a Blank Ubuntu 16
+
+Here I am showing my steps to run one of the first full nodes of EOS. Unfortunately it just runs on local computer and it doesn't have peer to peer implemented yet, i.e. there is no communication with anybody.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@deaddy/first-install-and-run-of-eos-on-a-blank-ubuntu-16), by @deaddy, June 2017</span>
+
 ---
 
 # Video interviews
+
+#### The New Ethereum Killer Cryptocurrency Called EOS with Dan Larimer
+
+Dan Larimer talks to Jeff Brewick (The Dollar Vigilante) about EOS.
+
+<span style="color:silver;">Source: [youtube.com](https://www.youtube.com/watch?v=8e0tinzPTbY), July 2017</span>
 
 #### Coin Interview with EOS
 
@@ -290,9 +413,11 @@ Dan Larimer talks to the Coin team about EOS.
 
 <span style="color:silver;">Source: [youtube.com](https://www.youtube.com/watch?v=K6uR0A9cC5Y), June 2017</span>
 
+#### Blocktalk Interview with EOS
 
+Dan Larimer talks to the Blocktalk team about EOS.
 
-
+<span style="color:silver;">Source: [youtube.com](https://www.youtube.com/watch?v=I-X4faugNuI), May 2017</span>
 
 ---
 
