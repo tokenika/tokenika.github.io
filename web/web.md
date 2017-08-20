@@ -163,11 +163,13 @@ One of the things that I learnt in the CAcert adventure was that governance was 
 
 ---
 
-# Executive summaries
-
-
-
 # Business blog
+
+#### Statement Regarding the SEC’s Report on The DAO
+
+Since we have received a number of requests to provide our reaction to the SEC’s recent report in relation to The DAO, we would like to state for the record that we are of the opinion that the SEC’s report does not affect the EOS ERC-20 compatible token (the “EOS tokens”) distribution on the Ethereum blockchain
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/block-one-statement-regarding-the-sec-s-report-on-the-dao), by Brendan Blumer, August 2017</span>
 
 #### An Update from Block.one CEO, Brendan Blumer
 
@@ -379,7 +381,7 @@ Today I would like to take a moment to explain the current structure of an EOS.I
 
 #### Easy Docker Guide for EOS
 
-My previous post [EOS Build Guide on Ubuntu](https://steemit.com/eoskorea/@clayop/eos-build-guide-on-ubunbu) provides instructions to build EOS on native machine. But Docker has many advantages, especially compatibility, so that providing information for Docker users sounds a good idea to me. 
+My previous post EOS Build Guide on Ubuntu provides instructions to build EOS on native machine. But Docker has many advantages, especially compatibility, so that providing information for Docker users sounds a good idea to me. 
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eoskorea/@clayop/easy-docker-guide-for-eos), by @clayop, 2017</span>
 
@@ -437,20 +439,21 @@ Dan Larimer talks to the Blocktalk team about EOS.
 
 EOSscan is a service that helps you to purchase [EOS ](http://eos.io/)tokens at the most reasonable price. EOSscan offers you the current price of EOS tokens by analyzing transactions of EOS token purchases on the Ethereum blockchain.
 
-https://eosscan.io/
+<span style="color:silver;">Link: [eosscan.io](https://eosscan.io/)</span>
 
 ---
 
 # About us
 
-*Tokenika* is a group of entrepreneurs based in Poland, aming to contribute to the emerging EOS ecosystem and hopefully become an active EOS witness when the system goes live in June 2018.
+*Tokenika* is a group of entrepreneurs based in Poland, aming to contribute to the emerging EOS ecosystem and hopefully become an active EOS witness once the system goes live in Q3 2018.
 
-Our contribution is going to include the following domains:
+Our intention is to contribute in the following way:
 
-* running this website meant to be an aggregation of all usefull information about EOS 
-* participating in EOS testnet
-* building useful tools for the EOS ecosystem
-* holding public events aimed at promoting EOS in Eastern Europe
+* aggregate all meaningful information about EOS under one website 
+* offer exexutive summaries and comments 
+* participate in the EOS testnet
+* build useful tools for the EOS ecosystem
+* hold public events with the aim to promote EOS in Poland and Europe
 
 ---
 
