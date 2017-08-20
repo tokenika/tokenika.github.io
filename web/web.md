@@ -129,7 +129,7 @@ The purpose of this post is primarily to focus on issues related to the Initial 
 
 ---
 
-# Concepts
+# Concept blog
 
 #### Who Should Control A Blockchain?
 
