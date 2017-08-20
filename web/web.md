@@ -33,7 +33,7 @@ EOS pozycjonuje się nie jako rozproszony komputer lecz bardziej jako rozproszon
 
 #### 4. Web Assembly
 
-Web Assembly is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [Web Assembly is a game changer](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), it will enable high performance web applications such as video and image editing and games. More details are avialable [here](https://steemit.com/eos/@dantheman/web-assembly-on-eos-50-000-transfers-per-second).
+Web Assembly is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [Web Assembly is a game changer](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), it will enable high performance web applications such as video and image editing and games. More details are available [here](https://steemit.com/eos/@dantheman/web-assembly-on-eos-50-000-transfers-per-second).
 
 #### 5. Brak opłat transakcyjnych (z punktu widzenia użytkownika końcowego)
 
@@ -227,29 +227,11 @@ Laying down the rails for a high performance financial blockchain-based ecosyste
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@iang/seeking-consensus-on-consensus-dpos-or-delegated-proof-of-stake-and-the-two-generals-problem), by Ian Grigg, June 2017</span>
 
-#### How Is EOS different from everything else?
-
-In our community channels we are frequently asked how EOS compares to other blockchain platforms.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/how-is-eos-different-from-everything-else), by block.one, June 2017</span>
-
 #### Casper as an EOS Contract
 
 I recently reviewed the latest Casper Research Paper in light of an ongoing discussion with Vitalik Buterin over consensus mechinisms. It is my intent to be as objective and practical as possible while recognizing all factors of the greater picture.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/casper-as-an-eos-contract), by Dan Larimer, August 2017</span>
-
-#### Response to Vitalik Buterin on EOS
-
-Vitalik Buterin recently took a question about EOS at the Ethereum Shenzhen Keynote. Today I would like to provide some factual corrections to his claims about EOS.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/response-to-vitalik-buterin-on-eos), by Dan Larimer, August 2017</span>
-
-#### Reponse to Vitalik's Written Remarks
-
-I just recently learned of these remarks from Vitalik on reddit. In these remark's Vitalik brings up the issue of Fees and Voting, both of which I feel deserve to be addressed.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/reponse-to-vitalik-s-written-remarks), by Dan Larimer, August 2017</span>
 
 #### EOS.IO software will not suffer from Denial of Service (DOS) attacks like Ethereum
 
@@ -269,18 +251,6 @@ Bitcoin was the first cryptocurrency to introduce the UTXO (Unspent Transaction 
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/blockchain/@dantheman/blockchains-should-be-designed-like-massively-multiplayer-games), by Dan Larimer, April 2017</span>
 
-#### EOS vs. Ethereum for Dummies!
-
-In this post I will describe some of the differences in technological capabilities and limitations, as well as differences in design philosophies between the EOS and Ethereum platforms.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@trogdor/eos-vs-ethereum-for-dummies), by @trogdor, June 2017</span>
-
-#### Centralization of Cryptocurrency - Bitcoin, Ethereum, and EOS
-
-This post is food for thought. A small group of individuals all met face to face in New York. This relatively small group decided the future of bitcoin which is now playing-out.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@crypto-investor/centralization-of-cryptocurrency-bitcoin-ethereum-and-eos), by @crypto-investor, August 2017</span>
-
 #### Individuals That Are Skeptical of The Upcoming EOS Project Simply Don't Understand The Fundamental Differences And Advantages That The EOS Network Will Offer.
 
 The amount of attention and investment the upcoming EOS project has already seen makes some individuals skeptical, but to me it validates the demand and faith that investors have in the upcoming smart contract platform.
@@ -293,12 +263,6 @@ Last month I wrote about the Fear of Missing Out (FOMO) surrounding the EOS ICO.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@lukestokes/could-eos-become-the-most-widely-distributed-ico-ever), by @lukestokes, August 2017</span>
 
-#### EOS vs. Tezos vs. Tauchain: The Dummies' Simplification Of Possibly The Biggest Blockchain Launches Of 2017...
-
-As the blockchain revolution gains momentum, so has this year brought countless ICOs with mega-hype and mind-blowing multi-million dollar crowdfunding campaigns. It's been a ride. And it's tough to keep up with *everything* coming out. Yet, there are a few projects that stand out amongst the many.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@rok-sivante/eos-vs-tezos-vs-tauchain-the-dummies-simplification-of-possibly-the-biggest-blockchain-launches-of-2017), by @rok-sivante, August 2017</span>
-
 #### A Smart Contract Platform Without Transaction Costs or the Need For 'gas' Will Finally Offer Proper Incentive To DApp Developers.
 
 When developers must continually make micro-payments to continue to run and employ their DApps or contracts, price increases make it much less practical to continue to run and develop applications.
@@ -307,7 +271,53 @@ When developers must continually make micro-payments to continue to run and empl
 
 ---
 
-# Witness blogg
+# Competition blog
+
+#### How Is EOS different from everything else?
+
+In our community channels we are frequently asked how EOS compares to other blockchain platforms.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/how-is-eos-different-from-everything-else), by block.one, June 2017</span>
+
+#### EOS vs. Ethereum for Dummies!
+
+In this post I will describe some of the differences in technological capabilities and limitations, as well as differences in design philosophies between the EOS and Ethereum platforms.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@trogdor/eos-vs-ethereum-for-dummies), by @trogdor, June 2017</span>
+
+#### Response to Vitalik Buterin on EOS
+
+Vitalik Buterin recently took a question about EOS at the Ethereum Shenzhen Keynote. Today I would like to provide some factual corrections to his claims about EOS.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/response-to-vitalik-buterin-on-eos), by Dan Larimer, August 2017</span>
+
+#### Reponse to Vitalik's Written Remarks
+
+I just recently learned of these remarks from Vitalik on reddit. In these remark's Vitalik brings up the issue of Fees and Voting, both of which I feel deserve to be addressed.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@dan/reponse-to-vitalik-s-written-remarks), by Dan Larimer, August 2017</span>
+
+#### Centralization of Cryptocurrency - Bitcoin, Ethereum, and EOS
+
+This post is food for thought. A small group of individuals all met face to face in New York. This relatively small group decided the future of bitcoin which is now playing-out.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@crypto-investor/centralization-of-cryptocurrency-bitcoin-ethereum-and-eos), by @crypto-investor, August 2017</span>
+
+#### EOS vs. Tezos vs. Tauchain: The Dummies' Simplification Of Possibly The Biggest Blockchain Launches Of 2017...
+
+As the blockchain revolution gains momentum, so has this year brought countless ICOs with mega-hype and mind-blowing multi-million dollar crowdfunding campaigns. It's been a ride. And it's tough to keep up with *everything* coming out. Yet, there are a few projects that stand out amongst the many.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@rok-sivante/eos-vs-tezos-vs-tauchain-the-dummies-simplification-of-possibly-the-biggest-blockchain-launches-of-2017), by @rok-sivante, August 2017</span>
+
+#### Comparison of Ethereum, Hyperledger Fabric and Corda
+
+With this paper, we provide a brief analysis of the most notable differences between the distributed ledger technologies (DLT) Hyperledger Fabric, R3 Corda and Ethereum. Our intention is to give decision makers new to DLT guidance for what use cases Hyperledger Fabric, Corda and Ethereum are most suitable.
+
+<span style="color:silver;">Source: [medium.com](https://medium.com/@philippsandner/comparison-of-ethereum-hyperledger-fabric-and-corda-21c1bb9442f6), by Philipp Sandner, June 2017</span>
+
+---
+
+# Witness blog
 
 #### Storage Costs on Blockchains using EOS.IO Software
 
