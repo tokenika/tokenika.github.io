@@ -71,13 +71,13 @@ From the business point of view, it is hard to defend the paradigm of end-user b
 
 #### 6. Concept proved in practice
 
-As generic solutions, all smart-contract platforms attempt to create an abstract space which will serve as a basis for concrete application implementations. All, except EOS, do it by starting with the abstraction layer. EOS goes the opposite way: it evolved from concreate implementaions into a generic platoform. The EOS creators have already built two blockchains which actually work and handle a bigger amount of transactions than Bitcoin and Ethereum. Thus EOS is a generalization of two concrete (and very different) implementaions. As a result EOS will most probably end up being a highly practical solution.
+As generic solutions, all smart-contract platforms attempt to create an abstract space which will serve as a basis for concrete application implementations. All, except EOS, do it by starting with the abstraction layer. EOS goes the opposite way: it evolved from concreate implementaions into a generic platoform. The EOS creators have already built two blockchains which actually work and handle a bigger amount of transactions than Bitcoin and Ethereum. Thus EOS is a generalization of two very concrete (and very different) implementaions. As a result EOS will most probably end up being a highly practical solution.
 
 ---
 
 # Known limitations
 
-While we are clear about our strong commitment for EOS, we still aim to remain objective. Below there are the things you need to be aware of, if you consider to  bet on EOS:
+While we are clear about our strong commitment for EOS, we still aim to remain objective. Below there are the things you need to be aware of, if you want to bet on EOS:
 
 * When compared to Ethereum, at the current stage EOS is not widely popular among developers and blockchain start-ups. There is still a lot that needs to be done in this area in order to raise awareness and attract businesses to experiment with EOS. It remains to be seen how the EOS team handles that. What we can be sure of, is that the token distribution has been a large success so far, so they are definitely not short on funding.
 * EOS is not live yet. The testnet is about to be launched, and the ETA for live version is Q3 2018. It's a long time in this industry, yet bear in mind that Steem (i.e. the previous project by the same developement team) was created in less than four months, which is quite unprecedented in the blockchain space. The long time dedicated for testing EOS indicates that quality of code has utmost priority, and when the system does go live it will probably be very packed with features and quite stable.
@@ -489,21 +489,21 @@ BlockOne partner. Inventor of the triple entry ledger Ricardian contracts. Indus
 
 Code developer, active in all Dan Larimer's projects: BitShares, Steem and now EOS.
 
-
-
 ---
 
 # About us
 
 *Tokenika* is a group of entrepreneurs based in Poland, aiming to contribute to the emerging EOS ecosystem and hopefully become an active EOS witness once the system goes live in Q3 2018.
 
-Our intention is to contribute in the following way:
+Also, we would like to be honest and critical about EOS, more so than [the official website](https://eos.io/) can be. Our success is dependent on EOS success, yet we aim to deliver comprehensive and unbiased information.
+
+Our intention is to contribute in the following ways:
 
 * aggregate all meaningful information about EOS under one website 
 * create executive summaries and comments 
 * participate in the EOS testnet
 * build useful tools for the EOS ecosystem
-* hold public events with the aim to promote EOS in Poland and Europe
+* hold public events to promote EOS in Poland and Europe
 
 ---
 
