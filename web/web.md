@@ -495,7 +495,7 @@ Code developer, active in all Dan Larimer's projects: BitShares, Steem and now E
 
 *Tokenika* is a group of entrepreneurs based in Poland, aiming to contribute to the emerging EOS ecosystem and hopefully become an active EOS witness once the system goes live in Q3 2018.
 
-Also, we would like to be honest and critical about EOS, more so than [the official website](https://eos.io/) can be. Our success is dependent on EOS success, yet we aim to deliver comprehensive and unbiased information.
+As far as information is concerned, we would like to be honest and critical about EOS, more so than [the official website](https://eos.io/) can be. Our success is dependent on EOS success, yet we would like our content to be both comprehensive and unbiased.
 
 Our intention is to contribute in the following ways:
 
