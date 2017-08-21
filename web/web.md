@@ -1,6 +1,10 @@
 # What is EOS?
 
-[EOS](https://eos.io/) is the blockchain for building commercial scale decentralized applications that are indistinguishable from centralized alternatives.
+EOS is a blockchain-based, decentralized operating system, designed to support commercial-scale decentralized applications by providing all of the necessary core functionality, enabling businesses to build blockchain applications in a way similar to web-based applications.
+
+<span style="color:silver;">Source: [quora.com](https://www.quora.com/What-is-EOS-cryptocurrency), by Roee-Oren, July 2017</span>
+
+EOS is the blockchain for building commercial scale decentralized applications that are indistinguishable from centralized alternatives.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@stellabelle/re-dantheman-re-kyriacos-re-dantheman-re-eosio-introducing-the-eos-blog-on-steemit-20170514t144829951z), by Dan Larimer, May 2017</span>
 
@@ -10,49 +14,74 @@ The EOS.IO software introduces a new blockchain architecture designed to enable 
 
 ---
 
+# Main Features
+
+#### 1. Scalable
+
+Supports thousands of Commercial Scale DApps, Parallel Execution, Asynchronous Communication, Separates Authentication from Execution
+
+#### 2. Flexible
+
+Freeze and Fix Broken Applications, Generalized Role-based Permissions, Web Assembly
+
+#### 3. Usable
+
+Web Toolkit for Interface Development, Self Describing Interfaces, Self Describing Database Schemes, Declarative Permission Scheme
+
+<span style="color:silver;">Source: [eos.io](https://eos.io/)</span>
+
+---
+
 # Why EOS?
 
-Six reasons why choosing EOS makes sense:
+The most important thing about EOS is that it is built on the premise that what really matters is what business needs, and not what technology can deliver. This approach is clearly manifested in [the Technical White Paper](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md) which starts with the following requirements for blockchain applications:
 
-#### 1. Ogromna wydajność
+* Support Millions of Users
+* Free Usage
+* Easy Upgrades and Bug Recovery
+* Low Latency
+* Sequential Performance
+* Parallel Performance
 
-Podczas gdy inne rozwiązanie wymagają drugiej warstwy procesowania, aby być w stanie obsłużyć popyt na procesowanie transakcji w warunkach produkcyjnych (czyli odpowiednik Lightening Network w Bitcoinie albo Plasmy w Ethereum), EOS osiąga gigantyczną wydajność w swojej warstwie podstawowej. Wynika to z następujących powodów:
+Below are six reasons why EOS is a good choice for building advanced blockchain applications:
 
-* DPOS daje stałą liczbę producentów bloków. Dzięki temu interwały między blokami są na poziomie 3 sekund (a przy lepszej infrastrukturze serwerowej mogą być jeszcze krótsze). Warto dodać że mimo tej skończonej liczby producentów bloków, DPOS jest najbardziej zdecentralizowanym systemem jaki istnieje - oczywiście jeśli zastosujemy racjonalnie uzasadnioną metodę pomiaru stopnia zdecentralizowania. [Tutaj](http://bytemaster.github.io/article/2015/01/13/Decentralization-of-Nxt-vs-BitShares/) jest to dokładniej wyjaśnione.
-* Blockchain EOSa (podobnie jak BitShares i Steem) stosuje podejście *consensus over events* zamiast standardowego *consensus over state*. W wyniku tego wprawdzie dłużej trwa uruchomienie nowego node'a, ale w zamian szybciej działa bieżące procesowanie transakcji. Jest to bardzo korzystny trade-off, bo uruchamianie nowego node'a zdarza się rzadko, a wydajne procesowanie transakcji potrzebne jest non-stop. [Tutaj](https://steemit.com/eos/@iang/the-message-is-the-medium) jest to dokładniej wyjaśnione.
-* Architektura EOSa od samego początku została tak zaprojektowana żeby możliwe było procesowanie wielowątkowe. Póki co żaden inny blockchain tego nie potrafi. Więcej szczegółów [tutaj](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#deterministic-parallel-execution-of-applications).
-* EOS umożliwia procesowanie podzbioru transakcji, tj. tylko tych którymi dany node jest zainteresowany - tym samym możliwe jest ignorowanie wszystkich pozostałych transakcji. Więcej szczegółów [tutaj](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#partial-evaluation-of-blockchain-state).
+#### 1. Processing power
 
-#### 2. Znacznie szerszy kontekst
+While other DLT (Distributed Ledger Technology) solutions definantely require a second layer of processing to be able to handle real-life applications (e.g. Lightening Network in Bitcoin or Plasma in Ethereum), EOS offers enourmous processing power in its primary layer. This is the result of the following features:
 
-EOS traktuje kwestię smart-kontraktów znacznie szerzej niż Ethereum. W założeniu EOSa błędy w kodzie smart-kontraktów są nieuniknione, więc zostały wbudowane w blockchain mechanizmy, które adresują ten problem: konstytucja, arbitraż w przypadku sporów, głosowanie w zakresie decyzji. Gdyby przypadek *The DAO* wydarzył się na EOSie, byłaby klarowna procedura rozwiązania tego problemu. Widać w tym dużą mądrość i dobre wyczucie potrzeb poważnych biznesów: posiadanie z góry zdefiniowanej drogi ewakuacyjnej w przypadku katastrofy jest fundamentalnie istotne.
+* EOS consensus mechanism (DPOS, Delegated Proof of Stake) introduces a fixed numer of block producers. As a result, time intervals between blocks are exactly 3 seconds, and with an improved server infrastructure can be reduced even more. It's worth noting that despite this limited number of block producers, DPOS is the most decentralized system in existence - provided we apply [a rational measure of decentralization](http://bytemaster.github.io/article/2015/01/13/Decentralization-of-Nxt-vs-BitShares/). 
+* EOS blockchain maintains *consensus over events* instead the common approach of *consensus over state*. As a result, it takes longer to restart a network node but on the other hand transaction processing is much quicker. This is a very fortunate trade-off, as re-lanuching a node is a rare event, while efficient transaction processing is needed all the time.
+* Currently all blockchains rely upon sequential processing of transactions; this fundamentally limits the throughput of a blockchain to the computational capacity of a single CPU core. EOS architecture has been designed as [multi-threaded on the very fundmental level](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#deterministic-parallel-execution-of-applications). Not everything can be executed in this way, but those things which can (e.g. validating transaction precondions) are subject of parrael processcing.
+* EOS enables [partial evaluation of blockchain state](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#partial-evaluation-of-blockchain-state). This means that an EOS node can selectively process transactions and ignore those which are of no interest for it. The assumption is that everyone should not have to run everything, especially if they only need to use a small subset of the applications.
 
-#### 3. Kompletny system operacyjny
+#### 2. Much wider context
 
-EOS pozycjonuje się nie jako rozproszony komputer lecz bardziej jako rozproszony system operacyjny. Oznacza to że na poziomie blockchaina dostępne są wszystkie funkcjonalności które są niezbędne dla każdej zaawansowanej aplikacji, np. databases, account permissions, account recovery, scheduling, authentication, inter-app communication. Czyli developerzy smart-kontraktów EOSa mają za zadanie zakodować tylko to co jest unikalne dla danej aplikacji, podczas gdy cała reszta jest dostarczona na poziomie samego blockchaina.
+In EOS smart-contracts are treated as a very broad phenomena. As human errors in smart-contracts are unavoidable, there need to be built-in mechanisms which handle such cases. EOS has a consistution incoded in the blockchain, arbitration for resolving disputes and stakeholders voting on important decisions. Had *The DAO* incident happened on EOS, there would be a clear procedure to follow to resolve the issue in an orderly manner. It's clear that EOS is designed with the needs of serious businesses in mind: before they commit their resources and reputaion to a large blockchain project, they need to be sure there is an emergency procedure in case things get out of control.
+
+#### 3. Complete operating system
+
+EOS is much more than a decentrazlized computer. Actually, it is a full-blown  decentrazlized operating system. What this means is that there are features embeded right in the blockchain which can be utilized by any advanced application built on EOS. Those include:  databases, account permissions, account recovery, scheduling, authentication, inter-app communication. Thus EOS application develpers only need to build what is unique for their application, whereas the fundemental functionality is delivered by the blockchain itself.
 
 #### 4. Web Assembly
 
-Web Assembly is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [Web Assembly is a game changer](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), it will enable high performance web applications such as video and image editing and games. More details are available [here](https://steemit.com/eos/@dantheman/web-assembly-on-eos-50-000-transfers-per-second).
+Smart-contracts in EOS will be compiled to [WebAssembly](http://webassembly.org/), which is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [Web Assembly is a game changer](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), it will enable high performance web applications such as video and image editing and games. WebAssembly provides a universal compile target that enables applications to be developed in any language. Currently there are compilers for C, C++, and Rust. There is even work going on to compile Solidity to WebAssembly.
 
-#### 5. Brak opłat transakcyjnych (z punktu widzenia użytkownika końcowego)
+#### 5. No transaction fees (from the end-user view point)
 
-EOS wychodzi z założenia, że najważniejszym kryterium są wymagania biznesowe a nie ograniczenia technologii. Z punktu widzenia biznesu nie ma racji bytu paradygmat, w którym użytkownik końcowy jest zmuszony do płacenia za sam fakt interakcji z daną aplikacją, tak jak jest to teraz standardem w świecie kryptowalut. Aplikacja taka jak Steem nie mogłaby istnieć w takim modelu. EOS proponuje rozwiązanie, które powszechnie funkcjonuje w normalnym świecie: problem finansowania danego biznesu jest po stronie dawcy usługi (tj. twórcy smart-kontraktu) a nie po stronie jego klienta - ten defaultowo powinien mieć dostęp darmowy (no chyba że twórca smart-kontraktu postanowi inaczej - ważne jest żeby był możliwy wybór dowolnej strategii).
+From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current cryptospace. A Steem-like application could not have survived in such a model. EOS offers a solution which is commonplace in the normal business world: the cost of operating a business is born by the service producer (i.e. the smart-contract owner), and not by their client. The latter should have free access by default, unless the smart-contract creator opts for a different stategy.
 
-#### 6. Koncepcja zweryfikowana w praktyce
+#### 6. Concept proved in practice
 
-Wszystkie inne niż EOS platformy smart-kontraktowe są budowane jako rozwiązanie generyczne. Czyli zaczynamy od abstrakcji a celem jest zbudowanie przestrzeni do implementacji konkretnych aplikacji. EOS idzie w odwrotnym kierunku: od implementacji do abstrakcji. Twórcy EOSa mają w swoim dorobku dwa działające blockchainy (BitShares i Steem), które w sumie procesują więcej transakcji niż Bitcoin i Ethereum. Tym samym EOS jest uogólnieniem dwóch konkretnych (i bardzo różnych) implementacji. Daje to duże prawdopodobieństwo, że EOS będzie czymś co rzeczywiście sprawdza się w praktyce.
+All other smart-kontract platforms are built as generic solutions - they attempt to create an abstract space as a basis for concrete application implementations. EOS goes the opposite way: it evolved from concreate implementaions into an abstraction. The EOS creators have already built two blockchains which actually work and handle a bigger amount of transactions than Bitcoin and Ethereum. Thus EOS is a generalization of two concrete (and very different) implementaions. This implies that EOS will most probably end up being a highly practical solution.
 
 ---
 
 # Known limitations
 
-While we are not hinding our strong commtiment for EOS, stil we aim to remain objective. Below are there are things you need to be aware of:
+While we are clear about our strong commtiment for EOS, we still aim to remain objective. Below there are the things you need to be aware of, if you consider to  bet on EOS:
 
-* When compared to Ethereum, at the current stage EOS is not widely popular among developers and blochchain start-ups. There is still a lot that needs to be done in this area in order to raise awareness and atract businesses to experiment with EOS. 
-* EOS is not live yet. The testnet is about to be launched, and the ETA for live version is June 2018.
-
-Odnośnie terminu live, informację tę warto interpretować następująco: Steem powstał z kodu BitShares w ciągu 3 miesięcy, co oznacza że zespół deweloperów EOSa działa bardzo sprawnie. Długi okres testów EOSa sugeruje że priorytetem jest jakość i że w momencie pójścia live EOS prawdopodobnie będzie bardzo zaawansowanym i stabilnym systemem. 
+* When compared to Ethereum, at the current stage EOS is not widely popular among developers and blochchain start-ups. There is still a lot that needs to be done in this area in order to raise awareness and atract businesses to experiment with EOS. It remains to be seen how the EOS team handles that. What we can be sure of, is that the token distribution has been a large success so far, so they are defintely not short on funds.
+* EOS is not live yet. The testnet is about to be launched, and the ETA for live version is Q3 2018. It's a long time in this industry, yet bear in mind that Steem (i.e. the previous project by the same developement team) was created in less than four months, which is quite unprecidented in the blockchain space. The long time dedicted for testing indicates that quiality of code has utmost priortity, and when the system does go live it will probably be very packed with features and quite stable.
 
 ---
 
@@ -247,6 +276,12 @@ In my previous article I made a case about why general purpose blockchains shoul
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/blockchain/@dantheman/blockchain-utxo-model-is-a-dead-end-for-general-purpose-applications), by Dan Larimer, April 2017</span>
 
+#### Blockchain State Representation should be Abstract and not part of Consensus
+
+Today I would like to make the argument that the exact form the game state takes is irrelevant so long as all players agree on the validity of new game inputs. Stated another way, I am going to argue that there is no need to reach consensus on a canonical global state that can be represented by a hash.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/etheruem/@dantheman/blockchain-state-representation-should-be-abstract-and-not-part-of-consensus), by Dan Larimer, April 2017</span>
+
 #### Blockchain UTXO Model is a Dead End for General Purpose Applications
 
 Bitcoin was the first cryptocurrency to introduce the UTXO (Unspent Transaction Output) model for tracking database state. Every Bitcoin transaction consumes (spends) outputs from prior transactions and produces new outputs to be consumed by future transactions.
@@ -274,12 +309,6 @@ When developers must continually make micro-payments to continue to run and empl
 ---
 
 # Competition blog
-
-#### How Is EOS different from everything else?
-
-In our community channels we are frequently asked how EOS compares to other blockchain platforms.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/how-is-eos-different-from-everything-else), by block.one, June 2017</span>
 
 #### EOS vs. Ethereum for Dummies!
 
@@ -440,6 +469,28 @@ Dan Larimer talks to the Blocktalk team about EOS.
 EOSscan is a service that helps you to purchase [EOS ](http://eos.io/)tokens at the most reasonable price. EOSscan offers you the current price of EOS tokens by analyzing transactions of EOS token purchases on the Ethereum blockchain.
 
 <span style="color:silver;">Link: [eosscan.io](https://eosscan.io/)</span>
+
+---
+
+# Who is who in EOS?
+
+#### Brendan Blumer
+
+BlockOne CEO. Serial entreproneur, with roots in the gaming industry and real estate. Since 2015 he has moved his focus to blockchain techonlogies.
+
+#### Daniel Larimer - @bytemaster, @dan, @dantheman
+
+BlockOne CTO. Father of the concept of DAC (Decentralized Autonomous Company, crrently known as DAO, Decentralized Autonomous Organisation). Built two of the most widely used dApps: BitShares and Steem.
+
+#### Ian Grigg - @iang
+
+BlockOne partner. Inventor of the tripple entry ledger Ricardian contracts. Industry leader in identity and cryptography.
+
+#### Nathan Hourt - @modprobe
+
+Code developer, active in all Dan Larimer's projects: BitShares, Steem and now EOS.
+
+
 
 ---
 
