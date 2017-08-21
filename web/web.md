@@ -62,17 +62,17 @@ In EOS smart-contracts are treated as a very broad phenomena. As human errors in
 
 EOS is much more than a decentrazlized computer. Actually, it is a full-blown  decentrazlized operating system. What this means is that there are features embeded right in the blockchain which can be utilized by any advanced application built on EOS. Those include:  databases, account permissions, account recovery, scheduling, authentication, inter-app communication. Thus EOS application develpers only need to build what is unique for their application, whereas the fundemental functionality is delivered by the blockchain itself.
 
-#### 4. Web Assembly
+#### 4. Web Assembly as a compiler
 
 Smart-contracts in EOS will be compiled to [WebAssembly](http://webassembly.org/), which is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [Web Assembly is a game changer](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), it will enable high performance web applications such as video and image editing and games. WebAssembly provides a universal compile target that enables applications to be developed in any language. Currently there are compilers for C, C++, and Rust. There is even work going on to compile Solidity to WebAssembly.
 
-#### 5. No transaction fees (from the end-user view point)
+#### 5. No transaction fees (from the end-user's view point)
 
-From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current cryptospace. A Steem-like application could not have survived in such a model. EOS offers a solution which is commonplace in the normal business world: the cost of operating a business is born by the service producer (i.e. the smart-contract owner), and not by their client. The latter should have free access by default, unless the smart-contract creator opts for a different stategy.
+From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current cryptospace. A Steem-like application could not have survived in such a model. EOS offers a solution which prevails in business around the world: the cost of operating a business is born by the service producer (i.e. the smart-contract owner), and not by their client. The latter should have free access by default, unless the business owner opts for a different strategy.
 
 #### 6. Concept proved in practice
 
-All other smart-kontract platforms are built as generic solutions - they attempt to create an abstract space as a basis for concrete application implementations. EOS goes the opposite way: it evolved from concreate implementaions into an abstraction. The EOS creators have already built two blockchains which actually work and handle a bigger amount of transactions than Bitcoin and Ethereum. Thus EOS is a generalization of two concrete (and very different) implementaions. This implies that EOS will most probably end up being a highly practical solution.
+Aming to be a generic solution, all other smart-contract platforms attempt to create an abstract space as a basis for concrete application implementations. EOS goes the opposite way: it evolved from concreate implementaions into a generic platoform. The EOS creators have already built two blockchains which actually work and handle a bigger amount of transactions than Bitcoin and Ethereum. Thus EOS is a generalization of two concrete (and very different) implementaions. This implies that EOS will most probably end up being a highly practical solution.
 
 ---
 
