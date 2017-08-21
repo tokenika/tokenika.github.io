@@ -351,7 +351,7 @@ With this paper, we provide a brief analysis of the most notable differences bet
 
 #### Storage Costs on Blockchains using EOS.IO Software
 
-The market will naturally and unavoidably imbue monetary properties to tokens created with the EOS.IO software. It will be necessary to implement dynamic pricing on the cost of consuming an additional unit of memory in order to keep prices practical for actual application development. If an EOS.IO based blockchain reaches a 30 billion USD valuation, then 1M USD may be insignificant amount of money for a blockchain able to allocate 1.5 USD billion dollars per year to block producers (5% inflation).
+The market will naturally and unavoidably imbue monetary properties to tokens created with the EOS.IO software. It will be necessary to implement dynamic pricing on the cost of consuming an additional unit of memory in order to keep prices practical for actual application development.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/storage-costs-on-blockchains-using-eos-io-software), by @eosio, July 2017</span>
 
@@ -467,27 +467,41 @@ Dan Larimer talks to the Blocktalk team about EOS.
 
 EOSscan is a service that helps you to purchase [EOS ](http://eos.io/)tokens at the most reasonable price. EOSscan offers you the current price of EOS tokens by analyzing transactions of EOS token purchases on the Ethereum blockchain.
 
-<span style="color:silver;">Link: [eosscan.io](https://eosscan.io/)</span>
+<span style="color:silver;">Website: [eosscan.io](https://eosscan.io/)</span>
 
 ---
 
 # Who is who in EOS?
 
+#### BlockOne
+
+This is the company which distributes EOS tokens and uses those funds for code developement and marketing.
+
+<span style="color:silver;">Website: [block.one](http://block.one/)</span>
+
 #### Brendan Blumer
 
 BlockOne CEO. Serial entrepreneur, with roots in the gaming industry and real estate. Since 2015 he has moved his focus to blockchain technologies.
+
+<span style="color:silver;">More: [crunchbase.com](https://www.crunchbase.com/person/brendan-blumer)</span>
 
 #### Daniel Larimer - @bytemaster, @dan, @dantheman
 
 BlockOne CTO. Father of the concept of DAC (Decentralized Autonomous Company, currently known as DAO, Decentralized Autonomous Organisation). Built two of the most widely used decentralized applications: BitShares and Steem.
 
+<span style="color:silver;">More: [steemit.com](https://steemit.com/introduceyourself/@dantheman/daniel-larimer--co-founder-of-bitshares-steemit)</span>
+
 #### Ian Grigg - @iang
 
 BlockOne partner. Inventor of the triple entry ledger Ricardian contracts. Industry leader in identity and cryptography.
 
+<span style="color:silver;">More: [steemit.com](https://steemit.com/introduceyourself/@iang/i-am-iang)</span>
+
 #### Nathan Hourt - @modprobe
 
-Code developer, active in all Dan Larimer's projects: BitShares, Steem and now EOS.
+Code developer, has been active in all Dan Larimer's projects: BitShares, Steem and now EOS.
+
+<span style="color:silver;">More: [steemit.com](https://steemit.com/introduceyourself/@modprobe/this-is-my-story-nathan-hourt-true-liberty-co-founder)</span>
 
 ---
 
