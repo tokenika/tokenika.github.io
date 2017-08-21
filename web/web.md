@@ -71,7 +71,7 @@ From the business point of view, it is hard to defend the paradigm of end-user b
 
 #### 6. Concept proved in practice
 
-Aiming to be a generic solution, all other smart-contract platforms attempt to create an abstract space as a basis for concrete application implementations. EOS goes the opposite way: it evolved from concreate implementaions into a generic platoform. The EOS creators have already built two blockchains which actually work and handle a bigger amount of transactions than Bitcoin and Ethereum. Thus EOS is a generalization of two concrete (and very different) implementaions. As a result EOS will most probably end up being a highly practical solution.
+As generic solutions, all smart-contract platforms attempt to create an abstract space which will serve as a basis for concrete application implementations. All, except EOS, do it by starting with the abstraction layer. EOS goes the opposite way: it evolved from concreate implementaions into a generic platoform. The EOS creators have already built two blockchains which actually work and handle a bigger amount of transactions than Bitcoin and Ethereum. Thus EOS is a generalization of two concrete (and very different) implementaions. As a result EOS will most probably end up being a highly practical solution.
 
 ---
 
