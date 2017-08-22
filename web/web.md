@@ -84,6 +84,33 @@ While we are clear about our strong commitment for EOS, we still aim to remain o
 
 ---
 
+# Token distribution
+
+EOS token distribution is quite unique in many respects:
+
+* When designing the EOS distribution system, the primary goal was ensuring as fair and wide of a distribution as possible. For more details explaining the logic behind it, please refer to [this post](https://steemit.com/eos/@eosio/draft-eos-token-sale-smart-contract).
+
+
+* As the EOS blockchain is not live yet, what is being distributed are ERC20-based tokens on the Ethereum platform, which will be mapped 1:1 to proper EOS tokens once the system is launched. 
+* What it means is that you need to trust the company which runs the distribution ([BlockOne]((http://block.one/))) to fulfill its promise. They have very strong motivation to do so, as it is well explained [here](https://steemit.com/eos/@cob/shedding-some-light-on-the-eos-token-purchase-agreement).
+* The distribution started in June 2017 and will last over a period of approximately one year, till June 2018. This coincides with the system going live.
+
+For more details regarding the distribution please refer to [the official website](https://eos.io/) and [this excellent guide](https://steemit.com/eos/@trogdor/the-eos-ico-for-dummies).
+
+---
+
+# Token role
+
+#### What does the token represent?
+
+The token represents access to available resources (e.g. bandwidth, storage space) on the EOS blockchain. If you own 1% of the tokens you are entitled to use 1% of the network. The more valuable the tokens get the more the network grows and the more resources you will get per token.
+
+#### The tokens can be rented/leased
+
+You will be able to rent your unused tokens to those companies/applications looking to get more bandwidth on the EOS blockchain. As [the white paper](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#delegating-capacity) explains, a holder of tokens who may not have an immediate need to consume all or part of the available bandwidth, can give or rent such unconsumed bandwidth to others; the block producers will recognize this delegation of capacity and allocate bandwidth accordingly.
+
+---
+
 # Roadmap
 
 ##### Phase 1 - Minimal Viable Testing Environment - Summer 2017
@@ -115,6 +142,26 @@ While we are clear about our strong commitment for EOS, we still aim to remain o
 
 <span style="color:silver;">Source: [github.com](https://github.com/EOSIO/Documentation/blob/master/Roadmap.md), June 2017</span>
 
+# Milestones
+
+#### Test Network Release - due by September 14, 2017
+
+This milestone will mark the initial release of a functional multi-node test network with the following capabilities:
+
+- CLI,
+- Wallet,
+- Contract Publishing and Execution,
+- Producer Voting,
+- RPC Interface for querying Contract State,
+- Documentation,
+- Example Contracts
+
+#### EOS Beta - due by December 31, 2017
+
+This milestone should be "feature complete". Issues targeted for this milestone would be anything that is potentially consensus breaking.
+
+<span style="color:silver;">Source: [github.com](https://github.com/EOSIO/eos/milestones), August 2017</span>
+
 ---
 
 # Latest news
@@ -124,6 +171,16 @@ While we are clear about our strong commitment for EOS, we still aim to remain o
 We are giving away a select number of conference passes to community members that would like to attend September 14th-16th and meet the team.
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/eos-io-heads-to-shanghai-for-the-3rd-global-blockchain-summit-2017), by @eosio, August 2017</span>
+
+---
+
+# ICO announcements
+
+#### Cappasity Introduces Global AR/VR Ecosystem through September ICO
+
+The Cappasity AR Token ICO will begin in September and continue for four weeks. Funds raised will be used to create an AR/VR Innovation Fund to reward developers for creating excellent AR/VR applications. Participants can contribute using BTC, ETH, BCH, or EOS. Tokens will be issued as standard Ethereum tokens (ERC-20) but will be transferred into the EOS blockchain once it is functional.
+
+<span style="color:silver;">Source: [cryptocoinsnews.com](https://www.cryptocoinsnews.com/cappasity-introduces-global-arvr-ecosystem-september-ico/), August 2017</span>
 
 ---
 
@@ -161,7 +218,7 @@ Daniel Larimer introduces EOS.
 
 #### The EOS ICO for Dummies!
 
-The purpose of this post is primarily to focus on issues related to the Initial Coin Offering (ICO) of EOS , and not on specifics of EOS itself. 
+The purpose of this post is primarily to focus on issues related to the Initial Coin Offering (ICO) of EOS, and not on specifics of EOS itself. 
 
 <span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@trogdor/the-eos-ico-for-dummies), by @trogdor, June 2017</span>
 
