@@ -117,7 +117,7 @@ While we are clear about our strong commitment for EOS, we still aim to remain o
 
 ---
 
-# Latest news?
+# Latest news
 
 #### EOS.IO Heads to Shanghai for The 3rd Global Blockchain Summit 2017
 
