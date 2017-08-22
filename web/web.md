@@ -84,6 +84,16 @@ While we are clear about our strong commitment for EOS, we still aim to remain o
 
 ---
 
+# Latest news
+
+#### EOS.IO Heads to Shanghai for The 3rd Global Blockchain Summit 2017
+
+We are giving away a select number of conference passes to community members that would like to attend September 14th-16th and meet the team.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/eos-io-heads-to-shanghai-for-the-3rd-global-blockchain-summit-2017), by @eosio, August 2017</span>
+
+---
+
 # Roadmap
 
 ##### Phase 1 - Minimal Viable Testing Environment - Summer 2017
@@ -157,7 +167,7 @@ The purpose of this post is primarily to focus on issues related to the Initial 
 
 ---
 
-# Concept blog
+# Concepts
 
 #### Who Should Control A Blockchain?
 
@@ -191,7 +201,7 @@ One of the things that I learnt in the CAcert adventure was that governance was 
 
 ---
 
-# Business blog
+# Business
 
 #### Statement Regarding the SEC’s Report on The DAO
 
@@ -231,7 +241,7 @@ I've spent the past couple of weeks figuring out my approach to get the most che
 
 ---
 
-# Technology blog
+# Technology
 
 #### The Message is the Medium
 
@@ -307,7 +317,7 @@ When developers must continually make micro-payments to continue to run and empl
 
 ---
 
-# Competition blog
+# Competition
 
 #### EOS vs. Ethereum for Dummies!
 
@@ -347,7 +357,7 @@ With this paper, we provide a brief analysis of the most notable differences bet
 
 ---
 
-# Witness blog
+# Witnesses
 
 #### Storage Costs on Blockchains using EOS.IO Software
 
@@ -363,7 +373,7 @@ Witnesses are vulnerable to DDoS attacks. An attacker who knows the network loca
 
 ---
 
-# Developer blog
+# Developers
 
 #### EOS Development Sneak Peek for Very Early Developers
 
@@ -461,7 +471,7 @@ Dan Larimer talks to the Blocktalk team about EOS.
 
 ---
 
-# EOS tools
+# Ecosystem
 
 #### EOSscan Service
 
