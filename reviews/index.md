@@ -34,6 +34,14 @@ Civic is launching a platform on the Rootstock protocol for secure identity mana
 
 ---
 
+## DMarket
+
+#### [Decentralized marketplace to turn every virtual item into a real commodity](dmarket/index.md)
+
+DMarket is a cross-game marketplace that will enable gamers to trade any virtual item from any game on any platform. The marketplace will use blockchain and smart contract technologies to enable the world’s 2.2B gamers and their virtual items to enter the global market economy. 
+
+---
+
 <br/>
 
 <br/>
