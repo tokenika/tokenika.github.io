@@ -84,16 +84,6 @@ While we are clear about our strong commitment for EOS, we still aim to remain o
 
 ---
 
-# Latest news
-
-#### EOS.IO Heads to Shanghai for The 3rd Global Blockchain Summit 2017
-
-We are giving away a select number of conference passes to community members that would like to attend September 14th-16th and meet the team.
-
-<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/eos-io-heads-to-shanghai-for-the-3rd-global-blockchain-summit-2017), by @eosio, August 2017</span>
-
----
-
 # Roadmap
 
 ##### Phase 1 - Minimal Viable Testing Environment - Summer 2017
@@ -124,6 +114,16 @@ We are giving away a select number of conference passes to community members tha
 ##### Phase 5 - Cluster Implementation - The Future
 
 <span style="color:silver;">Source: [github.com](https://github.com/EOSIO/Documentation/blob/master/Roadmap.md), June 2017</span>
+
+---
+
+# Latest news?
+
+#### EOS.IO Heads to Shanghai for The 3rd Global Blockchain Summit 2017
+
+We are giving away a select number of conference passes to community members that would like to attend September 14th-16th and meet the team.
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eos/@eosio/eos-io-heads-to-shanghai-for-the-3rd-global-blockchain-summit-2017), by @eosio, August 2017</span>
 
 ---
 
