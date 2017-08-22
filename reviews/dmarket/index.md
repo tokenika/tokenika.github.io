@@ -61,7 +61,7 @@ As gamers know, multiplayer contests allow participants to earn or create virtua
 
 Unlocking this vast market economy — and accessing the [2.2 billion gamers](https://newzoo.com/insights/articles/the-global-games-market-will-reach-108-9-billion-in-2017-with-mobile-taking-42/) who may be interested in possessing these virtual items — is the quest of [DMarket](https://dmarket.io/)  The brainchild of gaming industry leader Volodymyr Panchenko, DMarket is a decentralized marketplace that aims to turn every virtual gaming item into a tangible commodity.
 
-DMarket hopes to deliver to the worldwide gaming community an application programming interface ([available on GitHub](https://github.com/suntechsoft/dmarket-smartcontract)) that encodes the transactions of these virtual items through smart contracts on the blockchain. Through this venture, DMarket endeavors to make every in-game item tradable across multiple platforms.****
+DMarket hopes to deliver to the worldwide gaming community an application programming interface ([available on GitHub](https://github.com/suntechsoft/dmarket-smartcontract)) that encodes the transactions of these virtual items through smart contracts on the blockchain. Through this venture, DMarket endeavors to make every in-game item tradable across multiple platforms.
 
 “The DMarket blockchain will log transfer of ownership and automatically exchange payments using the DMarket token,” said Panchenko, the company’s CEO. “This is what will allow gamers to trade virtual items for real goods.”
 
