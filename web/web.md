@@ -92,8 +92,8 @@ EOS token distribution is quite unique in many respects:
 
 
 * As the EOS blockchain is not live yet, what is being distributed are ERC20-based tokens on the Ethereum platform, which will be mapped 1:1 to proper EOS tokens once the system is launched. 
-* What it means is that you need to trust the company which runs the distribution ([BlockOne]((http://block.one/))) to fulfill its promise. They have very strong motivation to do so, as it is well explained [here](https://steemit.com/eos/@cob/shedding-some-light-on-the-eos-token-purchase-agreement).
-* The distribution started in June 2017 and will last over a period of approximately one year, till June 2018. This coincides with the system going live.
+* What it means is that you need to trust the company which runs the distribution ([BlockOne]((http://block.one/))) to fulfill their promise. They have very strong motivation to do so, as it is well explained [here](https://steemit.com/eos/@cob/shedding-some-light-on-the-eos-token-purchase-agreement).
+* The distribution started in June 2017 and will last on a daily basis over a period of approximately one year, till June 2018. This coincides with the system going live.
 
 For more details regarding the distribution please refer to [the official website](https://eos.io/) and [this excellent guide](https://steemit.com/eos/@trogdor/the-eos-ico-for-dummies).
 
@@ -141,6 +141,8 @@ You will be able to rent your unused tokens to those companies/applications look
 ##### Phase 5 - Cluster Implementation - The Future
 
 <span style="color:silver;">Source: [github.com](https://github.com/EOSIO/Documentation/blob/master/Roadmap.md), June 2017</span>
+
+---
 
 # Milestones
 
