@@ -574,6 +574,18 @@ Code developer, has been active in all Dan Larimer's projects: BitShares, Steem 
 
 ---
 
+# Documentation for developers
+
+There are several [example contracts](https://github.com/EOSIO/eos/tree/master/contracts) that you can use as a starting point.
+
+For information about the available APIs, refer to this document: [How to Write Contracts](https://eosio.github.io/eos/group__contractdev.html).
+
+There is also a helpful index of [all documentation](https://eosio.github.io/eos/modules.html).
+
+<span style="color:silver;">Source: [steemit.com](https://steemit.com/eosdev/@dan/eos-development-sneak-peek-for-very-early-developers), by Dan Larimer, August 2017</span>
+
+---
+
 # About us
 
 *Tokenika* is a group of entrepreneurs based in Poland, aiming to contribute to the emerging EOS ecosystem and hopefully become an active EOS witness once the system goes live in Q3 2018.
