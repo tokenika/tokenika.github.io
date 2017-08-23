@@ -180,7 +180,7 @@ We are giving away a select number of conference passes to community members tha
 
 #### Cappasity Introduces Global AR/VR Ecosystem through September ICO
 
-The Cappasity AR Token ICO will begin in September and continue for four weeks. Funds raised will be used to create an AR/VR Innovation Fund to reward developers for creating excellent AR/VR applications. Participants can contribute using BTC, ETH, BCH, or EOS. Tokens will be issued as standard Ethereum tokens (ERC-20) but will be transferred into the EOS blockchain once it is functional.
+The [Cappasity AR Token](https://artoken.io/) ICO will begin in September and continue for four weeks. Funds raised will be used to create an AR/VR Innovation Fund to reward developers for creating excellent AR/VR applications. Participants can contribute using BTC, ETH, BCH, or EOS. Tokens will be issued as standard Ethereum tokens (ERC-20) but will be transferred into the EOS blockchain once it is functional.
 
 <span style="color:silver;">Source: [cryptocoinsnews.com](https://www.cryptocoinsnews.com/cappasity-introduces-global-arvr-ecosystem-september-ico/), August 2017</span>
 

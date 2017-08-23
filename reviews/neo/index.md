@@ -1,8 +1,18 @@
 
 
-## NEO is a distributed network for the Smart Economy. Create digital assets and use smart-contracts to make them self-managed.
+**NEO is a distributed network for the Smart Economy. Create digital assets and use smart-contracts to make them self-managed. NEO is the use of blockchain technology and digital identity to digitize assets, the use of smart contracts for digital assets to be self-managed, to achieve "smart economy" with a distributed network.**
 
-NEO is the use of blockchain technology and digital identity to digitize assets, the use of smart contracts for digital assets to be self-managed, to achieve "smart economy" with a distributed network.
+# NEO, China’s Fake Matrix
+
+The currency is somewhat peculiar because although it calls itself a public blockchain, it uses a Byzentine-Fault Tolerance (BFT) algorithm which is usually applicable mainly, if not only, in private blockchains.
+
+Furthermore, Neo’s dBFT algorithm is incomplete and totally void of public oversight. Neo holders are supposed to have the right to vote for honest Validator Nodes. However just like how you can’t nominate yourself to be a validator you also cannot yet vote for validators because it is not coded into the wallets yet.
+
+<span style="color:silver;font-size:11px">Source: [trustnodes.com](http://www.trustnodes.com/2017/08/17/neo-chinas-fake-matrix/)</span>
+
+---
+
+# NEO White Paper
 
 ### Digital Assets
 
@@ -168,7 +178,7 @@ NEO is a distributed network that combines digital assets, digital identities an
 
 ---
 
-## Collaborations
+# Collaborations
 
 #### Alibaba
 
@@ -204,7 +214,7 @@ Antshares is a decentralized network protocol based on blockchain technology to 
 
 ---
 
-## Is NEO 'China's Ethereum'?
+# Is NEO 'China's Ethereum'?
 
 NEO has been called “China’s Ethereum”. The Western market first collectively learned about Antshares, a smart contract and decentralized application (dApp) platform, just ahead of the company’s rebrand to ‘NEO’ – which is Greek for “newness”, novelty and youth. That merely one exchange offers bitcoin-NEO trades has led to a bottleneck in supply. Prices skyrocketed in the weeks ahead of the rebrand. Antshares’ ICO was in the fall of 2016.
 
@@ -264,7 +274,7 @@ Due to NEO’s corporate partners –  among whom are included Microsoft, etc. �
 
 ---
 
-## What does Antshares offer?
+# What does Antshares offer?
 
 Antshares bridges the gap between digital and traditional financial ecosystems by allowing the creation of digital assets and conversion of real-world financial assets to virtual ones. People can register, deposit, transfer, trade and even make settlement of digital assets over Antshares network.
 
