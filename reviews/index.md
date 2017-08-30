@@ -50,7 +50,7 @@ DMarket is a cross-game marketplace that will enable gamers to trade any virtual
 
 ---
 
-<span style="color:silver;font-size:20px">Blockchain-based smart-contract platforms</span>
+<span style="color:silver;font-size:20px">Meta-blockchains</span>
 
 ---
 
@@ -59,6 +59,26 @@ DMarket is a cross-game marketplace that will enable gamers to trade any virtual
 #### [Blockchain capable to interoperate with any other blockchain](cosmos/index.md)
 
 Cosmos is building a proof-of-stake blockchain that will be interoperable with any blockchain, communicate with any programming language, and support any token asset.
+
+---
+
+## Plasma
+
+#### [Protocol for executable smart-contracts running atop an existing blockchain](plasma/index.md)
+
+Plasma will work similarly to the Lightning Network that Poon helped create, in that it is a series of executable distributed code contracts (EDCCs) running atop an existing blockchain. This ensures enforcement while simultaneously holding funds in a contractstate with a net settlement / withdrawal that is scheduled to take place at a specified later time.
+
+---
+
+<br/>
+
+<br/>
+
+<br/>
+
+---
+
+<span style="color:silver;font-size:20px">Blockchain-based smart-contract platforms</span>
 
 ---
 
@@ -75,14 +95,6 @@ EOS introduces a new blockchain architecture designed to enable vertical and hor
 #### [Distributed network for the Smart Economy](neo/index.md)
 
 NEO is the use of blockchain technology and digital identity to digitize assets, the use of smart contracts for digital assets to be self-managed, to achieve "smart economy" with a distributed network.
-
----
-
-## Plasma
-
-#### [Protocol for executable smart-contracts running atop an existing blockchain](plasma/index.md)
-
-Plasma will work similarly to the Lightning Network that Poon helped create, in that it is a series of executable distributed code contracts (EDCCs) running atop an existing blockchain. This ensures enforcement while simultaneously holding funds in a contractstate with a net settlement / withdrawal that is scheduled to take place at a specified later time.
 
 ---
 
