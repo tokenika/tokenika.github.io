@@ -1,5 +1,3 @@
-![](logo2.png)
-
 [Tokenika](www.tokenika.io) to start-up w branży Fin-Tech, technologicznie i kapitałowo związany z nowopowstającym systemem w zakresie technologii DLT (Distributed Ledger Technology) o nazwie [EOS](www.eos.io). Pod brandem Tokenika dążymy do elekcji na prestiżową pozycję jednego z 20 centrów procesowych EOSa w czerwcu 2018, kiedy system ten zostanie uruchomiony. Mamy kapitał inwestycyjny, sporą wiedzę w zakresie DLT, a także dobre relacje z twórcami EOSa.
 
 Obecnie poszukujemy osoby na stanowisko programisty C++.
