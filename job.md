@@ -14,8 +14,7 @@ Wymagania:
 * umiejętność samodzielnego rozwiązywania problemów,
 * umiejętność redagowania dokumentacji,
 * szybkie przyswajanie wiedzy i otwartość na nowe technologie,
-* bardzo dobra znajomość języka angielskiego,
-* obsługa hackertyper.com
+* bardzo dobra znajomość języka angielskiego
 
 Oferujemy:
 
