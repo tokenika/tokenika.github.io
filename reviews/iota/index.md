@@ -355,3 +355,7 @@ The user-software is fully functioning, by the way, so people can send and recei
 [Time Has Come For Blockchainless Technology: IOTA’s David Sønstebø](https://cointelegraph.com/news/time-has-come-for-blockchainless-technology-iotas-david-s%C3%B8nsteb%C3%B8)
 
 [The Blockchain-less Token IOTA is Ready to Take on the World](https://cointelegraph.com/news/iota-beta-internet-of-things)
+
+
+
+[IOTA is problematic ($MIOTA) Broken Internet of Things](https://steemit.com/iota/@cryptoportfolio/iota-is-problematic-usdmiota-broken-internet-of-things)
