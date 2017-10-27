@@ -1,14 +1,14 @@
 # EOS - the next step after Ethereum?
 
-1. Our background. (2 minutes) (DW)
-2. Quick survey "State of the blockchain today". (5 minutes) (DW)
+1. Our background. (2 minutes) (TM/DW)
+2. Quick survey "State of the blockchain today". (5 minutes) (TM/DW)
 3. Major problems facing the crypto-space as of 2017. (3 minutes) (JZ)
 4. EOS presentation. (20 minutes) (JZ)
    - What is EOS?
    - What features make EOS unique when compared to Ethereum?
    - What are EOS weak points?
    - What are EOS strong points?
-5. About Tokenika (5 minutes) (DW)
+5. About Tokenika (5 minutes) (TM/DW)
    * What we do?
    * What we need?
 6. QAs (5 minutes)
