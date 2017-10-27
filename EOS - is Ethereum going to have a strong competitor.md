@@ -21,7 +21,7 @@
 
 ### What is EOS? 
 
-An operating system for executing smart-contracts. Its domain is similar to Ethereum yet EOS tackles a much wider problem.
+An operating system for executing smart-contracts. Its *raison d'être* is similar to Ethereum's yet EOS tackles a much wider problem.
 
 ### What features make EOS unique when compared to Ethereum?
 
