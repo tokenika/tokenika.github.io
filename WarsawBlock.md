@@ -8,7 +8,7 @@
    - What features make EOS unique when compared to Ethereum?
    - What are EOS weak points?
    - What are EOS strong points?
-5. About Tokenika (5 minutes) (TM/DW)
+5. About Tokenika. (5 minutes) (TM/DW)
    * What we do?
    * What we need?
 6. QAs (5 minutes)
@@ -23,7 +23,7 @@ Total: 40 minutes.
 
 ## ad 1. Our background
 
-* We have a strong background spanning from the manufacturing industry, real-estate, education and public agencies. We're strongly based in reality:
+* Our background is very wide - spanning from the manufacturing industry, real-estate, education and public agencies. We're strongly based in reality:
   * We run real businesses employing several hundreds of people. 
   * One of us runs a real-estate association with over 8k members.
   * One of us, Krzysztof Piech, is a publicly known figure promoting the crypto industry in the mainstream media and state agenesis.
