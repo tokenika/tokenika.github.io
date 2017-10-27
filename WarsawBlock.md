@@ -28,7 +28,7 @@ Total: 40 minutes.
   * One of us runs a real-estate association with over 8k members.
   * One of us, Krzysztof Piech, is a publicly known figure promoting the crypto industry in the mainstream media and state agenesis.
   * We have active business connections with China.
-* We are blockchain veterans. We started with BTC, went though the mining phase. Then we repeated the same success with ETH and other successful projects. In most cases we invest and hold.
+* We are blockchain veterans. We started with BTC and went through the mining phase. Then we repeated the same success with ETH and other major projects. In most cases we invest and hold.
 * We actively participate in the blockchain space. This year alone we've been to the FinTech Week in London and Blockchain Summit in Shanghai. We've talked to the people behind some the major projects, including Ethereum, Iota, Factom, Gnosis.
 
 
