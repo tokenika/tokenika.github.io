@@ -86,9 +86,9 @@ Total: 40 minutes.
   * Not live yet
 
 * #### What are EOS strong points?
-  * small yet very efficient and experienced team
-  * combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
-  * commitment to spend 1 bln USD to boost the ecosystem
+  * Small yet very efficient and experienced team
+  * Combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
+  * Commitment to spend 1 bln USD to boost the ecosystem
 
 
 
