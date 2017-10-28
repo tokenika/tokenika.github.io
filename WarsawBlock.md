@@ -76,9 +76,9 @@ This presentation will be about a smart-contract system called EOS but we are in
 
   One possible solution preventing smart-contracts getting out of control is to find a way to formally verify their code before they are deployed. The problem is that it's very hard in practice. Formal verification makes things difficult. And as of now, it just reduces the risk but does not give 100% guarantee the code will run as expected. So you can make a lot of effort, but still you need to be able to handle a black swan. Or you're out business.
 
-  Look at the schizophrenia Ethereum needs to demonstrate in order to justify its existence. They clearly try to eat the cake and still have the cake. Their website still says: *Build **unstoppable** applications*. Right, unstoppable, this is what it says. Are they really unstoppable? We all remember the DAO, don't we?
+  Look at the schizophrenia Ethereum needs to demonstrate in order to justify its existence. They clearly try to eat the cake and still have the cake. Their website still says: *Build **unstoppable** applications*. Right, unstoppable, this is what it says. Are they really unstoppable? We all remember *The DAO*, don't we?
 
-  Please don't get me wrong. I'm not making a judgement about the way they sorted out the mess. I'm making a judgement about them being unprepared to handle the situation in an orderly manner. And guess what? No lesson seems to be learned - they are as unprepared now as they were back then. Clearly handling a smart-contract running amok is not part of their business.
+  Please don't get me wrong. I'm not making a judgement about the way people behind Ethereum sorted out the mess. I'm making a judgement about them being unprepared to handle the situation in an orderly manner. And guess what? No lesson seems to be learned - they are as unprepared now as they were back then. Clearly handling a smart-contract running amok is not part of their business.
 
 - Confidentiality of transactions
 
@@ -91,15 +91,41 @@ This presentation will be about a smart-contract system called EOS but we are in
 * #### What is EOS? 
 
   * An operating system for building decentralized applications. Its *raison d'être* is similar to Ethereum's yet EOS tackles a much wider problem.
-  * Evolution: payment system >> smart-contract system >> operating system for decentralized applications.
+  * Evolution: payment system >> smart-contract system >> operating system for decentralized applications. Those words are being used on purpose: it's not just a system, it's an **operating system**. And it doesn't just run smart-contracts, it runs **decentralized applications**.
 
 * #### What features make EOS unique when compared to Ethereum?
 
   * Processing power
+
+    While other systems definitely require a second layer of processing to be able to scale, EOS offers enormous processing power in its primary layer. This is the result of the following features:
+
+    - EOS consensus mechanism (DPOS, Delegated Proof of Stake) introduces a fixed number of block producers. As a result, time intervals between blocks are exactly 3 seconds, and with an improved server infrastructure can be reduced even more. It’s worth noting that despite this limited number of block producers, DPOS is the most decentralized system in existence - provided we apply [a rational measure of decentralization](http://bytemaster.github.io/article/2015/01/13/Decentralization-of-Nxt-vs-BitShares/).
+    - EOS blockchain maintains *consensus over events* instead the common approach of *consensus over state*. As a result, it takes longer to restart a network node but on the other hand transaction processing is much quicker. This is a very beneficial trade-off, as node restarting is a rare event, while efficient transaction processing is what's needed most of the time.
+    - Currently all blockchains rely upon sequential processing of transactions; this fundamentally limits the throughput of a blockchain to the computational capacity of a single CPU core. EOS architecture has been designed as [multi-threaded on the very fundamental level](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#deterministic-parallel-execution-of-applications). Not everything can be executed in this way (e.g. managing an order book of a decentralized exchange), but those things which can (e.g. validating a smart-contract's preconditions) are subject of parallel processing. EOS is extremely fast in sequential processing and gets an extra boost when the parallel processing mode kicks in.
+    - EOS enables [partial evaluation of blockchain state](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#partial-evaluation-of-blockchain-state). This means that an EOS node can selectively process transactions and ignore those which are of no interest for it. The assumption is that everyone should not have to run everything, especially if they only need to use a small subset of the applications.
+
   * Addressing a much wider context
-  * Complete operating system (including embedded storage solution)
+
+    In EOS smart-contracts are treated as a very broad phenomena. The assumption is that human errors in smart-contracts are unavoidable, so there needs to be a built-in mechanism which handle such cases. EOS will have:
+
+    * a constitution encoded in the blockchain,
+    * arbitration for resolving disputes
+    * and stakeholders voting on important decisions.
+
+    Had *The DAO* incident happened on EOS, there would be a clear procedure to follow to resolve the issue in an orderly manner. It’s clear that EOS is designed with the needs of serious businesses in mind: before they commit their resources and their precious reputation to a large blockchain project, they need to be sure there is an emergency procedure in case things get out of control.
+
+  * Complete operating system
+
+    EOS is much more than just a decentralized computer. Actually, it is a full-blown decentralized operating system, including a built-in storage solution based on IPFS. What this means is that there are features embedded right in the blockchain which can be utilized by any advanced application built on EOS. Those include: databases, account permissions, account recovery, scheduling, authentication, inter-app communication. Thus application developers building on EOS only need to write code for what is unique for their application, whereas the fundamental functionality is delivered by the blockchain itself.
+
   * Web Assembly as a compiler
+
+    Smart-contracts in EOS will be compiled to [WebAssembly](http://webassembly.org/), which is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [WebAssembly is a big deal](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), as it will enable high performance web applications such as video and image editing and games. It provides a universal compile target that enables applications to be developed in any language, ranging from C++, Java & C# and JavaScript. There is even work going on to compile Solidity to WebAssembly.
+
   * No transaction fees
+
+    From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current crypto-space: it's rental-based (pay-as-you-go), instead of owner-based. A Steem-like application could not have survived in such a model. EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and then use it freely, not just rent it.
+
   * DPOS - the most decentralized & resilient consensus system out there
 
 * #### What are EOS weak points?
@@ -110,8 +136,13 @@ This presentation will be about a smart-contract system called EOS but we are in
 
 * #### What are EOS strong points?
   * Small (26 devs) yet very efficient & experienced team
+
   * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
+
   * Concept proved in practice
+
+    All existing smart-contract platforms are being built without any prior experience with building decentralized applications. How can I build a platform for decentralized applications if I've never built a decentralized application? Steem and BitShares - they are very different. One is a decentralized exchange and the other is social media. What they were able to do is look at them and figure out what's common between them. EOS is the result of this.
+
   * Commitment to spend 1 bln USD to boost the ecosystem
 
 * #### EOS roadmap
