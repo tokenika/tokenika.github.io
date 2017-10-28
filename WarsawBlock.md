@@ -124,9 +124,11 @@ Total: 40 minutes.
 
   * We are setting up a software house dedicated to building dApps (both on EOS and ETH). We are already experimenting with EOS smart-contracts and already have third-parties manifesting interest in using us to convert their ideas into EOS apps.
 
-  * As far as EOS is concerned, we aim to become one of 20 block producers (called *witnesses*) once the system goes live. 
+  * As far as EOS is concerned, we aim to become one of the 20 block producers (called *witnesses*) once the system goes live.
 
-    How realistic is that? Unless you are a major stakeholder of EOS (which we are not), the only way to do it is via building a strong reputation in EOS community. How do you di that? By doing things which are considered to be beneficial for EOS and its ecosystem by its community. As you can see we've been doing various things to this end and actually this very presentation is part of the process.
+    How realistic is that? Well, it depends how determined you are. Unless you are a major stakeholder of EOS (which we are not), the only way to do it is via building a strong reputation in EOS community. How do you do that? By doing things which are considered to be beneficial for EOS and its ecosystem by its community and EOS shareholders. It's similar to an attempt to be elected to the board of directors in a publicly traded company.
+
+    As you can see we've been doing various things to this end and actually this very presentation is part of the process.
 
     And obviously you need to be able to handle building the server infrastructure and make it both robust and secure. I guess we can manage that as our main advisor, who prefers to remain anonymous, is already a witness for Steem.
 
