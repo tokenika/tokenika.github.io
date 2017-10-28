@@ -87,7 +87,7 @@ Total: 40 minutes.
 
 * #### What is EOS? 
 
-  * An operating system for executing smart-contracts. Its *raison d'être* is similar to Ethereum's yet EOS tackles a much wider problem.
+  * An operating system for building decentralized applications. Its *raison d'être* is similar to Ethereum's yet EOS tackles a much wider problem.
   * Evolution: payment system >> smart-contract system >> operating system for decentralized applications.
 
 * #### What features make EOS unique when compared to Ethereum?
@@ -101,13 +101,13 @@ Total: 40 minutes.
 
 * #### What are EOS weak points?
 
-  * Low awareness and a lot of negative perception
+  * Low awareness and quite a lot of negative (undeserved?) perception
   * Almost non-existent ecosystem and very few developers
   * Not live yet
 
 * #### What are EOS strong points?
-  * Small yet very efficient and experienced team
-  * Combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
+  * Small (26 devs) yet very efficient & experienced team
+  * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
   * Commitment to spend 1 bln USD to boost the ecosystem
 
 
@@ -116,9 +116,19 @@ Total: 40 minutes.
 
 * #### What we do?
 
-  * Our focus is on blockchain-based fundraising and digital asset management. Projects like NeuFund,  Melonport are Iconomy are the best approximation of our domain. 
-  * We are setting up a software house dedicated to building dApps (both on EOS and ETH).
-  * Regarding EOS we aim to become a witness once the system goes live. (Our main advisor is already a witness for Steem).
+  * Our focus is on blockchain-based fundraising and digital asset management. Projects like NeuFund, Melonport are Iconomy are the best approximation of the domain we want to be in.
+
+    We believe that just as there has been an ICO frenzy on Ethereum for the last couple of months,  there will be a similar one on EOS. This time by businesses who actually want to build production-ready apps, not prototypes and proofs of concept. Real apps used by real people, i.e. not only blockchain folks.
+
+    So we want to be prepared for this happening: businesses wanting to raise funds and investors wanting to risk funds, and then manage their portfolio in a secure manner.
+
+  * We are setting up a software house dedicated to building dApps (both on EOS and ETH). We are already experimenting with EOS smart-contracts and already have third parties manifesting interest  in using us to convert their ideas into EOS apps. 
+
+  * As far as EOS is concerned, we aim to become one of 20 block producers (called *witnesses*) once the system goes live. 
+
+    How realistic is that? Unless you are a major stakeholder of EOS (which we are not), the only way to do it is via building a strong reputation in EOS community. How do you di that? By doing things which are considered to be beneficial for EOS and its ecosystem by its community. We've been doing various things but actually this very presentation is part of the process. 
+
+    And obviously you need to be able to handle building the server infrastructure and make it both robust and secure. I guess we can manage that as our main advisor, who prefers to remain anonymous, is already a witness for Steem.
 
 * #### What we need?
 
