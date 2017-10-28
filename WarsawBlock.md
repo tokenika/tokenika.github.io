@@ -3,6 +3,12 @@
 1. Our background. (2 minutes) (TM/DW)
 2. Quick survey "State of the blockchain today". (5 minutes) (TM/DW)
 3. Major problems facing the crypto-space as of 2017. (5 minutes) (JZ)
+   * Scalability
+   * High/unpredictable transaction fees
+   * Private key security
+   * Blockchain governance
+   * Smart-contracts running amok
+   * Confidentiality of transactions
 4. EOS presentation. (20 minutes) (JZ)
    - What is EOS?
    - What features make EOS unique when compared to Ethereum?
@@ -52,27 +58,27 @@ This presentation will be about a smart-contract system called EOS but we are in
 
 ## ad 3. Major problems facing the crypto-space as of 2017
 
-- Scalability
+- #### Scalability
 
   Scalability is considered to be the number one problem facing all major blockchains, especially Bitcoin and Ethereum. The only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Is it any good? Well, kind of.  Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. So it's best suited for recurrent payments between the same parties. And it doesn't handle smart-contracts.
 
   Ethereum has also got a scaling solution called Plasma, which is basically a tree of chains. There are two major problems with it: it's still just at a proof-of-concept stage and it's inherently less secure.
 
-- High/unpredictable transaction fees
+- #### High/unpredictable transaction fees
 
   It has become evident that none of the many businesses currently being built on Bitcoin or Ethereum can have any economic viability at the current level of transaction fees. As fees are entirely under block producers’ control, the only way to address this problem is to rely on the second layer transaction processing, which I've just described, and assume that transaction fees applied there will be significantly lower.
 
-- Private key security
+- #### Private key security
 
   How to handle the inevitable problem of people losing access to their blockchain accounts? It can happen for various reasons: they get hacked, they forget their passwords, they lose their mobile phones or computers. Apparently there is no solution currently available. The experts say this is the "inherent" feature of a blockchain. Is it really the case? Bear with me and we'll find out quite soon.
 
-- Blockchain governance
+- #### Blockchain governance
 
   This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean decisions in business-as-usual situations (e.g. budgeting) as well as decisions needed in emergency situations (when something goes seriously wrong, e.g. the DAO).
 
   You need to have an efficient voting system in place. Bitcoin has none. Project like Ethereum or Dash have some kind of voting in place. But imagine what happens when there is a moral dilemma? When different groups of community expect different outcomes - is a fork the only way out? Or when there is an emergency and there is no time for voting - you need to act immediately?
 
-- Smart-contracts running amok
+- #### Smart-contracts running amok
 
   One possible solution preventing smart-contracts getting out of control is to find a way to formally verify their code before they are deployed. The problem is that it's very hard in practice. Formal verification makes things difficult. And as of now, it just reduces the risk but does not give 100% guarantee the code will run as expected. So you can make a lot of effort, but still you need to be able to handle a black swan. Or you're out business.
 
@@ -80,7 +86,7 @@ This presentation will be about a smart-contract system called EOS but we are in
 
   Please don't get me wrong. I'm not making a judgement about the way people behind Ethereum sorted out the mess. I'm making a judgement about them being unprepared to handle the situation in an orderly manner. And guess what? No lesson seems to be learned - they are as unprepared now as they were back then. Clearly handling a smart-contract running amok is not part of their business.
 
-- Confidentiality of transactions
+- #### Confidentiality of transactions
 
   This is a tough one. How to reconcile our desire for confidentiality with our desire for transparency? When business A does a deal with business B, does it have to be visible to the rest of the world including their competition? In traditional business we are used to the notion of trade secrets, so if we want to build blockchain-based solutions for real-life businesses, we need to somehow address this requirement.
 
