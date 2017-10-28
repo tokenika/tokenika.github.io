@@ -52,6 +52,7 @@ Total: 40 minutes.
 - Scalability
 
   Scalability is considered to be the number one problem facing all major blockchains, especially Bitcoin and Ethereum. The only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Is it any good? Well, kind of.  Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. So it's best suited for recurrent payments between the same parties. And it doesn't handle smart-contracts.
+
   Ethereum has also got a scaling solution called Plasma, which is basically a tree of chains. There are two major problems with it: it's still just at a proof-of-concept stage and it's inherently less secure.
 
 - High/unpredictable transaction fees
@@ -64,13 +65,17 @@ Total: 40 minutes.
 
 - Blockchain governance
 
-  This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean both decisions in business-as-usual situations (e.g. budgeting) and decisions needed in emergency situations (e.g. the DAO). You need to have an efficient voting system in place. Bitcoin has none. Project like Ethereum or Dash have some kind of voting in place, but imagine what happens when there is a moral dilemma? When different groups of community expect different outcomes - is a fork the only way out? Or when there is an emergency and there is not time for voting?
+  This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean decisions in business-as-usual situations (e.g. budgeting) as well as decisions needed in emergency situations (when something goes seriously wrong, e.g. the DAO).
+
+  You need to have an efficient voting system in place. Bitcoin has none. Project like Ethereum or Dash have some kind of voting in place. But imagine what happens when there is a moral dilemma? When different groups of community expect different outcomes - is a fork the only way out? Or when there is an emergency and there is no time for voting - you need to act immediately?
 
 - Smart-contracts running amok
 
   One possible solution preventing smart-contracts getting out of control is to find a way to formally verify their code before they are deployed. The problem is that it's very hard in practice. Formal verification makes things difficult. And as of now, it just reduces the risk but does not give 100% guarantee the code will run as expected. So you can make a lot of effort, but still you need to be able to handle a black swan. Or you're out business.
 
-  Look at the schizophrenia Ethereum is demonstrating. They clearly try to eat the cake and still have the cake. Their website still says: *Build **unstoppable** applications*. Are they really unstoppable? You do remember the DAO, don't you?
+  Look at the schizophrenia Ethereum needs to demonstrate in order to justify its existence. They clearly try to eat the cake and still have the cake. Their website still says: *Build **unstoppable** applications*. Right, unstoppable, this is what it says. Are they really unstoppable? We all remember the DAO, don't we?
+
+  Please don't get me wrong. I'm not making a judgement about the way they sorted out the mess. I'm making a judgement about them being unprepared to handle the situation in an orderly manner. And guess what? No lesson seems to be learned - they are as unprepared now as they were back then. Clearly handling a smart-contract running amok is not part of their business.
 
 - Confidentiality of transactions
 
