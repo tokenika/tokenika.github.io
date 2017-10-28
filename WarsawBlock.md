@@ -82,9 +82,9 @@ This presentation will be about a smart-contract system called EOS but we are in
 
   One possible solution preventing smart-contracts getting out of control is to find a way to formally verify their code before they are deployed. The problem is that it's very hard in practice. Formal verification makes things difficult. And as of now, it just reduces the risk but does not give 100% guarantee the code will run as expected. So you can make a lot of effort, but still you need to be able to handle a black swan. Or you're out business.
 
-  Look at the schizophrenia Ethereum needs to demonstrate in order to justify its existence. They clearly try to eat the cake and still have the cake. Their website still says: *Build **unstoppable** applications*. Right, unstoppable, this is what it says. Are they really unstoppable? We all remember *The DAO*, don't we?
+  Look at the schizophrenia Ethereum needs to go through in order to justify its existence. They clearly try to eat the cake and still have the cake. Their website still says: *Build **unstoppable** applications*. Right, unstoppable, this is what it says. Are they really unstoppable? We all remember *The DAO*, don't we?
 
-  Please don't get me wrong. I'm not making a judgement about the way people behind Ethereum sorted out the mess. I'm making a judgement about them being unprepared to handle the situation in an orderly manner. And guess what? No lesson seems to be learned - they are as unprepared now as they were back then. Clearly handling a smart-contract running amok is not part of their business.
+  Please don't get me wrong. I'm not making a judgement about the way people behind Ethereum sorted out the mess. I'm making a judgement about them being unprepared to handle the situation in an orderly manner. And guess what? No lesson seems to be learned - they are as unprepared for a black swan now as they were back then. Clearly handling a smart-contract running amok is not considered to be part of their business.
 
 - #### Confidentiality of transactions
 
@@ -122,6 +122,10 @@ This presentation will be about a smart-contract system called EOS but we are in
 
   * Complete operating system
 
+    We have all those exciting ideas in the crypto-space but actually nothing is coming to market. All we have are just prototypes. The developers are trying to build these amazing applications but they don't get to spend their time on building business logic. Instead they are stuck on things like databases, storage and inter-app communication.
+
+    What we are missing is an operating system.
+
     EOS is much more than just a decentralized computer. Actually, it is a full-blown decentralized operating system, including a built-in storage solution based on IPFS. What this means is that there are features embedded right in the blockchain which can be utilized by any advanced application built on EOS. Those include: databases, account permissions, account recovery, scheduling, authentication, inter-app communication. Thus application developers building on EOS only need to write code for what is unique for their application, whereas the fundamental functionality is delivered by the blockchain itself.
 
   * Web Assembly as a compiler
@@ -141,13 +145,17 @@ This presentation will be about a smart-contract system called EOS but we are in
   * Not live yet
 
 * #### What are EOS strong points?
-  * Small (26 devs) yet very efficient & experienced team
+  * Small yet very efficient & experienced team
 
-    The same team which built BitShares and Steem. Steem, the most complex blockchain in existence today: conceived, designed, built, launched in just 6 months.
+    Dan Larimer's track record: very fast & very powerful. It's the same team that has built BitShares and Steem, which is the most complex blockchain in existence today: conceived, designed, built, launched in just 6 months.
+
+    As of now, the team has 26 developers, which is a fraction of what Ethereum has at its disposal, yet probably the biggest team in history under Larimer's management as CTO.
 
   * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
 
-    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer, young yet very experienced and successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital (the same which was an early investor in ETH) financially backing it, with Pierce even personally engaged in promoting EOS. So even if it ends badly, you are in a good company.
+    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, a young yet very experienced and successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital (the same which was an early investor in ETH) financially backing it, with Pierce even personally engaged in promoting EOS.
+
+    So even if it ends badly, we are in a good company.
 
   * Concept proved in practice
 
@@ -155,8 +163,11 @@ This presentation will be about a smart-contract system called EOS but we are in
 
   * Commitment to spend 1 bln USD to boost the ecosystem
 
+    Brendan Blumer: *EOS is the most well funded project in history and we plan to soon announce a program for up to one billion USD of capital for EOS projects. We’re amidst onboarding a few critical partners first that will give EOS and this program the world-class credibility it deserves.*
+
 * #### EOS roadmap
 
+  * The project was started in Q1 2017, it was publicly announced in May 2017.
   * Right now we have a MVP stage called *EOS Dawn*. You can run a standalone EOS node and play with smart-contracts using command line tools.
   * By the end of the year an EOS version featuring all major functionalities will be released.
   * Q1 & Q2 2018 devoted to testing and building development tools & documentation. During this phase you can starting building apps running on the testnet.
