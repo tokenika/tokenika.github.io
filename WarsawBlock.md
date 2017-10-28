@@ -8,6 +8,7 @@
    - What features make EOS unique when compared to Ethereum?
    - What are EOS weak points?
    - What are EOS strong points?
+   - EOS roadmap
 5. About Tokenika. (4 minutes) (TM/DW)
    * What we do?
    * What we need?
@@ -21,7 +22,7 @@ Total: 40 minutes.
 
 ## Disclaimer
 
-This presentation will be about a smart-contract system called EOS but we are in no formal way associated with the company developing EOS code. They are not paying us and this definitely is not meant to be a sales pitch for EOS. We have no direct interest in you buying EOS tokens and this certainly should not treated as a financial advice. We are just part of EOS community and our aim is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS.
+This presentation will be about a smart-contract system called EOS but we are in no formal way associated with the company developing EOS code. They are not paying us and this definitely is not meant to be a sales pitch for EOS. Actually we have no direct interest in you buying EOS tokens and this certainly should not be treated as a financial advice. We are just part of EOS community and our aim is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS.
 
 ## ad 1. Our background
 
@@ -99,18 +100,26 @@ This presentation will be about a smart-contract system called EOS but we are in
   * Complete operating system (including embedded storage solution)
   * Web Assembly as a compiler
   * No transaction fees
-  * Concept proved in practice
+  * DPOS - the most decentralized & resilient consensus system out there
 
 * #### What are EOS weak points?
 
-  * Low awareness and quite a lot of negative (undeserved?) perception
+  * Low awareness and quite a lot of negative (undeserved?) perception, mainly due to people being skeptical about the viability of the claims contained in EOS whitepaper.
   * Almost non-existent ecosystem and very few developers
   * Not live yet
 
 * #### What are EOS strong points?
   * Small (26 devs) yet very efficient & experienced team
   * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
+  * Concept proved in practice
   * Commitment to spend 1 bln USD to boost the ecosystem
+
+* #### EOS roadmap
+
+  * Right now we have a MVP stage called *EOS Dawn*. You can run a standalone EOS node and play with smart-contracts using command line tools.
+  * By the end of the year an EOS version featuring all major functionalities will be released.
+  * Q1 & Q2 2018 devoted to testing and building development tools & documentation. During this phase you can starting building apps running on the testnet.
+  * The blockchain goes live in June 2018.
 
 
 
@@ -132,7 +141,7 @@ This presentation will be about a smart-contract system called EOS but we are in
 
     As you can see we've been doing various things to this end and actually this very presentation is part of the process.
 
-    And obviously you need to be able to handle building the server infrastructure and make it both robust and secure. I guess we can manage that as our main advisor, who prefers to remain anonymous, is already a witness for Steem.
+    And obviously to be a viable witness candidate you need to be able to handle the server infrastructure and make it both robust and secure. I guess we can manage that as our main advisor, who prefers to remain anonymous, is already a witness for Steem.
 
 * #### What we need?
 
