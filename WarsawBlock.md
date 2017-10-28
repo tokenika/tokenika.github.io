@@ -130,7 +130,7 @@ This presentation will be about a smart-contract system called EOS but we are in
 
   * No transaction fees
 
-    From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current crypto-space: it's rental-based (pay-as-you-go), instead of owner-based. A Steem-like application could not have survived in such a model. EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and then use it freely, not just rent it.
+    From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current crypto-space: it's rental-based (pay-as-you-go), instead of owner-based. A Steem-like application could not have survived in such a model. EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and its resources and then use them freely, not just rent them - this is obsolete. In EOS the deal is simple: if you own 1% of the tokens you own 1% of the network, including all it's resources: the bandwidth, the storage etc.
 
   * DPOS - the most decentralized & resilient consensus system out there
 
@@ -143,7 +143,11 @@ This presentation will be about a smart-contract system called EOS but we are in
 * #### What are EOS strong points?
   * Small (26 devs) yet very efficient & experienced team
 
+    The same team which built BitShares and Steem. Steem, the most complex blockchain in existence today: conceived, designed, built, launched in just 6 months.
+
   * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
+
+    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer, young yet very experienced and successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital (the same which was an early investor in ETH) financially backing it, with Pierce even personally engaged in promoting EOS. So even if it ends badly, you are in a good company.
 
   * Concept proved in practice
 
