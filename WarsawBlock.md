@@ -91,13 +91,15 @@ This presentation will be about a smart-contract system called EOS but we are in
 
   This is a tough one. How to reconcile our desire for confidentiality with our desire for transparency? When business A does a deal with business B, does it have to be visible to the rest of the world including their competition? In traditional business we are used to the notion of trade secrets, so if we want to build blockchain-based solutions for real-life businesses, we need to somehow address this requirement.
 
-- #### Bad User Experience
+- #### Bad user experience
 
-  User Experience in the crypto-space sucks. Can anyone name a blockchain-based application which can be used by normal people? Not by speculators (investors?) like you, who hold the tokens for speculative reasons but by normal people, who just want to be users, not risk-takers. An app which does not require you to buy any tokens to use it? An app which allows you do do things in real-time, just as any normal app like Facebook? I think hard I could name just one such blockchain app, which can maybe, just maybe, compete with centralized apps in terms of UX. The rest cannot.
+  We must admit that user experience in the crypto-space is quite horrible. Can anyone name a blockchain-based application which can be used by normal people? Not by insiders like you, but by normal people, who just want to be users, not investors or risk-takers. An app which does not require you to buy tokens before you can try using it? An app which allows you do things in real-time, just as any conventional app like eBay or Uber? I could name just one blockchain-based app, which maybe, just maybe, has the potential to compete with conventional apps in terms of UX. The rest cannot.
 
-  Isn't it strange that systems which are valued at several billions of dollars are not capable to deliver a user interface that meets today's standards?
+  By the way, isn't it strange that systems which are valued at several billions of dollars are not capable to deliver a user interface that meets today's standards?
 
-  There is a reason for that. The developers are still stuck on making the back-end usable, there is no resources left to build the front-end. And even if they had the resources, you can't build a proper front-end if the back-end sucks and is unable to overcome the latency of block production. 
+  There is a reason for that. As developers are still stuck on making the back-end functional, there are no resources left to build the front-end. And even if they had the resources, you can't build a proper front-end if the back-end sucks and is unable to overcome the latency of block production. 
+
+  The point is, if we want mass adoption, from the end-user perspective blockchain-based apps need to be indistinguishable from conventional apps. And unfortunately, despite all the hype, the technology right now is still too immature for that. We don't just need an efficient blockchain. We need the entire infrastructure around blockchain which makes it possible for front-end developers to do their job.
 
 
 
@@ -137,6 +139,8 @@ This presentation will be about a smart-contract system called EOS but we are in
 
     EOS is much more than just a decentralized computer. Actually, it is a full-blown decentralized operating system, including a built-in storage solution based on IPFS. What this means is that there are features embedded right in the blockchain which can be utilized by any advanced application built on EOS. Those include: databases, account permissions, account recovery, scheduling, authentication, inter-app communication. Thus application developers building on EOS only need to write code for what is unique for their application, whereas the fundamental functionality is delivered by the blockchain itself.
 
+    Let's focus on just one of those built-in features - account recovery. What this means is that if you're hacked and your private key has been changed by the hacker, you can still recover the funds, provided you know the private key before it was changed. Can you imagine **not** having this feature, if you aim for mass adoption?
+
   * Web Assembly as a compiler
 
     Smart-contracts in EOS will be compiled to [WebAssembly](http://webassembly.org/), which is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [WebAssembly is a big deal](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), as it will enable high performance web applications such as video and image editing and games. It provides a universal compile target that enables applications to be developed in any language, ranging from C++, Java & C# and JavaScript. There is even work going on to compile Solidity to WebAssembly.
@@ -147,10 +151,25 @@ This presentation will be about a smart-contract system called EOS but we are in
 
   * DPOS - the most decentralized & resilient consensus system out there
 
+    The DPOS algorithm is divided into two parts: 
+
+    * electing a group of block producers
+    * and block production scheduling.
+
+    Block producers are elected by stakeholders voting according to their stake. Hence the name: Delegated POS. The election part is what causes the most controversy, as it injects the human element back into blockchain, while we assume the reason we created the notion of blockchain in the first place was to get rid of the human element. Well, this assumption is wrong. We created the blockchain in order to align human motivations properly, not to get of them. It's an illusion, as mathematically it's not possible to create a self-contained system which is not dependent on something that is outside of it.
+
+    As for the second part, block production scheduling, the main rule here is that it's invalid for a block producer to produce a block at any other time slot than the one they are scheduled for. This is a very simple rule, but its consequences are quite significant, for example:
+
+    * Someone with even 50% of the active voting power is unable to select even a single producer on their own.
+    * The system is robust under every conceivable natural network disruption and even secure in the face of corruption of a large minority of producers. 
+    * Unlike some competing algorithms, DPOS can continue to function when a majority of producers fail. During this process the community can vote to replace the failed producers until it can resume 100% participation. I know of no other consensus algorithm that is robust under such a high and varied failure conditions.
+
+    This gives DPOS the power to confirm transactions with 99.9% certainty in an average of just 1.5 seconds while degrading in a graceful, detectable manner that is trivial to recover from.
+
 * #### What are EOS weak points?
 
   * Low awareness and quite a lot of negative (undeserved?) perception, mainly due to people being skeptical about the viability of the claims contained in EOS whitepaper.
-  * Almost non-existent ecosystem and very few developers outside of the core team, capable to contribute to the code.
+  * Almost non-existent ecosystem and very few developers outside of the core team, capable to contribute to the code-base.
   * Not live yet. I'll tell you about the roadmap in a sec.
 
 * #### What are EOS strong points?
@@ -162,7 +181,7 @@ This presentation will be about a smart-contract system called EOS but we are in
 
   * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
 
-    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, a young yet very experienced and successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital (the same which was an early investor in ETH) financially backing it, with Pierce even personally engaged in promoting EOS.
+    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, a young yet very experienced and already successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital (the same which was an early investor in ETH) financially backing it, with Pierce even personally engaged in promoting EOS.
 
     So even if it ends badly, we are in a good company.
 
