@@ -40,7 +40,7 @@ W jaki sposób technologia blockchainowa może umożliwić przepływy finansowe 
 
 ## 11. EOS - kolejny krok po Ethereum?
 
-Jakie są obecnie największe problemy i jakie są ich rozwiązania? Prezentacja systemu EOS, prawdopodobnie najbardziej dojrzałego koncepcyjnie systemu jaki istnieje.
+Jakie są obecnie największe problemy w branży krypto-walut i jakie są ich rozwiązania? Prezentacja systemu EOS, prawdopodobnie najbardziej dojrzałego koncepcyjnie systemu jaki istnieje.
 
 ## 12. Smart-kontrakty w praktyce
 
