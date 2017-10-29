@@ -29,7 +29,7 @@ Total: 40 minutes.
 
 ## Disclaimer
 
-This presentation will be about a smart-contract system called EOS but we are in no formal way associated with block.one, the company developing EOS code. They are not paying us and this definitely is not meant to be a sales pitch for EOS. Actually we have no direct interest in you buying EOS tokens and this certainly should not be treated as a financial advice. We are just part of EOS community and our aim is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS.
+This presentation will be about a smart-contract system called EOS. However we are in no formal way associated with block.one, the company developing EOS code. They are not paying us and this definitely is not meant to be a sales pitch for EOS. Actually we have no direct interest in you buying EOS tokens and this certainly should not be treated as a financial advice. We are just part of EOS community and our aim is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS.
 
 ## ad 1. Our background
 
