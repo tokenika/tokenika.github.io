@@ -9,6 +9,7 @@
    * Blockchain governance
    * Smart-contracts running amok
    * Confidentiality of transactions
+   * Bad User Experience
 4. EOS presentation. (20 minutes) (JZ)
    - What is EOS?
    - What features make EOS unique when compared to Ethereum?
@@ -89,6 +90,14 @@ This presentation will be about a smart-contract system called EOS but we are in
 - #### Confidentiality of transactions
 
   This is a tough one. How to reconcile our desire for confidentiality with our desire for transparency? When business A does a deal with business B, does it have to be visible to the rest of the world including their competition? In traditional business we are used to the notion of trade secrets, so if we want to build blockchain-based solutions for real-life businesses, we need to somehow address this requirement.
+
+- #### Bad User Experience
+
+  User Experience in the crypto-space sucks. Can anyone name a blockchain-based application which can be used by normal people? Not by speculators (investors?) like you, who hold the tokens for speculative reasons but by normal people, who just want to be users, not risk-takers. An app which does not require you to buy any tokens to use it? An app which allows you do do things in real-time, just as any normal app like Facebook? I think hard I could name just one such blockchain app, which can maybe, just maybe, compete with centralized apps in terms of UX. The rest cannot.
+
+  Isn't it strange that systems which are valued at several billions of dollars are not capable to deliver a user interface that meets today's standards?
+
+  There is a reason for that. The developers are still stuck on making the back-end usable, there is no resources left to build the front-end. And even if they had the resources, you can't build a proper front-end if the back-end sucks and is unable to overcome the latency of block production. 
 
 
 
