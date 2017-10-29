@@ -9,7 +9,7 @@
    * Blockchain governance
    * Smart-contracts running amok
    * Confidentiality of transactions
-   * Bad User Experience
+   * Bad user experience
 4. EOS presentation. (20 minutes) (JZ)
    - What is EOS?
    - What features make EOS unique when compared to Ethereum?
@@ -75,7 +75,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 
 - #### Blockchain governance
 
-  This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean decisions in business-as-usual situations (e.g. budgeting) as well as decisions needed in emergency situations (when something goes seriously wrong, e.g. the DAO).
+  This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean decisions in business-as-usual situations (e.g. budgeting) as well as decisions needed in emergency situations (when something goes seriously wrong, e.g. *The DAO*).
 
   You need to have an efficient voting system in place. Bitcoin has none. Project like Ethereum or Dash have some kind of voting in place. But imagine what happens when there is a moral dilemma? When different groups of community expect different outcomes - is a fork the only way out? Or when there is an emergency and there is no time for voting - you need to act immediately?
 
