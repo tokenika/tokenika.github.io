@@ -29,7 +29,7 @@ Total: 40 minutes.
 
 ## Disclaimer
 
-This presentation will be about a smart-contract system called EOS but we are in no formal way associated with the company developing EOS code. They are not paying us and this definitely is not meant to be a sales pitch for EOS. Actually we have no direct interest in you buying EOS tokens and this certainly should not be treated as a financial advice. We are just part of EOS community and our aim is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS.
+This presentation will be about a smart-contract system called EOS but we are in no formal way associated with block.one, the company developing EOS code. They are not paying us and this definitely is not meant to be a sales pitch for EOS. Actually we have no direct interest in you buying EOS tokens and this certainly should not be treated as a financial advice. We are just part of EOS community and our aim is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS.
 
 ## ad 1. Our background
 
@@ -112,7 +112,7 @@ This presentation will be about a smart-contract system called EOS but we are in
 
 * #### What features make EOS unique when compared to Ethereum?
 
-  * Processing power
+  * <u>Processing power</u>
 
     While other systems definitely require a second layer of processing to be able to scale, EOS offers enormous processing power in its primary layer. This is the result of the following features:
 
@@ -121,7 +121,7 @@ This presentation will be about a smart-contract system called EOS but we are in
     - Currently all blockchains rely upon sequential processing of transactions; this fundamentally limits the throughput of a blockchain to the computational capacity of a single CPU core. EOS architecture has been designed as [multi-threaded on the very fundamental level](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#deterministic-parallel-execution-of-applications). Not everything can be executed in this way (e.g. managing an order book of a decentralized exchange), but those things which can (e.g. validating a smart-contract's preconditions) are subject of parallel processing. EOS is extremely fast in sequential processing and gets an extra boost when the parallel processing mode kicks in.
     - EOS enables [partial evaluation of blockchain state](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#partial-evaluation-of-blockchain-state). This means that an EOS node can selectively process transactions and ignore those which are of no interest for it. The assumption is that everyone should not have to run everything, especially if they only need to use a small subset of the applications.
 
-  * Addressing a much wider context
+  * <u>Addressing a much wider context</u>
 
     In EOS smart-contracts are treated as a very broad phenomena. The assumption is that human errors in smart-contracts are unavoidable, so there needs to be a built-in mechanism which handle such cases. EOS will have:
 
@@ -131,7 +131,7 @@ This presentation will be about a smart-contract system called EOS but we are in
 
     Had *The DAO* incident happened on EOS, there would be a clear procedure to follow to resolve the issue in an orderly manner. It’s clear that EOS is designed with the needs of serious businesses in mind: before they commit their resources and their precious reputation to a large blockchain project, they need to be sure there is an emergency procedure in case things get out of control.
 
-  * Complete operating system
+  * <u>Complete operating system</u>
 
     We have all those exciting ideas in the crypto-space but actually nothing is coming to market. All we have are just prototypes. The developers are trying to build these amazing applications but they don't get to spend their time on building business logic. Instead they are stuck on things like databases, storage and inter-app communication.
 
@@ -141,15 +141,15 @@ This presentation will be about a smart-contract system called EOS but we are in
 
     Let's focus on just one of those built-in features - account recovery. What this means is that if you're hacked and your private key has been changed by the hacker, you can still recover the funds, provided you know the private key before it was changed. Can you imagine **not** having this feature, if you aim for mass adoption?
 
-  * Web Assembly as a compiler
+  * <u>Web Assembly as a compiler</u>
 
     Smart-contracts in EOS will be compiled to [WebAssembly](http://webassembly.org/), which is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [WebAssembly is a big deal](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), as it will enable high performance web applications such as video and image editing and games. It provides a universal compile target that enables applications to be developed in any language, ranging from C++, Java & C# and JavaScript. There is even work going on to compile Solidity to WebAssembly.
 
-  * No transaction fees
+  * <u>No transaction fees</u>
 
     From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current crypto-space: it's rental-based (pay-as-you-go), instead of owner-based. A Steem-like application could not have survived in such a model. EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and its resources and then use them freely, not just rent them - this is obsolete. In EOS the deal is simple: if you own 1% of the tokens you own 1% of the network, including all it's resources: the bandwidth, the storage etc.
 
-  * DPOS - the most decentralized & resilient consensus system out there
+  * <u>DPOS - the most decentralized & resilient consensus system out there</u>
 
     The DPOS algorithm is divided into two parts: 
 
