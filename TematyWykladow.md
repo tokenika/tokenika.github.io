@@ -8,7 +8,7 @@ Jakie biznesy mają sens (i jakie nie mają sensu) w wersji zdecentralizowanej? 
 
 ## 3. Ewolucja technologii blockchainowej
 
-Od systemu płatności, poprzez platformę smart-kontraktową, aż do zdecentralizowanego systememu operacyjnego. Meta-blockchain. Przegląd najważniejszych projektów w branży. 
+Od systemu płatności, poprzez platformę smart-kontraktową, aż do zdecentralizowanego systemu operacyjnego. Czym jest meta-blockchain? Przegląd najważniejszych projektów w branży. 
 
 ## 4. Smart-kontrakty
 
@@ -16,11 +16,11 @@ Czym jest a czym nie jest smart-kontrakt? Powszechnie występujące iluzje w zak
 
 ## 5. Blockchain governance
 
-Jak zorganizować podejmowanie decyzji w środowisku zdecentralizowanym i dlaczego jest to ważne Dlaczego każdy blockchain potrzebuje konstytucję? Iluzja kompletności systemu.
+Jak zorganizować podejmowanie decyzji w środowisku zdecentralizowanym i dlaczego jest to ważne? Dlaczego każdy blockchain potrzebuje konstytucję? Iluzja kompletności systemu.
 
 ## 6. Konsensus
 
-Różne sposoby osiągania konsensusu w procesie budowy bloków. Rozróżnienie między wyborem kto produkuje blok i wyborem która sekwencja bloków jest własciwa.
+Różne sposoby osiągania konsensusu w procesie budowy bloków. Rozróżnienie między wyborem kto produkuje blok i wyborem która sekwencja bloków jest właściwa.
 
 ## 7. Blockchain bez bloków? 
 
@@ -36,12 +36,12 @@ Tokenizacja wszystkich sfer działalności biznesowej - jak realna jest to wizja
 
 ## 10. Internet of Things
 
-W jaki sposób technologia blockchainowa może umożliwić przepływy finansowe między maszynami i przy okazji zapobiec utracie kontroli człowieka nad maszyną? Omównie problemu na przykładzie systemu IOTa.
+W jaki sposób technologia blockchainowa może umożliwić przepływy finansowe między maszynami i przy okazji zapobiec utracie kontroli człowieka nad maszyną? Omówienie problemu na przykładzie systemu IOTA.
 
 ## 11. EOS - kolejny krok po Ethereum?
 
-Jakie są obecnie największe problemy i jakie są ich rozwiązania? Prezentacja systemu EOS, prawdobnie najbardziej dojrzałego koncepcyjnie systemu jaki istnieje.
+Jakie są obecnie największe problemy i jakie są ich rozwiązania? Prezentacja systemu EOS, prawdopodobnie najbardziej dojrzałego koncepcyjnie systemu jaki istnieje.
 
-## 12. Smart-kontraky w praktyce
+## 12. Smart-kontrakty w praktyce
 
 Jak praktycznie wygląda pisanie i testowanie smart-kontraktów? Realne przykłady z użyciem kodu na bazie Ethereum i EOS.
