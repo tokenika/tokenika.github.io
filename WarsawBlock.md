@@ -46,7 +46,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 ## ad 2. Quick survey "State of the blockchain today"
 
 - What is the total of BTC mining revenue per day? (12 mln USD / day)
-- How much are we spending on BTC and ETH mining per year? (5 bln USD, which is much more then the total of all ICOs so far: 3 bln USD)
+- How much are we spending on BTC and ETH mining per year? (5 bln USD, which is much more than the total raised by all ICOs so far: 3 bln USD)
 - What is BTC average transaction fee? What about ETH? (3 USD & 0.30 USD)
 - How many transactions per second is BTC able process? What about ETH? (4 trxn/sec & 30 trxn/sec)
 - Which are the four top blockchains currently in production which handle the biggest number of transactions? (BTC, ETH, Steem, BitShares)
