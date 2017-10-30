@@ -93,7 +93,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 
 - #### Bad user experience
 
-  We must admit that user experience in the crypto-space is quite horrible. Can anyone name a blockchain-based application which can be used by normal people? Not by insiders like you, but by normal people, who just want to be users, not investors or risk-takers. An app which does not require you to buy tokens before you can try using it? An app which allows you do things in real-time, just as any conventional app like eBay or Uber? I could name just one blockchain-based app, which maybe, just maybe, has the potential to compete with conventional apps in terms of UX. The rest cannot.
+  We must admit that user experience in the crypto-space is quite horrible. Can anyone name a blockchain-based application which can be used by normal people? Not by insiders like you, but by normal people, who just want to be users, not investors or risk-takers. An app which does not require you to buy tokens before you can try using it? An app which allows you do things in real-time, just as any conventional app like eBay or Uber? I could name just one blockchain-based app, which maybe, just maybe, has the potential to compete with conventional apps in terms of user experience. The rest cannot.
 
   By the way, isn't it strange that systems which are valued at several billions of dollars are not capable to deliver a user interface that meets today's standards?
 
