@@ -34,11 +34,11 @@ This presentation will be about a smart-contract system called EOS. However we a
 ## ad 1. Our background
 
 * Our background is very wide - spanning from the manufacturing industry, real-estate, education and public agencies. We're strongly based in reality:
-  * We run real businesses employing several hundreds of people. 
+  * We run real businesses employing over 800 people. 
   * One of us runs a real-estate association with over 8k members.
   * One of us, Krzysztof Piech, is a publicly known figure promoting the crypto industry in the mainstream media and state agenesis.
   * We have active business connections with China.
-* We are blockchain veterans. We started with BTC and went through the mining phase. Then we repeated the same success with ETH and other major projects. In most cases we invest and hold.
+* We are blockchain veterans. We started with BTC and went through the mining phase. Then we repeated the same success with ETH (we participated in Ethereum ICO in 2014) and other major projects. In most cases we invest and hold.
 * We actively participate in the blockchain space. This year alone we've been to the FinTech Week in London and Blockchain Summit in Shanghai. We've talked to the people behind some the major projects, including Ethereum, Iota, Factom, Gnosis.
 
 
@@ -46,7 +46,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 ## ad 2. Quick survey "State of the blockchain today"
 
 - What is the total of BTC mining revenue per day? (12 mln USD / day)
-- How much are we spending on BTC and ETH mining per year? (5 bln USD, which is much more then the total of all ICOs)
+- How much are we spending on BTC and ETH mining per year? (5 bln USD, which is much more then the total of all ICOs so far: 3 bln USD)
 - What is BTC average transaction fee? What about ETH? (3 USD & 0.30 USD)
 - How many transactions per second is BTC able process? What about ETH? (4 trxn/sec & 30 trxn/sec)
 - Which are the four top blockchains currently in production which handle the biggest number of transactions? (BTC, ETH, Steem, BitShares)
