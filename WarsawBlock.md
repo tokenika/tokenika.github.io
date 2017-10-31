@@ -172,7 +172,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 * #### What are EOS weak points?
 
   * Low awareness and quite a lot of negative (undeserved?) perception, mainly due to people being skeptical about the viability of the claims contained in EOS whitepaper.
-  * Almost non-existent ecosystem and very few developers outside of the core team, capable to contribute to the code-base.
+  * Almost non-existent ecosystem and very few developers outside of the core team, capable to contribute to the code-base. However this changes rapidly - there are already over 10k registered users on the Telegram EOS channel and 1k on EOS Dev channel.
   * Not live yet. I'll tell you about the roadmap in a sec.
 
 * #### What are EOS strong points?
