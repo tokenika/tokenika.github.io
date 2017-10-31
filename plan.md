@@ -1,6 +1,6 @@
 ## Etap 1
 
-**Cel**: Zrozumieć kod dystrybucji tokenów EOSa, a następnie zreplikować ten kod za pomocą smart-kontrataków na EOSie.
+**Cel**: Zrozumieć kod dystrybucji tokenów EOSa, a następnie zreplikować ten kod za pomocą smart-kontraktów na EOSie.
 
 **Weryfikacja**: Praktyczna umiejętność organizacji ICO na Ethereum i EOSie.
 
@@ -8,9 +8,9 @@
 
 ## Etap 2
 
-**Cel**: Zrozumieć platformy Neufund i/lub Iconomy, a następnie zreplikować ten kod za pomocą smart-kontrataków na EOSie.
+**Cel**: Zrozumieć kod platformy Neufund i/lub Iconomy, a następnie zreplikować ten kod za pomocą smart-kontraktów na EOSie.
 
-**Weryfikacja**: Kontrakty w wersji EOS działają dokładnie tak samo jak oryginały na ETH.
+**Weryfikacja**: Testy pokazujące, że kontrakty w wersji EOS działają dokładnie tak samo jak oryginały na ETH.
 
 
 
@@ -24,7 +24,7 @@
 
 ## Etap 4
 
-**Cel**: Realizacja zleceń budowy aplikacji EOSowych dla klientów zewnętrznych.
+**Cel**: Zdolność do przyjmowania zleceń na budowę aplikacji EOSowych dla klientów zewnętrznych.
 
 **Weryfikacja**: Samodzielna realizacja zlecenia zewnętrznego. 
 
