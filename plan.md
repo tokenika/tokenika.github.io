@@ -73,7 +73,7 @@ Działania Szymona (GTG).
 
 ### Wymagania w zakresie ludzi
 
-- wynagrodzenie dla Szymona (potrzebny od etapu 2, ok. 15-20 tys)
+- wynagrodzenie dla Szymona
 
 ------
 
@@ -85,10 +85,10 @@ Działania Szymona (GTG).
 
 # Wątek 3 - Działania medialne
 
-### Etap 1
+### Obszar 1
 
-Monitorowanie kanałów komunikacyjnych (Steem, Telegram, Forum, Facebook).
+Aktywne monitorowanie kanałów komunikacyjnych (Steem, Telegram, Forum, Facebook).
 
-### Etap 2
+### Obszar 2
 
-Prezentacja na Warsaw Block. 
+Prezentacje publiczne (Warsaw Block itp).
