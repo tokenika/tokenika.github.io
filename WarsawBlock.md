@@ -107,8 +107,11 @@ This presentation will be about a smart-contract system called EOS. However we a
 
 * #### What is EOS? 
 
-  * An operating system for building decentralized applications. Its *raison d'être* is similar to Ethereum's yet EOS tackles a much wider problem.
-  * Evolution: payment system >> smart-contract system >> operating system for decentralized applications. Those words are being used on purpose: it's not just a system, it's an **operating system**. And it doesn't just run smart-contracts, it runs **decentralized applications**.
+  * The simplest way to put it would be to say that EOS is a smart-contract platform. But it's much more than that. EOS is a holistic approach to high-performance general-purpose consensus. Its *raison d'être* is similar to Ethereum's, yet EOS tackles a much wider problem.
+
+    Larimer: *EOS is the blockchain for building commercial scale decentralized applications that are indistinguishable from centralized alternatives.*
+
+  * Evolution: payment system >> smart-contract system >> operating system for decentralized applications. EOS is an operating system for building decentralized applications. Those words are being used on purpose: it's not just a system, it's an **operating system**. And it doesn't just run smart-contracts, it runs **decentralized applications**.
 
 * #### What features make EOS unique when compared to Ethereum?
 
