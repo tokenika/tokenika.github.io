@@ -1,4 +1,6 @@
-## Etap 1
+# Wątek 1 - Smart-kontrakty
+
+### Etap 1
 
 **Cel**: Zrozumieć kod dystrybucji tokenów EOSa, a następnie zreplikować ten kod za pomocą smart-kontraktów na EOSie.
 
@@ -6,7 +8,7 @@
 
 
 
-## Etap 2
+### Etap 2
 
 **Cel**: Zrozumieć kod platformy Neufund i/lub Iconomy, a następnie zreplikować ten kod za pomocą smart-kontraktów na EOSie.
 
@@ -14,7 +16,7 @@
 
 
 
-## Etap 3
+### Etap 3
 
 **Cel**: Praktyczna umiejętność budowy aplikacji na EOSie, łącznie z interfejsem webowym.
 
@@ -22,7 +24,15 @@
 
 
 
-## Etap 4
+### Etap 4
+
+**Cel**: Wykonanie frameworku do pracy ze smart-kontraktami - narzędzie analogiczne do [Truffle](http://truffleframework.com/) dla Ethereum.
+
+**Weryfikacja**: Publikacja strony webowej, dokumentacji i kodu w formie *open source*. 
+
+
+
+### Etap 5
 
 **Cel**: Zdolność do przyjmowania zleceń na budowę aplikacji EOSowych dla klientów zewnętrznych.
 
@@ -32,7 +42,7 @@
 
 ---
 
-#### Wymagania w zakresie ludzi
+### Wymagania w zakresie ludzi
 
 * developer z praktyczną znajomością Solidity (potrzebny od etapu 2, ok. 15-20 tys)
 * developer z dużym doświadczeniem w C++ (potrzebny od etapu 2, ok. 15-20 tys)
@@ -40,9 +50,45 @@
 
 ---
 
-#### Wymagania w zakresie sprzętu
+### Wymagania w zakresie sprzętu
 
 * biuro dla zespołu 4-5 osób
 
 
 * sprzęt komputerowy (jedno stanowisko to ok. 5-6 tys)
+
+
+
+# Wątek 2 - Zagadnienia sieciowe
+
+### Obszar 1
+
+Aktywny udział w publicznym testnecie.
+
+### Obszar 2
+
+Działania Szymona (GTG).
+
+---
+
+### Wymagania w zakresie ludzi
+
+- wynagrodzenie dla Szymona (potrzebny od etapu 2, ok. 15-20 tys)
+
+------
+
+### Wymagania w zakresie sprzętu
+
+- infrastruktura serwerowa
+
+
+
+# Wątek 3 - Działania medialne
+
+### Etap 1
+
+Monitorowanie kanałów komunikacyjnych (Steem, Telegram, Forum, Facebook).
+
+### Etap 2
+
+Prezentacja na Warsaw Block. 
