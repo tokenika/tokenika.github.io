@@ -137,7 +137,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 
     What we are missing is an operating system.
 
-    EOS is much more than just a decentralized computer. Actually, it is a full-blown decentralized operating system, including a built-in storage solution based on IPFS. What this means is that there are features embedded right in the blockchain which can be utilized by any advanced application built on EOS. Those include: databases, account permissions, account recovery, scheduling, authentication, inter-app communication. Thus application developers building on EOS only need to write code for what is unique for their application, whereas the fundamental functionality is delivered by the blockchain itself.
+    EOS is much more than just a decentralized computer. Actually, it is a full-blown decentralized operating system, including a built-in storage solution based on IPFS. What this means is that there are features embedded right in the blockchain which can be utilized by any advanced application built on EOS. Those include: databases, account permissions, account recovery, scheduling, authentication, inter-app communication, biometric 2nd factor validation. Thus application developers building on EOS only need to write code for what is unique for their application, whereas the fundamental functionality is delivered by the blockchain itself.
 
     Let's focus on just one of those built-in features - account recovery. What this means is that if you're hacked and your private key has been changed by the hacker, you can still recover the funds, provided you know the private key before it was changed. Can you imagine **not** having this feature, if you aim for mass adoption?
 
@@ -197,9 +197,9 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   * The project was started in Q1 2017, it was publicly announced in May 2017.
   * Right now we have a MVP stage called *EOS Dawn*. You can run a standalone EOS node and play with smart-contracts using command line tools.
-  * By the end of the year an EOS version featuring all major functionalities will be released.
+  * By the end of the year an EOS version featuring all major functionalities will be released. Only single-threaded execution at this stage.
   * Q1 & Q2 2018 devoted to testing and building development tools & documentation. During this phase you can starting building apps running on the testnet.
-  * The blockchain goes live in June 2018.
+  * The blockchain goes live in June 2018. Initially the assumption was that parallel execution would be added in the next stage, but according to the latest news parallel execution is going to be right from the start.
 
 
 
