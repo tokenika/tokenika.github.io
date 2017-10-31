@@ -28,7 +28,7 @@
 
 **Cel**: Wykonanie frameworku do pracy ze smart-kontraktami - narzędzie analogiczne do [Truffle](http://truffleframework.com/) dla Ethereum.
 
-**Weryfikacja**: Publikacja strony webowej, dokumentacji i kodu w formie *open source*. 
+**Weryfikacja**: Publikacja dedykowanej strony webowej, dokumentacji i kodu w formie *open source*. 
 
 
 
