@@ -8,7 +8,6 @@
    * Private key security
    * Blockchain governance
    * Smart-contracts running amok
-   * Confidentiality of transactions
    * Bad user experience
 4. EOS presentation. (20 minutes) (JZ)
    - What is EOS?
