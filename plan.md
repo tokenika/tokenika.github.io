@@ -1,4 +1,4 @@
-# Wątek 1: Smart-kontrakty
+# Wątek 1: Smart-kontrakty (ETH/EOS)
 
 ### Etap 1
 
@@ -42,11 +42,11 @@
 
 
 
-# Wątek 2: Zagadnienia sieciowe
+# Wątek 2: Zagadnienia sieciowe (EOS)
 
 ### Obszar 1
 
-Aktywny udział w publicznym testnecie.
+Aktywny udział w publicznym testnecie EOSa.
 
 ### Obszar 2
 
@@ -66,7 +66,7 @@ Działania niskopoziomowe GTG.
 
 
 
-# Wątek 3: Działania medialne
+# Wątek 3: Działania medialne (EOS)
 
 ### Obszar 1
 
