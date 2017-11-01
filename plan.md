@@ -29,7 +29,7 @@
 ### Wymagania w zakresie ludzi
 
 * developer z praktyczną znajomością Solidity i/lub C++ (potrzebny od etapu 2, ok. 15-20 tys / mies)
-* developer z JavaScript, dobra znajomość frameworku React (potrzebny od etapu 3, ok. 12-15 tys / mies)
+* developer JavaScript, dobra znajomość frameworku React (potrzebny od etapu 3, ok. 12-15 tys / mies)
 
 ---
 
