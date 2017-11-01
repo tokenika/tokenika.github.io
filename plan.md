@@ -28,14 +28,14 @@
 
 ### Wymagania w zakresie ludzi
 
-* developer z praktyczną znajomością Solidity i/lub C++ (potrzebny od etapu 2, ok. 15-20 tys)
-* developer z JavaScript, dobra znajomość frameworku React (potrzebny od etapu 3, ok. 12-15 tys)
+* developer z praktyczną znajomością Solidity i/lub C++ (potrzebny od etapu 2, ok. 15-20 tys / mies)
+* developer z JavaScript, dobra znajomość frameworku React (potrzebny od etapu 3, ok. 12-15 tys / mies)
 
 ---
 
 ### Wymagania w zakresie sprzętu
 
-* biuro dla zespołu 3-4 osób
+* biuro dla zespołu 3-4 osób (? tys / mies)
 
 
 * sprzęt komputerowy (jedno stanowisko to ok. 5-6 tys)
@@ -50,19 +50,19 @@ Aktywny udział w publicznym testnecie.
 
 ### Obszar 2
 
-Działania Szymona (GTG).
+Działania niskopoziomowe GTG.
 
 ---
 
 ### Wymagania w zakresie ludzi
 
-- wynagrodzenie dla Szymona
+- wynagrodzenie dla GTG (? tys / mies)
 
 ------
 
 ### Wymagania w zakresie sprzętu
 
-- infrastruktura serwerowa
+- infrastruktura serwerowa (? tys / mies)
 
 
 
@@ -70,7 +70,7 @@ Działania Szymona (GTG).
 
 ### Obszar 1
 
-Monitorowanie kanałów komunikacyjnych (Steem, Telegram, Forum, Facebook). Publikacje postów na Steemie, aktywność w pozostałych kanałach. 
+Monitorowanie kanałów komunikacyjnych (Steem, Telegram, Forum, Facebook). Publikacje postów na Steemie, aktywność na pozostałych kanałach.
 
 ### Obszar 2
 
