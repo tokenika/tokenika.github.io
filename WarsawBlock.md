@@ -163,7 +163,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
 
-    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, relatively young yet very experienced and already successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital financially backing it. What's interesting both were early investors of Ethereum (and still are), and Brook Pierce is personally engaged in promoting EOS.
+    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, relatively young yet very experienced and already successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital financially backing it. What's interesting, both were early investors of Ethereum (and still are), and Brook Pierce is personally engaged in promoting EOS.
 
     So even if it ends badly, we are in a good company.
 
@@ -173,7 +173,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   * DPOS - the most decentralized & resilient consensus system out there
 
-    It’s worth noting that despite this limited number of block producers, DPOS is the most decentralized system in existence - provided we apply [a rational measure of decentralization](http://bytemaster.github.io/article/2015/01/13/Decentralization-of-Nxt-vs-BitShares/).
+    It’s worth noting that despite the limited number of block producers, DPOS is the most decentralized system in existence - provided we apply [a rational measure of decentralization](http://bytemaster.github.io/article/2015/01/13/Decentralization-of-Nxt-vs-BitShares/).
 
     The DPOS algorithm is divided into two parts: 
 
