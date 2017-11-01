@@ -1,6 +1,6 @@
 # Wątek 1: Smart-kontrakty
 
-#### Etap 1
+### Etap 1
 
 **Cel**: Zrozumieć kod dystrybucji tokenów EOSa, a następnie zreplikować ten kod za pomocą smart-kontraktów na EOSie.
 
@@ -8,7 +8,7 @@
 
 
 
-#### Etap 2
+### Etap 2
 
 **Cel**: Zrozumieć kod platformy Neufund i/lub Iconomy, a następnie zreplikować ten kod za pomocą smart-kontraktów na EOSie. Wykonanie frameworku ułatwiającego migrację z Ethereum do EOSa.
 
@@ -16,7 +16,7 @@
 
 
 
-#### Etap 3
+### Etap 3
 
 **Cel**: Praktyczna umiejętność budowy aplikacji na EOSie, łącznie z interfejsem webowym. Zdolność do przyjmowania zleceń na budowę aplikacji EOSowych dla klientów zewnętrznych.
 
@@ -26,14 +26,14 @@
 
 ---
 
-#### Wymagania w zakresie ludzi
+### Wymagania w zakresie ludzi
 
 * developer z praktyczną znajomością Solidity i/lub C++ (potrzebny od etapu 2, ok. 15-20 tys)
 * developer z JavaScript, dobra znajomość frameworku React (potrzebny od etapu 3, ok. 12-15 tys)
 
 ---
 
-#### Wymagania w zakresie sprzętu
+### Wymagania w zakresie sprzętu
 
 * biuro dla zespołu 3-4 osób
 
@@ -44,23 +44,23 @@
 
 # Wątek 2: Zagadnienia sieciowe
 
-#### Obszar 1
+### Obszar 1
 
 Aktywny udział w publicznym testnecie.
 
-#### Obszar 2
+### Obszar 2
 
 Działania Szymona (GTG).
 
 ---
 
-#### Wymagania w zakresie ludzi
+### Wymagania w zakresie ludzi
 
 - wynagrodzenie dla Szymona
 
 ------
 
-#### Wymagania w zakresie sprzętu
+### Wymagania w zakresie sprzętu
 
 - infrastruktura serwerowa
 
@@ -68,10 +68,10 @@ Działania Szymona (GTG).
 
 # Wątek 3: Działania medialne
 
-#### Obszar 1
+### Obszar 1
 
 Monitorowanie kanałów komunikacyjnych (Steem, Telegram, Forum, Facebook). Publikacje postów na Steemie, aktywność w pozostałych kanałach. 
 
-#### Obszar 2
+### Obszar 2
 
 Prezentacje publiczne (Warsaw Block itp).
