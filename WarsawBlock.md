@@ -63,11 +63,11 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   Scalability is considered to be the number one problem facing all major blockchains, especially Bitcoin and Ethereum. The only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Is it any good? Well, kind of.  Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. So it's best suited for recurrent payments between the same parties. And it doesn't handle smart-contracts.
 
-  Ethereum has also got a scaling solution called Plasma, which is basically a tree of chains. There are two major problems with it: it's still just at a proof-of-concept stage and it's inherently less secure.
+  Ethereum has also got a scaling solution called Plasma, which is basically a hierarchy of blockchains. One blockchain acts a source of truth for a subsequent blockchain. There are two major problems with this approach: it's still just at a proof-of-concept stage and it's inherently less secure.
 
 - #### High/unpredictable transaction fees
 
-  It has become evident that none of the many businesses currently being built on Bitcoin or Ethereum can have any economic viability at the current level of transaction fees. As fees are entirely under block producers’ control, the only way to address this problem is to rely on the second layer transaction processing, which I've just described, and assume that transaction fees applied there will be significantly lower.
+  It has become evident that none of the many businesses currently being built on Bitcoin or Ethereum can have any economic viability at the current level of transaction fees. As fees are entirely under block producers’ control, the only way to address this problem is to rely on the second layer transaction processing, which I've just described, and assume that transaction fees applied there will be significantly lower. But still you have no way to predict the level of fees in the long run.
 
 - #### Private key security
 
@@ -75,21 +75,17 @@ This presentation will be about a smart-contract system called EOS. However we a
 
 - #### Blockchain governance
 
-  This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean decisions in business-as-usual situations (e.g. budgeting) as well as decisions needed in emergency situations (when something goes seriously wrong, e.g. *The DAO*).
+  This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean both decisions in business-as-usual situations (e.g. budgeting) as well as decisions needed in emergency situations (when something goes seriously wrong, e.g. *The DAO*).
 
-  You need to have an efficient voting system in place. Bitcoin has none. Project like Ethereum or Dash have some kind of voting in place. But imagine what happens when there is a moral dilemma? When different groups of community expect different outcomes - is a fork the only way out? Or when there is an emergency and there is no time for voting - you need to act immediately?
+  You need to have an efficient voting system in place. Bitcoin has none. Projects like Ethereum or Dash have some kind of voting in place. But imagine what happens when there is a moral dilemma? When different groups of community expect different outcomes - is a fork the only way out? Or when there is an emergency and there is no time for voting while you need to act immediately?
 
 - #### Smart-contracts running amok
 
-  One possible solution preventing smart-contracts getting out of control is to find a way to formally verify their code before they are deployed. The problem is that it's very hard in practice. Formal verification makes things difficult. And as of now, it just reduces the risk but does not give 100% guarantee the code will run as expected. So you can make a lot of effort, but still you need to be able to handle a black swan. Or you're out business.
+  One possible solution preventing smart-contracts getting out of control is to find a way to formally verify their code before they are deployed. The problem is that it's very hard in practice. Formal verification makes things difficult. And as of now, it just reduces the risk but does not guarantee the code will run as expected. So you can make a lot of effort, but still you need to be able to handle a black swan. Or you're out business.
 
-  Look at the schizophrenia Ethereum needs to go through in order to justify its existence. They clearly try to eat the cake and still have the cake. Their website still says: *Build **unstoppable** applications*. Right, unstoppable, this is what it says. Are they really unstoppable? We all remember *The DAO*, don't we?
+  Look at the schizophrenia Ethereum needs to go through in order to justify its existence. Their website still says: *Build **unstoppable** applications*. Right, unstoppable, this is what it says. Are they really unstoppable? We all remember *The DAO*, don't we?
 
-  Please don't get me wrong. I'm not making a judgement about the way people behind Ethereum sorted out the mess. I'm making a judgement about them being unprepared to handle the situation in an orderly manner. And guess what? No lesson seems to be learned - they are as unprepared for a black swan now as they were back then. Clearly handling a smart-contract running amok is not considered to be part of their business.
-
-- #### Confidentiality of transactions
-
-  This is a tough one. How to reconcile our desire for confidentiality with our desire for transparency? When business A does a deal with business B, does it have to be visible to the rest of the world including their competition? In traditional business we are used to the notion of trade secrets, so if we want to build blockchain-based solutions for real-life businesses, we need to somehow address this requirement.
+  Please don't get me wrong. I'm not making a judgement about the way people behind Ethereum sorted out the mess. I'm making a judgement about them being unprepared to handle the situation in an orderly manner. And guess what? Nothing has changed - they are as unprepared now as they were back then. Clearly handling a smart-contract running amok is not considered to be part of their business.
 
 - #### Bad user experience
 
@@ -97,7 +93,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   By the way, isn't it strange that systems which are valued at several billions of dollars are not capable to deliver a user interface that meets today's standards?
 
-  There is a reason for that. As developers are still stuck on making the back-end functional, there are no resources left to build the front-end. And even if they had the resources, you can't build a proper front-end if the back-end sucks and is unable to overcome the latency of block production. 
+  There is a reason for that. As developers are still stuck on making the back-end functional, there are no resources left to build the front-end. And even if they had the resources, you can't build a proper front-end if the back-end is unable to overcome the latency of block production. 
 
   The point is, if we want mass adoption, from the end-user perspective blockchain-based apps need to be indistinguishable from conventional apps. And unfortunately, despite all the hype, the technology right now is still too immature for that. We don't just need an efficient blockchain. We need the entire infrastructure around blockchain which makes it possible for front-end developers to do their job.
 
@@ -119,20 +115,25 @@ This presentation will be about a smart-contract system called EOS. However we a
 
     While other systems definitely require a second layer of processing to be able to scale, EOS offers enormous processing power in its primary layer. This is the result of the following features:
 
-    - EOS consensus mechanism (DPOS, Delegated Proof of Stake) introduces a fixed number of block producers. As a result, time intervals between blocks are exactly 3 seconds, and with an improved server infrastructure can be reduced even more. It’s worth noting that despite this limited number of block producers, DPOS is the most decentralized system in existence - provided we apply [a rational measure of decentralization](http://bytemaster.github.io/article/2015/01/13/Decentralization-of-Nxt-vs-BitShares/).
+    - EOS consensus mechanism (DPOS, Delegated Proof of Stake) introduces a fixed number of block producers. Time intervals between blocks are exactly 3 seconds and to become a block producer you just need to have a server hardware efficient enough to keep up with the demand. If you don't you are voted out.
+
+      But this does not mean you need a datacenter to be able to trust no-one and run a full node. EOS enables [partial evaluation of blockchain state](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#partial-evaluation-of-blockchain-state). This means that an EOS node can selectively process transactions and ignore those which are of no interest for it.
+
     - EOS blockchain maintains *consensus over events* instead the common approach of *consensus over state*. As a result, it takes longer to restart a network node but on the other hand transaction processing is much quicker. This is a very beneficial trade-off, as node restarting is a rare event, while efficient transaction processing is what's needed most of the time.
+
     - Currently all blockchains rely upon sequential processing of transactions; this fundamentally limits the throughput of a blockchain to the computational capacity of a single CPU core. EOS architecture has been designed as [multi-threaded on the very fundamental level](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#deterministic-parallel-execution-of-applications). Not everything can be executed in this way (e.g. managing an order book of a decentralized exchange), but those things which can (e.g. validating a smart-contract's preconditions) are subject of parallel processing. EOS is extremely fast in sequential processing and gets an extra boost when the parallel processing mode kicks in.
-    - EOS enables [partial evaluation of blockchain state](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#partial-evaluation-of-blockchain-state). This means that an EOS node can selectively process transactions and ignore those which are of no interest for it. The assumption is that everyone should not have to run everything, especially if they only need to use a small subset of the applications.
 
   * <u>Addressing a much wider context</u>
 
-    In EOS smart-contracts are treated as a very broad phenomena. The assumption is that human errors in smart-contracts are unavoidable, so there needs to be a built-in mechanism which handle such cases. EOS will have:
+    In EOS smart-contracts are treated as a very broad phenomena. The assumption is that human errors in smart-contracts are unavoidable, so there needs to be a built-in mechanism which handles such cases. EOS will have:
 
     * a constitution encoded in the blockchain,
-    * arbitration for resolving disputes
+    * arbitration for resolving disputes,
     * and stakeholders voting on important decisions.
 
     Had *The DAO* incident happened on EOS, there would be a clear procedure to follow to resolve the issue in an orderly manner. It’s clear that EOS is designed with the needs of serious businesses in mind: before they commit their resources and their precious reputation to a large blockchain project, they need to be sure there is an emergency procedure in case things get out of control.
+
+    Regarding blockchain governance, EOS consensus mechanism is designed just for that. Decisions can be made quickly, yet the ultimate power rests with the shareholders. Block producers have a strong motivation to make the right decisions and signal their intentions properly, or they get voted out. Strategic choices (e.g. the level of inflation) are decided directly be shareholders.
 
   * <u>Complete operating system</u>
 
@@ -140,34 +141,13 @@ This presentation will be about a smart-contract system called EOS. However we a
 
     What we are missing is an operating system.
 
-    EOS is much more than just a decentralized computer. Actually, it is a full-blown decentralized operating system, including a built-in storage solution based on IPFS. What this means is that there are features embedded right in the blockchain which can be utilized by any advanced application built on EOS. Those include: databases, account permissions, account recovery, scheduling, authentication, inter-app communication, biometric 2nd factor validation. Thus application developers building on EOS only need to write code for what is unique for their application, whereas the fundamental functionality is delivered by the blockchain itself.
+    EOS is much more than just a decentralized computer. Actually, it is a full-blown decentralized operating system, including a built-in storage solution based on IPFS. What this means is that there are features embedded right in the blockchain which can be utilized by any advanced application built on EOS. Those include: databases, account permissions, account recovery, scheduling, authentication, inter-app communication, biometric 2nd factor validation. Thus application developers building on EOS only need to write code for what's unique for their application, whereas the fundamental functionality is delivered by the blockchain itself.
 
-    Let's focus on just one of those built-in features - account recovery. What this means is that if you're hacked and your private key has been changed by the hacker, you can still recover the funds, provided you know the private key before it was changed. Can you imagine **not** having this feature, if you aim for mass adoption?
-
-  * <u>Web Assembly as a compiler</u>
-
-    Smart-contracts in EOS will be compiled to [WebAssembly](http://webassembly.org/), which is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [WebAssembly is a big deal](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), as it will enable high performance web applications such as video and image editing and games. It provides a universal compile target that enables applications to be developed in any language, ranging from C++, Java & C# and JavaScript. There is even work going on to compile Solidity to WebAssembly.
+    Let's focus on just one of those built-in features - account recovery. What this means is that if you're hacked and your private key has been changed by the hacker, you can still recover your funds, provided you know the private key before it was changed. Can you imagine **not** having this feature, if you aim for mass adoption? The other feature that I've mentioned, biometric 2nd factor validation, basically means that your phone can act as a Trezor device securing your wallet.
 
   * <u>No transaction fees</u>
 
     From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current crypto-space: it's rental-based (pay-as-you-go), instead of owner-based. A Steem-like application could not have survived in such a model. EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and its resources and then use them freely, not just rent them - this is obsolete. In EOS the deal is simple: if you own 1% of the tokens you own 1% of the network, including all it's resources: the bandwidth, the storage etc.
-
-  * <u>DPOS - the most decentralized & resilient consensus system out there</u>
-
-    The DPOS algorithm is divided into two parts: 
-
-    * electing a group of block producers
-    * and block production scheduling.
-
-    Block producers are elected by stakeholders voting according to their stake. Hence the name: Delegated POS. The election part is what causes the most controversy, as it injects the human element back into blockchain, while we assume the reason we created the notion of blockchain in the first place was to get rid of the human element. Well, this assumption is wrong. We created the blockchain in order to align human motivations properly, not to get of them. It's an illusion, as mathematically it's not possible to create a self-contained system which is not dependent on something that is outside of it.
-
-    As for the second part, block production scheduling, the main rule here is that it's invalid for a block producer to produce a block at any other time slot than the one they are scheduled for. This is a very simple rule, but its consequences are quite significant, for example:
-
-    * Someone with even 50% of the active voting power is unable to select even a single producer on their own.
-    * The system is robust under every conceivable natural network disruption and even secure in the face of corruption of a large minority of producers. 
-    * Unlike some competing algorithms, DPOS can continue to function when a majority of producers fail. During this process the community can vote to replace the failed producers until it can resume 100% participation. I know of no other consensus algorithm that is robust under such a high and varied failure conditions.
-
-    This gives DPOS the power to confirm transactions with 99.9% certainty in an average of just 1.5 seconds while degrading in a graceful, detectable manner that is trivial to recover from.
 
 * #### What are EOS weak points?
 
@@ -184,13 +164,36 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
 
-    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, a young yet very experienced and already successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital (the same which was an early investor in ETH) financially backing it, with Pierce even personally engaged in promoting EOS.
+    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, relatively young yet very experienced and already successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital financially backing it. What's interesting both were early investors of Ethereum (and still are), and Brook Pierce is personally engaged in promoting EOS.
 
     So even if it ends badly, we are in a good company.
 
+  * Web Assembly as a virtual machine
+
+    Smart-contracts in EOS will be compiled to [WebAssembly](http://webassembly.org/), which is an emerging industry standard backed by Microsoft, Google, and Apple. The goal of this standard is to make it possible to run untrusted high-performance code in your browser. [WebAssembly is a big deal](https://medium.com/mozilla-tech/why-webassembly-is-a-game-changer-for-the-web-and-a-source-of-pride-for-mozilla-and-firefox-dda80e4c43cb), as it will enable high performance web applications such as video and image editing and games. It provides a universal compile target that enables applications to be developed in any language, ranging from C++, Java & C# and JavaScript. There is even work going on to compile Solidity to WebAssembly.
+
+  * DPOS - the most decentralized & resilient consensus system out there
+
+    It’s worth noting that despite this limited number of block producers, DPOS is the most decentralized system in existence - provided we apply [a rational measure of decentralization](http://bytemaster.github.io/article/2015/01/13/Decentralization-of-Nxt-vs-BitShares/).
+
+    The DPOS algorithm is divided into two parts: 
+
+    * electing a group of block producers
+    * and block production scheduling.
+
+    Block producers are elected by stakeholders voting according to their stake. Hence the name: Delegated POS. The election part is what causes the most controversy, as it injects the human element back into blockchain, while we assume the reason we created the notion of blockchain in the first place was to get rid of the human element. Well, this assumption is wrong. We created the blockchain in order to align human motivations properly, not to get of them. It's an illusion, as mathematically it's not possible to create a self-contained system which is not dependent on something that is outside of it.
+
+    As for the second part, block production scheduling, the main rule here is that it's invalid for a block producer to produce a block at any other time slot than the one they are scheduled for. This is a very simple rule, but its consequences are quite significant, for example:
+
+    * Someone with even 50% of the active voting power is unable to select even a single producer on their own.
+    * The system is robust under every conceivable natural network disruption and even secure in the face of corruption of a large minority of producers. 
+    * Unlike some competing algorithms, DPOS can continue to function when a majority of producers fail. During this process the community can vote to replace the failed producers until it can resume 100% participation. I know of no other consensus algorithm that is robust under such a high and varied failure conditions.
+
+    This gives DPOS the power to confirm transactions with 99.9% certainty in an average of just 1.5 seconds while degrading in a graceful, detectable manner that is trivial to recover from.
+
   * Concept proved in practice
 
-    All existing smart-contract platforms are being built without any prior experience with building decentralized applications. How can I build a platform for decentralized applications if I've never built a decentralized application? Steem and BitShares - they are very different. One is a decentralized exchange and the other is social media. What they were able to do is look at them and figure out what's common between them. EOS is the result of this.
+    All existing smart-contract platforms are being built without any prior experience with building decentralized applications. How can you build a platform for decentralized applications if you've never built a decentralized application? People behind EOS have built BitShares and Steem - two systems originating from the same codebase, yet very different in functionality. One is a decentralized exchange and the other is social media. What the EOS team was able to do is look at them and figure out what's common between them. EOS is the result of this.
 
   * Commitment to spend 1 bln USD to boost the ecosystem
 
@@ -199,10 +202,10 @@ This presentation will be about a smart-contract system called EOS. However we a
 * #### EOS roadmap
 
   * The project was started in Q1 2017, it was publicly announced in May 2017.
-  * Right now we have a MVP stage called *EOS Dawn*. You can run a standalone EOS node and play with smart-contracts using command line tools.
+  * Right now we have a MVP stage called *EOS Dawn*. You can run a standalone EOS node and play with smart-contracts using command line tools. Public testnet will be launched in December.
   * By the end of the year an EOS version featuring all major functionalities will be released. Only single-threaded execution at this stage.
-  * Q1 & Q2 2018 devoted to testing and building development tools & documentation. During this phase you can starting building apps running on the testnet.
-  * The blockchain goes live in June 2018. Initially the assumption was that parallel execution would be added in the next stage, but according to the latest news parallel execution is going to be right from the start.
+  * Q1 & Q2 2018 will be devoted to testing and building development tools & documentation. During this phase you can starting building apps running on the testnet.
+  * The EOS blockchain goes live in June 2018. Initially the assumption was that it would be launched as single-threaded and parallel execution would be added in the next stage, but according to the latest news parallel execution is going to be right from the start.
 
 
 
@@ -214,15 +217,15 @@ This presentation will be about a smart-contract system called EOS. However we a
 
     We believe that just as there has been an ICO frenzy on Ethereum for the last couple of months,  there will be a similar one on EOS. This time by businesses who actually want to build production-ready apps, not prototypes or proofs of concept. Real apps used by real people, i.e. not only blockchain folks.
 
-    So we want to be prepared for this happening: businesses wanting to raise funds and investors wanting to risk funds, and then manage their cryptocurrency portfolio in a convenient & secure manner.
+    We want to be prepared for this happening: businesses wanting to raise funds and investors wanting to risk funds, and then manage their cryptocurrency portfolio in a convenient & secure manner.
 
   * We are setting up a software house dedicated to building dApps (both on EOS and ETH). We are already experimenting with EOS smart-contracts and already have third-parties manifesting interest in using us to convert their ideas into EOS apps.
 
   * As far as EOS is concerned, we aim to become one of the 20 block producers (called *witnesses*) once the system goes live.
 
-    How realistic is that? Well, it depends how determined you are. Unless you are a major stakeholder of EOS (which we are not), the only way to do it is via building a strong reputation in EOS community. How do you do that? By doing things which are considered to be beneficial for EOS and its ecosystem by its community and EOS shareholders. It's similar to an attempt to be elected to the board of directors in a publicly traded company.
+    How realistic is that? Well, it depends how determined you are. Unless you are a major stakeholder of EOS (which we are not), the only way to do it is via building a strong reputation in EOS community. How do you do that? By doing things which are considered to be beneficial for EOS and its ecosystem. Who is the judge here? EOS community and EOS shareholders. It's similar to an attempt to be elected to the board of directors in a publicly traded company.
 
-    As you can see we've been doing various things to this end and actually this very presentation is part of the process.
+    As you can see we've been doing (and will continue to be doing) various things to this end and actually this very presentation is part of the process.
 
     And obviously to be a viable witness candidate you need to be able to handle the server infrastructure and make it both robust and secure. I guess we can manage that as our main advisor, who prefers to remain anonymous, is already a witness for Steem.
 
