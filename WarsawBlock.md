@@ -15,6 +15,7 @@
    - What are EOS weak points?
    - What are EOS strong points?
    - EOS roadmap
+   - Summary
 5. About Tokenika. (4 minutes) (TM/DW)
    * What we do?
    * What we need?
@@ -206,6 +207,16 @@ This presentation will be about a smart-contract system called EOS. However we a
   * Q1 & Q2 2018 will be devoted to testing and building development tools & documentation. During this phase you can starting building apps running on the testnet.
   * The EOS blockchain goes live in June 2018. Initially the assumption was that it would be launched as single-threaded and parallel execution would be added in the next stage, but according to the latest news parallel execution is going to be right from the start.
 
+* #### Summary
+
+
+  What sets EOS aside, is not just the technology. It's actually the way it's going to operate and the role of tokens in the future of the blockchain. 
+
+  Ethereum looks like a good proof of concept, a very useful one, as it has shown that there is an actual demand for blockchain-based solutions and smart-contracts.
+
+  Whereas EOS is extremely business oriented: you can reliably build business on top of it, businesses with predictable cost and businesses which will scale.
+
+   
 
 
 ## ad 5. About Tokenika
