@@ -153,6 +153,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   * Low awareness and quite a lot of negative (undeserved?) perception, mainly due to people being skeptical about the viability of the claims contained in EOS whitepaper.
   * Almost non-existent ecosystem and very few developers outside of the core team, capable to contribute to the code-base. However this changes rapidly - there are already over 10k registered users on the Telegram EOS channel and 1k on EOS Dev channel.
+  * The first language to be supported for EOS smart-contract creation is going to be C++. It's because this happens to be the first language supported by WebAssembly. C++ is powerful but has a very steep learning curve. A less demanding language, like Java or C#, would be much more suited here but those are not supported by WebAssembly yet.
   * Not live yet. I'll tell you about the roadmap in a sec.
 
 * #### What are EOS strong points?
