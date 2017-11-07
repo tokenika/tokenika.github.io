@@ -30,9 +30,13 @@ Total: 40 minutes.
 
 ---
 
+
+
 ## Disclaimer
 
 This presentation will be about a smart-contract system called EOS. However we are in no formal way associated with *block.one*, the company developing EOS code. We are just part of the emerging EOS community. We have no interest in you buying EOS tokens, and this certainly should not be treated as a financial advice. Our goal is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS. 
+
+
 
 ## ad 1. Our background
 
@@ -46,15 +50,16 @@ This presentation will be about a smart-contract system called EOS. However we a
 
 
 
+
+
 ## ad 2. Quick survey "State of the blockchain today"
 
-- What is the total of BTC mining revenue per day? (12 mln USD / day)
-- How much are we spending on BTC and ETH mining per year? (5 bln USD, which is much more than the total raised by all ICOs so far: 3 bln USD)
+- How much are we spending on BTC and ETH mining per year? (5 bln USD / year, 12 mln USD / day, which is much more than the total raised by all ICOs so far: 3 bln USD)
 - What is BTC average transaction fee? What about ETH? (3 USD & 0.30 USD)
 - How many transactions per second is BTC able process? What about ETH? (4 trxn/sec & 30 trxn/sec)
-- Which are the four top blockchains currently in production which handle the biggest number of transactions? (BTC, ETH, Steem, BitShares)
-- How many transactions per second does Facebook require? What about Visa? (50k trxn/sec, 2k trxn/sec)
+- How many transactions per second does Facebook require? (50k trxn/sec)
 - What is the current record of transaction processing in the crypto-space? (3-20k trxn/sec by BitShares)
+- Which are the four top blockchains currently in production which handle the biggest number of transactions? (BTC, ETH, Steem, BitShares)
 
 
 
@@ -127,7 +132,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   You're still unable to move value across blockchains without going through a centralized middleman.  There are projects aiming to change that (.e.g. Polkadot) but they are still years away from becoming a reality.
 
-  ​
+
 
 
 ## ad 5. EOS presentation
@@ -253,13 +258,11 @@ This presentation will be about a smart-contract system called EOS. However we a
 * #### Summary
 
 
-  What sets EOS aside, is not just the technology. It's actually the way it's going to operate and the role of tokens in the future of the blockchain. 
+  * What sets EOS aside, is not just the technology. It's actually the way it's going to operate and the role of tokens in the future of the blockchain. 
+  * Ethereum looks like a good proof of concept, a very useful one, as it has shown that there is an actual demand for blockchain-based solutions and smart-contracts. Whereas EOS is extremely business oriented: you can reliably build business on top of it, businesses with predictable cost and businesses which will scale.
+  * EOS is an incremental improvement that adds parallelism and generalization to stuff that's already been proven to work. And that's the main difference in approach: the EOS team figured out how to build decentralized applications first and then they started generalizing them, versus attempting to generalize something that you have not even figured out how to build yet.
 
-  Ethereum looks like a good proof of concept, a very useful one, as it has shown that there is an actual demand for blockchain-based solutions and smart-contracts. Whereas EOS is extremely business oriented: you can reliably build business on top of it, businesses with predictable cost and businesses which will scale.
 
-  EOS is an incremental improvement that adds parallelism and generalization to stuff that's already been proven to work. And that's the main difference in approach: the EOS team figured out how to build decentralized applications first and then they started generalizing them, versus attempting to generalize something that you have not even figured out how to build yet.
-
-   
 
 
 ## ad 6. About Tokenika
