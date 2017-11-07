@@ -34,7 +34,8 @@ Total: 40 minutes.
 
 ## Disclaimer
 
-This presentation will be about a smart-contract system called EOS. However we are in no formal way associated with *block.one*, the company developing EOS code. We are just part of the emerging EOS community. We have no interest in you buying EOS tokens, and this certainly should not be treated as a financial advice. Our goal is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS. 
+* This presentation will be about a smart-contract system called EOS. However we are in no formal way associated with *block.one*, the company developing EOS code. We are just part of the emerging EOS community.
+* We have no interest in you buying EOS tokens, and this certainly should not be treated as a financial advice. Our goal is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS. 
 
 
 
@@ -69,7 +70,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 - They need to be scalable and cheap to run. If you can't support millions of users, you can't build a business that's able to recover your initial investment. You can't compete on the market if your cost per transaction is substantially higher than your centralized competitors. So you're going to need thousands of transactions per second and you need them to be very cheap.
 - They need to be free for your users. You don't want to charge micro payments every time someone loads your webpage or wants to sign up. You need to have access to freemium models or different monetization strategies. If you want to charge your users, it should be the application choice, not the platform it's running on. 
 - They need to be available via mobile phones and web interfaces, so that users don't have to download and install anything. And they need to be responsive.
-- Your users need account names, no public keys, no fancy cryptographic stuff. And they need a procedure for account recovery. Can you imagine **not** having account recovery, if you aim for mass adoption? And they need 2nd factor authentication, ideally biometric one on their mobile phone, instead of an additional device like Trezor.
+- Your users need account names, no public keys, no fancy cryptographic stuff. And they need a procedure for account recovery. Can you imagine **not** having account recovery, if you aim for mass adoption? And users need 2nd factor authentication, ideally biometric one on their mobile phone, instead of an additional device like Trezor.
 - Your app needs to be upgradeable. No business plan survives first contact with the market. You need to be able to upgrade your app to keep your business afloat, to adapt to changing market conditions, add new features that users expect. If you can't do that then your application will stagnate.
 - Your app needs bug recovery, something that's often overlooked in this space. Software is an imperfect art. You're guaranteed that statistically there will be a bug sometime. It doesn't matter how many eyes you have on it, doesn't matter how much formal verification you do, it doesn't matter what programming language you use - there will be bugs somewhere. So bug recovery and upgradability go hand in hand and you need to be prepared for it, if you want to have a realistic view of business and software development.
 
