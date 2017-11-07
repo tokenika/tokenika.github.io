@@ -4,22 +4,25 @@
 2. Quick survey "State of the blockchain today". (5 minutes) (TM/DW)
 3. Major problems facing the crypto-space as of 2017. (5 minutes) (JZ)
    * Scalability
-   * High/unpredictable transaction fees
+   * High & unpredictable transaction fees
    * Private key security
    * Blockchain governance
    * Smart-contracts running amok
+   * High cost of app development
    * Bad user experience
-4. EOS presentation. (20 minutes) (JZ)
-   - What is EOS?
-   - What features make EOS unique when compared to Ethereum?
-   - What are EOS weak points?
-   - What are EOS strong points?
-   - EOS roadmap
-   - Summary
-5. About Tokenika. (4 minutes) (TM/DW)
+   * No communication between blockchains
+4. What do decentralized applications require? (2 minutes) (JZ)
+5. EOS presentation. (18 minutes) (JZ)
+   * What is EOS?
+   * What features make EOS unique when compared to Ethereum?
+   * What are EOS weak points?
+   * What are EOS strong points?
+   * EOS roadmap
+   * Summary
+6. About Tokenika. (4 minutes) (TM/DW)
    * What we do?
    * What we need?
-6. QAs (4 minutes)
+7. QAs (4 minutes)
 
 Total: 40 minutes.
 
@@ -29,7 +32,7 @@ Total: 40 minutes.
 
 ## Disclaimer
 
-This presentation will be about a smart-contract system called EOS. However we are in no formal way associated with block.one, the company developing EOS code. They are not paying us and this definitely is not meant to be a sales pitch for EOS. Actually we have no direct interest in you buying EOS tokens and this certainly should not be treated as a financial advice. We are just part of EOS community and our aim is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS.
+This presentation will be about a smart-contract system called EOS. However we are in no formal way associated with *block.one*, the company developing EOS code. We are just part of the emerging EOS community. We have no interest in you buying EOS tokens, and this certainly should not be treated as a financial advice. Our goal is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS. 
 
 ## ad 1. Our background
 
@@ -51,7 +54,7 @@ This presentation will be about a smart-contract system called EOS. However we a
 - How many transactions per second is BTC able process? What about ETH? (4 trxn/sec & 30 trxn/sec)
 - Which are the four top blockchains currently in production which handle the biggest number of transactions? (BTC, ETH, Steem, BitShares)
 - How many transactions per second does Facebook require? What about Visa? (50k trxn/sec, 2k trxn/sec)
-- What is the current record of transaction processing in the crypto-space? (3k trxn/sec by BitShares)
+- What is the current record of transaction processing in the crypto-space? (3-20k trxn/sec by BitShares)
 
 
 
@@ -61,17 +64,27 @@ This presentation will be about a smart-contract system called EOS. However we a
 
 - #### Scalability
 
-  Scalability is considered to be the number one problem facing all major blockchains, especially Bitcoin and Ethereum. The only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Is it any good? Well, kind of.  Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. So it's best suited for recurrent payments between the same parties. And it doesn't handle smart-contracts.
+  We believe that the future everything is going to be on the blockchain and it's going to require a whole new scale of performance. So what is high-performance? These are the requirements of real industry. You have 20k transactions per second just to do a Visa and MasterCard not to mention all the other payment systems out there. Facebook does 52k likes per second, not including all the posts and voting and other actions that the users take. If you're in the financial industry and you're trying to do trading it's sometimes a hundred thousand transactions per second per market pair. So imagine putting all of these on a single platform so they can interoperate. Well that would require millions of transactions per second.
+
+  This is what industry actually requires and this is what blockchain technology gives us today. There's a huge gap between what we can do and what we need to be able to do.
+
+  If we look at Bitcoin or Ethereum, the only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Is it any good? Well, kind of.  Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. So it's best suited for recurrent payments between the same parties. And it doesn't handle smart-contracts.
 
   Ethereum has also got a scaling solution called Plasma, which is basically a hierarchy of blockchains. One blockchain acts a source of truth for a subsequent blockchain. There are two major problems with this approach: it's still just at a proof-of-concept stage and it's inherently less secure.
 
-- #### High/unpredictable transaction fees
+- #### High & unpredictable transaction fees
 
   It has become evident that none of the many businesses currently being built on Bitcoin or Ethereum can have any economic viability at the current level of transaction fees. As fees are entirely under block producers’ control, the only way to address this problem is to rely on the second layer transaction processing, which I've just described, and assume that transaction fees applied there will be significantly lower. But still you have no way to predict the level of fees in the long run.
 
+  From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current crypto-space: it's rental-based (pay-as-you-go), instead of owner-based. If you're building decentralized social network platforms you cannot expect users to pay any fees at all just to sign up or interact with your platform.
+
 - #### Private key security
 
-  How to handle the inevitable problem of people losing access to their blockchain accounts? It can happen for various reasons: they get hacked, they forget their passwords, they lose their mobile phones or computers. Apparently there is no solution currently available. The experts say this is the "inherent" feature of a blockchain. Is it really the case? Bear with me and we'll find out quite soon.
+  How to handle the inevitable problem of people losing access to their blockchain accounts? It can happen for various reasons: they get hacked, they forget their passwords, they lose their mobile phones or computers. 
+
+  If blockchain is going to go mainstream, more and more often we'll be getting unsophisticated users who can't be expected to secure their computer and perfectly protect their private key. We have to make it resilient so that eventually when their keys are compromised they can get their account back. Because it's not just losing money, they're also losing their identity, their reputation, all their followers. They need their account back and their name back or they won't use the platform again.
+
+  Apparently there is no solution currently available. The experts say this is the "inherent" feature of a blockchain. Is it really the case? Bear with me and we'll find out quite soon.
 
 - #### Blockchain governance
 
@@ -87,6 +100,10 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   Please don't get me wrong. I'm not making a judgement about the way people behind Ethereum sorted out the mess. I'm making a judgement about them being unprepared to handle the situation in an orderly manner. And guess what? Nothing has changed - they are as unprepared now as they were back then. Clearly handling a smart-contract running amok is not considered to be part of their business.
 
+- #### High cost of app development
+
+  We have all those exciting ideas in the crypto-space but actually nothing is coming to market. All we 	have are just prototypes. The developers are trying to build these amazing applications but they don't get to spend their time on building business logic. Instead they are stuck on things like databases, storage and inter-app communication.
+
 - #### Bad user experience
 
   We must admit that user experience in the crypto-space is quite horrible. Can anyone name a blockchain-based application which can be used by normal people? Not by insiders like you, but by normal people, who just want to be users, not investors or risk-takers. An app which does not require you to buy tokens before you can try using it? An app which allows you do things in real-time, just as any conventional app like eBay or Uber? I could name just one blockchain-based app, which maybe, just maybe, has the potential to compete with conventional apps in terms of user experience. The rest cannot.
@@ -97,17 +114,35 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   The point is, if we want mass adoption, from the end-user perspective blockchain-based apps need to be indistinguishable from conventional apps. And unfortunately, despite all the hype, the technology right now is still too immature for that. We don't just need an efficient blockchain. We need the entire infrastructure around blockchain which makes it possible for front-end developers to do their job.
 
+- #### No communication between blockchains
+
+  Each blockchain operates in its own domain, so you're unable to move value across blockchains without going through a centralized middleman.  There are projects aiming to change that (.e.g. Polkadot) but they are still years away from being a reality.
+
+  ​
+
+## ad 4. What do decentralized applications require? 
+
+- They need a built-in support for web interfaces so that users don't have to download and install anything.
+- They need to be cheap to run. If you can't support millions of users, you can't build a business that's going to grow and recover your costs or the cost per transaction will be so high that you won't be cost competitive with your centralized competitors.
+- They need to be free to use for your users. You don't want to charge micro payments every time someone loads your webpage. You want to offer them freemium models or different monetization strategies. If you want to charge users, it should be the applications choice, not the platform it's running on. 
+- They need to be responsive.
+- They needs to be upgradeable. No business plan survives first contact with the market. You need to be able to upgrade to keep your business afloat to adapt to changing market conditions add new features that users expect and if you can't do that then your application will stagnate and your users leave.
+- Account names, no keys, no fancy cryptographic stuff.
+- They need to scale. Thousands of actions per second.
+- Account recovery.
+- Bug recovery, something that's often overlooked in this space. Software is an imperfect art. You're guaranteed that statistically that there will be a bug sometime. It doesn't matter how many eyes you have on it, doesn't matter how much formal verification you do, it doesn't matter what language you use - there will be bugs somewhere. So bugs and upgradability go hand in hand but you need to be prepared for it, and if you're not prepared for it then you not have it a realistic view of software development.
 
 
-## ad 4. EOS presentation
+## ad 5. EOS presentation
 
 * #### What is EOS? 
 
-  * The simplest way to put it would be to say that EOS is a smart-contract platform. But it's much more than that. EOS is a holistic approach to high-performance general-purpose consensus. Its *raison d'être* is similar to Ethereum's, yet EOS tackles a much wider problem.
+  * The simplest way to put it would be to say that EOS is a general-purpose smart-contract platform, just like Ethereum. But actually it's much more than that. EOS is a holistic approach to high-performance general-purpose consensus. Its *raison d'être* is similar to Ethereum's, yet EOS tackles a much wider problem.
 
     Larimer: *EOS is the blockchain for building commercial scale decentralized applications that are indistinguishable from centralized alternatives.*
 
   * Evolution: payment system >> smart-contract system >> operating system for decentralized applications. EOS is an operating system for building decentralized applications. Those words are being used on purpose: it's not just a system, it's an **operating system**. And it doesn't just run smart-contracts, it runs **decentralized applications**.
+
 
 * #### What features make EOS unique when compared to Ethereum?
 
@@ -123,7 +158,9 @@ This presentation will be about a smart-contract system called EOS. However we a
 
     - Currently all blockchains rely upon sequential processing of transactions; this fundamentally limits the throughput of a blockchain to the computational capacity of a single CPU core. EOS architecture has been designed as [multi-threaded on the very fundamental level](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#deterministic-parallel-execution-of-applications). Not everything can be executed in this way (e.g. managing an order book of a decentralized exchange), but those things which can (e.g. validating a smart-contract's preconditions) are subject of parallel processing. EOS is extremely fast in sequential processing and gets an extra boost when the parallel processing mode kicks in.
 
-  * <u>Addressing a much wider context</u>
+    - There is no concept of gas so the virtual machine does not have to be bothered with the metering of every operation used by a smart contract. 
+
+  * <u>Much wider context</u>
 
     In EOS smart-contracts are treated as a very broad phenomena. The assumption is that human errors in smart-contracts are unavoidable, so there needs to be a built-in mechanism which handles such cases. EOS will have:
 
@@ -133,27 +170,43 @@ This presentation will be about a smart-contract system called EOS. However we a
 
     Had *The DAO* incident happened on EOS, there would be a clear procedure to follow to resolve the issue in an orderly manner. It’s clear that EOS is designed with the needs of serious businesses in mind: before they commit their resources and their precious reputation to a large blockchain project, they need to be sure there is an emergency procedure in case things get out of control.
 
-    Regarding blockchain governance, EOS consensus mechanism is designed just for that. Decisions can be made quickly, yet the ultimate power rests with the shareholders. Block producers have a strong motivation to make the right decisions and signal their intentions properly, or they get voted out. Strategic choices (e.g. the level of inflation) are decided directly be shareholders.
+    Regarding blockchain governance, EOS consensus mechanism is designed just for that. Decisions can be made quickly, yet the ultimate power rests with the shareholders. Block producers have a strong motivation to make the right decisions and properly signal their intentions before taking decisions, or they get voted out.
+
+    Strategic choices (e.g. the level of inflation) are decided directly be the shareholders.
 
   * <u>Complete operating system</u>
 
-    We have all those exciting ideas in the crypto-space but actually nothing is coming to market. All we have are just prototypes. The developers are trying to build these amazing applications but they don't get to spend their time on building business logic. Instead they are stuck on things like databases, storage and inter-app communication.
+    So where are we today today? We have the decentralized computer and a bunch of people trying to build applications on top of it. But these app developers have a huge gap to cover because every application needs a whole bunch of services. 
+
+    In Ethereum every app is trying to bridge this gap and everyone's doing it slightly differently and it's a difficult path to do right. Furthermore, because everything's being implemented in the app layer, it's being done within relatively inefficient scripting environment. And even if it gets built, it will be expensive to use - it will cost gas.
 
     What we are missing is an operating system.
 
-    EOS is much more than just a decentralized computer. Actually, it is a full-blown decentralized operating system, including a built-in storage solution based on IPFS. What this means is that there are features embedded right in the blockchain which can be utilized by any advanced application built on EOS. Those include: databases, account permissions, account recovery, scheduling, authentication, inter-app communication, biometric 2nd factor validation. Thus application developers building on EOS only need to write code for what's unique for their application, whereas the fundamental functionality is delivered by the blockchain itself.
+    EOS introduces the first blockchain operating system. What this means is that there are features and services embedded right in the blockchain and every application built on EOS has access to them. Those include: account permissions, account recovery, scheduling, authentication, inter-app communication, biometric 2nd factor validation.
+
+    What's more, EOS provides every application with its own private database. The system has built-in storage solution based on IPFS, which is free to use provided you're a token holder.
+
+    Thus application developers building on EOS only need to write code for what's unique for their application, whereas the fundamental functionality is delivered by the blockchain itself.
 
     Let's focus on just one of those built-in features - account recovery. What this means is that if you're hacked and your private key has been changed by the hacker, you can still recover your funds, provided you know the private key before it was changed. Can you imagine **not** having this feature, if you aim for mass adoption? The other feature that I've mentioned, biometric 2nd factor validation, basically means that your phone can act as a Trezor device securing your wallet.
 
   * <u>No transaction fees</u>
 
-    From the business point of view, it is hard to defend the paradigm of end-user being forced to pay for the mere fact of interacting with an application. Unfortunately, this is the standard case in the current crypto-space: it's rental-based (pay-as-you-go), instead of owner-based. A Steem-like application could not have survived in such a model. EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and its resources and then use them freely, not just rent them - this is obsolete. In EOS the deal is simple: if you own 1% of the tokens you own 1% of the network, including all it's resources: the bandwidth, the storage etc.
+    EOS token is never consumed, which basically means there are no transaction fees and there is no concept of gas.
+
+    EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and its resources and then use them freely, not just rent them. In EOS the deal is simple: if you own 1% of the tokens you own 1% of the network, including all it's resources: the bandwidth, the storage etc.
+
+    If you have more resources than you need you can rent them out. If you run a business and don't have enough resources you can rent them from someone or buy more EOS tokens. The point is you have a choice.
+
+  * <u>Asynchronous communication</u>
+
+    EOS applications are designed with asynchronous communication from the start. What it means is that applications are designed to support communicating with other blockchains, as this kind of communication definitely has to be asynchronous. So we have internal communication with local applications as well as external communication with other blockchains, provided they support a compatible protocol. This allows you to have private enterprise chains that can communicate with a public chain.
 
 * #### What are EOS weak points?
 
   * Low awareness and quite a lot of negative (undeserved?) perception, mainly due to people being skeptical about the viability of the claims contained in EOS whitepaper.
   * Almost non-existent ecosystem and very few developers outside of the core team, capable to contribute to the code-base. However this changes rapidly - there are already over 10k registered users on the Telegram EOS channel and 1k on EOS Dev channel.
-  * The first language to be supported for EOS smart-contract creation is going to be C++. It's because this happens to be the first language supported by WebAssembly. C++ is powerful but has a very steep learning curve. A less demanding language, like Java or C#, would be much more suited here but those are not supported by WebAssembly yet.
+  * The first language to be supported for EOS smart-contract creation is going to be C++. It's because this happens to be the first language supported by WebAssembly. C++ is powerful but has a very steep learning curve. A less demanding language, like Java or C#, would be much more suited here but unfortunately those are not supported by WebAssembly yet.
   * Not live yet. I'll tell you about the roadmap in a sec.
 
 * #### What are EOS strong points?
@@ -217,10 +270,12 @@ This presentation will be about a smart-contract system called EOS. However we a
 
   Whereas EOS is extremely business oriented: you can reliably build business on top of it, businesses with predictable cost and businesses which will scale.
 
+  EOS is an incremental improvement that adds parallelism and generalization to stuff that's already been proven to work. And that's the difference in the approaches: they figured out how to build decentralized applications first and then they're generalizing them, versus attempting to generalize something that you have not even figured out how to build yet.
+
    
 
 
-## ad 5. About Tokenika
+## ad 6. About Tokenika
 
 * #### What we do?
 
