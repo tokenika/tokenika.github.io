@@ -3,7 +3,7 @@
 1. Our background. (2 minutes) (TM/DW)
 2. Quick survey "State of the blockchain today". (5 minutes) (TM/DW)
 3. What do decentralized applications require? (2 minutes) (JZ)
-4. Major problems facing the crypto-space as of 2017. (5 minutes) (JZ)
+4. Major problems facing the crypto-space. (5 minutes) (JZ)
    * Scalability
    * High & unpredictable transaction fees
    * Private key security
@@ -12,13 +12,13 @@
    * High cost of app development
    * Bad user experience
    * No bridges between blockchains
-5. EOS presentation. (18 minutes) (JZ)
+5. Introduction to EOS. (18 minutes) (JZ)
    * What is EOS?
    * What features make EOS unique when compared to Ethereum?
    * What are EOS weak points?
    * What are EOS strong points?
    * EOS roadmap
-   * Summary
+   * Wrap up
 6. About Tokenika. (4 minutes) (TM/DW)
    * What we do?
    * What we need?
@@ -35,7 +35,7 @@ Total: 40 minutes.
 ## Disclaimer
 
 * This presentation will be about a smart-contract system called EOS. However we are in no formal way associated with *block.one*, the company developing EOS code. We are just part of the emerging EOS community.
-* We have no interest in you buying EOS tokens, and this certainly should not be treated as a financial advice. Our goal is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS. 
+* We have no interest in you buying EOS tokens, and this certainly should not be treated as financial advice. Our goal is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS.
 
 
 
@@ -55,11 +55,10 @@ Total: 40 minutes.
 
 ## ad 2. Quick survey "State of the blockchain today"
 
-- How much are we spending on BTC and ETH mining per year? (5 bln USD / year, 12 mln USD / day, which is much more than the total raised by all ICOs so far: 3 bln USD)
+- How much in total are we spending on BTC and ETH mining per year? (5 bln USD / year, 12 mln USD / day, which is much more than the total raised by all ICOs so far: 3 bln USD)
 - What is BTC average transaction fee? What about ETH? (3 USD & 0.30 USD)
-- How many transactions per second is BTC able process? What about ETH? (4 trxn/sec & 30 trxn/sec)
 - How many transactions per second does Facebook require? (50k trxn/sec)
-- What is the current record of transaction processing in the crypto-space? (3-20k trxn/sec by BitShares)
+- How many transactions per second is BTC able to process? What about ETH? (4 trxn/sec & 30 trxn/sec)
 - Which are the four top blockchains currently in production which handle the biggest number of transactions? (BTC, ETH, Steem, BitShares)
 
 
@@ -77,7 +76,7 @@ Total: 40 minutes.
 
 
 
-## ad 4. Major problems facing the crypto-space as of 2017
+## ad 4. Major problems facing the crypto-space
 
 - #### Scalability
 
@@ -107,7 +106,7 @@ Total: 40 minutes.
 
   This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean both decisions in business-as-usual situations (e.g. budgeting) as well as decisions in emergency situations, when something goes seriously wrong and time is crucial.
 
-  So you need to have an efficient voting system in place. Bitcoin has none. Projects like Ethereum or Dash have some kind of voting in place. But imagine what happens when there is a moral dilemma? When different groups of community expect different outcomes - is a fork the only way out? Or when there is an emergency and there is no time to arrange a proper vote?
+  So you need to have an efficient voting system in place. Bitcoin has none. Projects like Ethereum or Dash have some kind of voting in place. But imagine what happens when there is a conflict between two different value systems? When different groups of community expect different outcomes - is a fork the only way out? Or when there is an emergency and there is no time to arrange a proper vote?
 
 - #### Smart-contracts running amok
 
@@ -117,7 +116,7 @@ Total: 40 minutes.
 
 - #### High cost of app development
 
-  Where are we today today? We have the decentralized computer and a bunch of people trying to build applications on top of it, some of them are quite exciting ideas. But actually nothing is coming to market. All we have are just prototypes. The developers are trying to build those amazing apps but they don't get to spend their time on building business logic and user interfaces. Instead they are stuck on figuring out things like databases, storage and inter-app communication. 
+  Where are we today today? We have the decentralized computer and a bunch of people trying to build applications on top of it, some of them are quite exciting ideas. But actually nothing is coming to market. All we have are just prototypes. The developers are trying to build those amazing apps but they don't get to spend their time on building business logic and user interfaces. Instead they are stuck on figuring out low-level stuff like databases, storage and inter-app communication. 
 
   Furthermore, because everything's being implemented in the app layer, it's being done within relatively inefficient scripting environment. And even if it gets built, it will be expensive to use - it will cost gas.
 
@@ -131,12 +130,12 @@ Total: 40 minutes.
 
 - #### No bridges between blockchains
 
-  You're still unable to move value across blockchains without going through a centralized middleman.  There are projects aiming to change that (.e.g. Polkadot) but they are still years away from becoming a reality.
+  You're still unable to move value across blockchains without going through a centralized middleman. The precondition for that is asynchronous communication between decentralized apps. There are projects aiming to change that (e.g. Polkadot) but they are still years away from becoming a reality.
 
 
 
 
-## ad 5. EOS presentation
+## ad 5. Introduction to EOS
 
 * #### What is EOS? 
 
@@ -154,6 +153,8 @@ Total: 40 minutes.
     While other systems definitely require a second layer of processing to be able to scale, EOS offers enormous processing power in its primary layer. This is the result of the following features:
 
     - EOS consensus mechanism (DPOS, Delegated Proof of Stake) introduces a fixed number of block producers. Time intervals between blocks are exactly 3 seconds and to become a block producer you just need to have a server hardware efficient enough to keep up with the demand. If you don't, you start missing blocks and you're voted out.
+
+      By the way, quite recently EOS has announced that will be aiming at 500 ms blocks, instead of the current 3 seconds.
 
       But this does not mean you need a datacenter to be able to trust no-one and run a full node. EOS enables partial evaluation of blockchain state. This means that an EOS node can selectively process transactions and ignore those which are of no interest for it.
 
@@ -256,12 +257,11 @@ Total: 40 minutes.
   * Q1 & Q2 2018 will be devoted to testing and building development tools & documentation. During this phase you can starting building apps running on the testnet.
   * The EOS blockchain goes live in June 2018. Initially the assumption was that it would be launched as single-threaded and parallel execution would be added in the next stage, but according to the latest news parallel execution is going to be right from the start.
 
-* #### Summary
+* #### Wrap up
 
-
-  * What sets EOS aside, is not just the technology. It's actually the way it's going to operate and the role of tokens in the future of the blockchain. 
-  * Ethereum looks like a good proof of concept, a very useful one, as it has shown that there is an actual demand for blockchain-based solutions and smart-contracts. Whereas EOS is extremely business oriented: you can reliably build business on top of it, businesses with predictable cost and businesses which will scale.
-  * EOS is an incremental improvement that adds parallelism and generalization to stuff that's already been proven to work. And that's the main difference in approach: the EOS team figured out how to build decentralized applications first and then they started generalizing them, versus attempting to generalize something that you have not even figured out how to build yet.
+    * What sets EOS aside, is not just the technology. It's actually the way it's going to operate and the role of tokens in the future of the blockchain. 
+    * Ethereum looks like a good proof of concept, a very useful one, as it has shown that there is an actual demand for blockchain-based solutions and smart-contracts. Whereas EOS is extremely business oriented: you can reliably build business on top of it, businesses with predictable cost and businesses which will scale.
+    * EOS is an incremental improvement that adds parallelism and generalization to stuff that's already been proven to work. And that's the main difference in approach: the EOS team figured out how to build decentralized applications first and then they started generalizing them, versus attempting to generalize something that you have not even figured out how to build yet.
 
 
 
