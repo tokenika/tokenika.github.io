@@ -15,8 +15,8 @@
 5. Introduction to EOS. (18 minutes) (JZ)
    * What is EOS?
    * What features make EOS unique when compared to Ethereum?
-   * What are EOS weak points?
-   * What are EOS strong points?
+   * What are the strong points?
+   * What are the weak points?
    * EOS roadmap
    * Wrap up
 6. About Tokenika. (4 minutes) (TM/DW)
@@ -180,6 +180,8 @@ Total: 40 minutes.
 
     Strategic choices (e.g. the level of inflation and how to allocate this inflation) are decided directly by the shareholders.
 
+    Smart-contracts can have built-in mechanisms which enable them to fix or upgrade themselves. If this fails (might be revoked) witnesses are able to freeze & fix broken app.
+
   * <u>Complete operating system</u>
 
     EOS introduces the first blockchain operating system. What this means is that there are features and services embedded right in the blockchain and every application built on EOS has access to them. Those include: account permissions, account recovery, scheduling, authentication, inter-app communication, biometric 2nd factor validation.
@@ -200,14 +202,11 @@ Total: 40 minutes.
 
     EOS applications are designed with asynchronous communication from the start. What it means is that applications are designed to support communicating with other blockchains, as this kind of communication definitely has to be asynchronous. So we have internal communication with local applications, as well as external communication with other blockchains, provided they support a compatible protocol. This allows you to have private enterprise chains that can communicate with a public chain.
 
-* #### What are EOS weak points?
+  * <u>Publish source code, not assembly</u>
 
-  * Low awareness and quite a lot of negative (undeserved?) perception, mainly due to people being skeptical about the viability of the claims contained in EOS whitepaper.
-  * Almost non-existent ecosystem and very few developers outside of the core team, capable to contribute to the code-base. However this changes rapidly - there are already over 10k registered users on the Telegram EOS channel and 1k on EOS Dev channel.
-  * The first language to be supported for EOS smart-contract creation is going to be C++. It's because this happens to be the first language supported by WebAssembly, EOS virtual machine. C++ is powerful but has a very steep learning curve. A less demanding language, like Java or C#, would be much more suited here but unfortunately those are not supported by WebAssembly yet.
-  * Not live yet. I'll tell you about the roadmap in a sec.
+    Source code is sacred, as it captures intentions. As virtual machines get better, source code can be recompiled in the future. This opens EOS up for multiple virtual machines and upgradable smart-contracts.
 
-* #### What are EOS strong points?
+* #### What are the strong points?
   * Small yet very efficient & experienced team
 
     Dan Larimer's track record: very fast & very powerful. It's the same team that has built BitShares and Steem, which is the most complex blockchain in existence today: conceived, designed, built, launched in just 6 months.
@@ -248,6 +247,13 @@ Total: 40 minutes.
   * Commitment to spend 1 bln USD to boost the ecosystem
 
     Brendan Blumer: *EOS is the most well funded project in history and we plan to soon announce a program for up to one billion USD of capital for EOS projects. We’re amidst onboarding a few critical partners first that will give EOS and this program the world-class credibility it deserves.*
+
+  #### What are the weak points?
+
+  - Low awareness and quite a lot of negative (undeserved?) perception, mainly due to people being skeptical about the viability of the claims contained in EOS whitepaper.
+  - Almost non-existent ecosystem and very few developers outside of the core team, capable to contribute to the code-base. However this changes rapidly - there are already over 10k registered users on the Telegram EOS channel and 1k on EOS Dev channel.
+  - The first language to be supported for EOS smart-contract creation is going to be C++. It's because this happens to be the first language supported by WebAssembly, EOS virtual machine. C++ is powerful but has a very steep learning curve. A less demanding language, like Java or C#, would be much more suited here but unfortunately those are not supported by WebAssembly yet.
+  - Not live yet. I'll tell you about the roadmap in a sec.
 
 * #### EOS roadmap
 
