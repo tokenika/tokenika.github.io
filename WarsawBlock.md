@@ -158,7 +158,7 @@ Total: 40 minutes.
 
       But this does not mean you need a datacenter to be able to trust no-one and run a full node. EOS enables partial evaluation of blockchain state. This means that an EOS node can selectively process transactions and ignore those which are of no interest for it.
 
-    - EOS blockchain maintains *consensus over events* instead the common approach of *consensus over state*. As a result, it takes longer to restart a network node but on the other hand transaction processing is much quicker. This is a very beneficial trade-off, as node restarting is a rare event, while efficient transaction processing is what's needed most of the time.
+    - EOS blockchain maintains *consensus over events (or messages)* instead the common approach of *consensus over state*. As a result, it takes longer to restart a network node but on the other hand transaction processing is much quicker. This is a very beneficial trade-off, as node restarting is a rare event, while efficient transaction processing is what's needed most of the time.
 
     - Currently all blockchains rely upon sequential processing of transactions; this fundamentally limits the throughput of a blockchain to the computational capacity of a single CPU core. EOS architecture has been designed as multi-threaded on the very fundamental level. Not everything can be executed in this way (e.g. managing an order book of a decentralized exchange), but those things which can (e.g. validating a smart-contract's preconditions) are subject of parallel processing. EOS is extremely fast in sequential processing and gets an extra boost when the parallel processing mode kicks in.
 
@@ -174,7 +174,7 @@ Total: 40 minutes.
 
     Had *The DAO* incident happened on EOS, there would be a clear procedure to follow to resolve the issue in an orderly manner. It’s clear that EOS is designed with the needs of serious businesses in mind: before they commit their resources and their precious reputation to a large blockchain project, they need to be sure there is an emergency procedure in case things get out of control.
 
-  * <u>Blockchain governance</u>
+  * <u>Blockchain governance built-in</u>
 
     DPOS, EOS consensus mechanism, is designed just for that. Decisions can be made quickly, yet the ultimate power rests with the shareholders. Block producers have a strong motivation to make the right decisions and properly signal their intentions before taking decisions, or they get voted out.
 
@@ -192,13 +192,13 @@ Total: 40 minutes.
 
     EOS token is never consumed, which basically means there are no transaction fees and there is no concept of gas.
 
-    EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and then use it freely, not just rent it on pay-as-you-go basis. In EOS the deal is very simple: if you own 1% of the tokens you own 1% of the network, including all it's resources: the bandwidth, the storage etc.
+    EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and then use it freely, not just rent it on pay-as-you-go basis. In EOS the deal is very simple: if you own 1% of the tokens, you own 1% of the network, including all it's resources: the bandwidth, the storage etc.
 
     If you have more resources than you need you can rent them out. If you run a business and don't have enough resources you can rent them from someone or buy more EOS tokens. The point is it's up to you, you have a choice.
 
   * <u>Asynchronous communication</u>
 
-    EOS applications are designed with asynchronous communication from the start. What it means is that applications are designed to support communicating with other blockchains, as this kind of communication definitely has to be asynchronous. So we have internal communication with local applications as well as external communication with other blockchains, provided they support a compatible protocol. This allows you to have private enterprise chains that can communicate with a public chain.
+    EOS applications are designed with asynchronous communication from the start. What it means is that applications are designed to support communicating with other blockchains, as this kind of communication definitely has to be asynchronous. So we have internal communication with local applications, as well as external communication with other blockchains, provided they support a compatible protocol. This allows you to have private enterprise chains that can communicate with a public chain.
 
 * #### What are EOS weak points?
 
@@ -252,7 +252,7 @@ Total: 40 minutes.
 * #### EOS roadmap
 
   * The project was started in Q1 2017, it was publicly announced in May 2017.
-  * Right now we have a MVP stage called *EOS Dawn*. You can run a standalone EOS node and play with smart-contracts using command line tools. Public testnet will be launched in December.
+  * Right now we have a MVP stage called *EOS Dawn 1.0*. You can run a standalone EOS node and play with smart-contracts using command line tools. Public testnet will be launched in December.
   * By the end of the year an EOS version featuring all major functionalities will be released. Only single-threaded execution will be supported at this stage.
   * Q1 & Q2 2018 will be devoted to testing and building development tools & documentation. During this phase you can starting building apps running on the testnet.
   * The EOS blockchain goes live in June 2018. Initially the assumption was that it would be launched as single-threaded and parallel execution would be added in the next stage, but according to the latest news parallel execution is going to be right from the start.
@@ -270,7 +270,7 @@ Total: 40 minutes.
 
 * #### What we do?
 
-  * Our focus is on blockchain-based fundraising and digital asset management. Projects like NeuFund, Melonport are Iconomy are the best approximation of the domain we want to be in.
+  * Our focus is on blockchain-based fundraising and digital asset management. Projects like Neufund, Melonport are Iconomi are the best approximation of the domain we want to be in.
 
     We believe that just as there has been an ICO frenzy on Ethereum for the last couple of months,  there will be a similar one on EOS. This time by businesses who actually want to build production-ready apps, not prototypes or proofs of concept. Real apps used by real people, i.e. not only blockchain folks.
 
