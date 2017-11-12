@@ -67,13 +67,18 @@ Total: 40 minutes.
 ## ad 3. What do decentralized applications require? 
 
 - They need to be scalable and cheap to run. If you can't support millions of users, you can't build a business that's able to recover your initial investment. You can't compete on the market if your cost per transaction is substantially higher than your centralized competitors. So you're going to need thousands of transactions per second and you need them to be very cheap.
+
 - They need to be free for your users. You don't want to charge micro payments every time someone loads your webpage or wants to sign up. You need to have access to freemium models or different monetization strategies. If you want to charge your users, it should be the application choice, not the platform it's running on. 
+
 - They need to be available via mobile phones and web interfaces, so that users don't have to download and install anything. And they need to be responsive.
+
 - Your users need account names, no public keys, no fancy cryptographic stuff. And they need a procedure for account recovery. Can you imagine **not** having account recovery, if you aim for mass adoption? And users need 2nd factor authentication, ideally biometric one on their mobile phone, instead of an additional device like Trezor.
+
 - Your app needs to be upgradeable. No business plan survives first contact with the market. You need to be able to upgrade your app to keep your business afloat, to adapt to changing market conditions, add new features that users expect. If you can't do that then your application will stagnate.
-- Your app needs bug recovery, something that's often overlooked in this space. Software is an imperfect art. You're guaranteed that statistically there will be a bug sometime. It doesn't matter how many eyes you have on it, doesn't matter how much formal verification you do, it doesn't matter what programming language you use - there will be bugs somewhere. So bug recovery and upgradability go hand in hand and you need to be prepared for it, if you want to have a realistic view of business and software development.
 
+- Your app needs bug recovery, something that's often overlooked in this space. Software is an imperfect art. You're guaranteed that statistically there will be a bug sometime. It doesn't matter how many eyes you have on it, doesn't matter how much formal verification you do, it doesn't matter what programming language you use - there will be bugs somewhere. So bug recovery and upgradability go hand in hand and you need to be prepared for it, if you want to have a realistic view of software development.
 
+  ​
 
 
 ## ad 4. Major problems facing the crypto-space
@@ -84,9 +89,9 @@ Total: 40 minutes.
 
   This is what industry actually requires and this is what blockchain technology gives us today. There's a huge gap between what we can do and what we need to be able to do.
 
-  If we look at Bitcoin or Ethereum, the only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Is it any good? Well, kind of.  Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. So it's best suited for recurrent payments between the same parties. And it doesn't handle smart-contracts.
+  If we look at Bitcoin or Ethereum, the only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. Is it any good? Well, kind of. Firstly, it doesn't handle smart-contracts. Secondly, there are lots of unverified assumptions involved. Even if it is used on a massive scale, we'll end up with a couple of large hubs monopolizing the whole thing. Anyway, my bet is it's not going to be practical due to UX issues: imagine an unsophisticated user having to manage all the complexity involved: opening a channel, making sure he has enough funds frozen on that channel, etc. 
 
-  Ethereum also has a scaling solution called Plasma, which is basically a hierarchy of blockchains. It's like a parent-child relationship: the parent blockchain acts a source of truth for the child blockchain. There are two major problems with this approach: it's still just at a proof-of-concept stage and it's inherently less secure.
+  Ethereum also has a scaling solution called Plasma, which is basically a hierarchy of blockchains. It's like a parent-child relationship: the parent blockchain acts as a source of truth for the child blockchain. It's still just a proof-of-concept (which means it's several years away), but even when it comes into existence there are two major problems with this approach: firstly, using sub-blockchains is inherently less secure, and secondly, who is going to run all those tiny blockchains? Surely it's going to gravitate to a couple of large players utilizing economy of scale, which in my view kills the purpose of the whole thing.
 
 - #### High & unpredictable transaction fees
 
@@ -104,7 +109,7 @@ Total: 40 minutes.
 
 - #### Blockchain governance
 
-  This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean both decisions in business-as-usual situations (e.g. budgeting) as well as decisions in emergency situations, when something goes seriously wrong and time is crucial.
+  This problem has been raised for a long time by the smartest people in the space. How to make decisions in a decentralized environment? And I mean both decisions in business-as-usual situations (e.g. budgeting) as well as decisions in emergency situations, when something goes seriously wrong and timing is crucial.
 
   So you need to have an efficient voting system in place. Bitcoin has none. Projects like Ethereum or Dash have some kind of voting in place. But imagine what happens when there is a conflict between two different value systems? When different groups of community expect different outcomes - is a fork the only way out? Or when there is an emergency and there is no time to arrange a proper vote?
 
@@ -118,11 +123,11 @@ Total: 40 minutes.
 
   Where are we today today? We have the decentralized computer and a bunch of people trying to build applications on top of it, some of them are quite exciting ideas. But actually nothing is coming to market. All we have are just prototypes. The developers are trying to build those amazing apps but they don't get to spend their time on building business logic and user interfaces. Instead they are stuck on figuring out low-level stuff like databases, storage and inter-app communication. 
 
-  Furthermore, because everything's being implemented in the app layer, it's being done within relatively inefficient scripting environment. And even if it gets built, it will be expensive to use - it will cost gas.
+  Furthermore, because everything is being implemented in the app layer, it's being done within relatively inefficient scripting environment. And even if it gets built, it will be expensive to use - it will cost gas.
 
 - #### Bad user experience
 
-  We must admit that user experience in the crypto-space is quite horrible. Can anyone name a blockchain-based application which can be used by normal people? Not by insiders like you, but by normal people, who just want to be users, not investors or risk-takers. An app which does not require you to buy tokens before you can try using it? An app which allows you do things in real-time, just as any conventional app like eBay or Uber?
+  We must admit that user experience in the crypto-space is quite horrible. Can anyone name a blockchain-based application which can actually  be used by normal people? Not by insiders like you, but by normal people, who just want to be users, not investors or risk-takers. An app which does not require you to buy tokens before you can try using it? An app which allows you do things in real-time, just as any conventional app like eBay or Uber?
 
   There is a reason for that. As developers are still stuck on making the back-end functional, there are no resources left to build the front-end. And even if they had the resources, you can't build a proper front-end if the back-end is unable to overcome the latency of block production. 
 
@@ -174,13 +179,13 @@ Total: 40 minutes.
 
     Had *The DAO* incident happened on EOS, there would be a clear procedure to follow to resolve the issue in an orderly manner. It’s clear that EOS is designed with the needs of serious businesses in mind: before they commit their resources and their precious reputation to a large blockchain project, they need to be sure there is an emergency procedure in case things get out of control.
 
+    Smart-contracts can have built-in mechanisms which enable them to fix or upgrade themselves. If this fails (might be revoked) witnesses are able to freeze & fix broken app.
+
   * <u>Blockchain governance built-in</u>
 
     DPOS, EOS consensus mechanism, is designed just for that. Decisions can be made quickly, yet the ultimate power rests with the shareholders. Block producers have a strong motivation to make the right decisions and properly signal their intentions before taking decisions, or they get voted out.
 
     Strategic choices (e.g. the level of inflation and how to allocate this inflation) are decided directly by the shareholders.
-
-    Smart-contracts can have built-in mechanisms which enable them to fix or upgrade themselves. If this fails (might be revoked) witnesses are able to freeze & fix broken app.
 
   * <u>Complete operating system</u>
 
@@ -194,7 +199,7 @@ Total: 40 minutes.
 
     EOS token is never consumed, which basically means there are no transaction fees and there is no concept of gas.
 
-    EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and then use it freely, not just rent it on pay-as-you-go basis. In EOS the deal is very simple: if you own 1% of the tokens, you own 1% of the network, including all it's resources: the bandwidth, the storage etc.
+    EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and then use it freely, not just rent it on pay-as-you-go basis. In EOS the deal is very simple: if you own 1% of the tokens, you own 1% of the network, including all it's resources: bandwidth, storage etc.
 
     If you have more resources than you need you can rent them out. If you run a business and don't have enough resources you can rent them from someone or buy more EOS tokens. The point is it's up to you, you have a choice.
 
