@@ -1,4 +1,4 @@
-# EOS - the next step after Ethereum?
+# EOS - the next step in smart-contracts?
 
 1. Our background. (2 minutes) (TM/DW)
 2. Quick survey "State of the blockchain today". (5 minutes) (TM/DW)
@@ -44,7 +44,7 @@ Total: 40 minutes.
 * Our background is very wide - spanning from the manufacturing industry, real-estate, education and public agencies. We're strongly based in reality:
   * We run real businesses employing over 800 people. 
   * One of us runs a real-estate association with over 8k members.
-  * One of us, Krzysztof Piech, is a publicly known figure promoting the crypto industry in the mainstream media and state agencies.
+  * One of us, Krzysztof Piech, is a university professor and a publicly known figure promoting the crypto industry in the mainstream media and running state agencies devoted to blockchain funding.
   * We have active business connections with China.
 * We are blockchain veterans. We started with BTC and went through the mining phase. Then we repeated the same success with ETH (we participated in Ethereum ICO in 2014) and other major projects. In most cases we invest and hold.
 * We actively participate in the blockchain space. This year alone we've been to FinTech Week in London and Blockchain Summit in Shanghai. We've talked to the people behind some of the major projects, including Ethereum, Iota, Factom, Gnosis.
@@ -86,9 +86,11 @@ Total: 40 minutes.
 
   What is high-performance? These are the requirements of real industry. You have 20k transactions per second just to do a Visa and MasterCard, not to mention all the other payment systems out there. Facebook does 50k likes per second, not including all the posts and voting and other actions that the users take. If you're in the financial industry and you're trying to do trading it's sometimes a hundred thousand transactions per second per market pair. So imagine putting all of these on a single platform so they can interoperate. Well, that would require millions of transactions per second.
 
-  This is what industry actually requires and this is what blockchain technology gives us today. There's a huge gap between what we can do and what we need to be able to do.
+  There's a huge gap between what we can do and what we need to be able to do.
 
   If we look at Bitcoin or Ethereum, the only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. Is it any good? Well, kind of. Firstly, it doesn't handle smart-contracts. Secondly, there are lots of unverified assumptions involved. Even if it is used on a massive scale, we'll end up with a couple of large hubs monopolizing the whole thing. And imagine an unsophisticated user having to manage all the complexity involved: opening a channel, making sure he has enough funds frozen on that channel, etc.
+
+  Then we have the concept of sharding: we split the space of all possible accounts into subspaces and this way not all nodes of the network will have to execute all of the transactions. But still we are limited to 30 trxns/sec on a single shard - definitely not enough for some businesses.
 
   Ethereum also has a scaling solution called Plasma, which is basically a hierarchy of blockchains. It's like a parent-child relationship: the parent blockchain acts as a source of truth for the child blockchain. It's still just a proof-of-concept (which means it's several years away), but even when it comes into existence there are two major problems with this approach: firstly, using sub-blockchains is inherently less secure, and secondly, who is going to run all those tiny blockchains? Surely it's going to gravitate to a couple of large players utilizing economy of scale, which in my view kills the purpose of the whole thing.
 
