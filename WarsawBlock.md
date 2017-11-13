@@ -220,7 +220,7 @@ Total: 40 minutes.
 
   * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
 
-    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, relatively young yet very experienced and already successful entrepreneur. And we have powerful investors like Brook Pierce and Bo Shen from Fenbushi Capital financially backing it. What's interesting, both were early investors of Ethereum (and still are), and Brook Pierce is personally engaged in promoting EOS.
+    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, relatively young yet very experienced and already successful entrepreneur. And we have powerful investors like Brock Pierce and Bo Shen from Fenbushi Capital financially backing it. What's interesting, both were early investors of Ethereum (and still are), and Brook Pierce is personally engaged in promoting EOS.
 
   * Web Assembly as a virtual machine
 
