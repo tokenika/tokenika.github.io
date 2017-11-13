@@ -44,7 +44,7 @@ Total: 40 minutes.
 * Our background is very wide - spanning from the manufacturing industry, real-estate, education and public agencies. We're strongly based in reality:
   * We run real businesses employing over 800 people. 
   * One of us runs a real-estate association with over 8k members.
-  * One of us, Krzysztof Piech, is a publicly known figure promoting the crypto industry in the mainstream media and state agenesis.
+  * One of us, Krzysztof Piech, is a publicly known figure promoting the crypto industry in the mainstream media and state agencies.
   * We have active business connections with China.
 * We are blockchain veterans. We started with BTC and went through the mining phase. Then we repeated the same success with ETH (we participated in Ethereum ICO in 2014) and other major projects. In most cases we invest and hold.
 * We actively participate in the blockchain space. This year alone we've been to FinTech Week in London and Blockchain Summit in Shanghai. We've talked to the people behind some of the major projects, including Ethereum, Iota, Factom, Gnosis.
@@ -196,7 +196,7 @@ Total: 40 minutes.
 
   * <u>No transaction fees</u>
 
-    EOS token is never consumed, which basically means there are no transaction fees and there is no concept of gas.
+    EOS token is never consumed, which basically means there are no transaction fees and there is no concept of gas. Spam protection is achieved via rate limiting - you can use the system up to a certain limit, proportional to your stake.
 
     EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and then use it freely, not just rent it on pay-as-you-go basis. In EOS the deal is very simple: if you own 1% of the tokens, you own 1% of the network, including all it's resources: bandwidth, storage etc.
 
@@ -219,7 +219,7 @@ Total: 40 minutes.
 
   * Rare combination of the top talents in the crypto-space, entrepreneurial skills, and strong financial backing
 
-    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, relatively young yet very experienced and already successful entrepreneur. And we have powerful investors like Brock Pierce and Bo Shen from Fenbushi Capital financially backing it. What's interesting, both were early investors of Ethereum (and still are), and Brook Pierce is personally engaged in promoting EOS.
+    We have Dan Larimer and Ian Grigg as the main source of brain power. We have Brendan Blumer as CEO, relatively young yet very experienced and already successful entrepreneur. And we have powerful investors like Brock Pierce and Bo Shen from Fenbushi Capital financially backing it. What's interesting, both were early investors of Ethereum (and still are), and Brock Pierce is personally engaged in promoting EOS.
 
   * Web Assembly as a virtual machine
 
@@ -282,7 +282,7 @@ Total: 40 minutes.
 
   * Our focus is on blockchain-based fundraising and digital asset management. Projects like Neufund, Melonport are Iconomi are the best approximation of the domain we want to be in.
 
-    We believe that just as there has been an ICO frenzy on Ethereum for the last couple of months,  there will be a similar one on EOS. This time by businesses who actually want to build production-ready apps, not prototypes or proofs of concept. Real apps used by real people, i.e. not only blockchain folks.
+    We believe that just as there has been an ICO frenzy on Ethereum for the last couple of months, there will be a similar one on EOS. This time by businesses who actually want to build production-ready apps, not prototypes or proofs of concept. Real apps used by real people, i.e. not only blockchain folks.
 
     We want to be prepared for this happening: businesses wanting to raise funds and investors wanting to risk funds, and then manage their cryptocurrency portfolio in a convenient & secure manner.
 
