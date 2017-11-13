@@ -47,7 +47,7 @@ Total: 40 minutes.
   * One of us, Krzysztof Piech, is a publicly known figure promoting the crypto industry in the mainstream media and state agenesis.
   * We have active business connections with China.
 * We are blockchain veterans. We started with BTC and went through the mining phase. Then we repeated the same success with ETH (we participated in Ethereum ICO in 2014) and other major projects. In most cases we invest and hold.
-* We actively participate in the blockchain space. This year alone we've been to the FinTech Week in London and Blockchain Summit in Shanghai. We've talked to the people behind some the major projects, including Ethereum, Iota, Factom, Gnosis.
+* We actively participate in the blockchain space. This year alone we've been to FinTech Week in London and Blockchain Summit in Shanghai. We've talked to the people behind some of the major projects, including Ethereum, Iota, Factom, Gnosis.
 
 
 
@@ -59,7 +59,6 @@ Total: 40 minutes.
 - What is BTC average transaction fee? What about ETH? (3 USD & 0.30 USD)
 - How many transactions per second does Facebook require? (50k trxn/sec)
 - How many transactions per second is BTC able to process? What about ETH? (4 trxn/sec & 30 trxn/sec)
-- Which are the four top blockchains currently in production which handle the biggest number of transactions? (BTC, ETH, Steem, BitShares)
 
 
 
@@ -89,7 +88,7 @@ Total: 40 minutes.
 
   This is what industry actually requires and this is what blockchain technology gives us today. There's a huge gap between what we can do and what we need to be able to do.
 
-  If we look at Bitcoin or Ethereum, the only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. Is it any good? Well, kind of. Firstly, it doesn't handle smart-contracts. Secondly, there are lots of unverified assumptions involved. Even if it is used on a massive scale, we'll end up with a couple of large hubs monopolizing the whole thing. Anyway, my bet is it's not going to be practical due to UX issues: imagine an unsophisticated user having to manage all the complexity involved: opening a channel, making sure he has enough funds frozen on that channel, etc. 
+  If we look at Bitcoin or Ethereum, the only way to tackle this issue boils down to relying on a second layer of transaction processing: Lightening Network for Bitcoin and Raiden for Ethereum. Those solutions are based on so called state channels: you make a series of off-chain transactions and when you're done you settle them on-chain. Is it any good? Well, kind of. Firstly, it doesn't handle smart-contracts. Secondly, there are lots of unverified assumptions involved. Even if it is used on a massive scale, we'll end up with a couple of large hubs monopolizing the whole thing. And imagine an unsophisticated user having to manage all the complexity involved: opening a channel, making sure he has enough funds frozen on that channel, etc.
 
   Ethereum also has a scaling solution called Plasma, which is basically a hierarchy of blockchains. It's like a parent-child relationship: the parent blockchain acts as a source of truth for the child blockchain. It's still just a proof-of-concept (which means it's several years away), but even when it comes into existence there are two major problems with this approach: firstly, using sub-blockchains is inherently less secure, and secondly, who is going to run all those tiny blockchains? Surely it's going to gravitate to a couple of large players utilizing economy of scale, which in my view kills the purpose of the whole thing.
 
@@ -115,7 +114,7 @@ Total: 40 minutes.
 
 - #### Smart-contracts running amok
 
-  One possible solution preventing smart-contracts getting out of control is to find a way to formally verify their code before they are deployed. The problem is that it's very hard in practice. Formal verification makes things difficult. And as of now, it just reduces the risk but does not fully guarantee the code will run as expected. So you can make a lot of effort, but still you need to be able to handle a black swan event. Or you're out business.
+  One possible solution preventing smart-contracts getting out of control is to find a way to formally verify their code before they are deployed. The problem is that it's very hard in practice. Formal verification makes things difficult. And as of now, it just reduces the risk but does not fully guarantee the code will run as expected. So you can make a lot of effort, but still you need to be able to handle a black swan event. Or you're out business model.
 
   Let's take a look at Ethereum. Their website still says: *Build **unstoppable** applications*. Right, unstoppable, this is what it says. Are they really unstoppable? Clearly handling a smart-contract running amok is not considered to be part of their business.
 
@@ -127,15 +126,15 @@ Total: 40 minutes.
 
 - #### Bad user experience
 
-  We must admit that user experience in the crypto-space is quite horrible. Can anyone name a blockchain-based application which can actually  be used by normal people? Not by insiders like you, but by normal people, who just want to be users, not investors or risk-takers. An app which does not require you to buy tokens before you can try using it? An app which allows you do things in real-time, just as any conventional app like eBay or Uber?
+  We must admit that user experience in the crypto-space is quite horrible. Can anyone name a blockchain-based application which can actually be used by normal people? Not by insiders like you, but by normal people, who just want to be users, not investors or risk-takers. An app which does not require you to buy tokens before you can try using it? An app which allows you do things in real-time, just as any conventional app like eBay or Uber?
 
-  There is a reason for that. As developers are still stuck on making the back-end functional, there are no resources left to build the front-end. And even if they had the resources, you can't build a proper front-end if the back-end is unable to overcome the latency of block production. 
+  There is a reason for that. As developers are still stuck on making the back-end functional, there are no resources left to build the front-end. And even if they had the resources, you can't build a proper front-end if the back-end infrastructure is not solid enough.
 
   The point is, if we want mass adoption, from the end-user perspective blockchain-based apps need to be indistinguishable from conventional apps. And unfortunately, despite all the hype, the technology right now is still too immature for that. We don't just need an efficient blockchain. We need the entire infrastructure around blockchain which makes it possible for front-end developers to do their job.
 
 - #### No bridges between blockchains
 
-  You're still unable to move value across blockchains without going through a centralized middleman. The precondition for that is asynchronous communication between decentralized apps. There are projects aiming to change that (e.g. Polkadot) but they are still years away from becoming a reality.
+  You're still unable to move value across blockchains without going through a centralized middleman.  There are projects aiming to change that (e.g. Polkadot) but they are still years away from becoming a reality.
 
 
 
