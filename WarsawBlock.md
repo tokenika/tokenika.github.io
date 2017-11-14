@@ -34,7 +34,7 @@ Total: 40 minutes.
 
 ## Disclaimer
 
-* This presentation will be about a smart-contract system called EOS. However we are in no formal way associated with *block.one*, the company developing EOS code. We are just part of the emerging EOS community.
+* This presentation will be about a smart-contract system called EOS. However, we are in no formal way associated with *block.one*, the company developing EOS code. We are just part of the emerging EOS community.
 * We have no interest in you buying EOS tokens, and this certainly should not be treated as financial advice. Our goal is to encourage you to take interest in the concept and possibly consider building businesses on top of EOS.
 
 
@@ -122,7 +122,7 @@ Total: 40 minutes.
 
 - #### High cost of app development
 
-  Where are we today today? We have the decentralized computer and a bunch of people trying to build applications on top of it, some of them are quite exciting ideas. But actually nothing is coming to market. All we have are just prototypes. The developers are trying to build those amazing apps but they don't get to spend their time on building business logic and user interfaces. Instead they are stuck on figuring out low-level stuff like databases, storage and inter-app communication. 
+  Where are we today? We have the decentralized computer and a bunch of people trying to build applications on top of it, some of them are quite exciting ideas. But actually nothing is coming to market. All we have are just prototypes. The developers are trying to build those amazing apps but they don't get to spend their time on building business logic and user interfaces. Instead they are stuck on figuring out low-level stuff like databases, storage and inter-app communication. 
 
   Furthermore, because everything is being implemented in the app layer, it's being done within relatively inefficient scripting environment. And even if it gets built, it will be expensive to use - it will cost gas.
 
@@ -136,7 +136,7 @@ Total: 40 minutes.
 
 - #### No bridges between blockchains
 
-  You're still unable to move value across blockchains without going through a centralized middleman.  There are projects aiming to change that (e.g. Polkadot) but they are still years away from becoming a reality.
+  You're still unable to move value across blockchains without going through a centralized middleman.  There are projects aiming to change that (e.g. Polkadot, Cosmos) but they are still years away from becoming a reality.
 
 
 
@@ -158,13 +158,11 @@ Total: 40 minutes.
 
     While other systems definitely require a second layer of processing to be able to scale, EOS offers enormous processing power in its primary layer. This is the result of the following features:
 
-    - EOS consensus mechanism (DPOS, Delegated Proof of Stake) introduces a fixed number of block producers. Time intervals between blocks are exactly 3 seconds and to become a block producer you just need to have a server hardware efficient enough to keep up with the demand. If you don't, you start missing blocks and you're voted out.
+    - Time intervals between blocks are exactly 3 seconds and to be a block producer you just need to have a server hardware efficient enough to keep up with the demand. But this does not mean you need a datacenter to be able to trust no-one and run a full node. EOS enables partial evaluation of blockchain state. This means that an EOS node can selectively process transactions and ignore those which are of no interest for it.
 
-      By the way, quite recently EOS has announced that will be aiming at 500 ms blocks, instead of the current 3 seconds.
+    - EOS blockchain maintains *consensus over events (or messages)* instead the common approach of *consensus over state*. This means that in EOS the current state is derived from the sequence of events which have happened in the past. At first sight this looks like an unnecessary complication, but actually this approach has enormous positive consequences in terms of optimization.
 
-      But this does not mean you need a datacenter to be able to trust no-one and run a full node. EOS enables partial evaluation of blockchain state. This means that an EOS node can selectively process transactions and ignore those which are of no interest for it.
-
-    - EOS blockchain maintains *consensus over events (or messages)* instead the common approach of *consensus over state*. As a result, it takes longer to restart a network node but on the other hand transaction processing is much quicker. This is a very beneficial trade-off, as node restarting is a rare event, while efficient transaction processing is what's needed most of the time.
+      As a result, it takes longer to restart a network node but on the other hand transaction processing is much quicker. This is a very beneficial trade-off, as node restarting is a rare event, while efficient transaction processing is what's needed most of the time.
 
     - Currently all blockchains rely upon sequential processing of transactions; this fundamentally limits the throughput of a blockchain to the computational capacity of a single CPU core. EOS architecture has been designed as multi-threaded on the very fundamental level. Not everything can be executed in this way (e.g. managing an order book of a decentralized exchange), but those things which can (e.g. validating a smart-contract's preconditions) are subject of parallel processing. EOS is extremely fast in sequential processing and gets an extra boost when the parallel processing mode kicks in.
 
@@ -172,7 +170,7 @@ Total: 40 minutes.
 
   * <u>Much wider context</u>
 
-    In EOS smart-contracts are treated as a very broad phenomena. The assumption is that human errors in smart-contracts are unavoidable, so there needs to be a built-in mechanism which handles such cases. EOS will have:
+    In EOS smart-contracts are treated as very broad phenomena. The assumption is that human errors in smart-contracts are unavoidable, so there needs to be a built-in mechanism which handles such cases. EOS will have:
 
     * a constitution encoded in the blockchain,
     * arbitration for resolving disputes,
@@ -190,7 +188,7 @@ Total: 40 minutes.
 
   * <u>Complete operating system</u>
 
-    EOS introduces the first blockchain operating system. What this means is that there are features and services embedded right in the blockchain and every application built on EOS has access to them. Those include: account permissions, account recovery, scheduling, authentication, inter-app communication, biometric 2nd factor validation.
+    EOS introduces the notion of blockchain operating system. What this means is that there are features and services embedded right in the blockchain and every application built on EOS has access to them. Those include: account permissions, account recovery, scheduling, authentication, inter-app communication, biometric 2nd factor validation.
 
     What's more, EOS provides every application with its own private database. The system has built-in storage solution based on IPFS, which is free to use, provided you're a token holder.
 
@@ -198,9 +196,11 @@ Total: 40 minutes.
 
   * <u>No transaction fees</u>
 
-    EOS token is never consumed, which basically means there are no transaction fees and there is no concept of gas. Spam protection is achieved via rate limiting - you can use the system up to a certain limit, proportional to your stake.
+    EOS token is never consumed, which basically means there are no transaction fees and there is no concept of gas.
 
-    EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and then use it freely, not just rent it on pay-as-you-go basis. In EOS the deal is very simple: if you own 1% of the tokens, you own 1% of the network, including all it's resources: bandwidth, storage etc.
+    Spam protection is achieved via rate limiting - you can use the system up to a certain limit, proportional to your stake.
+
+    EOS offers a solution which prevails in business around the world: you can own a piece of infrastructure and then use it freely, not just rent it on pay-as-you-go basis. In EOS the deal is very simple: if you own 1% of the tokens, you own 1% of the network, including all its resources: bandwidth, storage etc.
 
     If you have more resources than you need you can rent them out. If you run a business and don't have enough resources you can rent them from someone or buy more EOS tokens. The point is it's up to you, you have a choice.
 
@@ -210,7 +210,7 @@ Total: 40 minutes.
 
   * <u>Publish source code, not assembly</u>
 
-    Source code is sacred, as it captures intentions. As virtual machines get better, source code can be recompiled in the future. This opens EOS up for multiple virtual machines and upgradable smart-contracts.
+    Source code is sacred, as it captures human intentions. As virtual machines get better, source code can be recompiled in the future. This opens EOS up for multiple virtual machines and upgradable smart-contracts.
 
 * #### What are the strong points?
   * Small yet very efficient & experienced team
@@ -272,8 +272,9 @@ Total: 40 minutes.
 * #### Wrap up
 
     * What sets EOS aside, is not just the technology. It's actually the way it's going to operate and the role of tokens in the future of the blockchain. 
-    * Ethereum looks like a good proof of concept, a very useful one, as it has shown that there is an actual demand for blockchain-based solutions and smart-contracts. Whereas EOS is extremely business oriented: you can reliably build business on top of it, businesses with predictable cost and businesses which will scale.
     * EOS is an incremental improvement that adds parallelism and generalization to stuff that's already been proven to work. And that's the main difference in approach: the EOS team figured out how to build decentralized applications first and then they started generalizing them, versus attempting to generalize something that you have not even figured out how to build yet.
+    * Ethereum looks like a good proof of concept, a very useful one, as it has shown that there is an actual demand for blockchain-based solutions and smart-contracts. Whereas EOS is extremely business oriented: you can reliably build business on top of it, businesses with predictable cost and businesses which will scale.
+    * Can other systems (e.g. Ethereum) copy EOS solutions? Not really. EOS is different in the very foundations. To follow EOS path, they would have to backtrack a lot regarding their technology (e.g. consensus of state vs. events, remove the entire concept of gas), so it's very unlikely.
 
 
 
