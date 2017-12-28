@@ -6,7 +6,7 @@ Hacked ([hacked.com](https://hacked.com/))
 
 Smith&Crown ([smithandcrown.com](https://www.smithandcrown.com/))
 
-Tokenika [facebook.com](https://www.facebook.com/groups/tokenika/)
+Tokenika ([facebook.com](https://www.facebook.com/groups/tokenika/))
 
 CoinDesk ([coindesk.com](http://www.coindesk.com))
 
