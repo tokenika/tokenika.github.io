@@ -8,15 +8,19 @@
 
 # Who are we?
 
-BitSpace is an incubator focusing on creating synergies between exponential technologies, such as cryptocurrency, the Internet of Things, BCI, VR and AI. We combine these technologies to create new, innovative and disruptive solutions for the future. BitSpace is also an excellence center and does Bitcoin and blockchain consultancy. We build tailored blockchain solutions for our customers and arrange courses and seminars for businesses and for people in private.
+Tokenika is group of cryptospace entrepreneurs based in Poland, the biggest cryptomarket in Europe. We started with Bitcoin, then we were early adopters of BitShares, Steem and Ethereum, and now we bet on EOS. Generally, we specialize in blockchain systems based on Delegated Proof of Stake.
 
-# Delegated Proof of Stake
+Our primary focus is participation in building EOS infrastructure. Apart from that, we're active in three domains: long-term digital assets investments, blockchain consultancy and software house for building decentralized applications.
 
-#### What is it?
+As we have direct access to venture capital (both public and private), we also act as an incubator for start-ups around DLT (Distributed Ledger Technology).
 
-Delegated Proof of Stake (DPOS) is the fastest, most efficient, most decentralized, and most flexible consensus model available. DPOS leverages the power of stakeholder approval voting to resolve consensus issues in a fair and democratic way. All network parameters, from fee schedules to block intervals and transaction sizes, can be tuned via elected delegates. Deterministic selection of block producers allows transactions to be confirmed in an average of just 1 second. Perhaps most importantly, the consensus protocol is designed to protect all participants against unwanted regulatory interference.
+# Why Delegated Proof of Stake?
 
-#### Why do we focus on DPOS?
+#### What is DPOS?
+
+Delegated Proof of Stake (DPOS) is the fastest, most efficient, most decentralized, and most flexible consensus model available. DPOS leverages the power of stakeholder approval voting to resolve consensus issues in a fair and democratic way. Perhaps most importantly, the consensus protocol is designed to protect all participants against unwanted regulatory interference.
+
+#### Why we focus on DPOS?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
 
@@ -28,23 +32,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor se
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
 
-# What do we do?
+# What we do?
+
+#### Building EOS infrastructure
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
 
 #### Long-term digital assets investments
 
 Our focus is on blockchain-based fundraising and digital asset management solutions, e.g. [Neufund](https://neufund.org/), [Melonport](https://melonport.com/), [Iconomi](https://www.iconomi.net/).
 
-#### DLT Incubator
+#### Blockchain consultancy
 
-Bitspace is an incubator of startup companies. These business models incorporate technologies such as Blockchain, Space, Artificial Intelligence and Virtual Reality. For consideration please contact us directly.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
 
 #### Software house for EOS/ETH dApps
 
 When Android was entering the market, the best strategy for Android-based businesses was to identify the most successful apps on iOS and implement them on Android. We want to follow a similar path with EOS, as we believe that EOS, once launched in Q3 2018, will be much more scalable, business-oriented and production-ready than Ethereum.
 
-# What do we offer?
+#### DLT Incubator
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat.
+Tokenika is an incubator of start-up companies. These business models incorporate technologies such as Blockchain, Space, Artificial Intelligence and Virtual Reality.
+
+# Contributions for EOS ecosystem
 
 #### EOS CLI & API (TEOS)
 
@@ -68,7 +78,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor se
 
 # Core Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat.
+We're strongly based in real-life businesses. Our background is very wide - including the manufacturing industry, real-estate, finance, machine learning and university education. 
 
 #### Tomasz Michalski, CEO & co-founder
 
@@ -110,7 +120,7 @@ Data scientist passionate about cryptocurrency, blockchain & data driven busines
 
 # Career
 
-#### With us
+#### With us you will
 
 - Be able to work with DLT and other exponential technologies, such as Blockchain, A.I, V.R and Gaming
 - Have influence in a young and growing company
