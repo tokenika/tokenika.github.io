@@ -104,7 +104,7 @@ For more than 20 years active investor on the stock exchange (S&P500, DAX, CAC40
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
 
-# Partners & advisors
+# Partners & advisers
 
 #### GTG
 
