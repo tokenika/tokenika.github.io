@@ -2,10 +2,6 @@
 
 
 
-# Why blockchain?
-
-![https://www.youtube.com/watch?v=iSROMfJ53rA](video.png)
-
 # Who are we?
 
 Tokenika is group of cryptospace entrepreneurs based in Poland, the biggest cryptomarket in Europe. We started with Bitcoin, then we were early adopters of BitShares, Steem and Ethereum, and now we bet on EOS. Generally, we specialize in blockchain systems based on Delegated Proof of Stake.
@@ -14,7 +10,11 @@ Our primary focus is participation in building EOS infrastructure. Apart from th
 
 As we have direct access to venture capital (both public and private), we also act as an incubator for start-ups around DLT (Distributed Ledger Technology).
 
-# Why Delegated Proof of Stake?
+# Why blockchain?
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+
+# Why DPOS?
 
 #### What is DPOS?
 
