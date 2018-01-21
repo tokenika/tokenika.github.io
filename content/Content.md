@@ -4,11 +4,15 @@
 
 # Who are we?
 
-Tokenika is group of cryptospace entrepreneurs based in Poland, the biggest cryptomarket in Europe. We started with Bitcoin, then we were early adopters of BitShares, Steem and Ethereum, and now we bet on EOS. Generally, we specialize in blockchain systems based on Delegated Proof of Stake.
+Tokenika is an IT startup company set up by a group of crypto-space entrepreneurs based in Poland, one of the biggest crypto-markets in Europe. We started with Bitcoin, then we were early adopters of BitShares, Steem and Ethereum, and now we bet on [EOS](https://eos.io/). Generally, we specialize in blockchain systems based on a consensus mechanism called Delegated Proof of Stake.
 
-Our primary focus is participation in building EOS infrastructure. Apart from that, we're active in three domains: long-term digital assets investments, blockchain consultancy and software house for building decentralized applications.
+Our primary focus is participation in building EOS infrastructure. Our medium-term goal is gaining the position of one of 20 block producers in EOS once the system goes live in June 2018.
 
-As we have direct access to venture capital (both public and private), we also act as an incubator for start-ups around DLT (Distributed Ledger Technology).
+Apart from that, we're active in three domains: long-term digital assets investments, blockchain consultancy and software house for building decentralized applications.
+
+As we have direct access to venture capital (both public and private), we also act as an incubator for startups in the domain of Distributed Ledger Technology.
+
+Recently we have established a partnership with [Etheos](https://etheos.io/), a Norwegian-based business alliance whose goal is to attract large-scale businesses to the EOS ecosystem.
 
 # Why blockchain?
 
