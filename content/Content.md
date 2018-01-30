@@ -4,37 +4,45 @@
 
 # Who are we?
 
-Tokenika is an IT startup company set up by a group of crypto-space entrepreneurs based in Poland, one of the biggest crypto-markets in Europe. We started with Bitcoin, then we were early adopters of BitShares, Steem and Ethereum, and now we bet on [EOS](https://eos.io/). Generally, we specialize in blockchain systems based on a consensus mechanism called Delegated Proof of Stake.
+Tokenika is an IT company set up by a group of crypto-space entrepreneurs based in Poland, one of the largest crypto-markets in Europe.
 
-Our primary focus is participation in building EOS infrastructure. Our medium-term goal is gaining the position of one of 20 block producers in EOS once the system goes live in June 2018.
+We've been closely following all of Dan Larimer's DPOS-based projects since 2014, so it was a natural choice for us to align our business activity with [EOS](https://eos.io/) from its very inception. While we have a lot of respect for Ethereum achievements, still we see much greater business potential in EOS and that's why back in June 2017 we started making various contributions to the emerging ecosystem.
 
-Apart from that, we're active in three domains: long-term digital assets investments, blockchain consultancy and software house for building decentralized applications.
+As far as technology is concerned, we are in the process of creating EOS development tools, including [TEOS](https://github.com/tokenika/teos), an EOS programming interface, and also participate in [the community testnet](https://github.com/michaeljyeates/10mill/blob/master/README.md). We are building our own in-house expertise, as well as establishing business connections with reputable IT companies interested in entering the blockchain domain.
 
-As we have direct access to venture capital (both public and private), we also act as an incubator for startups in the domain of Distributed Ledger Technology.
+We are quite active on the business front as well. We've been engaged in talks with a couple of companies seriously considering building or migrating their business to EOS (e.g. [Builder Commerce](http://buildercommerce.com/)) and VC funds interested in investing in blockchain-based startups utilizing EOS (e.g. [Speedup Group](http://speedupgroup.com/en/)). Apart from that, we've set out to create our own EOS dApp taking advantage of the opportunities created by [the European PSD2 legislation](https://www.evry.com/en/news/articles/psd2-the-directive-that-will-change-banking-as-we-know-it/).
 
-Recently we have established a partnership with [Etheos](https://etheos.io/), a Norwegian-based business alliance whose goal is to attract large-scale businesses to the EOS ecosystem.
+We also strive to take good care of EOS publicity. We have presented EOS on several meetups both in Poland (e.g. [Warsaw](https://www.facebook.com/events/903326303125907/), [Wroclaw](https://www.meetup.com/Wroclaw-Blockchain-Meetup/events/246349912/), [Lodz](https://www.facebook.com/events/160585741214328/)) and Europe (e.g. [Oslo](https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway)). Recently we had the opportunity to give a 30-minute talk about EOS at a high-profile event in Warsaw called [Blockchain Connect](http://connectwarsaw.org/).
+
+As far as social media are concerned, we have managed to build following on [Steem](https://steemit.com/@tokenika) and [Twitter](https://twitter.com/tokenika_io) (including the Polish Minister of Digital Affairs), enroll 300+ people on [EOS Poland Facebook page](https://www.facebook.com/groups/EOSPolska/).
+
+Why are we making all those contributions? Our main medium-term goal is being elected as an EOS witness. We have the experience & infrastructure required for this role thanks to close partnership with a successful Polish-based [Steem witness](https://steemit.com/@gtg).
 
 # Why blockchain?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+The concept of blockchain is closely related to the concept of free speech. A blockchain is an irreversible public record that's replicated across computers all over the world. There is no one server that you can shut down, or that can take away what you've said. Every transaction, or every message sent over the blockchain is as if a notary has stamped it.
+
+Blockchain allows us to make everything resilient not just to corruption, but to any type of interference, especially from those would attempt to shut down or harm what we want to do as a free society.
+
+By having not just one source of truth, but many sources of truth that are all in consensus, and by having more accountability and more efficiency, you can build really powerful systems that can actually change the world.
 
 # Why DPOS?
 
 #### What is DPOS?
 
-Delegated Proof of Stake (DPOS) is the fastest, most efficient, most decentralized, and most flexible consensus model available. DPOS leverages the power of stakeholder approval voting to resolve consensus issues in a fair and democratic way. Perhaps most importantly, the consensus protocol is designed to protect all participants against unwanted regulatory interference.
+[Delegated Proof of Stake](https://www.mycryptopedia.com/delegated-proof-stake-dpos-explained/) (DPOS) is the fastest, most efficient, arguably most decentralized, and most flexible consensus model available. DPOS leverages the power of stakeholder approval voting to resolve consensus issues in a fair and democratic way. Perhaps most importantly, the consensus protocol is designed to protect all participants against unwanted regulatory interference.
 
 #### Why we focus on DPOS?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+We believe DPOS is the best trade-off one could make in the blockchain space. It's not without its own deficiencies (e.g. voters' apathy), yet it has been proven to work in real-life situations and remained both resilient and extremely efficient both in terms of processing power but also in terms of decentralized governance.
 
 #### What blockchain systems use DPOS?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+As of now, DPOS is probably the most quickly adopted consensus mechanism in the blockchain industry. It all started with BitShares back in 2014 and Steem in 2016. Since then several other projects have borrowed Dan Larimer's invention, including Lisk, Cardano & Ark.
 
 # Why EOS?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+Bitcoin is about simple payments. Ethereum is about smart-contracts - it's about automating those simple payments. EOS is about building real-life businesses on the blockchain - it's about turning those smart-contracts into full-blown decentralized applications. EOS takes the notion of smart-contracts and makes it extremely business-oriented.
 
 # What we do?
 
@@ -60,7 +68,7 @@ Tokenika is an incubator of start-up companies. These business models incorporat
 
 # Contributions for EOS ecosystem
 
-#### EOS CLI & API (TEOS)
+#### EOS Tools
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat.
 
@@ -73,10 +81,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor se
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat.
 
 #### EOS Faucet
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat.
-
-#### EOS Info
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat.
 
@@ -124,21 +128,7 @@ Data scientist passionate about cryptocurrency, blockchain & data driven busines
 
 # Career
 
-#### With us you will
-
-- Be able to work with DLT and other exponential technologies, such as Blockchain, A.I, V.R and Gaming
-- Have influence in a young and growing company
-- Have good career opportunities
-- Get to negotiate preferable deals for bonuses and options
-- Have a flexible work schedule
-- Take part in building the future
-
-#### We are looking for people who
-
-- Are interested in DLT and other exponential technologies
-- Have passion for future technology
-- Are engaged and willing to learn and explore
-- Want to take part in starting new and exciting projects
+If you have solid background in C++, we definitely look forward to talking to you. Familiarity with the concept of smart-contracts is a plus, but is not required.
 
 # Contact
 
