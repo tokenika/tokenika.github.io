@@ -11,7 +11,6 @@ We've been closely following all of Dan Larimer's DPOS-based projects since 2014
 
 Apart from that, we've set out to create our own EOS dApp taking advantage of the opportunities created by [the European PSD2 legislation](https://www.evry.com/en/news/articles/psd2-the-directive-that-will-change-banking-as-we-know-it/).
 
-Why are we making all those contributions? Our main medium-term goal is gaining reputation and getting elected as an EOS witness. We have the experience & infrastructure required for this role thanks to close partnership with a successful Polish-based [Steem witness](https://steemit.com/@gtg).
+Why are we making all those contributions? Our main medium-term goal is gaining reputation and getting elected as an EOS witness. We have the experience & infrastructure required for this role thanks to close partnership with a successful [Steem witness](https://steemit.com/@gtg).
 
 Now, we want to push it even further. As we've seen a lot of interest in EOS from large-scale businesses in Poland & Europe, it makes perfect sense for us to expand the process of introducing EOS to them and assisting them to utilize it. And this is something we'd like to discuss with block.one - how to enable us to substantially expand our on-boarding activity and give our actions proper backing & structure.
-
