@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'a4paper' for US letter paper - consult the newlfm class manual for more options
+
+%\headermarginsize{0cm}
+\rightmarginsize{4.5cm}
+%\topmarginsize{0cm}
+\topmarginskip{0cm}
+\headermarginskip{0cm}
+
+\usepackage{charter} % Use the Charter font for the document text
+\usepackage{hyperref}
+
+\usepackage{etoolbox} % patching an error
+\makeatletter
+\patchcmd{\@zfancyhead}{\fancy@reset}{\f@nch@reset}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyorh}{\f@nch@orh}{}{}
+\makeatother
+
+\textwidth=10cm
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\namefrom{John Smith} % Name
+
+\addrfrom{
+Tokenika\\
+%\today\\[12pt] % Date
+%123 Broadway \\ % Address
+%City, State 12345
+}
+
+
+\phonefrom{(000) 111-1111} % Phone number
+
+\emailfrom{john@smith.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+%\greetto{Dear Mrs. Smith,} % Greeting text
+%\closeline{Sincerely yours,} % Closing text
+
+%\nameto{Mrs. Jane Smith} % Addressee of the letter above the to address
+
+%\addrto{
+%Recruitment Officer \\ % To address
+%The Corporation \\
+%123 Pleasant Lane \\
+%City, State 12345
+%}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\href{http://tokenika.io/}{Tokenika} is an IT company set up by a group of crypto-space entrepreneurs based in Poland, one of the largest crypto-markets in Europe
+
+We've been closely following all of Dan Larimer's DPOS-based projects since 2014, so it was a natural choice for us to align our business activity with EOS from its very inception. As we see a lot of business potential in EOS, since June 2017 we've been making various contributions to the emerging ecosystem:
+
+\begin{itemize}
+\item EOS development tools, including \href{https://github.com/tokenika/teos}{TEOS} , an alternative, cross-platform programming interface for EOS.
+\item Building our own in-house expertise, as well as partnering with established IT companies interested in entering the blockchain domain (e.g. \href{https://aply.eu/}{Aply}, \href{https://ragnarson.com/}{Ragnarson}, \href{http://espeo.eu/}{Espeo}).
+\item Consultation services for companies seriously considering building or migrating their large-scale businesses to EOS (e.g. \href{http://parsecfrontiers.com/}{Parsec Frontiers}, \href{http://buildercommerce.com/}{Builder Commerce}, \href{http://justdrive.co/}{Just Drive}).
+\item Building relationships with VC funds interested in investing in blockchain-based startups utilizing EOS (e.g. \href{http://speedupgroup.com/en/}{Speedup Group}).
+\item Presenting EOS at high-profile events (e.g. \href{http://connectwarsaw.org/}{Blockchain Connect} in Warsaw) and several meetups both in Poland (e.g. \href{https://www.facebook.com/events/903326303125907/}{Warsaw}, \href{https://www.meetup.com/Wroclaw-Blockchain-Meetup/events/246349912/}{Wroclaw}, \href{https://www.facebook.com/events/160585741214328/}{Lodz}) \& Europe (e.g. \href{https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway}{Oslo}).
+\item Active on social media: \href{https://steemit.com/@tokenika}{Steem}, \href{https://twitter.com/tokenika_io}{Twitter} \& \href{https://www.facebook.com/groups/EOSPolska/}{Facebook}.
+\end{itemize} 
+ 
+Apart from that, we've set out to create our own EOS dApp taking advantage of the opportunities created by \href{https://www.evry.com/en/news/articles/psd2-the-directive-that-will-change-banking-as-we-know-it/}{the European PSD2 legislation}.
+
+Why are we making all those contributions? Our main medium-term goal is gaining reputation and getting elected as an EOS witness. We have the experience \& infrastructure required for this role thanks to close partnership with a successful \href{https://steemit.com/@gtg}{Steem witness}.
+
+Now, we want to push it even further. As we've seen a lot of interest in EOS from large-scale businesses in Poland \& Europe, it makes perfect sense for us to expand the process of introducing EOS to them and assisting them to utilize it. And this is something we'd like to discuss with block.one - how to enable us to substantially expand our on-boarding activity and give our actions proper backing \& structure.
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}
