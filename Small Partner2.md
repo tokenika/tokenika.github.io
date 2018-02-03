@@ -4,7 +4,7 @@ We've been closely following all of Dan Larimer's DPOS-based projects since 2014
 
 * EOS development tools, including [TEOS](https://github.com/tokenika/teos), an alternative, cross-platform programming interface for EOS.
 * Building our own in-house expertise, as well as partnering with established IT companies interested in entering the blockchain domain (e.g. [Aply](https://aply.eu/), [Ragnarson](https://ragnarson.com/), [Espeo](http://espeo.eu/)).
-* Consultation services for companies seriously considering building or migrating their business to EOS (e.g. [Parsec Frontiers](http://parsecfrontiers.com/), [Builder Commerce](http://buildercommerce.com/)).
+* Consultation services for companies seriously considering building or migrating their large-scale businesses to EOS (e.g. [Parsec Frontiers](http://parsecfrontiers.com/), [Builder Commerce](http://buildercommerce.com/), [Just Drive](http://justdrive.co/)).
 * Building relationships with VC funds interested in investing in blockchain-based startups utilizing EOS (e.g. [Speedup Group](http://speedupgroup.com/en/)).
 * Presenting EOS at high-profile events (e.g. [Blockchain Connect](http://connectwarsaw.org/) in Warsaw) and several meetups both in Poland (e.g. [Warsaw](https://www.facebook.com/events/903326303125907/), [Wroclaw](https://www.meetup.com/Wroclaw-Blockchain-Meetup/events/246349912/), [Lodz](https://www.facebook.com/events/160585741214328/)) & Europe (e.g. [Oslo](https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway)).
 * Active on social media: [Steem](https://steemit.com/@tokenika), [Twitter](https://twitter.com/tokenika_io) & [Facebook](https://www.facebook.com/groups/EOSPolska/).
