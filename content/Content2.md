@@ -44,11 +44,11 @@ What's interesting, the now popular concept of a decentralized application was [
 
 #### Contributing to EOS ecosystem
 
-We're creating both development tools for EOS, such as [TEOS](https://github.com/tokenika/teos), an alternative, cross-platform programming interface for EOS, as well as utility tools aimed to bootstrap the ecosystem: EOS Projects, EOS Explorer, EOS Faucet. Our long-term goal is to create a toolset similar to Ethereum's [Truffle Framework](http://truffleframework.com/).
+We're creating [TEOS](https://github.com/tokenika/teos), an alternative, cross-platform programming interface for EOS. Our long-term goal is to offer a toolset similar to Ethereum's [Truffle Framework](http://truffleframework.com/).
 
 #### Bringing businesses to EOS
 
-We offer consultancy services for companies considering building or migrating large-scale businesses to EOS. We've been working with [Parsec Frontiers](http://parsecfrontiers.com/), [Builder Commerce](http://buildercommerce.com/), [Just Drive](http://justdrive.co/).
+We do consultancy services for companies considering building or migrating large-scale businesses to EOS. We've been working with [Parsec Frontiers](http://parsecfrontiers.com/), [Builder Commerce](http://buildercommerce.com/), [Just Drive](http://justdrive.co/).
 
 #### Software house for EOS dApps
 
@@ -56,17 +56,17 @@ We're accumulating our own in-house expertise, as well as partnering with establ
 
 #### Building EOS publicity
 
-We've been presenting EOS at high-profile events (e.g. [Blockchain Connect](http://connectwarsaw.org/) in Warsaw) and several meetups both in Poland (e.g. [Warsaw](https://www.facebook.com/events/903326303125907/), [Wroclaw](https://www.meetup.com/Wroclaw-Blockchain-Meetup/events/246349912/), [Lodz](https://www.facebook.com/events/160585741214328/)) & Europe (e.g. [Oslo](https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway)). We're active on social media: [Steem](https://steemit.com/@tokenika), [Twitter](https://twitter.com/tokenika_io) & [Facebook](https://www.facebook.com/groups/EOSPolska/).
+We've been presenting EOS at high-profile events (e.g. [Blockchain Connect](http://connectwarsaw.org/) in Warsaw) and several meetups both in Poland (e.g. [Warsaw](https://www.facebook.com/events/903326303125907/), [Wroclaw](https://www.meetup.com/Wroclaw-Blockchain-Meetup/events/246349912/), [Lodz](https://www.facebook.com/events/160585741214328/)) & Europe (e.g. [Oslo](https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway)).
 
 #### Building EOS infrastructure
 
-Our medium-term goal is being elected as one of twenty EOS block producers (a.k.a EOS witness). We have the experience & infrastructure required for this role thanks to close partnership with a successful [Steem witness](https://steemit.com/@gtg).
+Our medium-term goal is being elected as one of EOS block producers (a.k.a EOS witness). We have the experience & infrastructure required for this role through close partnership with a successful [Steem witness](https://steemit.com/@gtg).
 
 #### Digital assets investments
 
-Our focus is on blockchain-based fundraising and long-term digital asset investments. Inspired by some of the best decentralized financial platforms currently being built on Ethereum (e.g. [Neufund](https://neufund.org/), [Melonport](https://melonport.com/), [Iconomi](https://www.iconomi.net/)), we are aiming to offer similar solutions on EOS.
+Our focus is on blockchain-based fundraising and long-term digital asset investments. Inspired by some of the best dApps currently being built on Ethereum (e.g. [Neufund](https://neufund.org/), [Melonport](https://melonport.com/)), we aim to offer similar solutions on EOS.
 
-# Core Team
+# The Team
 
 #### Tomasz Michalski, CEO & co-founder
 
