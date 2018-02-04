@@ -6,7 +6,7 @@
 
 Tokenika is an IT company set up by a group of crypto-space entrepreneurs based in Poland, one of the largest crypto-markets in Europe.
 
-We started with Bitcoin, then we became early adopters of BitShares, Steem and Ethereum, and now we bet on [EOS](https://eos.io/), the first-ever blockchain operating system.
+We started with Bitcoin, then we became early adopters of BitShares, MaidSafe, Ethereum & Steem, and now we bet on [EOS](https://eos.io/), the first-ever blockchain operating system.
 
 We've been closely following all of Dan Larimer's DPOS-based projects since 2014, so it was a natural choice for us to align our business activity with EOS from its very inception. 
 
@@ -14,9 +14,9 @@ We've been closely following all of Dan Larimer's DPOS-based projects since 2014
 
 Blockchain is a simple concept -  it's an irreversible public record that's replicated across multiple computers all over the world. It's simple, yet it has profound & multidimensional consequences - just like the invention of the Internet 20 years ago.
 
-Blockchain has many aspects, which go much further than creating currencies & raising funds. Firstly, it's about the freedom of speech - whatever you put on the blockchain, stays there forever. Secondly, it's about the ability to create useful incentive schemes which, if done properly, can make people act in an efficient & fair manner.
+Blockchain has many aspects, which go much further than just creating currencies & raising funds. Firstly, it's about the freedom of speech - whatever you put on the blockchain, stays there forever. Secondly, it's about the ability to create useful incentive schemes which, if done properly, can make people act in an efficient & fair manner.
 
-What's an incentive scheme? Imagine you have two children and you want to find a way to split a chocolate bar in such a way that both feel being treated fairly. What's the best way to do it? Just let one child split the bar and the other choose one of the pieces. Children will quickly figure out that there is no way to cheat this system - acting fairly is the only viable strategy.
+What's an incentive scheme? Imagine you have two children and you want to find a way to split a chocolate bar in such a way that both of them feel being treated fairly. What's the best way to do it? Just let one child split the bar and the other choose one of the pieces. Children will quickly figure out that there is no way to cheat this system - acting fairly is the only viable strategy.
 
 # Why DPOS?
 
@@ -32,7 +32,7 @@ We believe DPOS is the best trade-off one could make in the blockchain space. It
 
 #### Which blockchain systems use DPOS?
 
-As of now, DPOS is probably the most quickly adopted consensus mechanism in the blockchain industry. It all started with [BitShares](https://bitshares.org/) back in 2014 and [Steem](https://steem.io/) in 2016. Since then several other projects have borrowed Dan Larimer's invention, including [Lisk](https://lisk.io/), [Cardano](https://www.cardanohub.org) & [Ark](https://ark.io/).
+As of now, DPOS is probably the most quickly adopted consensus mechanism in the blockchain industry. First introduced in [BitShares](https://bitshares.org/) back in 2014 and [Steem](https://steem.io/) in 2016. Since then several other projects have borrowed Dan Larimer's invention, including [Lisk](https://lisk.io/), [Cardano](https://www.cardanohub.org) & [Ark](https://ark.io/).
 
 # Why EOS?
 
@@ -64,11 +64,11 @@ Our medium-term goal is being elected as one of EOS block producers (a.k.a EOS w
 
 #### Financial Name Service
 
-We've set out to create our own dApp to be deployed on EOS. We'll be taking advantage of the opportunities created by [the European PSD2 legislation](https://www.evry.com/en/news/articles/psd2-the-directive-that-will-change-banking-as-we-know-it/).
+We've set out to create our own dApp to be deployed on EOS. We're taking advantage of the opportunities introduced by [the European PSD2 legislation](https://www.evry.com/en/news/articles/psd2-the-directive-that-will-change-banking-as-we-know-it/) by creating a blockchain-based authorization layer for third-party providers.
 
 #### Start-up incubator
 
-If you have a good idea which could be turned into a large-scale dApp, we can help you make it real. We have access to VC funds interested in investing in blockchain-based startups utilizing EOS (e.g. [Speedup Group](http://speedupgroup.com/en/)).
+If you have a good idea which could be turned into a large-scale dApp, we can help you make it real. We have access to VC funds interested in investing in startups utilizing EOS (e.g. [Speedup Group](http://speedupgroup.com/en/)).
 
 #### Digital assets investments
 
