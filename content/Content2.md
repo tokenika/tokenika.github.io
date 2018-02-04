@@ -22,17 +22,15 @@ What's an incentive scheme? Imagine you have two children and you want to find a
 
 #### What is DPOS?
 
-In the heart of every blockchain there needs to be a consensus mechanism which allows multiple entities to establish one version of truth. [Delegated Proof of Stake](https://www.mycryptopedia.com/delegated-proof-stake-dpos-explained/) (DPOS) is arguably the fastest, most efficient, most decentralized, and most flexible consensus model available.
-
-In order to resolve consensus issues in a maximally fair & efficient way, DPOS leverages the power of stakeholder approval voting. Furthermore, it's designed to protect all participants against unwanted regulatory interference.
+In the heart of every blockchain there needs to be a consensus mechanism which allows multiple entities to establish one version of truth. There are various ways to achieve that and [Delegated Proof of Stake](https://www.mycryptopedia.com/delegated-proof-stake-dpos-explained/) (DPOS) is one of them - it uses stakeholder approval voting for resolving consensus issues. In DPOS block producers are elected by token holders, each voting according to their stake, and each able to revoke their vote any time they want.
 
 #### Why we focus on DPOS?
 
-We believe DPOS is the best trade-off one could make in a decentralized environment. It's not without its own deficiencies (e.g. voters' apathy), yet it has been proven to work in real-life situations and remained both resilient and extremely efficient, both in terms of processing power but also in terms of decentralized governance.
+We believe DPOS is the best trade-off one could make in a decentralized environment. It's arguably the fastest, most efficient, most decentralized, and most flexible consensus model available. It's not without deficiencies (e.g. voters' apathy), yet it has been proven to work in real-life situations and remained both resilient and extremely efficient, both in terms of processing power but also in terms of decentralized governance. Furthermore, it's designed to protect all participants against unwanted regulatory interference.
 
 #### Which blockchain systems use DPOS?
 
-As of now, DPOS is probably the most quickly adopted consensus mechanism in the blockchain industry. It was first introduced in [BitShares](https://bitshares.org/) back in 2014 and [Steem](https://steem.io/) in 2016. Since then several other projects have borrowed Dan Larimer's invention, including [Lisk](https://lisk.io/), [Cardano](https://www.cardanohub.org) & [Ark](https://ark.io/).
+As of now, DPOS is probably the most quickly adopted consensus mechanism in the blockchain industry. It was first introduced in [BitShares](https://bitshares.org/) back in 2014 and [Steem](https://steem.io/) in 2016. Since then several other projects have borrowed Dan Larimer's invention, including [Lisk](https://lisk.io/), [Cardano](https://www.cardanohub.org) & [Ark](https://ark.io/). Needless to say, DPOS is going to be a crucial part of EOS.
 
 # Why EOS?
 
