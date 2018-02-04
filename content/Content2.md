@@ -14,7 +14,7 @@ We've been closely following all of Dan Larimer's DPOS-based projects since 2014
 
 Blockchain is a simple concept -  it's an irreversible public record that's replicated across multiple computers all over the world. It's simple, yet it has profound & multidimensional consequences - just like the invention of the Internet 20 years ago.
 
-Blockchain has many aspects, which extend much further than just creating crypto-currencies & raising funds. Firstly, it's about the freedom of speech - whatever you put on the blockchain, stays there forever. Secondly, it's about creating useful incentive schemes which, if done properly, have the ability to make people act in an efficient & fair manner.
+Blockchain has many aspects, which extend much further than just creating crypto-currencies & raising funds. Firstly, it's the ultimate implementation of freedom of speech - whatever you put on the blockchain, stays there forever, nobody is able to remove it. Secondly, it facilitates the creation of useful incentive schemes which, if done properly, have the ability to make people act voluntarily in an efficient & fair manner.
 
 What's an incentive scheme? Imagine you have two children and you want to find a way to split a chocolate bar in such a way that both of them feel being treated fairly. What's the best way to do it? Just let one child split the bar and the other choose one of the pieces. Children will quickly figure out that there is no way to cheat this system - acting fairly is the only viable strategy.
 
