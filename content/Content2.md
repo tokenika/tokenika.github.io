@@ -80,11 +80,11 @@ Our focus is on blockchain-based fundraising and long-term digital asset investm
 
 Visionary, experienced manager & entrepreneur. Active in commerce and manufacturing industry. Built a prosperous door factory from the ground up, without prior experience in the industry. Strong business connections with China since 2006. Early adopter and miner of major crypto-currencies, including BTC, LTC, ETH. Currently an investor and big supporter of EOS.
 
-#### Dominik Walaszek, co-founder
+#### Dominik Walaszek, CFO & co-founder
 
 Entrepreneur and investor. CEO and co-owner of a manufacturing enterprise employing over 700 people. Early adopter of Industry 4.0 concept. Inspired by convergence of decentralized technologies. Educational background in corporate finance. Started with Ethereum, now a strong believer in EOS.
 
-#### Jakub Zarembiński, co-founder
+#### Jakub Zarembiński, CTO & co-founder
 
 Entrepreneur, DLT consultant & researcher. Capable programmer specializing in Java and R. Over 12 years of experience, including 7 years with the banking sector. Expert in IT and business, especially in the domain of blockchain development and machine learning. Long-time supporter of BitShares, MaidSafe, Steem and now EOS.
 
@@ -116,7 +116,7 @@ Data scientist passionate about cryptocurrency, blockchain & data driven busines
 
 # Career
 
-If you have passion for distributed ledger technology combined with solid C++ background, we definitely look forward to talking to you. Experience with smart-contracts is a plus, but is not strictly required.
+If you have passion for distributed ledger technology combined with solid C++ background, we definitely look forward to talking to you. Experience with smart-contracts is a plus, but not strictly required.
 
 What we can offer is the opportunity to work on avant-garde projects, an inspiring workspace at Brain Embassy in Warsaw, and flexible work schedule.
 
