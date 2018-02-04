@@ -12,9 +12,9 @@ We've been closely following all of Dan Larimer's DPOS-based projects since 2014
 
 # Why blockchain?
 
-The blockchain is a simple concept -  it's an irreversible public record that's replicated across multiple computers all over the world. It's simple, yet it has profound & multidimensional consequences - just like the invention of the Internet 20 years ago.
+Blockchain is a simple concept -  it's an irreversible public record that's replicated across multiple computers all over the world. It's simple, yet it has profound & multidimensional consequences - just like the invention of the Internet 20 years ago.
 
-For us, blockchain is not really about creating virtual currencies and running ICOs. It's foremost about the ability to create useful incentive schemes which, if done properly, can make people act in an efficient & fair manner.
+Blockchain has many aspects, which go much further than creating currencies & raising funds. Firstly, it's about the freedom of speech - whatever you put on the blockchain, stays there forever. Secondly, it's about the ability to create useful incentive schemes which, if done properly, can make people act in an efficient & fair manner.
 
 What's an incentive scheme? Imagine you have two children and you want to find a way to split a chocolate bar in such a way that both feel being treated fairly. What's the best way to do it? Just let one child split the bar and the other choose one of the pieces. Children will quickly figure out that there is no way to cheat this system - acting fairly is the only viable strategy.
 
@@ -54,13 +54,21 @@ We do consultancy services for companies considering building or migrating large
 
 We're accumulating our own in-house expertise, as well as partnering with established IT companies interested in entering the blockchain domain.
 
-#### Building EOS publicity
+#### Expanding EOS publicity
 
 We've been presenting EOS at high-profile events (e.g. [Blockchain Connect](http://connectwarsaw.org/) in Warsaw) and several meetups both in Poland (e.g. [Warsaw](https://www.facebook.com/events/903326303125907/), [Wroclaw](https://www.meetup.com/Wroclaw-Blockchain-Meetup/events/246349912/), [Lodz](https://www.facebook.com/events/160585741214328/)) & Europe (e.g. [Oslo](https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway)).
 
 #### Building EOS infrastructure
 
 Our medium-term goal is being elected as one of EOS block producers (a.k.a EOS witness). We have the experience & infrastructure required for this role through close partnership with a successful [Steem witness](https://steemit.com/@gtg).
+
+#### Financial Name Service
+
+We've set out to create our own dApp to be deployed on EOS. We'll be taking advantage of the opportunities created by [the European PSD2 legislation](https://www.evry.com/en/news/articles/psd2-the-directive-that-will-change-banking-as-we-know-it/).
+
+#### Start-up incubator
+
+If you have a good idea which could be turned into a large-scale dApp, we can help you make it real. We have access to VC funds interested in investing in blockchain-based startups utilizing EOS (e.g. [Speedup Group](http://speedupgroup.com/en/)).
 
 #### Digital assets investments
 
