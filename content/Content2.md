@@ -44,17 +44,13 @@ In other words, EOS is about building real-life businesses on the blockchain. It
 
 We're creating [TEOS](https://github.com/tokenika/teos), an alternative, cross-platform programming interface for EOS. Our long-term goal is to offer a toolset similar to Ethereum's [Truffle Framework](http://truffleframework.com/).
 
-#### Bringing businesses to EOS
-
-We do consultancy services for companies that consider building or migrating large-scale businesses to EOS. So far we've been working with [Parsec Frontiers](http://parsecfrontiers.com/), [Builder Commerce](http://buildercommerce.com/), [Just Drive](http://justdrive.co/).
-
-#### Software house for EOS dApps
-
-We're accumulating our own in-house expertise, as well as partnering with established IT companies interested in entering the blockchain domain.
-
 #### Contributing to EOS publicity
 
 We've been presenting EOS at high-profile events (e.g. [Blockchain Connect](http://connectwarsaw.org/) in Warsaw) and several meetups both in Poland (e.g. [Warsaw](https://www.facebook.com/events/903326303125907/), [Wroclaw](https://www.meetup.com/Wroclaw-Blockchain-Meetup/events/246349912/), [Lodz](https://www.facebook.com/events/160585741214328/)) & Europe (e.g. [Oslo](https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway)).
+
+#### Bringing businesses to EOS
+
+We do consultancy services for companies that consider building or migrating large-scale businesses to EOS. So far we've been working with [Parsec Frontiers](http://parsecfrontiers.com/), [Builder Commerce](http://buildercommerce.com/), [Just Drive](http://justdrive.co/).
 
 #### Building EOS infrastructure
 
@@ -63,10 +59,6 @@ Our medium-term goal is being elected as one of EOS block producers (a.k.a EOS w
 #### PSD2 dApp on EOS
 
 We've set out to create our own dApp to be deployed on EOS. We're taking advantage of the opportunities introduced by [the European PSD2 legislation](https://www.evry.com/en/news/articles/psd2-the-directive-that-will-change-banking-as-we-know-it/) by creating a blockchain-based authorization layer for third-party providers.
-
-#### Start-up incubator
-
-If you have a good idea which could be turned into a large-scale dApp, we can help you with implementing it. We have access to VC funds interested in investing in startups utilizing EOS (e.g. [Speedup Group](http://speedupgroup.com/en/)).
 
 #### Digital assets investments
 
@@ -94,7 +86,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor se
 
 For more than 20 years active investor on the stock exchange (S&P500, DAX, CAC40, WIG) and real estate markets. President of the biggest Real Estate Association "Mieszkanicznik", with 20 offices around the world and 8k active investors. Currently involved in Ethereum, EOS, Bitcoin, Tezos projects and other upcoming ICOs.
 
-#### Patryk Perduta, developer
+#### Patryk Perduta, software development
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+
+#### Wojciech Szpunar, market research
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
 
@@ -111,6 +107,10 @@ Professor at Lazarski University (among the best in Poland), former senior lectu
 #### Paweł Pacewicz
 
 Data scientist passionate about cryptocurrency, blockchain & data driven business with wide experience of IT business development. Experience supported with wide education: Executive MBA, Data Science, Mathematics, Probability and Statistics.
+
+#### Piotr Szulim
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
 
 # Career
 
