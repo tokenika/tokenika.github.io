@@ -32,16 +32,18 @@ Generally, there are two ways of building a smart-contract platform similar to E
 
 You can start by creating the whole thing, and then attempt to build some concrete apps on top of it. Most probably you’ll be confronted with tough reality when you try to make those apps actually useful. However, this is the prevailing approach in the crypto-space. Systems like Ethereum, Cardano, Neo or Lisk are being created this way.
 
-The alternative is this: you can start with building a couple of concrete, non-trivial apps, make some mistakes while doing this, learn from those mistakes, and as a next step figure out what’s common between your apps, and only then start building the abstraction layer. And this is how EOS was born. The team of developers behind EOS have already built some of the most successful blockchain apps in the crypto-space, and now they have set out to leverage their experience by building a general-purpose platform.
+The alternative is this: you start with building a couple of concrete, non-trivial apps, inevitably make some mistakes while doing this, learn from those mistakes, and, as a next step, figure out what’s common between your apps, and only then start building the abstraction layer.
+
+The latter is how EOS was born. The team of developers behind EOS have already built some of the most successful blockchain apps in the crypto-space, and now they have set out to leverage their experience by building a general-purpose platform.
 
 ---
 
 #### EOS features
 
-EOS features revolves around one purpose: to help you build & run a decentralized business.
+EOS features revolve around one purpose: to help you build & run a decentralized business.
 
 * EOS processing power makes your app fast & scalable.
-* Built-in governance gives you a safety net in case things go seriously wrong in terms of bugs, or if there are any disputes around yours mart-contracts.
+* Built-in governance gives you a safety net in case things go seriously wrong in terms of bugs, or if there are any disputes around yours smart-contracts.
 * Built-in infrastructure saves you a lot of development work. It also saves you a lot of operating costs, as you can rely on features which are free to use.
 * The absence of transaction fees gives you full flexibility about the way you can monetize your app.
 * Optional upgradeability lets you freely choose whether you want to make your app fully autonomous or be able to constantly improve it & fix bugs.
