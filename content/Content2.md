@@ -14,14 +14,17 @@ We've been closely following all of Dan Larimer's DPOS-based projects since 2014
 
 Blockchain is a simple concept - essentially it's just a database without an owner. Or an irreversible public record that's replicated across multiple computers all over the world. It's a simple construct, yet it has profound & multidimensional consequences.
 
-Just like the invention of the Internet 20 years ago, which also started as a simple concept (a bunch of computers hooked up together to form a network), yet it has had an enormous impact on pretty much everything we know.
+In this respect blockchain's appearance is similar to the invention of the Internet 20 years ago, which also started as a simple concept (a bunch of computers hooked up together to form a network), yet it has had an enormous impact on pretty much everything we know.
 
 Blockchain has many aspects, which extend much further than just creating crypto-currencies or raising funds:
 
-- It's the ultimate implementation of freedom of speech - whatever you put on the blockchain, stays there forever, as nobody has the power to remove it. So it acts like a first-ever indestructible printing press.
-- It introduces a couple of new paradigms, e.g. blending the concept of user and shareholder into one entity or allowing multiple competing user interfaces being hooked up to the same underlying database. Never in the history of the Internet has this been possible.
-- It introduces a new type of economy: businesses powered by constant growth. Contrary to conventional businesses, they no longer need to keep their finances in balance.  Instead, they can survive by constantly issuing new shares, provided they can grow faster than the rate of shares issuance, which is quite viable in most cases.
-- It facilitates the creation of useful incentive schemes which, if done properly, have the ability to enforce fair behavior without using any force. What's an incentive scheme? Imagine you have two children and you want to find a way to split a chocolate bar in such a way that both of them feel being treated fairly. What's the best way to do it? Just let one child split the bar and the other choose one of the pieces. Children will quickly figure out that there is no way to cheat this system - acting fairly is the only viable strategy.
+- Blockchain is the ultimate implementation of freedom of speech - whatever you put on the blockchain, stays there forever, as nobody has the power to remove it. In a way blockchain acts like a first-ever indestructible printing press.
+- Blockchain introduces a couple of new paradigms, e.g. blending the concept of user and shareholder into one entity or allowing multiple competing user interfaces being hooked up to the same underlying database. Never in the history of the Internet has this been possible.
+- Blockchain introduces a new type of economy: businesses powered by constant growth. Contrary to conventional businesses, they no longer need to keep their finances in balance.  Instead, they can survive by constantly issuing new shares, provided they can grow faster than the rate of shares issuance, which is quite viable in most cases.
+
+Apart from that, blockchain facilitates the creation of useful incentive schemes which, if done properly, have the ability to enforce fair behavior without using any external coercion mechanism.
+
+What's an incentive scheme? Imagine you have two children and you want to find a way to split a chocolate bar in such a way that both of them feel being treated fairly. What's the best way to do it? Just let one child split the bar and the other choose one of the pieces. Children will quickly figure out that there is no way to cheat this system - acting fairly is the only viable strategy.
 
 # Why DPOS?
 
