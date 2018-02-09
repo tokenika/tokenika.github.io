@@ -16,11 +16,11 @@ Blockchain is a simple concept - essentially it's just a database without an own
 
 In this respect blockchain's appearance is similar to the invention of the Internet 20 years ago, which also started as a simple concept (a bunch of computers hooked up together to form a network), yet it has had an enormous impact on pretty much everything we know.
 
-Blockchain has many aspects, which extend much further than just creating crypto-currencies or raising funds:
+Blockchain has many aspects, which extend much further than most of us realize:
 
-- Blockchain is the ultimate implementation of freedom of speech - whatever you put on the blockchain, stays there forever, as nobody has the power to remove it. In a way blockchain acts like a first-ever indestructible printing press.
+- Blockchain is the ultimate implementation of freedom of speech - whatever you put on the blockchain, stays there forever, as nobody has the power to remove it. In a way blockchain acts like the first-ever indestructible printing press.
 - Blockchain introduces a couple of new paradigms, e.g. blending the concept of user and shareholder into one entity or allowing multiple competing user interfaces being hooked up to the same underlying database. Never in the history of the Internet has this been possible.
-- Blockchain introduces a new type of economy: businesses powered by constant growth. Contrary to conventional businesses, they no longer need to keep their finances in balance.  Instead, they can survive by constantly issuing new shares, provided they can grow faster than the rate of shares issuance, which is quite viable in most cases.
+- Blockchain introduces a new type of economy: businesses powered by a constant economic growth. Contrary to conventional businesses, they no longer need to keep their finances in balance. Instead, they can survive by constantly issuing new shares, provided they can grow faster than the rate of shares issuance, which is quite viable in most cases.
 
 Apart from that, blockchain facilitates the creation of useful incentive schemes which, if done properly, have the ability to enforce fair behavior without using any external coercion mechanism.
 
