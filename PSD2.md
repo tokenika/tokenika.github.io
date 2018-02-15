@@ -199,6 +199,66 @@ Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/
 
 ---
 
+### Mixed Reviews For Leaked EU Fintech Plan
+
+15TH FEB 2018 | WRITTEN BY: [DOUGLAS CLARKE-WILLIAMS](https://paymentscompliance.com/users/douglascpaymentscompliancecom)
+
+**A draft action plan for fintech recently leaked from the European Commission has raised concerns about the pace and feasibility of the accelerating drive for regulatory alignment.**
+
+Diagnosing the uneven adoption of different aspects of fintechs between member states as a result of too much variance in national regulatory regimes, the [action plan](http://www.politico.eu/wp-content/uploads/2018/02/Draft-FinTech-Action-Plan.pdf) highlights recent activities by the commission to ease the operation of fintechs between jurisdictions.
+
+It follows a [consultation](https://ec.europa.eu/info/finance-consultations-2017-fintech_en) on fintech in the EU, which ran between March and June last year.
+
+The paper suggested the use of “targeted initiatives” to encourage fintech adoption rather than large-scale legislative or regulatory actions, with a particular focus on those aspects where variation between jurisdictions was greatest.
+
+This included licensing, the use of cloud services and blockchain, and cybersecurity concerns.
+
+The paper’s aims “would entail lowering barriers that innovative models may face, supporting the uptake of new technologies and creating a vibrant borderless environment for fintech while ensuring that potential risks are adequately monitored and mitigated”.
+
+Some commenters expressed concern over just how these ideals could work in practice, particularly considering the ongoing struggle to bring all member states up to the same level for even those major initiatives, such as the [4th Anti-Money Laundering Directive](https://paymentscompliance.com/4th-amld-portal) (4th AMLD), the deadline for which has long passed.
+
+Simon Deane-Johns, a consultant solicitor at Keystone Law, held issue with the commission's ambitions when it came to licensing.
+
+“It troubles me slightly as to what the purpose of that is,” he said to PaymentsCompliance.
+
+The crux of the matter in this case lays in whether the commission is planning to prune national regulation which, for example, leads to crowdfunding initiatives falling under the definition of banking activities and being, therefore, inhospitable to smaller innovative companies.
+
+But Deane-Johns remained sceptical of the possibility of targeted EU action having a comprehensive effect on local fintech growth.
+
+“To the extent that it does remove regulatory obstacles in some markets, that might be helpful in those markets in encouraging innovation [but] that’s an incredibly localised assessment to make,” he said.
+
+“If your expectation is to kickstart markets with regulation I think it’s incredibly rare to see that happen.”
+
+The draft action plan drew attention to the fact that there is currently no EU-level regulation on crowdfunding, and noted that many respondents to the consultation had said that the variance in regulation among those 11 member states who had addressed the issue made scaling up across the continent difficult.
+
+However, Jacqui Hatfield, head of the financial services regulatory team in London at Orrick, Herrington & Sutcliffe, said that this was, if anything, an overdue issue for Europe to be dealing with.
+
+“We shouldn’t be in a situation now where crowdfunding is dealt with in different ways in different member states,” she said
+
+“Harmonisation is required to prevent potential liability issues and to enable effective passporting.”
+
+The commission also observed that this situation is pertinent to those in the virtual currency sector, where there is likewise little in the way of overarching EU guidance.
+
+“Further efforts are needed to identify existing diverging licensing requirements affecting fintech firms,” the plan said.
+
+“Follow-up action could include: clarifying the applicable EU legislative framework for services; assessing the need for an EU framework to cover new innovative business models; and providing guidance to national supervisors to ensure more convergence between national regulatory regimes.”
+
+Hatfield welcomed the plan’s emphasis on cybersecurity, citing examples where a lack of attention to public confidence in security has poured cold water on industry’s efforts to reform — most notably the revised [Payment Services Directive](https://paymentscompliance.com/psd2-portal)(PSD2) and open banking initiatives.  
+
+For industry representatives in the UK, however, the commission’s draft  was simply another thread in the rich tapestry of Brexit regulatory concerns.
+
+“The main point, unfortunately here, is Brexit: how/whether, given Brexit, the UK’s financial services sector can remain an integral part of the digitalisation of financial services and how it develops both at EU-level and world-wide,” said Ruth Milligan, head of the financial services and payments programme at techUK.
+
+She pointed to a mention in the plan of fresh EU regulation on data flows in relation to cloud services, even as the UK dawdles over its future commitment to the existing [General Data Protection Regulation](https://paymentscompliance.com/gdpr-portal) (GDPR) standard.
+
+Ironically, many of the proposals in this plan, such as the idea for a network of sandboxes across member states, originated in the UK.
+
+“In a lot of cases they, on a European level, are going to be following what we’re already doing in the UK,” Hatfield observed.
+
+Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/insights_analysis/mixed-reviews-leaked-eu-fintech-plan)
+
+---
+
 [ripple.com](https://ripple.com/insights/psd2-blockchain/)
 
 [medium.com](https://medium.com/@pauliusuza/the-year-of-blockchain-and-psd2-5e614153859f)

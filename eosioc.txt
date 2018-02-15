@@ -1,0 +1,32 @@
+PW5KLqskubHhpztdNMZ6Y9gBfKfPNAFJwvau7V6ouSTLMJkydicMR
+
+---
+
+Private key: 5JbRswjsydRx7pW4GtNso4taCy5PTgRBS2ZmTBgtY2aMcPWy96E
+Public key: EOS6prHkcSStC4QwnokUjQvKvoFk4YagCzKuyFHPvXZ28kA7yHFEG
+
+Private key: 5KcR4vhtw956VCqQ4CGzNvyiZP188daxa3nzvSKaCAvJ7wHq2a6
+Public key: EOS5T33hmvwDEQHGWZxzDr1AjaNx95HRLGbypzTha4EGRUHiiYeHT
+
+---
+
+./eosioc wallet import 5JbRswjsydRx7pW4GtNso4taCy5PTgRBS2ZmTBgtY2aMcPWy96E
+./eosioc wallet import 5KcR4vhtw956VCqQ4CGzNvyiZP188daxa3nzvSKaCAvJ7wHq2a6
+
+./eosioc create account inita currency EOS6prHkcSStC4QwnokUjQvKvoFk4YagCzKuyFHPvXZ28kA7yHFEG EOS5T33hmvwDEQHGWZxzDr1AjaNx95HRLGbypzTha4EGRUHiiYeHT
+
+./eosioc get account currency
+
+./eosioc get code currency
+./eosioc set contract currency ../../contracts/currency/currency.wast ../../contracts/currency/currency.abi
+./eosioc get code currency
+
+./eosioc push action currency issue '{"to":"currency","quantity":"1000.0000 CUR"}' --permission currency@active
+
+./eosioc get table inita currency account
+./eosioc get table currency currency account
+
+./eosioc push action currency transfer '{"from":"currency","to":"inita","quantity":"20.0000 CUR","memo":"my first transfer"}' --permission currency@active
+
+./eosioc get table inita currency account
+./eosioc get table currency currency account
