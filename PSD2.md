@@ -1,4 +1,4 @@
-### PSD2 and Blockchain: Mutual Support
+# PSD2 and Blockchain: Mutual Support
 
 Under the new rules, banks will have to share client information with licensed third parties if the client asks it to do so.
 
@@ -10,7 +10,7 @@ Source: [coindesk.com](https://www.coindesk.com/psd2-blockchain-mutual-support/)
 
 ---
 
-### Banks Suggest Blockchain To Solve PSD2 Register Concerns
+# Banks Suggest Blockchain To Solve PSD2 Register Concerns
 
 20TH OCT 2017 | WRITTEN BY: [FRAN WARBURTON](https://paymentscompliance.com/users/franwgamblingcompliancecom)
 
@@ -60,7 +60,7 @@ Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/
 
 ---
 
-### Euro Banking Association Issues Reports on Data Exploration Opportunities and Challenges in Cryptotechnologies
+# Euro Banking Association Issues Reports on Data Exploration Opportunities and Challenges in Cryptotechnologies
 
 18TH OCT 2017 | WRITTEN BY: [PC RESEARCH](https://paymentscompliance.com/users/paymentscompliance-research-team)
 
@@ -91,7 +91,7 @@ Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/
 
 ---
 
-### European Commission Adopts PSD2 Technical Standards
+# European Commission Adopts PSD2 Technical Standards
 
 27TH NOV 2017 | WRITTEN BY: [JOHN BASQUILL](https://paymentscompliance.com/users/johnbpaymentscompliancecom)
 
@@ -143,7 +143,7 @@ Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/
 
 ---
 
-### PSD2: Questions Resurface Over Credential Sharing
+# PSD2: Questions Resurface Over Credential Sharing
 
 9TH FEB 2018 | WRITTEN BY: [JOHN BASQUILL](https://paymentscompliance.com/users/johnbpaymentscompliancecom) & [FRAN WARBURTON](https://paymentscompliance.com/users/franwgamblingcompliancecom)
 
@@ -199,7 +199,7 @@ Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/
 
 ---
 
-### Mixed Reviews For Leaked EU Fintech Plan
+# Mixed Reviews For Leaked EU Fintech Plan
 
 15TH FEB 2018 | WRITTEN BY: [DOUGLAS CLARKE-WILLIAMS](https://paymentscompliance.com/users/douglascpaymentscompliancecom)
 
@@ -256,6 +256,178 @@ Ironically, many of the proposals in this plan, such as the idea for a network o
 “In a lot of cases they, on a European level, are going to be following what we’re already doing in the UK,” Hatfield observed.
 
 Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/insights_analysis/mixed-reviews-leaked-eu-fintech-plan)
+
+---
+
+# PSD2: ECB Joins Calls For Early Adoption Of Technical Standards
+
+16TH FEB 2018 | WRITTEN BY: [FRAN WARBURTON](https://paymentscompliance.com/users/franwgamblingcompliancecom)
+
+**A European Central Bank (ECB) official has called on payments firms to speed up implementation of security rules that accompany the revised Payment Services Directive (PSD2) to unlock the potential of instant payments.**
+
+Yves Mersch, a member of the executive board of the ECB, said that it was in the industry’s own interests to comply with the delayed regulatory technical standards on strong customer [authentication](https://paymentscompliance.com/glossary#Authentication) before they are expected to take effect in September 2019.
+
+Doing so would “guarantee the high security levels that are necessary to retain public trust in the payment system and payment services”, he said.
+
+Mersch’s comments, which were made at an event in Paris on Thursday, echoed calls from the [European Banking Authority (EBA)](https://paymentscompliance.com/glossary#European_Banking_Authority_EBA) for member states to encourage entities to make the necessary policy changes and system updates as soon as possible.
+
+However, there are still [several areas of the standards that demand further clarity](https://paymentscompliance.com/premium-content/insights_analysis/legal-view-psd2-and-strong-authentication), including the strong authentication requirements for cumulative [contactless](https://paymentscompliance.com/glossary#Contactless) payments and exemptions for low fraud rates and “whitelisted” or trusted beneficiaries.
+
+To ensure continued applicability of stringent security standards, the EBA recommended that part of the PSD1 security guidelines should continue to apply beyond the PSD2 application date until they are superseded by the strong customer authentication rules.
+
+According to the ECB official, early adoption of the enhanced security standards will be crucial to the development of emerging instant payment solutions, although there is no legal obligation to do so.
+
+Infrastructure enabling instant payments is maturing quickly across the globe. In Europe, the industry-led SCT Inst scheme, which went live in November 2017, now has more than 1,000 payment service providers signed up from 12 countries.
+
+The ECB is working on its own Target Instant Payments [Settlement](https://paymentscompliance.com/glossary#Settlement) (TIPS) project, which will enable all transactions to be settled within ten seconds after operations commence in November next year — a development which Mersch has [championed](https://paymentscompliance.com/premium-content/insights_analysis/ecb-dashes-hopes-virtual-currency-mainstream-payment-system) over alternative blockchain payments mechanisms.
+
+Although the central banker commended the “great progress” made in instant payments, he questioned why, with the infrastructure already in place, applications have so far been limited to peer-to-peer transfers.
+
+> “Now it is time to go one step further and provide efficient and innovative end-user solutions that allow consumers and businesses across Europe to make instant payments in any payment situation, especially at the point of sale, where the majority of retail payments are made,” said Yves Mersch of the European Central Bank.  
+
+The benefits of instant payments for e-commerce are such that improved cash flow will allow merchants to use funds received immediately to pay outgoings, such as their suppliers.
+
+Mersch urged industry to develop pan-EU point of sale solutions that credit the merchant’s account with finality — like cash — instead of providing a claim against the customer or guarantee from a credit card company.
+
+“I call on the industry to take the next step and develop end-user solutions that will allow consumers and businesses to enjoy the benefits of instant electronic payments in any payment situation, in addition to cash, which is still popular,” he said.
+
+In a separate speech earlier this week, the ECB official also ran to the defence of cash.
+
+Although the general direction of the industry and policymakers alike appears to encourage a switch to digital, with some even [declaring](https://paymentscompliance.com/premium-content/insights_analysis/financial-giants-accused-fuelling-decline-free-use-atms) a “war on cash”, Mersch vowed to protect the status of euro banknotes as legal tender.
+
+He claimed that there has yet to be a viable alternative that facilitates freedom, allows equality and participation, in addition to providing privacy, security and protection for consumers.
+
+Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/insights_analysis/psd2-ecb-joins-calls-early-adoption-technical-standards)
+
+---
+
+# ECB Dashes Hopes Of Virtual Currency As Mainstream Payment System
+
+9TH FEB 2018 | WRITTEN BY: [DOUGLAS CLARKE-WILLIAMS](https://paymentscompliance.com/users/douglascpaymentscompliancecom)
+
+**A senior European Central Bank (ECB) official has poured cold water on fintechs’ hopes that virtual currency will go mainstream on the continent in the near future. **
+
+Yves Mersch, a member of the ECB’s executive board, gave a wide-ranging speech on Thursday in London in which he raised numerous concerns over the possibility of central banks incorporating virtual currency or digital base currency (DBM) into the mainstream financial system.
+
+He spoke particularly in the context of virtual currency as a replacement for cash, since in its anonymity and decentralised method of exchange it holds many of the traits that appeal about cash.
+
+“It is important to avoid being beguiled by the flashing lights of novelty and assuming that, just because a technology is new, it is also better,” Mersch said.
+
+“Virtual currencies are not money, nor will they be in the foreseeable future.”
+
+He first suggested one argument — that replacing cash with central bank-issued digital currency would reduce crime — did not hold up under closer observation and may even prove to be counter-intuitive.
+
+“There is no material evidence that abolishing cash will inhibit crime,” he said. “Electronic storage and transfer may well prove easier for criminal than banknotes.”
+
+Mersch also noted that with 79 percent of all point of sale payments in the eurozone being made with cash, there was little indication of a clamouring for a cashless society among the public.
+
+He then dismissed suggestions that the introduction of central bank-backed virtual currency would benefit monetary policy by removing the floor on interest rates, and raised the concern that the attraction of a risk-free central virtual currency during another banking crisis could cause a run on deposits and exacerbate the situation.
+
+Mersch echoed the opinion of many other regulators on the technology’s regulatory position.
+
+He said virtual currencies are, in their current form, inherently speculative rather than stores of value, and consumers should be warned of the risks of investing.
+
+He also noted that the nature of virtual currencies makes them impossible to prohibit fully. 
+
+“It is clear that VCs [virtual currencies] cannot be directly or overseen in the absence of a centralised governance and legal framework,” he said.
+
+“Recognising their limits here, most countries tolerate the usage of VCs without trying to ban them.”
+
+Mersch’s analysis was supported by Agustín Carstens, general manager at the Bank for International Settlements (BIS), who voiced similar opinions in a speech earlier this week.
+
+Carstens, however, gave a more forceful exhortation not to allow virtual currencies to sidestep the precautions in place for other payment mechanisms.
+
+Like Mersch, he observed that virtual currencies failed to clear the hurdle to be considered actual currency thanks to their essentially unsupported and speculative nature.
+
+As such, he said that central banks’ foremost concern should be to ensure that cryptocurrencies should not receive special treatment simply because of  their novel structure.
+
+“Authorities should apply the principles that the Basel Process has adhered to for years: to provide a level playing field to all participants in financial markets — banks and non-banks alike — while at the same time fostering innovative, secure and competitive markets,” he said.
+
+“In this context, this means, among other things, ensuring that the same high standards that money transfer and payment service providers have to meet are also met by Bitcoin-type exchanges.”
+
+Similar concerns have been [raised](https://paymentscompliance.com/premium-content/insights_analysis/us-authorities-eye-closer-cooperation-virtual-currencies) this week in the United States, where the Senate Banking Committee held a hearing on the measures being undertaken by federal agencies to keep virtual currencies in check.
+Mersch highlighted these stateside concerns in his speech and pointed to the work of the Securities and Exchange Commission in warning investors in Bitcoin of the difficulties and potential dangers they face.
+
+Although the idea of a central bank digital currency has failed to gain widespread traction, some countries, including Tunisia, Senegal and Venezuela, have examined creating centrally backed digital currencies.
+
+Lithuania also recently [announced](https://paymentscompliance.com/premium-content/insights_analysis/central-bank-blockchain-captures-lithuanian-regulator%E2%80%99s) plans to launch a central bank blockchain in the near future, for the purposes of supporting industry experimentation and innovation.
+Speaking to reporters following Thursday's speech, Mersch confirmed that the issue of central bank virtual currencies would be addressed at the G20 meeting in March.
+
+Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/insights_analysis/ecb-dashes-hopes-virtual-currency-mainstream-payment-system)
+
+---
+
+# Central Bank Blockchain Captures Lithuanian Regulator’s Imagination
+
+12TH JAN 2018 | WRITTEN BY: [JOHN BASQUILL](https://paymentscompliance.com/users/johnbpaymentscompliancecom)
+
+**Lithuania’s trailblazing financial regulator will invite technologists to construct a central bank blockchain, letting budding innovators experiment with the technology by developing new overlay services.**
+
+The Bank of Lithuania, a self-described “super-regulator” that oversees the country’s entire banking and payments sector, announced this week that the project could be launched as early as next year.
+
+The initiative, dubbed LBChain, remains in its early stages, but is envisaged as a testing ground for firms seeking to make use of the technology that underpins virtual currencies such as Bitcoin and Ethereum.
+
+“We hope all kind of businesses working in the financial services field or building products for financial services could benefit from LBChain,” said Marius Jurgilas, board member at the central bank.
+
+Jurgilas told PaymentsCompliance that the authority had not yet decided on the precise technological specifications to which the ledger will be subject.
+
+Options include a fully public, decentralised ledger akin to the Bitcoin blockchain, or a private ledger where participants are vetted and selected by a central overseer.
+
+“As we are planning to develop LBChain through the EU pre-commercial procurement process, the Bank of Lithuania will be partnering with commercial companies to develop the platform,” he explained.
+
+> “We have already contacted some of the potential companies to understand the cost of their participation,” said Marius Jurgilas, Bank of Lithuania.
+
+The Bank of Lithuania said it made the decision due to the technology’s “tremendous adaptation potential for innovations”, citing potential use cases in the financial and public sectors.
+
+It cited financial operations and electronic voting as functions that involve a high level of data transmission, but that also require an impeccable level of security and credibility.
+
+The initiative marks the latest in a series of regulatory reforms aimed at facilitating competition from non-bank financial firms.
+
+Lithuania has already introduced a [specialised regime](https://paymentscompliance.com/premium-content/insights_analysis/interview-lithuania-paves-way-non-bank-innovators) for firms wishing to settle transactions in central bank funds without a full banking licence, and in November [joined the European SCT Inst scheme](https://paymentscompliance.com/premium-content/insights_analysis/interview-lithuania-paves-way-non-bank-innovators) for real-time payment processing in euro.
+
+Although ultimately a central bank initiative, the LBChain project was in part influenced by interest from companies that could become involved at a later stage.
+
+“The Bank of Lithuania would provide LBChain participants a technical platform and consultations on applicable regulations,” it explained.
+
+“It is planned that this platform’s facilities will only be available to innovative companies selected according to certain criteria that devise and develop blockchain technology based services and solutions.”
+
+If EU co-funding is secured quickly, the bank hopes to have the project up and running in 2019.
+
+One potential model for LBChain could be to mimic the ledger created by Ethereum, but with restrictions on who can use it as the basis for building new services.
+
+Since its launch in 2015, far more providers have turned to Ethereum than Bitcoin as the building blocks for decentralised products and services.
+
+Most famously, the bulk of initial coin offerings (ICOs) have made use of Ethereum’s blockchain, developing sidechains on which their own virtual currencies can operate.
+
+However, the ledger has also been used to create self-executing smart contracts, and gained notoriety last month when it emerged that a lucrative virtual pet game had driven a six-fold increase in pending transactions.
+
+The Bank of Lithuania joins a small number of other financial regulators in setting out a legal framework aimed at encouraging blockchain-based innovation.
+
+The UK’s Financial Conduct Authority (FCA) has so far [granted places](https://paymentscompliance.com/premium-content/news_analysis/fca-throws-weight-behind-blockchain-payments) in its regulatory sandbox — a legal “safe space” for testing new products — to several payment providers looking to make use of the technology.
+
+Gibraltar’s forward-looking authority has [already imposed](https://paymentscompliance.com/premium-content/insights_analysis/blockchain-firms-eye-gibraltar-ahead-legal-reforms-says-regulator) a principles-based regulatory framework on blockchain firms, providing they are not already subject to any pre-existing regulatory regime.
+
+Singapore’s regulator has said it [hopes](https://paymentscompliance.com/premium-content/insights_analysis/singapore-eyes-blockchain-cross-border-payments-system) the technology will be adopted as the new infrastructure for cross-border payments, while officials in [Russia](https://paymentscompliance.com/premium-content/insights_analysis/russia-formalises-virtual-currency-regulation-plan) and [Venezuela](https://paymentscompliance.com/premium-content/insights_analysis/venezuela-state-virtual-currency-%E2%80%98-pipe-dream%E2%80%99-say-experts) have reportedly toyed with launching national cryptocurrencies as a work-around to obstructive international sanctions regimes.
+
+Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/insights_analysis/central-bank-blockchain-captures-lithuanian-regulator%E2%80%99s)
+
+---
+
+# Lithuania: Central Bank to Launch Sandbox Platform for Blockchain
+
+10TH JAN 2018 | WRITTEN BY: [PC RESEARCH](https://paymentscompliance.com/users/paymentscompliance-research-team)
+
+On January 9, 2018 the Bank of Lithuania published an announcement that it is to create an ecosystem for domestic and foreign companies to develop and test fintech innovations, to be known as LBChain.
+
+LBChain is expected to help companies expand knowledge in fintech, undertake blockchain research and test innovative products before introducing them to the market. The central bank would also support innovative firms on regulatory aspects and provide technical platform.
+
+The bank is planning to introduce a LBChain platform/service in 2019 once co-financing with EU funds and necessary preparations are undertaken.
+
+*"This platform will contribute to the creation of better conditions in Lithuania for the development of the FinTech business and innovation-friendly regulation, as well as help the Bank of Lithuania keep pace with technology innovations that change financial institution activities,"* said Marius Jurgilas, a member of the board of the Bank of Lithuania.
+
+*"Blockchain technology has a tremendous adaptation potential for innovations conducive to consumers in both the financial and public sectors. Giving room to regulated development of this technology would provide our country with particularly favourable opportunities for investment and attraction of talents as well as acceleration of advanced innovations."*
+
+Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/research_report/lithuania-central-bank-launch-sandbox-platform-blockchain)
 
 ---
 
