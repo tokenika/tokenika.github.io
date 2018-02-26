@@ -31,13 +31,13 @@ The nature of this problem makes it mathematically impossible for someone to cha
 
 Finally, the ledger is distributed, meaning that every user stores the current ledger, preventing someone from altering a single point of truth. In traditional cryptography, a single point of truth could be a certificate authority, however, if that certificate authority was to be breached, a malicious attacker could replace the stored keys with their own keys, thus enabling them to masquerade as a plethora of users. By distributing the ledger, an attacker would have to breach every member machine and replace the blockchain with their own making it functionally impossible for an attacker to alter the chain.
 
-#### 1.2 Applying the Blockchain to Authentication and Identification
+#### 1.2 Applying the blockchain to authentication and identification
 
 New companies have now begun to harness the potential of the blockchain and develop a variety of services using the technology. The center of blockchain authentication would be a blockchain ID. This ID is essentially a block of data on the chain that can be both verified by any third and can display necessary information such as date of birth.
 
 The secret to this verification is the ECDSA (elliptic curve digital signature algorithm). When adding an ID to the blockchain, an identification issuing service binds a public key by default and then transfers ownership of the private key to the user. This allows the user, and only the user, to sign a signature that can be verified against the public key stored in the blockchain. This identification of a user would serve as a decentralized source of authentication. It would essentially be a single-sign-on portal that can be accessed by any app while not being owned by any single entity. A protected app would only have to request a digital signature and an ID from a user requesting access. The app could then verify that the signature is valid and that the user’s ID verifies who they say they are.
 
-## 2 To The Community
+## 2 Implementation Strategy
 
 The need for this technology is becoming all too vital, currently US retailers lose about $32 billion to fraud. This is in no small part due to the horrible insecurity of our identification systems.
 
@@ -65,7 +65,7 @@ Furthermore, this functionality could be expanded to do a variety of secure data
 
 This methodology would be based on the principle of message signing and hashing. Many services already use this technology to securely verify data (such as JSON Web Tokens) while not disclosing the original data.
 
-### 4.1 A Proposed Authentication Flow Using the Blockchain
+#### 4.1 Proposed authentication flow using the blockchain
 
 A generic authentication flow that has been tested and utilized by companies such as [Blockstack](https://blockstack.org/) relies on a blockchain centered handshake. This handshake verifies to both the authenticating app and the user that the other party they are communicating with who they think it is.
 
@@ -77,7 +77,7 @@ In order to support simple transitions, it would be reasonable for this to begin
 
 The benefit of using the blockchain is that it is completely decentralized. If you didn’t want to use an app to facilitate this flow, the user could simply generate their own signature with their public key and submit it in a form, which the website would then verify. This shows the true benefit of a decentralized system. Because anyone can access the data and the user is in control of their private key, then you as a user are not forced to use a given API to facilitate this request. Putting as much trust in other system as you are willing to give.
 
-### 4.2 Sharing Only the Identity Information Want
+#### 4.2 Sharing only the identity information you want
 
 <u>A current problem with identity verification is that you are required to give more information than the system really needs. The problem with this if your transaction is compromised and someone is able to intercept the data in some way, they will have a lot of information to start forging an identity.</u>
 
@@ -85,7 +85,7 @@ To solve this problem, the previous authentication flow could be expanded to sup
 
 However, the website in order to prevent fraud, could verify that this person is really the owner of the data and they are not using a stolen card. To do this, cryptographic hashing could be to verify the data, a principle applied by [Tierion](https://tierion.com/) to achieve this effect. The packet would first be hashed and signed by the user. This would tell store that it is really a given person sending the data. Next, the site would look on the blockchain for a signed and hashed version of that data. If the hashes match up along with the signatures, the store will know that the data is in fact associated with that person and that the data is untampered, giving them reasonable assure that the card is owned by the authenticated individual. By applying the principles used by *Blockstack* and *Tierion*, a comprehensive, secure, and most importantly, distributed system of authentication and identity verification could be established.
 
-### 4.3 Anonymous and Secure Voting
+#### 4.3 Anonymous and secure voting
 
 Another use case of this technology could be secure and anonymous online voting, and the best part of this system would be that it could entirely leverage systems already in place. Just as a currency system is based on transactions that trade a limited amount of a given resource, voting is a system of transactions where everyone is only able to gain 1 unit of the currency and they must pay this one unit in order to submit a vote. Therefore, the system of transactions that the bitcoin is based on could be used to secure online voting.
 
