@@ -346,3 +346,57 @@ One lesson can be drawn here - if earlier financial institutions had doubts as t
 Players in the fintech arena now have the chance to go ‘all in’ and excel at creating the new experiences possible in the new digital market context.
 
 Source: [cointelegraph.com](https://cointelegraph.com/news/psd2-to-accelerate-digital-revolution)
+
+---
+
+# PSD2: Understanding the new payments regulation in Europe
+
+[Sundeep Tengur](https://blogs.sas.com/content/author/sundeeptengur/) August 18, 2017
+
+The revised EU Payment Services Directive (**PSD2**) has been a focal point for the financial services industry over the last couple of years and its adoption is set to revolutionise the payment ecosystem in Europe. New entrants, innovative technologies and increased regulation are already posing major challenges to traditional banks as they need to do more than ever before to retain their revenue streams, meet growing customer expectations and counter the erosion of their competitive edge. So why is PSD2 such a game-changer?
+
+In short, PSD2 calls for banks to open their data infrastructure to third parties so that the latter can provide better products and payment services to customers. This is unprecedented and many traditional banks perceive PSD2 to be disruptive, but in fact these new payment offerings have been sprouting for quite some time, powered by the FinTech industry. The revised directive has been put in place to provide a regulatory framework to ensure best practice and adequate governance.
+
+Here’s a condensed view of the main PSD2 themes:
+
+### Market integration
+
+One of the strategic objectives of PSD2 is to align all member states into a **single digital market**. This initiative already started under the first Payments Services Directive and with the Single Eurozone Payments Area (SEPA) which aimed at improving cross-border payments and creating a unified market.
+
+The second Payments Services Directive will further this agenda by encompassing smaller payment institutions and relevant FinTechs, many of which were previously unregulated and operating on the fringes of the payments services spectrum. They now all fall within the extended definition of a ‘payment institution’ under PSD2. Established banking entities are also invited to embrace the opportunity by offering both existing and new services to customers of other banks, i.e. to be become FinTech players themselves. A fine example is Payconiq, a mobile payment offering powered by several banks: ING, KBC and Belfius.
+
+### Democratising the access to payments
+
+Another key tenet of PSD2 is to widen access to payments. To achieve this, the regulation defines two new types of third-party payment providers: namely account information service providers and payment initiation service providers. These new players will add value on top of the core services offered by traditional banks (called account servicing payment service providers under PSD2), therefore extending the set of existing payment services providers.
+
+Account information service providers are entities that can connect to customer accounts and only retrieve information whereas payment initiation service providers can connect to the banks’ systems through secure channels to initiate payment requests. These new players will offer consumers more choice compared to the traditional banking landscape and help boost the economy by generating revenue through a wider range of services.
+
+### Increased consumer protection
+
+PSD2 introduces several measures which will protect consumer rights and improve customer service around payments:
+
+- **Surcharging:** PSD2 will ban surcharging for the use of payment instruments covered by the Interchange Fee Regulation and payment services covered by the SEPA Regulation. For example, companies such as airlines or event organizers will not be allowed to charge an additional card fee on top of the transaction value.
+- PSD2 will also offer better protection around **pre-authorisation** for card payments where the final amount is not known in advance. For transactions such as hotel bookings or car rentals, the merchant will only be able to lock funds to a limit approved by the cardholder and has to unlock same without undue delay after the final transaction amount is known or after having received the payment order.
+- PSD2 will provide the legislative basis to an unconditional **refund right** for direct debit payments, for a period of 8 weeks from the date when the funds were debited.
+- Consumers will be **better protected against fraud **and other abuses and payment incidents as the amount they would be obliged to pay for an **unauthorised payment** will be brought down from €150 to €50, with exceptions for gross negligence or fraud perpetrated by the payer.
+- Consumers will be protected for transactions even where the payment service provider is located **outside the European Economic Area (EEA)** as well as for payments in **non-EEA currencies**.
+- PSD2 requires that service providers have adequate **dispute resolution procedures**. payment services providers will be required to respond to payment complaints within a standard 15-day period.
+
+### Increased security
+
+There's no doubt that PSD2 will offer great opportunities, but these new payment and information access mechanisms can be vulnerable to threats such as fraud, data breaches and cyber-attacks. The regulation therefore seeks to establish a security baseline to help mitigate those threats and secure consumer assets. The main security highlights are;
+
+- **Secure authentication**: PSD2 requires the use of ‘strong customer authentication’ for online payment transactions. The minimum requirements are for the use of 2FA – two-factor authentication, a norm already widely adopted by the banking industry.
+- Payment Services Providers will need to provide a **security policy document**, including a detailed risk assessment, which details the steps taken to protect customers from fraud and data breaches.
+- Payment services providers will be required to set up **incident management** procedures to detect and report major operational and security incidents. There are also requirements for annual review and reporting to regulatory bodies.
+- Although account servicing payment service providers must allow access to third-party payment providers, all payment services providers must ensure that adequate security measures have been implemented to protect the **confidentiality and integrity** of the payment service user's access credentials.
+
+There are other security considerations around the regulatory technical standards (RTS), including the strong customer authentication and the secure open standards of communication. It is expected all stakeholders will have a clearer view of these requirements with the publication of the RTS in the last quarter of 2018.
+
+### Not long left…
+
+PSD2, with its extensive scope, is regarded as establishing a baseline for the future of banking, rather than being a mere regulatory piece. It is a game-changing initiative that will bring along numerous opportunities to facilitate access to payments and help deliver a better customer experience. PSD2 must be transposed into national law by Member States before 13 January 2018, which means that the legal provisions will apply from that date. The next six months or so will be challenging for businesses as they navigate their way towards PSD2 compliance.
+
+Source: [blogs.sas.com](https://blogs.sas.com/content/sascom/2017/08/18/psd2-demystifying-beast/)
+
+---
