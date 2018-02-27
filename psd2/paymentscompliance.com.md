@@ -1,15 +1,3 @@
-# PSD2 and Blockchain: Mutual Support
-
-Under the new rules, banks will have to share client information with licensed third parties if the client asks it to do so.
-
-PSD2 is different in that it is not upgrading current systems. It is creating new ones. Rather than figure out how to make processes more efficient, it wants to rethink how payments are made. And rather than tell market participants what the new system should look like, it wants them to figure it out for themselves. In opening up access to data, it aims to give them a powerful tool with which to do so.
-
-Here's where blockchain-based services will most likely start to go mainstream: not in replacing current systems with better processes, but in forming part of new systems in a behind-the-scenes, non-threatening role.
-
-Source: [coindesk.com](https://www.coindesk.com/psd2-blockchain-mutual-support/)
-
----
-
 # Banks Suggest Blockchain To Solve PSD2 Register Concerns
 
 20TH OCT 2017 | WRITTEN BY: [FRAN WARBURTON](https://paymentscompliance.com/users/franwgamblingcompliancecom)
@@ -431,16 +419,118 @@ Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/
 
 ---
 
-[ripple.com](https://ripple.com/insights/psd2-blockchain/)
+# PSD2: Commission Pins Hopes On New API Working Group
 
-[medium.com](https://medium.com/@pauliusuza/the-year-of-blockchain-and-psd2-5e614153859f)
+31ST JAN 2018 | WRITTEN BY: [JOHN BASQUILL](https://paymentscompliance.com/users/johnbpaymentscompliancecom) IN BRUSSELS
 
-[fintechblue.com](http://www.fintechblue.com/2017/05/psd2-and-the-blockchain/)
+**EU officials are optimistic that a new cross-industry working group will be able to overcome serious concerns about the viability of third-party account access rules.**
 
-[wired.co.uk](http://www.wired.co.uk/article/open-banking-cma-psd2-explained)
+In recent days, the [European Banking Authority (EBA)](https://paymentscompliance.com/glossary#European_Banking_Authority_EBA) has twice [raised objections](https://paymentscompliance.com/premium-content/insights_analysis/eba-takes-technical-standards-battle-commission) to technical standards accompanying the revised [Payment Services Directive](https://paymentscompliance.com/psd2-portal) (PSD2), which were [finalised](https://paymentscompliance.com/premium-content/insights_analysis/european-commission-adopts-psd2-technical-standards) by the European Commission in November.
 
-[cointelegraph.com](https://cointelegraph.com/news/psd2-to-accelerate-digital-revolution)
+The regulator argued that a new requirement to assess the dedicated interfaces that banks develop [would place an enormous burden](https://paymentscompliance.com/premium-content/insights_analysis/eba-reignites-screen-scraping-row-warns-%E2%80%98legal-battles%E2%80%99-ahead) on national and international authorities.
 
-[pwc.com](https://www.pwc.com/cz/en/bankovnictvi/assets/psd2-nutshell-n02-en.pdf)
+However, speaking at an industry event in Brussels on Tuesday, European Commission unit head Ralf Jacob was hopeful that a group focusing on banks’ application programming interfaces (APIs) will lessen that burden and minimise the risk of fragmentation.
 
-[nets.eu](https://www.nets.eu/perspectives/Pages/Banks-need-to-see-fintech-as-a-mindset.aspx)
+“The next step for us is standardisation of APIs, to make sure that we don’t have — for every single bank — a different communication interface,” he told the QED Future of European Payments conference, speaking in a personal capacity.
+
+“With the RTS [regulatory technical standards] we create some strong incentives to go for standardisation and that will be the basis for this open banking environment.”
+
+Jacob said the group had its inaugural meeting on Monday this week, which was attended by representatives of banks, payment firms and third-party providers.
+
+He said the group’s mandate will soon be made public, to try and avoid the risk of further disputes between different corners of the industry.
+
+> “It should not be exclusive, and it should under no circumstances be perceived as an attempt by some market players to stitch up something which would possibly be to the detriment of other market players,” said Ralf Jacob of the European Commission. “We have to be transparent.”
+
+The commissioner said that representatives from multiple national API initiatives, such as those underway in the UK, France, Poland or Berlin, would be asked to present details to solutions they have already developed to meet market and legal requirements.
+
+Then, by defining any issues market participants may have with a particular initiative, the group will attempt to develop harmonised solutions.
+
+“Hopefully this will converge, and maybe we will have some kind of European standard for APIs emerging from that,” Jacob said.
+
+Attendees at Monday’s meeting said it has not yet been finalised whether the group’s work will result in specific assessment criteria for national authorities, or whether they will serve more as tools for self-assessment by financial institutions.
+
+Jacob said APIs based on the model the working group suggests should be granted approval by the relevant national regulator, provided they have been market tested for three months and have not been the subject of complaints by third parties.
+
+A bank whose API is granted approval is exempt from the requirement to adapt consumers’ online banking interfaces for third-party access.
+
+“But the market group will not prescribe anything; the responsibility will have to be taken by the competent authorities, and the competent authorities will be supervised by the EBA which will be consulted before granting an exemption,” Jacob added.
+
+“And if an exemption is given to an API which is not satisfactory, then ultimately the commission could also intervene and launch infringement procedures if necessary.”
+
+However, concerns were aired that the EBA itself opted not to attend Monday’s meeting.
+
+Dirk Haubrich, the authority’s head of consumer protection, innovation and payments, was non-committal about its involvement before the standards have been granted final approval by the European Parliament and Council, which is likely to be in March this year.
+
+“Once the RTS on strong customer [authentication](https://paymentscompliance.com/glossary#Authentication) are published in the journal, we will take a look at what we can do to help that process and assist the industry,” he said at Tuesday’s event.
+
+“We have not taken a decision yet, as we are waiting for the final version of the RTS.”
+
+Haubrich reiterated the EBA’s disappointment at the European Commission’s decision to amend the final standards without first consulting the authority, and said disputes over APIs would have been best addressed in that text rather than through working groups.
+
+> “[If] we have no opportunity to suggest some clarifications to this RTS, to be inserted into the RTS before it’s published, then the EBA will have to go a different route and will have to use its own legal instruments to provide some of the clarifications, such as guidelines, which we can issue of our own initiative,” said Dirk Haubrich of the EBA. “There are other means, such as Q&As, that we intend to publish going forward.”
+
+“For us, given the political controversy around this RTS, it would always be preferable to provide such clarity in the RTS itself — because the RTS is directly applicable law and has the highest legally binding nature, and has to be consistently implemented across all member states,” he said.
+
+He added that the standards have more “democratic legitimacy” than industry-led work, as they are subject to scrutiny from member state representatives in the European Parliament.
+
+Additional concerns were raised by event attendees that many emerging fintechs and start-ups would not have their interests represented by the group, as it only includes participants from established third-party providers.
+
+The commission’s Jacob said the group’s first workshop is expected to take place in February this year.
+
+Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/insights_analysis/psd2-commission-pins-hopes-new-api-working-group)
+
+---
+
+# PSD2: Questions Resurface Over Credential Sharing
+
+9TH FEB 2018 | WRITTEN BY: [JOHN BASQUILL](https://paymentscompliance.com/users/johnbpaymentscompliancecom) & [FRAN WARBURTON](https://paymentscompliance.com/users/franwgamblingcompliancecom)
+
+**Banks and fintechs remain at odds over whether consumers will be able to share their online banking login credentials with third parties under incoming EU-wide security standards.**
+
+Several projects currently underway in Europe to develop application programming interfaces (APIs) for third-party access have used a “redirect” model for carrying out customer authentication.
+
+That means a consumer wishing to use a payment initiation service when shopping online, for example, would be forwarded onto a login screen operated by their bank rather than share their login details with the third party.
+
+However, after [complaints](https://paymentscompliance.com/premium-content/insights_analysis/%E2%80%98authentication-redirection%E2%80%99-proves-problematic-under-psd2) that would result in a clumsy and fragmented checkout process, the European Commission made reference to the practice in changes to regulatory technical standards that will accompany the revised [Payment Services Directive](https://paymentscompliance.com/psd2-portal) (PSD2).
+
+It said that banks [would not be allowed](https://paymentscompliance.com/premium-content/insights_analysis/european-commission-takes-tough-line-psd2-%E2%80%98redirection%E2%80%99) to obstruct third parties’ business models, [giving the example](https://paymentscompliance.com/premium-content/insights_analysis/european-commission-adopts-psd2-technical-standards) of “imposing redirection” as a practice that may result in a bank’s API not gaining the approval of its national regulator.
+
+Speaking in a personal capacity at an industry event last week, European Commission unit head Ralf Jacob reiterated that message.
+
+“If, for instance, there was a redirection to a page that was not properly formatted or would not really fit into the customer journey as designed by the third-party provider, there would be a problem and we would not like to see that,” he said.
+
+However, Jacob said that some industry participants or national regulators, particularly in Nordic countries, were alarmed as they “interpreted that as a prohibition on redirection”.
+
+There are two widely used alternatives to the redirect currently on the market; both are variants of the “pass through” model, which involves a third party transmitting authentication details to the bank.
+
+The first alternative — an embedded pass-through — has long been used by existing payment initiation services, which collect a user’s login details and transmit them to the account-holding bank.
+
+A decoupled pass-through, however, involves parallel authentication by the bank and the third party, without the customer journey being taken out of the third party’s hands.
+
+That arrangement can be used in arrangements where there is an external authentication system, such as a national ID database.
+
+In situations where a decoupled pass-through is not feasible, third parties are calling for the embedded pass-through to be made available.
+
+“Customer authentication via redirection to [banks’] websites would be a conversion killer,” said Ralf Ohlhausen, a director at fintech firm PPRO and member of the Euro Retail Payments Board's (ERPB) working group on payment initiation.
+
+“That would deprive third-party providers from offering their own end-to-end service via mobile app, and it would really only work for e-commerce.”
+
+Ohlhausen suggested that if the commission did not trust payment initiation service providers to handle users’ online banking login credentials safely, it would have explicitly prohibited credential sharing in the level one text.
+
+Existing interbank payment services that use a redirect model, such as iDEAL in the Netherlands, are not considered third parties under PSD2, he added.
+
+Gijs Boudewijn, chairman of the European Banking Federation’s Payments System Committee, admitted there “is a lot of confusion” around the legality of credential sharing.
+
+“Our understanding is that [banks] can mandate the current strong customer authentication methods through a redirect, but it must be well implemented in the API and provide for a good customer journey,” he explained.
+
+“Otherwise it might create an ‘obstacle’, which might be a reason for national competent authorities not to grant an [exemption for the fallback mechanism](https://paymentscompliance.com/premium-content/insights_analysis/eba-takes-technical-standards-battle-commission).
+
+“That is the incentive for [banks] to provide good APIs, which I believe will be one of the issues we will have to address in the new API evaluation group.”
+
+The evaluation group met for the first time last week, with the commission [hoping](https://paymentscompliance.com/premium-content/insights_analysis/psd2-commission-pins-hopes-new-api-working-group) it will be able to develop access mechanisms that are satisfactory both to banks and third-party providers.
+
+According to a [report](https://www.ecb.europa.eu/paym/retpaym/shared/pdf/8th-ERPB-meeting/PIS_working_group_report.pdf?483e4d28242cd84322850a01e549d116) by the ERPB payment initiation working group published in November last year, the national APIs under development in the UK, Poland and Slovakia are all built around a redirect model.
+
+France’s STET project uses a pass-through, while the Berlin Group API can support a redirect model or either pass-through option.
+
+Source: [paymentscompliance.com](https://paymentscompliance.com/premium-content/insights_analysis/psd2-questions-resurface-over-credential-sharing)
