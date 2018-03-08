@@ -27,7 +27,7 @@ Załóżmy, że osoba X chce skorzystać z jakiejś usługi oferowanej przez fir
 Załóżmy też że:
 
 - PESEL osoby X został w przeszłości zweryfikowany przez podmiot o wysokiej reputacji (któremu firma F ufa).
-- Hash tego PESELa wraz z kluczem publicznym osoby X został umieszczony na blockchainie (to jest ważne: ten PESEL na blockchainie jest zahashowany, więc nie sposób odgadnąć jaki on jest).
+- Hash tego PESELa wraz z kluczem publicznym osoby X i podpisem powyższego podmiotu o wyskiej reputacji został umieszczony na blockchainie. To jest ważne: ten PESEL na blockchainie jest zahashowany, więc nie sposób odgadnąć jaki on jest.
 
 Wówczas poprzez spojrzenie na zapis w blockchainie firma F jest w stanie stwierdzić, że osoba która przesłała jej PESEL osoby X, jednocześnie musi być osobą X. Wynika to z faktu, że tylko osoba X ma dostęp do klucza prywatnego, który pasuje do klucza publicznego w zapisie na blockchainie potwierdzającym wcześniej dokonaną weryfikację tego PESELa.
 
