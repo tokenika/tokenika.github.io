@@ -12,7 +12,9 @@ Tradycyjne podejścia w sytuacji online są takie:
 - Dostajesz ememesa z kodem, co ma wadę że jest to relatywnie kosztowne i mało bezpieczne.
 - Poprzez narzędzie typu Google Authenticator, co ma wadę polegającą na tym, że sekret w postaci klucza prywatnego jest współdzielony, więc teoretycznie może być wykradziony z firmy która cię weryfikuje.
 
-Poza względami bezpieczeństwa, główny problem z tego rodzaju podejścia jest taki, że to się nie skaluje, bo przy pozyskaniu nowego klienta każda firma musi samodzielnie dokonać procesu weryfikacji tożsamości od nowa. Czyli ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
+Poza względami bezpieczeństwa, główny problem z tego rodzaju podejściem jest taki, że to się nie skaluje, bo przy pozyskaniu nowego klienta każda firma musi samodzielnie dokonać procesu weryfikacji tożsamości od nowa. Czyli ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
+
+---
 
 DIV (Decentralized Identity Verification) generalnie polega na tym, że informacja, która jednoznacznie identyfikuje osobę X (np jej PESEL), jest trzymana tylko przez osobę X (np. kryptograficznie zaszyfrowana w jej telefonie komórkowym), a firma F, która chce zweryfikować osobę X online, komunikuje się z jej telefonem, i ten telefon (za zgodą osoby X) wysyła podmiotowi F żądaną informację (czyli w tym przypadku PESEL).
 
