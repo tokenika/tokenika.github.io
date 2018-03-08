@@ -42,7 +42,7 @@ A w wersji rozszerzonej (czyli nie tylko PESEL) mechanizm ten otwiera możliwoś
 
 ---
 
-Jest masa projektów blockchainowych, które podejmują rożne aspekty cyfrowej tożsamości. Warto je kiedyś wszystkie przejrzeć (zadanie dla Wojtka?) jednak na tym etapie możemy ograniczyć się do tych najważniejszych (moim zdaniem), które zajmują się dokładnie tym co nas interesuje, tj. *decentralized identity verification*:
+Jest [masa projektów blockchainowych](https://github.com/peacekeeper/blockchain-identity), które podejmują rożne aspekty cyfrowej tożsamości. Warto je kiedyś wszystkie przejrzeć (zadanie dla Wojtka?) jednak na tym etapie możemy ograniczyć się do tych najważniejszych (moim zdaniem), które zajmują się dokładnie tym co nas interesuje, tj. *decentralized identity verification*:
 
 * Civic
   * Web: https://www.civic.com/
@@ -78,10 +78,10 @@ Ta deklaracja też jest intrygująca:
 
 W tym świetle wykonanie uproszczonej (tylko PESEL) wersji pomysłu, ma spory sens ponieważ:
 
-- Działamy w cieniu firm dużo większych od nas - one już odwaliły sporo roboty za nas i dodatkowo uwiarygadniają sensowność tego całego przedsięwzięcia
-- Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo robimy tylko PESEL), więc dokładnie wiadomo co trzeba rozbić (nie tracimy czasu i kasy na eksperymentowanie)
-- Mamy technologię (tj. EOS) która jest wyraźnie lepsza od tej, którą oni wybrali, i dodatkowo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego)
-- Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy
+- Działamy w cieniu firm dużo większych od nas - one już odwaliły sporo roboty za nas i dodatkowo uwiarygadniają sensowność tego całego przedsięwzięcia.
+- Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo robimy tylko PESEL), więc dokładnie wiadomo co trzeba rozbić (nie tracimy czasu i kasy na eksperymentowanie).
+- Mamy technologię (tj. EOS) która jest wyraźnie lepsza od tej, którą oni wybrali, i dodatkowo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego).
+- Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy.
 
 Proponowany plan działania:
 
