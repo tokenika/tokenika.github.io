@@ -42,7 +42,7 @@ Więc wykorzystując ten mechanizm w jego najprostszej formie (czyli tylko PESEL
 
 - Doskonale nadaje się jako jeden z kanałów w mocnej autoryzacji dla PSD2, co było naszym pierwotnym celem.
 - Istotnie wspomaga systemy online, w których szybka i niezawodna weryfikacja tożsamości jest konieczna i dodatkowo uwalnia te systemy od potrzeby przechowywania sporej części danych osobowych (bo w tym nowym paradygmacie te dane zawsze są po stronie użytkownika).
-- Otwiera możliwość migracji do wersji online rzeczy. które do tej pory były praktycznie niewykonalne w wersji online, np. wybory parlamentarne.
+- Otwiera możliwość migracji do wersji online rzeczy, które do tej pory były praktycznie niewykonalne w wersji online, np. wybory parlamentarne.
 
 A w wersji rozszerzonej (czyli nie tylko PESEL) mechanizm ten otwiera możliwość ostatecznej cyfryzacji wszystkiego: wszystkie dokumenty państwowe, dokumentacja medyczna, cała branża notarialna, itp.
 
@@ -91,7 +91,7 @@ W tym świetle wykonanie uproszczonej (tylko PESEL) wersji pomysłu, ma spory se
 
 ---
 
-Celowo pomijam na tym etapie problem monetyzacji tego całego zagadnienia. Wychodzę tu z założenia, że pierwszym problemem, który trzeba rozwiązać, to zdobycie dużej liczby użytkowników (zarówno po stronie osób fizycznych jak i firm), a w momencie gdy to nastąpi dopiero będzie można myśleć o monetyzacji. To jest na pewno wykonalne, bo na tym bazuje Civic.
+Celowo pomijam na tym etapie problem monetyzacji tego całego zagadnienia. Wychodzę tu z założenia, że pierwszym problemem, który trzeba rozwiązać, to zdobycie dużej liczby użytkowników (zarówno po stronie osób fizycznych jak i firm), a w momencie, gdy to nastąpi, dopiero będzie można myśleć o monetyzacji. To jest na pewno wykonalne, bo na tym bazuje Civic.
 
 ---
 
@@ -99,4 +99,4 @@ Proponowany plan działania:
 
 - Zrobić MVP (łącznie z aplikacją mobilną).
 - Zebrać duży kapitał i błogosławieństwo aparatu państwowego.
-- Zastosować strategię PayPala: rozdawać tokeny EOSa (np. równowartość kilku USD) w zamian za poddanie się procesowi ucyfrowienia swojego PESELa w naszym systemie DIV (będzie to kosztowne ale przynajmniej pozbawione przekrętów, bo mamy pewność że jedna osoba tylko raz może się zarejestrować).
+- Zastosować strategię PayPala: rozdawać tokeny EOSa (np. równowartość kilku USD) w zamian za poddanie się procesowi ucyfrowienia swojego PESELa w naszym systemie DIV (będzie to kosztowne ale przynajmniej pozbawione przekrętów, bo mamy pewność, że jedna osoba tylko raz może się zarejestrować).
