@@ -2,7 +2,7 @@
 
 Najogólniej mówiąc, w problemie weryfikacji tożsamości chodzi o to, w jaki sposób w warunkach online uzyskać pewność, że osoba podająca się jako X rzeczywiście jest tą osobą X.
 
-Istotne jest tu to, że jest to sytuacja online, czyli NIE w realu. W sytuacji kontaktu w realu dokument ze zdjęciem, wciąż można uznać za wystarczająco dobry sposób weryfikacji tożsamości, mimo swoich oczywistych wad: jest kosztowny w produkcji i fałszowalny - wszystko wisi na założeniu, że umiesz rozpoznać fałszywy dokument, co często nie jest prawdą.
+Istotne jest tu to, że jest to sytuacja online, czyli NIE w realu. W sytuacji kontaktu w realu dokument ze zdjęciem wciąż można uznać za wystarczająco dobry sposób weryfikacji tożsamości, mimo swoich oczywistych wad: jest kosztowny w produkcji i fałszowalny - wszystko wisi na założeniu, że umiesz rozpoznać fałszywy dokument, co często nie jest prawdą (np. kto z nas wie jak powinna wyglądać odznaka policyjna?).
 
 Znacznie większy problem pojawia się online, bo tutaj zdjęcie, które jest integralną częścią dokumentu tożsamości, przestaje być użyteczne, bo nie ma go z czym porównać.
 
