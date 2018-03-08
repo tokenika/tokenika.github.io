@@ -12,6 +12,8 @@ Tradycyjne podejścia w sytuacji online są takie:
 - Dostajesz ememesa z kodem, co ma wadę że jest to relatywnie kosztowne i mało bezpieczne.
 - Poprzez narzędzie typu Google Authenticator, co ma wadę polegającą na tym, że sekret w postaci klucza prywatnego jest współdzielony, więc teoretycznie może być wykradziony z firmy która cię weryfikuje.
 
+Poza względami bezpieczeństwa, główny problem z tego rodzaju podejścia jest taki, że to się nie skaluje, bo przy pozyskaniu nowego klienta każda firma musi samodzielnie dokonać procesu weryfikacji tożsamości od nowa. Czyli ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
+
 DIV (Decentralized Identity Verification) generalnie polega na tym, że informacja, która jednoznacznie identyfikuje osobę X (np jej PESEL), jest trzymana tylko przez osobę X (np. kryptograficznie zaszyfrowana w jej telefonie komórkowym), a firma F, która chce zweryfikować osobę X online, komunikuje się z jej telefonem, i ten telefon (za zgodą osoby X) wysyła podmiotowi F żądaną informację (czyli w tym przypadku PESEL).
 
 Oczywiście gdybyśmy poprzestali tylko na tym co powyżej, to firma F nigdy nie mogłaby być pewna, że osoba, która próbuje się zidentyfikować jako X, rzeczywiście jest osobą X.
@@ -29,6 +31,8 @@ Wówczas firma F jest w stanie stwierdzić, że PESEL otrzymany od osoby, która
 Innymi słowy, ten mechanizm pozwala na weryfikację danej osoby w warunkach online w analogiczny sposób jak dokument ze zdjęciem robi to w realu. A nawet lepiej, bo dokument ze zdjęciem jest fałszowalny, a tego rodzaju cyfrowa weryfikacja jest chroniona kryptograficznie.
 
 Czyli mamy mechanizm, który jest w stanie poświadczyć, że mówisz prawdę na temat siebie samego. Co ciekawe, tym samym traci sens wykradanie informacji celem kradzieży tożsamości, bo sama informacja nie wystarczy - żeby być zweryfikowanym w tym nowym paradygmacie trzeba jeszcze mieć związany z tą informacją klucz prywatny poświadczony przez podmiot o wysokiej reputacji. Samo wyłudzenie od kogoś informacji nic nie daje - czyli dokładanie na odwrót niż obecnym świecie.
+
+Co więcej, DIV eliminuje problem powtarzalności procesu weryfikacji tożsamości nowego klienta. W tym nowym paradygmacie proces ten wykonywany jest raz, jego wynik zapisany jest na blockchainie i wszystkie pozostałe firmy mogą z tego zapisu skorzystać (bezpłatnie i odpłatnie - ale to jest już problem monetyzacji).
 
 Idąc tym tropem, powyższy mechanizm można też zastosować dla innych niż PESEL informacji (np. dokumenty typu prawo jazdy, polisa OC, dyplom uczelni itd), ale na razie proponowałbym w to nie wchodzić, bo wówczas mamy dodatkową komplikację - problem aktualności tych informacji. PESEL ma tę zaletę, że nigdy nie traci ważności i jednoznacznie identyfikuje każdego człowieka.
 
@@ -82,6 +86,12 @@ W tym świetle wykonanie uproszczonej (tylko PESEL) wersji pomysłu, ma spory se
 - Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo robimy tylko PESEL), więc dokładnie wiadomo co trzeba robić (nie tracimy czasu i kasy na eksperymentowanie).
 - Mamy technologię (tj. EOS) która jest wyraźnie lepsza od tej, którą oni wybrali, i dodatkowo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego).
 - Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy.
+
+---
+
+Celowo pomijam na tym etapie problem monetyzacji tego całego zagadnienia. Wychodzę tu z założenia, że pierwszym problemem, który trzeba rozwiązać, to zdobycie dużej liczby użytkowników (zarówno po stronie osób fizycznych jak i firm), a w momencie gdy to nastąpi dopiero będzie można myśleć o monetyzacji. To jest na pewno wykonalne, bo na tym bazuje Civic.
+
+---
 
 Proponowany plan działania:
 
