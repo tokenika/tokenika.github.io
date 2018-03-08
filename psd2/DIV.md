@@ -1,4 +1,4 @@
-## Decentralized Identity Verification (Zdecentralizowana Weryfikacja Tożsamości)
+## DIV - Decentralized Identity Verification (Zdecentralizowana Weryfikacja Tożsamości)
 
 Najogólniej mówiąc, w problemie weryfikacji tożsamości chodzi o to, w jaki sposób w warunkach online uzyskać pewność, że osoba podająca się jako X, rzeczywiście jest tą osobą X, za którą się podaje.
 
@@ -12,7 +12,7 @@ Tradycyjne podejścia w sytuacji online są takie:
 - Dostajesz ememesa z kodem, co ma wadę że jest to relatywnie kosztowne i mało bezpieczne.
 - Poprzez narzędzie typu Google Authenticator, co ma wadę polegającą na tym, że sekret w postaci klucza prywatnego jest współdzielony, więc teoretycznie może być wykradziony z firmy która cię weryfikuje.
 
-*Decentralized identity verification* generalnie polega na tym, że informacja, która jednoznacznie identyfikuje osobę X (np jej PESEL), jest trzymana tylko przez osobę X (np. kryptograficznie zaszyfrowana w jej telefonie komórkowym), a firma F, która chce zweryfikować osobę X online, komunikuje się z jej telefonem, i ten telefon (za zgodą osoby X) wysyła podmiotowi F żądaną informację (czyli w tym przypadku PESEL).
+DIV (Decentralized Identity Verification) generalnie polega na tym, że informacja, która jednoznacznie identyfikuje osobę X (np jej PESEL), jest trzymana tylko przez osobę X (np. kryptograficznie zaszyfrowana w jej telefonie komórkowym), a firma F, która chce zweryfikować osobę X online, komunikuje się z jej telefonem, i ten telefon (za zgodą osoby X) wysyła podmiotowi F żądaną informację (czyli w tym przypadku PESEL).
 
 Oczywiście gdybyśmy poprzestali tylko na tym co powyżej, to firma F nigdy nie mogłaby być pewna, że osoba, która próbuje się zidentyfikować jako X, rzeczywiście jest osobą X.
 
@@ -42,7 +42,7 @@ A w wersji rozszerzonej (czyli nie tylko PESEL) mechanizm ten otwiera możliwoś
 
 ---
 
-Jest [masa projektów blockchainowych](https://github.com/peacekeeper/blockchain-identity), które podejmują rożne aspekty cyfrowej tożsamości. Warto je kiedyś wszystkie przejrzeć (zadanie dla Wojtka?) jednak na tym etapie możemy ograniczyć się do tych najważniejszych (moim zdaniem), które zajmują się dokładnie tym co nas interesuje, tj. *decentralized identity verification*:
+Jest [masa projektów blockchainowych](https://github.com/peacekeeper/blockchain-identity), które podejmują rożne aspekty cyfrowej tożsamości. Warto je kiedyś wszystkie przejrzeć (zadanie dla Wojtka?) jednak na tym etapie możemy ograniczyć się do tych najważniejszych (moim zdaniem), które zajmują się dokładnie tym co nas interesuje, tj. DIV (Decentralized Identity Verification):
 
 * Civic
   * Web: https://www.civic.com/
@@ -81,10 +81,10 @@ W tym świetle wykonanie uproszczonej (tylko PESEL) wersji pomysłu, ma spory se
 - Działamy w cieniu firm dużo większych od nas - one już odwaliły sporo roboty za nas i dodatkowo uwiarygadniają sensowność tego całego przedsięwzięcia.
 - Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo robimy tylko PESEL), więc dokładnie wiadomo co trzeba robić (nie tracimy czasu i kasy na eksperymentowanie).
 - Mamy technologię (tj. EOS) która jest wyraźnie lepsza od tej, którą oni wybrali, i dodatkowo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego).
-- Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy.
+- Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy.
 
 Proponowany plan działania:
 
 - Zrobić MVP (łącznie z aplikacją mobilną).
 - Zebrać duży kapitał i błogosławieństwo aparatu państwowego.
-- Zastosować strategię PayPala: rozdawać tokeny EOSa (np. równowartość kilku USD) w zamian poddanie się procesowi ucyfrowienia swojego PESELa w naszym systemie (będzie to kosztowne ale przynajmniej pozbawione przekrętów, bo mamy pewność że jedna osoba tylko raz może się zarejestrować).
+- Zastosować strategię PayPala: rozdawać tokeny EOSa (np. równowartość kilku USD) w zamian za poddanie się procesowi ucyfrowienia swojego PESELa w naszym systemie DIV (będzie to kosztowne ale przynajmniej pozbawione przekrętów, bo mamy pewność że jedna osoba tylko raz może się zarejestrować).
