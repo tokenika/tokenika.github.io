@@ -9,7 +9,7 @@ Znacznie większy problem pojawia się online, bo tutaj zdjęcie, które jest in
 Tradycyjne podejścia w sytuacji online są mniej więcej takie:
 
 - Jesteś wypytywany o jakiś sekret (np. nazwisko panieńskie matki). Wada: tego rodzaju sekret dość łatwo się dewaluuje.
-- Dostajesz ememesa z kodem. Wada: jest to relatywnie kosztowne i mało bezpieczne.
+- Dostajesz esemesa z kodem. Wada: jest to relatywnie kosztowne i mało bezpieczne.
 - Werifikujesz się poprzez narzędzie typu Google Authenticator. Wada: sekret w postaci klucza prywatnego jest współdzielony, więc teoretycznie może być wykradziony z firmy która cię weryfikuje.
 
 Poza względami bezpieczeństwa, główny problem z tego rodzaju podejściem jest taki, że to się nie skaluje, bo przy pozyskaniu nowego klienta każda firma musi samodzielnie dokonać ustalenia jego tożsamości i zainicjować proces werfikacji tej tożsamości w przyszłości. Czyli ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
@@ -33,7 +33,7 @@ Wówczas poprzez spojrzenie na zapis w blockchainie firma F jest w stanie stwier
 
 Innymi słowy, ten mechanizm pozwala na weryfikację danej osoby w warunkach online w analogiczny sposób jak dokument ze zdjęciem robi to w realu. A nawet lepiej, bo dokument ze zdjęciem jest fałszowalny, a tego rodzaju cyfrowa weryfikacja jest chroniona kryptograficznie.
 
-Czyli mamy mechanizm, który jest w stanie poświadczyć, że mówisz prawdę na temat siebie samego. Co ciekawe, tym samym traci sens wykradanie informacji celem kradzieży tożsamości, bo sama informacja nie wystarczy - żeby być zweryfikowanym w tym nowym paradygmacie, oprócz samej informacji trzeba jeszcze mieć związany z tą informacją klucz prywatny poświadczony przez podmiot o wysokiej reputacji. Samo wyłudzenie od kogoś informacji nic nie daje - czyli dokładanie na odwrót niż obecnym świecie.
+Czyli mamy mechanizm, który jest w stanie poświadczyć, że mówisz prawdę na temat siebie samego. Co ciekawe, tym samym traci sens wykradanie informacji celem kradzieży tożsamości, bo sama informacja nie wystarczy - żeby być zweryfikowanym w tym nowym paradygmacie. Oprócz samej informacji trzeba jeszcze mieć związany z tą informacją klucz prywatny poświadczony przez podmiot o wysokiej reputacji. Samo wyłudzenie od kogoś informacji nic nie daje - czyli dokładanie na odwrót niż obecnym świecie.
 
 Co więcej, DIV eliminuje problem powtarzalności procesu ustalania tożsamości nowego klienta. W tym nowym paradygmacie proces ten wykonywany jest raz, jego wynik zapisany jest na blockchainie i wszystkie pozostałe firmy mogą z tego zapisu skorzystać (bezpłatnie albo odpłatnie - ale to jest już problem monetyzacji, o czym poniżej).
 
