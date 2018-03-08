@@ -74,7 +74,7 @@ Czyli pomysł jest oceniany jako bardzo dobry, ale wykonanie jako dość niefort
 
 ---
 
-W przypadku DID, też jest ciekawa sytuacja, bo wygląda na to, że oni doszli do ściany w zakresie możliwości Ethereum:
+W przypadku projektu Decentralized Identity (DID), też jest ciekawa sytuacja, bo wygląda na to, że oni doszli do ściany w zakresie możliwości Ethereum:
 
 > We found Ethereum smart contracts unfit for computations that go beyond than the basics. While we understand that the technology is just growing up, we found that not being able to do computations (like hashing) on the Blockchain is a major drawback. The global computational power isn’t available for Dapps yet.
 
@@ -84,16 +84,19 @@ Ta deklaracja też jest intrygująca:
 
 ---
 
-W tym świetle wykonanie uproszczonej (tylko PESEL) wersji pomysłu, ma spory sens ponieważ:
+W tym świetle wykonanie uproszczonej (tylko PESEL) wersji DIV, ma spory sens ponieważ:
 
 - Działamy w cieniu firm dużo większych od nas - one już odwaliły sporo roboty za nas i dodatkowo uwiarygadniają sensowność tego całego przedsięwzięcia.
 - Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo robimy tylko PESEL), więc dokładnie wiadomo co trzeba robić (nie tracimy czasu i kasy na eksperymentowanie).
 - Mamy technologię (tj. EOS) która jest wyraźnie lepsza od tej, którą oni wybrali, i dodatkowo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego).
 - Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy.
+- Budujemy mechanizm, który będzie doskonałą alternatywą dla tradycyjnych rozwiązań w zakresie Strong Customer Athetication (SCA) w kontekście PSDA2 
 
 ---
 
-Celowo pomijam na tym etapie problem monetyzacji tego całego zagadnienia. Wychodzę tu z założenia, że pierwszym problemem, który trzeba rozwiązać, to zdobycie dużej liczby użytkowników (zarówno po stronie osób fizycznych jak i firm), a w momencie, gdy to nastąpi, dopiero będzie można myśleć o monetyzacji. To jest na pewno wykonalne, bo na tym bazuje Civic.
+Celowo pomijam na tym etapie problem monetyzacji tego całego zagadnienia. Wychodzę tu z założenia, że pierwszym problemem, który trzeba rozwiązać, to zdobycie dużej liczby użytkowników (zarówno po stronie osób fizycznych jak i firm), a w momencie, gdy to nastąpi, dopiero będzie można myśleć o monetyzacji. 
+
+Monetyzacja jest na pewno wykonalna, bo na tym bazuje Civic.
 
 ---
 
@@ -105,6 +108,6 @@ Proponowany plan działania:
 
 Tutaj akurat ICO miałoby duży sens, bo potrzebne jest maksymalnie dużo rozgłosu i dużo kapitału, który trzeba rozdać użytkownikom żeby bootstrapować tego rodzaju system. To jest machina, którą trudno uruchomić, ale jak to się uda to reszta dzieje się sama.
 
-Wtedy można zastosować strategię PayPala: rozdawać tokeny (swoje własne lub EOSa, np. równowartość kilku USD) w zamian za poddanie się procesowi ucyfrowienia swojego PESELa w naszym systemie DIV. Będzie to kosztowne ale przynajmniej pozbawione przekrętów, bo mamy pewność, że jedna osoba tylko raz może się zarejestrować.
+Wtedy można zastosować strategię PayPala: rozdawać tokeny (swoje własne lub EOSa, np. równowartość kilku USD) w zamian za poddanie się procesowi ucyfrowienia swojego PESELa w naszym systemie DIV. Będzie to kosztowne ale przynajmniej pozbawione przekrętów, bo z automatu mamy pewność, że jedna osoba tylko raz może się zarejestrować i pobrać przysługujące jej tokeny.
 
 To co niewątpliwie ułatwia sprawę w zakresie zebrania kapitału to fakt, że temat DIV dość mocno przemawia do wyobraźni, bo każdy z nas czuje jak anachroniczny jest obecny system przepytywania o nazwisko panieńskie matki albo urzędowe pieczątki na papierze.
