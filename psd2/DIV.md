@@ -9,8 +9,8 @@ Problem pojawia się online, bo tutaj zdjęcie przestaje być użyteczne.
 Tradycyjne podejścia w sytuacji online są takie:
 
 - Jesteś wypytywany o jakiś sekret (np. nazwisko panieńskie matki), co ma oczywistą wadę że tego rodzaju sekret dość łatwo się dewaluuje.
-- Dostajesz ememesa z kodem, co ma wadę że jest relatywnie kosztowne i mało bezpieczne.
-- Poprzez narzędzie typu Google Authenticator, co ma wadę polegającą na tym że sekret w postaci klucza prywatnego jest współdzielony, więc teoretycznie może być wykradziony z firmy która cię weryfikuje.
+- Dostajesz ememesa z kodem, co ma wadę że jest to relatywnie kosztowne i mało bezpieczne.
+- Poprzez narzędzie typu Google Authenticator, co ma wadę polegającą na tym, że sekret w postaci klucza prywatnego jest współdzielony, więc teoretycznie może być wykradziony z firmy która cię weryfikuje.
 
 *Decentralized identity verification* generalnie polega na tym, że informacja, która jednoznacznie identyfikuje osobę X (np jej PESEL), jest trzymana tylko przez osobę X (np. kryptograficznie zaszyfrowana w jej telefonie komórkowym), a firma F, która chce zweryfikować osobę X online, komunikuje się z jej telefonem, i ten telefon (za zgodą osoby X) wysyła podmiotowi F żądaną informację (czyli w tym przypadku PESEL).
 
@@ -35,20 +35,22 @@ Idąc tym tropem, powyższy mechanizm można też zastosować dla innych niż PE
 Więc wykorzystując ten mechanizm w jego najprostszej formie (czyli tylko PESEL) dostajemy narzędzie które:
 
 - Doskonale nadaje się jako jeden z kanałów w mocnej autoryzacji dla PSD2, co było naszym pierwotnym celem.
-- Istotnie wspomaga systemy online, w których szybka i pewna weryfikacja tożsamości jest konieczna i dodatkowo uwalnia te systemy od potrzeby przechowywania sporej części danych osobowych (bo w tym nowym paradygmacie te dane zawsze są po stronie użytkownika).
+- Istotnie wspomaga systemy online, w których szybka i niezawodna weryfikacja tożsamości jest konieczna i dodatkowo uwalnia te systemy od potrzeby przechowywania sporej części danych osobowych (bo w tym nowym paradygmacie te dane zawsze są po stronie użytkownika).
 - Otwiera możliwość migracji do wersji online rzeczy. które do tej pory były praktycznie niewykonalne w wersji online, np. wybory parlamentarne.
 
 A w wersji rozszerzonej (czyli nie tylko PESEL) mechanizm ten otwiera możliwość ostatecznej cyfryzacji wszystkiego: wszystkie dokumenty państwowe, dokumentacja medyczna, cała branża notarialna, itp.
 
 ---
 
-Dwa najważniejsze projekty które podjęły temat *decentralized identity verification* to: [Civic](https://www.civic.com/) i [DID](https://decentralized.id/). Ich whitepapery:
+Jest masa projektów blockchainowych, które podejmują rożne aspekty cyfrowej tożsamości. Warto je kiedyś wszystkie przejrzeć (zadanie dla Wojtka?) jednak na tym etapie możemy ograniczyć się do tych najważniejszych (moim zdaniem), które zajmują się dokładnie tym co nas interesuje, tj. *decentralized identity verification*:
 
-<https://tokensale.civic.com/CivicTokenSaleWhitePaper.pdf>
-
-<https://decentralized.id/docs/DID-whitepaper.pdf>
-
-<https://decentralized.id/docs/DID-tech.pdf>
+* Civic
+  * Web: https://www.civic.com/
+  * Whitepaper: https://tokensale.civic.com/CivicTokenSaleWhitePaper.pdf
+* Decentralized Identity (DID)
+  * Web: https://decentralized.id/
+  * Whitepaper (biznesowy): https://decentralized.id/docs/DID-whitepaper.pdf
+  * Whitepaper (techniczny): https://decentralized.id/docs/DID-tech.pdf
 
 ---
 
@@ -78,7 +80,7 @@ W tym świetle wykonanie uproszczonej (tylko PESEL) wersji pomysłu, ma spory se
 
 - Działamy w cieniu firm dużo większych od nas - one już odwaliły sporo roboty za nas i dodatkowo uwiarygadniają sensowność tego całego przedsięwzięcia
 - Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo robimy tylko PESEL), więc dokładnie wiadomo co trzeba rozbić (nie tracimy czasu i kasy na eksperymentowanie)
-- Mamy technologię (tj. EOS) która jest wyraźnie lepsza od tej, którą oni wybrali, i dodatkowo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne)
+- Mamy technologię (tj. EOS) która jest wyraźnie lepsza od tej, którą oni wybrali, i dodatkowo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego)
 - Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy
 
 Proponowany plan działania:
