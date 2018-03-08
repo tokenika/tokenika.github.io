@@ -34,17 +34,19 @@ Innymi słowy, ten mechanizm pozwala na weryfikację danej osoby w warunkach onl
 
 Czyli mamy mechanizm, który jest w stanie poświadczyć, że mówisz prawdę na temat siebie samego. Co ciekawe, tym samym traci sens wykradanie informacji celem kradzieży tożsamości, bo sama informacja nie wystarczy - żeby być zweryfikowanym w tym nowym paradygmacie trzeba jeszcze mieć związany z tą informacją klucz prywatny poświadczony przez podmiot o wysokiej reputacji. Samo wyłudzenie od kogoś informacji nic nie daje - czyli dokładanie na odwrót niż obecnym świecie.
 
-Co więcej, DIV eliminuje problem powtarzalności procesu ustalenia tożsamości nowego klienta. W tym nowym paradygmacie proces ten wykonywany jest raz, jego wynik zapisany jest na blockchainie i wszystkie pozostałe firmy mogą z tego zapisu skorzystać (bezpłatnie i odpłatnie - ale to jest już problem monetyzacji).
+Co więcej, DIV eliminuje problem powtarzalności procesu ustalenia tożsamości nowego klienta. W tym nowym paradygmacie proces ten wykonywany jest raz, jego wynik zapisany jest na blockchainie i wszystkie pozostałe firmy mogą z tego zapisu skorzystać (bezpłatnie albo odpłatnie - ale to jest już problem monetyzacji, o czym poniżej).
 
 Idąc tym tropem, powyższy mechanizm można też zastosować dla innych niż PESEL informacji (np. dokumenty typu prawo jazdy, polisa OC, dyplom uczelni itd), ale na razie proponowałbym w to nie wchodzić, bo wówczas mamy dodatkową komplikację - problem aktualności tych informacji. PESEL ma tę zaletę, że nigdy nie traci ważności i jednoznacznie identyfikuje każdego człowieka.
 
-Więc wykorzystując ten mechanizm w jego najprostszej formie (czyli tylko PESEL) dostajemy narzędzie które:
+Więc wykorzystując mechanizm DIV w jego najprostszej formie (czyli tylko PESEL) dostajemy narzędzie które:
 
 - Doskonale nadaje się jako jeden z kanałów w mocnej autoryzacji dla PSD2, co było naszym pierwotnym celem.
 - Istotnie wspomaga systemy online, w których szybka i niezawodna weryfikacja tożsamości jest konieczna i dodatkowo uwalnia te systemy od potrzeby przechowywania sporej części danych osobowych (bo w tym nowym paradygmacie te dane zawsze są po stronie użytkownika).
 - Otwiera możliwość migracji do wersji online rzeczy, które do tej pory były praktycznie niewykonalne w wersji online, np. wybory parlamentarne.
 
 A w wersji rozszerzonej (czyli nie tylko PESEL) mechanizm ten otwiera możliwość ostatecznej cyfryzacji wszystkiego: wszystkie dokumenty państwowe, dokumentacja medyczna, cała branża notarialna, itp.
+
+Generalnie DIV robi z informacją to co kryptowaluty robią z pieniądzem - informacja dotycząca danej osoby (w tym także informacja która ją w jednoznaczny sposób identyfikuje, np. PESEL) jest chroniona kluczem prywatnym, czyli traktowana podobnie jak kryptowaluta.
 
 ---
 
