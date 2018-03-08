@@ -49,7 +49,7 @@ Więc wykorzystując mechanizm DIV w jego najprostszej formie (czyli tylko PESEL
 
 A w wersji rozszerzonej (czyli nie tylko PESEL) mechanizm ten otwiera możliwość ostatecznej cyfryzacji wszystkiego: wszystkie dokumenty państwowe, dokumentacja medyczna, cała branża notarialna, itp.
 
-No i oczywiście tożsamość cyfrowa otwiera drogę do reputacji cyfrowej, bo czasem ważniejsze jest to jaką masz przeszłość, niż to kim dokładnie jesteś, a ten sam klucz prywatny może chronić obie te rzeczy jednocześnie.
+No i oczywiście tożsamość cyfrowa otwiera drogę do reputacji cyfrowej, bo czasem ważniejsze jest to jaką masz przeszłość, niż to kim dokładnie jesteś, a ten sam klucz prywatny może chronić i uwiarygadniać obie te informacje jednocześnie.
 
 ---
 
@@ -117,7 +117,7 @@ Proponowany plan działania:
 
 Tutaj akurat ICO miałoby duży sens, bo potrzebne jest maksymalnie dużo rozgłosu i dużo kapitału, który trzeba rozdać użytkownikom żeby bootstrapować tego rodzaju system. To jest machina, którą trudno uruchomić, ale jak to się uda to reszta dzieje się sama.
 
-Dsyponując dużym kapitałem można zastosować strategię PayPala: rozdawać tokeny (swoje własne lub EOSa, np. równowartość kilku USD) w zamian za poddanie się procesowi ucyfrowienia swojego PESELa w naszym systemie DIV. Będzie to kosztowne, ale przynajmniej pozbawione przekrętów, bo z automatu mamy pewność, że jedna osoba tylko raz może się zarejestrować i pobrać przysługujące jej tokeny.
+Dysponując dużym kapitałem można zastosować strategię PayPala: rozdawać tokeny (swoje własne lub EOSa, np. równowartość kilku USD) w zamian za poddanie się procesowi ucyfrowienia swojego PESELa w naszym systemie DIV. Będzie to kosztowne, ale przynajmniej pozbawione przekrętów, bo z automatu mamy pewność, że jedna osoba tylko raz może się zarejestrować i pobrać przysługujące jej tokeny.
 
 To co niewątpliwie ułatwia sprawę w zakresie zebrania kapitału to fakt, że temat DIV dość mocno przemawia do wyobraźni, bo każdy z nas czuje jak anachroniczny jest obecny system przepytywania o nazwisko panieńskie matki albo urzędowe pieczątki na papierze.
 
