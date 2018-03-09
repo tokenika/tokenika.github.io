@@ -122,3 +122,15 @@ Dysponując dużym kapitałem można zastosować strategię PayPala: rozdawać t
 To co niewątpliwie ułatwia sprawę w zakresie zebrania kapitału to fakt, że temat DIV dość mocno przemawia do wyobraźni, bo każdy z nas czuje jak anachroniczny jest obecny system przepytywania o nazwisko panieńskie matki albo urzędowe pieczątki na papierze.
 
 Mi się wydaje, że DIV raczej na pewno będzie w przyszłości standardem - jego zalety są niezaprzeczalne. Pytanie jest tylko kto to zrobi i kiedy.
+
+---
+
+Jeszcze mi przyszła taka rzecz do głowy w zakresie bootstrapowania systemu DIV w Polsce (i Europie).
+
+Każdy bank ma zweryfikowany numer PESEL każdego swojego klienta. Załóżmy, że jakiś bank uznałby, że nasz system nadaje się jako jego jeden z dwóch alternatywnych kanałów mocnej autoryzacji w PSD2 i zaleca swoim klientom użycie naszej aplikacji mobilnej do tego celu.
+
+Co się wtedy dzieje?
+
+Wtedy z automatu taki bank wprowadza nam do systemu tysiące swoich klientów i on sam staje się notariuszem, który poświadcza autentyczność PESELi swoich klientów na blockchainie EOSa.
+
+Więc oddajemy takiemu bankowi przysługę (dajemy nu za darmo solidny system autoryzacji w PSD2), a ten bank wypełnia nam naszą blockchainową bazę danych i tym samym daje nam możliwość weryfikacji tożsamości wszystkich swoich klientów (dla dowolnych celów, np ICO).
