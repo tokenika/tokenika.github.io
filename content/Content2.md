@@ -44,7 +44,9 @@ As of now, DPOS is probably the most quickly adopted consensus mechanism in the 
 
 It all started with [Bitcoin](https://bitcoin.org), which is about simple payments. Then came [Ethereum](https://ethereum.org/), which is about smart-contracts, i.e. automating those simple payments and making them conditional. Now we have [EOS](https://eos.io/), which is about turning those smart-contracts into full-blown [decentralized applications](https://www.coindesk.com/information/what-is-a-decentralized-application-dapp/).
 
-In other words, EOS is about building real-life businesses on the blockchain. It takes the notion of smart-contracts to the next level, by providing an operating system on which they can run. In a way, it's similar to what Android or IOS did for the smartphone.
+In other words, EOS is about building real-life businesses on the blockchain. It takes the notion of smart-contracts to the next level, by providing an operating system on which they can run.
+
+In a way, it's similar to what Android or IOS did for the smartphone.
 
 # What we do?
 
