@@ -1,49 +1,64 @@
-# DIV - Decentralized Identity Verification (Zdecentralizowana Weryfikacja Tożsamości)
+# Autoryzacja w PSD2 poprzez Decentralized Identity Verification 
 
 ## Wprowadzenie
 
-Najogólniej mówiąc, w problemie weryfikacji tożsamości chodzi o to, w jaki sposób w warunkach online uzyskać pewność, że osoba (klient) podająca się jako K rzeczywiście jest tą osobą K.
+#### Problem weryfikacji tożsamości online
 
-Istotne jest tu to, że jest to sytuacja online, czyli NIE w realu. W sytuacji kontaktu w realu dokument ze zdjęciem wciąż można uznać za wystarczająco dobry sposób weryfikacji tożsamości, mimo swoich oczywistych wad: jest kosztowny w produkcji i fałszowalny - wszystko wisi na założeniu, że umiesz rozpoznać fałszywy dokument, co często nie jest prawdą (np. kto z nas wie jak powinna wyglądać odznaka policyjna?).
+W problemie internetowej weryfikacji tożsamości chodzi o to, w jaki sposób w warunkach online uzyskać pewność, że osoba (klient) podająca się jako K rzeczywiście jest tą osobą K.
 
-Znacznie większy problem pojawia się online, bo tutaj zdjęcie, które jest integralną częścią dokumentu tożsamości, przestaje być użyteczne, bo nie ma go z czym porównać.
+Istotne jest tu to, że jest to sytuacja online, czyli NIE w realu. W sytuacji kontaktu w realu dokument ze zdjęciem wciąż można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w sytuacji gdy nie wiemy jak dokładnie powienien wyglądać oryginalny dokument, np. legitymacja policjanta).
 
-Tradycyjne podejścia w sytuacji online są mniej więcej takie:
+Z oczywistych powodów w warunkach online zdjęcie, które jest integralną częścią dokumentu tożsamości, przestaje być użyteczne, bo nie ma go z czym porównać. 
 
-- Jesteś wypytywany o jakiś sekret (np. nazwisko panieńskie matki). Wada: tego rodzaju sekret dość łatwo się dewaluuje.
-- Dostajesz esemesa z kodem. Wada: jest to relatywnie kosztowne i mało bezpieczne.
-- Werifikujesz się poprzez narzędzie typu Google Authenticator. Wada: sekret w postaci klucza prywatnego jest współdzielony, więc teoretycznie może być wykradziony z firmy która cię weryfikuje.
+#### Dwie fazy werfikacji tożsamości online
 
-Poza względami bezpieczeństwa, główny problem z tego rodzaju podejściem jest taki, że to się nie skaluje, bo przy pozyskaniu nowego klienta każda firma musi samodzielnie dokonać ustalenia jego tożsamości i zainicjować proces werfikacji tej tożsamości w przyszłości. Czyli ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
+1. Pierwsza faza to ustalenie tożsamości nowego klienta, czyli spełnenie wymogów KYC. 
 
----
+   Wszystkie obecne procedury KYC mają jedną istotną wadę: się nie skalują. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
 
-DIV (Decentralized Identity Verification) generalnie polega na tym, że informacja, która jednoznacznie identyfikuje osobę (klienta) K (np. jej PESEL), jest trzymana tylko przez tę osobę K (np. kryptograficznie zaszyfrowana w jej telefonie komórkowym), a firma F, która chce zweryfikować osobę K online, komunikuje się z jej telefonem, i ten telefon (za zgodą osoby K) wysyła podmiotowi F żądaną informację służącą do identyfikacji (czyli w tym przypadku PESEL).
+2. Druga faza to zweryfikowanie tożsamości istniejącego klienta.
 
-Oczywiście gdybyśmy poprzestali tylko na tym co powyżej, to firma F nigdy nie mogłaby być pewna, że osoba, która próbuje się zidentyfikować jako K, rzeczywiście jest osobą K.
+   Obecne podejścia do werfikacji tożsamości on-line w drugiej fazie są następujące:
 
-I tutaj pojawia się idealne pole do działania dla blockchaina.
+    * Jesteś wypytywany o jakiś wcześniej ustalony przez obie strony sekret (np. nazwisko panieńskie matki).
+    * Dostajesz esemesa z kodem.
+    * Werifikujesz się poprzez narzędzie typu Google Authenticator.
 
-Załóżmy, że osoba K chce skorzystać z jakiejś usługi oferowanej przez firmę F i w tym celu musi podać i uwiarygodnić firmie F swoją tożsamość.
+#### Co chcemy osiągnąć?
 
-Załóżmy też że:
+Idealnie by było znaleźć takie rozwiązanie które:
 
-- PESEL osoby K został w przeszłości zweryfikowany przez podmiot o wysokiej reputacji (któremu firma F ufa).
-- Hash tego PESELa wraz z kluczem publicznym osoby K i podpisem powyższego podmiotu o wyskiej reputacji został umieszczony na blockchainie. To jest ważne: ten PESEL na blockchainie jest zahashowany, więc nie sposób odgadnąć jaki on jest.
+1. W fazie pierwszej umożliwi skalowanie precedury KYC (czyli eliminację powatarzania tego procesu przez kolejne firmy).
+2. W fazie drugiej będzie podobnie bezpieczne (i wygodne dla użytkownika) jak istniejące rozwiązania, ale będzie się też skalować na zastosowania w innych niż werfikacja tożsamości obszarach.
 
-Wówczas poprzez spojrzenie na zapis w blockchainie firma F jest w stanie stwierdzić, że osoba która przesłała jej PESEL osoby K, jednocześnie musi być osobą K. Wynika to z faktu, że tylko osoba K ma dostęp do klucza prywatnego, który pasuje do klucza publicznego w zapisie na blockchainie potwierdzającym wcześniej dokonaną weryfikację tego PESELa.
+## Zdecentralizowana weryfikacja tożsamości
 
-Innymi słowy, ten mechanizm pozwala na weryfikację danej osoby w warunkach online w analogiczny sposób jak czyni to dokument ze zdjęciem w realu. A nawet lepiej, bo dokument ze zdjęciem jest fałszowalny, a tego rodzaju cyfrowa weryfikacja jest chroniona kryptograficznie.
+#### Koncepcja
 
-Czyli mamy mechanizm, który jest w stanie poświadczyć, że mówisz prawdę na temat siebie samego. Co ciekawe, tym samym traci sens wykradanie informacji celem kradzieży tożsamości, bo sama informacja nie wystarczy. Żeby być zweryfikowanym w tym nowym paradygmacie, oprócz samej informacji trzeba jeszcze mieć związany z tą informacją klucz prywatny poświadczony przez podmiot o wysokiej reputacji. Samo wyłudzenie od kogoś informacji nic nie daje.
+Zdecentralizowana werfikacja tożsamości (DIV, Decentralized Identity Verification) rozwiązuje powyższy problem i tym samym radykalnie obniża koszty KYC, bo eliminuje problem fazy pierwszej: powtarzalności procesu ustalania tożsamości każdego nowego klienta przez każdą firmę oddzielnie. 
 
-Co więcej, DIV radykalnie obniża koszty, bo eliminuje problem powtarzalności procesu ustalania tożsamości nowego klienta. W tym nowym paradygmacie proces ten wykonywany jest raz, jego wynik zapisany jest na blockchainie i wszystkie pozostałe firmy mogą z tego zapisu skorzystać (bezpłatnie albo odpłatnie - ale to jest już problem monetyzacji, o czym poniżej).
+Najogólniej polega to na tym, że jeden podmiot przeprowadza werfikację tożsamości danej osoby (klienta) K, wynik tej werfikacji umieszcza na blockchainie, a kolejne firmy z tego zapisu korzystają (bezpłatnie albo odpłatnie), unikając tym samym powtarzania tego procesu.
 
----
+Innymi słowy, mechanizm DIV pozwala na weryfikację danej osoby w warunkach online w analogiczny sposób, jak czyni to w realu porównanie wyglądu twarzy ze zdjęciem w tradycyjnym dokumencie. Zamiast porównania twarz vs. zdjęcie mamy porównanie deklarowanej tożsamości z podpisanym kryptograficznie zapisem na blockchainie.
 
-Patrząc od strony samej koncepcji można powiedzieć, że DIV robi z informacją to co kryptowaluty robią z pieniądzem - informacja dotycząca danej osoby (w tym także informacja która ją w jednoznaczny sposób identyfikuje, np. PESEL) jest chroniona kluczem prywatnym, czyli traktowana podobnie jak kryptowaluta.
+Czyli mamy mechanizm, który jest w stanie poświadczyć, że mówisz prawdę na temat siebie samego. Co ciekawe, tym samym traci sens wykradanie informacji celem kradzieży tożsamości, bo sama informacja do niczego się nie przyda. Żeby być zweryfikowanym w tym nowym paradygmacie, oprócz samej informacji trzeba jeszcze mieć związany z tą informacją klucz prywatny poświadczony przez podmiot o wysokiej reputacji.
 
-Oczywiście trzeba pamiętać, że w paradygmacie DIV informacja jest zawsze po stronie użytkownika - on jest jej strażnikiem. Więc wymaga to dbałości o backup klucza prywatnego na jakimś trwałym nośniku. Ale nie jest to aż tak krytyczne jak w przypadku pieniądza - tutaj zgubienie/kradzież klucza oznacza podobne zamieszanie co zgubienie tradcyjnych dokumentów (tj. da się to odtworzyć i też zablokować możliwość posługiwania się skradzionym kluczem).
+Patrząc od strony samej koncepcji można powiedzieć, że w paradygmacie DIV informacja dotycząca tożsamości staje się obiektem chronionym kluczem prywatnym, podobnie jak kryptowaluta w kryptowalutowym portfelu.
+
+#### Czy rzeczywiście potrzebny jest do tego blockchain?
+
+Żeby uzyskac efekt opisany powyżej, zamiast zapisu na blockchainie równie dobrze moglibyśmy posłużyć się koncepcją certifikatu, stosowaną w procedurze podpisu elektronicznego. Taki certfikat jest wydawany przez zaufany podmiot, następnie zostaje przekazy osobie (lub firmie) której dotyczy, i ta osoba posługuje sie tym certfikatem żeby udowodnić autentyczność swoich oświadczeń.
+
+Użycie zapisu na blockchianie zamiast certyfikatu (co de facto sprowadza się do umieszczenia tego certyfikatu na blockchainie) daje subtelną, lecz istotną różnicę: pozwala wprowadzić model ekonomiczny, który zdejmuje z użytkownika konieczność poniesienia kosztów uzyskania certyfikatu. Naszym zdaniem jest to warunek konieczny, żeby DIV miał szansę na masową adopcję.
+
+## Adopcja poprzez PSD2
+
+Nasza intencją jest zbudowanie procesu autoryzacji transakcji bankowych w PSD2 w paradygmacie DIV, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji PSD2, może służyć wielu innym celom, np: 
+
+* skalowanie procesu KYC
+* cyfryzacja dokumentów,
+* cyfryzacja aktów notarialnych,
+* zintegrowany portfel zarządzający tożsamością (Identity Wallet)
 
 ## Mocna autoryzacja w PSD2
 
@@ -67,7 +82,6 @@ Autoryzacja sprowadza się zatem do potwierdzenia, że klient K dysponuje klucze
 
 1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych.
 2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej opcji.
-3. To podejście otwiera drogę do istotnego rozbudowania funkcjonalności systemu w zakresie:(a) internetowej weryfikacji tożsamości, (b) cyfryzacji dokumentów i (c) cyfryzacji aktów notarialnych. Ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji PSD2, może służyć wielu innym celom.
 
 #### Strategia
 
@@ -83,7 +97,7 @@ Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo
 
 Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego. Na pewno warto będzie tu wykorzystać możliwości EOSa w z tym zakresie.
 
-## Rozszerzenie 1: Wpisy na blockchainie służące weryfikacji tożsamości
+## Rozszerzenie 1: Wpisy na blockchainie służące skalowaniu KYC
 
 #### Proces
 
@@ -125,7 +139,7 @@ Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedur
 
 #### Legislacja
 
-Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest równie wiarygodne jak konwencjonalna weryfikacja KYC.
+Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
 
 ## Rozszerzenie 2: Wpisy na blockchainie potwierdzające stan faktyczny
 
@@ -186,23 +200,31 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.*
 
 ## Model ekonomiczny
 
-Zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, notariusz itp). Tak więc wszystkie powyższe przypadki (tj. weryfikacja tożsamości, cyfryzacja dokumentów i cyfryzacja notarialna) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i dostarczany przez niego innym podmiotom, jako dowód, że mówi on prawdę. 
+#### Dlaczego certyfikat musi być na blockchainie?
 
-Więc po jest nam blockchain? Bo bez blockchaina mielibyśmy sytuację analogiczną do mechanizmu certyfikowanego podpisu cyfrowego, z jego główną wadą w postaci konieczności poniesienia kosztów takiego certyfikatu przez klienta K, co jest istotną barierą w masowej adopcji podpisu cyfrowego.
+Zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, notariusz itp). Tak więc wszystkie powyższe przypadki (tj. skalowanie KYC, cyfryzacja dokumentów i cyfryzacja notarialna) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i dostarczany przez niego innym podmiotom, jako dowód autentyczności składanych deklaracji. 
 
-Zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K, którego dotyczy proces KYC, na firmę F, która jest beneficjentem istotnej redukcji procesu KYC. Dzięki użyciu blockchaina odwraca się model ekonomiczny podpisu cyfrowego: zapisany na blockchainie certyfikat przynosi dochody instytucji, która go wystawiła, a koszty ponosi firma F, która z niego korzysta, a nie klient K, jak to ma miejsce w tradycyjnym mechanizmie podpisu cyfrowego. Oczywiście przy założeniu, że zapis na blockchainie będzie obudowany odpowiednim smart-kontraktem.
+Więc po jest nam blockchain? Bez blockchaina mielibyśmy sytuację analogiczną do mechanizmu certyfikowanego podpisu cyfrowego, z jego główną wadą w postaci konieczności poniesienia kosztów takiego certyfikatu przez klienta K, co jest istotną barierą w masowej adopcji podpisu cyfrowego.
 
-Taki smart-kontrakt wymaga jeszcze przemyślenia. Jego istotą byłoby pobieranie opłaty od firmy F (albo klienta K) na rzecz banku B (albo innej instytucji, która dokonała weryfikacji klienta K) za każdym razem gdy firma F korzysta z tego zapisu.
+Zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K, którego dotyczy proces KYC, na firmę F, która jest beneficjentem istotnej redukcji procesu KYC. Dzięki użyciu blockchaina odwraca się model ekonomiczny podpisu cyfrowego: zapisany na blockchainie certyfikat przynosi dochody instytucji, która go wystawiła, a koszty ponosi firma F, która z niego korzysta, a nie klient K, jak to ma miejsce w tradycyjnym mechanizmie podpisu cyfrowego.
 
-Głównym celem tego rodzaju opłat jest dobre zmotywowanie uczestników tego systemu, tak żeby korzyści finasowe miał ten podmiot, który popełnia wysiłek, a koszty ponosił ten podmiot, który ma korzyści. Dodanie do tego minimalnej marży dla nas (jako twórców tego smart-kontraktu) będzie relatywnie proste.
+#### Rola smart-kontraktu
+
+Oczywiście powyższy przeływ opłat możliwy jest przy założeniu, że zapis na blockchainie będzie obudowany odpowiednim smart-kontraktem, który takie opłaty będzie pobierał.
+
+Taki smart-kontrakt wymaga jeszcze przemyślenia. Jego istotą byłoby pobieranie opłaty od firmy F (albo klienta K) na rzecz banku B (albo innej instytucji, która dokonała weryfikacji klienta K) za każdym razem, gdy firma F korzysta z tego udogodnienia.
+
+Głównym celem tego rodzaju opłat jest dobre zmotywowanie uczestników tego systemu, tak żeby korzyści finasowe miał ten podmiot, który popełnia wysiłek, a koszty ponosił ten podmiot, który ma korzyści.
+
+Dodanie do powyższego smart-kontrakytu minimalnej marży dla nas (jako twórców tego smart-kontraktu) wydaje się relatywnie proste. Ale może to nie być konieczne, bo alterntywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa. oczywiście przy założeniu, że uzyskamy status *pro publico bono*.
 
 ## Własny token?
 
-Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami systemu. Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego tokenu. Wadą jest fakt, źe własny token oznacza, aby móc użyć systemu trzeba najpierw w niego zainwestować, co jest istotną barierą wejścia. Tym tropem idzie Civic.
+Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami systemu - tym tropem idzie Civic. Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast wadą jest fakt, źe własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić tokeny, co jest istotną barierą w procesie adopcji. 
 
-Moim zdaniem lepiej jest uniknąć tego rodzaju rozwiązania i opłaty realizować w jakieś niezależnej stabilnej walucie, która zapewne powstanie na EOSie.
+Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest uniknąć wprowadzania własnego tokenu i opłaty realizować w tokenach EOSa albo jakieś niezależnej stabilnej walucie, która zapewne powstanie na EOSie.
 
-## Kontekst
+## Konkurencja
 
 Jest [masa projektów blockchainowych](https://github.com/peacekeeper/blockchain-identity), które podejmują rożne aspekty cyfrowej tożsamości. Najważniejsze to te dwa:
 
@@ -232,7 +254,7 @@ Ta deklaracja też jest intrygująca:
 
 W tym świetle wykonanie uproszczonej (tylko PESEL) wersji DIV, ma spory sens ponieważ:
 
-- Działamy w cieniu firm dużo większych od nas (np. Civic, Decentralized Identity) - one już odwaliły sporo roboty za nas i dodatkowo uwiarygadniają sensowność tego całego przedsięwzięcia.
+- Działamy w cieniu firm dużo większych od nas (np. Civic, Decentralized Identity) - one już wykonały sporo roboty za nas i dodatkowo uwiarygadniają sensowność tego całego przedsięwzięcia.
 - Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo robimy tylko PESEL), więc dokładnie wiadomo co trzeba robić (nie tracimy czasu i kasy na eksperymentowanie).
 - Mamy technologię (tj. EOS) która jest wyraźnie lepsza od tej, którą oni wybrali, i dodatkowo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego).
 - Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy. Możemy też podpatrzyć z kim Civic zawarł aliense biznesowe w USA i zrobić podobne układy lokalnie.

@@ -1,3 +1,32 @@
+Idąc tym tropem, powyższy mechanizm można też zastosować dla innych niż PESEL informacji (np. dokumenty typu prawo jazdy, polisa OC, dyplom uczelni itd), ale na razie proponowałbym w to nie wchodzić, bo wówczas mamy dodatkową komplikację - problem aktualności tych informacji. PESEL ma tę zaletę, że nigdy nie traci ważności i jednoznacznie identyfikuje każdego człowieka.
+
+Więc wykorzystując mechanizm DIV w jego najprostszej formie (czyli tylko PESEL) dostajemy narzędzie które:
+
+- Doskonale nadaje się jako jeden z kanałów w mocnej autoryzacji dla PSD2, co było naszym pierwotnym celem.
+- Istotnie wspomaga systemy online, w których szybka i niezawodna weryfikacja tożsamości jest konieczna i dodatkowo uwalnia te systemy od potrzeby przechowywania sporej części danych osobowych (bo w tym nowym paradygmacie te dane zawsze są po stronie użytkownika).
+- Otwiera możliwość migracji do wersji online rzeczy, które do tej pory były praktycznie niewykonalne w wersji online, np. wybory parlamentarne.
+
+A w wersji rozszerzonej (czyli nie tylko PESEL) mechanizm ten otwiera możliwość ostatecznej cyfryzacji wszystkiego: wszystkie dokumenty państwowe, dokumentacja medyczna, cała branża notarialna, itp.
+
+No i oczywiście tożsamość cyfrowa otwiera drogę do reputacji cyfrowej, bo czasem ważniejsze jest to jaką masz przeszłość, niż to kim dokładnie jesteś, a ten sam klucz prywatny może chronić i uwiarygadniać obie te informacje jednocześnie.
+
+---
+
+Proponowany plan działania:
+
+- Zrobić MVP (łącznie z aplikacją mobilną).
+- Zebrać duży kapitał i błogosławieństwo aparatu państwowego.
+
+Tutaj akurat ICO miałoby duży sens, bo potrzebne jest maksymalnie dużo rozgłosu i dużo kapitału, który trzeba rozdać użytkownikom żeby bootstrapować tego rodzaju system. To jest machina, którą trudno uruchomić, ale jak to się uda to reszta dzieje się sama.
+
+Dysponując dużym kapitałem można zastosować strategię PayPala: rozdawać tokeny (swoje własne lub EOSa, np. równowartość kilku USD) w zamian za poddanie się procesowi ucyfrowienia swojego PESELa w naszym systemie DIV. Będzie to kosztowne, ale przynajmniej pozbawione przekrętów, bo z automatu mamy pewność, że jedna osoba tylko raz może się zarejestrować i pobrać przysługujące jej tokeny.
+
+To co niewątpliwie ułatwia sprawę w zakresie zebrania kapitału to fakt, że temat DIV dość mocno przemawia do wyobraźni, bo każdy z nas czuje jak anachroniczny jest obecny system przepytywania o nazwisko panieńskie matki albo urzędowe pieczątki na papierze.
+
+Mi się wydaje, że DIV raczej na pewno będzie w przyszłości standardem - jego zalety są niezaprzeczalne. Pytanie jest tylko kto to zrobi i kiedy.
+
+
+
 ## Mocna autoryzacja w PSD2
 
 #### Konfiguracja procesu
