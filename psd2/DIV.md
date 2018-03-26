@@ -55,12 +55,12 @@ Użycie zapisu na blockchianie zamiast certyfikatu (co de facto sprowadza się d
 
 Naszą intencją jest zbudowanie procesu autoryzacji transakcji bankowych w PSD2 w paradygmacie DIV, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji PSD2, może służyć wielu innym celom, np: 
 
-* skalowanie procesu KYC
+* skalowanie procesu KYC,
 * cyfryzacja dokumentów,
 * cyfryzacja aktów notarialnych,
 * zintegrowany portfel zarządzający tożsamością (tzw. *Identity Wallet*)
 
-Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da ludziom istotny powód żeby posiadali w swoim telefonie swój klucz prywatny.
+Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da ludziom istotny powód żeby posiadali w swoim telefonie swój klucz prywatny, sciśle związany z ich tożsamością (podobnie jak PESEL, tylko że klucz prywatny jest z założenia niejawny).
 
 Innymi słowy, chcemy wykorzystać dogodną sytuację stworzoną przez PSD2 do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, używany przez wiele osób z racji PSD2, możemy budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
 
