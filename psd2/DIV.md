@@ -1,4 +1,4 @@
-# Autoryzacja w PSD2 poprzez zdecentralizowaną werfikację tożsamości 
+# Autoryzacja w PSD2 poprzez zdecentralizowaną weryfikację tożsamości 
 
 ## Wprowadzenie
 
@@ -16,9 +16,9 @@ Z oczywistych powodów w warunkach online zdjęcie, które jest integralną czę
 
    Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
 
-2. Druga faza to zweryfikowanie tożsamości istniejącego klienta.
+2. Druga faza to zweryfikowanie tożsamości istniejącego klienta w momencie gdy chce on skorzystać z usług danej firmy.
 
-   Obecne podejścia do werfikacji tożsamości on-line w drugiej fazie są następujące:
+   Obecne podejścia do werfikacji tożsamości online w drugiej fazie są następujące:
 
     * Jesteś wypytywany o jakiś wcześniej ustalony przez obie strony sekret (np. nazwisko panieńskie matki).
     * Dostajesz esemesa z kodem.
