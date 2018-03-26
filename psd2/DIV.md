@@ -51,7 +51,7 @@ Patrząc od strony samej koncepcji można powiedzieć, że w paradygmacie DIV in
 
 Użycie zapisu na blockchianie zamiast certyfikatu (co de facto sprowadza się do umieszczenia tego certyfikatu na blockchainie) daje subtelną, lecz istotną różnicę: pozwala wprowadzić model ekonomiczny, który zdejmuje z użytkownika konieczność poniesienia kosztów uzyskania certyfikatu. Naszym zdaniem jest to warunek konieczny, żeby DIV miał szansę na masową adopcję.
 
-## Adopcja poprzez PSD2
+## Adopcja klucza prywatnego poprzez PSD2
 
 Naszą intencją jest zbudowanie procesu autoryzacji transakcji bankowych w PSD2 w paradygmacie DIV, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji PSD2, może służyć wielu innym celom, np: 
 
@@ -59,6 +59,10 @@ Naszą intencją jest zbudowanie procesu autoryzacji transakcji bankowych w PSD2
 * cyfryzacja dokumentów,
 * cyfryzacja aktów notarialnych,
 * zintegrowany portfel zarządzający tożsamością (tzw. *Identity Wallet*)
+
+Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da ludziom istotny powód żeby posiadali w swoim telefonie swój klucz prywatny.
+
+Innymi słowy, chcemy wykorzystać dogodną sytuację stworzoną przez PSD2 do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, używany przez wiele osób z racji PSD2, możemy budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
 
 ## Mocna autoryzacja w PSD2
 
@@ -218,7 +222,7 @@ Głównym celem tego rodzaju opłat jest dobre zmotywowanie uczestników tego sy
 
 Dodanie do powyższego smart-kontrakytu minimalnej marży dla nas (jako twórców tego smart-kontraktu) wydaje się relatywnie proste. Ale może to nie być konieczne, bo alterntywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa, oczywiście przy założeniu, że uzyskamy nasz system będzie postrzegany jako *pro publico bono*.
 
-## Własny token?
+#### Własny token?
 
 Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami systemu (tym tropem idzie Civic i inne podobne systemy). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast wadą jest to, źe własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
 
