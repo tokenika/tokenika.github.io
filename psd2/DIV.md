@@ -1,4 +1,4 @@
-# Autoryzacja w PSD2 poprzez Decentralized Identity Verification 
+# Autoryzacja w PSD2 poprzez zdecentralizowaną werfikację tożsamości 
 
 ## Wprowadzenie
 
@@ -6,7 +6,7 @@
 
 W problemie internetowej weryfikacji tożsamości chodzi o to, w jaki sposób w warunkach online uzyskać pewność, że osoba (klient) podająca się jako K rzeczywiście jest tą osobą K.
 
-Istotne jest tu to, że jest to sytuacja online, czyli NIE w realu. W sytuacji kontaktu w realu dokument ze zdjęciem wciąż można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w sytuacji gdy nie wiemy jak dokładnie powienien wyglądać oryginalny dokument, np. legitymacja policjanta).
+Istotne jest tu to, że jest to sytuacja online, czyli NIE w realu. W sytuacji kontaktu w realu dokument ze zdjęciem wciąż można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w sytuacji, gdy nie wiemy jak dokładnie powienien wyglądać oryginalny dokument, np. legitymacja policjanta).
 
 Z oczywistych powodów w warunkach online zdjęcie, które jest integralną częścią dokumentu tożsamości, przestaje być użyteczne, bo nie ma go z czym porównać. 
 
@@ -14,7 +14,7 @@ Z oczywistych powodów w warunkach online zdjęcie, które jest integralną czę
 
 1. Pierwsza faza to ustalenie tożsamości nowego klienta, czyli spełnenie wymogów KYC. 
 
-   Wszystkie obecne procedury KYC mają jedną istotną wadę: się nie skalują. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
+   Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
 
 2. Druga faza to zweryfikowanie tożsamości istniejącego klienta.
 
@@ -28,8 +28,8 @@ Z oczywistych powodów w warunkach online zdjęcie, które jest integralną czę
 
 Idealnie by było znaleźć takie rozwiązanie które:
 
-1. W fazie pierwszej umożliwi skalowanie precedury KYC (czyli eliminację powatarzania tego procesu przez kolejne firmy).
-2. W fazie drugiej będzie podobnie bezpieczne (i wygodne dla użytkownika) jak istniejące rozwiązania, ale będzie się też skalować na zastosowania w innych niż werfikacja tożsamości obszarach.
+1. W fazie pierwszej umożliwi skalowanie precedury KYC (czyli uzyskać eliminację powtarzania tego procesu przez kolejne firmy).
+2. W fazie drugiej będzie podobnie bezpieczne (i wygodne dla użytkownika) jak istniejące rozwiązania, ale będzie się też skalować na zastosowania w innych (niż werfikacja tożsamości) obszarach.
 
 ## Zdecentralizowana weryfikacja tożsamości
 
@@ -53,19 +53,19 @@ Użycie zapisu na blockchianie zamiast certyfikatu (co de facto sprowadza się d
 
 ## Adopcja poprzez PSD2
 
-Nasza intencją jest zbudowanie procesu autoryzacji transakcji bankowych w PSD2 w paradygmacie DIV, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji PSD2, może służyć wielu innym celom, np: 
+Naszą intencją jest zbudowanie procesu autoryzacji transakcji bankowych w PSD2 w paradygmacie DIV, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji PSD2, może służyć wielu innym celom, np: 
 
 * skalowanie procesu KYC
 * cyfryzacja dokumentów,
 * cyfryzacja aktów notarialnych,
-* zintegrowany portfel zarządzający tożsamością (Identity Wallet)
+* zintegrowany portfel zarządzający tożsamością (tzw. *Identity Wallet*)
 
 ## Mocna autoryzacja w PSD2
 
 #### Konfiguracja procesu
 
 1. Poprzez aplikację webową banku B klient K instaluje na swoim telefonie aplikację mobilną, która generuje unikalną parę kluczy kryptograficznych: klucz prywatny X i klucz publiczny Y. 
-2. Klucz prywatny X jest trzymany w telefonie i nigdy nikomu poza klientem K nie jest ujawniany (klucz prywatny jest chroniony PIN-em lub biometrycznie - być może można będzie wykorzystać właściwości biometryczne EOSa).
+2. Klucz prywatny X jest trzymany w telefonie i nigdy nikomu poza klientem K nie jest ujawniany (klucz prywatny jest chroniony PIN-em lub biometrycznie - być może da się sprytnie wykorzystać właściwości biometryczne EOSa).
 3. Aplikacja przekazuje bankowi B klucz publiczny Y klienta K.
 
 W wyniku tego procesu bank B przypisuje tożsamość klienta K do jego klucza publicznego Y (podobnie jak jego numer numer telefonu, PESEL, adres zamieszkania i inne dane klienta K, którymi bank B dysponuje).
@@ -89,13 +89,13 @@ Na pewno potrzebne będzie partnerstwo z jakąś większą instytucją finansow�
 
 Co się wtedy dzieje?
 
-Wtedy z automatu taki bank wprowadza nam do systemu tysiące swoich klientów i on sam staje się notariuszem, który poświadcza autentyczność PESELi swoich klientów na blockchainie EOSa.
+Wtedy z automatu taki bank wprowadza nam do systemu tysiące swoich klientów i on sam staje się notariuszem, który poświadcza autentyczność numerów PESEL swoich klientów na blockchainie EOSa.
 
 Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo, a w zmian zasila nasz system dużą liczbą użytkowników.
 
 #### Do przemyślenia
 
-Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego. Na pewno warto będzie tu wykorzystać możliwości EOSa w z tym zakresie.
+Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego. Na pewno warto będzie tu wykorzystać spektakularne (jak na blockchain) możliwości EOSa w z tym zakresie.
 
 ## Rozszerzenie 1: Wpisy na blockchainie służące skalowaniu KYC
 
@@ -114,7 +114,7 @@ Każdy wpis:
 
 Te same informacje (bez hashowania) zostają umieszczone w aplikacji mobilnej klienta K.
 
-W jaki sposób ten blockchainowy wpis może być użyty przez inne firmy do weryfikacji tożsamości swoich klientów w warunkach on-line?
+W jaki sposób ten blockchainowy wpis może być użyty przez inne firmy do weryfikacji tożsamości swoich nowych klientów (czyli KYC) w warunkach online?
 
 Załóżmy, że firma F:
 
@@ -127,7 +127,7 @@ Wtedy proces KYC może wyglądać następująco:
 2. Klient K w aplikacji mobilnej potwierdza chęć udzielenia firmie F odpowiedzi na te pytania.
 3. Aplikacja mobilna klienta K wysyła firmie F jego klucz publiczny Y oraz odpowiedzi na pytania dotyczące jego tożsamości, wraz z wcześniej otrzymaną liczbą losową L, wszystko zaszyfrowane kluczem prywatnym X.
 4. Firma F weryfikuje prawdziwość otrzymanych informacji poprzez:
-   - odszyfrowanie tych informacji kluczem publicznym Y
+   - odszyfrowanie tych informacji kluczem publicznym Y,
    - upewnienie się że liczba losowa L zgadza się z tą pierwotnie wysłaną klientowi K,
    - zahashowanie otrzymanych odpowiedzi i porównanie wyniku tego hashowania z wpisami na blockchainie dotyczącymi klucza publicznego Y.
 
@@ -135,7 +135,7 @@ W ten sposób firma F ma pewność, że klient K istotnie ma tożsamość zgodn�
 
 #### Korzyści
 
-Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedury KYC, bo korzysta z wyników weryfikacji tożsamości klienta K przeprowadzonej wcześniej przez zaufany bank B.
+Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedury KYC, bo korzysta z wyników procedury KYC przeprowadzonej wcześniej przez zaufany bank B.
 
 #### Legislacja
 
@@ -186,17 +186,17 @@ Podobnie jak w wersji weryfikującej tożsamość każdy wpis:
 
 Te same informacje (bez hashowania) zostają umieszczone w aplikacji mobilnej klienta K.
 
-Rola notariusza N wygląda następująco: weryfikuje on tożsamość swoich klientów w podobny sposób, jak firma F przeprowadza KYC, a następnie podpisuje swoim certyfikowanym podpisem elektronicznym i umieszcza na blockchainie (w formie zahashowanej) oświadczenia woli tych klientów, poświadczając w ten sposób ich prawdziwość.
+Rola notariusza N wygląda następująco: weryfikuje on tożsamość swoich klientów w podobny sposób, jak firma F przeprowadza KYC, a następnie podpisuje swoim certyfikowanym podpisem elektronicznym i umieszcza na blockchainie (w formie zahashowanej) oświadczenia woli swoich klientów, poświadczając w ten sposób ich prawdziwość.
 
 Użycie tego systemu przez podmioty trzecie jest analogiczne do wyżej opisanego przypadku weryfikacji KYC, czyli firma F otrzymuje informacje od klienta K, hashuje je, a następnie weryfikuje ich prawdziwość poprzez porównanie z hashem dostępnym na blockchainie.
 
 #### Korzyści
 
-Notariusz N może przyjąć oświadczenia woli on-line, tj. bez organizacji fizycznego spotkania ze swoimi klientami.
+Notariusz N może przyjąć oświadczenia woli online, tj. bez konieczności organizacji fizycznego spotkania ze swoimi klientami.
 
 #### Legislacja
 
-Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.*
+Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 ## Model ekonomiczny
 
@@ -206,23 +206,23 @@ Zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wyda
 
 Więc po jest nam blockchain? Bez blockchaina mielibyśmy sytuację analogiczną do mechanizmu certyfikowanego podpisu cyfrowego, z jego główną wadą w postaci konieczności poniesienia kosztów takiego certyfikatu przez klienta K, co jest istotną barierą w masowej adopcji podpisu cyfrowego.
 
-Zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K, którego dotyczy proces KYC, na firmę F, która jest beneficjentem istotnej redukcji procesu KYC. Dzięki użyciu blockchaina odwraca się model ekonomiczny podpisu cyfrowego: zapisany na blockchainie certyfikat przynosi dochody instytucji, która go wystawiła, a koszty ponosi firma F, która z niego korzysta, a nie klient K, jak to ma miejsce w tradycyjnym mechanizmie podpisu cyfrowego.
+Zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K, którego dotyczy proces KYC, na firmę F, która jest beneficjentem istotnej redukcji kosztów procesu KYC. Dzięki użyciu blockchaina odwraca się model ekonomiczny podpisu cyfrowego: zapisany na blockchainie certyfikat przynosi dochody instytucji, która go wystawiła, a koszty ponosi firma F, która z niego korzysta, a nie klient K, jak to ma miejsce w tradycyjnym mechanizmie podpisu cyfrowego.
 
 #### Rola smart-kontraktu
 
-Oczywiście powyższy przeływ opłat możliwy jest przy założeniu, że zapis na blockchainie będzie obudowany odpowiednim smart-kontraktem, który takie opłaty będzie pobierał.
+Oczywiście powyższy przepływ opłat możliwy jest przy założeniu, że zapis na blockchainie będzie obudowany odpowiednim smart-kontraktem, który takie opłaty będzie pobierał.
 
-Taki smart-kontrakt wymaga jeszcze przemyślenia. Jego istotą byłoby pobieranie opłaty od firmy F (albo klienta K) na rzecz banku B (albo innej instytucji, która dokonała weryfikacji klienta K) za każdym razem, gdy firma F korzysta z tego udogodnienia.
+Taki smart-kontrakt wymaga jeszcze przemyślenia. Jego istotą byłoby pobieranie opłaty od firmy F (albo klienta K, bo taka sytuacja też ma czasem sens) na rzecz banku B (albo innej instytucji, która dokonała weryfikacji klienta K) za każdym razem, gdy firma F (albo klient K) korzysta z tego udogodnienia.
 
 Głównym celem tego rodzaju opłat jest dobre zmotywowanie uczestników tego systemu, tak żeby korzyści finasowe miał ten podmiot, który popełnia wysiłek, a koszty ponosił ten podmiot, który ma korzyści.
 
-Dodanie do powyższego smart-kontrakytu minimalnej marży dla nas (jako twórców tego smart-kontraktu) wydaje się relatywnie proste. Ale może to nie być konieczne, bo alterntywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa. oczywiście przy założeniu, że uzyskamy status *pro publico bono*.
+Dodanie do powyższego smart-kontrakytu minimalnej marży dla nas (jako twórców tego smart-kontraktu) wydaje się relatywnie proste. Ale może to nie być konieczne, bo alterntywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa, oczywiście przy założeniu, że uzyskamy nasz system będzie postrzegany jako *pro publico bono*.
 
 ## Własny token?
 
-Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami systemu - tym tropem idzie Civic. Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast wadą jest fakt, źe własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić tokeny, co jest istotną barierą w procesie adopcji. 
+Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami systemu (tym tropem idzie Civic i inne podobne systemy). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast wadą jest to, źe własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
 
-Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest uniknąć wprowadzania własnego tokenu i opłaty realizować w tokenach EOSa albo jakieś niezależnej stabilnej walucie, która zapewne powstanie na EOSie.
+Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest uniknąć wprowadzania własnego tokenu i opłaty realizować w tokenach EOSa (bo będą one bardziej wiarygodne) albo jakieś niezależnej stabilnej walucie, która zapewne powstanie na EOSie.
 
 ## Konkurencja
 
@@ -236,9 +236,7 @@ Jest [masa projektów blockchainowych](https://github.com/peacekeeper/blockchain
   - Whitepaper (biznesowy): https://decentralized.id/docs/DID-whitepaper.pdf
   - Whitepaper (techniczny): https://decentralized.id/docs/DID-tech.pdf
 
-[Tutaj](https://www.scottbrady91.com/Blockchain-Identity/Technical-Review-of-Civics-Secure-Identity-Platform) jest dość wiarygodna recenzja Civica
-
-Jest ona całkiem pozytywna, główny zarzut sprowadza się do krytyki odstąpienia od używania standardów na rzecz swoich własnych wynalazków:
+[Tutaj](https://www.scottbrady91.com/Blockchain-Identity/Technical-Review-of-Civics-Secure-Identity-Platform) jest dość wiarygodna recenzja Civica. Jest ona całkiem pozytywna, główny zarzut sprowadza się do krytyki odstąpienia od używania standardów na rzecz swoich własnych wynalazków:
 
 > Civic really should have used OAuth and OpenID Connect, instead of rolling their own authentication protocol.
 
