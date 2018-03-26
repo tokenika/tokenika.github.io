@@ -41,13 +41,13 @@ Najogólniej polega to na tym, że jeden podmiot przeprowadza werfikację tożsa
 
 Innymi słowy, mechanizm DIV pozwala na weryfikację danej osoby w warunkach online w analogiczny sposób, jak czyni to w realu porównanie wyglądu twarzy ze zdjęciem w tradycyjnym dokumencie. Zamiast porównania twarz vs. zdjęcie mamy porównanie deklarowanej tożsamości z podpisanym kryptograficznie zapisem na blockchainie.
 
-Czyli mamy mechanizm, który jest w stanie poświadczyć, że mówisz prawdę na temat siebie samego. Co ciekawe, tym samym traci sens wykradanie informacji celem kradzieży tożsamości, bo sama informacja do niczego się nie przyda. Żeby być zweryfikowanym w tym nowym paradygmacie, oprócz samej informacji trzeba jeszcze mieć związany z tą informacją klucz prywatny poświadczony przez podmiot o wysokiej reputacji.
+Czyli mamy mechanizm, który jest w stanie poświadczyć, że mówisz prawdę na temat siebie samego. Co ciekawe, tym samym traci sens wykradanie informacji celem kradzieży tożsamości, bo sama informacja do niczego się nie przyda. Żeby być zweryfikowanym w tym nowym paradygmacie, oprócz samej informacji trzeba jeszcze mieć związany z tą informacją klucz prywatny pasujący do zapisu na blockchainie poświadczonego przez podmiot o wysokiej reputacji.
 
-Patrząc od strony samej koncepcji można powiedzieć, że w paradygmacie DIV informacja dotycząca tożsamości staje się obiektem chronionym kluczem prywatnym, podobnie jak kryptowaluta w kryptowalutowym portfelu.
+Patrząc od strony samej koncepcji można powiedzieć, że w paradygmacie DIV informacja dotycząca tożsamości staje się obiektem chronionym kluczem prywatnym, podobnie jak kryptowaluta w portfelu kryptowalutowym.
 
 #### Czy rzeczywiście potrzebny jest do tego blockchain?
 
-Żeby uzyskac efekt opisany powyżej, zamiast zapisu na blockchainie równie dobrze moglibyśmy posłużyć się koncepcją certifikatu, stosowaną w procedurze podpisu elektronicznego. Taki certfikat jest wydawany przez zaufany podmiot, następnie zostaje przekazy osobie (lub firmie) której dotyczy, i ta osoba posługuje sie tym certfikatem żeby udowodnić autentyczność swoich oświadczeń.
+Żeby uzyskac efekt opisany powyżej, zamiast zapisu na blockchainie równie dobrze moglibyśmy posłużyć się koncepcją certifikatu, stosowaną w procedurze podpisu elektronicznego. Taki certfikat jest wydawany przez zaufany podmiot, następnie zostaje przekazy osobie (lub firmie) której on dotyczy, i ta osoba posługuje sie tym certfikatem żeby udowodnić autentyczność swoich oświadczeń.
 
 Użycie zapisu na blockchianie zamiast certyfikatu (co de facto sprowadza się do umieszczenia tego certyfikatu na blockchainie) daje subtelną, lecz istotną różnicę: pozwala wprowadzić model ekonomiczny, który zdejmuje z użytkownika konieczność poniesienia kosztów uzyskania certyfikatu. Naszym zdaniem jest to warunek konieczny, żeby DIV miał szansę na masową adopcję.
 
@@ -99,7 +99,7 @@ Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo
 
 #### Do przemyślenia
 
-Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego. Na pewno warto będzie tu wykorzystać spektakularne (jak na blockchain) możliwości EOSa w z tym zakresie.
+Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego. Na pewno warto będzie tu wykorzystać dość spektakularne (jak na blockchain) możliwości EOSa w z tym zakresie.
 
 ## Rozszerzenie 1: Wpisy na blockchainie służące skalowaniu KYC
 
@@ -206,7 +206,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 #### Dlaczego certyfikat musi być na blockchainie?
 
-Zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, notariusz itp). Tak więc wszystkie powyższe przypadki (tj. skalowanie KYC, cyfryzacja dokumentów i cyfryzacja notarialna) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i dostarczany przez niego innym podmiotom, jako dowód autentyczności składanych deklaracji. 
+Zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, notariusz itp). Tak więc wszystkie powyższe przypadki (tj. skalowanie KYC, cyfryzacja dokumentów i cyfryzacja notarialna) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom, jako dowód autentyczności składanych deklaracji. 
 
 Więc po jest nam blockchain? Bez blockchaina mielibyśmy sytuację analogiczną do mechanizmu certyfikowanego podpisu cyfrowego, z jego główną wadą w postaci konieczności poniesienia kosztów takiego certyfikatu przez klienta K, co jest istotną barierą w masowej adopcji podpisu cyfrowego.
 
@@ -220,13 +220,13 @@ Taki smart-kontrakt wymaga jeszcze przemyślenia. Jego istotą byłoby pobierani
 
 Głównym celem tego rodzaju opłat jest dobre zmotywowanie uczestników tego systemu, tak żeby korzyści finasowe miał ten podmiot, który popełnia wysiłek, a koszty ponosił ten podmiot, który ma korzyści.
 
-Dodanie do powyższego smart-kontrakytu minimalnej marży dla nas (jako twórców tego smart-kontraktu) wydaje się relatywnie proste. Ale może to nie być konieczne, bo alterntywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa, oczywiście przy założeniu, że uzyskamy nasz system będzie postrzegany jako *pro publico bono*.
+Dodanie do powyższego smart-kontraktu minimalnej marży dla nas (jako twórców tego smart-kontraktu) wydaje się relatywnie proste. Ale może to nie być konieczne, bo alterntywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa, oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
 
 #### Własny token?
 
-Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami systemu (tym tropem idzie Civic i inne podobne systemy). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast wadą jest to, źe własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
+Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami systemu (tym tropem idzie Civic i inne podobne systemy). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast niewątpliwą wadą jest to, że własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
 
-Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest uniknąć wprowadzania własnego tokenu i opłaty realizować w tokenach EOSa (bo będą one bardziej wiarygodne) albo jakieś niezależnej stabilnej walucie, która zapewne powstanie na EOSie.
+Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest uniknąć wprowadzania własnego tokenu i opłaty w smart-kontrakcie realizować w tokenach EOSa (bo będą one bardziej wiarygodne) albo jakieś niezależnej stabilnej walucie, która zapewne powstanie na EOSie.
 
 ## Konkurencja
 
