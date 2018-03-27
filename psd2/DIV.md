@@ -16,7 +16,7 @@ Wymogi KYC narzucają na firmy konieczność ustalenia tożsamości każdego now
 
 Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
 
-Warty podkreślenia jest fakt, że nawet outsourcing procesu KYC do specjalistycznej firmy, która się tym zajmuje, nie rozwiązuje problemu skalowania KYC. Nawet jeśli podmiot specjalizujący się w KYC dostanie zlecenie weryfikacji klienta K, którego wcześniej weryfikował dla innej firmy, to i tak cały proces KYC będzie musiał być uruchomiony od nowa, bo nie ma żadnego formalnego dowodu, że jest to rzeczywiście ten sam klient K, a nie ktoś kto udaje klienta K.
+Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej firmy, która się tym zajmuje, nie rozwiązuje problemu skalowania KYC. Nawet jeśli podmiot specjalizujący się w KYC dostanie zlecenie weryfikacji klienta K, którego wcześniej weryfikował dla innej firmy, to i tak cały proces KYC będzie musiał być uruchomiony od nowa, bo nie ma żadnego formalnego dowodu, że jest to rzeczywiście ten sam klient K, a nie ktoś kto udaje klienta K.
 
 #### Co chcemy osiągnąć?
 
@@ -34,7 +34,7 @@ Naszą intencją jest zbudowanie procesu mocnej autoryzacji transakcji bankowych
 * cyfryzacja aktów notarialnych,
 * identity wallet
 
-Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da ludziom istotny powód żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością (podobnie jak PESEL, tylko że klucz prywatny jest z założenia niejawny).
+Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da ludziom istotny powód żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością (podobnie jak PESEL, tyle że klucz prywatny jest z założenia niejawny).
 
 Innymi słowy, chcemy wykorzystać dogodną sytuację stworzoną przez PSD2 do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, masowo używany z racji PSD2, możemy wprowadzić skalowalny proces KYC, a także zacząć budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
 
@@ -64,7 +64,7 @@ W wyniku tego procesu bank B przypisuje tożsamość klienta K do jego klucza pu
 
 #### Działanie procesu autoryzacji
 
-Autryzacja transakcji bankowej w PSD2 wygląda następująco:
+Autoryzacja transakcji bankowej w PSD2 wygląda następująco:
 
 1. Poprzez aplikację mobilną bank B wysyła do klienta K propozycję transakcji finansowej, wraz z losową liczbą L zaszyfrowaną kluczem publicznym Y.
 2. Klient K wyraża zgodę na tę propozycję (tj. autoryzuje tę transakcję) poprzez odszyfrowanie losowej liczby L swoim kluczem prywatnym X, a następnie jej odesłanie do banku B.
@@ -107,7 +107,7 @@ Bardzo istotne jest tu, że PESEL jest w formie zashashowanej, a więc nieczytel
 
 Tym samym bank wprowadza nam do systemu skalowalnego KYC tysiące swoich klientów i on sam staje się notariuszem, który poświadcza autentyczność numerów PESEL swoich klientów na blockchainie EOSa.
 
-Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo, a w zmian zasila nasz system dużą liczbą użytkowników.
+Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo, a w zmian zasila nasz system skalowalnego KYC dużą liczbą zweryfikowanych pod kątem KYC użytkowników.
 
 #### Proces
 
@@ -196,7 +196,7 @@ Podobnie jak w wersji weryfikującej tożsamość każdy wpis:
 
 Te same informacje (bez hashowania) zostają umieszczone w aplikacji mobilnej klienta K.
 
-Rola notariusza N wygląda następująco: weryfikuje on tożsamość swoich klientów w podobny sposób, jak firma F przeprowadza KYC, a następnie podpisuje swoim certyfikowanym podpisem elektronicznym i umieszcza na blockchainie (w formie zahashowanej) oświadczenia woli swoich klientów, poświadczając w ten sposób ich prawdziwość.
+Rola notariusza N wygląda następująco: weryfikuje on tożsamość swoich klientów w podobny sposób, jak firma F przeprowadza KYC, a następnie podpisuje swoim certyfikowanym podpisem elektronicznym i umieszcza na blockchainie (w formie zahashowanej) oświadczenia woli swoich klientów, poświadczając w ten sposób ich autentyczność.
 
 Użycie tego systemu przez podmioty trzecie jest analogiczne do wyżej opisanego przypadku weryfikacji KYC, czyli firma F otrzymuje informacje od klienta K, hashuje je, a następnie weryfikuje ich prawdziwość poprzez porównanie z hashem dostępnym na blockchainie.
 
@@ -210,7 +210,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 ## Rozszerzenie 3: Identity wallet
 
-Trzeba zrobić research o co w tym chodzi. Najprawdopodobniej o to żeby zastąpić funkcjonalność "zaloguj się poprzez Facebook".
+Trzeba zrobić research o co w tym chodzi. Najprawdopodobniej o to żeby poprzez kryptografię asymetryczną zastąpić funkcjonalność typu "zaloguj się poprzez Facebook".
 
 ## Model ekonomiczny
 
@@ -220,7 +220,9 @@ Trzeba zrobić research o co w tym chodzi. Najprawdopodobniej o to żeby zastąp
 
 Tak więc wszystkie powyższe przypadki (tj. skalowanie KYC, cyfryzacja dokumentów i cyfryzacja notarialna) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom, jako dowód autentyczności składanych deklaracji / oświadczeń. 
 
-Więc po jest nam blockchain? Bez blockchaina koszt certyfikatu musi być poniesiony przez klienta K, co jest istotną barierą w masowej adopcji tego rodzaju systemu. Natomiast zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K, którego dotyczy proces KYC, na firmę F, która jest beneficjentem istotnej redukcji kosztów procesu KYC.
+Więc po jest nam blockchain?
+
+Bez blockchaina koszt certyfikatu musi być poniesiony przez klienta K, co jest istotną barierą w masowej adopcji tego rodzaju systemu. Natomiast zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K, którego dotyczy proces KYC, na firmę F, która jest beneficjentem istotnej redukcji kosztów procesu KYC.
 
 Dzięki użyciu blockchaina odwraca się zatem model ekonomiczny całego systemu: zapisany na blockchainie certyfikat przynosi dochody instytucji, która go wystawiła, a koszty ponosi firma F, która z niego korzysta, a nie klient K, jak to ma miejsce w tradycyjnym mechanizmie certyfikowanego podpisu cyfrowego.
 
@@ -234,15 +236,17 @@ Istotą takiego smart-kontraktu jest pobieranie opłaty od firmy F (albo klienta
 
 Głównym celem tego rodzaju opłat jest dobre zmotywowanie uczestników tego systemu, tak żeby korzyści finansowe miał ten podmiot, który popełnia wysiłek, a koszty ponosił ten podmiot, który ma korzyści.
 
+#### Monetyzacja systemu
+
 Dodanie do powyższego smart-kontraktu minimalnej marży dla nas (jako twórców tego smart-kontraktu) wydaje się relatywnie proste. Ale może to nie być konieczne, bo alternatywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
 
 #### Własny token?
 
-Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami naszego systemu (tym tropem idzie Civic i inne podobne zdecentralizowane rozwiązania). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast niewątpliwą wadą jest to, że własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
+Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami naszego systemu (tym tropem idzie Civic i inne podobne zdecentralizowane rozwiązania). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast nieusuwalną wadą jest to, że własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
 
-Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest uniknąć wprowadzania własnego tokenu i opłaty w smart-kontrakcie realizować w tokenach EOSa (bo będą one bardziej wiarygodne niż jakiekolwiek token) albo w jakieś niezależnej, stabilnej walucie, która zapewne powstanie na EOSie.
+Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest uniknąć wprowadzania własnego tokenu i opłaty w smart-kontrakcie realizować w tokenach EOSa (bo będą one bardziej wiarygodne niż jakikolwiek inny token) albo w jakieś niezależnej, stabilnej walucie, która zapewne powstanie na EOSie.
 
-## Decentralized Identity Verification
+## Szerszy kontekst: Decentralized Identity Verification
 
 To co robimy w zakresie wykorzystania kryptografii asymetrycznej do skalowania KYC to podzbiór większego zagadnienia o nazwie Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
 
@@ -274,8 +278,8 @@ Ta deklaracja też jest intrygująca:
 
 Nasza pozycja konkurencyjna wygląda dość korzystnie ponieważ:
 
-- Działamy w cieniu firm dużo większych od nas (np. Civic, Decentralized Identity) - one już wykonały sporo roboty za nas i dodatkowo uwiarygadniają sensowność tego całego przedsięwzięcia.
-- Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo robimy tylko PESEL), więc dokładnie wiadomo co trzeba robić (nie tracimy czasu i kasy na eksperymentowanie).
-- Mamy technologię (tj. EOS) która jest wyraźnie lepsza od tej, którą wybrali inni, bo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego).
+- Działamy w cieniu firm dużo większych od nas (np. Civic, Decentralized Identity) - one już wykonały sporo roboty za nas i dodatkowo uwiarygadniają sensowność naszego przedsięwzięcia.
+- Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo w pierwszym etapie zajmujemy się tylko KYC), więc dokładnie wiadomo co trzeba robić (nie tracimy czasu i kasy na eksperymentowanie).
+- Mamy technologię (EOS), która jest wyraźnie lepsza od tej, którą wybrali inni, bo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego).
 - Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy. Możemy też podpatrzyć z kim Civic zawarł aliense biznesowe w USA i zrobić podobne układy lokalnie.
 
