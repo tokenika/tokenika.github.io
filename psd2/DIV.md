@@ -210,7 +210,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 ## Rozszerzenie 3: Identity wallet
 
-*Trzeba zrobić research o co w tym chodzi. Najprawdopodobniej o to żeby poprzez kryptografię asymetryczną zastąpić funkcjonalność typu "zaloguj się przez Facebook".*
+TODO: *Trzeba zrobić research o co w tym chodzi. Najprawdopodobniej o to żeby poprzez kryptografię asymetryczną zastąpić funkcjonalność typu "zaloguj się przez Facebook". Więcej info na https://jolocom.com/.*
 
 ## Model ekonomiczny
 
