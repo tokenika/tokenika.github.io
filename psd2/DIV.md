@@ -56,7 +56,7 @@ Do autoryzacji transakcji bankowej w PSD2 użyjemy kryptografii asymetrycznej, t
 
 Konfiguracja (tj. setup) procesu autoryzacji PSD2 dla nowego klienta wygląda następująco:
 
-1. Poprzez aplikację webową banku B klient K instaluje na swoim telefonie aplikację mobilną, która generuje unikalną parę kluczy kryptograficznych: klucz prywatny X i klucz publiczny Y. 
+1. Klient K instaluje na swoim telefonie zrobioną przez nas aplikację mobilną, która generuje unikalną parę kluczy kryptograficznych: klucz prywatny X i klucz publiczny Y. 
 2. Klucz prywatny X jest trzymany w telefonie i nigdy nikomu poza klientem K nie jest ujawniany (klucz prywatny jest chroniony PIN-em lub biometrycznie - być może da się sprytnie wykorzystać właściwości biometryczne EOSa).
 3. Aplikacja przekazuje bankowi B klucz publiczny Y klienta K.
 
