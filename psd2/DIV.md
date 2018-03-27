@@ -89,7 +89,7 @@ Do przemyślenia pozostaje procedura odzyskiwania zgubionego / skradzionego kluc
 
 Najogólniej mówiąc, skalowalny KYC polega na tym, że jeden podmiot przeprowadza weryfikację tożsamości danej osoby (klienta) K, wynik tej weryfikacji umieszcza na blockchainie, a kolejne firmy z tego zapisu korzystają (bezpłatnie albo odpłatnie), unikając tym samym konieczności powtarzania tego procesu.
 
-Innymi słowy, mechanizm skalowalnego KYC pozwala na weryfikację danej osoby w warunkach online w analogiczny sposób, jak czyni to w realu porównanie wyglądu twarzy ze zdjęciem w tradycyjnym dokumencie. Zamiast porównania twarz vs. zdjęcie mamy porównanie deklarowanej tożsamości z podpisanym kryptograficznie zapisem na blockchainie.
+Innymi słowy, mechanizm skalowalnego KYC pozwala na weryfikację danej osoby w warunkach online w analogiczny sposób, jak czyni to w realu porównanie wyglądu twarzy ze zdjęciem w tradycyjnym dokumencie. Zamiast porównania *twarz vs. zdjęcie* mamy porównanie deklarowanej tożsamości z podpisanym kryptograficznie zapisem na blockchainie.
 
 Czyli otrzymujemy mechanizm, który jest w stanie poświadczyć, że klient K mówi prawdę na temat siebie samego. Co ciekawe, tym samym traci sens kradzież danych osobowych celem kradzieży tożsamości, bo sama informacja do niczego się nie przyda. Żeby być zweryfikowanym w tym nowym paradygmacie, oprócz samej informacji trzeba jeszcze mieć związany z tą informacją klucz prywatny pasujący do blockchainowego zapisu, poświadczonego przez podmiot o wysokiej reputacji.
 
@@ -105,7 +105,7 @@ Uzgadniamy z naszym partnerem bankowym, żeby pozwolił nam umieścić w formie 
 
 Bardzo istotne jest tu, że PESEL jest w formie zashashowanej, a więc nieczytelnej dla osób trzecich (czyli odpada problem upublicznienia danych osobowych).
 
-Tym samym bank wprowadza nam do systemu skalowalnego KYC tysiące swoich klientów i on sam staje się notariuszem, który poświadcza autentyczność numerów PESEL swoich klientów na blockchainie EOSa.
+Tym samym bank wprowadza nam do systemu skalowalnego KYC tysiące swoich klientów i on sam staje się gwarantem autentyczności kluczy publicznych i numerów PESEL umieszczonych na blockchainie.
 
 Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo, a w zmian zasila nasz system skalowalnego KYC dużą liczbą zweryfikowanych pod kątem KYC użytkowników.
 
@@ -210,7 +210,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 ## Rozszerzenie 3: Identity wallet
 
-Trzeba zrobić research o co w tym chodzi. Najprawdopodobniej o to żeby poprzez kryptografię asymetryczną zastąpić funkcjonalność typu "zaloguj się przez Facebook".
+*Trzeba zrobić research o co w tym chodzi. Najprawdopodobniej o to żeby poprzez kryptografię asymetryczną zastąpić funkcjonalność typu "zaloguj się przez Facebook".*
 
 ## Model ekonomiczny
 
@@ -218,19 +218,19 @@ Trzeba zrobić research o co w tym chodzi. Najprawdopodobniej o to żeby poprzez
 
 Łatwo zauważyć, że stosowany w naszym rozwiązaniu zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, notariusz itp).  W paradygmacie podpisu cyfrowego taki certyfikat jest wydawany przez zaufany podmiot, a następnie zostaje przekazy osobie (lub firmie), której on dotyczy, i ta osoba / firma posługuje się tym certyfikatem żeby udowodnić autentyczność swoich deklaracji / oświadczeń.
 
-Tak więc wszystkie powyższe przypadki (tj. skalowanie KYC, cyfryzacja dokumentów i cyfryzacja notarialna) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom, jako dowód autentyczności składanych deklaracji / oświadczeń. 
+Tak więc teoretycznie wszystkie powyższe przypadki (tj. skalowanie KYC, cyfryzacja dokumentów i cyfryzacja notarialna) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom, jako dowód autentyczności składanych deklaracji / oświadczeń. 
 
 Więc po jest nam blockchain?
 
-Bez blockchaina koszt certyfikatu musi być poniesiony przez klienta K, co jest istotną barierą w masowej adopcji tego rodzaju systemu. Natomiast zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K, którego dotyczy proces KYC, na firmę F, która jest beneficjentem istotnej redukcji kosztów procesu KYC.
+Gdybyśmy wyeliminowali blockchain, wylądowalibyśmy w paradygmacie certyfikowanego podpisu cyfrowego, w którym koszt certyfikatu musi być poniesiony przez klienta K, co z kolei jest istotną barierą w masowej adopcji tego rodzaju systemu. Natomiast zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K, którego dotyczy proces KYC, na firmę F, która jest beneficjentem istotnej redukcji kosztów procesu KYC.
 
 Dzięki użyciu blockchaina odwraca się zatem model ekonomiczny całego systemu: zapisany na blockchainie certyfikat przynosi dochody instytucji, która go wystawiła, a koszty ponosi firma F, która z niego korzysta, a nie klient K, jak to ma miejsce w tradycyjnym mechanizmie certyfikowanego podpisu cyfrowego.
 
-Mamy więc subtelną, lecz istotną różnicę: wprowadzamy model ekonomiczny, który zdejmuje z użytkownika konieczność poniesienia kosztów uzyskania certyfikatu. Naszym zdaniem jest to warunek konieczny, żeby skalowalny KYC miał szansę na masową adopcję.
+Mamy więc subtelną, lecz istotną różnicę: wprowadzamy model ekonomiczny, który zdejmuje z użytkownika konieczność poniesienia kosztów uzyskania certyfikatu. Naszym zdaniem jest to warunek konieczny, żeby idea, którą proponujemy, miała szansę na masową adopcję.
 
 #### Rola smart-kontraktu
 
-Oczywiście powyższy przepływ opłat możliwy jest przy założeniu, że zapis na blockchainie będzie obudowany odpowiednim smart-kontraktem, który takie opłaty będzie implementował.
+Oczywiście powyższy przepływ opłat możliwy jest przy założeniu, że zapis na blockchainie będzie obudowany odpowiednim smart-kontraktem, który te opłaty będzie implementował.
 
 Istotą takiego smart-kontraktu jest pobieranie opłaty od firmy F (albo klienta K, bo taka sytuacja też ma czasem sens) na rzecz banku B (albo innej instytucji, która dokonała weryfikacji klienta K) za każdym razem, gdy firma F (albo klient K) jest benficjentem tego udogodnienia.
 
@@ -279,7 +279,7 @@ Ta deklaracja też jest intrygująca:
 Nasza pozycja konkurencyjna wygląda dość korzystnie ponieważ:
 
 - Działamy w cieniu firm dużo większych od nas (np. Civic, Decentralized Identity) - one już wykonały sporo roboty za nas i dodatkowo uwiarygadniają sensowność naszego przedsięwzięcia.
-- Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo w pierwszym etapie zajmujemy się tylko KYC), więc dokładnie wiadomo co trzeba robić (nie tracimy czasu i kasy na eksperymentowanie).
-- Mamy technologię (EOS), która jest wyraźnie lepsza od tej, którą wybrali inni, bo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, procedura odzyskiwania skradzionego/zgubionego klucza prywatnego).
+- Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo w pierwszym etapie zajmujemy się tylko KYC), więc dokładnie wiadomo co trzeba robić i nie tracimy czasu i kasy na eksperymentowanie.
+- Mamy technologię (EOS), która jest wyraźnie lepsza od tej, którą wybrali inni, bo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, niewydolność i powolność procesowania transakcji), a dodatkowo zawiera sprzyjające nam funkcjonalności (np. procedura odzyskiwania skradzionego / zgubionego klucza prywatnego i jego biometrycza ochrona).
 - Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy. Możemy też podpatrzyć z kim Civic zawarł aliense biznesowe w USA i zrobić podobne układy lokalnie.
 
