@@ -104,11 +104,11 @@ Każdy bank ma zweryfikowaną tożsamość (w tym numer PESEL) każdego swojego 
 
 Co się wtedy dzieje?
 
-Uzgadniamy z naszym partnerem bankowym, żeby pozwolił nam umieścić w formie zapisów na blockchainie EOSa mapowanie *klucz publiczny vs. zahashowane dane osobowe wymagane w procesie KYC* dla wszystkich swoich klientów korzystających z naszego systemu autoryzacji.
+Uzgadniamy z naszym partnerem bankowym, żeby umieszczał on w formie zapisów na blockchainie EOSa mapowanie *klucz publiczny vs. zahashowane dane osobowe wymagane w procesie KYC* dla wszystkich swoich klientów korzystających z naszego systemu autoryzacji. Musiałby to być zrobione automatycznie, tak żeby dane na blockchainie były zawsze aktulne.
 
 Bardzo istotne jest tu, że dane te są w formie zashashowanej, a więc nieczytelnej dla osób trzecich (czyli odpada problem upublicznienia wrażliwych danych osobowych).
 
-Tym samym bank wprowadza nam do naszego systemu skalowalnego KYC tysiące swoich klientów i on sam staje się gwarantem autentyczności informacji umieszczonych na blockchainie.
+Tym samym bank wprowadza nam do naszego systemu skalowalnego KYC tysiące swoich klientów i on sam staje się gwarantem autentyczności informacji publikowanych blockchainie.
 
 Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo, a w zmian zasila nasz system skalowalnego KYC dużą liczbą zweryfikowanych pod kątem KYC użytkowników.
 
@@ -145,28 +145,28 @@ Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedur
 
 #### Legislacja
 
-Wymaganie legislacyjne są następujące:
+Wymagania legislacyjne są następujące:
 
 1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
 2. Ustawa musi zapewnić, że identyczność hashy dwóch plików tekstowych jest tożsame z identycznością zapisów w tych plikach.
 
-Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta K klucza prywatnego X i  uzyskanie przez firmę F od banku B podpisanego elektronicznie potwierdzenia weryfikacji klienta posługującego się kluczem publicznym Y, jest wystarczająco dobrą formą weryfikacji KYC. Gdyby udało się uzyskać tego rodzaju legislację, to powyższy proces można by radykalnie uprościć, bo nie było potrzebne umieszczanie na blockchainie zahashowanych danych osobowych klienta K.
+Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta K klucza prywatnego X i  uzyskanie przez firmę F od banku B podpisanego elektronicznie potwierdzenia wykonania KYC dla klienta posługującego się kluczem publicznym Y, jest wystarczająco dobrą formą weryfikacji KYC. Gdyby udało się uzyskać tego rodzaju legislację, to powyższy proces można by radykalnie uprościć, bo nie było potrzebne umieszczanie na blockchainie zahashowanych danych osobowych klienta K.
 
 ## Rozszerzenie 1: Ochrona reputacji poprzez klucz prywatny
 
 #### Koncepja
 
-Wykorzystując fakt posiadania (z racji autoryzacji w PSD2) przez dużą liczbę użytkowników klucza prywatnego, łatwo jest zastąpić funkcjonalność typu zaloguj się przez Facebook przez kryptografię asymetryczną.
+Wykorzystując fakt posiadania (z racji autoryzacji w PSD2) przez dużą liczbę użytkowników klucza prywatnego, łatwo jest zastąpić poprzez użycie kryptografii asymetrycznej funkcjonalność typu *zaloguj się przez Facebook*.
 
-Usługa ta w swojej obecnej formie jest niczym innym niż wykorzystaniem reputacji (i/lub unikalnej tożsamości), którą klient K ma na jakimś znanym serwisie (typu Facebook, Twitter, Gmail, GitHub) do utworzenia unikalnej tożsamości (i w konsekwencji możliwości budowy reputacji wokół tej tożsamości) na jakimś innym, mniej popularnym serwisie S.
+Usługa ta w swojej obecnej formie jest niczym innym niż wykorzystaniem reputacji (i/lub unikalnej tożsamości), którą dany użytkownik ma na jakimś znanym serwisie (typu Facebook, Twitter, Gmail, GitHub) do utworzenia unikalnej tożsamości (i w konsekwencji możliwości budowy reputacji wokół tej tożsamości) na jakimś innym, mniej popularnym serwisie S.
 
 Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: stwarza to łatwiejszą konwersję dla serwisu S i większą wygodę dla użytkownika. 
 
-Warto podkreślić, że w tym przypadku rzeczywista (tj. zgodna z realem) tożsamość użytkownika nie jest ważna, liczy się tylko to żeby serwis S mógł przypisać danego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook.
+Warto podkreślić, że w tym przypadku rzeczywista (tj. zgodna z realem) tożsamość użytkownika nie jest konieczna (tj. proces KYC może nie być wymagany), liczy się tylko to, żeby serwis S mógł w swoim systemie przypisać danego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook.
 
 #### Problem
 
-W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamości na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego lecz do innego podmiotu. Firma typu Facebook ma pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym kompletnie zniszczyć reputację danej osoby).
+W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamości na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do innego podmiotu. Firma typu Facebook ma pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
 
 #### Korzyści
 
@@ -240,9 +240,9 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 #### Dlaczego certyfikat musi być na blockchainie?
 
-Łatwo zauważyć, że stosowany w naszym rozwiązaniu zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, urząd, notariusz itp).  W paradygmacie podpisu cyfrowego taki certyfikat jest wydawany przez zaufany podmiot, a następnie zostaje przekazy osobie (lub firmie), której on dotyczy. Wtedy taka osoba (lub firma) posługuje się tym certyfikatem żeby udowodnić autentyczność swoich deklaracji / oświadczeń.
+Łatwo zauważyć, że stosowany w naszym rozwiązaniu zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, urząd, notariusz itp).  W paradygmacie podpisu cyfrowego taki certyfikat jest wydawany przez zaufany podmiot, a następnie zostaje przekazy osobie (lub firmie), której on dotyczy. Wtedy taka osoba (lub firma) może posługiwać się takim certyfikatem żeby udowodnić autentyczność swoich deklaracji / oświadczeń.
 
-Tak więc teoretycznie wszystkie powyższe przypadki (tj. skalowanie KYC, cyfryzacja reputacji, dokumentów i aktów notarialnych) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom podczas interakcji z nimi.
+Tak więc teoretycznie wszystkie powyższe przypadki (tj. skalowanie KYC, kryptograficzna ochrona reputacji, cyfryzacja dokumentów i aktów notarialnych) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom podczas interakcji z nimi.
 
 Więc po jest nam blockchain?
 
@@ -281,7 +281,7 @@ Obecnie istnieje [spora liczba projektów blockchainowych](https://github.com/pe
 - [Civic](https://www.civic.com/) ([whitepaper)](https://tokensale.civic.com/CivicTokenSaleWhitePaper.pdf)
 - [Decentralized Identity](https://decentralized.id/) ([whitepaper biznesowy](https://decentralized.id/docs/DID-whitepaper.pdf), [whitepaper techniczny](https://decentralized.id/docs/DID-tech.pdf))
 
-Dostępna jest też dość [wiarygodna recenzja systemu Civic](https://www.scottbrady91.com/Blockchain-Identity/Technical-Review-of-Civics-Secure-Identity-Platform). Jest ona całkiem pozytywna - główny zarzut sprowadza się do krytyki odstąpienia od używania standardów na rzecz swoich własnych wynalazków:
+Dostępna jest dość [wiarygodna recenzja systemu Civic](https://www.scottbrady91.com/Blockchain-Identity/Technical-Review-of-Civics-Secure-Identity-Platform). Jest ona całkiem pozytywna - główny zarzut sprowadza się do krytyki odstąpienia od używania standardów na rzecz swoich własnych wynalazków:
 
 > Civic really should have used OAuth and OpenID Connect, instead of rolling their own authentication protocol.
 
