@@ -20,19 +20,19 @@ Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej f
 
 #### Co chcemy osiągnąć?
 
-Szukamy rozwiązania, które:
+Szukamy rozwiązania dla procesu KYC, które:
 
-* umożliwi skalowanie procedury KYC, czyli wyeliminuje konieczność powtarzania tego procesu przez kolejne firmy,
-* będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
-* otworzy drogę na inne niż KYC zastosowania.
+- umożliwi skalowanie procedury KYC, czyli wyeliminuje konieczność powtarzania tego procesu przez kolejne firmy,
+- będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
+- otworzy drogę na inne niż KYC zastosowania.
 
 ## Wprowadzenie skalowalnego KYC poprzez PSD2
 
 Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może być użyty do skalowania procesu KYC, a także do wielu innym celów, np:
 
-* kryptograficzna ochrona reputacji,
-* cyfryzacja dokumentów,
-* cyfryzacja aktów notarialnych.
+- kryptograficzna ochrona tożsamości i reputacji,
+- cyfryzacja dokumentów,
+- cyfryzacja aktów notarialnych.
 
 Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością / reputacją (podobnie jak PESEL, tyle że klucz prywatny jest z założenia niejawny).
 
@@ -161,7 +161,7 @@ Wymagania legislacyjne są następujące:
 
 Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta K klucza prywatnego X i  uzyskanie przez firmę F od banku B podpisanego elektronicznie potwierdzenia wykonania KYC dla klienta posługującego się kluczem publicznym Y, jest wystarczająco dobrą formą weryfikacji KYC. Gdyby udało się uzyskać tego rodzaju legislację, to powyższy proces można by radykalnie uprościć, bo nie było potrzebne umieszczanie na blockchainie zahashowanych danych osobowych klienta K.
 
-## Rozszerzenie 1: Ochrona reputacji poprzez klucz prywatny
+## Rozszerzenie 1: Kryptograficzna ochrona tożsamości i reputacji
 
 #### Koncepja
 
@@ -252,7 +252,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 Łatwo zauważyć, że stosowany w naszym rozwiązaniu zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, urząd, notariusz itp).  W paradygmacie podpisu cyfrowego taki certyfikat jest wydawany przez zaufany podmiot, a następnie zostaje przekazy osobie (lub firmie), której on dotyczy. Wtedy taka osoba (lub firma) może posługiwać się takim certyfikatem żeby udowodnić autentyczność swoich deklaracji / oświadczeń.
 
-Tak więc teoretycznie wszystkie powyższe przypadki (tj. skalowanie KYC, kryptograficzna ochrona reputacji, cyfryzacja dokumentów i aktów notarialnych) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom podczas interakcji z nimi.
+Tak więc teoretycznie wszystkie powyższe przypadki (tj. skalowanie KYC, kryptograficzna ochrona tożsamości & reputacji, cyfryzacja dokumentów & aktów notarialnych) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom podczas interakcji z nimi.
 
 Więc po jest nam blockchain?
 

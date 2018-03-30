@@ -1,4 +1,4 @@
-# Autoryzacja w PSD2 poprzez kryptografię asymetryczną jako sposób na wprowadzenie skalowalnego KYC
+# W jaki sposób wykorzystać PSD2 do rozwiązania problemu KYC poprzez wprowadzenie natychmiastowej weryfikacji tożsamości?
 
 ## Wprowadzenie
 
@@ -20,7 +20,7 @@ Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej f
 
 #### Co chcemy osiągnąć?
 
-Szukamy rozwiązania, które:
+Szukamy rozwiązania dla procesu KYC, które:
 
 - umożliwi skalowanie procedury KYC, czyli wyeliminuje konieczność powtarzania tego procesu przez kolejne firmy,
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
@@ -30,7 +30,7 @@ Szukamy rozwiązania, które:
 
 Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może być użyty do skalowania procesu KYC, a także do wielu innym celów, np:
 
-- kryptograficzna ochrona reputacji,
+- kryptograficzna ochrona tożsamości i reputacji,
 - cyfryzacja dokumentów,
 - cyfryzacja aktów notarialnych.
 
@@ -161,7 +161,7 @@ Wymagania legislacyjne są następujące:
 
 Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta K klucza prywatnego X i  uzyskanie przez firmę F od banku B podpisanego elektronicznie potwierdzenia wykonania KYC dla klienta posługującego się kluczem publicznym Y, jest wystarczająco dobrą formą weryfikacji KYC. Gdyby udało się uzyskać tego rodzaju legislację, to powyższy proces można by radykalnie uprościć, bo nie było potrzebne umieszczanie na blockchainie zahashowanych danych osobowych klienta K.
 
-## Rozszerzenie 1: Ochrona reputacji poprzez klucz prywatny
+## Rozszerzenie 1: Kryptograficzna ochrona tożsamości i reputacji
 
 #### Koncepja
 
@@ -252,7 +252,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 Łatwo zauważyć, że stosowany w naszym rozwiązaniu zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, urząd, notariusz itp).  W paradygmacie podpisu cyfrowego taki certyfikat jest wydawany przez zaufany podmiot, a następnie zostaje przekazy osobie (lub firmie), której on dotyczy. Wtedy taka osoba (lub firma) może posługiwać się takim certyfikatem żeby udowodnić autentyczność swoich deklaracji / oświadczeń.
 
-Tak więc teoretycznie wszystkie powyższe przypadki (tj. skalowanie KYC, kryptograficzna ochrona reputacji, cyfryzacja dokumentów i aktów notarialnych) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom podczas interakcji z nimi.
+Tak więc teoretycznie wszystkie powyższe przypadki (tj. skalowanie KYC, kryptograficzna ochrona tożsamości & reputacji, cyfryzacja dokumentów & aktów notarialnych) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom podczas interakcji z nimi.
 
 Więc po jest nam blockchain?
 
@@ -313,3 +313,4 @@ Nasza pozycja konkurencyjna wygląda dość korzystnie ponieważ:
 - Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo w pierwszym etapie zajmujemy się tylko KYC), więc dokładnie wiadomo co trzeba robić i nie tracimy czasu i kasy na eksperymentowanie.
 - Mamy technologię (EOS), która jest wyraźnie lepsza od tej, którą wybrali inni, bo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, niewydolność i powolność procesowania transakcji), a dodatkowo zawiera sprzyjające nam funkcjonalności (np. procedura odzyskiwania skradzionego / zgubionego klucza prywatnego i jego biometrycza ochrona).
 - Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy. Możemy też podpatrzyć z kim Civic zawarł alianse biznesowe w USA i zrobić podobne układy lokalnie.
+
