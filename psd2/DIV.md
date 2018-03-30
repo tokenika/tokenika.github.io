@@ -105,7 +105,7 @@ Patrząc od strony samej koncepcji można powiedzieć, że w paradygmacie skalow
 
 #### Strategia wdrożenia
 
-Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakąś większą instytucją finansową, np. bankiem. 
+Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakimś podmiotem bankowym.
 
 Każdy bank ma zweryfikowaną tożsamość każdego swojego klienta. Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi jako jeden z kanałów mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
 
