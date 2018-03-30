@@ -34,7 +34,7 @@ Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych
 * cyfryzacja dokumentów,
 * cyfryzacja aktów notarialnych.
 
-Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da ludziom istotny powód żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością / reputacją (podobnie jak PESEL, tyle że klucz prywatny jest z założenia niejawny).
+Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością / reputacją (podobnie jak PESEL, tyle że klucz prywatny jest z założenia niejawny).
 
 Warte podkreślenia jest to, że:
 
@@ -144,6 +144,8 @@ Wtedy proces KYC może wyglądać następująco:
 
 W ten sposób firma F ma pewność, że klient K istotnie ma tożsamość zgodną z tym co deklaruje, bo tylko on może być posiadaczem klucza prywatnego X, który odpowiada kluczowi publicznemu Y, a otrzymane informacje hashują się do wyniku podpisanego elektronicznie przez zaufany bank B.
 
+Uwaga: Oczywiście sposób hashowania musi być wystandaryzowany, tak żeby ewentualna niezgodność nie wynikała z użycia różnych metod hashowania. Może się też okazać, że ze względów bezpieczeństwa potrzebne będzie tzw. zasolenie hashowania, ale jest to jak najbardziej wykonalne - sól może dostarczać firmie F klient K. 
+
 #### Korzyści
 
 Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedury KYC, bo korzysta z wyników procedury KYC przeprowadzonej wcześniej przez zaufany bank B.
@@ -153,7 +155,7 @@ Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedur
 Wymagania legislacyjne są następujące:
 
 1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
-2. Ustawa musi zapewnić, że identyczność hashy dwóch plików tekstowych jest tożsame z identycznością zapisów w tych plikach.
+2. Ustawa musi zapewnić, że identyczność hashy dwóch plików tekstowych jest tożsama z identycznością zapisów w tych plikach. Z wstępnego rozeznania wynika. że może to być dość trudna przeszkoda do pokonania.
 
 Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta K klucza prywatnego X i  uzyskanie przez firmę F od banku B podpisanego elektronicznie potwierdzenia wykonania KYC dla klienta posługującego się kluczem publicznym Y, jest wystarczająco dobrą formą weryfikacji KYC. Gdyby udało się uzyskać tego rodzaju legislację, to powyższy proces można by radykalnie uprościć, bo nie było potrzebne umieszczanie na blockchainie zahashowanych danych osobowych klienta K.
 
@@ -207,6 +209,7 @@ Uzyskujemy dwojakiego rodzaju korzyści:
 
 1. Następuje migracja informacji zawartych w tradycyjnych dokumentach papierowych do formy cyfrowej, co oczywiście oznacza redukcję kosztów i możliwości fałszowania.
 2. Następuje przejęcie pełnej kontroli nad informacją przez podmiot, do której ona należy. W tym paradygmacie każdorazowo gdy informacja jest przekazywana osobie trzeciej, musi się na to zgodzić jej właściciel, tj. posiadacz klucza prywatnego. Możliwe staje się też przekazywanie minimalnej informacji jaka jest w danej sytuacji potrzebna, np. żeby udowodnić swoją pełnoletność nie trzeba przekazywać pełnej daty urodzenia, lecz fakt bycia starszym niż dany próg wiekowy.
+3. Pełna kontrola posiadacza klucza prywatnego nad informacją otwiera także możliwość świadomego sprzedawania własnych danych demograficznych (których prawdziwość jest poświadczona kryptograficznie) podmiotom zainteresowanym tego rodzaju danymi.
 
 #### Legislacja
 
