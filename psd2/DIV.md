@@ -61,13 +61,13 @@ Chociaż do autoryzacji w PSD2 nie jest potrzebny blockchain, ze względu na dal
 
 #### Konfiguracja procesu autoryzacji
 
-Konfiguracja (tj. setup) procesu autoryzacji PSD2 dla nowego klienta wygląda następująco:
+Konfiguracja (tj. setup) naszego procesu autoryzacji PSD2 dla nowego klienta wygląda następująco:
 
 1. Klient K instaluje na swoim telefonie zrobioną przez nas aplikację mobilną, która generuje unikalną parę kluczy kryptograficznych: klucz prywatny X i klucz publiczny Y. 
 2. Klucz prywatny X jest trzymany w telefonie i nigdy nikomu poza klientem K nie jest ujawniany (klucz prywatny jest chroniony PIN-em lub biometrycznie - być może da się tu sprytnie wykorzystać właściwości biometryczne EOSa).
 3. Aplikacja przekazuje bankowi B klucz publiczny Y klienta K.
 
-W wyniku tego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y.
+W wyniku tego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y. Prawdopodobnie wymagało to będzie pewnego rodzaju procesu aktywacji (podobnie jak aktywujemy nowootrzymaną kartę debetową), tak żeby bank B miał pewność, że świeżo wygenerowany klucz publiczny rzeczywiście należy do klienta K.
 
 Uwaga: Żeby dostawca technologii mógł uniknąć podejrzeń o nieuczciwość, kod źródłowy i dystrybucja wspomnianej wyżej aplikacji mobilnej musiałyby być pod kontrolą banku B.
 
