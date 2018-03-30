@@ -30,7 +30,7 @@ Szukamy rozwiązania, które:
 
 Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może być użyty do skalowania procesu KYC, a także do wielu innym celów, np:
 
-* cyfryzacja reputacji,
+* kryptograficzna ochrona reputacji,
 * cyfryzacja dokumentów,
 * cyfryzacja aktów notarialnych.
 
@@ -68,6 +68,8 @@ Konfiguracja (tj. setup) procesu autoryzacji PSD2 dla nowego klienta wygląda na
 3. Aplikacja przekazuje bankowi B klucz publiczny Y klienta K.
 
 W wyniku tego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y.
+
+Uwaga: Żeby dostawca technologii mógł uniknąć podejrzeń o nieuczciwość, kod źródłowy i dystrybucja wspomnianej wyżej aplikacji mobilnej musiałyby być pod kontrolą banku B.
 
 #### Działanie procesu autoryzacji
 
