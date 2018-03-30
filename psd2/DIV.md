@@ -95,7 +95,7 @@ Do przemyślenia pozostaje procedura odzyskiwania zgubionego / skradzionego kluc
 
 #### Koncepcja
 
-Najogólniej mówiąc, skalowalny KYC polega na tym, że jeden podmiot przeprowadza weryfikację tożsamości danej osoby (klienta) K, następnie wynik tej weryfikacji umieszczamy na blockchainie, a kolejne firmy z tego blockchainowego zapisu korzystają (bezpłatnie albo odpłatnie), unikając tym samym konieczności powtarzania procesu KYC.
+Najogólniej mówiąc, skalowalny KYC polega na tym, że jeden podmiot (w naszym przypadku bank) przeprowadza weryfikację tożsamości danej osoby (klienta) K, następnie wynik tej weryfikacji umieszczamy na blockchainie, a kolejne firmy z tego blockchainowego zapisu korzystają (bezpłatnie albo odpłatnie), unikając tym samym konieczności powtarzania procesu KYC.
 
 Innymi słowy, mechanizm skalowalnego KYC pozwala na weryfikację danej osoby w warunkach online w analogiczny sposób, jak czyni to w realu porównanie wyglądu twarzy ze zdjęciem w tradycyjnym dokumencie. Zamiast porównania widoku twarzy ze zdjęciem mamy tu porównanie deklarowanej tożsamości z podpisanym kryptograficznie zapisem na blockchainie.
 
@@ -107,7 +107,7 @@ Patrząc od strony samej koncepcji można powiedzieć, że w paradygmacie skalow
 
 Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakąś większą instytucją finansową, np. bankiem. 
 
-Każdy bank ma zweryfikowaną tożsamość (w tym numer PESEL) każdego swojego klienta. Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi jako jeden z kanałów mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
+Każdy bank ma zweryfikowaną tożsamość każdego swojego klienta. Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi jako jeden z kanałów mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
 
 Co się wtedy dzieje?
 
