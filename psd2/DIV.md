@@ -6,7 +6,7 @@
 
 W sytuacji internetowej weryfikacji tożsamości generalnie chodzi o to, w jaki sposób w warunkach online uzyskać pewność, że osoba (klient) podająca się jako K rzeczywiście jest tą osobą K.
 
-Istotne jest tu to, że jest to sytuacja online, czyli NIE w realu. W sytuacji kontaktu w realu dokument ze zdjęciem można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w przypadku, gdy nie wiemy jak dokładnie powinien wyglądać oryginalny dokument, np. legitymacja policjanta).
+Istotne jest tu to, że jest to sytuacja online, czyli *nie* w realu. W sytuacji kontaktu w realu dokument ze zdjęciem można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w przypadku, gdy nie wiemy jak dokładnie powinien wyglądać oryginalny dokument, np. legitymacja policjanta).
 
 Z oczywistych powodów w warunkach online zdjęcie, które jest integralną częścią dokumentu tożsamości, przestaje być użyteczne, bo nie ma go z czym porównać. 
 
@@ -37,18 +37,18 @@ Szukamy rozwiązania dla procesu KYC, które:
 
 ## Wprowadzenie skalowalnego KYC poprzez PSD2
 
-Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może być użyty do skalowania procesu KYC, a także do wielu innym celów powiązanych z cyfrową tożsamością, np:
+Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może jednocześnie być użyty do skalowania procesu KYC, a także do wielu innym celów powiązanych z cyfrową tożsamością, np:
 
 - kryptograficzna ochrona tożsamości i reputacji,
 - cyfryzacja dokumentów,
 - cyfryzacja aktów notarialnych.
 
-Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością / reputacją (podobnie jak PESEL, tyle że klucz prywatny jest z założenia niejawny).
+Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód, żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością / reputacją (podobnie jak PESEL, tyle że klucz prywatny jest z założenia niejawny).
 
 Warte podkreślenia jest to, że:
 
 - naszym zamiarem nie jest zbudowanie całego procesu autoryzacji w PSD2, a jedynie jednego z wymaganych dwóch niezależnych kanałów,
-- bez problemu możemy wspierać elementy dynamiczne autoryzacji, tj. te łączące daną transakcję z określoną kwotą i określonym odbiorcą (np. ostatnie cyfry rachunku i kwota transakcji).
+- bez problemu możemy wspierać autoryzację w wersji dynamicznej, tj. dodawać elementy łączące daną transakcję z określoną kwotą i określonym odbiorcą (np. ostatnie cyfry rachunku i kwota transakcji).
 
 Innymi słowy, chcemy wykorzystać dogodną sytuację stworzoną przez PSD2 do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, masowo (i często) używany z racji PSD2, możemy wprowadzić skalowalny proces KYC, a także zacząć budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
 
@@ -70,13 +70,13 @@ Chociaż do autoryzacji w PSD2 nie jest potrzebny blockchain, ze względu na dal
 
 #### Konfiguracja procesu autoryzacji
 
-Konfiguracja (tj. setup) naszego procesu autoryzacji PSD2 dla nowego klienta wygląda następująco:
+Konfiguracja (albo aktywacja) naszego procesu autoryzacji PSD2 dla nowego klienta wygląda następująco:
 
 1. Klient K instaluje na swoim telefonie wykonaną przez nas aplikację mobilną, która generuje unikalną parę kluczy kryptograficznych: klucz prywatny X i klucz publiczny Y. 
 2. Klucz prywatny X jest trzymany w telefonie i nigdy nikomu poza klientem K nie jest ujawniany (klucz prywatny jest chroniony PIN-em lub biometrycznie - być może da się tu sprytnie wykorzystać właściwości biometryczne EOSa).
 3. Aplikacja przekazuje bankowi B klucz publiczny Y klienta K.
 
-W wyniku tego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y. Prawdopodobnie wymagało to będzie pewnego rodzaju procesu aktywacji (podobnie jak aktywujemy nowo otrzymaną kartę debetową), tak żeby bank B miał pewność, że wygenerowany przez naszą aplikację klucz publiczny rzeczywiście należy do klienta K.
+W wyniku powyższego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y. Prawdopodobnie wymagało to będzie pewnego rodzaju procedury aktywacji (podobnie jak aktywujemy nowo otrzymaną kartę debetową), tak żeby bank B miał pewność, że wygenerowany przez naszą aplikację klucz publiczny rzeczywiście należy do klienta K.
 
 *Uwaga*: Żeby dostawca technologii mógł uniknąć podejrzeń o nieuczciwość, kod źródłowy i dystrybucja wspomnianej wyżej aplikacji mobilnej musiałyby być pod kontrolą banku B.
 
@@ -101,7 +101,7 @@ Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego może przebie
 Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem niegorszym niż alternatywne metody (np. esemesy lub Google Authenticator). Dodatkowe korzyści są takie:
 
 1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien musieć ujawnić swojego klucza prywatnego komukolwiek - oczywiście o ile będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
-2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej opcji.
+2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej możliwości.
 
 ## Wykorzystanie kryptografii asymetrycznej do skalowania procesu KYC
 
@@ -119,7 +119,7 @@ Patrząc od strony samej koncepcji można powiedzieć, że w paradygmacie skalow
 
 Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakimś podmiotem bankowym.
 
-Każdy bank ma zweryfikowaną tożsamość każdego swojego klienta. Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi jako jeden z kanałów mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
+Każdy bank ma zweryfikowaną tożsamość każdego swojego klienta. Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi w zakresie kanału mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
 
 Co się wtedy dzieje?
 
@@ -158,7 +158,7 @@ Wtedy proces KYC może wyglądać następująco:
 
 W ten sposób firma F ma pewność, że klient K istotnie ma tożsamość zgodną z tym co deklaruje, bo tylko on może być posiadaczem klucza prywatnego X, który odpowiada kluczowi publicznemu Y, a otrzymane informacje hashują się do wyniku podpisanego elektronicznie przez zaufany bank B.
 
-*Uwaga*: Oczywiście sposób hashowania musi być wystandaryzowany, tak żeby ewentualna niezgodność nie wynikała z użycia różnych metod hashowania. Może się też okazać, że ze względów bezpieczeństwa potrzebne będzie tzw. zasolenie hashowania, ale jest to jak najbardziej wykonalne - sól może dostarczać firmie F klient K. 
+*Uwaga*: Oczywiście sposób hashowania musi być wystandaryzowany, tak żeby ewentualna niezgodność nie wynikała z użycia różnych metod hashowania. Może się też okazać, że ze względów bezpieczeństwa potrzebne będzie tzw. zasolenie hashowania, ale jest to jak najbardziej wykonalne - sól może dostarczać firmie F aplikacja mobilna klienta K.
 
 #### Korzyści
 
@@ -177,7 +177,7 @@ Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta 
 
 #### Koncepcja
 
-Wykorzystując fakt posiadania (z racji autoryzacji w PSD2) przez dużą liczbę użytkowników klucza prywatnego, łatwo jest zastąpić poprzez użycie kryptografii asymetrycznej funkcjonalność typu *zaloguj się przez Facebook*.
+Wykorzystując fakt posiadania przez naszych użytkowników klucza prywatnego, łatwo nam będzie zaoferować im dobry substytut dla funkcjonalności typu *zaloguj się przez Facebook*.
 
 Usługa ta w swojej obecnej formie jest niczym innym niż wykorzystaniem reputacji (i/lub unikalnej tożsamości), którą dany użytkownik ma na jakimś znanym serwisie (typu Facebook, Twitter, Gmail, GitHub) do utworzenia unikalnej tożsamości (i w konsekwencji możliwości budowy reputacji wokół tej tożsamości) na jakimś innym, mniej popularnym serwisie S.
 
@@ -208,7 +208,7 @@ Na blockchainie EOS dokonujemy wpisów stwierdzających stan faktyczny, który w
 - *Posiadacz klucza publicznego Y ukończył uczelnię U.*
 - *Posiadacz klucza publicznego Y jest wspólnikiem w spółce S.*
 
-Podobnie jak powyżej każdy wpis:
+Każdy wpis na blockchainie:
 
 1. Ma przypisaną datę kiedy został dokonany.
 2. Jest podpisany certyfikowanym podpisem elektronicznym notariusza N (czyli zamiast banku mamy tu notariusza albo jakąś inną instytucję zaufania publicznego). W ten sposób notariusz N gwarantuje prawdziwość informacji zawartej w tym wpisie. 
@@ -239,7 +239,7 @@ Na blockchainie EOS dokonujemy wpisów o charakterze notarialnym, tj. wszelkie c
 - *Posiadacz klucza publicznego Y udziela pełnomocnictwa w zakresie reprezentowania spółki S posiadaczowi klucza publicznego Z.*
 - *Posiadacz klucza publicznego Y sprzedaje udziały w spółce S posiadaczowi klucza publicznego Z.*
 
-Podobnie jak w wersji weryfikującej tożsamość każdy wpis:
+Każdy wpis na blockchainie:
 
 1. Ma przypisaną datę kiedy został dokonany.
 2. Jest podpisany certyfikowanym podpisem elektronicznym notariusza N. W ten sposób notariusz N gwarantuje prawdziwość informacji zawartej w tym wpisie.
@@ -295,7 +295,7 @@ Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest unik
 
 ## Szerszy kontekst: Digital Identity
 
-To co robimy w zakresie wykorzystania kryptografii asymetrycznej do skalowania KYC to podzbiór większego zagadnienia znanego jako [Cyfrowa Tożsamość](http://di.com.pl/cyfrowa-tozsamosc-56607) (Digital Identity) albo, w przypadku użycia systemów rozproszonych, Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
+Propozycja opisana w niniejszym dokumencie to podzbiór większego zagadnienia znanego jako [Cyfrowa Tożsamość](http://di.com.pl/cyfrowa-tozsamosc-56607) (Digital Identity) albo, w przypadku użycia systemów rozproszonych, Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
 
 W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, np. Dan Larimer miał wtedy pomysł  systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8).
 
