@@ -98,7 +98,7 @@ Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego może przebie
 
 Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem niegorszym niż alternatywne metody (np. esemesy lub Google Authenticator). Dodatkowe korzyści są takie:
 
-1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych.
+1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien musieć ujawnić swojego klucza prywatnego komukolwiek - oczywiście jeśli będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
 2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej opcji.
 
 ## Wykorzystanie kryptografii asymetrycznej do skalowania procesu KYC
@@ -121,7 +121,48 @@ Każdy bank ma zweryfikowaną tożsamość każdego swojego klienta. Załóżmy,
 
 Co się wtedy dzieje?
 
-Uzgadniamy z naszym partnerem bankowym, żeby umieszczał on w formie zapisów na blockchainie EOSa mapowanie *klucz publiczny vs. zahashowane dane osobowe wymagane w procesie KYC* dla wszystkich swoich klientów korzystających z naszego systemu autoryzacji. Musiałby to być zrobione automatycznie, tak żeby dane na blockchainie były zawsze aktualne.
+Uzgadniamy z naszym partnerem bankowym, żeby rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta.
+
+#### Proces
+
+Załóżmy, że:
+
+1. Firma F potrzebuje dokonać weryfikacji KYC klienta K i ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenia banku B w zakresie tożsamości klienta K uznaje za prawdziwe.
+2. My, jako twórcy i operatorzy aplikacji mobilnej klienta K służącej mu do autoryzacji w PSD2, pełnimy też rolę TPP. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.
+
+Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
+
+1. Na prośbę firmy F nasza aplikacja mobilna wysyła do banku B zapytanie o podpisane elektronicznie przez bank B informacje dotyczące tożsamości klienta K (tj. wszystko co jest potrzebne do weryfikacji KYC: imię, nazwisko, PESEL, numer dowodu osobistego itp).
+2. Następuje autoryzacja tego zapytania przez klienta K, zgodnie z wymogami PSD2 dla AIS.
+3. Odpowiedź uzyskana od banku jest przesyłana do firmy F, która uzyskuje w ten sposób wiarygodne (bo kryptograficznie potwierdzone przez bank B) informacje na temat tożsamości klienta K.
+
+*Uwaga*: Ze względów bezpieczeństwa do podpisanego przez bank pakietu informacji dołączamy losowy ciąg znaków (tzw. *nonce*), który wcześniej (przed uruchomieniem tego całego procesu weryfikacji) dostarcza nam firma F. Tym sposobem firma F ma pewność, że otrzymana informacja została wygenerowana przez bank B specjalnie dla potrzeb tego konkretnego przypadku (a więc jest aktualna).
+
+Do podpisanego elektronicznie pakietu otrzymanego od banku B możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K. Wtedy firma F, po standardowym zweryfikowaniu posiadania przez klienta K klucza prywatnego X (który odpowiada kluczowi publicznemu Y):
+
+* uzyskuje dodatkową pewność co do tożsamości klienta K,
+* a ponadto może, podobnie jak bank B, powiązać w swoim systemie tożsamość klienta K z tym kluczem publicznym i w przyszłości autoryzować klienta K poprzez nasz system, przyjmując założenie że posiadnia klucza prywatnego X jest tożsame z byciem klientem K.
+
+#### Korzyści
+
+Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedury KYC, bo korzysta z wyników procedury KYC przeprowadzonej wcześniej przez zaufany bank B.
+
+#### Legislacja
+
+Wymagania legislacyjne są następujące:
+
+1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
+2. Ustawa musi zapewnić, że podpisana kryptograficznie oświadczenie banku odnośnie tożsamości jego klienta jest jest wiarygodną formą weryfikacji KYC. Z wstępnego rozeznania wynika. że może to być dość trudna przeszkoda do pokonania.
+
+Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta K klucza prywatnego X i  uzyskanie przez firmę F od banku B podpisanego elektronicznie potwierdzenia wykonania KYC dla klienta posługującego się kluczem publicznym Y, jest wystarczająco dobrą formą weryfikacji KYC. Gdyby udało się uzyskać tego rodzaju legislację, to powyższy proces można by radykalnie uprościć, bo nie było potrzebne umieszczanie na blockchainie zahashowanych danych osobowych klienta K.
+
+
+
+
+
+
+
+umieszczał on w formie zapisów na blockchainie EOSa mapowanie *klucz publiczny vs. zahashowane dane osobowe wymagane w procesie KYC* dla wszystkich swoich klientów korzystających z naszego systemu autoryzacji. Musiałby to być zrobione automatycznie, tak żeby dane na blockchainie były zawsze aktualne.
 
 Bardzo istotne jest tu, że dane te są w formie zashashowanej, a więc nieczytelnej dla osób trzecich (czyli odpada problem upublicznienia wrażliwych danych osobowych).
 
@@ -146,7 +187,7 @@ W jaki sposób ten blockchainowy wpis może być użyty przez inne firmy do wery
 Załóżmy, że firma F:
 
 - potrzebuje dokonać weryfikacji KYC klienta K,
-- ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenia banku B w zakresie klienta K uznaje za prawdziwe.
+- ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenia banku B w zakresie tożsamości klienta K uznaje za prawdziwe.
 
 Wtedy proces KYC może wyglądać następująco:
 
@@ -156,7 +197,7 @@ Wtedy proces KYC może wyglądać następująco:
 
 W ten sposób firma F ma pewność, że klient K istotnie ma tożsamość zgodną z tym co deklaruje, bo tylko on może być posiadaczem klucza prywatnego X, który odpowiada kluczowi publicznemu Y, a otrzymane informacje hashują się do wyniku podpisanego elektronicznie przez zaufany bank B.
 
-Uwaga: Oczywiście sposób hashowania musi być wystandaryzowany, tak żeby ewentualna niezgodność nie wynikała z użycia różnych metod hashowania. Może się też okazać, że ze względów bezpieczeństwa potrzebne będzie tzw. zasolenie hashowania, ale jest to jak najbardziej wykonalne - sól może dostarczać firmie F klient K. 
+*Uwaga*: Oczywiście sposób hashowania musi być wystandaryzowany, tak żeby ewentualna niezgodność nie wynikała z użycia różnych metod hashowania. Może się też okazać, że ze względów bezpieczeństwa potrzebne będzie tzw. zasolenie hashowania, ale jest to jak najbardziej wykonalne - sól może dostarczać firmie F klient K. 
 
 #### Korzyści
 
@@ -167,7 +208,7 @@ Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedur
 Wymagania legislacyjne są następujące:
 
 1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
-2. Ustawa musi zapewnić, że identyczność hashy dwóch plików tekstowych jest tożsama z identycznością zapisów w tych plikach. Z wstępnego rozeznania wynika. że może to być dość trudna przeszkoda do pokonania.
+2. Ustawa musi zapewnić, że identyczność hashy dwóch plików tekstowych jest tożsama z identycznością zapisów w tych plikach. Z wstępnego rozeznania wynika, że może to być dość trudna przeszkoda do pokonania.
 
 Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta K klucza prywatnego X i  uzyskanie przez firmę F od banku B podpisanego elektronicznie potwierdzenia wykonania KYC dla klienta posługującego się kluczem publicznym Y, jest wystarczająco dobrą formą weryfikacji KYC. Gdyby udało się uzyskać tego rodzaju legislację, to powyższy proces można by radykalnie uprościć, bo nie było potrzebne umieszczanie na blockchainie zahashowanych danych osobowych klienta K.
 
