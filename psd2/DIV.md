@@ -4,9 +4,9 @@
 
 #### Jak weryfikować tożsamość online?
 
-W sytuacji internetowej weryfikacji tożsamości chodzi o to, w jaki sposób w warunkach online uzyskać pewność, że osoba (klient) podająca się jako K rzeczywiście jest tą osobą K.
+W sytuacji internetowej weryfikacji tożsamości generalnie chodzi o to, w jaki sposób w warunkach online uzyskać pewność, że osoba (klient) podająca się jako K rzeczywiście jest tą osobą K.
 
-Istotne jest tu to, że jest to sytuacja online, czyli NIE w realu. W sytuacji kontaktu w realu dokument ze zdjęciem można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w sytuacji, gdy nie wiemy jak dokładnie powinien wyglądać oryginalny dokument, np. legitymacja policjanta).
+Istotne jest tu to, że jest to sytuacja online, czyli NIE w realu. W sytuacji kontaktu w realu dokument ze zdjęciem można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w przypadku, gdy nie wiemy jak dokładnie powinien wyglądać oryginalny dokument, np. legitymacja policjanta).
 
 Z oczywistych powodów w warunkach online zdjęcie, które jest integralną częścią dokumentu tożsamości, przestaje być użyteczne, bo nie ma go z czym porównać. 
 
@@ -14,7 +14,7 @@ Z oczywistych powodów w warunkach online zdjęcie, które jest integralną czę
 
 Wymogi KYC narzucają na firmy konieczność ustalenia tożsamości każdego nowego klienta.
 
-Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez różne firmy.
+Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez kolejne firmy.
 
 Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej firmy, która się tym zajmuje, nie rozwiązuje problemu skalowania KYC. Nawet jeśli podmiot specjalizujący się w KYC dostanie zlecenie weryfikacji klienta K, którego wcześniej weryfikował dla innej firmy, to i tak cały proces KYC będzie musiał być uruchomiony od nowa, bo nie ma żadnego formalnego dowodu, że w obu przypadkach jest to rzeczywiście ten sam klient K.
 
@@ -24,11 +24,11 @@ Szukamy rozwiązania dla procesu KYC, które:
 
 - umożliwi skalowanie procedury KYC, czyli wyeliminuje konieczność powtarzania tego procesu przez kolejne firmy,
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
-- otworzy drogę na inne niż KYC zastosowania.
+- otworzy drogę na inne niż KYC zastosowania, w szczególności do rozposzechnienia koncepcji cyfrowej tożsamości.
 
 ## Wprowadzenie skalowalnego KYC poprzez PSD2
 
-Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może być użyty do skalowania procesu KYC, a także do wielu innym celów, np:
+Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może być użyty do skalowania procesu KYC, a także do wielu innym celów powiązanych z cyfrową tożsamością, np:
 
 - kryptograficzna ochrona tożsamości i reputacji,
 - cyfryzacja dokumentów,
@@ -38,8 +38,8 @@ Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatec
 
 Warte podkreślenia jest to, że:
 
-1. Naszym zamiarem nie jest zbudowanie całego procesu autoryzacji w PSD2, a jedynie jednego z wymaganych dwóch niezależnych kanałów.
-2. Bez problemu możemy wspierać elementy dynamicznie autoryzacji, tj. te łączące daną transakcję z określoną kwotą i określonym odbiorcą (np. ostatnie cyfry rachunku i kwota transakcji).
+- naszym zamiarem nie jest zbudowanie całego procesu autoryzacji w PSD2, a jedynie jednego z wymaganych dwóch niezależnych kanałów,
+- bez problemu możemy wspierać elementy dynamicznie autoryzacji, tj. te łączące daną transakcję z określoną kwotą i określonym odbiorcą (np. ostatnie cyfry rachunku i kwota transakcji).
 
 Innymi słowy, chcemy wykorzystać dogodną sytuację stworzoną przez PSD2 do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, masowo (i często) używany z racji PSD2, możemy wprowadzić skalowalny proces KYC, a także zacząć budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
 
@@ -67,15 +67,15 @@ Konfiguracja (tj. setup) naszego procesu autoryzacji PSD2 dla nowego klienta wyg
 2. Klucz prywatny X jest trzymany w telefonie i nigdy nikomu poza klientem K nie jest ujawniany (klucz prywatny jest chroniony PIN-em lub biometrycznie - być może da się tu sprytnie wykorzystać właściwości biometryczne EOSa).
 3. Aplikacja przekazuje bankowi B klucz publiczny Y klienta K.
 
-W wyniku tego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y. Prawdopodobnie wymagało to będzie pewnego rodzaju procesu aktywacji (podobnie jak aktywujemy nowootrzymaną kartę debetową), tak żeby bank B miał pewność, że świeżo wygenerowany klucz publiczny rzeczywiście należy do klienta K.
+W wyniku tego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y. Prawdopodobnie wymagało to będzie pewnego rodzaju procesu aktywacji (podobnie jak aktywujemy nowootrzymaną kartę debetową), tak żeby bank B miał pewność, że wygenerowany przez naszą aplikację klucz publiczny rzeczywiście należy do klienta K.
 
 Uwaga: Żeby dostawca technologii mógł uniknąć podejrzeń o nieuczciwość, kod źródłowy i dystrybucja wspomnianej wyżej aplikacji mobilnej musiałyby być pod kontrolą banku B.
 
 #### Działanie procesu autoryzacji
 
-Autoryzacja transakcji bankowej w PSD2 wygląda następująco:
+Zakładając że dla klienta K powyższa konfiguracja procesu została już przeprowadzona, autoryzacja transakcji bankowej w PSD2 wygląda wtedy następująco:
 
-1. Poprzez aplikację mobilną bank B wysyła do klienta K propozycję transakcji finansowej (ze wszystkimi potrzebnymi szczegółami typu adresat płatności i kwota).
+1. Poprzez aplikację mobilną bank B wysyła do klienta K propozycję przelewu bankowego (ze wszystkimi potrzebnymi szczegółami typu adresat płatności i kwota).
 2. Klient K wyraża zgodę na tę propozycję (tj. autoryzuje tę transakcję) poprzez podpisanie jej swoim kluczem prywatnym X.
 
 Autoryzacja sprowadza się zatem do potwierdzenia, że klient K dysponuje kluczem prywatnym X, który odpowiada kluczowi publicznemu Y. W ten sposób bank B ma pewność, że propozycja transakcji finansowej została zatwierdzona przez klienta K, bo tylko on może być posiadaczem klucza prywatnego X, który odpowiada kluczowi publicznemu Y, przypisanemu w banku B klientowi K.
@@ -87,9 +87,12 @@ Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem nieg
 1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych.
 2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej opcji.
 
-#### Problemy
+#### Odzyskiwanie klucza
 
-Do przemyślenia pozostaje procedura odzyskiwania zgubionego / skradzionego klucza prywatnego. Na pewno warto będzie tu wykorzystać dość spektakularne (jak na blockchain) możliwości EOSa w tym zakresie.
+Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego może przebiegać na dwa sposoby:
+
+1. Najprostszym rozwiązaniem wydaje się być wykorzystanie do tego celu banku i uruchomienie precedury analogicznej do odzyskiwania hasła w tradycyjnych systemach, tj. zablokowanie istniejącego klucza i aktywacja nowego. 
+2. Alternatywnym sposobem jest wykorzystanie dość spektakularnych (jak na blockchain) możliwości EOSa w tym zakresie.
 
 ## Wykorzystanie kryptografii asymetrycznej do skalowania procesu KYC
 
