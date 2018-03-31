@@ -201,7 +201,7 @@ Mechanika działania kryptografii asymetrycznej w powyższym zakresie jest dobrz
 
 #### Proces
 
-Na blockchainie dokonujemy wpisów stwierdzających stan faktyczny, który wynika z dokumentów istniejących w formie tradycyjnej, np:
+Na blockchainie EOS dokonujemy wpisów stwierdzających stan faktyczny, który wynika z dokumentów istniejących w formie tradycyjnej, np:
 
 - *Posiadacz klucza publicznego Y mieszka pod adresem A.*
 - *Posiadacz klucza publicznego Y ukończył uczelnię U.*
@@ -233,7 +233,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu dokumentów cyfrowych.
 
 #### Proces
 
-Na blockchainie dokonujemy wpisów o charakterze notarialnym, tj. wszelkie czynności prawne, np:
+Na blockchainie EOS dokonujemy wpisów o charakterze notarialnym, tj. wszelkie czynności prawne, np:
 
 - *Posiadacz klucza publicznego Y udziela pełnomocnictwa w zakresie reprezentowania spółki S posiadaczowi klucza publicznego Z.*
 - *Posiadacz klucza publicznego Y sprzedaje udziały w spółce S posiadaczowi klucza publicznego Z.*

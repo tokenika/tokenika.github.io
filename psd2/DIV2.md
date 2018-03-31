@@ -101,13 +101,23 @@ Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem nieg
 1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien musieć ujawnić swojego klucza prywatnego komukolwiek - oczywiście jeśli będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
 2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej opcji.
 
-## Wykorzystanie kryptografii asymetrycznej do skalowania procesu KYC
+## Wykorzystanie informacji bankowej do skalowania procesu KYC
 
 #### Koncepcja
 
 Najogólniej mówiąc, skalowalny KYC polega na tym, że jeden podmiot (w naszym przypadku bank) przeprowadza weryfikację tożsamości danej osoby (klienta) K, a następnie wynik tej weryfikacji jest udostępniany innym podmiotom (bankowym i niebankowym).
 
 Tym samym otrzymujemy mechanizm, który umożliwia klientowi K dostarczenie dowolnej firmie F podpisanego elektronicznie przez wiarygodny podmiot (tj. bank B) certyfikatu poświadczającego jego (tj. klienta K) tożsamość.
+
+Innymi słowy, wykorzystujemy następujący zestaw faktów:
+
+- (niemal) każdy dorosły człowiek ma konto w banku,
+- każdy bank zna tożsamość każdego swojego klienta,
+- każdy bank otworzy swoje API z racji PSD2.
+
+Naturalną konsekwencją wydaje się zatem zrobienie użytku z informacji o tożsamości klientów bankowych (tj. informacji, które banki i tak posiadają) w celu radykalnego usprawnienia procesu KYC.
+
+Nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje, które do tej pory leżały prawie bezużytecznie w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.
 
 Co ciekawe, traci wtedy sens kradzież danych osobowych celem kradzieży tożsamości, bo sama informacja do niczego się nie przyda. Żeby być zweryfikowanym w tym nowym paradygmacie, oprócz samej informacji trzeba jeszcze mieć związany z tą informacją klucz prywatny pasujący do certyfikatu poświadczonego przez podmiot o wysokiej reputacji.
 
@@ -123,7 +133,9 @@ Co się wtedy dzieje?
 
 Uzgadniamy z naszym partnerem bankowym, żeby rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta.
 
-#### Proces
+Tym samym partner bankowy dostaje od nas system mocnej autoryzacji (za darmo lub za opłatą - to jest kwestia wyniku negocjacji), a w zmian, poprzez rozpowszechnienie naszego systemu autoryzacji w PSD2 wśród swoich klientów, czyni nasz system weryfikacji tożsamości wysoce użytecznym dla firm potrzebujących sprawnej i szybkiej weryfikacji KYC.
+
+#### Proces podstawowy
 
 Załóżmy, że:
 
@@ -138,10 +150,12 @@ Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 
 *Uwaga*: Ze względów bezpieczeństwa do podpisanego przez bank pakietu informacji dołączamy losowy ciąg znaków (tzw. *nonce*), który wcześniej (przed uruchomieniem tego całego procesu weryfikacji) dostarcza nam firma F. Tym sposobem firma F ma pewność, że otrzymana informacja została wygenerowana przez bank B specjalnie dla potrzeb tego konkretnego przypadku (a więc jest aktualna).
 
+#### Proces rozszerzony
+
 Do podpisanego elektronicznie pakietu otrzymanego od banku B możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K. Wtedy firma F, po standardowym zweryfikowaniu posiadania przez klienta K klucza prywatnego X (który odpowiada kluczowi publicznemu Y):
 
 * uzyskuje dodatkową pewność co do tożsamości klienta K,
-* a ponadto może, podobnie jak bank B, powiązać w swoim systemie tożsamość klienta K z tym kluczem publicznym i w przyszłości autoryzować klienta K poprzez nasz system, przyjmując założenie że posiadnia klucza prywatnego X jest tożsame z byciem klientem K.
+* a ponadto może, podobnie jak bank B, powiązać w swoim systemie tożsamość klienta K z tym kluczem publicznym i w przyszłości autoryzować klienta K poprzez nasz system, przyjmując założenie że posiadanie klucza prywatnego X jest tożsame z byciem klientem K.
 
 #### Korzyści
 
@@ -152,65 +166,7 @@ Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedur
 Wymagania legislacyjne są następujące:
 
 1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
-2. Ustawa musi zapewnić, że podpisana kryptograficznie oświadczenie banku odnośnie tożsamości jego klienta jest jest wiarygodną formą weryfikacji KYC. Z wstępnego rozeznania wynika. że może to być dość trudna przeszkoda do pokonania.
-
-Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta K klucza prywatnego X i  uzyskanie przez firmę F od banku B podpisanego elektronicznie potwierdzenia wykonania KYC dla klienta posługującego się kluczem publicznym Y, jest wystarczająco dobrą formą weryfikacji KYC. Gdyby udało się uzyskać tego rodzaju legislację, to powyższy proces można by radykalnie uprościć, bo nie było potrzebne umieszczanie na blockchainie zahashowanych danych osobowych klienta K.
-
-
-
-
-
-
-
-umieszczał on w formie zapisów na blockchainie EOSa mapowanie *klucz publiczny vs. zahashowane dane osobowe wymagane w procesie KYC* dla wszystkich swoich klientów korzystających z naszego systemu autoryzacji. Musiałby to być zrobione automatycznie, tak żeby dane na blockchainie były zawsze aktualne.
-
-Bardzo istotne jest tu, że dane te są w formie zashashowanej, a więc nieczytelnej dla osób trzecich (czyli odpada problem upublicznienia wrażliwych danych osobowych).
-
-Tym samym bank wprowadza nam do naszego systemu skalowalnego KYC tysiące swoich klientów i on sam staje się gwarantem autentyczności informacji publikowanych blockchainie.
-
-Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo, a w zmian zasila nasz system skalowalnego KYC dużą liczbą zweryfikowanych pod kątem KYC użytkowników.
-
-#### Proces
-
-Na blockchainie dokonujemy wpisu mapującego klucz publiczny X klienta K do jego danych osobowych wymaganych w procesie KYC
-
-Każdy wpis:
-
-1. Ma przypisaną datę kiedy został dokonany.
-2. Jest podpisany certyfikowanym podpisem elektronicznym banku B. W ten sposób bank B gwarantuje prawdziwość informacji zawartej w tym wpisie. 
-3. Jest w postaci zahashowanej, tj. nieczytelnej dla osób trzecich. W ten sposób unikamy problemu z ochroną danych osobowych.
-
-Te same dane osobowe (bez hashowania) zostają umieszczone w aplikacji mobilnej klienta K.
-
-W jaki sposób ten blockchainowy wpis może być użyty przez inne firmy do weryfikacji KYC swoich nowych klientów?
-
-Załóżmy, że firma F:
-
-- potrzebuje dokonać weryfikacji KYC klienta K,
-- ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenia banku B w zakresie tożsamości klienta K uznaje za prawdziwe.
-
-Wtedy proces KYC może wyglądać następująco:
-
-1. Za pomocą aplikacji mobilnej firma F uzyskuje zgodę klienta K na przesłanie jej danych osobowych wymaganych w procesie KYC.
-2. Aplikacja mobilna klienta K wysyła firmie F wymagane dane osobowe, wraz z kryptograficznym dowodem posiadania klucza prywatnego X.
-3. Firma F weryfikuje prawdziwość otrzymanych informacji poprzez zahashowanie otrzymanych danych i porównanie wyniku tego hashowania z wpisami na blockchainie dotyczącymi klucza publicznego Y.
-
-W ten sposób firma F ma pewność, że klient K istotnie ma tożsamość zgodną z tym co deklaruje, bo tylko on może być posiadaczem klucza prywatnego X, który odpowiada kluczowi publicznemu Y, a otrzymane informacje hashują się do wyniku podpisanego elektronicznie przez zaufany bank B.
-
-*Uwaga*: Oczywiście sposób hashowania musi być wystandaryzowany, tak żeby ewentualna niezgodność nie wynikała z użycia różnych metod hashowania. Może się też okazać, że ze względów bezpieczeństwa potrzebne będzie tzw. zasolenie hashowania, ale jest to jak najbardziej wykonalne - sól może dostarczać firmie F klient K. 
-
-#### Korzyści
-
-Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedury KYC, bo korzysta z wyników procedury KYC przeprowadzonej wcześniej przez zaufany bank B.
-
-#### Legislacja
-
-Wymagania legislacyjne są następujące:
-
-1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
-2. Ustawa musi zapewnić, że identyczność hashy dwóch plików tekstowych jest tożsama z identycznością zapisów w tych plikach. Z wstępnego rozeznania wynika, że może to być dość trudna przeszkoda do pokonania.
-
-Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta K klucza prywatnego X i  uzyskanie przez firmę F od banku B podpisanego elektronicznie potwierdzenia wykonania KYC dla klienta posługującego się kluczem publicznym Y, jest wystarczająco dobrą formą weryfikacji KYC. Gdyby udało się uzyskać tego rodzaju legislację, to powyższy proces można by radykalnie uprościć, bo nie było potrzebne umieszczanie na blockchainie zahashowanych danych osobowych klienta K.
+2. Ustawa musi zapewnić, że podpisane kryptograficznie oświadczenie banku odnośnie tożsamości jego klienta jest wiarygodną formą weryfikacji KYC. Możemy wstępnie przyjąć, że będzie to możliwe, skoro już teraz wyżej opisany przelew testowy jest uznawany za wiarygodną formę weryfikacji KYC, a nasza metoda na pewno nie jest mniej wiarygodna.
 
 ## Rozszerzenie 1: Kryptograficzna ochrona tożsamości i reputacji
 
@@ -240,8 +196,9 @@ Mechanika działania kryptografii asymetrycznej w powyższym zakresie jest dobrz
 
 #### Proces
 
-Na blockchainie dokonujemy wpisów stwierdzających stan faktyczny, który wynika z dokumentów istniejących w formie tradycyjnej, np:
+Na blockchainie EOS dokonujemy wpisów stwierdzających stan faktyczny, który wynika z dokumentów istniejących w formie tradycyjnej, np:
 
+- *Posiadacz klucza publicznego Y jest pełnoletni.*
 - *Posiadacz klucza publicznego Y mieszka pod adresem A.*
 - *Posiadacz klucza publicznego Y ukończył uczelnię U.*
 - *Posiadacz klucza publicznego Y jest wspólnikiem w spółce S.*
@@ -249,12 +206,23 @@ Na blockchainie dokonujemy wpisów stwierdzających stan faktyczny, który wynik
 Podobnie jak powyżej każdy wpis:
 
 1. Ma przypisaną datę kiedy został dokonany.
-2. Jest podpisany certyfikowanym podpisem elektronicznym notariusza N (czyli zamiast banku mamy tu notariusza albo jakąś inną instytucję zaufania publicznego). W ten sposób notariusz N gwarantuje prawdziwość informacji zawartej w tym wpisie. 
+2. Jest podpisany certyfikowanym podpisem elektronicznym notariusza N (albo jakąś inną instytucję zaufania publicznego). W ten sposób notariusz N gwarantuje prawdziwość informacji zawartej w tym wpisie.
 3. Jest w postaci zahashowanej, tj. nieczytelnej dla osób trzecich. W ten sposób unikamy problemu z ochroną wrażliwych danych osobowych.
 
 Te same informacje (bez hashowania) zostają umieszczone w aplikacji mobilnej klienta K.
 
-Użycie tego systemu przez podmioty trzecie jest analogiczne do wyżej opisanego przypadku weryfikacji KYC, czyli firma F otrzymuje informacje od klienta K, hashuje je, a następnie weryfikuje ich prawdziwość poprzez porównanie z hashem dostępnym na blockchainie.
+Wtedy proces udostępniania i weryfikacji prawdziwości tych informacji może wyglądać następująco:
+
+1. Za pomocą aplikacji mobilnej firma F uzyskuje zgodę klienta K na udostępnienie informacji na jego temat.
+2. Aplikacja mobilna klienta K wysyła firmie F wymagane informacje, wraz z kryptograficznym dowodem posiadania klucza prywatnego X.
+3. Firma F weryfikuje prawdziwość otrzymanych informacji poprzez ich zahashowanie i porównanie wyniku tego hashowania z wpisami na blockchainie dotyczącymi klucza publicznego Y.
+
+W ten sposób firma F ma pewność, że otrzymane informacje:
+
+* są prawdziwe, bo hashują się do wyniku podpisanego elektronicznie przez zaufanego notariusza N,
+* rzeczywiście dotyczą klienta K, bo tylko on może być posiadaczem klucza prywatnego X, który odpowiada kluczowi publicznemu Y.
+
+*Uwaga*: Oczywiście sposób hashowania musi być wystandaryzowany, tak żeby ewentualna niezgodność nie wynikała z użycia różnych metod hashowania. Może się też okazać, że ze względów bezpieczeństwa potrzebne będzie tzw. zasolenie hashowania, ale jest to jak najbardziej wykonalne - sól może dostarczać firmie F klient K.
 
 #### Korzyści
 
@@ -272,7 +240,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu dokumentów cyfrowych.
 
 #### Proces
 
-Na blockchainie dokonujemy wpisów o charakterze notarialnym, tj. wszelkie czynności prawne, np:
+Na blockchainie EOS dokonujemy wpisów o charakterze notarialnym, tj. wszelkie czynności prawne, np:
 
 - *Posiadacz klucza publicznego Y udziela pełnomocnictwa w zakresie reprezentowania spółki S posiadaczowi klucza publicznego Z.*
 - *Posiadacz klucza publicznego Y sprzedaje udziały w spółce S posiadaczowi klucza publicznego Z.*
@@ -285,9 +253,9 @@ Podobnie jak w wersji weryfikującej tożsamość każdy wpis:
 
 Te same informacje (bez hashowania) zostają umieszczone w aplikacji mobilnej klienta K.
 
-Rola notariusza N wygląda następująco: weryfikuje on tożsamość swoich klientów w podobny sposób, jak firma F przeprowadza proces KYC, a następnie podpisuje swoim certyfikowanym podpisem elektronicznym i umieszcza na blockchainie (w formie zahashowanej) oświadczenia woli swoich klientów, poświadczając w ten sposób ich autentyczność.
+Rola notariusza N wygląda następująco: weryfikuje on tożsamość swoich klientów poprzez proces KYC opisany powyżej, a następnie podpisuje swoim certyfikowanym podpisem elektronicznym i umieszcza na blockchainie (w formie zahashowanej) oświadczenia woli swoich klientów, poświadczając w ten sposób ich autentyczność.
 
-Użycie tego systemu przez podmioty trzecie jest analogiczne do wyżej opisanego przypadku weryfikacji KYC, czyli firma F otrzymuje informacje od klienta K, hashuje je, a następnie weryfikuje ich prawdziwość poprzez porównanie z hashem dostępnym na blockchainie.
+Użycie tego systemu przez podmioty trzecie jest analogiczne do wyżej opisanego przypadku weryfikacji informacji dotyczących stanu faktycznego. Firma F otrzymuje informacje od klienta K, hashuje je, a następnie weryfikuje ich prawdziwość poprzez porównanie z hashem dostępnym na blockchainie.
 
 #### Korzyści
 
@@ -303,7 +271,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 Łatwo zauważyć, że stosowany w naszym rozwiązaniu zapis na blockchainie pełni rolę kryptograficznie podpisanego certyfikatu wydanego przez instytucję zaufania publicznego (np. bank, urząd, notariusz itp).  W paradygmacie podpisu cyfrowego taki certyfikat jest wydawany przez zaufany podmiot, a następnie zostaje przekazy osobie (lub firmie), której on dotyczy. Wtedy taka osoba (lub firma) może posługiwać się takim certyfikatem żeby udowodnić autentyczność swoich deklaracji / oświadczeń.
 
-Tak więc teoretycznie wszystkie powyższe przypadki (tj. skalowanie KYC, kryptograficzna ochrona tożsamości & reputacji, cyfryzacja dokumentów & aktów notarialnych) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom podczas interakcji z nimi.
+Tak więc teoretycznie wszystkie powyższe przypadki (tj. cyfryzacja dokumentów i cyfryzacja aktów notarialnych) można by zrealizować bez użycia blockchaina: zamiast być zapisem na blockchainie, taki certyfikat mógłby być w posiadaniu klienta K i być każdorazowo dostarczany przez niego innym podmiotom podczas interakcji z nimi.
 
 Więc po jest nam blockchain?
 
