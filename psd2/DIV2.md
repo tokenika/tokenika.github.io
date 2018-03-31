@@ -72,7 +72,7 @@ Chociaż do autoryzacji w PSD2 nie jest potrzebny blockchain, ze względu na dal
 
 Konfiguracja (tj. setup) naszego procesu autoryzacji PSD2 dla nowego klienta wygląda następująco:
 
-1. Klient K instaluje na swoim telefonie zrobioną przez nas aplikację mobilną, która generuje unikalną parę kluczy kryptograficznych: klucz prywatny X i klucz publiczny Y. 
+1. Klient K instaluje na swoim telefonie wykonaną przez nas aplikację mobilną, która generuje unikalną parę kluczy kryptograficznych: klucz prywatny X i klucz publiczny Y. 
 2. Klucz prywatny X jest trzymany w telefonie i nigdy nikomu poza klientem K nie jest ujawniany (klucz prywatny jest chroniony PIN-em lub biometrycznie - być może da się tu sprytnie wykorzystać właściwości biometryczne EOSa).
 3. Aplikacja przekazuje bankowi B klucz publiczny Y klienta K.
 
@@ -98,18 +98,16 @@ Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego może przebie
 
 Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem niegorszym niż alternatywne metody (np. esemesy lub Google Authenticator). Dodatkowe korzyści są takie:
 
-1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien musieć ujawnić swojego klucza prywatnego komukolwiek - oczywiście jeśli będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
+1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien musieć ujawnić swojego klucza prywatnego komukolwiek - oczywiście o ile będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
 2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej opcji.
 
 ## Wykorzystanie informacji bankowej do skalowania procesu KYC
 
 #### Koncepcja
 
-Najogólniej mówiąc, skalowalny KYC polega na tym, że jeden podmiot (w naszym przypadku bank) przeprowadza weryfikację tożsamości danej osoby (klienta) K, a następnie wynik tej weryfikacji jest udostępniany innym podmiotom (bankowym i niebankowym).
+Najogólniej mówiąc, skalowalny KYC polega na tym, że jeden podmiot (w naszym przypadku bank) przeprowadza weryfikację tożsamości danej osoby (klienta) K, a następnie wynik tej weryfikacji jest udostępniany innym podmiotom (bankowym i niebankowym). Jest to zatem mechanizm, który umożliwia klientowi K dostarczenie dowolnej firmie F podpisanego elektronicznie przez wiarygodny podmiot (tj. bank B) certyfikatu poświadczającego jego (tj. klienta K) tożsamość.
 
-Tym samym otrzymujemy mechanizm, który umożliwia klientowi K dostarczenie dowolnej firmie F podpisanego elektronicznie przez wiarygodny podmiot (tj. bank B) certyfikatu poświadczającego jego (tj. klienta K) tożsamość.
-
-Innymi słowy, wykorzystujemy następujący zestaw faktów:
+Do konstrukcji skalowalnego KYC wykorzystujemy następujący zestaw faktów:
 
 - (niemal) każdy dorosły człowiek ma konto w banku,
 - każdy bank zna tożsamość każdego swojego klienta,
@@ -119,15 +117,11 @@ Naturalną konsekwencją wydaje się zatem zrobienie użytku z informacji o toż
 
 Nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje, które do tej pory leżały prawie bezużytecznie w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.
 
-Co ciekawe, traci wtedy sens kradzież danych osobowych celem kradzieży tożsamości, bo sama informacja do niczego się nie przyda. Żeby być zweryfikowanym w tym nowym paradygmacie, oprócz samej informacji trzeba jeszcze mieć związany z tą informacją klucz prywatny pasujący do certyfikatu poświadczonego przez podmiot o wysokiej reputacji.
-
-Patrząc od strony samej koncepcji można powiedzieć, że w paradygmacie skalowalnego KYC tożsamość staje się obiektem chronionym kluczem prywatnym, podobnie jak kryptowaluta w portfelu kryptowalutowym.
-
 #### Strategia wdrożenia
 
 Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakimś podmiotem bankowym.
 
-Każdy bank ma zweryfikowaną tożsamość każdego swojego klienta. Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi jako jeden z kanałów mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
+Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi jako jeden z kanałów mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
 
 Co się wtedy dzieje?
 
@@ -182,7 +176,7 @@ Warto podkreślić, że w tym przypadku rzeczywista (tj. zgodna z realem) tożsa
 
 #### Problem
 
-W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamości na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do innego podmiotu. Firma typu Facebook ma pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
+W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamości na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do innego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
 
 #### Korzyści
 
@@ -206,7 +200,7 @@ Na blockchainie EOS dokonujemy wpisów stwierdzających stan faktyczny, który w
 Podobnie jak powyżej każdy wpis:
 
 1. Ma przypisaną datę kiedy został dokonany.
-2. Jest podpisany certyfikowanym podpisem elektronicznym notariusza N (albo jakąś inną instytucję zaufania publicznego). W ten sposób notariusz N gwarantuje prawdziwość informacji zawartej w tym wpisie.
+2. Jest podpisany certyfikowanym podpisem elektronicznym notariusza N (albo jakiejś innej instytucji zaufania publicznego). W ten sposób notariusz N gwarantuje prawdziwość informacji zawartej w tym wpisie.
 3. Jest w postaci zahashowanej, tj. nieczytelnej dla osób trzecich. W ten sposób unikamy problemu z ochroną wrażliwych danych osobowych.
 
 Te same informacje (bez hashowania) zostają umieszczone w aplikacji mobilnej klienta K.
@@ -275,7 +269,7 @@ Tak więc teoretycznie wszystkie powyższe przypadki (tj. cyfryzacja dokumentów
 
 Więc po jest nam blockchain?
 
-Gdybyśmy wyeliminowali blockchain, wylądowalibyśmy w paradygmacie certyfikowanego podpisu cyfrowego, w którym koszt certyfikatu musi być poniesiony przez klienta K, co z kolei jest istotną barierą w masowej adopcji tego rodzaju systemu. Natomiast zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K, którego dotyczy proces KYC, na firmę F, która jest beneficjentem istotnej redukcji kosztów procesu KYC.
+Gdybyśmy wyeliminowali blockchain, wylądowalibyśmy w paradygmacie certyfikowanego podpisu cyfrowego, w którym koszt certyfikatu musi być poniesiony przez klienta K, co z kolei jest istotną barierą w masowej adopcji tego rodzaju systemu. Natomiast zastąpienie certyfikatu (będącego w posiadaniu klienta K) zapisem na blockchainie (dokonanym przez instytucję certyfikującą) pozwala na przeniesienie kosztu certyfikacji z klienta K na firmę F, która jest zwykle beneficjentem otrzymania certyfikowanych informacji (może się zdarzyć, że benficjentem jest klient K - wtedy on powinien ponieść koszt).
 
 Dzięki użyciu blockchaina odwraca się zatem model ekonomiczny całego systemu: zapisany na blockchainie certyfikat przynosi dochody instytucji, która go wystawiła, a koszty ponosi firma F, która z niego korzysta, a nie klient K, jak to ma miejsce w tradycyjnym mechanizmie certyfikowanego podpisu cyfrowego.
 
@@ -329,7 +323,7 @@ Ta deklaracja też jest intrygująca:
 Nasza pozycja konkurencyjna wygląda dość korzystnie ponieważ:
 
 - Działamy w cieniu firm dużo większych od nas (np. Civic, Decentralized Identity) - one już wykonały sporo roboty za nas i dodatkowo uwiarygadniają sensowność naszego przedsięwzięcia.
-- Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo w pierwszym etapie zajmujemy się tylko KYC), więc dokładnie wiadomo co trzeba robić i nie tracimy czasu i kasy na eksperymentowanie.
-- Mamy technologię (EOS), która jest wyraźnie lepsza od tej, którą wybrali inni, bo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, niewydolność i powolność procesowania transakcji), a dodatkowo zawiera sprzyjające nam funkcjonalności (np. procedura odzyskiwania skradzionego / zgubionego klucza prywatnego i jego biometrycza ochrona).
+- Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo w pierwszym etapie zajmujemy się tylko KYC), więc dokładnie wiadomo co trzeba robić i nie tracimy czasu i kapitału na eksperymentowanie.
+- Mamy technologię (platforma EOS), która jest wyraźnie lepsza od tej, którą wybrali inni, bo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, niewydolność i powolność procesowania transakcji), a dodatkowo zawiera sprzyjające nam funkcjonalności (np. procedura odzyskiwania skradzionego / zgubionego klucza prywatnego i jego biometrycza ochrona).
 - Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy. Możemy też podpatrzyć z kim Civic zawarł alianse biznesowe w USA i zrobić podobne układy lokalnie.
 
