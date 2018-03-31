@@ -31,6 +31,7 @@ Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej f
 Szukamy rozwiązania dla procesu KYC, które:
 
 - umożliwi skalowanie procedury KYC, czyli wyeliminuje konieczność powtarzania tego procesu przez kolejne firmy,
+- będzie działać dla wszystkich firm, które podlegają wymogom KYC (tj. nie tylko dla podmiotów bankowych),
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
 - otworzy drogę na inne niż KYC zastosowania, w szczególności do rozposzechnienia koncepcji cyfrowej tożsamości.
 

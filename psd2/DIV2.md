@@ -16,6 +16,14 @@ Wymogi KYC narzucają na firmy konieczność ustalenia tożsamości każdego now
 
 Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez kolejne firmy.
 
+Jedynym znanym nam sposobem na skalowanie KYC jest wykorzystanie procedury tzw. testowego przelewu, tj. klient poświadcza swoją tożsamość poprzez wykonanie przelewu ze swojego rachunku w innym banku do banku, który chce dokonać werfikacji KYC. Oczywiste są wady tego rozwiązania:
+
+* nie rozwiązuje to problemu dla podmiotów niebankowych,
+* nie skaluje się więcej niż raz (bo nie można w ten sposób potwerdzić tożsamości w kolejnym banku),
+* wymaga to od klienta dodatkowego wysiłku.
+
+Niemniej tego rodzaju kombinowanie (tj. używnie przelewu bankowego do innych celów niż cel finansowy) pokazuje, że problem nieskalowalności KYC rzeczywiście istnieje.
+
 Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej firmy, która się tym zajmuje, nie rozwiązuje problemu skalowania KYC. Nawet jeśli podmiot specjalizujący się w KYC dostanie zlecenie weryfikacji klienta K, którego wcześniej weryfikował dla innej firmy, to i tak cały proces KYC będzie musiał być uruchomiony od nowa, bo nie ma żadnego formalnego dowodu, że w obu przypadkach jest to rzeczywiście ten sam klient K.
 
 #### Co chcemy osiągnąć?
@@ -23,6 +31,7 @@ Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej f
 Szukamy rozwiązania dla procesu KYC, które:
 
 - umożliwi skalowanie procedury KYC, czyli wyeliminuje konieczność powtarzania tego procesu przez kolejne firmy,
+- będzie działać dla wszystkich firm, które podlegają wymogom KYC (tj. nie tylko dla podmiotów bankowych),
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
 - otworzy drogę na inne niż KYC zastosowania, w szczególności do rozposzechnienia koncepcji cyfrowej tożsamości.
 
@@ -78,19 +87,19 @@ Zakładając że dla klienta K powyższa konfiguracja procesu została już prze
 
 Autoryzacja sprowadza się zatem do potwierdzenia, że klient K dysponuje kluczem prywatnym X, który odpowiada kluczowi publicznemu Y. W ten sposób bank B ma pewność, że propozycja transakcji finansowej została zatwierdzona przez klienta K, bo tylko on może być posiadaczem klucza prywatnego X, który odpowiada kluczowi publicznemu Y, przypisanemu w banku B klientowi K.
 
-#### Korzyści
-
-Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem niegorszym niż alternatywne metody (np. esemesy lub Google Athenticator). Dodatkowe korzyści są takie:
-
-1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych.
-2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej opcji.
-
 #### Odzyskiwanie klucza
 
 Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego może przebiegać na dwa sposoby:
 
 1. Najprostszym rozwiązaniem wydaje się być wykorzystanie do tego celu banku i uruchomienie precedury analogicznej do odzyskiwania hasła w tradycyjnych systemach, tj. zablokowanie istniejącego klucza i aktywacja nowego. 
 2. Alternatywnym sposobem jest wykorzystanie dość spektakularnych (jak na blockchain) możliwości EOSa w tym zakresie.
+
+#### Korzyści
+
+Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem niegorszym niż alternatywne metody (np. esemesy lub Google Athenticator). Dodatkowe korzyści są takie:
+
+1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych.
+2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej opcji.
 
 ## Wykorzystanie kryptografii asymetrycznej do skalowania procesu KYC
 
@@ -285,7 +294,7 @@ Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest unik
 
 To co robimy w zakresie wykorzystania kryptografii asymetrycznej do skalowania KYC to podzbiór większego zagadnienia znanego jako [Cyfrowa Tożsamość](http://di.com.pl/cyfrowa-tozsamosc-56607) (Digital Identity) albo, w przypadku użycia systemów rozproszonych, Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
 
-W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, np. Dan Larimer miał wtedy pomysł na systemem zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8).
+W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, np. Dan Larimer miał wtedy pomysł  systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8).
 
 Obecnie istnieje [spora liczba projektów blockchainowych](https://github.com/peacekeeper/blockchain-identity), które podejmują rożne aspekty cyfrowej tożsamości i jej weryfikacji. Najważniejsze naszym zdaniem są te dwa:
 
