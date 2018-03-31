@@ -129,7 +129,7 @@ Bardzo istotne jest tu, że dane te są w formie zashashowanej, a więc nieczyte
 
 Tym samym bank wprowadza nam do naszego systemu skalowalnego KYC tysiące swoich klientów i on sam staje się gwarantem autentyczności informacji publikowanych blockchainie.
 
-Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo, a w zmian zasila nasz system skalowalnego KYC dużą liczbą zweryfikowanych pod kątem KYC użytkowników.
+Podsumowując: partner bankowy dostaje od nas system mocnej autoryzacji za darmo, a w zamian zasila nasz system skalowalnego KYC dużą liczbą zweryfikowanych pod kątem KYC użytkowników.
 
 #### Proces
 
@@ -187,7 +187,7 @@ Warto podkreślić, że w tym przypadku rzeczywista (tj. zgodna z realem) tożsa
 
 #### Problem
 
-W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamości na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do innego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
+W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do innego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
 
 #### Korzyści
 
@@ -253,7 +253,7 @@ Użycie tego systemu przez podmioty trzecie jest analogiczne do wyżej opisanego
 
 #### Korzyści
 
-Otwieramy w ten sposób drogę dla internetowych kancelarii notarialnych. Notariusz N może zweryfikować tożsamość swoich klientów i przyjąć ich oświadczenia woli online, tj. bez konieczności organizacji fizycznego spotkania.
+Otwieramy w ten sposób drogę dla internetowych kancelarii notarialnych. Notariusz N może zweryfikować tożsamość swoich klientów online, a następnie przyjąć ich oświadczenia woli także online, tj. bez konieczności organizacji fizycznego spotkania.
 
 #### Legislacja
 
@@ -289,7 +289,7 @@ Dodanie do powyższego smart-kontraktu minimalnej marży dla nas (jako twórców
 
 #### Własny token?
 
-Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami naszego systemu (tym tropem idzie Civic i inne podobne zdecentralizowane rozwiązania). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast nieusuwalną wadą jest to, że własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
+Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami naszego systemu (tym tropem idzie projekt [Civic](https://www.civic.com/) i inne podobne zdecentralizowane rozwiązania). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast nieusuwalną wadą jest to, że własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
 
 Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest uniknąć wprowadzania własnego tokenu i opłaty w smart-kontrakcie realizować albo w bardziej uniwersalnych tokenach EOSa albo w jakieś niezależnej, stabilnej walucie, która zapewne powstanie na EOSie.
 

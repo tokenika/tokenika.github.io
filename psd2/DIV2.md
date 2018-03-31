@@ -127,14 +127,14 @@ Co się wtedy dzieje?
 
 Uzgadniamy z naszym partnerem bankowym, żeby rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta.
 
-Tym samym partner bankowy dostaje od nas system mocnej autoryzacji (za darmo lub za opłatą - to jest kwestia wyniku negocjacji), a w zmian, poprzez rozpowszechnienie naszego systemu autoryzacji w PSD2 wśród swoich klientów, czyni nasz system weryfikacji tożsamości wysoce użytecznym dla firm potrzebujących sprawnej i szybkiej weryfikacji KYC.
+Tym samym partner bankowy dostaje od nas system mocnej autoryzacji (za darmo lub za opłatą - to jest kwestia wyniku negocjacji), a w zamian, poprzez rozpowszechnienie naszego systemu autoryzacji w PSD2 wśród swoich klientów, czyni nasz system weryfikacji tożsamości wysoce użytecznym dla firm potrzebujących sprawnej i szybkiej weryfikacji KYC.
 
 #### Proces podstawowy
 
 Załóżmy, że:
 
 1. Firma F potrzebuje dokonać weryfikacji KYC klienta K i ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenia banku B w zakresie tożsamości klienta K uznaje za prawdziwe.
-2. My, jako twórcy i operatorzy aplikacji mobilnej klienta K służącej mu do autoryzacji w PSD2, pełnimy też rolę TPP. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.
+2. My, jako twórcy i operatorzy aplikacji mobilnej klienta K służącej mu do autoryzacji w PSD2, pełnimy rolę TPP. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.
 
 Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 
@@ -146,14 +146,14 @@ Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 
 #### Proces rozszerzony
 
-Do podpisanego elektronicznie pakietu otrzymanego od banku B możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K. Wtedy firma F, po standardowym zweryfikowaniu posiadania przez klienta K klucza prywatnego X (który odpowiada kluczowi publicznemu Y):
+Do otrzymywanego od banku B pakietu informacji z danymi KYC dla klienta K możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K. Wtedy firma F, po standardowym zweryfikowaniu posiadania przez klienta K klucza prywatnego X (który odpowiada kluczowi publicznemu Y):
 
 * uzyskuje dodatkową pewność co do tożsamości klienta K,
 * a ponadto może, podobnie jak bank B, powiązać w swoim systemie tożsamość klienta K z tym kluczem publicznym i w przyszłości autoryzować klienta K poprzez nasz system, przyjmując założenie że posiadanie klucza prywatnego X jest tożsame z byciem klientem K.
 
 #### Korzyści
 
-Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedury KYC, bo korzysta z wyników procedury KYC przeprowadzonej wcześniej przez zaufany bank B.
+Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedury KYC, bo korzysta z wyników procedury KYC przeprowadzonej wcześniej przez bank B.
 
 #### Legislacja
 
@@ -176,7 +176,7 @@ Warto podkreślić, że w tym przypadku rzeczywista (tj. zgodna z realem) tożsa
 
 #### Problem
 
-W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamości na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do innego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
+W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do innego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
 
 #### Korzyści
 
@@ -253,7 +253,7 @@ Użycie tego systemu przez podmioty trzecie jest analogiczne do wyżej opisanego
 
 #### Korzyści
 
-Otwieramy w ten sposób drogę dla internetowych kancelarii notarialnych. Notariusz N może zweryfikować tożsamość swoich klientów i przyjąć ich oświadczenia woli online, tj. bez konieczności organizacji fizycznego spotkania.
+Otwieramy w ten sposób drogę dla internetowych kancelarii notarialnych. Notariusz N może zweryfikować tożsamość swoich klientów online, a następnie przyjąć ich oświadczenia woli także online, tj. bez konieczności organizacji fizycznego spotkania.
 
 #### Legislacja
 
@@ -279,7 +279,7 @@ Mamy więc subtelną, lecz istotną różnicę: wprowadzamy model ekonomiczny, k
 
 Oczywiście wyżej opisane przepływy finansowe są możliwe przy założeniu, że certyfikat zapisany na blockchainie będzie obudowany odpowiednim smart-kontraktem, który te opłaty będzie implementował.
 
-Istotą takiego smart-kontraktu jest pobieranie opłaty od firmy F (albo klienta K, bo taka sytuacja też ma czasem sens) na rzecz banku B (albo innej instytucji, która dokonała weryfikacji klienta K) za każdym razem, gdy firma F (albo klient K) jest beneficjentem tego udogodnienia.
+Istotą takiego smart-kontraktu jest pobieranie opłaty od firmy F (albo klienta K, bo taka sytuacja też ma czasem sens) na rzecz instytucji, która uprzednio dokonała certyfikacji informacji opublikowanej (w postaci zahashowanej) na blockchainie za każdym razem, gdy firma F (albo klient K) jest beneficjentem tego udogodnienia.
 
 Głównym celem tego rodzaju opłat jest dobre zmotywowanie uczestników tego systemu, tak żeby korzyści finansowe miał ten podmiot, który popełnia wysiłek, a koszty ponosił ten podmiot, który ma korzyści.
 
@@ -289,7 +289,7 @@ Dodanie do powyższego smart-kontraktu minimalnej marży dla nas (jako twórców
 
 #### Własny token?
 
-Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami naszego systemu (tym tropem idzie Civic i inne podobne zdecentralizowane rozwiązania). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast nieusuwalną wadą jest to, że własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
+Nasuwa się pytanie o możliwość wprowadzenia własnego tokenu do przeprowadzania powyższych rozliczeń między uczestnikami naszego systemu (tym tropem idzie projekt [Civic](https://www.civic.com/) i inne podobne zdecentralizowane rozwiązania). Ma to niewątpliwą zaletę w postaci możliwości przeprowadzenia ICO dla takiego przedsięwzięcia. Natomiast nieusuwalną wadą jest to, że własny token oznacza, że aby móc użyć systemu trzeba najpierw zakupić jego tokeny, co jest istotną barierą w procesie adopcji. 
 
 Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest uniknąć wprowadzania własnego tokenu i opłaty w smart-kontrakcie realizować albo w bardziej uniwersalnych tokenach EOSa albo w jakieś niezależnej, stabilnej walucie, która zapewne powstanie na EOSie.
 
