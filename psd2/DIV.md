@@ -16,13 +16,13 @@ Wymogi KYC narzucają na firmy konieczność ustalenia tożsamości każdego now
 
 Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez kolejne firmy.
 
-Jedynym znanym nam sposobem na skalowanie KYC jest wykorzystanie procedury tzw. testowego przelewu, tj. klient poświadcza swoją tożsamość poprzez wykonanie przelewu ze swojego rachunku w innym banku do banku, który chce dokonać werfikacji KYC. Oczywiste są wady tego rozwiązania:
+Jedynym znanym nam sposobem na skalowanie KYC jest wykorzystanie procedury tzw. testowego przelewu, tj. klient poświadcza swoją tożsamość poprzez wykonanie przelewu ze swojego rachunku w innym banku do banku, który chce dokonać weryfikacji KYC. Oczywiste są wady tego rozwiązania:
 
 - nie rozwiązuje to problemu dla podmiotów niebankowych,
-- nie skaluje się więcej niż raz (bo nie można w ten sposób potwerdzić tożsamości w kolejnym banku),
+- nie skaluje się więcej niż raz (bo nie można w ten sposób potwierdzić tożsamości w kolejnym banku),
 - wymaga to od klienta dodatkowego wysiłku.
 
-Niemniej tego rodzaju kombinowanie (tj. używnie przelewu bankowego do innych celów niż cel finansowy) pokazuje, że problem nieskalowalności KYC rzeczywiście istnieje.
+Niemniej tego rodzaju kombinowanie (tj. używanie przelewu bankowego do innych celów niż cel finansowy) pokazuje, że problem nieskalowalności KYC rzeczywiście istnieje.
 
 Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej firmy, która się tym zajmuje, nie rozwiązuje problemu skalowania KYC. Nawet jeśli podmiot specjalizujący się w KYC dostanie zlecenie weryfikacji klienta K, którego wcześniej weryfikował dla innej firmy, to i tak cały proces KYC będzie musiał być uruchomiony od nowa, bo nie ma żadnego formalnego dowodu, że w obu przypadkach jest to rzeczywiście ten sam klient K.
 
@@ -33,7 +33,7 @@ Szukamy rozwiązania dla procesu KYC, które:
 - umożliwi skalowanie procedury KYC, czyli wyeliminuje konieczność powtarzania tego procesu przez kolejne firmy,
 - będzie działać dla wszystkich firm, które podlegają wymogom KYC (tj. nie tylko dla podmiotów bankowych),
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
-- otworzy drogę na inne niż KYC zastosowania, w szczególności do rozposzechnienia koncepcji cyfrowej tożsamości.
+- otworzy drogę na inne niż KYC zastosowania, w szczególności do rozpowszechnienia koncepcji cyfrowej tożsamości.
 
 ## Wprowadzenie skalowalnego KYC poprzez PSD2
 
@@ -76,7 +76,7 @@ Konfiguracja (tj. setup) naszego procesu autoryzacji PSD2 dla nowego klienta wyg
 2. Klucz prywatny X jest trzymany w telefonie i nigdy nikomu poza klientem K nie jest ujawniany (klucz prywatny jest chroniony PIN-em lub biometrycznie - być może da się tu sprytnie wykorzystać właściwości biometryczne EOSa).
 3. Aplikacja przekazuje bankowi B klucz publiczny Y klienta K.
 
-W wyniku tego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y. Prawdopodobnie wymagało to będzie pewnego rodzaju procesu aktywacji (podobnie jak aktywujemy nowootrzymaną kartę debetową), tak żeby bank B miał pewność, że wygenerowany przez naszą aplikację klucz publiczny rzeczywiście należy do klienta K.
+W wyniku tego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y. Prawdopodobnie wymagało to będzie pewnego rodzaju procesu aktywacji (podobnie jak aktywujemy nowo otrzymaną kartę debetową), tak żeby bank B miał pewność, że wygenerowany przez naszą aplikację klucz publiczny rzeczywiście należy do klienta K.
 
 Uwaga: Żeby dostawca technologii mógł uniknąć podejrzeń o nieuczciwość, kod źródłowy i dystrybucja wspomnianej wyżej aplikacji mobilnej musiałyby być pod kontrolą banku B.
 
@@ -93,12 +93,12 @@ Autoryzacja sprowadza się zatem do potwierdzenia, że klient K dysponuje klucze
 
 Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego może przebiegać na dwa sposoby:
 
-1. Najprostszym rozwiązaniem wydaje się być wykorzystanie do tego celu banku i uruchomienie precedury analogicznej do odzyskiwania hasła w tradycyjnych systemach, tj. zablokowanie istniejącego klucza i aktywacja nowego. 
+1. Najprostszym rozwiązaniem wydaje się być wykorzystanie do tego celu banku i uruchomienie procedury analogicznej do odzyskiwania hasła w tradycyjnych systemach, tj. zablokowanie istniejącego klucza i aktywacja nowego. 
 2. Alternatywnym sposobem jest wykorzystanie dość spektakularnych (jak na blockchain) możliwości EOSa w tym zakresie.
 
 #### Korzyści
 
-Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem niegorszym niż alternatywne metody (np. esemesy lub Google Athenticator). Dodatkowe korzyści są takie:
+Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem niegorszym niż alternatywne metody (np. esemesy lub Google Authenticator). Dodatkowe korzyści są takie:
 
 1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych.
 2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej opcji.
@@ -123,7 +123,7 @@ Każdy bank ma zweryfikowaną tożsamość każdego swojego klienta. Załóżmy,
 
 Co się wtedy dzieje?
 
-Uzgadniamy z naszym partnerem bankowym, żeby umieszczał on w formie zapisów na blockchainie EOSa mapowanie *klucz publiczny vs. zahashowane dane osobowe wymagane w procesie KYC* dla wszystkich swoich klientów korzystających z naszego systemu autoryzacji. Musiałby to być zrobione automatycznie, tak żeby dane na blockchainie były zawsze aktulne.
+Uzgadniamy z naszym partnerem bankowym, żeby umieszczał on w formie zapisów na blockchainie EOSa mapowanie *klucz publiczny vs. zahashowane dane osobowe wymagane w procesie KYC* dla wszystkich swoich klientów korzystających z naszego systemu autoryzacji. Musiałby to być zrobione automatycznie, tak żeby dane na blockchainie były zawsze aktualne.
 
 Bardzo istotne jest tu, że dane te są w formie zashashowanej, a więc nieczytelnej dla osób trzecich (czyli odpada problem upublicznienia wrażliwych danych osobowych).
 
@@ -175,7 +175,7 @@ Alternatywnie, ustawa musi zapewnić, że udowodnienie posiadania przez klienta 
 
 ## Rozszerzenie 1: Kryptograficzna ochrona tożsamości i reputacji
 
-#### Koncepja
+#### Koncepcja
 
 Wykorzystując fakt posiadania (z racji autoryzacji w PSD2) przez dużą liczbę użytkowników klucza prywatnego, łatwo jest zastąpić poprzez użycie kryptografii asymetrycznej funkcjonalność typu *zaloguj się przez Facebook*.
 
