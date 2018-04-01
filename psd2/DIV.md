@@ -100,7 +100,7 @@ Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego może przebie
 
 Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem niegorszym niż alternatywne metody (np. esemesy lub Google Authenticator). Dodatkowe korzyści są takie:
 
-1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien musieć ujawnić swojego klucza prywatnego komukolwiek - oczywiście o ile będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
+1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien mieć powodu aby ujawnić swój klucz prywatny komukolwiek - oczywiście o ile będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
 2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej możliwości.
 
 ## Wykorzystanie kryptografii asymetrycznej do skalowania procesu KYC
@@ -181,7 +181,7 @@ Wykorzystując fakt posiadania przez naszych użytkowników klucza prywatnego, �
 
 Usługa ta w swojej obecnej formie jest niczym innym niż wykorzystaniem reputacji (i/lub unikalnej tożsamości), którą dany użytkownik ma na jakimś znanym serwisie (typu Facebook, Twitter, Gmail, GitHub) do utworzenia unikalnej tożsamości (i w konsekwencji możliwości budowy reputacji wokół tej tożsamości) na jakimś innym, mniej popularnym serwisie S.
 
-Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: stwarza to łatwiejszą konwersję dla serwisu S i większą wygodę dla użytkownika. 
+Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: większa wygoda dla użytkownika i tym samym łatwiejsze dla serwisu S staje się pozyskanie nowego klienta.
 
 Warto podkreślić, że w tym przypadku rzeczywista (tj. zgodna z realem) tożsamość użytkownika nie jest konieczna (tj. proces KYC może nie być wymagany), liczy się tylko to, żeby serwis S mógł w swoim systemie przypisać danego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook.
 
@@ -223,7 +223,7 @@ Użycie tego systemu przez podmioty trzecie jest analogiczne do wyżej opisanego
 Uzyskujemy dwojakiego rodzaju korzyści:
 
 1. Następuje migracja informacji zawartych w tradycyjnych dokumentach papierowych do formy cyfrowej, co oczywiście oznacza redukcję kosztów i możliwości fałszowania.
-2. Następuje przejęcie pełnej kontroli nad informacją przez podmiot, do której ona należy. W tym paradygmacie każdorazowo gdy informacja jest przekazywana osobie trzeciej, musi się na to zgodzić jej właściciel, tj. posiadacz klucza prywatnego. Możliwe staje się też przekazywanie minimalnej informacji jaka jest w danej sytuacji potrzebna, np. żeby udowodnić swoją pełnoletność nie trzeba przekazywać pełnej daty urodzenia, lecz fakt bycia starszym niż dany próg wiekowy.
+2. Następuje przejęcie pełnej kontroli nad informacją przez podmiot, do którego ona należy. W tym paradygmacie każdorazowo gdy informacja jest przekazywana osobie trzeciej, musi się na to zgodzić jej właściciel, tj. posiadacz klucza prywatnego. Możliwe staje się też przekazywanie minimalnej informacji jaka jest w danej sytuacji potrzebna, np. żeby udowodnić swoją pełnoletność nie trzeba przekazywać pełnej daty urodzenia, lecz tylko fakt bycia starszym niż dany próg wiekowy.
 3. Pełna kontrola posiadacza klucza prywatnego nad informacją otwiera także możliwość świadomego sprzedawania własnych danych demograficznych (których prawdziwość jest poświadczona kryptograficznie) podmiotom zainteresowanym tego rodzaju danymi.
 
 #### Legislacja
@@ -310,7 +310,7 @@ Dostępna jest dość [wiarygodna recenzja systemu Civic](https://www.scottbrady
 
 Tak więc pomysł jest oceniany jako bardzo dobry, ale wykonanie jako dość niefortunne. Dodatkowo Civic bazuje na [RootStock](https://www.rsk.co/), czyli będzie się zmagał ze wszystkimi problemami jakie ma w sobie Bitcoin.
 
-W przypadku projektu Decentralized Identity, też jest ciekawa sytuacja, bo wygląda na to, że oni doszli do ściany w zakresie możliwości Ethereum:
+W przypadku projektu Decentralized Identity, też jest ciekawa sytuacja, bo wygląda na to, że jego twórcy doszli do ściany w zakresie możliwości Ethereum:
 
 > We found Ethereum smart contracts unfit for computations that go beyond than the basics. While we understand that the technology is just growing up, we found that not being able to do computations (like hashing) on the Blockchain is a major drawback. The global computational power isn’t available for Dapps yet.
 
