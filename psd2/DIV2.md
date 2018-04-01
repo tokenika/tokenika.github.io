@@ -303,7 +303,7 @@ Ponieważ łatwa adopcja jest krytycznie ważna, naszym zdaniem lepiej jest unik
 
 ## Szerszy kontekst: Digital Identity
 
-Propozycja opisana w niniejszym dokumencie to podzbiór większego zagadnienia znanego jako [Cyfrowa Tożsamość](http://di.com.pl/cyfrowa-tozsamosc-56607) (Digital Identity) albo, w przypadku użycia systemów rozproszonych, Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
+Propozycje opisane w niniejszym dokumencie to podzbiór większego zagadnienia znanego jako [Cyfrowa Tożsamość](http://di.com.pl/cyfrowa-tozsamosc-56607) (Digital Identity) albo, w przypadku użycia systemów rozproszonych, Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
 
 W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, np. Dan Larimer miał wtedy pomysł  systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8).
 
@@ -334,4 +334,13 @@ Nasza pozycja konkurencyjna wygląda dość korzystnie ponieważ:
 - Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo w pierwszym etapie zajmujemy się tylko KYC), więc dokładnie wiadomo co trzeba robić i nie tracimy czasu i kapitału na eksperymentowanie.
 - Mamy technologię (platforma EOS), która jest wyraźnie lepsza od tej, którą wybrali inni, bo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, niewydolność i powolność procesowania transakcji), a dodatkowo zawiera sprzyjające nam funkcjonalności (np. procedura odzyskiwania skradzionego / zgubionego klucza prywatnego i jego biometrycza ochrona).
 - Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy. Możemy też podpatrzyć z kim Civic zawarł alianse biznesowe w USA i zrobić podobne układy lokalnie.
+
+
+## Proponowana nazwa systemu
+
+Nazwa powinna nawiązywać do czegoś, co jest prywatne i służy do weryfikowania tożsamości, autetyczności  intencji i autoryzacji różnego rodzaju działań.
+
+Propozycje: *Viza*, *Sigma*, *Signum*, *Signet*, *Sygnet*
+
+> Signet - a small seal, especially one set in a ring, used instead of or with a signature to give authentication to an official document.
 
