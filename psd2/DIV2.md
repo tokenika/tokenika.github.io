@@ -2,7 +2,7 @@
 
 ## Streszczenie
 
-Wszystkie obecne procedury KYC mają jedną istotną wadę: każda firma musi przeprowadzać ten sam proces od nowa. Nasze rozwiązanie bazuje na legislacji PSD2 i umożliwia wykorzystanie dla celów KYC znajdującej się w banku informacji o tożsamości klienta. Dzięki temu bank, oprócz świadczenia usług finansowych, radykalnie ułatwia swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się generatorem cyfrowej tożsamości swoich klientów. Co więcej, produktem ubocznym naszego rozwiązania jest zbudowanie jednego z kanałów mocnej autoryzacji dla przelewów bankowych w PSD2.
+Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie znajdującej się w banku informacji o tożsamości klienta. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w internecie.
 
 ## Wprowadzenie
 
