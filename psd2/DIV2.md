@@ -170,6 +170,18 @@ Wymagania legislacyjne są następujące:
 1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
 2. Ustawa musi zapewnić, że podpisane kryptograficznie oświadczenie banku odnośnie tożsamości jego klienta jest wiarygodną formą weryfikacji KYC. Możemy wstępnie przyjąć, że będzie to możliwe, skoro już teraz wyżej opisany przelew testowy jest uznawany za wiarygodną formę weryfikacji KYC, a nasza metoda na pewno nie jest mniej wiarygodna.
 
+## Czym nasze rozwiązanie różni się od państwowego serwisu "profil zaufany"?
+
+Wedle [dokumentacji](https://www.gov.pl/cyfryzacja/profil-zaufany-ego-) Ministerstwa Cyfryzacji profil zaufany to bezpłatna metoda potwierdzania tożsamości obywatela w systemach elektronicznej administracji.
+
+> Profil zaufany działa jak odręczny podpis. Możesz dzięki niemu wysyłać przez internet dokumenty i wnioski do różnych urzędów (np. wnieść podanie, odwołanie, skargę). Profil zaufany potwierdza tożsamość obywatela  — podpis potwierdzony profilem zaufanym, podobnie jak kwalifikowany podpis elektroniczny, skutecznie zastępuje w kontaktach z podmiotami publicznymi podpis własnoręczny.
+
+Podobnie jak w naszym rozwiązaniu jednym z podmiotów zdolnych do wygenerowania dla użytkownika profilu zaufanego jest serwis bankowy. Kilka banków w Polsce oferuje taką usługę.
+
+Jednak jest istotna różnica: zastosowanie profilu zaufanego jest ograniczone do serwisów państwowych. Ograniczenie to wynika ze sposobu działania tego systemu: polega on na tym, że po założeniu profilu zaufanego użytkownik uzyskuje dostęp do wspólnego dla systemów państwowych mechanizmu logowania, lecz nie jest to równoważne z uzyskaniem uniwersalnej cyfrowej tożsamości.
+
+Wyżej wspomniany uwspólniony mechanizm logowania do systemów państwowych z założenia nie może być rozszerzony na sferę niepaństwową. Tak więc profil zaufany nie rozwiązuje problemu KYC dla firm.
+
 ## Rozszerzenie 1: Kryptograficzna ochrona tożsamości i reputacji
 
 #### Koncepcja
@@ -338,7 +350,9 @@ Nasza pozycja konkurencyjna wygląda dość korzystnie ponieważ:
 
 ## Proponowana nazwa systemu
 
-Nazwa powinna nawiązywać do czegoś, co jest prywatne i służy do weryfikowania tożsamości, autetyczności  intencji i autoryzacji różnego rodzaju działań. Dodatkowym warunkiem jest dobre funkcjonowanie nazwy zarówno w języku polskim jak i angielskim.
+Nazwa powinna nawiązywać do czegoś, co jest prywatne i służy do weryfikowania tożsamości i autoryzacji różnego rodzaju działań. Najlepiej coś kojarzącego się z podpisem.
+
+Dodatkowym warunkiem jest dobre funkcjonowanie nazwy zarówno w języku polskim jak i angielskim.
 
 Propozycje: *Viza*, *Sigma*, *Signum*, *Signet*, *Sygnet*
 
