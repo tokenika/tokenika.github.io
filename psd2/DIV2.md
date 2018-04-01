@@ -338,7 +338,7 @@ Nasza pozycja konkurencyjna wygląda dość korzystnie ponieważ:
 
 ## Proponowana nazwa systemu
 
-Nazwa powinna nawiązywać do czegoś, co jest prywatne i służy do weryfikowania tożsamości, autetyczności  intencji i autoryzacji różnego rodzaju działań.
+Nazwa powinna nawiązywać do czegoś, co jest prywatne i służy do weryfikowania tożsamości, autetyczności  intencji i autoryzacji różnego rodzaju działań. Dodatkowym warunkiem jest dobre funkcjonowanie nazwy zarówno w języku polskim jak i angielskim.
 
 Propozycje: *Viza*, *Sigma*, *Signum*, *Signet*, *Sygnet*
 
