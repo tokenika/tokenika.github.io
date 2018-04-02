@@ -276,11 +276,14 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 ## Monetyzacja systemu
 
-Warto zauważyć, że istotą naszej aplikacji mobilnej jest ochrona klucza prywatnego, co oznacza, że pełni ona rolę analogiczną do portfela kryptowalutowego. Jest jednak istotna różnica: nasza aplikacja nie zajmuje się obsługą związanych z tym kluczem kryptowalut (tj. otrzymywanie i wysyłanie płatności), lecz obsługą związanych z tym kluczem danych osobowych i informacji.
+Warto zauważyć, że:
+
+1. Istotą naszej aplikacji mobilnej jest ochrona klucza prywatnego, co oznacza, że pełni ona rolę analogiczną do portfela kryptowalutowego. Jest jednak istotna różnica: nasza aplikacja nie zajmuje się obsługą związanych z tym kluczem kryptowalut (tj. otrzymywanie i wysyłanie płatności), lecz obsługą związanych z tym kluczem danych osobowych i informacji.
+2. Mimo że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa, wszystkie wyżej opisane propozycje nie wymagają interakcji z blockchainem. W przyszłości, gdy powstaną nowe funkcjonaliści, to się może zmienić, ale na razie warto postrzegać to jako zaletę: w okresie początkowym nie jesteśmy uzależnieni od konkretnej platformy technologicznej.
 
 Najprostszą metodą monetyzacji naszego systemu wydaje się zatem komercjalizacja bardziej zaawansowanych funkcjonaliści naszej aplikacji mobilnej (np. delegacja uprawnień związanych z danym kluczem prywatnym, podejmowanie decyzji poprzez głosowanie, raportowanie, backup danych itp.)
 
-Drugą opcją jest rozbudowa tej aplikacji w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tym blockchainie. Korzystamy wtedy z faktu, że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa - wystarczy więc zarejestrować te klucze na blockchainie EOSa żeby otworzyć naszym użytkownikom dostęp do bogatego (miejmy nadzieję) ekosystemu przeróżnych aplikacji.
+Drugą opcją jest rozbudowa tej aplikacji w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tym blockchainie. Korzystamy wtedy z faktu naszej kompatybilności z blockchainem EOSa - wystarczy więc zarejestrować klucze prywatne naszych użytkowników na blockchainie EOSa żeby otworzyć im dostęp do bogatego (miejmy nadzieję) ekosystemu przeróżnych aplikacji.
 
 Zatem posiadanie w swoim telefonie naszej aplikacji mobilnej staje się tożsame z posiadaniem konta w ekosystemie EOS. Gdyby nasza aplikacja stała się powszechnie używana (chociażby ze względu na autoryzację w PSD2), wówczas alternatywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
 
