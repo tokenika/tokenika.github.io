@@ -154,9 +154,11 @@ Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 
 #### Proces rozszerzony
 
-Do otrzymywanego od banku B pakietu informacji z danymi KYC dla klienta K możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K. Wtedy, po standardowym zweryfikowaniu posiadania przez klienta K klucza prywatnego X, firma F:
+Do otrzymywanego przez firmę F od banku B pakietu informacji z danymi KYC dla klienta K możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K.
 
-* uzyskuje dodatkową pewność co do tożsamości klienta K,
+Wtedy firma F:
+
+* po standardowym zweryfikowaniu posiadania przez klienta K klucza prywatnego X uzyskuje dodatkową pewność co do tożsamości klienta K,
 * a ponadto może, podobnie jak bank B, powiązać w swoim systemie tożsamość klienta K z tym kluczem publicznym i w przyszłości autoryzować klienta K poprzez nasz system, przyjmując założenie że posiadanie klucza prywatnego X jest tożsame z byciem klientem K.
 
 #### Korzyści
@@ -170,17 +172,17 @@ Wymagania legislacyjne są następujące:
 1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
 2. Ustawa musi zapewnić, że podpisane kryptograficznie oświadczenie banku odnośnie tożsamości jego klienta jest wiarygodną formą weryfikacji KYC. Możemy wstępnie przyjąć, że będzie to możliwe, skoro już teraz wyżej opisany przelew testowy jest uznawany za wiarygodną formę weryfikacji KYC, a nasza metoda na pewno nie jest mniej wiarygodna.
 
-## Czym nasze rozwiązanie różni się od państwowego serwisu *profil zaufany*?
+## Czym nasze rozwiązanie różni się od profilu zaufanego?
 
 Wedle [dokumentacji](https://www.gov.pl/cyfryzacja/profil-zaufany-ego-) Ministerstwa Cyfryzacji profil zaufany to bezpłatna metoda potwierdzania tożsamości obywatela w systemach elektronicznej administracji.
 
 > Profil zaufany działa jak odręczny podpis. Możesz dzięki niemu wysyłać przez internet dokumenty i wnioski do różnych urzędów (np. wnieść podanie, odwołanie, skargę). Profil zaufany potwierdza tożsamość obywatela  — podpis potwierdzony profilem zaufanym, podobnie jak kwalifikowany podpis elektroniczny, skutecznie zastępuje w kontaktach z podmiotami publicznymi podpis własnoręczny.
 
-Podobnie jak w naszym rozwiązaniu jednym z podmiotów zdolnych do wygenerowania dla użytkownika profilu zaufanego jest serwis bankowy. Kilka banków w Polsce oferuje taką usługę.
+Na pierwszy rzut oka wygląda to na rozwiązanie bardzo podobne do naszego. Co więcej, podobnie jak w naszym podejściu jednym z podmiotów zdolnych do wygenerowania dla użytkownika profilu zaufanego jest serwis bankowy. Kilka banków w Polsce oferuje taką usługę.
 
-Jednak jest istotna różnica: zastosowanie profilu zaufanego jest ograniczone do serwisów państwowych. Ograniczenie to wynika ze sposobu działania tego systemu: polega on na tym, że po założeniu profilu zaufanego użytkownik uzyskuje dostęp do wspólnego dla systemów państwowych mechanizmu logowania, lecz nie jest to równoważne z uzyskaniem uniwersalnej cyfrowej tożsamości.
+Jest jednak istotna różnica: zastosowanie profilu zaufanego jest ograniczone do serwisów państwowych. Ograniczenie to wynika ze sposobu działania tego systemu: polega on na tym, że po założeniu profilu zaufanego użytkownik uzyskuje dostęp do wspólnego dla systemów państwowych mechanizmu logowania, lecz nie jest to równoważne z uzyskaniem uniwersalnej cyfrowej tożsamości. Tak więc profil zaufany z założenia nie może być rozszerzony na sferę niepaństwową i tym samym nie rozwiązuje problemu KYC dla firm.
 
-Wyżej wspomniany uwspólniony mechanizm logowania do systemów państwowych z założenia nie może być rozszerzony na sferę niepaństwową. Tak więc profil zaufany nie rozwiązuje problemu KYC dla firm.
+Niemniej porównanie naszego rozwiązania do profilu zaufanego wydaje się jak najbardziej uzasadnione. Można nawet powiedzieć, że nasz system oferuje biznesom rozwiązanie analogiczne do tego, jakie profil zaufany oferuje urzędom państwowym.
 
 ## Rozszerzenie 1: Kryptograficzna ochrona tożsamości i reputacji
 
@@ -190,17 +192,24 @@ Wykorzystując fakt posiadania przez naszych użytkowników klucza prywatnego, �
 
 Usługa ta w swojej obecnej formie jest niczym innym niż wykorzystaniem reputacji (i/lub unikalnej tożsamości), którą dany użytkownik ma na jakimś znanym serwisie (typu Facebook, Twitter, Gmail, GitHub) do utworzenia unikalnej tożsamości (i w konsekwencji możliwości budowy reputacji wokół tej tożsamości) na jakimś innym, mniej popularnym serwisie S.
 
-Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: większa wygoda dla użytkownika i tym samym łatwiejsze dla serwisu S staje się pozyskanie nowego klienta.
+Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: większa wygoda dla użytkownika sprawia, że łatwiejsze dla serwisu S staje się pozyskanie nowego klienta.
 
-Warto podkreślić, że w tym przypadku rzeczywista (tj. zgodna z realem) tożsamość użytkownika nie jest konieczna (tj. proces KYC może nie być wymagany), liczy się tylko to, żeby serwis S mógł w swoim systemie przypisać danego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook.
+Warto podkreślić, że w tym przypadku potwierdzenie rzeczywistej (tj. zgodnej z realem) tożsamości użytkownika nie jest konieczne (tj. proces KYC może nie być wymagany). Liczy się tylko to, żeby serwis S mógł w swoim systemie przypisać nowego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook i żeby w przyszłości system logowania Facebooka autoryzował dostęp tego użytkownika do serwisu S.
 
 #### Problem
 
-W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do innego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
+W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do zewnętrznego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
 
 #### Korzyści
 
 Przy użyciu klucza prywatnego do definiowania unikalnej tożsamości powyższy problem całkowicie znika. Właścicielem tożsamości jest zawsze właściciel klucza prywatnego i tylko on ma kontrolę nad reputacją związaną z tą tożsamością.
+
+Co więcej, możliwe się staje dodatkowe zwiększenie bezpieczeństwa takiej cyfrowej tożsamości. Dostęp do serwisu S (i tym samym do reputacji tam zbudowanej) można uzależnić od spełnienia dwóch warunków jednocześnie:
+
+* udowodnienie posiadania klucza prywatnego X
+* udowodnienie posiadania dostępu do konta bankowego związanego z kluczem publicznym Y, który odpowiada kluczowi prywatnemu X
+
+Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz prywatny zostanie mu skradziony - oczywiście przy założeniu że użytkownik zgłosi tę kradzież do swojego banku. Warto też zauważyć, że w tym układzie bank pełni jedynie rolę strażnika tożsamości użytkownika, ale nigdy nie staje się jej właścicielem.
 
 #### Proces
 
@@ -354,7 +363,9 @@ Nazwa powinna nawiązywać do czegoś, co jest prywatne i służy do weryfikowan
 
 Dodatkowym warunkiem jest dobre funkcjonowanie nazwy zarówno w języku polskim jak i angielskim.
 
-Propozycje: *Viza*, *Sigma*, *Signum*, *Signet*, *Sygnet*
+Nasze propozycje: *Viza*, *Sigma*, *Signum*, *Signet*, *Sygnet*.
+
+Szczególnie ta ostatnia, *Sygnet*, wydaje się trafna, bo spełnia wszystkie powyższe postulaty, a dodatkowo jej końcówka *net* sugeruje coś związanego z Internetem.
 
 > Signet - a small seal, especially one set in a ring, used instead of or with a signature to give authentication to an official document.
 
