@@ -237,7 +237,7 @@ Proces udostępniania tych informacji firmie F przez klienta K może wyglądać 
 W ten sposób firma F ma pewność, że otrzymane informacje:
 
 * są prawdziwe, bo są podpisane certyfikowanym podpisem elektronicznym notariusza N,
-* rzeczywiście dotyczą klienta K, bo dowiódł on posiadanie klucza prywatnego X (który odpowiada kluczowi publicznemu Y), a związek pomiędzy kluczem publicznym Y a tożsamością klienta K można wykazać poprzez proces identyczny do opisanego w przypadku skalowalnego KYC, tj. poprzez potwierdzenie uzyskane od banku B.
+* rzeczywiście dotyczą klienta K, bo dowiódł on posiadania klucza prywatnego X (który odpowiada kluczowi publicznemu Y), a związek pomiędzy kluczem publicznym Y a tożsamością klienta K można wykazać poprzez proces identyczny do opisanego w przypadku skalowalnego KYC, tj. poprzez potwierdzenie uzyskane od banku B.
 
 #### Korzyści
 
@@ -276,7 +276,13 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 
 ## Monetyzacja systemu
 
-Dodanie do powyższego smart-kontraktu minimalnej marży dla nas (jako twórców tego smart-kontraktu) wydaje się relatywnie proste. Ale może to nie być konieczne, bo alternatywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
+Warto zauważyć, że istotą naszej aplikacji mobilnej jest ochrona klucza prywatnego, co oznacza, że pełni ona rolę analogiczną do portfela kryptowalutowego. Jest jednak istotna różnica: nasza aplikacja nie zajmuje się obsługą związanych z tym kluczem kryptowalut (tj. otrzymywanie i wysyłanie płatności), lecz obsługą związanych z tym kluczem danych osobowych i informacji.
+
+Najprostszą metodą monetyzacji naszego systemu wydaje się zatem komercjalizacja bardziej zaawansowanych funkcjonaliści naszej aplikacji mobilnej (np. delegacja uprawnień związanych z danym kluczem prywatnym, podejmowanie decyzji poprzez głosowanie, raportowanie, backup danych itp.)
+
+Drugą opcją jest rozbudowa tej aplikacji w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tym blockchainie. Korzystamy wtedy z faktu, że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa - wystarczy więc zarejestrować te klucze na blockchainie EOSa żeby otworzyć naszym użytkownikom dostęp do bogatego (miejmy nadzieję) ekosystemu przeróżnych aplikacji.
+
+Zatem posiadanie w swoim telefonie naszej aplikacji mobilnej staje się tożsame z posiadaniem konta w ekosystemie EOS. Gdyby nasza aplikacja stała się powszechnie używana (chociażby ze względu na autoryzację w PSD2), wówczas alternatywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
 
 ## Szerszy kontekst: Digital Identity
 
