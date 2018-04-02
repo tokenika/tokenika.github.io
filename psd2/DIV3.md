@@ -296,7 +296,7 @@ Zatem posiadanie w swoim telefonie naszej aplikacji mobilnej staje się tożsame
 
 Propozycje opisane w niniejszym dokumencie to podzbiór większego zagadnienia znanego jako [Cyfrowa Tożsamość](http://di.com.pl/cyfrowa-tozsamosc-56607) (Digital Identity) albo, w przypadku użycia systemów rozproszonych, Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
 
-W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, kiedy to Daniel Larimer (*nota bene* twórca EOSa) wystąpił z pomysłem systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8). Ten system nigdy nie powstał, ale idea była całkiem słuszna.
+W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, kiedy to Daniel Larimer (*nota bene* twórca EOSa) wystąpił z pomysłem systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8). Ten system nigdy nie powstał, ale idea wydaje się całkiem słuszna.
 
 Obecnie istnieje [spora liczba projektów blockchainowych](https://github.com/peacekeeper/blockchain-identity), które podejmują rożne aspekty cyfrowej tożsamości i jej weryfikacji. Najważniejsze naszym zdaniem są te dwa:
 
