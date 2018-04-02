@@ -124,7 +124,7 @@ Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem nieg
 1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien mieć powodu aby ujawnić swój klucz prywatny komukolwiek - oczywiście o ile będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
 2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej możliwości.
 
-## Skalowany proces KYC poprzez wykorzystanie informacji bankowej
+## Skalowalny proces KYC poprzez wykorzystanie informacji bankowej
 
 #### Koncepcja
 
