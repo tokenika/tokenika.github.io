@@ -18,9 +18,9 @@ Z oczywistych powodów w warunkach online zdjęcie, które jest integralną czę
 
 Wymogi KYC narzucają na firmy konieczność ustalenia tożsamości każdego nowego klienta.
 
-Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc ten sam kosztowny i czasochłonny proces jest wykonywany wielokrotnie przez kolejne firmy.
+Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc w obecnie istniejącym paradygmacie ten sam kosztowny i czasochłonny proces musi być wykonywany wielokrotnie przez kolejne firmy.
 
-Jedynym znanym nam sposobem na skalowanie KYC jest wykorzystanie procedury tzw. testowego przelewu, tj. klient poświadcza swoją tożsamość poprzez wykonanie przelewu ze swojego rachunku w innym banku do banku, który chce dokonać weryfikacji KYC. Oczywiste są wady tego rozwiązania:
+Jedynym znanym nam sposobem na skalowanie KYC jest wykorzystanie procedury tzw. testowego przelewu, który polega na tym, że klient poświadcza swoją tożsamość poprzez wykonanie przelewu ze swojego rachunku w innym banku do banku, który chce dokonać weryfikacji KYC. Oczywiste są wady tego rozwiązania:
 
 * nie rozwiązuje to problemu dla podmiotów niebankowych,
 * nie skaluje się więcej niż raz (bo nie można w ten sposób potwierdzić tożsamości w kolejnym banku),
@@ -47,14 +47,14 @@ Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych
 - cyfryzacja dokumentów,
 - cyfryzacja aktów notarialnych.
 
-Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód, żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością / reputacją (podobnie jak PESEL, tyle że klucz prywatny jest z założenia niejawny).
+Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód, żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością (i potencjalnie także z ich reputacją), podobnie jak PESEL - tyle że klucz prywatny jest z założenia niejawny.
 
 Warte podkreślenia jest to, że:
 
 - naszym zamiarem nie jest zbudowanie całego procesu autoryzacji w PSD2, a jedynie jednego z wymaganych dwóch niezależnych kanałów,
 - bez problemu możemy wspierać autoryzację w wersji dynamicznej, tj. dodawać elementy łączące daną transakcję z określoną kwotą i określonym odbiorcą (np. ostatnie cyfry rachunku i kwota transakcji).
 
-Innymi słowy, chcemy wykorzystać dogodną sytuację stworzoną przez PSD2 do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, masowo (i często) używany z racji PSD2, możemy wprowadzić skalowalny proces KYC, a także zacząć budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
+Innymi słowy, chcemy wykorzystać dogodną sytuację, stworzoną przez PSD2, do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, masowo (i często) używany z racji PSD2, możemy wprowadzić skalowalny proces KYC, a także zacząć budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
 
 ## Autoryzacja w PSD2 poprzez kryptografię asymetryczną
 
@@ -70,7 +70,7 @@ Obecne podejścia w zakresie mocnej autoryzacji transakcji bankowych są następ
 
 Do autoryzacji transakcji bankowej w PSD2 użyjemy kryptografii asymetrycznej, tj, kombinacji klucza prywatnego X i sprzężonego z nim klucza publicznego Y. Generalnie sprowadza się to do tego, że generujemy dla klienta K klucz prywatny X i w przyszłości uznajemy, że posiadanie klucza X jest tożsame z byciem klientem K.
 
-Chociaż do autoryzacji w PSD2 nie jest potrzebny blockchain, ze względu na dalsze potencjalne zastosowania naszego systemu, wygenerowane klucze będą kompatybilne z [publicznym blockchainem EOS](https://eos.io/).
+Chociaż do autoryzacji w PSD2 nie jest potrzebny blockchain, ze względu na dalsze potencjalne zastosowania naszego systemu, wygenerowane klucze będą kompatybilne z platformą smart-kontraktową [EOS](https://eos.io/).
 
 #### Konfiguracja procesu autoryzacji
 
@@ -125,24 +125,29 @@ Nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sp
 
 #### Strategia wdrożenia
 
+Naszą intencją jest żeby nasza aplikacja mobilna miała dwie spokrewnione ze sobą funkcjonalności, obie bazujące na tym samym kluczu prywatnym:
+
+- autoryzacja transakcji bankowych w PSD2,
+- weryfikacja tożsamości dla potrzeb KYC.
+
 Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakimś podmiotem bankowym.
 
 Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi w zakresie kanału mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
 
 Co się wtedy dzieje?
 
-Uzgadniamy z naszym partnerem bankowym, żeby rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta.
+Partner bankowy dostaje od nas system mocnej autoryzacji (za darmo lub odpłatnie - jest to kwestia negocjacji), a w zamian, poprzez rozpowszechnienie naszego systemu autoryzacji PSD2 wśród swoich klientów, czyni naszą aplikację mobilną (i tym samym nasz system weryfikacji tożsamości) wysoce użytecznym narzędziem dla firm potrzebujących sprawnej i szybkiej weryfikacji KYC.
 
-Tym samym partner bankowy dostaje od nas system mocnej autoryzacji (za darmo lub za opłatą - to jest kwestia wyniku negocjacji), a w zamian, poprzez rozpowszechnienie naszego systemu autoryzacji wśród swoich klientów, czyni nasz system weryfikacji tożsamości wysoce użytecznym dla firm potrzebujących sprawnej i szybkiej weryfikacji KYC.
+Innymi słowy, dzięki pełnieniu tej podwójnej roli, już w momencie uruchomienia nasz system KYC, będzie miał dostęp do tysięcy użytkowników, którzy są łatwo weryfikowalni w zakresie KYC.
 
-Innymi słowy, już w momencie uruchomienia naszego systemu KYC, mamy w nim tysiące użytkowników, którzy są łatwo weryfikowalni w zakresie KYC.
+*Uwaga*: Wymagane jest żeby nasz partner bankowy rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta. Zakładamy, że wymaganie to nie jest dla banku zbyt wygórowane i relatywnie łatwo może być spełnione.
 
 #### Proces podstawowy
 
 Załóżmy, że:
 
 1. Firma F potrzebuje dokonać weryfikacji KYC klienta K i ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenia banku B w zakresie tożsamości klienta K uznaje za prawdziwe.
-2. My, jako twórcy i operatorzy aplikacji mobilnej klienta K służącej mu do autoryzacji w PSD2, pełnimy rolę TPP. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.
+2. My, jako twórcy i operatorzy aplikacji mobilnej będącej w posiadaniu klienta K, pełnimy rolę TPP. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.
 
 Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 
@@ -200,6 +205,10 @@ Warto podkreślić, że w tym przypadku potwierdzenie rzeczywistej (tj. zgodnej 
 
 W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do zewnętrznego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
 
+#### Proces
+
+Mechanizm działania kryptografii asymetrycznej do ochrony tożsamości i reputacji jest dobrze opisany w dokumentacji projektu [Jolocom](https://jolocom.com/).
+
 #### Korzyści
 
 Przy użyciu klucza prywatnego do definiowania unikalnej tożsamości powyższy problem całkowicie znika. Właścicielem tożsamości jest zawsze właściciel klucza prywatnego i tylko on ma kontrolę nad reputacją związaną z tą tożsamością.
@@ -207,13 +216,9 @@ Przy użyciu klucza prywatnego do definiowania unikalnej tożsamości powyższy 
 Co więcej, możliwe się staje dodatkowe zwiększenie bezpieczeństwa takiej cyfrowej tożsamości. Dostęp do serwisu S (i tym samym do reputacji tam zbudowanej) można uzależnić od spełnienia dwóch warunków jednocześnie:
 
 * udowodnienie posiadania klucza prywatnego X,
-* plus dodatkowo udowodnienie posiadania dostępu do konta bankowego związanego z kluczem publicznym Y, który odpowiada kluczowi prywatnemu X.
+* plus dodatkowo udowodnienie bycia klientem banku B z przypisanym tam kluczem publicznym Y, który odpowiada kluczowi prywatnemu X.
 
-Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz prywatny zostanie mu skradziony - oczywiście przy założeniu że użytkownik zgłosi tę kradzież do swojego banku. Warto też zauważyć, że w tym układzie bank pełni jedynie rolę strażnika tożsamości użytkownika, ale nigdy nie staje się jej właścicielem.
-
-#### Proces
-
-Mechanika działania kryptografii asymetrycznej w powyższym zakresie jest dobrze opisana w dokumentacji projektu [Jolocom](https://jolocom.com/).
+Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz prywatny zostanie mu skradziony - oczywiście przy założeniu że użytkownik zgłosi tę kradzież do swojego banku. Warto też zauważyć, że w tym układzie bank B pełni jedynie rolę strażnika tożsamości użytkownika, ale nigdy nie staje się jej właścicielem.
 
 ## Rozszerzenie 2: Certyfikaty potwierdzające stan faktyczny
 
@@ -244,7 +249,7 @@ W ten sposób firma F ma pewność, że otrzymane informacje:
 Uzyskujemy dwojakiego rodzaju korzyści:
 
 1. Następuje migracja informacji zawartych w tradycyjnych dokumentach papierowych do formy cyfrowej, co oczywiście oznacza redukcję kosztów i możliwości fałszowania.
-2. Następuje przejęcie pełnej kontroli nad informacją przez podmiot, do którego ona należy. W tym paradygmacie każdorazowo gdy informacja jest przekazywana osobie trzeciej, musi się na to zgodzić jej właściciel, tj. posiadacz klucza prywatnego. Możliwe staje się też przekazywanie minimalnej informacji jaka jest w danej sytuacji potrzebna, np. żeby udowodnić swoją pełnoletność nie trzeba przekazywać pełnej daty urodzenia, lecz tylko fakt bycia starszym niż dany próg wiekowy.
+2. Następuje przejęcie pełnej kontroli nad informacją przez podmiot, do którego ona należy. W tym nowym paradygmacie każdorazowo gdy informacja jest przekazywana osobie trzeciej, musi się na to zgodzić jej właściciel, tj. posiadacz klucza prywatnego. Możliwe staje się też przekazywanie minimalnej informacji jaka jest w danej sytuacji potrzebna, np. żeby udowodnić swoją pełnoletność nie trzeba przekazywać pełnej daty urodzenia, lecz tylko fakt bycia starszym niż dany próg wiekowy.
 3. Pełna kontrola posiadacza klucza prywatnego nad informacją otwiera także możliwość świadomego sprzedawania własnych danych demograficznych (których prawdziwość jest poświadczona kryptograficznie) podmiotom zainteresowanym tego rodzaju danymi.
 
 #### Legislacja
@@ -279,11 +284,11 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
 Warto zauważyć, że:
 
 1. Istotą naszej aplikacji mobilnej jest ochrona klucza prywatnego, co oznacza, że pełni ona rolę analogiczną do portfela kryptowalutowego. Jest jednak istotna różnica: nasza aplikacja nie zajmuje się obsługą związanych z tym kluczem kryptowalut (tj. otrzymywanie i wysyłanie płatności), lecz obsługą związanych z tym kluczem danych osobowych i informacji.
-2. Mimo że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa, wszystkie wyżej opisane propozycje nie wymagają interakcji z blockchainem. W przyszłości, gdy powstaną nowe funkcjonaliści, to się może zmienić, ale na razie warto postrzegać to jako zaletę: w okresie początkowym nie jesteśmy uzależnieni od konkretnej platformy technologicznej.
+2. Mimo że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa, żadna z wyżej opisanych propozycji nie wymaga interakcji z blockchainem. W przyszłości, gdy powstaną nowe funkcjonaliści, to się może zmienić, ale na razie warto postrzegać to jako zaletę: w okresie początkowym nie jesteśmy uzależnieni od konkretnej platformy technologicznej.
 
 Najprostszą metodą monetyzacji naszego systemu wydaje się zatem komercjalizacja bardziej zaawansowanych funkcjonaliści naszej aplikacji mobilnej (np. delegacja uprawnień związanych z danym kluczem prywatnym, podejmowanie decyzji poprzez głosowanie, raportowanie, backup danych itp.)
 
-Drugą opcją jest rozbudowa tej aplikacji w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tym blockchainie. Korzystamy wtedy z faktu naszej kompatybilności z blockchainem EOSa - wystarczy więc zarejestrować klucze prywatne naszych użytkowników na blockchainie EOSa żeby otworzyć im dostęp do bogatego (miejmy nadzieję) ekosystemu przeróżnych aplikacji.
+Drugą opcją jest rozbudowa aplikacji mobilnej w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tym blockchainie. Korzystając z naszej kompatybilności z blockchainem EOSa, wystarczy zarejestrować klucze prywatne naszych użytkowników na tym blockchainie żeby otworzyć im dostęp do bogatego ekosystemu przeróżnych aplikacji, jakie (miejmy nadzieję) tam powstaną.
 
 Zatem posiadanie w swoim telefonie naszej aplikacji mobilnej staje się tożsame z posiadaniem konta w ekosystemie EOS. Gdyby nasza aplikacja stała się powszechnie używana (chociażby ze względu na autoryzację w PSD2), wówczas alternatywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
 
@@ -291,7 +296,7 @@ Zatem posiadanie w swoim telefonie naszej aplikacji mobilnej staje się tożsame
 
 Propozycje opisane w niniejszym dokumencie to podzbiór większego zagadnienia znanego jako [Cyfrowa Tożsamość](http://di.com.pl/cyfrowa-tozsamosc-56607) (Digital Identity) albo, w przypadku użycia systemów rozproszonych, Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
 
-W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, np. Dan Larimer miał wtedy pomysł  systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8).
+W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, kiedy to Daniel Larimer (*nota bene* twórca EOSa) wystąpił z pomysłem systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8). Ten system nigdy nie powstał, ale idea była całkiem słuszna.
 
 Obecnie istnieje [spora liczba projektów blockchainowych](https://github.com/peacekeeper/blockchain-identity), które podejmują rożne aspekty cyfrowej tożsamości i jej weryfikacji. Najważniejsze naszym zdaniem są te dwa:
 
@@ -302,13 +307,13 @@ Dostępna jest dość [wiarygodna recenzja systemu Civic](https://www.scottbrady
 
 > Civic really should have used OAuth and OpenID Connect, instead of rolling their own authentication protocol.
 
-Tak więc pomysł jest oceniany jako bardzo dobry, ale wykonanie jako dość niefortunne. Dodatkowo Civic bazuje na [RootStock](https://www.rsk.co/), czyli będzie się zmagał ze wszystkimi problemami jakie ma w sobie Bitcoin.
+Tak więc pomysł jest oceniany jako bardzo dobry, ale wykonanie jako dość niefortunne. Dodatkowym minusem jest fakt, że Civic bazuje na platformie [RootStock](https://www.rsk.co/), co oznacza, że będzie się zmagał ze wszystkimi problemami, jakie ma w sobie Bitcoin.
 
 W przypadku projektu Decentralized Identity, też jest ciekawa sytuacja, bo wygląda na to, że jego twórcy doszli do ściany w zakresie możliwości Ethereum:
 
 > We found Ethereum smart contracts unfit for computations that go beyond than the basics. While we understand that the technology is just growing up, we found that not being able to do computations (like hashing) on the Blockchain is a major drawback. The global computational power isn’t available for Dapps yet.
 
-Ta deklaracja też jest intrygująca:
+W kontekście możliwości EOSa, ta deklaracja też jest intrygująca:
 
 > At the time of writing, there exists no blockchain that is truly public and stateless. All current blockchain technologies intend to store data. We just want to store the receipt of an ID transfer; not the data. In the matter of transferring an ID token/nugget, we only require a decentralised transfer of data. The data structures used by current blockchain technologies is restrictive and do not allow for expansion or abstraction. We call for a new, stateless, public Blockchain.
 
