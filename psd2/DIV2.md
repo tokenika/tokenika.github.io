@@ -222,6 +222,7 @@ Mechanika działania kryptografii asymetrycznej w powyższym zakresie jest dobrz
 Na blockchainie EOS dokonujemy wpisów stwierdzających stan faktyczny, który wynika z dokumentów istniejących w formie tradycyjnej, np:
 
 - *Posiadacz klucza publicznego Y jest pełnoletni.*
+- *Posiadacz klucza publicznego Y ma wykupione ubezpieczenie OC w firmie F.*
 - *Posiadacz klucza publicznego Y mieszka pod adresem A.*
 - *Posiadacz klucza publicznego Y ukończył uczelnię U.*
 - *Posiadacz klucza publicznego Y jest wspólnikiem w spółce S.*
