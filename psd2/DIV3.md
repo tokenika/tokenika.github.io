@@ -303,7 +303,7 @@ Obecnie istnieje [spora liczba projektów blockchainowych](https://github.com/pe
 - [Civic](https://www.civic.com/) ([whitepaper)](https://tokensale.civic.com/CivicTokenSaleWhitePaper.pdf)
 - [Decentralized Identity](https://decentralized.id/) ([whitepaper biznesowy](https://decentralized.id/docs/DID-whitepaper.pdf), [whitepaper techniczny](https://decentralized.id/docs/DID-tech.pdf))
 
-Dostępna jest dość [wiarygodna recenzja systemu Civic](https://www.scottbrady91.com/Blockchain-Identity/Technical-Review-of-Civics-Secure-Identity-Platform). Jest ona całkiem pozytywna - główny zarzut sprowadza się do krytyki odstąpienia od używania standardów na rzecz swoich własnych wynalazków:
+Dostępna jest dość wiarygodna [recenzja](https://www.scottbrady91.com/Blockchain-Identity/Technical-Review-of-Civics-Secure-Identity-Platform) systemu Civic. Jest ona całkiem pozytywna - główny zarzut sprowadza się do krytyki odstąpienia od używania standardów na rzecz swoich własnych wynalazków:
 
 > Civic really should have used OAuth and OpenID Connect, instead of rolling their own authentication protocol.
 
