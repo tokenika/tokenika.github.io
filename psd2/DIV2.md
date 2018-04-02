@@ -2,7 +2,7 @@
 
 ## Streszczenie
 
-Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie znajdującej się w banku informacji o tożsamości klienta. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w internecie.
+Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie będącej w posiadaniu banku informacji o tożsamości klienta. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w internecie.
 
 ## Wprowadzenie
 
@@ -178,7 +178,7 @@ Wedle [dokumentacji](https://www.gov.pl/cyfryzacja/profil-zaufany-ego-) Minister
 
 > Profil zaufany działa jak odręczny podpis. Możesz dzięki niemu wysyłać przez internet dokumenty i wnioski do różnych urzędów (np. wnieść podanie, odwołanie, skargę). Profil zaufany potwierdza tożsamość obywatela  — podpis potwierdzony profilem zaufanym, podobnie jak kwalifikowany podpis elektroniczny, skutecznie zastępuje w kontaktach z podmiotami publicznymi podpis własnoręczny.
 
-Na pierwszy rzut oka wygląda to na rozwiązanie bardzo podobne do naszego. Co więcej, podobnie jak w naszym podejściu jednym z podmiotów zdolnych do wygenerowania dla użytkownika profilu zaufanego jest serwis bankowy. Kilka banków w Polsce oferuje taką usługę.
+Na pierwszy rzut oka profil zaufany wygląda na rozwiązanie bardzo podobne do naszego. Co więcej, podobnie jak w naszym podejściu jednym z podmiotów zdolnych do wygenerowania dla użytkownika profilu zaufanego jest serwis bankowy. Kilka banków w Polsce oferuje taką usługę.
 
 Jest jednak istotna różnica: zastosowanie profilu zaufanego jest ograniczone do serwisów państwowych. Ograniczenie to wynika ze sposobu działania tego systemu: polega on na tym, że po założeniu profilu zaufanego użytkownik uzyskuje dostęp do wspólnego dla systemów państwowych mechanizmu logowania, lecz nie jest to równoważne z uzyskaniem uniwersalnej cyfrowej tożsamości. Tak więc profil zaufany z założenia nie może być rozszerzony na sferę niepaństwową i tym samym nie rozwiązuje problemu KYC dla firm.
 
@@ -365,7 +365,7 @@ Dodatkowym warunkiem jest dobre funkcjonowanie nazwy zarówno w języku polskim 
 
 Nasze propozycje: *Viza*, *Sigma*, *Signum*, *Signet*, *Sygnet*.
 
-Szczególnie ta ostatnia, *Sygnet*, wydaje się trafna, bo spełnia wszystkie powyższe postulaty, a dodatkowo jej końcówka *net* sugeruje coś związanego z Internetem.
+Szczególnie ta ostatnia, *Sygnet*, wydaje się trafna, bo spełnia wszystkie powyższe postulaty, a dodatkowo jej końcówka *net* sugeruje coś związanego z internetem.
 
 > Signet - a small seal, especially one set in a ring, used instead of or with a signature to give authentication to an official document.
 
