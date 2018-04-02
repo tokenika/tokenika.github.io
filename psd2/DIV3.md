@@ -41,7 +41,7 @@ Szukamy rozwiązania dla procesu KYC, które:
 
 ## Strategia dualnej funkcjonalności: skalowalny KYC na grzbiecie autoryzacji PSD2
 
-#### Podwójna funkcjonalność
+#### Rationale
 
 Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może jednocześnie być użyty do skalowania procesu KYC, a także do wielu innym celów powiązanych z cyfrową tożsamością, np:
 
@@ -53,14 +53,14 @@ Zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest więc celem ostatecznym
 
 Chcemy zatem wykorzystać dogodną sytuację, stworzoną przez PSD2, do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, masowo (i często) używany z racji PSD2, możemy wprowadzić skalowalny proces KYC, a także zacząć budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
 
-Oznacza to, że nasza aplikacja mobilna miała dwie spokrewnione ze sobą funkcjonalności, obie bazujące na tym samym kluczu prywatnym:
+Oznacza to, że nasza aplikacja mobilna będzie miała dwie spokrewnione ze sobą funkcjonalności, obie bazujące na tym samym kluczu prywatnym:
 
 - autoryzacja transakcji bankowych w PSD2,
 - weryfikacja tożsamości dla potrzeb KYC.
 
 Dzięki pełnieniu tej podwójnej roli, liczymy na to, że już w momencie uruchomienia nasz system KYC, będzie miał dostęp do tysięcy użytkowników, którzy są łatwo weryfikowalni w zakresie KYC.
 
-#### Strategia wdrożenia
+#### Implementacja
 
 Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakimś podmiotem bankowym.
 
