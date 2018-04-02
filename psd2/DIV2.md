@@ -206,8 +206,8 @@ Przy użyciu klucza prywatnego do definiowania unikalnej tożsamości powyższy 
 
 Co więcej, możliwe się staje dodatkowe zwiększenie bezpieczeństwa takiej cyfrowej tożsamości. Dostęp do serwisu S (i tym samym do reputacji tam zbudowanej) można uzależnić od spełnienia dwóch warunków jednocześnie:
 
-* udowodnienie posiadania klucza prywatnego X
-* udowodnienie posiadania dostępu do konta bankowego związanego z kluczem publicznym Y, który odpowiada kluczowi prywatnemu X
+* udowodnienie posiadania klucza prywatnego X,
+* plus dodatkowo udowodnienie posiadania dostępu do konta bankowego związanego z kluczem publicznym Y, który odpowiada kluczowi prywatnemu X.
 
 Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz prywatny zostanie mu skradziony - oczywiście przy założeniu że użytkownik zgłosi tę kradzież do swojego banku. Warto też zauważyć, że w tym układzie bank pełni jedynie rolę strażnika tożsamości użytkownika, ale nigdy nie staje się jej właścicielem.
 
