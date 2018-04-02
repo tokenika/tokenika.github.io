@@ -39,7 +39,9 @@ Szukamy rozwiązania dla procesu KYC, które:
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
 - otworzy drogę na inne niż KYC zastosowania, w szczególności do rozpowszechnienia koncepcji cyfrowej tożsamości.
 
-## Wprowadzenie skalowalnego KYC poprzez PSD2
+## Strategia dualnej funkcjonalności: skalowalny KYC na grzbiecie autoryzacji PSD2
+
+#### Podwójna funkcjonalność
 
 Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może jednocześnie być użyty do skalowania procesu KYC, a także do wielu innym celów powiązanych z cyfrową tożsamością, np:
 
@@ -47,14 +49,26 @@ Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych
 - cyfryzacja dokumentów,
 - cyfryzacja aktów notarialnych.
 
-Tak więc zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód, żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością (i potencjalnie także z ich reputacją), podobnie jak PESEL - tyle że klucz prywatny jest z założenia niejawny.
+Zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest więc celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód, żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością (i potencjalnie także z ich reputacją), podobnie jak PESEL - tyle że klucz prywatny jest z założenia niejawny.
 
-Warte podkreślenia jest to, że:
+Chcemy zatem wykorzystać dogodną sytuację, stworzoną przez PSD2, do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, masowo (i często) używany z racji PSD2, możemy wprowadzić skalowalny proces KYC, a także zacząć budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
 
-- naszym zamiarem nie jest zbudowanie całego procesu autoryzacji w PSD2, a jedynie jednego z wymaganych dwóch niezależnych kanałów,
-- bez problemu możemy wspierać autoryzację w wersji dynamicznej, tj. dodawać elementy łączące daną transakcję z określoną kwotą i określonym odbiorcą (np. ostatnie cyfry rachunku i kwota transakcji).
+Oznacza to, że nasza aplikacja mobilna miała dwie spokrewnione ze sobą funkcjonalności, obie bazujące na tym samym kluczu prywatnym:
 
-Innymi słowy, chcemy wykorzystać dogodną sytuację, stworzoną przez PSD2, do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, masowo (i często) używany z racji PSD2, możemy wprowadzić skalowalny proces KYC, a także zacząć budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
+- autoryzacja transakcji bankowych w PSD2,
+- weryfikacja tożsamości dla potrzeb KYC.
+
+Dzięki pełnieniu tej podwójnej roli, liczymy na to, że już w momencie uruchomienia nasz system KYC, będzie miał dostęp do tysięcy użytkowników, którzy są łatwo weryfikowalni w zakresie KYC.
+
+#### Strategia wdrożenia
+
+Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakimś podmiotem bankowym.
+
+Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi w zakresie kanału mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
+
+Co się wtedy dzieje?
+
+Partner bankowy dostaje od nas system mocnej autoryzacji (za darmo lub odpłatnie - jest to kwestia negocjacji), a w zamian, poprzez rozpowszechnienie naszego systemu autoryzacji PSD2 wśród swoich klientów, czyni naszą aplikację mobilną (i tym samym nasz system weryfikacji tożsamości) wysoce użytecznym narzędziem dla firm potrzebujących sprawnej i szybkiej weryfikacji KYC.
 
 ## Autoryzacja w PSD2 poprzez kryptografię asymetryczną
 
@@ -71,6 +85,11 @@ Obecne podejścia w zakresie mocnej autoryzacji transakcji bankowych są następ
 Do autoryzacji transakcji bankowej w PSD2 użyjemy kryptografii asymetrycznej, tj, kombinacji klucza prywatnego X i sprzężonego z nim klucza publicznego Y. Generalnie sprowadza się to do tego, że generujemy dla klienta K klucz prywatny X i w przyszłości uznajemy, że posiadanie klucza X jest tożsame z byciem klientem K.
 
 Chociaż do autoryzacji w PSD2 nie jest potrzebny blockchain, ze względu na dalsze potencjalne zastosowania naszego systemu, wygenerowane klucze będą kompatybilne z platformą smart-kontraktową [EOS](https://eos.io/).
+
+Warte podkreślenia jest to, że:
+
+- naszym zamiarem nie jest zbudowanie całego procesu autoryzacji w PSD2, a jedynie jednego z wymaganych dwóch niezależnych kanałów,
+- bez problemu możemy wspierać autoryzację w wersji dynamicznej, tj. dodawać elementy łączące daną transakcję z określoną kwotą i określonym odbiorcą (np. ostatnie cyfry rachunku i kwota transakcji).
 
 #### Konfiguracja procesu autoryzacji
 
@@ -105,7 +124,7 @@ Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem nieg
 1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien mieć powodu aby ujawnić swój klucz prywatny komukolwiek - oczywiście o ile będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
 2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej możliwości.
 
-## Wykorzystanie informacji bankowej do skalowania procesu KYC
+## Skalowany proces KYC poprzez wykorzystanie informacji bankowej
 
 #### Koncepcja
 
@@ -122,23 +141,6 @@ Naturalną konsekwencją wydaje się zatem istnienie możliwości zrobienia uży
 Idąc tym tropem, proponujemy mechanizm, który umożliwia klientowi K dostarczenie dowolnej firmie F podpisanego elektronicznie przez wiarygodny podmiot (w naszym przypadku bank B) certyfikatu poświadczającego jego (tj. klienta K) tożsamość.
 
 Nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje, które do tej pory leżały bezużytecznie (z perspektywy świata zewnętrznego) w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.
-
-#### Strategia wdrożenia
-
-Naszą intencją jest żeby nasza aplikacja mobilna miała dwie spokrewnione ze sobą funkcjonalności, obie bazujące na tym samym kluczu prywatnym:
-
-- autoryzacja transakcji bankowych w PSD2,
-- weryfikacja tożsamości dla potrzeb KYC.
-
-Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakimś podmiotem bankowym.
-
-Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi w zakresie kanału mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
-
-Co się wtedy dzieje?
-
-Partner bankowy dostaje od nas system mocnej autoryzacji (za darmo lub odpłatnie - jest to kwestia negocjacji), a w zamian, poprzez rozpowszechnienie naszego systemu autoryzacji PSD2 wśród swoich klientów, czyni naszą aplikację mobilną (i tym samym nasz system weryfikacji tożsamości) wysoce użytecznym narzędziem dla firm potrzebujących sprawnej i szybkiej weryfikacji KYC.
-
-Innymi słowy, dzięki pełnieniu tej podwójnej roli, już w momencie uruchomienia nasz system KYC, będzie miał dostęp do tysięcy użytkowników, którzy są łatwo weryfikowalni w zakresie KYC.
 
 *Uwaga*: Wymagane jest żeby nasz partner bankowy rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta. Zakładamy, że wymaganie to nie jest dla banku zbyt wygórowane i relatywnie łatwo może być spełnione.
 
@@ -177,7 +179,7 @@ Wymagania legislacyjne są następujące:
 1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
 2. Ustawa musi zapewnić, że podpisane kryptograficznie oświadczenie banku odnośnie tożsamości jego klienta jest wiarygodną formą weryfikacji KYC. Możemy wstępnie przyjąć, że będzie to możliwe, skoro już teraz wyżej opisany przelew testowy jest uznawany za wiarygodną formę weryfikacji KYC, a nasza metoda na pewno nie jest mniej wiarygodna.
 
-## Czym nasze rozwiązanie różni się od profilu zaufanego?
+## Czym nasze rozwiązanie w zakresie KYC różni się od profilu zaufanego?
 
 Wedle [dokumentacji](https://www.gov.pl/cyfryzacja/profil-zaufany-ego-) Ministerstwa Cyfryzacji profil zaufany to bezpłatna metoda potwierdzania tożsamości obywatela w systemach elektronicznej administracji.
 
