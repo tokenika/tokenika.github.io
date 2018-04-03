@@ -244,10 +244,15 @@ W aplikacji mobilnej klienta K posługującego się kluczem publicznym Y dokonuj
 
 Każdy taki wpis ma przypisaną datę kiedy został dokonany i jest podpisany certyfikowanym podpisem elektronicznym instytucji zaufania publicznego. W ten sposób instytucja ta gwarantuje prawdziwość informacji zawartej w tym wpisie.
 
+#### Proces
+
 Proces udostępniania tych informacji firmie F przez klienta K może wyglądać następująco:
 
 1. Za pomocą aplikacji mobilnej firma F uzyskuje zgodę klienta K na udostępnienie informacji na jego temat.
-2. Aplikacja mobilna klienta K wysyła firmie F wymagane informacje podpisane kryptograficznie przez zaufaną instytucję, dowód na posiadanie klucza prywatnego X oraz uzyskany od banku B dowód na związek pomiędzy kluczem publicznym Y a tożsamością klienta K.
+2. Aplikacja mobilna klienta K wysyła firmie F:
+   * wymagane przez nią informacje podpisane kryptograficznie przez zaufaną instytucję,
+   * dowód klienta K na posiadanie dostępu do klucza prywatnego X,
+   * uzyskany od banku B dowód na związek pomiędzy kluczem publicznym Y a tożsamością klienta K.
 
 #### Korzyści
 
