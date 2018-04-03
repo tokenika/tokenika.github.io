@@ -313,7 +313,7 @@ Warto zauważyć, że:
 
 1. Istotą naszej aplikacji mobilnej jest ochrona klucza prywatnego, co oznacza, że pełni ona rolę analogiczną do portfela kryptowalutowego. Jest jednak istotna różnica: nasza aplikacja nie zajmuje się obsługą związanych z tym kluczem kryptowalut (tj. otrzymywanie i wysyłanie płatności), lecz obsługą związanych z tym kluczem danych osobowych i informacji.
 2. Mimo że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa, żadna z wyżej opisanych propozycji nie wymaga interakcji z blockchainem. W przyszłości, gdy powstaną nowe funkcjonaliści, to się może zmienić, ale na razie warto postrzegać to jako zaletę: w okresie początkowym nie jesteśmy uzależnieni od konkretnej platformy technologicznej.
-3. Przy sojuszu z dużym partnerem bankowym nasza aplikacja mobilna ma realne szanse na dość masową adopcję - chociażby ze względu na jej funkcjonalność w zakresie autoryzacji PSD2.
+3. Przy sojuszu z dużym partnerem bankowym nasza aplikacja mobilna ma realne szanse na dość masową adopcję - chociażby ze względu na jej rolę w zakresie autoryzacji PSD2.
 
 Najprostszą metodą monetyzacji naszego systemu wydaje się komercjalizacja bardziej zaawansowanych funkcjonalności naszej aplikacji mobilnej (np. delegacja uprawnień związanych z danym kluczem prywatnym, podejmowanie decyzji poprzez głosowanie, raportowanie, backup danych itp.), albo pójście w kierunku funkcjonalości oferowanych przez system [Factom](https://www.factom.com/), tj. publikowanie hashy dokumentów na blockchainie EOSa celem udowodnienia ich istnienia w danym czasie i/lub zawierania konkretnej treści.
 
