@@ -46,8 +46,9 @@ Szukamy rozwiązania dla procesu KYC, które:
 Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może jednocześnie być użyty do skalowania procesu KYC, a także do wielu innym celów powiązanych z cyfrową tożsamością, np:
 
 - kryptograficzna ochrona tożsamości i reputacji,
-- cyfryzacja dokumentów,
-- cyfryzacja aktów notarialnych.
+- kryptograficznie poświadczony stan faktyczny,
+- kryptograficzne podpisywanie umowy cywilnoprawnej,
+- internetowa kancelaria notarialna.
 
 Zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest więc celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód, żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością (i potencjalnie także z ich reputacją), podobnie jak PESEL - tyle że klucz prywatny jest z założenia niejawny.
 
@@ -223,7 +224,7 @@ Co więcej, możliwe się staje dodatkowe zwiększenie bezpieczeństwa takiej cy
 
 Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz prywatny zostanie mu skradziony - oczywiście przy założeniu że użytkownik zgłosi tę kradzież do swojego banku. Warto też zauważyć, że w tym układzie bank B pełni jedynie rolę strażnika tożsamości użytkownika, ale nigdy nie staje się jej właścicielem.
 
-## Rozszerzenie 2: Certyfikaty potwierdzające stan faktyczny
+## Rozszerzenie 2: Kryptograficznie poświadczony stan faktyczny
 
 #### Problem
 
@@ -266,11 +267,13 @@ Uzyskujemy dwojakiego rodzaju korzyści:
 
 Ustawa musi dać wsparcie dla wiarygodności tego typu dokumentów cyfrowych.
 
-## Rozszerzenie 3: Kryptograficznie podpisywane umowy cywilnoprawne
+## Rozszerzenie 3: Kryptograficzne podpisywanie umowy cywilnoprawnej
 
 #### Problem
 
 Zawieranie umów cywilnoprawnych przez internet jest wysoce problematyczne. Firmy, które oferują rozwiązania w tym zakresie bez użycia kryptografii, np. [DocuSign](https://www.docusign.com), wbrew temu co jest głoszone w [ich materiałach marketingowych](https://www.docusign.com/videos/are-electronic-signatures-legally-binding), nie są w stanie dostarczyć metody, która byłaby prawnie wiążąca. Więcej szczegółów na ten temat można znaleźć w [tej publikacji](https://www.cryptomathic.com/news-events/blog/us-court-rejects-docusign-e-signatures-as-method-to-provide-digital-authorization).
+
+Solidną alternatywą wobec DocuSign mogłoby być użycie certyfikowanego podpisu elektronicznego, lecz ze względu na koszty i wymagania dotyczące dodatkowego hardware'u, nie jest to metoda mająca szansę na masową adopcję.
 
 #### Koncepcja
 
