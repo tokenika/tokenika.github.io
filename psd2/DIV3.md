@@ -230,7 +230,7 @@ Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz pr
 Problemy są dwojakiego rodzaju:
 
 1. Uzyskanie wiarygodnego zaświadczenia potwierdzającego stan faktyczny bywa trudne i czasochłonne, podobnie jak weryfikacja autentyczności takiego zaświadczenia.
-2. W praktyce użytkownicy nie mają żadnej kontroli nad komercjalnym wykorzystaniem swoich danych osobowych.
+2. W praktyce użytkownicy nie mają żadnej kontroli nad komercjalnym wykorzystaniem informacji na swój temat, w tym także swoich danych osobowych.
 
 #### Koncepcja
 
@@ -246,7 +246,7 @@ Każdy taki wpis ma przypisaną datę kiedy został dokonany i jest podpisany ce
 
 #### Proces
 
-Proces udostępniania tych informacji firmie F przez klienta K może wyglądać następująco:
+Proces udostępniania powyższych informacji firmie F przez klienta K może wyglądać następująco:
 
 1. Za pomocą aplikacji mobilnej firma F uzyskuje zgodę klienta K na udostępnienie informacji na jego temat.
 2. Aplikacja mobilna klienta K wysyła firmie F:
