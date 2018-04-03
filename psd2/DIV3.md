@@ -266,7 +266,7 @@ Uzyskujemy dwojakiego rodzaju korzyści:
 
 Ustawa musi dać wsparcie dla wiarygodności tego typu dokumentów cyfrowych.
 
-## Rozszerzenie 3: Cyfrowo podpisane umowy cywilnoprawne
+## Rozszerzenie 3: Kryptograficznie podpisywane umowy cywilnoprawne
 
 #### Problem
 
