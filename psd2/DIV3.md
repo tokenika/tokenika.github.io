@@ -140,7 +140,9 @@ Naturalną konsekwencją wydaje się zatem istnienie możliwości zrobienia uży
 
 Idąc tym tropem, proponujemy mechanizm, który umożliwia klientowi K dostarczenie dowolnej firmie F podpisanego elektronicznie przez wiarygodny podmiot (w naszym przypadku bank B) certyfikatu poświadczającego jego (tj. klienta K) tożsamość.
 
-Nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje, które do tej pory leżały bezużytecznie (z perspektywy świata zewnętrznego) w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.
+Integralną częścią naszej aplikacji musi być zatem możliwość weryfikacji certyfikowanego podpisu elektronicznego, tak żeby firma F mogła w łatwy sposób uzyskać pewność, że otrzymane od banku B informacje na temat klienta K rzeczywiście zostały przez ten bank wygenerowane i nie zostały zmodyfikowane po ich podpisaniu. Jest to funkcjonalność podobna do tej oferowanej przez powszechnie dostępne serwisy internetowe, np. [MadKom](https://madkom.pl/weryfikacja-podpisu-elektronicznego/).
+
+Podsumowując, nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje, które do tej pory leżały bezużytecznie (z perspektywy świata zewnętrznego) w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.
 
 *Uwaga*: Wymagane jest żeby nasz partner bankowy rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta. Zakładamy, że wymaganie to nie jest dla banku zbyt wygórowane i relatywnie łatwo może być spełnione.
 
@@ -156,6 +158,7 @@ Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 1. Na prośbę firmy F nasza aplikacja mobilna wysyła do banku B zapytanie o podpisane elektronicznie przez bank B informacje dotyczące tożsamości klienta K (tj. wszystko co jest potrzebne do weryfikacji KYC: imię, nazwisko, PESEL, numer dowodu osobistego itp).
 2. Następuje autoryzacja tego zapytania przez klienta K, zgodnie z wymogami PSD2 dla AIS.
 3. Odpowiedź uzyskana od banku jest przesyłana do firmy F, która uzyskuje w ten sposób wiarygodne (bo kryptograficznie potwierdzone przez bank B) informacje na temat tożsamości klienta K.
+4. Za pomocą naszej aplikacji firma F weryfikuje autentyczność i integralność otrzymanej informacji.
 
 *Uwaga*: Ze względów bezpieczeństwa do podpisanego przez bank pakietu informacji dołączamy losowy ciąg znaków (tzw. *nonce*), który wcześniej (przed uruchomieniem tego całego procesu weryfikacji) dostarcza nam firma F. Tym sposobem firma F ma pewność, że otrzymana informacja została wygenerowana przez bank B specjalnie dla potrzeb tego konkretnego przypadku (a więc jest aktualna).
 
@@ -193,23 +196,19 @@ Niemniej porównanie naszego rozwiązania do profilu zaufanego wydaje się jak n
 
 ## Rozszerzenie 1: Kryptograficzna ochrona tożsamości i reputacji
 
-#### Koncepcja
+#### Kontekst
 
-Wykorzystując fakt posiadania przez naszych użytkowników klucza prywatnego, łatwo nam będzie zaoferować im dobry substytut dla funkcjonalności typu *zaloguj się przez Facebook*.
+Coraz bardziej powszechna staje się delegacja autoryzacji użytkownika między różnymi serwisami internetowymi, tj. usługa typu *zaloguj się przez Facebook*. Usługa ta w swojej obecnej formie jest niczym innym niż wykorzystaniem reputacji (i/lub unikalnej tożsamości), którą dany użytkownik ma na jakimś znanym serwisie (typu Facebook, Twitter, Gmail, GitHub) do utworzenia unikalnej tożsamości (i w konsekwencji możliwości budowy reputacji wokół tej tożsamości) na jakimś innym, mniej popularnym serwisie S.
 
-Usługa ta w swojej obecnej formie jest niczym innym niż wykorzystaniem reputacji (i/lub unikalnej tożsamości), którą dany użytkownik ma na jakimś znanym serwisie (typu Facebook, Twitter, Gmail, GitHub) do utworzenia unikalnej tożsamości (i w konsekwencji możliwości budowy reputacji wokół tej tożsamości) na jakimś innym, mniej popularnym serwisie S.
-
-Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: większa wygoda dla użytkownika sprawia, że łatwiejsze dla serwisu S staje się pozyskanie nowego klienta.
-
-Warto podkreślić, że w tym przypadku potwierdzenie rzeczywistej (tj. zgodnej z realem) tożsamości użytkownika nie jest konieczne (tj. proces KYC może nie być wymagany). Liczy się tylko to, żeby serwis S mógł w swoim systemie przypisać nowego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook i żeby w przyszłości system logowania Facebooka autoryzował dostęp tego użytkownika do serwisu S.
+Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: większa wygoda dla użytkownika sprawia, że łatwiejsze dla serwisu S staje się pozyskanie nowego klienta. Warto podkreślić, że w tym przypadku potwierdzenie rzeczywistej (tj. zgodnej z realem) tożsamości użytkownika nie jest konieczne (tj. proces KYC może nie być wymagany). Liczy się tylko to, żeby serwis S mógł w swoim systemie przypisać nowego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook i żeby w przyszłości system logowania Facebooka autoryzował dostęp tego użytkownika do serwisu S.
 
 #### Problem
 
-W obecnej formie działania tego mechanizmu użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do zewnętrznego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
+W obecnej formie działania mechanizmu delegacji autoryzacji użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do zewnętrznego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
 
-#### Proces
+#### Koncepcja
 
-Mechanizm działania kryptografii asymetrycznej do ochrony tożsamości i reputacji jest dobrze opisany w dokumentacji projektu [Jolocom](https://jolocom.com/).
+Wykorzystując fakt posiadania przez naszych użytkowników klucza prywatnego, łatwo nam będzie zaoferować im dobry substytut dla funkcjonalności typu *zaloguj się przez Facebook*. Mechanizm użycia kryptografii asymetrycznej do ochrony tożsamości i reputacji jest dobrze opisany w dokumentacji projektu [Jolocom](https://jolocom.com/).
 
 #### Korzyści
 
@@ -224,7 +223,14 @@ Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz pr
 
 ## Rozszerzenie 2: Certyfikaty potwierdzające stan faktyczny
 
-#### Proces
+#### Problem
+
+Problemy są dwojakiego rodzaju:
+
+1. Uzyskanie wiarygodnego zaświadczenia potwierdzającego stan faktyczny bywa trudne i czasochłonne, podobnie jak weryfikacja autentyczności takiego zaświadczenia.
+2. W praktyce użytkownicy nie mają żadnej kontroli nad komercjalnym wykorzystaniem swoich danych osobowych.
+
+#### Koncepcja
 
 W aplikacji mobilnej klienta K posługującego się kluczem publicznym Y dokonujemy wpisów stwierdzających stan faktyczny, który wynika z dokumentów istniejących w formie tradycyjnej, np:
 
@@ -234,17 +240,12 @@ W aplikacji mobilnej klienta K posługującego się kluczem publicznym Y dokonuj
 - *Posiadacz klucza publicznego Y ukończył uczelnię U.*
 - *Posiadacz klucza publicznego Y jest wspólnikiem w spółce S.*
 
-Każdy taki wpis ma przypisaną datę kiedy został dokonany i jest podpisany certyfikowanym podpisem elektronicznym notariusza N (albo jakiejś innej instytucji zaufania publicznego). W ten sposób notariusz N gwarantuje prawdziwość informacji zawartej w tym wpisie.
+Każdy taki wpis ma przypisaną datę kiedy został dokonany i jest podpisany certyfikowanym podpisem elektronicznym instytucji zaufania publicznego. W ten sposób instytucja ta gwarantuje prawdziwość informacji zawartej w tym wpisie.
 
 Proces udostępniania tych informacji firmie F przez klienta K może wyglądać następująco:
 
 1. Za pomocą aplikacji mobilnej firma F uzyskuje zgodę klienta K na udostępnienie informacji na jego temat.
-2. Aplikacja mobilna klienta K wysyła firmie F wymagane informacje w formie certyfikowanej przez notariusza N, wraz z kryptograficznym dowodem posiadania klucza prywatnego X.
-
-W ten sposób firma F ma pewność, że otrzymane informacje:
-
-* są prawdziwe, bo są podpisane certyfikowanym podpisem elektronicznym notariusza N,
-* rzeczywiście dotyczą klienta K, bo dowiódł on posiadania klucza prywatnego X (który odpowiada kluczowi publicznemu Y), a związek pomiędzy kluczem publicznym Y a tożsamością klienta K można wykazać poprzez proces identyczny do opisanego w przypadku skalowalnego KYC, tj. poprzez potwierdzenie uzyskane od banku B.
+2. Aplikacja mobilna klienta K wysyła firmie F wymagane informacje podpisane kryptograficznie przez zaufaną instytucję, dowód na posiadanie klucza prywatnego X oraz uzyskany od banku B dowód na związek pomiędzy kluczem publicznym Y a tożsamością klienta K.
 
 #### Korzyści
 
@@ -258,28 +259,43 @@ Uzyskujemy dwojakiego rodzaju korzyści:
 
 Ustawa musi dać wsparcie dla wiarygodności tego typu dokumentów cyfrowych.
 
-## Rozszerzenie 3: Certyfikaty potwierdzające czynności prawne
+## Rozszerzenie 3: Cyfrowo podpisane umowy cywilnoprawne
 
-#### Proces
+#### Problem
 
-W aplikacji mobilnej klienta K posługującego się kluczem publicznym Y dokonujemy wpisów o charakterze notarialnym, co obejmuje wszelkie czynności prawne, np:
+Zawieranie umów cywilnoprawnych przez internet jest wysoce problematyczne. Firmy, które oferują rozwiązania w tym zakresie bez użycia kryptografii, np. [DocuSign](https://www.docusign.com), wbrew temu co jest głoszone w [ich materiałach marketingowych](https://www.docusign.com/videos/are-electronic-signatures-legally-binding), nie są w stanie dostarczyć metody, która byłaby prawnie wiążąca. Więcej szczegółów na ten temat można znaleźć w [tej publikacji](https://www.cryptomathic.com/news-events/blog/us-court-rejects-docusign-e-signatures-as-method-to-provide-digital-authorization).
 
-- *Posiadacz klucza publicznego Y udziela pełnomocnictwa w zakresie reprezentowania spółki S posiadaczowi klucza publicznego Z.*
-- *Posiadacz klucza publicznego Y sprzedaje udziały w spółce S posiadaczowi klucza publicznego Z.*
+#### Koncepcja
 
-Każdy taki wpis ma przypisaną datę kiedy został dokonany i jest podpisany certyfikowanym podpisem elektronicznym notariusza N. W ten sposób notariusz N gwarantuje prawdziwość informacji zawartej w tym wpisie.
-
-Rola notariusza N wygląda następująco: weryfikuje on tożsamość swoich klientów poprzez wyżej opisany proces skalowalnego KYC, a następnie podpisuje swoim certyfikowanym podpisem elektronicznym oświadczenia woli swoich klientów, poświadczając w ten sposób ich autentyczność.
-
-Użycie tego systemu przez podmioty trzecie jest analogiczne do wyżej opisanego przypadku certyfikacji informacji dotyczących stanu faktycznego. Firma F otrzymuje od klienta K informacje certyfikowane przez notariusza N, a następnie weryfikuje tożsamość klienta K poprzez proces identyczny do opisanego w przypadku skalowalnego KYC, tj. poprzez potwierdzenie uzyskane od banku B.
+Podobnie jak w przypadku skalowalnego KYC, kryptograficzne potwierdzenie uzyskane od banku B pozwala nam powiązać klucz prywatny X klienta K z jego tożsamością. Otwiera to możliwość wykorzystania klucza prywatnego X do podpisywania prawnie wiążących umów cywilnoprawnych, np. umowa NDA, umowa zlecenia, umowa o dzieło itp.
 
 #### Korzyści
 
-Otwieramy w ten sposób drogę dla internetowych kancelarii notarialnych. Notariusz N może zweryfikować tożsamość swoich klientów online, a następnie przyjąć ich oświadczenia woli także online, tj. bez konieczności organizacji fizycznego spotkania.
+Umowy podpisane uwiarygodnionym przez bank kluczem prywatnym stają się prawnie wiążące. Likwidujemy w ten sposób główną wadę rozwiązania oferowanego przez DocuSign.
 
 #### Legislacja
 
-Ustawa musi dać wsparcie dla wiarygodności tego typu aktów notarialnych.
+Zakładamy, że ustawa już obecnie uznaje kryptograficznie podpisane umowy za prawnie wiążące.
+
+## Rozszerzenie 4: Internetowa kancelaria notarialna
+
+#### Problem
+
+Niektóre czynności prawne, zarówno jednostronne (np. udzielenie pełnomocnictwa) jak i wielostronne (np. umowa spółki) wymagają udziału notariusza. Korzystanie z usługi kancelarii notarialnej wciąż pociąga za sobą konieczność fizycznego stawienia się klienta w takiej kancelarii, mimo że oferuje ona usługę o charakterze czysto formalnym (tj. niematerialnym).
+
+#### Koncepcja
+
+W większości przypadków jedynym istotnym powodem konieczności fizycznego pojawienia się u notariusza jest umożliwienie mu weryfikacji naszej tożsamości. Używając metody analogicznej do skalowalnego KYC notariusz jest w stanie dokonać takiej weryfikacji tożsamości online.
+
+Gdybyśmy przyjęli, że taka weryfikacja tożsamości jest wystarczająco wiarygodna, rola notariusza mogłaby wtedy wyglądać następująco: weryfikuje on tożsamość swoich klientów online, a następnie podpisuje swoim certyfikowanym podpisem elektronicznym oświadczenia woli swoich klientów, poświadczając w ten sposób ich autentyczność.
+
+#### Korzyści
+
+Otwieramy w ten sposób drogę dla internetowych kancelarii notarialnych, oferujących usługę notarialną bez konieczności organizacji fizycznego spotkania.
+
+#### Legislacja
+
+Ustawa musi dać wsparcie dla wiarygodności tego typu nowej formy usług notarialnych.
 
 ## Monetyzacja systemu
 
