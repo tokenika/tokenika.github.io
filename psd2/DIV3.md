@@ -200,11 +200,13 @@ Niemniej porównanie naszego rozwiązania do profilu zaufanego wydaje się jak n
 
 Coraz bardziej powszechna staje się delegacja autoryzacji użytkownika między różnymi serwisami internetowymi, tj. usługa typu *zaloguj się przez Facebook*. Usługa ta w swojej obecnej formie jest niczym innym niż wykorzystaniem reputacji (i/lub unikalnej tożsamości), którą dany użytkownik ma na jakimś znanym serwisie (typu Facebook, Twitter, Gmail, GitHub) do utworzenia unikalnej tożsamości (i w konsekwencji możliwości budowy reputacji wokół tej tożsamości) na jakimś innym, mniej popularnym serwisie S.
 
-Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: większa wygoda dla użytkownika sprawia, że łatwiejsze dla serwisu S staje się pozyskanie nowego klienta. Warto podkreślić, że w tym przypadku potwierdzenie rzeczywistej (tj. zgodnej z realem) tożsamości użytkownika nie jest konieczne (tj. proces KYC może nie być wymagany). Liczy się tylko to, żeby serwis S mógł w swoim systemie przypisać nowego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook i żeby w przyszłości system logowania Facebooka autoryzował dostęp tego użytkownika do serwisu S.
+Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: większa wygoda dla użytkownika sprawia, że łatwiejsze dla serwisu S staje się pozyskanie nowego klienta.
+
+Warto podkreślić, że w tym przypadku potwierdzenie rzeczywistej (tj. zgodnej z realem) tożsamości użytkownika nie jest konieczne (tj. proces KYC może nie być wymagany). Liczy się tylko to, żeby serwis S mógł w swoim systemie przypisać nowego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook i żeby w przyszłości system logowania Facebooka autoryzował dostęp tego użytkownika do serwisu S.
 
 #### Problem
 
-W obecnej formie działania mechanizmu delegacji autoryzacji użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do zewnętrznego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
+W obecnej formie działania mechanizm delegacji autoryzacji sprawia, że użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do zewnętrznego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
 
 #### Koncepcja
 
