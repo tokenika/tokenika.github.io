@@ -59,7 +59,7 @@ Oznacza to, że nasza aplikacja mobilna będzie miała dwie spokrewnione ze sob�
 - autoryzacja transakcji bankowych w PSD2,
 - weryfikacja tożsamości dla potrzeb KYC.
 
-Dzięki pełnieniu tej podwójnej roli, liczymy na to, że już w momencie uruchomienia nasz system KYC, będzie miał dostęp do tysięcy użytkowników, którzy są łatwo weryfikowalni w zakresie KYC.
+Dzięki pełnieniu tej podwójnej roli, liczymy na to, że już w momencie uruchomienia nasz system KYC będzie miał dostęp do tysięcy użytkowników, którzy są łatwo weryfikowalni w zakresie KYC.
 
 #### Implementacja
 
@@ -135,7 +135,7 @@ Do konstrukcji skalowalnego KYC wykorzystujemy następujący zestaw faktów:
 
 - (niemal) każdy dorosły człowiek ma konto w banku,
 - każdy bank zna tożsamość każdego swojego klienta,
-- każdy bank otworzy swoje API z racji PSD2.
+- każdy bank otworzy swoje API z racji PSD2, tak więc możliwe będzie wydobywanie z banku informacji, w tym także tych dotyczących tożsamości klienta.
 
 Naturalną konsekwencją wydaje się zatem istnienie możliwości zrobienia użytku z informacji o tożsamości klientów bankowych (tj. informacji, które banki i tak posiadają) w celu radykalnego usprawnienia procesu KYC.
 
