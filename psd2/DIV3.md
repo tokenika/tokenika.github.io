@@ -294,7 +294,7 @@ Niektóre czynności prawne, zarówno jednostronne (np. udzielenie pełnomocnict
 
 W większości przypadków jedynym istotnym powodem konieczności fizycznego pojawienia się u notariusza jest umożliwienie mu weryfikacji naszej tożsamości. Używając metody analogicznej do skalowalnego KYC notariusz jest w stanie dokonać takiej weryfikacji tożsamości online.
 
-Gdybyśmy przyjęli, że taka weryfikacja tożsamości jest wystarczająco wiarygodna, rola notariusza mogłaby wtedy wyglądać następująco: weryfikuje on tożsamość swoich klientów online, a następnie poświadcza on swoim certyfikowanym podpisem elektronicznym autentyczność ich oświadczeń woli.
+Gdybyśmy przyjęli, że taka weryfikacja tożsamości jest wystarczająco wiarygodna, rola notariusza mogłaby wtedy wyglądać następująco: weryfikuje on tożsamość swoich klientów online, a następnie poświadcza on swoim certyfikowanym podpisem elektronicznym autentyczność i zgodność z prawem ich oświadczeń woli.
 
 #### Korzyści
 
