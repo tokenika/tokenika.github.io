@@ -131,21 +131,27 @@ Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem nieg
 
 Najogólniej mówiąc, skalowalny KYC polega na tym, że jeden podmiot (w naszym przypadku bank) przeprowadza weryfikację tożsamości danej osoby (klienta) K, a następnie wynik tej weryfikacji jest udostępniany innym podmiotom (bankowym i niebankowym).
 
-Do konstrukcji skalowalnego KYC wykorzystujemy następujący zestaw faktów:
+Do konstrukcji skalowalnego KYC wykorzystujemy następujący zestaw założeń:
 
 - (niemal) każdy dorosły człowiek ma konto w banku,
 - każdy bank zna tożsamość każdego swojego klienta,
-- każdy bank otworzy swoje API z racji PSD2, tak więc możliwe będzie wydobywanie z banku informacji, w tym także tych dotyczących tożsamości klienta.
+- każdy bank otworzy swoje API z racji PSD2, tak więc możliwe będzie wydobywanie z banku informacji, w tym także tych dotyczących tożsamości klienta,
+- każdy bank dysponuje [kwalifikowanym podpisem elektronicznym](https://pl.wikipedia.org/wiki/Podpis_kwalifikowany).
 
 Naturalną konsekwencją wydaje się zatem istnienie możliwości zrobienia użytku z informacji o tożsamości klientów bankowych (tj. informacji, które banki i tak posiadają) w celu radykalnego usprawnienia procesu KYC.
 
 Idąc tym tropem, proponujemy mechanizm, który umożliwia klientowi K dostarczenie dowolnej firmie F podpisanego elektronicznie przez wiarygodny podmiot (w naszym przypadku bank B) certyfikatu poświadczającego jego (tj. klienta K) tożsamość.
 
-Integralną częścią naszej aplikacji musi być zatem możliwość weryfikacji certyfikowanego podpisu elektronicznego, tak żeby firma F mogła w łatwy sposób uzyskać pewność, że otrzymane od banku B informacje na temat klienta K rzeczywiście zostały przez ten bank wygenerowane i nie zostały zmodyfikowane po ich podpisaniu. Jest to funkcjonalność podobna do tej oferowanej przez powszechnie dostępne serwisy internetowe, np. [MadKom](https://madkom.pl/weryfikacja-podpisu-elektronicznego/).
+**Skalowanie procesu KYC uzyskujemy więc poprzez wykorzystanie kryptograficznego poświadczenia tożsamości klienta uzyskane od jego banku.**
 
-Podsumowując, nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje, które do tej pory leżały bezużytecznie (z perspektywy świata zewnętrznego) w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.
+Oznacza to, że nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje, które do tej pory leżały bezużytecznie (z perspektywy świata zewnętrznego) w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.
 
-*Uwaga*: Wymagane jest żeby nasz partner bankowy rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta. Zakładamy, że wymaganie to nie jest dla banku zbyt wygórowane i relatywnie łatwo może być spełnione.
+#### Wymagania
+
+Żeby powyższy mechanizm KYC mógł funkcjonować potrzebne będzie spełnienie dwóch warunków:
+
+1. Integralną częścią naszej aplikacji musi być możliwość weryfikacji certyfikowanego podpisu elektronicznego, tak żeby firma F mogła w łatwy sposób uzyskać pewność, że otrzymane od banku B informacje na temat klienta K rzeczywiście zostały przez ten bank wygenerowane i nie zostały zmodyfikowane po ich podpisaniu. Jest to funkcjonalność podobna do tej, która jest oferowana przez powszechnie dostępne serwisy internetowe, np. [MadKom](https://madkom.pl/weryfikacja-podpisu-elektronicznego/).
+2. Wymagane jest żeby nasz partner bankowy rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta. Zakładamy, że postulat ten relatywnie łatwo może być przez bank spełniony, gdyż nie wymaga on istotnych zmian technologicznych po stronie banku.
 
 #### Proces podstawowy
 
