@@ -323,13 +323,13 @@ Najprostszą metodą monetyzacji naszego systemu wydaje się komercjalizacja bar
 
 Można też spekulować, że w przyszłości zaczną powstawać podmioty biznesowe, które będą specjalizować się w przechowywaniu, ochronie i selektywnym udostępnianiu osobom trzecim informacji dotyczących danego klienta - podobnie jak teraz banki przechowują jego prawa majątkowe. Nasza aplikacja, traktowana jako sejf dla klucza prywatnego, wydaje się dobrym zalążkiem dla interfejsu użytkownika w takim nowym paradygmacie.
 
-Alternatywną opcją jest rozbudowa naszej aplikacji mobilnej w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tej platformie. Korzystając z naszej kompatybilności z blockchainem EOSa, wystarczy zarejestrować klucze prywatne naszych użytkowników na tym blockchainie żeby otworzyć im dostęp do bogatego ekosystemu przeróżnych aplikacji, jakie (miejmy nadzieję) tam w przyszłości powstaną. Wówczas dobrą formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
+Alternatywną opcją jest rozbudowa naszej aplikacji mobilnej w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tej platformie. Korzystając z naszej kompatybilności z blockchainem EOSa, wystarczy zarejestrować klucze prywatne naszych użytkowników na tym blockchainie żeby otworzyć im dostęp do bogatego ekosystemu przeróżnych aplikacji, jakie (miejmy nadzieję) w przyszłości tam powstaną. Wówczas dobrą formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
 
 ## Szerszy kontekst: Digital Identity
 
 Propozycje opisane w niniejszym dokumencie to podzbiór większego zagadnienia znanego jako [Cyfrowa Tożsamość](http://di.com.pl/cyfrowa-tozsamosc-56607) (Digital Identity) albo, w przypadku użycia systemów rozproszonych, Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
 
-W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, kiedy to Daniel Larimer (*nota bene* twórca EOSa) wystąpił z pomysłem systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8). Ten system nigdy nie powstał, ale idea wydaje się całkiem słuszna.
+W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, kiedy to Daniel Larimer (*nota bene* twórca EOSa) wystąpił z pomysłem systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8). Ten system nigdy nie powstał, ale jego idea wydaje się całkiem słuszna.
 
 Obecnie istnieje [spora liczba projektów blockchainowych](https://github.com/peacekeeper/blockchain-identity), które podejmują rożne aspekty cyfrowej tożsamości i jej weryfikacji. Najważniejsze naszym zdaniem są te dwa:
 
