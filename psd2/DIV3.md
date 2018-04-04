@@ -224,7 +224,7 @@ Przy użyciu klucza prywatnego do definiowania unikalnej tożsamości powyższy 
 Co więcej, możliwe się staje dodatkowe zwiększenie bezpieczeństwa takiej cyfrowej tożsamości. Dostęp do serwisu S (i tym samym do reputacji tam zbudowanej) można uzależnić od spełnienia dwóch warunków jednocześnie:
 
 * udowodnienie posiadania klucza prywatnego X,
-* plus dodatkowo udowodnienie bycia klientem banku B z przypisanym tam kluczem publicznym Y, który odpowiada kluczowi prywatnemu X.
+* plus dodatkowo udowodnienie bycia klientem banku B z przypisanym tam kluczem publicznym Y, który odpowiada kluczowi prywatnemu X - można łatwo to uzyskać poprzez kryptograficzne poświadczenie uzyskane od banku B, podobne to tego, jakie proponujemy w zakresie KYC.
 
 Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz prywatny zostanie mu skradziony - oczywiście przy założeniu że użytkownik zgłosi tę kradzież do swojego banku. Warto też zauważyć, że w tym układzie bank B pełni jedynie rolę strażnika tożsamości użytkownika, ale nigdy nie staje się jej właścicielem.
 
@@ -264,7 +264,7 @@ Proces udostępniania powyższych informacji firmie F przez klienta K może wygl
 Uzyskujemy dwojakiego rodzaju korzyści:
 
 1. Następuje migracja informacji zawartych w tradycyjnych dokumentach papierowych do formy cyfrowej, co oczywiście oznacza redukcję kosztów i możliwości fałszowania.
-2. Następuje przejęcie pełnej kontroli nad informacją przez podmiot, do którego ona należy. W tym nowym paradygmacie każdorazowo gdy informacja jest przekazywana osobie trzeciej, musi się na to zgodzić jej właściciel, tj. posiadacz klucza prywatnego. Możliwe staje się też przekazywanie minimalnej informacji jaka jest w danej sytuacji potrzebna, np. żeby udowodnić swoją pełnoletność nie trzeba przekazywać pełnej daty urodzenia, lecz tylko fakt bycia starszym niż dany próg wiekowy.
+2. Następuje przejęcie pełnej kontroli nad informacją przez podmiot, do którego ona należy. W tym nowym paradygmacie każdorazowo gdy informacja jest przekazywana osobie trzeciej, musi się na to zgodzić jej właściciel, tj. posiadacz klucza prywatnego. Możliwe staje się też przekazywanie minimalnej informacji, jaka jest w danej sytuacji potrzebna, np. żeby udowodnić swoją pełnoletność nie trzeba przekazywać pełnej daty urodzenia, lecz tylko fakt bycia starszym niż dany próg wiekowy.
 3. Pełna kontrola posiadacza klucza prywatnego nad informacją otwiera także możliwość świadomego sprzedawania własnych danych demograficznych (których prawdziwość jest poświadczona kryptograficznie) podmiotom zainteresowanym tego rodzaju danymi.
 
 #### Legislacja
@@ -315,13 +315,15 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu nowej formy usług notari
 
 Warto zauważyć, że:
 
-1. Istotą naszej aplikacji mobilnej jest ochrona klucza prywatnego, co oznacza, że pełni ona rolę analogiczną do portfela kryptowalutowego. Jest jednak istotna różnica: nasza aplikacja nie zajmuje się obsługą związanych z tym kluczem kryptowalut (tj. otrzymywanie i wysyłanie płatności), lecz obsługą związanych z tym kluczem danych osobowych i informacji.
+1. Istotą naszej aplikacji mobilnej jest ochrona klucza prywatnego, co oznacza, że pełni ona rolę analogiczną do portfela kryptowalutowego. Jest jednak istotna różnica: nasza aplikacja nie zajmuje się obsługą związanych z tym kluczem kryptowalut (tj. otrzymywanie i wysyłanie płatności), lecz obsługą związanych z tym kluczem danych osobowych i informacji. Klucz prywatny chroni zatem w naszym przypadku informację i tożsamość, a nie instrument finansowy.
 2. Mimo że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa, żadna z wyżej opisanych propozycji nie wymaga interakcji z blockchainem. W przyszłości, gdy powstaną nowe funkcjonaliści, to się może zmienić, ale na razie warto postrzegać to jako zaletę: w okresie początkowym nie jesteśmy uzależnieni od konkretnej platformy technologicznej.
 3. Przy sojuszu z dużym partnerem bankowym nasza aplikacja mobilna ma realne szanse na dość masową adopcję - chociażby ze względu na jej rolę w zakresie autoryzacji PSD2.
 
 Najprostszą metodą monetyzacji naszego systemu wydaje się komercjalizacja bardziej zaawansowanych funkcjonalności naszej aplikacji mobilnej (np. delegacja uprawnień związanych z danym kluczem prywatnym, podejmowanie decyzji poprzez głosowanie, raportowanie, backup danych itp.), albo pójście w kierunku funkcjonalości oferowanych przez system [Factom](https://www.factom.com/), tj. publikowanie hashy dokumentów na blockchainie EOSa celem udowodnienia ich istnienia w danym czasie i/lub zawierania konkretnej treści.
 
-Drugą opcją jest rozbudowa naszej aplikacji mobilnej w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tym blockchainie. Korzystając z naszej kompatybilności z blockchainem EOSa, wystarczy zarejestrować klucze prywatne naszych użytkowników na tym blockchainie żeby otworzyć im dostęp do bogatego ekosystemu przeróżnych aplikacji, jakie (miejmy nadzieję) tam powstaną. Wówczas alternatywną formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*. 
+Można też spekulować, że w przyszłości zaczną powstawać podmioty biznesowe, które będą specjalizować się w przechowywaniu, ochronie i selektywnym udostępnianiu osobom trzecim informacji dotyczących danego klienta - podobnie jak teraz banki przechowują jego prawa majątkowe. Nasza aplikacja, traktowana jako sejf dla klucza prywatnego, wydaje się dobrym zalążkiem dla interfejsu użytkownika w takim nowym paradygmacie.
+
+Alternatywną opcją jest rozbudowa naszej aplikacji mobilnej w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tej platformie. Korzystając z naszej kompatybilności z blockchainem EOSa, wystarczy zarejestrować klucze prywatne naszych użytkowników na tym blockchainie żeby otworzyć im dostęp do bogatego ekosystemu przeróżnych aplikacji, jakie (miejmy nadzieję) tam w przyszłości powstaną. Wówczas dobrą formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
 
 ## Szerszy kontekst: Digital Identity
 
