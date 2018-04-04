@@ -169,7 +169,7 @@ Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 
 #### Proces rozszerzony
 
-Do otrzymywanego przez firmę F od banku B pakietu informacji z danymi KYC dla klienta K możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K.
+Załóżmy, że bank B używa oferowanego przez nas wyżej opisanego kryptograficznego systemu autoryzacji transakcji. Wówczas do otrzymywanego przez firmę F od banku B pakietu informacji z danymi KYC dla klienta K możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K.
 
 Wtedy firma F:
 
