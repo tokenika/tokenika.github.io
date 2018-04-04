@@ -148,17 +148,15 @@ Oznacza to, że nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w
 
 #### Wymagania
 
-Żeby powyższy mechanizm KYC mógł funkcjonować potrzebne będzie spełnienie dwóch warunków:
+Żeby powyższy mechanizm KYC mógł funkcjonować potrzebne będzie spełnienie następujących warunków:
 
 1. Integralną częścią naszej aplikacji musi być możliwość weryfikacji certyfikowanego podpisu elektronicznego, tak żeby firma F mogła w łatwy sposób uzyskać pewność, że otrzymane od banku B informacje na temat klienta K rzeczywiście zostały przez ten bank wygenerowane i nie zostały zmodyfikowane po ich podpisaniu. Jest to funkcjonalność podobna do tej, która jest oferowana przez powszechnie dostępne serwisy internetowe, np. [MadKom](https://madkom.pl/weryfikacja-podpisu-elektronicznego/).
 2. Wymagane jest żeby nasz partner bankowy rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta. Zakładamy, że postulat ten relatywnie łatwo może być przez bank spełniony, gdyż nie wymaga on istotnych zmian technologicznych po stronie banku.
+3. Ponieważ my, jako twórcy i operatorzy aplikacji mobilnej będącej w posiadaniu klienta K, pełnimy rolę TPP (Third Party Provider), musimy być podmiotem zarejestrowanym w KNF zgodnie z wymagami PSD2. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.
 
 #### Proces podstawowy
 
-Załóżmy, że:
-
-1. Firma F potrzebuje dokonać weryfikacji KYC klienta K i ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenia banku B w zakresie tożsamości klienta K uznaje za prawdziwe.
-2. My, jako twórcy i operatorzy aplikacji mobilnej będącej w posiadaniu klienta K, pełnimy rolę TPP. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.
+Załóżmy, że firma F potrzebuje dokonać weryfikacji KYC klienta K i ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenia banku B w zakresie tożsamości klienta K uznaje za prawdziwe.
 
 Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 
