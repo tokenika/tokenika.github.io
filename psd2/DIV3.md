@@ -1,6 +1,6 @@
 # W jaki sposób wykorzystać PSD2 do rozwiązania problemu KYC i rozpowszechnienia koncepcji cyfrowej tożsamości?
 
-Wersja 3.0 (04/04/2018)
+Wersja 3.1 (05/04/2018)
 
 **Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie, będącej w posiadaniu banku, informacji o tożsamości klienta. Skalowanie procesu KYC uzyskujemy poprzez wykorzystanie kryptograficznego poświadczenia tożsamości klienta uzyskane od jego banku. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów w branży FinTech (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w internecie.**
 
@@ -10,7 +10,7 @@ Wersja 3.0 (04/04/2018)
 
 Internetowa weryfikacja tożsamości to próba rozwiązania następującego problemu: w jaki sposób w warunkach online uzyskać pewność, że osoba (klient) podająca się jako K rzeczywiście jest tą osobą K?
 
-Istotne jest tu to, że jest to sytuacja online, czyli *nie* w realu. W sytuacji kontaktu w realu dokument ze zdjęciem można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w przypadku, gdy nie wiemy jak dokładnie powinien wyglądać oryginalny dokument, np. legitymacja policjanta).
+Istotne jest tu to, że jest to sytuacja online, czyli *nie* w realu. W sytuacji kontaktu w realu dokument ze zdjęciem można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w przypadku, gdy nie wiemy jak dokładnie powinien wyglądać oryginalny dokument, np. dowód tożsamości obcokrajowca).
 
 Z oczywistych powodów w warunkach online zdjęcie, które jest integralną częścią dokumentu tożsamości, przestaje być użyteczne, bo nie ma go z czym porównać. 
 
@@ -39,6 +39,23 @@ Szukamy rozwiązania dla procesu KYC, które:
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
 - otworzy drogę na inne niż KYC zastosowania, w szczególności do rozpowszechnienia koncepcji cyfrowej tożsamości.
 
+#### 1.4 Disclaimer
+
+Niniejszy dokument jest tylko wstępnym zarysem pomysłu (można go potraktować jako tekst wizjonerski). W swojej obecnej formie nie wyczerpuje on wszystkich tematów, które będą wymagać analizy zanim zdecydujemy się na pójście z propozycją do potencjalnego partnera bankowego i ostatecznie uznamy, że opisane rozwiązanie jest warte wdrożenia.
+
+W zakresie biznesowym brakuje nam analizy w zakresie:
+
+* Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
+* Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
+* Jak powszechne jest korzystanie z usług finansowych oferowanych przez firmy zagraniczne (z UE i spoza UE)?
+* Jak dużym problemem jest przeprowadzanie KYC dla klientów z innych niż siedziba firmy krajów?
+* W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
+
+W zakresie prawnym brakuje nam analizy w zakresie:
+
+- Jakie dokładnie są wymogi KYC finansowego w Polsce (i Europie)? Jakie są wymogi w przypadku stosowania outsourcingu KYC?
+- Jakie są wymogi w zakresie KYC dla klientów zagranicznych (z UE i spoza UE)?
+
 ## 2. Strategia dualnej funkcjonalności: skalowalny KYC na grzbiecie autoryzacji PSD2
 
 #### 2.1 Rationale
@@ -59,7 +76,7 @@ Oznacza to, że nasza aplikacja mobilna będzie miała dwie spokrewnione ze sob�
 - autoryzacja transakcji bankowych w PSD2,
 - weryfikacja tożsamości dla potrzeb KYC.
 
-Dzięki pełnieniu tej podwójnej roli, liczymy na to, że już w momencie uruchomienia nasz system KYC będzie miał dostęp do tysięcy użytkowników, którzy są łatwo weryfikowalni w zakresie KYC.
+Dzięki pełnieniu tej podwójnej roli, liczymy na to, że już w momencie uruchomienia nasz system KYC będzie obejmował znaczącą liczbę użytkowników pasywnych (tj. tych którzy są potencjalnym obiektem KYC), co jest krytycznie ważne dla uczynienia go realnie przydatnym dla użytkowników aktywnych (tj. firm które przeprowadzają KYC).
 
 #### 2.2 Implementacja
 
@@ -169,7 +186,7 @@ Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 
 #### 4.4 Proces rozszerzony
 
-Załóżmy, że bank B używa oferowanego przez nas wyżej opisanego kryptograficznego systemu autoryzacji transakcji. Wówczas do otrzymywanego przez firmę F od banku B pakietu informacji z danymi KYC dla klienta K możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K.
+Ponieważ bank B używa oferowanego przez nas wyżej opisanego kryptograficznego systemu autoryzacji transakcji, do otrzymywanego przez firmę F od banku B pakietu informacji z danymi KYC dla klienta K możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K.
 
 Wtedy firma F:
 
@@ -235,7 +252,7 @@ Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz pr
 Problemy są dwojakiego rodzaju:
 
 1. Uzyskanie wiarygodnego zaświadczenia potwierdzającego stan faktyczny bywa trudne i czasochłonne, podobnie jak weryfikacja autentyczności takiego zaświadczenia.
-2. W praktyce użytkownicy nie mają żadnej kontroli nad komercjalnym wykorzystaniem informacji na swój temat, w tym także swoich danych osobowych.
+2. W praktyce użytkownicy nie mają żadnej kontroli nad komercyjnym wykorzystaniem informacji na swój temat, w tym także swoich danych osobowych.
 
 #### 7.2 Koncepcja
 
@@ -299,7 +316,7 @@ Niektóre czynności prawne, zarówno jednostronne (np. udzielenie pełnomocnict
 
 #### 9.2 Koncepcja
 
-W większości przypadków jedynym istotnym powodem konieczności fizycznego pojawienia się u notariusza jest umożliwienie mu weryfikacji naszej tożsamości. Używając metody analogicznej do skalowalnego KYC notariusz jest w stanie dokonać takiej weryfikacji tożsamości online.
+W większości przypadków jedynym istotnym powodem konieczności fizycznego pojawienia się u notariusza jest umożliwienie mu weryfikacji naszej tożsamości. Używając metody analogicznej do skalowalnego KYC notariusz jest w stanie dokonać skutecznej weryfikacji tożsamości online.
 
 Gdybyśmy przyjęli, że taka weryfikacja tożsamości jest wystarczająco wiarygodna, rola notariusza mogłaby wtedy wyglądać następująco: weryfikuje on tożsamość swoich klientów online, a następnie poświadcza on swoim certyfikowanym podpisem elektronicznym autentyczność i zgodność z prawem ich oświadczeń woli.
 
@@ -316,7 +333,7 @@ Ustawa musi dać wsparcie dla wiarygodności tego typu nowej formy usług notari
 Warto zauważyć, że:
 
 1. Istotą naszej aplikacji mobilnej jest ochrona klucza prywatnego, co oznacza, że pełni ona rolę analogiczną do portfela kryptowalutowego. Jest jednak istotna różnica: nasza aplikacja nie zajmuje się obsługą związanych z tym kluczem kryptowalut (tj. otrzymywanie i wysyłanie płatności), lecz obsługą związanych z tym kluczem danych osobowych i informacji. Klucz prywatny chroni zatem w naszym przypadku informację i tożsamość, a nie instrument finansowy.
-2. Mimo że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa, żadna z wyżej opisanych propozycji nie wymaga interakcji z blockchainem. W przyszłości, gdy powstaną nowe funkcjonaliści, to się może zmienić, ale na razie warto postrzegać to jako zaletę: w okresie początkowym nie jesteśmy uzależnieni od konkretnej platformy technologicznej.
+2. Mimo że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa, żadna z wyżej opisanych propozycji nie wymaga interakcji z blockchainem. W przyszłości, gdy wymyślimy nowe funkcjonaliści, to się może zmienić, ale na razie warto postrzegać to jako zaletę: w okresie początkowym nie jesteśmy uzależnieni od konkretnej platformy technologicznej.
 3. Przy sojuszu z dużym partnerem bankowym nasza aplikacja mobilna ma realne szanse na dość masową adopcję - chociażby ze względu na jej rolę w zakresie autoryzacji PSD2.
 
 Najprostszą metodą monetyzacji naszego systemu wydaje się komercjalizacja bardziej zaawansowanych funkcjonalności naszej aplikacji mobilnej (np. delegacja uprawnień związanych z danym kluczem prywatnym, podejmowanie decyzji poprzez głosowanie, raportowanie, backup danych itp.), albo pójście w kierunku funkcjonalości oferowanych przez system [Factom](https://www.factom.com/), tj. publikowanie hashy dokumentów na blockchainie EOSa celem udowodnienia ich istnienia w danym czasie i/lub zawierania konkretnej treści.
@@ -362,13 +379,11 @@ Nasza pozycja konkurencyjna wygląda dość korzystnie ponieważ:
 
 ## 13. Proponowana nazwa systemu
 
-Nazwa powinna nawiązywać do czegoś, co jest prywatne i służy do weryfikowania tożsamości i autoryzacji różnego rodzaju działań. Najlepiej coś kojarzącego się z podpisem.
+Nazwa powinna nawiązywać do czegoś, co jest unikalne dla danego użytkownika i służy do potwierdzania jego tożsamości i autoryzacji różnego rodzaju działań. Najlepiej coś kojarzącego się z podpisem.
 
 Dodatkowym warunkiem jest dobre funkcjonowanie nazwy zarówno w języku polskim jak i angielskim.
 
-Nasze propozycje: *Viza*, *Sigma*, *Signum*, *Signet*, *Sygnet*.
-
-Szczególnie ta ostatnia, *Sygnet*, wydaje się trafna, bo spełnia wszystkie powyższe postulaty, a dodatkowo jej końcówka *net* sugeruje coś związanego z internetem.
+Proponujemy nazwę *Sygnet* i domenę *sygnet.eu*. Spełnia ona wszystkie powyższe postulaty, a dodatkowo jej końcówka *net* sugeruje coś związanego z internetem.
 
 > Signet - a small seal, especially one set in a ring, used instead of or with a signature to give authentication to an official document.
 
