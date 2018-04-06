@@ -39,28 +39,6 @@ Szukamy rozwiązania dla procesu KYC, które:
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
 - otworzy drogę na inne niż KYC zastosowania, w szczególności do rozpowszechnienia koncepcji cyfrowej tożsamości.
 
-#### 1.4 Disclaimer
-
-Niniejszy dokument jest tylko wstępnym zarysem pomysłu (można go potraktować jako tekst wizjonerski). W swojej obecnej formie nie wyczerpuje on wszystkich tematów, które będą wymagać analizy zanim zdecydujemy się na pójście z propozycją do potencjalnego partnera bankowego i ostatecznie uznamy, że opisane rozwiązanie jest warte wdrożenia.
-
-W aspekcie biznesowym brakuje nam analizy w zakresie:
-
-* Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
-* Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
-* Jak powszechne jest korzystanie z usług finansowych oferowanych przez firmy zagraniczne (z UE i spoza UE)?
-* Jak dużym problemem jest przeprowadzanie KYC dla klientów z innych niż siedziba firmy krajów?
-* W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
-
-W aspekcie prawnym brakuje nam analizy w zakresie:
-
-- Jakie dokładnie są wymogi KYC finansowego w Polsce (i Europie)? Jakie są wymogi w przypadku stosowania outsourcingu KYC?
-- Jakie są wymogi w zakresie KYC dla klientów zagranicznych (z UE i spoza UE)?
-
-W aspekcie technologicznym brakuje nam analizy w zakresie:
-
-* Jak trudna dla nas jest implementacja naszego rozwiązania?
-* Jak trudna dla banku jest adaptacja do proponowanego przez nas rozwiązania?
-
 ## 2. Strategia dualnej funkcjonalności: skalowalny KYC na grzbiecie autoryzacji PSD2
 
 #### 2.1 Rationale
@@ -391,3 +369,25 @@ Dodatkowym warunkiem jest dobre funkcjonowanie nazwy zarówno w języku polskim 
 Proponujemy nazwę *Sygnet* i domenę *sygnet.eu*. Spełnia ona wszystkie powyższe postulaty, a dodatkowo jej końcówka *net* sugeruje coś związanego z internetem.
 
 > Signet - a small seal, especially one set in a ring, used instead of or with a signature to give authentication to an official document.
+
+## 14. Disclaimer
+
+Niniejszy dokument jest tylko wstępnym zarysem pomysłu (można go potraktować jako tekst wizjonerski). W swojej obecnej formie nie wyczerpuje on wszystkich tematów, które będą wymagać analizy zanim zdecydujemy się na pójście z propozycją do potencjalnego partnera bankowego i ostatecznie uznamy, że opisane rozwiązanie jest warte wdrożenia.
+
+W aspekcie biznesowym brakuje nam analizy w zakresie:
+
+- Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
+- Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
+- Jak powszechne jest korzystanie z usług finansowych oferowanych przez firmy zagraniczne (z UE i spoza UE)?
+- Jak dużym problemem jest przeprowadzanie KYC dla klientów z innych niż siedziba firmy krajów?
+- W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
+
+W aspekcie prawnym brakuje nam analizy w zakresie:
+
+- Jakie dokładnie są wymogi KYC finansowego w Polsce (i Europie)? Jakie są wymogi w przypadku stosowania outsourcingu KYC?
+- Jakie są wymogi w zakresie KYC dla klientów zagranicznych (z UE i spoza UE)?
+
+W aspekcie technologicznym brakuje nam analizy w zakresie:
+
+- Jak trudna dla nas jest implementacja naszego rozwiązania?
+- Jak trudna dla banku jest adaptacja do proponowanego przez nas rozwiązania?
