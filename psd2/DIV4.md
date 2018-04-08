@@ -1,6 +1,6 @@
-# W jaki sposób wykorzystać PSD2 do rozwiązania problemu KYC i rozpowszechnienia koncepcji cyfrowej tożsamości?
+# Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta
 
-Wersja 3.1 (05/04/2018)
+Wersja 4.0 (06/04/2018)
 
 **Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie, będącej w posiadaniu banku, informacji o tożsamości klienta. Skalowanie procesu KYC uzyskujemy poprzez wykorzystanie kryptograficznego poświadczenia tożsamości klienta uzyskane od jego banku. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów w branży FinTech (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w internecie.**
 
@@ -39,95 +39,9 @@ Szukamy rozwiązania dla procesu KYC, które:
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
 - otworzy drogę na inne niż KYC zastosowania, w szczególności do rozpowszechnienia koncepcji cyfrowej tożsamości.
 
-## 2. Strategia dualnej funkcjonalności: skalowalny KYC na grzbiecie autoryzacji PSD2
+## 2. Skalowalny proces KYC
 
-#### 2.1 Rationale
-
-Naszą intencją jest zbudowanie kanału mocnej autoryzacji transakcji bankowych w PSD2 poprzez zastosowanie kryptografii asymetrycznej, a następnie skorzystanie z faktu, że ten sam klucz prywatny (i mechanizm jego ochrony), który służy do autoryzacji w PSD2, może jednocześnie być użyty do skalowania procesu KYC, a także do wielu innym celów powiązanych z cyfrową tożsamością, np:
-
-- kryptograficzna ochrona tożsamości i reputacji,
-- kryptograficznie poświadczony stan faktyczny,
-- kryptograficzne podpisywanie umowy cywilnoprawnej,
-- internetowa kancelaria notarialna.
-
-Zbudowanie mechanizmu mocnej autoryzacji w PSD2 nie jest więc celem ostatecznym - bardziej pełni funkcję konia trojańskiego, który da użytkownikom istotny powód, żeby posiadali (i chronili) w swoim telefonie swój unikalny klucz prywatny, ściśle związany z ich tożsamością (i potencjalnie także z ich reputacją), podobnie jak PESEL - tyle że klucz prywatny jest z założenia niejawny.
-
-Chcemy zatem wykorzystać dogodną sytuację, stworzoną przez PSD2, do wprowadzenia do powszechnego użycia mechanizmu ochrony klucza prywatnego po stronie użytkownika. Mając tego rodzaju mechanizm, masowo (i często) używany z racji PSD2, możemy wprowadzić skalowalny proces KYC, a także zacząć budować przeróżne produkty zmierzające do cyfryzacji "wszystkiego".
-
-Oznacza to, że nasza aplikacja mobilna będzie miała dwie spokrewnione ze sobą funkcjonalności, obie bazujące na tym samym kluczu prywatnym:
-
-- autoryzacja transakcji bankowych w PSD2,
-- weryfikacja tożsamości dla potrzeb KYC.
-
-Dzięki pełnieniu tej podwójnej roli, liczymy na to, że już w momencie uruchomienia nasz system KYC będzie obejmował znaczącą liczbę użytkowników pasywnych (tj. tych którzy są potencjalnym obiektem KYC), co jest krytycznie ważne dla uczynienia go realnie przydatnym dla użytkowników aktywnych (tj. firm które przeprowadzają KYC).
-
-#### 2.2 Implementacja
-
-Do wdrożenia naszego systemu autoryzacji w PSD2 na pewno potrzebne będzie partnerstwo z jakimś podmiotem bankowym.
-
-Załóżmy, że jakiś bank uznałby, że nasz system spełnia jego wymogi w zakresie kanału mocnej autoryzacji w PSD2 i rekomenduje swoim klientom użycie naszej aplikacji mobilnej do tego celu.
-
-Co się wtedy dzieje?
-
-Partner bankowy dostaje od nas system mocnej autoryzacji (za darmo lub odpłatnie - jest to kwestia negocjacji), a w zamian, poprzez rozpowszechnienie naszego systemu autoryzacji PSD2 wśród swoich klientów, czyni naszą aplikację mobilną (i tym samym nasz system weryfikacji tożsamości) wysoce użytecznym narzędziem dla firm potrzebujących sprawnej i szybkiej weryfikacji KYC.
-
-## 3. Autoryzacja w PSD2 poprzez kryptografię asymetryczną
-
-#### 3.1 Istniejące rozwiązania
-
-Obecne podejścia w zakresie mocnej autoryzacji transakcji bankowych są następujące:
-
-- jesteś wypytywany o jakiś wcześniej ustalony przez obie strony sekret (np. nazwisko panieńskie matki),
-- dostajesz esemesa z kodem,
-- weryfikujesz się poprzez narzędzie typu Google Authenticator.
-
-#### 3.2 Proponowane rozwiązanie
-
-Do autoryzacji transakcji bankowej w PSD2 użyjemy kryptografii asymetrycznej, tj, kombinacji klucza prywatnego X i sprzężonego z nim klucza publicznego Y. Generalnie sprowadza się to do tego, że generujemy dla klienta K klucz prywatny X i w przyszłości uznajemy, że posiadanie klucza X jest tożsame z byciem klientem K.
-
-Chociaż do autoryzacji w PSD2 nie jest potrzebny blockchain, ze względu na dalsze potencjalne zastosowania naszego systemu, wygenerowane klucze będą kompatybilne z platformą smart-kontraktową [EOS](https://eos.io/).
-
-Warte podkreślenia jest to, że:
-
-- naszym zamiarem nie jest zbudowanie całego procesu autoryzacji w PSD2, a jedynie jednego z wymaganych dwóch niezależnych kanałów,
-- bez problemu możemy wspierać autoryzację w wersji dynamicznej, tj. dodawać elementy łączące daną transakcję z określoną kwotą i określonym odbiorcą (np. ostatnie cyfry rachunku i kwota transakcji).
-
-#### 3.3 Konfiguracja procesu autoryzacji
-
-Konfiguracja (albo aktywacja) naszego procesu autoryzacji PSD2 dla nowego klienta wygląda następująco:
-
-1. Klient K instaluje na swoim telefonie wykonaną przez nas aplikację mobilną, która generuje unikalną parę kluczy kryptograficznych: klucz prywatny X i klucz publiczny Y. 
-2. Klucz prywatny X jest trzymany w telefonie i nigdy nikomu poza klientem K nie jest ujawniany (klucz prywatny jest chroniony PIN-em lub biometrycznie - być może da się tu sprytnie wykorzystać właściwości biometryczne EOSa).
-3. Aplikacja przekazuje bankowi B klucz publiczny Y klienta K.
-
-W wyniku powyższego procesu bank B może w swojej bazie danych przypisać tożsamość klienta K do jego klucza publicznego Y. Prawdopodobnie wymagało to będzie pewnego rodzaju procedury aktywacji (podobnie jak aktywujemy nowo otrzymaną kartę debetową), tak żeby bank B miał pewność, że wygenerowany przez naszą aplikację klucz publiczny rzeczywiście należy do klienta K.
-
-#### 3.4 Działanie procesu autoryzacji
-
-Zakładając że dla klienta K powyższa konfiguracja procesu została już przeprowadzona, autoryzacja transakcji bankowej w PSD2 wygląda wtedy następująco:
-
-1. Poprzez aplikację mobilną bank B wysyła do klienta K propozycję przelewu bankowego (ze wszystkimi potrzebnymi szczegółami typu adresat płatności i kwota).
-2. Klient K wyraża zgodę na tę propozycję (tj. autoryzuje tę transakcję) poprzez podpisanie jej swoim kluczem prywatnym X.
-
-Autoryzacja sprowadza się zatem do potwierdzenia, że klient K dysponuje kluczem prywatnym X, który odpowiada kluczowi publicznemu Y. W ten sposób bank B ma pewność, że propozycja transakcji finansowej została zatwierdzona przez klienta K, bo tylko on może być posiadaczem klucza prywatnego X, który odpowiada kluczowi publicznemu Y, przypisanemu w banku B klientowi K.
-
-#### 3.5 Odzyskiwanie klucza
-
-Procedura odzyskiwania zgubionego / skradzionego klucza prywatnego może przebiegać na dwa sposoby:
-
-1. Najprostszym rozwiązaniem wydaje się być wykorzystanie do tego celu banku i uruchomienie procedury analogicznej do odzyskiwania hasła w tradycyjnych systemach, tj. zablokowanie istniejącego klucza i aktywacja nowego. 
-2. Alternatywnym sposobem jest wykorzystanie dość spektakularnych (jak na blockchain) możliwości EOSa w tym zakresie.
-
-#### 3.6 Korzyści
-
-Autoryzacja poprzez kryptografię asymetryczną na pewno jest rozwiązaniem niegorszym niż alternatywne metody (np. esemesy lub Google Authenticator). Dodatkowe korzyści są takie:
-
-1. Dzięki EOSowej funkcjonalności *account permissions* staje się możliwe zbudowanie po stronie użytkownika dowolnie złożonej struktury delegacji uprawnień w zakresie autoryzacji transakcji finansowych. Przestaje być wtedy potrzebne często stosowane (szczególnie w sytuacjach biznesowych) "pożyczanie" haseł lub ich współdzielenie. W naszym paradygmacie użytkownik nigdy nie powinien mieć powodu aby ujawnić swój klucz prywatny komukolwiek - oczywiście o ile będą dostępne narzędzia do sprawnej delegacji uprawnień i ich odwoływania.
-2. Bank B może łatwo uzyskać kryptograficzne potwierdzenie szczegółów transakcji podpisane kluczem prywatnym X klienta K - wtedy bank B ma oficjalny dowód na to, że klient K zgodził się na zaproponowaną mu transakcję. Według naszej wiedzy inne metody autoryzacji nie dają takiej możliwości.
-
-## 4. Skalowalny proces KYC poprzez wykorzystanie kryptograficznego poświadczenia banku
-
-#### 4.1 Koncepcja
+#### 2.1 Koncepcja
 
 Najogólniej mówiąc, skalowalny KYC polega na tym, że jeden podmiot (w naszym przypadku bank) przeprowadza weryfikację tożsamości danej osoby (klienta) K, a następnie wynik tej weryfikacji jest udostępniany innym podmiotom (bankowym i niebankowym).
 
@@ -135,59 +49,61 @@ Do konstrukcji skalowalnego KYC wykorzystujemy następujący zestaw założeń:
 
 - (niemal) każdy dorosły człowiek ma konto w banku,
 - każdy bank zna tożsamość każdego swojego klienta,
-- każdy bank otworzy swoje API z racji PSD2, tak więc możliwe będzie wydobywanie z banku informacji, w tym także tych dotyczących tożsamości klienta,
+- w ramach PSD2 możliwe jest wydobywanie z banku informacji dotyczących tożsamości danego klienta,
 - każdy bank dysponuje [kwalifikowanym podpisem elektronicznym](https://pl.wikipedia.org/wiki/Podpis_kwalifikowany).
 
 Naturalną konsekwencją wydaje się zatem istnienie możliwości zrobienia użytku z informacji o tożsamości klientów bankowych (tj. informacji, które banki i tak posiadają) w celu radykalnego usprawnienia procesu KYC.
 
-Idąc tym tropem, proponujemy mechanizm, który umożliwia klientowi K dostarczenie dowolnej firmie F podpisanego elektronicznie przez wiarygodny podmiot (w naszym przypadku bank B) certyfikatu poświadczającego jego (tj. klienta K) tożsamość.
+#### 2.2 System Sygnet
 
-**Skalowanie procesu KYC uzyskujemy więc poprzez wykorzystanie kryptograficznego poświadczenia tożsamości klienta uzyskane od jego banku.**
+Idąc tym tropem, proponujemy mechanizm, który nazywać będziemy systemem Sygnet. Nazwa ta w zamierzeniu kojarzyć się ma z własnoręcznym podpisem i ma nawiązywać do czegoś, co służy do potwierdzania jego tożsamości i autoryzacji różnego rodzaju działań
+
+> Signet - a small seal, especially one set in a ring, used instead of or with a signature to give authentication to an official document.
+
+System Sygnet umożliwia klientowi K dostarczenie dowolnej firmie F podpisanego elektronicznie przez wiarygodny podmiot (w naszym przypadku bank B) certyfikatu poświadczającego jego (tj. klienta K) tożsamość.
+
+**W systemie Sygnet skalowanie procesu KYC uzyskujemy więc poprzez wykorzystanie kryptograficznego poświadczenia tożsamości klienta uzyskane od jego banku.**
 
 Oznacza to, że nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje, które do tej pory leżały bezużytecznie (z perspektywy świata zewnętrznego) w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.
 
-#### 4.2 Wymagania
+#### 2.3 Wymagania
 
 Żeby powyższy mechanizm KYC mógł funkcjonować potrzebne będzie spełnienie następujących warunków:
 
-1. Integralną częścią naszej aplikacji musi być możliwość weryfikacji certyfikowanego podpisu elektronicznego, tak żeby firma F mogła w łatwy sposób uzyskać pewność, że otrzymane od banku B informacje na temat klienta K rzeczywiście zostały przez ten bank wygenerowane i nie zostały zmodyfikowane po ich podpisaniu. Jest to funkcjonalność podobna do tej, która jest oferowana przez powszechnie dostępne serwisy internetowe, np. [MadKom](https://madkom.pl/weryfikacja-podpisu-elektronicznego/).
-2. Wymagane jest żeby nasz partner bankowy rozszerzył swoje API (które i tak będzie musiał publicznie udostępnić ze względu na PSD2) o funkcjonalność lekko wykraczającą poza wymagania PSD2: dostarczanie na życzenie TPP (Third Party Provider) kryptograficznie podpisanej informacji o tożsamości danego klienta. Zakładamy, że postulat ten relatywnie łatwo może być przez bank spełniony, gdyż nie wymaga on istotnych zmian technologicznych po stronie banku.
+1. Wymagane jest żeby nasz partner bankowy zgodził się kryptograficznie podpisywać informacje udostępniane w ramach API, o którym mowa w PSD2 (w szczególności chodzi nam o informacje dotyczące tożsamości danego klienta).
+2. Integralną częścią naszej aplikacji musi być możliwość weryfikacji certyfikowanego podpisu elektronicznego banku, tak żeby firma F mogła w łatwy sposób uzyskać pewność, że otrzymane od banku B informacje na temat klienta K rzeczywiście zostały przez ten bank wygenerowane i nie zostały zmodyfikowane po ich podpisaniu. Jest to funkcjonalność podobna do tej, która jest oferowana przez powszechnie dostępne serwisy internetowe, np. [MadKom](https://madkom.pl/weryfikacja-podpisu-elektronicznego/).
 3. Ponieważ my, jako twórcy i operatorzy aplikacji mobilnej będącej w posiadaniu klienta K, pełnimy rolę TPP (Third Party Provider), musimy być podmiotem zarejestrowanym w KNF zgodnie z wymagami PSD2. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.
 
-#### 4.3 Proces podstawowy
+#### 2.4 Proces
 
 Załóżmy, że firma F potrzebuje dokonać weryfikacji KYC klienta K i ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenia banku B w zakresie tożsamości klienta K uznaje za prawdziwe.
 
 Wtedy proces KYC, inicjowany przez firmę F, może wyglądać następująco:
 
-1. Na prośbę firmy F nasza aplikacja mobilna wysyła do banku B zapytanie o podpisane elektronicznie przez bank B informacje dotyczące tożsamości klienta K (tj. wszystko co jest potrzebne do weryfikacji KYC: imię, nazwisko, PESEL, numer dowodu osobistego itp).
-2. Następuje autoryzacja tego zapytania przez klienta K, zgodnie z wymogami PSD2 dla AIS.
-3. Odpowiedź uzyskana od banku jest przesyłana do firmy F, która uzyskuje w ten sposób wiarygodne (bo kryptograficznie potwierdzone przez bank B) informacje na temat tożsamości klienta K.
-4. Za pomocą naszej aplikacji firma F weryfikuje autentyczność i integralność otrzymanej informacji.
+1. Klient K chcący skorzystac z usługi firmy F, potwierdza, że ma konto w banku, który jest wspierany przez system Sygnet i wybiera ten system jako mechanizm weryfikacji tożsamości w procesie KYC.
+2. Klient K jest przekierowywany na stronę webową systemu Sygnet. Przekierowanie zawiera wygnerowany przez firmę F unikalny identyfikator żądania weryfikacji.
+3. Poprzez system Sygnet klient K loguje się do swojego banku B, a następnie autoryzuje wygenerowane przez system Sygnet zapytanie do bankowego API. Zapytanie to dotyczy danych osobowych klienta K, które są wymagane w procesie weryfikacji KYC i także zawiera unikalny idetyfikator otrzymany we wcześniejszym kroku od firmy F.
+4. W odpowiedzi na wyżej opisane zapytanie, bank B zwraca podpisany elektornicznie pakiet zawierający wymagane dane osobowe klienta oraz identyfikator żądania.
+5. Po weryfikacji podpis banku B firma F uznaje uzyskane od banku dane osobowe klienta K za prawdziwe i aktualne, i tym samym spełniające kryteria KYC.
 
-*Uwaga*: Ze względów bezpieczeństwa do podpisanego przez bank pakietu informacji dołączamy losowy ciąg znaków (tzw. *nonce*), który wcześniej (przed uruchomieniem tego całego procesu weryfikacji) dostarcza nam firma F. Tym sposobem firma F ma pewność, że otrzymana informacja została wygenerowana przez bank B specjalnie dla potrzeb tego konkretnego przypadku (a więc jest aktualna).
+## 3. Uogolnienie systemu
 
-#### 4.4 Proces rozszerzony
+Możemy łatwo pokazać, że system Sygnet może nie tylko służyć do skalowania procecu KYC, ale także funkcjonować jako mechanzm podpisywania  przez bank w imieniu swojego klienta (i na jego żądanie) dowolnego dokumentu.
 
-Ponieważ bank B używa oferowanego przez nas wyżej opisanego kryptograficznego systemu autoryzacji transakcji, do otrzymywanego przez firmę F od banku B pakietu informacji z danymi KYC dla klienta K możemy też dołączyć informację o kluczu publicznym Y, z którym w banku B powiązana jest tożsamość klienta K.
+Ogólny schemat systemu Sygnet jest następujący: klient K przekazuje do banku B dowolny ciąg znaków, a bank B zwraca podpisany elektornicznie pakiet zwierający dwa elementy:
 
-Wtedy firma F:
+* powyższy ciąg znaków,
+* dane osobowe klienta K, które pozwalają na jego jednoznaczną idetyfikację (np. imię, nazwisko, nr dowowdu osobistego albo PESEL)
 
-* po standardowym zweryfikowaniu posiadania przez klienta K klucza prywatnego X uzyskuje dodatkową pewność co do tożsamości klienta K,
-* a ponadto może, podobnie jak bank B, powiązać w swoim systemie tożsamość klienta K z tym kluczem publicznym i w przyszłości autoryzować klienta K poprzez nasz system, przyjmując założenie że posiadanie klucza prywatnego X jest tożsame z byciem klientem K.
+Zauważmy że powyżsy ciąg znaków może być losowo wygenerówanym przez zewnętrzny podmiot identyfikatorem żądania, tak jak to ma miejsce w przypadku KYC. Ale może także być hashem dowlnego dokumentu.
 
-#### 4.5 Korzyści
+Jeśli jest to hash dokumentu, np. oświadczenia woli albo umowy cywilno-prawnej, to uzyskujemy de facto ten sam efekt, ktory mielibyśmy gdyby klient używał certyfikowanego podpisu elektronicznego. Tyle że w naszym podejściu nie wymagamy aby klient posiadał klucz prywatny (co jest istotą podpisu elektornicznego) bo w naszym schemacie to bank podpisuje się w imieniu i na żadanie klienta.
 
-Firma F unika konieczności przeprowadzenia kosztownej i czasochłonnej procedury KYC, bo korzysta z wyników procedury KYC przeprowadzonej wcześniej przez bank B.
+Oczywistym niebezpieczeństwem jest to, że bank może uzurpować sobie tożsamość klienta (tj. podpisać się pod czymkolwiek za niego bez jego wiedzy), ale taki jest nieusuwalny trade-off tego rozwiązania.
 
-#### 4.6 Legislacja
+Gdybśmy chcieli usunąć ten trade-off, system Sygnet w wersji "profesjonalej" może wygenerować dla klienta K uniklany klucz prywatny i odpoiwadajćy mu klicz publiczny, a następnie w ramach dodatkowej usługi poprosić bank o wydanie elektornicznie podpisanego certyfikatu który łączyłby tosamośc klienta K z jego klluczem publicznym. Posiadając taki certyfikat, klient K mógłby posługiwac się nim w podobny sposób jak działa certfikowany podpis elektoniczny - oczywiście przy założeniu że uznajmy bank B za wiarygodne zródło certyfikikacji tożsamości klienta K.
 
-Wymagania legislacyjne są następujące:
-
-1. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
-2. Ustawa musi zapewnić, że podpisane kryptograficznie oświadczenie banku odnośnie tożsamości jego klienta jest wiarygodną formą weryfikacji KYC. Możemy wstępnie przyjąć, że będzie to możliwe, skoro już teraz wyżej opisany przelew testowy jest uznawany za wiarygodną formę weryfikacji KYC, a nasza metoda na pewno nie jest mniej wiarygodna.
-
-## 5. Czym nasze rozwiązanie w zakresie KYC różni się od profilu zaufanego?
+## 4. Czym nasze rozwiązanie różni się od profilu zaufanego?
 
 Wedle [dokumentacji](https://www.gov.pl/cyfryzacja/profil-zaufany-ego-) Ministerstwa Cyfryzacji profil zaufany to bezpłatna metoda potwierdzania tożsamości obywatela w systemach elektronicznej administracji.
 
@@ -199,195 +115,70 @@ Jest jednak istotna różnica: zastosowanie profilu zaufanego jest ograniczone d
 
 Niemniej porównanie naszego rozwiązania do profilu zaufanego wydaje się jak najbardziej uzasadnione. Można nawet powiedzieć, że nasz system oferuje biznesom rozwiązanie w zakresie KYC analogiczne do tego, jakie profil zaufany oferuje urzędom państwowym w zakresie mechanizmu logowania, tj. weryfikacji tożsamości obywatela w warunkach online.
 
-## 6. Rozszerzenie 1: Kryptograficzna ochrona tożsamości i reputacji
-
-#### 6.1 Kontekst
-
-Coraz bardziej powszechna staje się delegacja autoryzacji użytkownika między różnymi serwisami internetowymi, tj. usługa typu *zaloguj się przez Facebook*. Usługa ta w swojej obecnej formie jest niczym innym niż wykorzystaniem reputacji (i/lub unikalnej tożsamości), którą dany użytkownik ma na jakimś znanym serwisie (typu Facebook, Twitter, Gmail, GitHub) do utworzenia unikalnej tożsamości (i w konsekwencji możliwości budowy reputacji wokół tej tożsamości) na jakimś innym, mniej popularnym serwisie S.
-
-Przyczyna coraz większej popularności tego rodzaju mechanizmu jest oczywista: większa wygoda dla użytkownika sprawia, że łatwiejsze dla serwisu S staje się pozyskanie nowego klienta.
-
-Warto podkreślić, że w tym przypadku potwierdzenie rzeczywistej (tj. zgodnej z realem) tożsamości użytkownika nie jest konieczne (tj. proces KYC może nie być wymagany). Liczy się tylko to, żeby serwis S mógł w swoim systemie przypisać nowego użytkownika do jakiegoś unikalnego identyfikatora dostarczonego przez serwis typu Facebook i żeby w przyszłości system logowania Facebooka autoryzował dostęp tego użytkownika do serwisu S.
-
-#### 6.2 Problem
-
-W obecnej formie działania mechanizm delegacji autoryzacji sprawia, że użytkownik w pełni powierza serwisowi typu Facebook swoją tożsamość na innych serwisach. Innymi słowy, tożsamość danego użytkownika na serwisie S nie należy do niego samego lecz do zewnętrznego podmiotu. Firma typu Facebook ma zatem pełną kontrolę na tą tożsamością i może zrobić dowolną rzecz uzurpując sobie tę tożsamość (w tym także kompletnie zniszczyć reputację danej osoby).
-
-#### 6.3 Koncepcja
-
-Wykorzystując fakt posiadania przez naszych użytkowników klucza prywatnego, łatwo nam będzie zaoferować im dobry substytut dla funkcjonalności typu *zaloguj się przez Facebook*. Mechanizm użycia kryptografii asymetrycznej do ochrony tożsamości i reputacji jest dobrze opisany w dokumentacji projektu [Jolocom](https://jolocom.com/).
-
-#### 6.4 Korzyści
-
-Przy użyciu klucza prywatnego do definiowania unikalnej tożsamości powyższy problem całkowicie znika. Właścicielem tożsamości jest zawsze właściciel klucza prywatnego i tylko on ma kontrolę nad reputacją związaną z tą tożsamością.
-
-Co więcej, możliwe się staje dodatkowe zwiększenie bezpieczeństwa takiej cyfrowej tożsamości. Dostęp do serwisu S (i tym samym do reputacji tam zbudowanej) można uzależnić od spełnienia dwóch warunków jednocześnie:
-
-* udowodnienie posiadania klucza prywatnego X,
-* plus dodatkowo udowodnienie bycia klientem banku B z przypisanym tam kluczem publicznym Y, który odpowiada kluczowi prywatnemu X - można łatwo to uzyskać poprzez kryptograficzne poświadczenie uzyskane od banku B, podobne to tego, jakie proponujemy w zakresie KYC.
-
-Powyższe podwójne zabezpieczenie chroni użytkownika w przypadku, gdy klucz prywatny zostanie mu skradziony - oczywiście przy założeniu że użytkownik zgłosi tę kradzież do swojego banku. Warto też zauważyć, że w tym układzie bank B pełni jedynie rolę strażnika tożsamości użytkownika, ale nigdy nie staje się jej właścicielem.
-
-## 7. Rozszerzenie 2: Kryptograficznie poświadczony stan faktyczny
-
-#### 7.1 Problem
-
-Problemy są dwojakiego rodzaju:
-
-1. Uzyskanie wiarygodnego zaświadczenia potwierdzającego stan faktyczny bywa trudne i czasochłonne, podobnie jak weryfikacja autentyczności takiego zaświadczenia.
-2. W praktyce użytkownicy nie mają żadnej kontroli nad komercyjnym wykorzystaniem informacji na swój temat, w tym także swoich danych osobowych.
-
-#### 7.2 Koncepcja
-
-W aplikacji mobilnej klienta K posługującego się kluczem publicznym Y dokonujemy wpisów stwierdzających stan faktyczny, który wynika z dokumentów istniejących w formie tradycyjnej, np:
-
-- *Posiadacz klucza publicznego Y jest pełnoletni.*
-- *Posiadacz klucza publicznego Y ma wykupione ubezpieczenie OC w firmie F.*
-- *Posiadacz klucza publicznego Y mieszka pod adresem A.*
-- *Posiadacz klucza publicznego Y ukończył uczelnię U.*
-- *Posiadacz klucza publicznego Y jest wspólnikiem w spółce S.*
-
-Każdy taki wpis ma przypisaną datę kiedy został dokonany i jest podpisany certyfikowanym podpisem elektronicznym instytucji zaufania publicznego. W ten sposób instytucja ta gwarantuje prawdziwość informacji zawartej w tym wpisie.
-
-#### 7.3 Proces
-
-Proces udostępniania powyższych informacji firmie F przez klienta K może wyglądać następująco:
-
-1. Za pomocą aplikacji mobilnej firma F uzyskuje zgodę klienta K na udostępnienie informacji na jego temat.
-2. Aplikacja mobilna klienta K wysyła firmie F:
-   * wymagane przez nią informacje podpisane kryptograficznie przez zaufaną instytucję,
-   * dowód klienta K na posiadanie dostępu do klucza prywatnego X,
-   * uzyskany od banku B dowód na związek pomiędzy kluczem publicznym Y a tożsamością klienta K.
-
-#### 7.4 Korzyści
-
-Uzyskujemy dwojakiego rodzaju korzyści:
-
-1. Następuje migracja informacji zawartych w tradycyjnych dokumentach papierowych do formy cyfrowej, co oczywiście oznacza redukcję kosztów i możliwości fałszowania.
-2. Następuje przejęcie pełnej kontroli nad informacją przez podmiot, do którego ona należy. W tym nowym paradygmacie każdorazowo gdy informacja jest przekazywana osobie trzeciej, musi się na to zgodzić jej właściciel, tj. posiadacz klucza prywatnego. Możliwe staje się też przekazywanie minimalnej informacji, jaka jest w danej sytuacji potrzebna, np. żeby udowodnić swoją pełnoletność nie trzeba przekazywać pełnej daty urodzenia, lecz tylko fakt bycia starszym niż dany próg wiekowy.
-3. Pełna kontrola posiadacza klucza prywatnego nad informacją otwiera także możliwość świadomego sprzedawania własnych danych demograficznych (których prawdziwość jest poświadczona kryptograficznie) podmiotom zainteresowanym tego rodzaju danymi.
-
-#### 7.5 Legislacja
-
-Ustawa musi dać wsparcie dla wiarygodności tego typu dokumentów cyfrowych.
-
-## 8. Rozszerzenie 3: Kryptograficzne podpisywanie umowy cywilnoprawnej
-
-#### 8.1 Problem
-
-Zawieranie umów cywilnoprawnych przez internet jest wysoce problematyczne. Firmy, które oferują rozwiązania w tym zakresie bez użycia kryptografii, np. [DocuSign](https://www.docusign.com), wbrew temu co jest głoszone w [ich materiałach marketingowych](https://www.docusign.com/videos/are-electronic-signatures-legally-binding), nie są w stanie dostarczyć metody, która byłaby prawnie wiążąca. Więcej szczegółów na ten temat można znaleźć w [tej publikacji](https://www.cryptomathic.com/news-events/blog/us-court-rejects-docusign-e-signatures-as-method-to-provide-digital-authorization).
-
-Solidną alternatywą wobec DocuSign mogłoby być użycie certyfikowanego podpisu elektronicznego, lecz ze względu na koszty i wymagania dotyczące dodatkowego hardware'u, nie jest to metoda mająca szansę na masową adopcję.
-
-#### 8.2 Koncepcja
-
-Podobnie jak w przypadku skalowalnego KYC, kryptograficzne potwierdzenie uzyskane od banku B pozwala nam powiązać klucz prywatny X klienta K z jego tożsamością. Otwiera to możliwość wykorzystania klucza prywatnego X do podpisywania prawnie wiążących umów cywilnoprawnych, np. umowa NDA, umowa zlecenia, umowa o dzieło itp.
-
-#### 8.3 Korzyści
-
-Umowy podpisane uwiarygodnionym przez bank kluczem prywatnym stają się prawnie wiążące. Likwidujemy w ten sposób główną wadę rozwiązania oferowanego przez DocuSign.
-
-#### 8.4 Legislacja
-
-Zakładamy, że ustawa już obecnie uznaje kryptograficznie podpisane umowy za prawnie wiążące.
-
-## 9. Rozszerzenie 4: Internetowa kancelaria notarialna
-
-#### 9.1 Problem
-
-Niektóre czynności prawne, zarówno jednostronne (np. udzielenie pełnomocnictwa) jak i wielostronne (np. umowa spółki) wymagają udziału notariusza. Korzystanie z usługi kancelarii notarialnej wciąż pociąga za sobą konieczność fizycznego stawienia się klienta w takiej kancelarii, mimo że oferuje ona usługę o charakterze czysto formalnym (tj. niematerialnym).
-
-#### 9.2 Koncepcja
-
-W większości przypadków jedynym istotnym powodem konieczności fizycznego pojawienia się u notariusza jest umożliwienie mu weryfikacji naszej tożsamości. Używając metody analogicznej do skalowalnego KYC notariusz jest w stanie dokonać skutecznej weryfikacji tożsamości online.
-
-Gdybyśmy przyjęli, że taka weryfikacja tożsamości jest wystarczająco wiarygodna, rola notariusza mogłaby wtedy wyglądać następująco: weryfikuje on tożsamość swoich klientów online, a następnie poświadcza on swoim certyfikowanym podpisem elektronicznym autentyczność i zgodność z prawem ich oświadczeń woli.
-
-#### 9.3 Korzyści
-
-Otwieramy w ten sposób drogę dla internetowych kancelarii notarialnych, oferujących usługę notarialną bez konieczności organizacji fizycznego spotkania.
-
-#### 9.4 Legislacja
-
-Ustawa musi dać wsparcie dla wiarygodności tego typu nowej formy usług notarialnych.
-
-## 10. Monetyzacja systemu
-
-Warto zauważyć, że:
-
-1. Istotą naszej aplikacji mobilnej jest ochrona klucza prywatnego, co oznacza, że pełni ona rolę analogiczną do portfela kryptowalutowego. Jest jednak istotna różnica: nasza aplikacja nie zajmuje się obsługą związanych z tym kluczem kryptowalut (tj. otrzymywanie i wysyłanie płatności), lecz obsługą związanych z tym kluczem danych osobowych i informacji. Klucz prywatny chroni zatem w naszym przypadku informację i tożsamość, a nie instrument finansowy.
-2. Mimo że nasz generator kluczy kryptograficznych będzie od samego początku kompatybilny z blockchainem EOSa, żadna z wyżej opisanych propozycji nie wymaga interakcji z blockchainem. W przyszłości, gdy wymyślimy nowe funkcjonaliści, to się może zmienić, ale na razie warto postrzegać to jako zaletę: w okresie początkowym nie jesteśmy uzależnieni od konkretnej platformy technologicznej.
-3. Przy sojuszu z dużym partnerem bankowym nasza aplikacja mobilna ma realne szanse na dość masową adopcję - chociażby ze względu na jej rolę w zakresie autoryzacji PSD2.
-
-Najprostszą metodą monetyzacji naszego systemu wydaje się komercjalizacja bardziej zaawansowanych funkcjonalności naszej aplikacji mobilnej (np. delegacja uprawnień związanych z danym kluczem prywatnym, podejmowanie decyzji poprzez głosowanie, raportowanie, backup danych itp.), albo pójście w kierunku funkcjonalości oferowanych przez system [Factom](https://www.factom.com/), tj. publikowanie hashy dokumentów na blockchainie EOSa celem udowodnienia ich istnienia w danym czasie i/lub zawierania konkretnej treści.
-
-Można też spekulować, że w przyszłości zaczną powstawać podmioty biznesowe, które będą specjalizować się w przechowywaniu, ochronie i selektywnym udostępnianiu osobom trzecim informacji dotyczących danego klienta - podobnie jak teraz banki przechowują jego prawa majątkowe. Nasza aplikacja, traktowana jako sejf dla klucza prywatnego, wydaje się dobrym zalążkiem dla interfejsu użytkownika w takim nowym paradygmacie.
-
-Alternatywną opcją jest rozbudowa naszej aplikacji mobilnej w kierunku obsługi finansowej tokenów EOSa i interakcji ze zdecentralizowanymi aplikacjami budowanymi przez inne biznesy na tej platformie. Korzystając z naszej kompatybilności z blockchainem EOSa, wystarczy zarejestrować klucze prywatne naszych użytkowników na tym blockchainie żeby otworzyć im dostęp do bogatego ekosystemu przeróżnych aplikacji, jakie (miejmy nadzieję) w przyszłości tam powstaną. Wówczas dobrą formą finansowania naszego systemu może być dochód z puli inflacyjnej EOSa - oczywiście przy założeniu, że nasz system będzie postrzegany jako *pro publico bono*.
-
-## 11. Szerszy kontekst: Digital Identity
-
-Propozycje opisane w niniejszym dokumencie to podzbiór większego zagadnienia znanego jako [Cyfrowa Tożsamość](http://di.com.pl/cyfrowa-tozsamosc-56607) (Digital Identity) albo, w przypadku użycia systemów rozproszonych, Zdecentralizowana Weryfikacja Tożsamości (Decentralized Identity Verification, w skrócie DIV).
-
-W zakresie DIV pierwsze próby podjęcia tego tematu sięgają 2013 roku, kiedy to Daniel Larimer (*nota bene* twórca EOSa) wystąpił z pomysłem systemu zdecentralizowanej tożsamości o nazwie [Keyhotee](https://www.youtube.com/watch?v=3pZaTdEtK-8). Ten system nigdy nie powstał, ale jego idea wydaje się całkiem słuszna.
-
-Obecnie istnieje [spora liczba projektów blockchainowych](https://github.com/peacekeeper/blockchain-identity), które podejmują rożne aspekty cyfrowej tożsamości i jej weryfikacji. Najważniejsze naszym zdaniem są te dwa:
-
-- [Civic](https://www.civic.com/) ([whitepaper)](https://tokensale.civic.com/CivicTokenSaleWhitePaper.pdf)
-- [Decentralized Identity](https://decentralized.id/) ([whitepaper biznesowy](https://decentralized.id/docs/DID-whitepaper.pdf), [whitepaper techniczny](https://decentralized.id/docs/DID-tech.pdf))
-
-Dostępna jest dość wiarygodna [recenzja](https://www.scottbrady91.com/Blockchain-Identity/Technical-Review-of-Civics-Secure-Identity-Platform) systemu Civic. Jest ona całkiem pozytywna - główny zarzut sprowadza się do krytyki odstąpienia od używania standardów na rzecz swoich własnych wynalazków:
-
-> Civic really should have used OAuth and OpenID Connect, instead of rolling their own authentication protocol.
-
-Tak więc pomysł jest oceniany jako bardzo dobry, ale wykonanie jako dość niefortunne. Dodatkowym minusem jest fakt, że Civic bazuje na platformie [RootStock](https://www.rsk.co/), co oznacza, że będzie się zmagał ze wszystkimi problemami, jakie ma w sobie Bitcoin.
-
-W przypadku projektu Decentralized Identity, też jest ciekawa sytuacja, bo wygląda na to, że jego twórcy doszli do ściany w zakresie możliwości Ethereum:
-
-> We found Ethereum smart contracts unfit for computations that go beyond than the basics. While we understand that the technology is just growing up, we found that not being able to do computations (like hashing) on the Blockchain is a major drawback. The global computational power isn’t available for Dapps yet.
-
-W kontekście możliwości EOSa, ta deklaracja też jest intrygująca:
-
-> At the time of writing, there exists no blockchain that is truly public and stateless. All current blockchain technologies intend to store data. We just want to store the receipt of an ID transfer; not the data. In the matter of transferring an ID token/nugget, we only require a decentralised transfer of data. The data structures used by current blockchain technologies is restrictive and do not allow for expansion or abstraction. We call for a new, stateless, public Blockchain.
-
-## 12. Pozycja konkurencyjna
-
-Nasza pozycja konkurencyjna wygląda dość korzystnie ponieważ:
-
-- Działamy w cieniu firm dużo większych od nas (np. Civic, Decentralized Identity) - one już wykonały sporo roboty za nas i dodatkowo uwiarygadniają sensowność naszego przedsięwzięcia.
-- Mamy precyzyjną specyfikację (ich kod źródłowy) i relatywnie małe zadanie (bo w pierwszym etapie zajmujemy się tylko KYC), więc dokładnie wiadomo co trzeba robić i nie tracimy czasu i kapitału na eksperymentowanie.
-- Mamy technologię (platforma EOS), która jest wyraźnie lepsza od tej, którą wybrali inni, bo jest pozbawiona istotnych ograniczeń (np. opłaty transakcyjne, niewydolność i powolność procesowania transakcji), a dodatkowo zawiera sprzyjające nam funkcjonalności (np. procedura odzyskiwania skradzionego / zgubionego klucza prywatnego i jego biometrycza ochrona).
-- Tego rodzaju tematy jak cyfrowa tożsamość mają specyfikę lokalną, więc nasze położenie geograficzne daje nam przewagę w tym rejonie Europy. Możemy też podpatrzyć z kim Civic zawarł alianse biznesowe w USA i zrobić podobne układy lokalnie.
-
-
-## 13. Proponowana nazwa systemu
-
-Nazwa powinna nawiązywać do czegoś, co jest unikalne dla danego użytkownika i służy do potwierdzania jego tożsamości i autoryzacji różnego rodzaju działań. Najlepiej coś kojarzącego się z podpisem.
-
-Dodatkowym warunkiem jest dobre funkcjonowanie nazwy zarówno w języku polskim jak i angielskim.
-
-Proponujemy nazwę *Sygnet* i domenę *sygnet.eu*. Spełnia ona wszystkie powyższe postulaty, a dodatkowo jej końcówka *net* sugeruje coś związanego z internetem.
-
-> Signet - a small seal, especially one set in a ring, used instead of or with a signature to give authentication to an official document.
-
-## 14. Disclaimer
+## 5. Monetyzacja systemu
+
+1. Dostarczenie bankom możliwości monetyzowania informacji o tożsamości ich klientów, z wykorzystaniem mechanizmów autoryzacji, które muszą zostać dostarczone na potrzeby TPP (wymaganie PSD2). Inwestycją ze strony banków byłoby dostarczenie dodatkowego (nie wymaganego przez PSD2) API.
+2. Dostarczenie wszystkim podmiotom, które podlegają pod KYC mechanizmu szybkiej weryfikacji tożsamości klientów, który skróci czas od zainteresowania klienta ofertą do faktycznej sprzedaży towaru lub usługi, tym samym eliminując okazje do rozmyślenia się przed zakupem i potencjalnie zwiększając zyski.
+3. Konsument nie jest rozpraszany formalnymi wymogami i może się skoncentrować na tym co dla niego ważne - konsumpcji.
+4. Tokenika występuje w roli pośrednika między bankiem a firmą. Firma nie musi być TPP, ponieważ Tokenika taką rolę pełni. Firma nie musi się integrować ze wszystkimi bankami, ponieważ Tokenika to robi.
+
+W tym modelu, każda ze strony musi swoje zrobić:
+1. Bank - udostępnić dodatkowe (niewymagane przez PSD2) API, do którego dostęp będzie autoryzowany zgodnie z wymaganiami PSD2
+2. Tokenika - zintegrować się z bankami (nie jest dla mnie jasne, czy PSD2 standaryzuje API, które banki muszą udostępnić, czy nakłada jedynie wymagania funkcjonalne, techniczne aspekty pozostawiając do decyzji poszczególnych banków; zakładam, że to drugie i że roboty będzie tutaj dużo), spełnić wymagania TPP, ułatwić integrację firmom
+3. Firma - zintegrować się z systemem Tokeniki (dzięki Tokenice nie musi być TPP, ani integrować się z każdym bankiem osobno)
+
+W zamian za ten wysiłek:
+1. Bank - monetyzuje posiadaną informację
+2. firmy - zwiększają sprzedaż i potencjalnie oszczędzają na kosztownym procesie weryfikacji klienta
+3. Tokenika - pobiera prowizję
+
+Można sobie wyobrazić, że firma A po uzyskaniu certyfikatu przekazuje go firmie B wraz z unikalnym identyfikatorem żądania. Można sobie wyobrazić modyfikacje schematu, która uniemożliwia (czyni nieopłacalnym) przekazywanie certyfikatów:
+
+1. Oprócz unikalnego identyfikatora żądania, firma wysyła do Tokeniki swój klucz publiczny
+2. Taka para jest przekazywana do banku. Bank generuje certyfikat w sposób analogiczny, ale przed podpisaniem go własnym kluczem, szyfruje kluczem publicznym firmy.
+3. Firma po otrzymaniu certyfikatu jest wstanie go odkodować i zweryfikować prawdziwość podanych przez konsumenta danych.
+4. Przekazanie certyfikatu firmie B bez klucza prywatnego umożliwiającego rozkodowanie (do czego firma A raczej skłonna nie będzie) nie ma większego sensu.
+
+## 6. Disclaimer
 
 Niniejszy dokument jest tylko wstępnym zarysem pomysłu (można go potraktować jako tekst wizjonerski). W swojej obecnej formie nie wyczerpuje on wszystkich tematów, które będą wymagać analizy zanim zdecydujemy się na pójście z propozycją do potencjalnego partnera bankowego i ostatecznie uznamy, że opisane rozwiązanie jest warte wdrożenia.
 
-W aspekcie biznesowym brakuje nam analizy w zakresie:
+1. W aspekcie biznesowym brakuje nam analizy w zakresie:
 
-- Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
-- Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
-- Jak powszechne jest korzystanie z usług finansowych oferowanych przez firmy zagraniczne (z UE i spoza UE)?
-- Jak dużym problemem jest przeprowadzanie KYC dla klientów z innych niż siedziba firmy krajów?
-- W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
+   * Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
+   * Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
+   * Jak powszechne jest korzystanie z usług finansowych oferowanych przez firmy zagraniczne (z UE i spoza UE)?
+   * Jak dużym problemem jest przeprowadzanie KYC dla klientów z innych niż siedziba firmy krajów?
+   * W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
 
-W aspekcie prawnym brakuje nam analizy w zakresie:
+2. W aspekcie prawnym brakuje nam analizy w zakresie:
 
-- Jakie dokładnie są wymogi KYC finansowego w Polsce (i Europie)? Jakie są wymogi w przypadku stosowania outsourcingu KYC?
-- Jakie są wymogi w zakresie KYC dla klientów zagranicznych (z UE i spoza UE)?
+   * Jakie dokładnie są wymogi KYC finansowego w Polsce (i Europie)? Jakie są wymogi w przypadku stosowania outsourcingu KYC?
+   * Jakie są wymogi w zakresie KYC dla klientów zagranicznych (z UE i spoza UE)?
 
-W aspekcie technologicznym brakuje nam analizy w zakresie:
+3. W aspekcie technologicznym brakuje nam analizy w zakresie:
 
-- Jak trudna dla nas jest implementacja naszego rozwiązania?
-- Jak trudna dla banku jest adaptacja do proponowanego przez nas rozwiązania?
+   * Jak trudna dla nas jest implementacja naszego rozwiązania?
+   * Jak trudna dla banku jest adaptacja do proponowanego przez nas rozwiązania?
+
+4. Czy udostępnianie danych osobowych klienta jest zgodne z PSD2?
+
+   ​
+
+5. Ustawa musi zapewnić, że korzystanie z wyników weryfikacji KYC, wykonanej uprzednio przez inny podmiot, jest wiarygodną formą weryfikacji KYC. Możemy przyjąć, że obecne ustawodawstwo już temu sprzyja, bo legalne jest zlecenie przeprowadzenia KYC innej firmie (tj. outsource'owanie KYC).
+
+6. Ustawa musi zapewnić, że podpisane kryptograficznie oświadczenie banku odnośnie tożsamości jego klienta jest wiarygodną formą weryfikacji KYC. Możemy wstępnie przyjąć, że będzie to możliwe, skoro już teraz wyżej opisany przelew testowy jest uznawany za wiarygodną formę weryfikacji KYC, a nasza metoda na pewno nie jest mniej wiarygodna.
+
+   ​
+
+7. Czy banki będą skore do wdrożenia dodatkowego API? Wiadomo, że i tak muszą przygotować API spełniające wymagania PSD2, więc potencjalnie dodatkowy endpoint  nie powinien być kłopotliwy, niemniej jednak przed przystąpieniem do prac warto zbadać ich zainteresowanie oraz jakie są ich oczekiwane zyski, tj.  czy korzystanie z systemu będzie się opłacało drugiej stronie, zwłaszcza kiedy doliczymy zyski Tokeniki (może się okazać, że banki nie wchodzą w inwestycje, które nie zwracają się w ciągu określonego czasu).
+
+8. Ile banków musiałoby wejść do systemu, aby firmy widziały sens w integracji  z systemem. Może się okazać, że dopiero udział dwóch, trzech dużych banków  da nam możliwość weryfikacji tożsamości wystarczająco dużej liczby  potencjalnych klientów, żeby taka integracja przyniosła wymierne oszczędności pozwalające na wystarczająco szybkie odzyskanie poniesionych nakładów.
+
+9. Jakie są odpowiedzi na te pytania jeżeli chcemy przenieść ten mechanizm do innych krajów UE?
+
+10. Jakie będą prawne uwarunkowania? Wiadomo, że w tej chwili można delegować weryfikację tożsamości i że banki robią to za pomocą przelewów weryfikacyjnych, ale wiadomo też że KNF nakłada na ten drugi mechanizm pewne ograniczenia (nie można wykonać przelewu weryfikacyjnego z konta, które zostało założone za pomocą takiego przelewu). Można zakładać, że i tutaj pewne ograniczenia będą nałożone.
+
+11. Jakie techniczne wymagania nałożą banki na TPP? Na ile podobne będą mechanizmy autoryzacji dostępu do API w różnych bankach? Od tego zależy ile pracy trzeba będzie włożyć w opracowanie systemu, a tym samym jego opłacalność.
+
+12. Jakie są wymagania dotyczące prywatności. Banki mogą nie być skore do udostępniania danych klientów, ale mogą zgodzić się na podpisanie skrótu tych danych (tak jak to zasugerowano w opisie procesu).
