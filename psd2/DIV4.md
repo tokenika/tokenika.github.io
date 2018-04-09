@@ -169,18 +169,18 @@ Niniejszy dokument jest tylko wstępnym zarysem pomysłu (można go potraktować
 * Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
 * W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
 
-#### 6.3 Aspekty prawne - PSD2
+#### 6.2 Aspekty prawne - PSD2
 
 * Czy wedle PSD2 zapytania do bankowego API mogą dotyczyć danych osobowych klienta?
 * Jakie są wymagania dotyczące prywatności danych osobowych zgromadzonych w bankach? Banki mogą nie być skore do udostępniania danych klientów, ale mogą zgodzić się na podpisanie tych danych, jeśli będą one w formie zahashowanej.
 * Czy PSD2 standaryzuje API, które banki muszą udostępnić, czy nakłada jedynie wymagania funkcjonalne, a techniczne aspekty pozostawia do decyzji poszczególnych banków?
 
-#### 6.4 Aspekty prawne - KYC
+#### 6.3 Aspekty prawne - KYC
 
 * Jakie dokładnie są wymogi KYC finansowego w Polsce (i Europie)? Jakie są wymogi w przypadku stosowania outsourcingu KYC?
 * Czy uzyskanie kryptograficznie poświadczonych przez bank danych osobowych klienta jest dopuszczalną formą weryfikacji KYC?
 
-#### 6.5 Aspekty biznesowe
+#### 6.4 Aspekty biznesowe
 
 * Czy banki będą skore do wdrożenia dodatkowego API? Wiadomo, że i tak muszą przygotować API spełniające wymagania PSD2, więc potencjalnie dodatkowy *endpoint* nie powinien być kłopotliwy, niemniej jednak przed przystąpieniem do prac warto zbadać ich zainteresowanie, w tym także jakie są ich oczekiwania wobec przychodów z udziału w tym przedsięwzięciu.
 * Jakie techniczne wymagania nałożą banki na TPP? Na ile podobne będą mechanizmy autoryzacji dostępu do API w różnych bankach? Od tego zależy ile pracy trzeba będzie włożyć w opracowanie systemu Sygnet, i tym samym determinują jego opłacalność.
