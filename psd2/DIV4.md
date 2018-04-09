@@ -1,6 +1,6 @@
 # System *Sygnet* służący do skalowania procesu KYC poprzez bankowe poświadczenie tożsamości klienta
 
-Wersja 4.1 (09/04/2018)
+Wersja 4.2 (09/04/2018)
 
 **Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie, będącej w posiadaniu banku, informacji o tożsamości klienta. Skalowanie procesu KYC uzyskujemy poprzez wykorzystanie kryptograficznego poświadczenia tożsamości klienta uzyskane od jego banku. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów w branży FinTech (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w Internecie.**
 
@@ -56,15 +56,22 @@ Naturalną konsekwencją wydaje się zatem istnienie możliwości zrobienia uży
 
 #### 2.2 System Sygnet
 
-W dalszej części niniejszego dokumentu opisujemy propozycję systemu o nazwie *Sygnet*, który realizuje powyższe założenia. Nazwa *Sygnet* w zamierzeniu kojarzyć się ma (zarówno w języku polskim jak i angielskim) z własnoręcznym podpisem i ma nawiązywać do czegoś, co służy do potwierdzania tożsamości użytkownika i autoryzacji różnego rodzaju działań.
+W dalszej części niniejszego dokumentu opisujemy propozycję systemu o nazwie *Sygnet*, który realizuje koncepcję skalowania KYC przy wykorzystaniu konkluzji płynących z powyższych założeń.
+
+Nazwa *Sygnet* w zamierzeniu kojarzyć się ma (zarówno w języku polskim jak i angielskim) z własnoręcznym podpisem i ma nawiązywać do czegoś, co służy do potwierdzania tożsamości użytkownika i autoryzacji różnego rodzaju działań.
 
 > Signet - a small seal, especially one set in a ring, used instead of or with a signature to give authentication to an official document.
 
 #### 2.3 Koncepcja
 
-System Sygnet umożliwia klientowi K dostarczenie dowolnej firmie F podpisanego elektronicznie przez wiarygodny podmiot (w naszym przypadku bank B) certyfikatu poświadczającego jego (tj. klienta K) tożsamość.
+System Sygnet osiąga skalowanie procesu KYC poprzez wykorzystanie uzyskanego od banku kryptograficznego poświadczenia tożsamości klienta.
 
-**W systemie Sygnet skalowanie procesu KYC uzyskujemy poprzez wykorzystanie kryptograficznego poświadczenia tożsamości klienta uzyskane od jego banku.**
+Oczywiście zakładamy tutaj, że system autoryzacji banku działa poprawnie, co oznacza, że tylko osoba która *jest* klientem K, może uzyskać od banku poświadczenie dotyczące tożsamości klienta K.
+
+Patrząc z dwóch różnych perspektyw możemy powiedzieć, że:
+
+* Z punktu widzenia użytkownika aktywnego (tj. firmy której działalność podlega wymogom KYC) system Sygnet umożliwia wykorzystanie do celów KYC podpisanego elektronicznie przez bank certyfikatu poświadczającego tożsamość klienta.
+* Z punktu widzenia użytkownika pasywnego (tj. osoby która jest obiektem KYC) system Sygnet umożliwia dostarczenie dowolnej firmie podpisanego elektronicznie przez bank certyfikatu poświadczającego jego tożsamość.
 
 Oznacza to, że nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje (tj. dane osobowe klienta), które do tej pory leżały bezużytecznie (z perspektywy świata zewnętrznego) w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.
 
@@ -93,9 +100,11 @@ Wtedy proces KYC w systemie Sygnet może wyglądać następująco:
 
 #### 2.6 Proces rozszerzony 
 
-Nasuwa się pytanie, czy firma F po uzyskaniu kryptograficznie podpisanego pakietu informacji KYC od banku B nie przekaże go kolejnej firmie, podważając tym samym wartość dodaną naszego systemu. 
+Nasuwa się pytanie, czy firma F po uzyskaniu kryptograficznie podpisanego pakietu informacji KYC od banku B nie przekaże go kolejnej firmie, negując tym samym jej motywację do korzystania z naszego systemu.
 
-Możliwe jest zmodyfikowanie powyższego schematu działania w taki sposób, aby zapobiec tego rodzaju problemowi. Zmodyfikowany proces mógłby wyglądać następująco:
+Możliwe jest jednak zmodyfikowanie powyższego schematu działania w taki sposób, aby zapobiec tego rodzaju problemowi.
+
+Zmodyfikowany proces mógłby wyglądać następująco:
 
 1. Oprócz unikalnego identyfikatora ID, firma F wysyła do systemu Sygnet swój klucz publiczny.
 2. Zarówno identyfikator ID jak i klucz publiczny firmy F są przekazywane do banku B, który generuje pakiet KYC w sposób opisany powyżej, ale przed podpisaniem go własnym kluczem, szyfruje go kluczem publicznym firmy F.
@@ -171,14 +180,14 @@ Niniejszy dokument jest tylko wstępnym zarysem pomysłu (można go potraktować
 
 #### 6.2 Aspekty prawne - PSD2
 
-* Czy wedle PSD2 zapytania do bankowego API mogą dotyczyć danych osobowych klienta?
-* Jakie są wymagania dotyczące prywatności danych osobowych zgromadzonych w bankach? Banki mogą nie być skore do udostępniania danych klientów, ale mogą zgodzić się na podpisanie tych danych, jeśli będą one w formie zahashowanej.
+* Czy wedle PSD2 bank ma obowiązek udostępnić w swoim API informacje dotyczące danych osobowych klienta?
+* Jeśli odpowiedź na powyższe pytanie jest negatywna, jakie są restrykcje prawne nałożone na banki w zakresie udostępniania danych osobowych swoich klientów? Czy słuszne jest założenie, że TPP działając w imieniu klienta może uzyskać od banku dane osobowe, które dotyczą tego klienta? Jeśli przewidujemy z tym problem, to czy udostępnienie przez bank tych danych w formie zahashowanej coś ułatwia?
 * Czy PSD2 standaryzuje API, które banki muszą udostępnić, czy nakłada jedynie wymagania funkcjonalne, a techniczne aspekty pozostawia do decyzji poszczególnych banków?
 
 #### 6.3 Aspekty prawne - KYC
 
 * Jakie dokładnie są wymogi KYC finansowego w Polsce (i Europie)? Jakie są wymogi w przypadku stosowania outsourcingu KYC?
-* Czy uzyskanie kryptograficznie poświadczonych przez bank danych osobowych klienta jest dopuszczalną formą weryfikacji KYC?
+* Czy uzyskanie kryptograficznie poświadczonych przez bank danych osobowych klienta ma szansę być uznane za dopuszczalną formę weryfikacji KYC? (albo dopuszczalną formę outsource'owania KYC?)
 
 #### 6.4 Aspekty biznesowe
 
