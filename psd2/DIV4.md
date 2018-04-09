@@ -1,6 +1,6 @@
-# Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta
+# System *Sygnet* służący do skalowania procesu KYC poprzez bankowe poświadczenie tożsamości klienta
 
-Wersja 4.0 (06/04/2018)
+Wersja 4.1 (09/04/2018)
 
 **Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie, będącej w posiadaniu banku, informacji o tożsamości klienta. Skalowanie procesu KYC uzyskujemy poprzez wykorzystanie kryptograficznego poświadczenia tożsamości klienta uzyskane od jego banku. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów w branży FinTech (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w Internecie.**
 
@@ -88,7 +88,7 @@ Wtedy proces KYC w systemie Sygnet może wyglądać następująco:
 1. Klient K zainteresowany skorzystaniem z usług firmy F, potwierdza, że ma konto w banku, który jest wspierany przez system Sygnet i wybiera ten system jako mechanizm weryfikacji tożsamości w procesie KYC.
 2. Klient K jest przekierowany na stronę webową systemu Sygnet. Przekierowanie zawiera wygenerowany przez firmę F unikalny identyfikator ID, którego rolą jest uwiarygodnienie niniejszego procesu z punktu widzenia firmy F: uzyska ona w ten sposób pewność, że odpowiedź banku B zostanie wygenerowana specjalnie dla tej konkretnej sytuacji.
 3. W ramach systemu Sygnet klient K loguje się do swojego banku B, a następnie autoryzuje wygenerowane przez system Sygnet zapytanie do bankowego API. Zapytanie to dotyczy danych osobowych klienta K, które są wymagane w procesie weryfikacji KYC, a także zawiera wyżej opisany identyfikator ID.
-4. W odpowiedzi na wyżej opisane zapytanie, bank B zwraca podpisany elektronicznie pakiet zawierający wymagane dane osobowe klienta oraz wyżej opisany identyfikator ID.
+4. W odpowiedzi na wyżej opisane zapytanie, bank B zwraca podpisany elektronicznie pakiet zawierający i łączący w jedną całość wymagane dane osobowe klienta oraz wyżej opisany identyfikator ID.
 5. Po weryfikacji podpisu banku B i identyfikatora ID firma F uznaje uzyskane od banku dane osobowe klienta K za prawdziwe i aktualne, i tym samym spełniające kryteria KYC.
 
 #### 2.6 Proces rozszerzony 
@@ -144,7 +144,7 @@ Niemniej porównanie naszego rozwiązania do profilu zaufanego wydaje się jak n
 System Sygnet ma szansę być postrzeganym jako sytuacja typu *win-win* dla wszystkich interesowanych, ponieważ:
 
 1. Dostarczamy bankom możliwość monetyzowania informacji o tożsamości ich klientów, z wykorzystaniem mechanizmów autoryzacji, które muszą zostać dostarczone na potrzeby TPP (wymaganie PSD2). Dodatkową korzyścią dla banków jest możliwość dostarczenia nowego typu usługi dla klientów: oprócz oferowania usług stricte finansowych bank może stać się generatorem cyfrowej tożsamości dla swoich klientów.
-2. Dostarczamy wszystkim podmiotom, które podlegają wymogom KYC, mechanizm szybkiej weryfikacji tożsamości klientów. Jego użycie przede wszystkim radyklanie obniży koszty procesu KYC po stronie tych podmiotów, a także istotnie skróci czas, jaki upływa od momentu zainteresowania klienta ofertą do momentu faktycznej sprzedaży towaru lub usługi, tym samym eliminując okazję do rozmyślenia się przed zakupem.
+2. Dostarczamy wszystkim podmiotom, które podlegają wymogom KYC, mechanizm szybkiej weryfikacji tożsamości klientów. Jego użycie przede wszystkim radyklanie obniży koszty procesu KYC po stronie tych podmiotów, a także istotnie skróci czas, jaki upływa od momentu zainteresowania klienta ofertą do momentu faktycznej sprzedaży towaru lub usługi, eliminując tym samym okazję do rozmyślenia się przed zakupem.
 3. Konsument nie jest rozpraszany formalnymi wymogami i może skoncentrować się na tym, co dla niego ważne, czyli na konsumpcji.
 
 System Sygnet występuje więc w roli pośrednika pomiędzy:
@@ -157,5 +157,32 @@ Nasza rola pośrednika jest tu dość mocno uzasadniona, bo dzięki systemowi Sy
 - firma F nie musi uzyskać statusu TPP (Third Party Provider) w PSD2,
 - firma F nie musi integrować się z wieloma bankami.
 
-Zakładamy, że korzyści dla firmy F będą na tyle istotne, że uzasadniony stanie się  przepływ finansowy między firmą F i bankiem B, i tym samym powstanie okazja dla nas do pobierania prowizji od tego przepływu.
+Zakładamy, że korzyści dla firmy F będą na tyle istotne, że uzasadniony stanie się  przepływ finansowy między firmą F i bankiem B, i tym samym powstanie okazja dla nas do pobierania prowizji z tytułu tego przepływu.
 
+## 6. Disclaimer
+
+Niniejszy dokument jest tylko wstępnym zarysem pomysłu (można go potraktować jako tekst wizjonerski). W swojej obecnej formie nie wyczerpuje on wszystkich tematów, które będą wymagać analizy, zanim zdecydujemy się na pójście z propozycją do potencjalnego partnera bankowego i ostatecznie uznamy, że opisane rozwiązanie jest warte wdrożenia.
+
+#### 6.1 Aspekty rynkowe
+
+* Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
+* Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
+* W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
+
+#### 6.3 Aspekty prawne - PSD2
+
+* Czy wedle PSD2 zapytania do bankowego API mogą dotyczyć danych osobowych klienta?
+* Jakie są wymagania dotyczące prywatności danych osobowych zgromadzonych w bankach? Banki mogą nie być skore do udostępniania danych klientów, ale mogą zgodzić się na podpisanie tych danych, jeśli będą one w formie zahashowanej.
+* Czy PSD2 standaryzuje API, które banki muszą udostępnić, czy nakłada jedynie wymagania funkcjonalne, a techniczne aspekty pozostawia do decyzji poszczególnych banków?
+
+#### 6.4 Aspekty prawne - KYC
+
+* Jakie dokładnie są wymogi KYC finansowego w Polsce (i Europie)? Jakie są wymogi w przypadku stosowania outsourcingu KYC?
+* Czy uzyskanie kryptograficznie poświadczonych przez bank danych osobowych klienta jest dopuszczalną formą weryfikacji KYC?
+
+#### 6.5 Aspekty biznesowe
+
+* Czy banki będą skore do wdrożenia dodatkowego API? Wiadomo, że i tak muszą przygotować API spełniające wymagania PSD2, więc potencjalnie dodatkowy *endpoint* nie powinien być kłopotliwy, niemniej jednak przed przystąpieniem do prac warto zbadać ich zainteresowanie, w tym także jakie są ich oczekiwane przychody z udziału w tym przedsięwzięciu.
+* Jakie techniczne wymagania nałożą banki na TPP? Na ile podobne będą mechanizmy autoryzacji dostępu do API w różnych bankach? Od tego zależy ile pracy trzeba będzie włożyć w opracowanie systemu Sygnet, i tym samym determinują jego opłacalność.
+* Ile banków musiałoby wejść do systemu, aby firmy widziały sens w integracji  z systemem Sygnet. Może się okazać, że dopiero udział dwóch lub trzech dużych banków da nam możliwość weryfikacji tożsamości wystarczająco dużej liczby potencjalnych klientów, żeby taka integracja przyniosła wymierne oszczędności pozwalające na wystarczająco szybkie odzyskanie poniesionych nakładów.
+* Jakie są odpowiedzi na te pytania jeżeli chcemy przenieść ten mechanizm do innych krajów UE?
