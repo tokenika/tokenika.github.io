@@ -50,7 +50,7 @@ Do konstrukcji skalowalnego KYC wykorzystujemy następujący zestaw założeń:
 - (niemal) każdy dorosły człowiek ma konto w banku,
 - każdy bank zna tożsamość każdego swojego klienta,
 - w ramach wprowadzonego przez PSD2 API możliwe jest wydobywanie z banku informacji dotyczących tożsamości danego klienta,
-- każdy bank dysponuje [kwalifikowanym podpisem elektronicznym](https://pl.wikipedia.org/wiki/Podpis_kwalifikowany)  i może go użyć do kryptograficznego podpisywania informacji przesyłanych poprzez API.
+- każdy bank dysponuje [kwalifikowanym podpisem elektronicznym](https://pl.wikipedia.org/wiki/Podpis_kwalifikowany) i może go użyć do kryptograficznego podpisywania informacji przesyłanych poprzez API.
 
 Naturalną konsekwencją wydaje się zatem istnienie możliwości zrobienia użytku z informacji o tożsamości klientów bankowych (tj. informacji, które banki i tak posiadają) w celu radykalnego usprawnienia procesu KYC.
 
@@ -157,7 +157,7 @@ Nasza rola pośrednika jest tu dość mocno uzasadniona, bo dzięki systemowi Sy
 - firma F nie musi posiadać statusu TPP (Third Party Provider) w PSD2,
 - firma F nie musi integrować się z wieloma bankami.
 
-Zakładamy, że korzyści dla firmy F będą na tyle istotne, że uzasadniony stanie się  przepływ finansowy między firmą F i bankiem B, i tym samym powstanie okazja dla nas do pobierania prowizji z tytułu tego przepływu.
+Zakładamy, że korzyści dla firmy F będą na tyle istotne, że uzasadniony stanie się przepływ finansowy między firmą F i bankiem B, i tym samym powstanie okazja dla nas do pobierania prowizji z tytułu tego przepływu.
 
 ## 6. Disclaimer
 
@@ -184,5 +184,5 @@ Niniejszy dokument jest tylko wstępnym zarysem pomysłu (można go potraktować
 
 * Czy banki będą skore do wdrożenia dodatkowego API? Wiadomo, że i tak muszą przygotować API spełniające wymagania PSD2, więc potencjalnie dodatkowy *endpoint* nie powinien być kłopotliwy, niemniej jednak przed przystąpieniem do prac warto zbadać ich zainteresowanie, w tym także jakie są ich oczekiwania wobec przychodów z udziału w tym przedsięwzięciu.
 * Jakie techniczne wymagania nałożą banki na TPP? Na ile podobne będą mechanizmy autoryzacji dostępu do API w różnych bankach? Od tego zależy ile pracy trzeba będzie włożyć w opracowanie systemu Sygnet, i tym samym determinują jego opłacalność.
-* Ile banków musiałoby wejść do systemu, aby firmy widziały sens w integracji  z systemem Sygnet. Może się okazać, że dopiero udział dwóch lub trzech dużych banków da nam możliwość weryfikacji tożsamości wystarczająco dużej liczby potencjalnych klientów, żeby taka integracja przyniosła wymierne oszczędności pozwalające na wystarczająco szybkie odzyskanie poniesionych nakładów.
+* Ile banków musiałoby wejść do systemu Sygnet, aby firmy widziały sens w integracji z tym systemem. Może się okazać, że dopiero udział dwóch lub trzech dużych banków da nam możliwość weryfikacji tożsamości wystarczająco dużej liczby potencjalnych klientów, żeby taka integracja przyniosła wymierne oszczędności pozwalające na wystarczająco szybkie odzyskanie poniesionych nakładów.
 * Jakie są odpowiedzi na te pytania jeżeli chcemy przenieść ten mechanizm do innych krajów UE?
