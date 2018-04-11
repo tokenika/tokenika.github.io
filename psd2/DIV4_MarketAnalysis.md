@@ -94,7 +94,7 @@ Obecnie jednym z większych utrapień jest mała wydajność procesów KYC. Duż
 Platformy do wymiany danych związanych z KYC:
 
 * Thomson Reuters Org ID KYC Managed Service umożliwia bankom i ich klientom wymianę informacji związanych z KYC.
-* [KYC.com](kyc.com) umożliwia przedsiębiorstwom przesyłaniedokumentacji związanej z KYC i udzielanie zainteresowanym bankom zgody nadostęp do ich danych.
+* [KYC.com](http://kyc.com) umożliwia przedsiębiorstwom przesyłaniedokumentacji związanej z KYC i udzielanie zainteresowanym bankom zgody nadostęp do ich danych.
 * KYC Registry wspólna platforma umożliwiająca bankom zarządzanie i wymianę znormalizowanych danych KYC. Rejestr został uruchomiony w 2014 i jestobecnie wykorzystywany przez prawie 4 000 banków na całym świecie.
 
 Banki muszą przesłać informacje KYC tylko raz. SWIFT sprawdza informacje pod względem kompletności, dokładnościi prawidłowości, a banki mogą udostępnić te dane odpowiednim instytucjom.
