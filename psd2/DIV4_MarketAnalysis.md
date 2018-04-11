@@ -23,9 +23,9 @@ Niniejszą dyrektywę stosuje się do następujących podmiotówzobowiązanych:
 
 ------
 
-W Polsce reguluje to USTAWA z dnia 1 marca 2018 r. oprzeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu.
+W Polsce reguluje to ustawa z dnia 1 marca 2018 o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu.
 
-http://orka.sejm.gov.pl/opinie8.nsf/nazwa/2233_u/$file/2233_u.pdf
+[http://orka.sejm.gov.pl/opinie8.nsf/nazwa/2233_u/$file/2233_u.pdf](http://orka.sejm.gov.pl/opinie8.nsf/nazwa/2233_u/$file/2233_u.pdf)
 
 Instytucjami obowiązanymi są: 
 
