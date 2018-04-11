@@ -258,7 +258,7 @@ https://www2.deloitte.com/pl/pl/pages/doradztwo-prawne/articles/ochrona-danych-o
 
 #### 7.2 dLK Legal: Wsparcie w strategiach i regulacjach PSD2
 
-> Coraz wyraźniej krystalizuje się wizja, aby - co najmniej w usługach finansowych - dane klienta, które zostały zgromadzone u jego dostawcy, nie mogły być "aktywem" i przewagą konkurencyjną tego dostawcy, ale muszą być udostępnione innym dostawcom. W zakresie osób fizycznych obowiązek "dzielenia się" danymi o kliencie jest nawet szerszy niż w PSD2 na skutek uchwalonego w 2016 Rozporządzenia EU o ochronie danych osobowych wymagającego przekazania podmiotowi wskazanemu przez klienta zgromadzonych danych w rozpowszechnionym formacie pliku
+> Coraz wyraźniej krystalizuje się wizja, aby - co najmniej w usługach finansowych - dane klienta, które zostały zgromadzone u jego dostawcy, nie mogły być "aktywem" i przewagą konkurencyjną tego dostawcy, ale muszą być udostępnione innym dostawcom. W zakresie osób fizycznych obowiązek "dzielenia się" danymi o kliencie jest nawet szerszy niż w PSD2 na skutek uchwalonego w 2016 Rozporządzenia EU o ochronie danych osobowych wymagającego przekazania podmiotowi wskazanemu przez klienta zgromadzonych danych w rozpowszechnionym formacie pliku.
 
 http://www.dlklegal.com/psd2-9
 
