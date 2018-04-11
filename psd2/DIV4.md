@@ -64,7 +64,7 @@ Nazwa *Sygnet* w zamierzeniu kojarzyć się ma (zarówno w języku polskim jak i
 
 #### 2.3 Koncepcja
 
-System Sygnet osiąga skalowanie procesu KYC poprzez, uzyskane od banku, kryptograficzne poświadczenie tożsamości klienta. Poświadczenie to jest generowane przez bank klienta i udostępniane naszemu systemowi poprzez bankowe API na mocy legislacji PSD2.
+System Sygnet osiąga skalowanie procesu KYC poprzez, uzyskane od banku, kryptograficzne poświadczenie tożsamości klienta. Poświadczenie to jest generowane za zgodą klienta przez jego bank i udostępniane naszemu systemowi poprzez bankowe API na mocy legislacji PSD2.
 
 Oczywiście zakładamy tutaj, że system autoryzacji banku działa poprawnie, co oznacza, że tylko osoba która *jest* klientem K, może uzyskać od banku poświadczenie dotyczące tożsamości klienta K.
 
