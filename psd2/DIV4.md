@@ -245,3 +245,29 @@ Niniejszy dokument jest tylko wstępnym zarysem pomysłu i na tym etapie należy
 * Jakie techniczne wymagania nałożą banki na TPP? Na ile podobne będą mechanizmy autoryzacji dostępu do API w różnych bankach? Od tego zależy ile pracy trzeba będzie włożyć w opracowanie systemu Sygnet, i tym samym determinują jego opłacalność.
 * Ile banków musiałoby wejść do systemu Sygnet, aby firmy widziały sens w integracji z tym systemem. Może się okazać, że dopiero udział dwóch lub trzech dużych banków da nam możliwość weryfikacji tożsamości wystarczająco dużej liczby potencjalnych klientów, żeby taka integracja przyniosła wymierne oszczędności pozwalające na wystarczająco szybkie odzyskanie poniesionych nakładów.
 * Jakie są odpowiedzi na te pytania jeżeli chcemy przenieść ten mechanizm do innych krajów UE?
+
+## 7. Materiały źródłowe
+
+#### 7.1 Rodo a PSD2: Niejednozna­czne przepisy dotyczące przenoszenia danych
+
+> Innym istotnym aspektem zastosowania art. 20 Rozporządzenia jest jego relacja do nowego rodzaju instytucji płatniczych, opierających zasadniczą część swoich usług na przetwarzaniu danych klientów. Mowa tu o TPP (Third Party Providers) - czyli dostawcach usług płatniczych, którzy na mocy nowej Dyrektywy PSD2 oferować będą usługi płatnicze polegające na inicjowaniu płatności - PIS (Payment Initiation Service) oraz zapewnianiu dostępu do informacji o rachunku - AIS (Account Information Service). W szczególności usługa AIS swym charakterem zbliżona jest raczej do usług, których przedmiotem jest przetwarzanie danych osobowych aniżeli do typowych usług płatniczych, jak np. usługa wykonania transakcji płatniczej.
+
+> W tym kontekście - pojawia się pytanie: komu i jaki zakres danych o kliencie powinien być przekazywany zgodnie z żądaniem klienta (art. 20 Rozporządzenia) i w jaki sposób przekazywane powinny być dane stanowiące tajemnicę bankową.
+
+https://www2.deloitte.com/pl/pl/pages/doradztwo-prawne/articles/ochrona-danych-osobowych/ochrona-danych-osobowych-psd2.html
+
+#### 7.2 dLK Legal: Wsparcie w strategiach i regulacjach PSD2
+
+> Coraz wyraźniej krystalizuje się wizja, aby - co najmniej w usługach finansowych - dane klienta, które zostały zgromadzone u jego dostawcy, nie mogły być "aktywem" i przewagą konkurencyjną tego dostawcy, ale muszą być udostępnione innym dostawcom. W zakresie osób fizycznych obowiązek "dzielenia się" danymi o kliencie jest nawet szerszy niż w PSD2 na skutek uchwalonego w 2016 Rozporządzenia EU o ochronie danych osobowych wymagającego przekazania podmiotowi wskazanemu przez klienta zgromadzonych danych w rozpowszechnionym formacie pliku
+
+http://www.dlklegal.com/psd2-9
+
+#### 7.3 Analiza rynkowa
+
+> Average UK bank is currently wasting £5 million each yeardue to manual and inefficient Know Your Customer (KYC) processes, and thisannual waste is expected to rise to £10 million in three years.
+
+> Inefficient KYC processes cost the average bank £47 milliona year
+
+> Total costs for KYC processes range from £10 to £100 percheck
+
+https://tokenika.github.io/psd2/DIV4_MarketAnalysis.html
