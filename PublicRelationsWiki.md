@@ -64,7 +64,7 @@ Gospodarz spotkania Thomas Cox jest gościem który został wydelegowany przez B
 
 #### EOS Go
 
-http://eosgo.io
+https://eosgo.io (chwilowo nie działa)
 
 https://forums.eosgo.io
 
