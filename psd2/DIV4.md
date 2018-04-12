@@ -271,3 +271,9 @@ http://www.dlklegal.com/psd2-9
 > Total costs for KYC processes range from £10 to £100 percheck
 
 https://tokenika.github.io/psd2/DIV4_MarketAnalysis.html
+
+#### 7.4 PSD2: Is this the End of SMS-based Authentication?
+
+> We are still waiting for the final requirements on Strong Customer Authentication under PSD2. However if nothing changes compared to the current proposal, it is quite clear that [SMS-based authentication](https://www.vasco.com/products/two-factor-authenticators/software/sms/virtual-digipass.html) will have a hard time meeting the requirements, especially those related to approving payments.
+
+https://blog.vasco.com/application-security/psd2/
