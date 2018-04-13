@@ -1,34 +1,39 @@
-#### Główne kanały komunikacji block.one
+# Block.one
 
-https://medium.com/eosio
+#### Główne kanały komunikacji
 
-https://twitter.com/eos_io
+- https://medium.com/eosio
+- https://twitter.com/eos_io
 
-#### Ludzie do śledzenia
+#### Postacie
 
-Daniel Larimer, CTO: <https://medium.com/@bytemaster>
+* Brendan Blumer, CEO
+* Daniel Larimer, CTO, [@bytemaster](https://medium.com/@bytemaster)
+* Greg Lee, VP of Engineering, [@greg_80499](https://medium.com/@greg_80499)
+* Thomas Cox, VP of Product, [@thomas.cox_39839](https://medium.com/@thomas.cox_39839)
+* Ian Grigg, Partner
 
-Greg Lee, VP of Engineering: <https://medium.com/@greg_80499>
+#### Personel
 
-Thomas Cox, VP of Product: <https://medium.com/@thomas.cox_39839>
+- [Abby Christine](mailto:abby.christine@block.one) (prawa ręka Blumera, prywatnie jego siostra)
+- [Georgia Fairweather](mailto:georgia.fairweather@block.one) (asystentka Abby)
+- [Serg Metelin](mailto:serg.metelin@block.one) (Abby go opisała jako "one of our leads on the Dev Relations")
 
 #### Najnowsza prezentacja z HongKongu
 
 https://www.youtube.com/watch?v=yNudH5PxUNY
 
+# Telegram
+
 #### Grupy na Telegramie
 
-EOS
+* EOS
+* EOS Developers
+* EOSIO Gov
+* EOS - Dan Msg Only (to jest szczególnie użyteczne)
+* EOS PL
 
-EOS Developers
-
-EOSIO Gov
-
-EOS - Dan Msg Only (to jest szczególnie użyteczne)
-
-EOS PL
-
-#### Community Testnet
+# Community Testnet
 
 Bierzemy udział w produkcji bloków. Nasz wtiness ma nazwę "rogue".
 
@@ -54,7 +59,7 @@ Sytuacja jest taka, że aktywnie partycypujemy w tym testnecie jako producent bl
 
 **Ważne**: trzeba się dowiedzieć czy jest oficjalny testnet organizowany przez block.one.
 
-#### Governance
+# Governance
 
 Zaczęła się organizować społeczność wokół osób zainteresowanych produkcją bloków i kwestią governance. Tu jest ich konferencja z 23/02:
 
@@ -62,7 +67,7 @@ https://vimeo.com/257161887
 
 Gospodarz spotkania Thomas Cox jest gościem który został wydelegowany przez BlockOne żeby koordynować ten proces.
 
-#### EOS Go
+# EOS Go
 
 https://eosgo.io (chwilowo nie działa)
 
@@ -78,18 +83,17 @@ Określają się jako "EOS launch community".
 * Wypuścili info o witnessach: https://bp.eosgo.io
 * Będą biznesowym właścicielem EOS Portal
 
-Leader: blujays (gość w czapce, zlokaliozowany na Florydzie, Krzysztof ma nam przekazać do niego kontakt)
+Leader: Blujays (@yogz888) - gość w czapce z Florydy.
 
-#### EOS Portal
+# EOS Portal
 
 http://eosportal.io
 
 Kombajn agregujący informacje o witnessach. Liderem jest Eric (Szwed który siedzi na strychu, chce być wintessem), pomagają mu inni kandydaci na witnessa (w sumie grupa kilku osób).
 
-#### Personel BlockOne
+# Koreańczycy
 
-[Abby Christine](mailto:abby.christine@block.one) (prawa ręka Blumera, prywatnie jego siostra)
+Klika tygodni temu dobijali się do nas żeby dostać informacje.
 
-[Georgia Fairweather](mailto:georgia.fairweather@block.one) (asystentka Abby)
-
-[Serg Metelin](mailto:serg.metelin@block.one) (Abby go opisała jako "one of our leads on the Dev Relations")
+* Devin Lee z [Koreos](http://koreos.io/) (takie koreańskie EOS Go)
+* Byungchan (nie wiem kim on jest, ale być może to ktoś istotny)
