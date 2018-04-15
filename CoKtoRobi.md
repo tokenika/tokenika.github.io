@@ -47,14 +47,23 @@
 
 # Szymon (GTG)
 
-* infrastruktura witnessowa
-* udział w testnetach
+* Infrastruktura witnessowa
+* Udział w testnetach
 
 # Jacek
 
 * PR lokalny i konferencje
 
+# Piotr
+
+* Faktury i płatności
+* Relacje z Leniva (agencja która robi nam stronę webową)
+
+# Jurek
+
+* Know-how w zakresie sektora bankowego
+
 # Dominik & Tomek
 
-* Speedup Group
+* Relacje z VC (Speedup Group)
 * Relacje z giełdami (BitMarket & BitBay)

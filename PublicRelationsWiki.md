@@ -105,4 +105,5 @@ Klika tygodni temu dobijali się do nas żeby dostać informacje.
 * [Builder Commerce](http://buildercommerce.com) (Don Bowden)
 * [Centralny Ośrodek Informatyki / Ministerstwo Cyfryzacji](https://www.coi.gov.pl/) (Piotr Płecha)
 * [Speedup Group](http://speedupgroup.com/en/) (Marcin Fejfer, Bartłomiej Gola)
+* [PaymentTechnology](http://paymenttechnology.pl/) (Tomasz Grzybowski, Bartosz Weyna)
 * [Aply](https://aply.eu/) (Tomasz Fidecki, Paweł Sławacki)
