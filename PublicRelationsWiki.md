@@ -97,3 +97,12 @@ Klika tygodni temu dobijali się do nas żeby dostać informacje.
 
 * Devin Lee z [Koreos](http://koreos.io/) (takie koreańskie EOS Go)
 * Byungchan (nie wiem kim on jest, ale być może to ktoś istotny)
+
+# Relacje biznesowe
+
+* [Parsec Frontiers](https://parsecfrontiers.com/) (Henning Rokling)
+* [SendGold](http://www.sendgold.com/) (Mark Pey)
+* [Builder Commerce](http://buildercommerce.com) (Don Bowden)
+* [Centralny Ośrodek Informatyki / Ministerstwo Cyfryzacji](https://www.coi.gov.pl/) (Piotr Płecha)
+* [Speedup Group](http://speedupgroup.com/en/) (Marcin Fejfer, Bartłomiej Gola)
+* [Aply](https://aply.eu/) (Tomasz Fidecki, Paweł Sławacki)
