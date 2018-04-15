@@ -63,6 +63,10 @@
 
 * Know-how w zakresie sektora bankowego
 
+# Stefan (tata Jakuba)
+
+* Development systemu Logos
+
 # Dominik & Tomek
 
 * Relacje z VC (Speedup Group)
