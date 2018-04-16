@@ -7,28 +7,26 @@
 
 # Krzysztof
 
-* EOS Projects
+* [EOS Projects](https://github.com/tokenika/eosprojects.org)
 * EOS Block Explorer
 * Relacje z developerami w zakresie EOSowych narzędzi
 
 # Patryk
 
-- EOS Projects
+- [EOS Projects](https://github.com/tokenika/eosprojects.org)
 - EOS Block Explorer
 - EOS - know-how w zakresie smart-kontraktów
 - EOS - know-how w zakresie Private Cloud
 
 # Radek
 
-* Sygnet - development
+* Sygnet - koncepcja, architektura, development
 * EOS - know-how w zakresie smart-kontraktów
-* EOS Block Explorer
-* Research technologiczny (np. Hyperledger, NEM Catapult itp)
 
 # Jakub
 
-* Sygnet - prezentacja, dokumentacja, współpraca z prawnikami
-* Logos - management & testy & posty na Steemie
+* Sygnet - koncepcja, prezentacja, dokumentacja, współpraca z prawnikami
+* [Logos](https://github.com/tokenika/logos) - management & testy & posty na Steemie
 * Relacje z biznesami i partnerami (Parsec, SendGold, BuilderCommerce, COI)
 * Relacje z EOS Go
 * Relacje z Aply
@@ -65,7 +63,7 @@
 
 # Stefan (tata Jakuba)
 
-* Development systemu Logos
+* [Logos](https://github.com/tokenika/logos) - development i dokumentacja
 
 # Dominik & Tomek
 
