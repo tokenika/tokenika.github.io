@@ -107,3 +107,9 @@ Klika tygodni temu dobijali się do nas żeby dostać informacje.
 * [Speedup Group](http://speedupgroup.com/en/) (Marcin Fejfer, Bartłomiej Gola)
 * [PaymentTechnology](http://paymenttechnology.pl/) (Tomasz Grzybowski, Bartosz Weyna)
 * [Aply](https://aply.eu/) (Tomasz Fidecki, Paweł Sławacki)
+* [Etheos](https://etheos.io/) (Christian Lains)
+* [Arcturus Group](http://www.arcturus-group.com/en/) (Katarzyna Redemozer)
+
+# EOS Stack Exchange
+
+https://area51.stackexchange.com/proposals/116927/eosio
