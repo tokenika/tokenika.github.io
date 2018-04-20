@@ -43,7 +43,7 @@ Social Media accounts:
 
 # 4. SCALING PLAN
 
-> Estimated scaling plan for hardware after June 3, 2018 - posted to Steem blockchain. Rough outlines receive a check mark, open review gauges the effort.
+> X Estimated scaling plan for hardware after June 3, 2018 - posted to Steem blockchain. Rough outlines receive a check mark, open review gauges the effort.
 
 - Actually it's not the hardware specs that make us feel ready for EOS launch. It's the ability to scale rapidly. We are expecting the unexpected.
 - Aside from the above hardware that we are provisioning for EOS, we will have access to powerful infrastructure that our partners can make available to us within minutes. They have practically unlimited resources and are able to expand our infrastructure by orders of magnitude.
