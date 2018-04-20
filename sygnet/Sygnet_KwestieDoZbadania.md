@@ -2,18 +2,20 @@
 
 ## 1. Aspekty rynkowe
 
-1. Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
+1. Jakie podmioty potrzebują (albo dobrowolnie chcą) weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest i jak wielu klientów mają?
 2. Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
-3. W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
+3. Czy uzasadniony jest podział na twardy i miękki KYC? Kiedy stosujemy każdy z nich?
+4. W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
 
 ## 2. Aspekty prawne
 
 #### 2.1 PSD2
 
-1. Czy wedle PSD2 bank ma obowiązek udostępnić w swoim API informacje dotyczące danych osobowych klienta?
-2. Czy PSD2 standaryzuje API, które banki muszą udostępnić, czy nakłada jedynie wymagania funkcjonalne, a techniczne aspekty pozostawia do decyzji poszczególnych banków?
-3. Czy autoryzacja poprzez esemes spełnia wymogi mocnej autoryzacji wymaganej przez PSD2? Czy wątpliowści wyrażone w [tym artykule](https://blog.vasco.com/application-security/psd2/) są zasadne.
-4. Jeśli tak, to czy w zakresie mocnej autoryzacji wymaganej przez PSD2, wystarczające jest użycie następującej kombinacji: hasło wpisywane do interfejsu plus PIN otrzymany esemesem?
+1. Czy wedle PSD2 bank ma obowiązek udostępnić w swoim API informacje dotyczące danych osobowych klienta? Czy ma obowiązek podpisać (swoim kwalifikowanym podpisem elektronicznym) takie dane na życzenie klienta?
+2. Czy autoryzacja poprzez esemes spełnia wymogi mocnej autoryzacji wymaganej przez PSD2? Czy wątpliwości wyrażone w [tym artykule](https://blog.vasco.com/application-security/psd2/) są zasadne.
+3. Jeśli autoryzacja poprzez esemes jest OK z punktu widzenia PSD2, to czy w zakresie mocnej autoryzacji wymaganej przez PSD2, wystarczające jest użycie następującej kombinacji: hasło wpisywane do interfejsu plus PIN otrzymany esemesem? (czyli tak jak większość polskich banków ma to już teraz)
+4. Czy w zakresie mocnej autoryzacji PSD2 podejmuje problem delegowania uprawnień? (np. w kontekście biznesowym szef deleguje na pracownika)
+5. Czy PSD2 standaryzuje API, które banki muszą udostępnić, czy nakłada jedynie wymagania funkcjonalne, a techniczne aspekty pozostawia do decyzji poszczególnych banków?
 
 #### 2.2 AML/KYC
 
