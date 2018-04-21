@@ -1,6 +1,6 @@
-I want to talk about two things the governed blockchain which is what we're presenting as our vision for EOS you know in a complicated world. And also I'm going to talk later about being a block producer: what it takes to become a block producer? Just to see if we can spark some interest in that.
+# The governed blockchain: the blockchain for business is the blockchain that solves the black swan
 
-But for now the governed blockchain. So let's let's build a blockchain. What does it take to build a blockchain? We want the blockchain for everybody and we have to figure out what that means. So we have to go back to first principles and think about this: what does everybody do? Who is everybody and what is it the thing that they need? And can, of course, we provide it?
+Let's let's build a blockchain. What does it take to build a blockchain? We want the blockchain for everybody and we have to figure out what that means. So we have to go back to first principles and think about this: what does everybody do? Who is everybody and what is it the thing that they need? And can, of course, we provide it?
 
 Our assumption is that everybody are traders. And therefore a blockchain for trade is what we need. So what do we do if we're building for business, building for trade?
 
