@@ -18,6 +18,8 @@ Located in BE - a vibrant place
 
 Tokenika - chosen on purpose, not to be confused with others but also to act as real-life business
 
+Noisy - single handedly bootstrapped Steem Polish community
+
 # Connections
 
 Personally met Brendan Blumer & Ian Grigg

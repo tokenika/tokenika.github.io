@@ -40,7 +40,7 @@ How does the entrepreneur face the black swan? Face this thing where going into 
 
 I would put it to you that the question is: why would an entrepreneur invest in a business on the blockchain if there were black swans? And I would say that the big money in the world is sitting on the sidelines because of this problem. Because blockchain is too dangerous in the perception of the ordinary businessman, so therefore **our proposition is that the blockchain for business is the blockchain that solves the black swan**.
 
-So how do we solve for this black swam? Probably the answer is going to be something to do with trust. We know that the problem with trust is that we need many trades. Game theory and various theories tell us that we need lots and lots of rounds with no end in sight, it's got to keep going, it's got to be business that keeps going. We've got to have shared profit in every round and we've also got to have a mechanism for punishing people who've done the wrong thing. If something goes really wrong and we know that somebody's being aggressive there needs to be a way to control that process.
+So how do we solve for this black swan? Probably the answer is going to be something to do with trust. We know that the problem with trust is that we need many trades. Game theory and various theories tell us that we need lots and lots of rounds with no end in sight, it's got to keep going, it's got to be business that keeps going. We've got to have shared profit in every round and we've also got to have a mechanism for punishing people who've done the wrong thing. If something goes really wrong and we know that somebody's being aggressive there needs to be a way to control that process.
 
 So we're in it for a lot of trades, not just today's trade but every trade. We could also look at this from different theories. Negotiation theory says that we want win-win, not win-lose. Game theory says we want a net-positive game, not a zero-sum game.
 
@@ -69,7 +69,7 @@ In summary, the entrepreneur is looking for win-win, but the entrepreneur gets w
 
 So we need the freedom of the first option, but the protection of the other option. 
 
-**EOS is that third choice, the governed blockchain. In essence what we have is the rules of behavior, as provided for by the constitution, and we have free entry taken from the the unpermitted blockchain, free entry is still preserved**.
+**EOS is that third choice, the governed blockchain. In essence what we have is the rules of behavior, as provided for by the constitution, and we have free entry taken from the the unpermissioned blockchain, free entry is still preserved**.
 
 So we now have the best of both worlds.
 
@@ -81,3 +81,7 @@ The governed blockchain is produced of two layers:
 * On top of that we can use those rules to resolve the difficulties that we call the black swan, we can have arbitration to resolve problems, we can appoint block producers, we can make changes to the chain.
 
 And the point of all this is what we call smart business.
+
+---
+
+Source: [Ian Grigg](https://www.youtube.com/watch?v=yNudH5PxUNY&t=1h14m40s)
