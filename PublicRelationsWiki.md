@@ -27,11 +27,13 @@ https://www.youtube.com/watch?v=yNudH5PxUNY
 
 #### Grupy na Telegramie
 
-* EOS
+* [EOS](https://t.me/EOSproject)
+* [EOS - Dan Msg Only](https://t.me/daneos)
+* [EOSIO Gov](https://t.me/EOSGov)
+* [EOS.IO Community Testnet](https://t.me/CommunityTestnet)
+* [EOS PL](https://t.me/eospl)
+* Trinity (EOS BPs Group 3)
 * EOS Developers
-* EOSIO Gov
-* EOS - Dan Msg Only (to jest szczególnie użyteczne)
-* EOS PL
 
 # Community Testnet
 
@@ -57,8 +59,6 @@ Z oboma mamy bezpośredni kontakt na Telegramie
 
 Sytuacja jest taka, że aktywnie partycypujemy w tym testnecie jako producent bloków, ale GTG nie chce bezpośrednio uczestniczyć w komunikacji (bo obawia się politycznych). Więc procedura jest taka że Tokenika to monitoruje i przekazuje do GTG wszystkie istotne info.
 
-**Ważne**: trzeba się dowiedzieć czy jest oficjalny testnet organizowany przez block.one.
-
 # Governance
 
 Zaczęła się organizować społeczność wokół osób zainteresowanych produkcją bloków i kwestią governance. Tu jest ich konferencja z 23/02:
@@ -69,7 +69,9 @@ Gospodarz spotkania Thomas Cox jest gościem który został wydelegowany przez B
 
 # EOS Go
 
-https://eosgo.io (chwilowo nie działa)
+https://eosgo.io
+
+https://bp.eosgo.io
 
 https://forums.eosgo.io
 
@@ -83,7 +85,10 @@ Określają się jako "EOS launch community".
 * Wypuścili info o witnessach: https://bp.eosgo.io
 * Będą biznesowym właścicielem EOS Portal
 
-Leader: Blujays (@yogz888) - gość w czapce z Florydy.
+Leaderzy:
+
+* Blujays (@yogz888)
+* Kevin Wilcox (@kev_eosgo)
 
 # EOS Portal
 
