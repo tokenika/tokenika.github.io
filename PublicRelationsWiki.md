@@ -5,6 +5,7 @@
 - https://eos.io/resources
 - https://medium.com/eosio
 - https://twitter.com/eos_io
+- https://twitter.com/eos_news
 
 #### Postacie
 
@@ -25,8 +26,6 @@
 https://www.youtube.com/watch?v=yNudH5PxUNY
 
 # Telegram
-
-#### Grupy na Telegramie
 
 * [EOS](https://t.me/EOSproject)
 * [EOS - Dan Msg Only](https://t.me/daneos)
@@ -70,34 +69,38 @@ Gospodarz spotkania Thomas Cox jest gościem który został wydelegowany przez B
 
 # EOS Go
 
-https://eosgo.io
-
-https://bp.eosgo.io
-
-https://forums.eosgo.io
-
-[https://steemit.com/@eosgo](https://steemit.com/@eosgo)
-
-https://youtube.com/channel/UC0fwWI2RBBtEIYIP6fH68XQ
-
-Określają się jako "EOS launch community".
+Określają się jako "EOS launch community":
 
 * Robią użyteczne kompilacje tego co się dzieje na Telegramie.
 * Co poniedziałek przeprowadzają wywiady z kandydatami na wintessa i publikują to na Steemie.
 * Robią ranking witnessów, np: [tego typu](https://steemit.com/eos/@eosgo/block-producer-candidate-report-4-march-28-2018)
 * Wypuścili info o witnessach: https://bp.eosgo.io
-* Będą biznesowym właścicielem EOS Portal
+* Będą biznesowym właścicielem [EOS Portal](http://eosportal.io)
+
+SM:
+
+- https://eosgo.io
+- https://bp.eosgo.io
+- https://forums.eosgo.io
+- [https://steemit.com/@eosgo](https://steemit.com/@eosgo)
+- https://twitter.com/go_eos
+- https://youtube.com/channel/UC0fwWI2RBBtEIYIP6fH68XQ
 
 Leaderzy:
 
 * Blujays (@yogz888)
 * Kevin Wilcox (@kev_eosgo)
 
+# EOS New York
+
+* https://twitter.com/eosnewyork
+* [https://steemit.com/@eosnewyork](https://steemit.com/@eosnewyork)
+
 # EOS Portal
 
 http://eosportal.io
 
-Kombajn agregujący informacje o witnessach. Liderem jest Eric (Szwed który siedzi na strychu, chce być wintessem), pomagają mu inni kandydaci na witnessa (w sumie grupa kilku osób).
+Kombajn agregujący informacje o witnessach. Liderem jest Eric (Szwed, kandydat na wintessa), pomagają mu inni kandydaci (w sumie grupa kilku osób).
 
 # Koreańczycy
 
