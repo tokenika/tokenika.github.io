@@ -2,6 +2,7 @@
 
 #### Główne kanały komunikacji
 
+- https://eos.io/resources
 - https://medium.com/eosio
 - https://twitter.com/eos_io
 
