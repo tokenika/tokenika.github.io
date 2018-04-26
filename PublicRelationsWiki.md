@@ -78,6 +78,8 @@ https://forums.eosgo.io
 
 [https://steemit.com/@eosgo](https://steemit.com/@eosgo)
 
+https://youtube.com/channel/UC0fwWI2RBBtEIYIP6fH68XQ
+
 Określają się jako "EOS launch community".
 
 * Robią użyteczne kompilacje tego co się dzieje na Telegramie.
