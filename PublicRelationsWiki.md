@@ -30,6 +30,7 @@ https://www.youtube.com/watch?v=yNudH5PxUNY
 * [EOS](https://t.me/EOSproject)
 * [EOS - Dan Msg Only](https://t.me/daneos)
 * [EOSIO Gov](https://t.me/EOSGov)
+* [EOS BlockPros](t.me/EOSPros)
 * [EOS.IO Community Testnet](https://t.me/CommunityTestnet)
 * [EOS PL](https://t.me/eospl)
 * Trinity (EOS BPs Group 3)
