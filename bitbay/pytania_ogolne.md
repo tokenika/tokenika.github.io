@@ -22,7 +22,7 @@ EOS nie bazuje na żadnej istniejącej walucie i nie dzieli API z niczym istniej
 
 #### 5. Zakładając, że mielibyśmy 10 mln użytkowników, ile instancji portfeli rekomendowalibyście nam do użycia? Czy powinniśmy według Was podzielić je w zależności od zadań (np. 1 do generowania adresów, drugi do obsługi wpłat, trzeci do wypłat)?
 
-Rekomendujemy dwie instancje. Szczegóły omówimy na spotkaniu.
+Rekomendujemy dwie instancje. Szczegóły omówimy na callu.
 
 #### 6. Jakie parametry są rekomendowane w trakcie instalacji i późniejszego użytkowania portfela?
 
@@ -38,7 +38,7 @@ Rekomendujemy standardowe rozwiązania w tym zakresie.
 
 #### 9. Czy posiadacie jakieś znane ograniczenia lub problemy o których powinniśmy wiedzieć?
 
-To co jest niestandardowe w EOSie (podobnie jak w BitShares i Steemie) to fakt że konta mają nazwy literowe i nie można w łatwy i bezkosztowy sposób ich tworzyć. Oznacza to, że w przeciwieństwie do innych kryptowalut zalecanym rozwiązaniem jest prowadzenie przez giełdę pojedynczego konta, na które przyjmuje ona depozyty, a rozróżnianie pomiędzy rożnymi ich źródłami następuje poprzez pole `memo`, które jest związane z danym transferem i które użytkownik powinien wypełnić wpisując (jako jeden z parametrów transferu) podany przez giełdę unikalny ciąg znaków.
+To co jest niestandardowe w EOSie (podobnie jak w BitShares i Steemie) to fakt, że konta mają nazwy literowe i nie można w łatwy i bezkosztowy sposób ich tworzyć. Oznacza to, że w przeciwieństwie do innych kryptowalut zalecanym rozwiązaniem jest prowadzenie przez giełdę pojedynczego konta, na które przyjmuje ona depozyty, a rozróżnianie pomiędzy rożnymi ich źródłami następuje poprzez pole `memo`, które jest związane z danym transferem i które użytkownik powinien wypełnić wpisując (jako jeden z parametrów transferu) podany przez giełdę unikalny ciąg znaków.
 
 #### 10. W jaki sposób najlepiej zabezpieczyć portfel? Jakie zabezpieczenia według Was powinniśmy wdrożyć?
 
