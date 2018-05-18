@@ -40,6 +40,8 @@ Rekomendujemy standardowe rozwiązania w tym zakresie.
 
 To co jest niestandardowe w EOSie (podobnie jak w BitShares i Steemie) to fakt, że konta mają nazwy literowe i nie można w łatwy i bezkosztowy sposób ich tworzyć. Oznacza to, że w przeciwieństwie do innych kryptowalut zalecanym rozwiązaniem jest prowadzenie przez giełdę pojedynczego konta, na które przyjmuje ona depozyty, a rozróżnianie pomiędzy rożnymi ich źródłami następuje poprzez pole `memo`, które jest związane z danym transferem i które użytkownik powinien wypełnić wpisując (jako jeden z parametrów transferu) podany przez giełdę unikalny ciąg znaków.
 
+Drugą niestandardową właściwością EOSa jest brak opłat transakcyjnych. W zamian EOS stosuje tzw. rate-limiting, czyli do realizacji transakcji na blockchainie potrzebne jest posiadanie minimalnej liczby tokenów, a im intensywniej chcemy korzystać z blockchaina, tym więcej tych tokenów trzeba mieć. Trudno jest to w tej chwili dokładnie oszacować, ale można spokojnie przyjąć, że posiadanie tokenów EOSa o równowartości tysiąca USD powinno w zupełności wystarczyć do robienia transferów z częstotliwością jeden na sekundę. 
+
 #### 10. W jaki sposób najlepiej zabezpieczyć portfel? Jakie zabezpieczenia według Was powinniśmy wdrożyć?
 
 <https://github.com/EOSIO/eos/blob/slim/EXCHANGE_README.md#exchange-security>
