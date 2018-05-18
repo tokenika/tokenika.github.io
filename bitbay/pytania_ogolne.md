@@ -4,7 +4,10 @@
 
 Waluta EOS jest natywnym tokenem na blockchainie EOS. Patrząc z perspektywy technicznej nie jest ona wbudowana w kod zródłowy blockchaina, a jest jedynie smart-kontraktem na tym blockchainie - ale z punktu widzenia użytkownika nie ma to większego znaczenia.
 
-Struktura programów egzekucyjnych EOSa oraz sposób ich instalacji opisane są w [tym dokumencie](https://github.com/EOSIO/eos/wiki/Local-Environment#1-getting-the-code).
+W [tym dokumencie](https://github.com/EOSIO/eos/wiki/Local-Environment#1-getting-the-code) opisano proces kompilacji i instalacji:
+
+* programu egzekucyjnego `nodeos`, którego instancje tworzą sieć EOSa (tzw. full-node)
+* programu egzekucyjnego `cleos`, za pomocą którego można się komunikować z działającym full-nodem.
 
 **UWAGA:** Blockchain EOS nie jeszcze jest live, najprawdopodobniej ruszy live w pierwszym tygodniu czerwca. To co mamy do dyspozycji w tej chwili to jedynie [testnet](https://github.com/EOSIO/eos/blob/master/testnet.md).
 
