@@ -17,7 +17,9 @@ EOS nie bazuje na żadnej istniejącej walucie i nie dzieli API z niczym istniej
 
 #### 3. Posiadamy giełdę kryptowalut oraz procesor płatności. Chcielibyśmy zintegrować walutę docelowo z obiema usługami. Czy macie jakieś sugestie, w jaki sposób powinniśmy używać waluty w zależności od typu usługi?
 
-*Żeby móc lepiej zrozumieć istotę tego pytania potrzebowalibyśmy przykładu z innych powszechnie znanych walut, np. Bitcoin albo Ethereum. W jaki sposób różnicujecie użycie blockchaina Bitcoina albo Ethereum w tych dwóch typach usług?*
+Ponieważ w EOSie płatności rozliczają się niemal błyskawicznie (po 500 ms transakcja jest w bloku, a po 2 sekundach staje się nieodwraclana), EOS nie przewiduje oddzielnych mechanizmów dla płatności. Tak więc wszystko powinno być integrowane standardowo.
+
+Przy czym pisząc "standardowo" mamy na myśli standardowo jak w rodzinie Steem / Bitshares, a nie standardowo jak w Bitcoin / Ethereum. Z tego co wiemy, rok temu Steem był rozpatrywany do wejścia na BitBay, więc jeśli w międzyczasie był jakiś postęp związany z integracją, to większość da się po prostu skopiować. EOS to taki Steem z dodatkowym chromosomem.
 
 #### 4. Czy macie listę dobrych praktyk w kwestii integracji portfela Waszej waluty do obsługi wpłat i wypłat?
 
@@ -71,11 +73,15 @@ W ostatnim czasie aktualizacje występują prawie non-stop, ale spodziewamy się
 
 ## Dodatkowe pytania
 
-#### 15. W jaki sposób przyznawane będą środki dla klientów, którzy posiadali Wasze tokeny? 
+#### 16. W jaki sposób przyznawane będą środki dla klientów, którzy posiadali Wasze tokeny? 
 
-???
+EOS do drugiego czerwca 2018 jest tokenem ERC20 na Ethereum. Po tej dacie będzie ruszał jego własny blockchain (albo kilka blockchainów, z tym że tylko jeden będzie rozpoznany przez twórcę kodu, tj. block.one i tym samym uznany za oficjalny).
 
-#### 16. Słyszeliśmy o problemach związanych ze stabilnością nowej sieci (powstawanie wielu odłamów łańcuchów) - czy faktycznie obecnie jest z tym problem? Macie jakiś plan jak je rozwiązać?
+Konwersja będzie zrobiona automatycznie, ale żeby wziąć w niej udział trzeba wcześniej wygenerować sobie parę klucz publiczny / klucz prywatny w standardzie EOS i dokonać rejestracji takiego klucza publicznego EOS w smart-kontrakcie obsługującym dystrybucję tokenów EOSa na Ethereum. W [tej publikacji](https://steemit.com/eos/@sandwich/contributing-to-eos-token-sale-with-myetherwallet-and-contract-inner-workings) jest dokładna instrukcja jak to zrobić.
+
+Konsensus społeczny zakłada, że ci którzy odpalą EOSowe blockchainy (nawet gdy będzie ich więcej niż jeden) uwzględnią w pliku genesis stan posiadania ze snapshotu EOSowego tokenu ERC20, który będzie miał miejsce drugiego czerwca 2018.
+
+#### 17. Słyszeliśmy o problemach związanych ze stabilnością nowej sieci (powstawanie wielu odłamów łańcuchów) - czy faktycznie obecnie jest z tym problem? Macie jakiś plan jak je rozwiązać?
 
 Systemy będące prekursorami EOSa (tj. BitShares i Steem) nigdy nie doświadczyły niezamierzonego forku (tj. wszystkie forki jakie się wydarzyły były celowym upgradem systemu). Mechanizm konsensusu EOSa jest bardzo odporny na tego rodzaju problemy.
 
