@@ -1,4 +1,4 @@
-# Introducing EOSFactory 1.0 release with standard Python-based unit testing
+# Introducing EOSFactory v1.0 with standardized unit testing and Visual Studio Code integration
 
 **We are proud to announce the second release of EOSFactory. With this release unit tests for EOS smart-contracts become standardized and thus much more reliable. Also, you can now tap into all the utilities offered by Visual Studio Code IDE. Our long-term goal is to turn EOSFactory into a comprehensive IDE (Integrated Development Environment) for EOS smart-contracts.**
 
