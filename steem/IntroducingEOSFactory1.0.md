@@ -42,7 +42,7 @@ We are introducing a clear separation between EOSFactory infrastructure (includi
 
 Smart-contracts can never be properly debugged (as you cannot pause the blockchain easily), but we've come up with a good work-around for tracking a smart-contract’s execution. What you can do with EOSFactory is put in your C++ code special logger clauses (e.g. `logger_info("user: ", name{user});`) which will produce output to the console giving you the exact location of its origin, including the C++ file name and line number.
 
-#### 4. Contract verification with `CLANG`
+#### 4. Preliminary code verification
 
 When using the standard EOS toolset, in order to check for errors in a smart-contract code you need to go through the entire process of building & linking performed by the `WASM` compiler. What we offer is the option of reducing this process to a simple `CLANG` compilation (i.e. without linking). And only when your code is error-free and you are ready for testnet deployment and unit testing, you can switch to the more heavy-weight `WASM` compiler.
 
@@ -78,7 +78,7 @@ With *Visual Studio Code* integration all the essential programming tools become
 
 ## Documentation
 
-EOSFactory source code can be found in [this repository](https://github.com/tokenika/eosfactory) on GitHub. As for more detailed documentation, tutorials and installation guides, please refer to [this website](http://eosfactory.io/sphinx/build/html/).
+EOSFactory source code can be found in [this repository](https://github.com/tokenika/eosfactory) on GitHub. For more detailed documentation, tutorials and installation guides, please refer to [this website](http://eosfactory.io/sphinx/build/html/).
 
 ## Feedback is welcome
 
