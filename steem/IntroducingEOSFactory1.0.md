@@ -1,6 +1,6 @@
 # Introducing EOSFactory v1.0 with standardized unit testing and Visual Studio Code integration
 
-**We are proud to announce the second release of EOSFactory. With this release unit tests for EOS smart-contracts become standardized and thus much more reliable. Also, you can now tap into all the utilities offered by Visual Studio Code IDE. Our long-term goal is to turn EOSFactory into a comprehensive IDE (Integrated Development Environment) for EOS smart-contracts.**
+**We are proud to announce a new release of EOSFactory. The main feature introduced in this release are standardized unit tests for EOS smart-contracts. Also, thanks to tight integration with Visual Studio Code you can now tap into the rich world of utilities offered by the VSC community. Our long-term goal is to turn EOSFactory into a comprehensive IDE (Integrated Development Environment) for EOS smart-contracts.**
 
 ![img](https://cdn.steemitimages.com/DQmR21xQNJ4CbS1DoJEAutvYFWU9mD11PAYkCQZpLnHXLdY/EOSFactory%20logo.png)
 
@@ -18,15 +18,13 @@ Test project /mnt/d/Workspaces/EOS/contracts/hello.tokenika/build
 1/2 Test #1: unittest .........................   Passed    6.58 sec
     Start 2: test
 2/2 Test #2: test .............................   Passed    5.12 sec
-
 100% tests passed, 0 tests failed out of 2
-
 Total Test time (real) =  11.71 sec
 ```
 
 ### Main features in v1.0
 
-We believe the features available in this release make EOSFactory quite reliable and production-ready - hence we label it v1.0.  Below is a complete list of those new features.
+We believe the features available in this release make EOSFactory reliable and production-ready, hence we label it v1.0. Below is a complete list of those new features.
 
 #### 1. Standard unit-testing framework
 
@@ -36,11 +34,11 @@ We are utilizing the power of [Unittest](https://docs.python.org/3/library/unitt
 
 #### 2. Support for user-defined workspaces
 
-We are introducing a clear separation between EOSFactory infrastructure (including its demo examples and smart-contract templates) and a dedicated user-defined workspace, where user-created smart-contracts and unit tests can be safely stored.
+We are introducing clear separation between EOSFactory infrastructure (including its demo examples and smart-contract templates) and dedicated user-defined workspace, where user-created smart-contracts and unit tests can be safely stored.
 
 #### 3. Support for debugging
 
-Smart-contracts can never be properly debugged (as you cannot pause the blockchain easily), but we've come up with a good work-around for tracking a smart-contract’s execution. What you can do with EOSFactory is put in your C++ code special logger clauses (e.g. `logger_info("user: ", name{user});`) which will produce output to the console giving you the exact location of its origin, including the C++ file name and line number.
+Smart-contracts can never be properly debugged (as you cannot pause the blockchain easily), but we've come up with a good work-around for tracking a smart-contract’s execution. What you can do with EOSFactory is put in your C++ code special logger clauses (e.g. `logger_info("user: ", name{user});`) which will produce output to the console giving you the exact location of its origin, including the C++ method name, file name and line number.
 
 #### 4. Preliminary code verification
 
@@ -70,7 +68,7 @@ With *Visual Studio Code* integration all the essential programming tools become
 
 - Linux, MacOS and Windows compatibility,
 - [CMake](https://cmake.org/) support allowing you to compile, build and unit test your smart-contract by running those three commands: `cmake`, `make`, `ctest`.
-- automated tasks accessible from the VSC menu,
+- automated tasks accessible from the VSC menu or via keyboard shortcut keys,
 - all the features that come with [IntelliSense](https://msdn.microsoft.com/en-us/library/hcw1s69b.aspx): e.g. code completion, content assist, code hinting,
 - multiple community-driven extensions, including the possibility to create a specialized EOS smart-contract extension.
 
