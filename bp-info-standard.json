@@ -1,0 +1,58 @@
+{
+  "producer_account_name": "tokenika4eos",
+  "producer_public_key": "EOS7HTS1mrkbvTP8RLHgSJGBnWTvqARKJYKEeVHx6fFNQ2Df8ZBeU",
+  "org": {
+    "candidate_name": "TOKENIKA",
+    "website": "https://tokenika.io",
+    "code_of_conduct":"",
+    "email":"contact@tokenika.io",
+    "branding":{
+      "logo_256":"",
+      "logo_1024":"",
+      "logo_svg":""
+    },
+    "location": {
+      "name": "Warsaw",
+      "country": "PL",
+      "latitude": 52.2,
+      "longitude": 21.0
+    },
+    "social": {
+      "steemit": "https://steemit.com/@tokenika",
+      "twitter": "https://twitter.com/tokenika_io",
+      "youtube": "https://www.youtube.com/channel/UCWloHGgpHAFfx81Nt0F7eUg",
+      "facebook": "https://www.facebook.com/tokenika.io/",
+      "github":"https://github.com/tokenika",
+      "reddit": "",
+      "keybase": "",
+      "telegram": "https://t.me/tokenika",
+      "wechat":""
+    }
+  },
+  "nodes": [
+    {
+      "location": {
+        "name": "",
+        "country": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "is_producer": true,
+      "p2p_endpoint": "",
+      "api_endpoint": "",
+      "ssl_endpoint": ""
+    },
+    {
+      "location": {
+        "name": "",
+        "country": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "is_producer": false,
+      "p2p_endpoint": "",
+      "api_endpoint": "",
+      "ssl_endpoint": ""
+    }
+  ]
+}
