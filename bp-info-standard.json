@@ -7,8 +7,8 @@
     "code_of_conduct":"",
     "email":"contact@tokenika.io",
     "branding":{
-      "logo_256":"",
-      "logo_1024":"",
+      "logo_256":"https://tokenika.github.io/digital/bp/tokenika_256x256.png",
+      "logo_1024":"https://tokenika.github.io/digital/bp/tokenika_1024x1024.png",
       "logo_svg":""
     },
     "location": {
