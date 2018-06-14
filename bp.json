@@ -26,28 +26,40 @@
       "reddit": "",
       "keybase": "",
       "telegram": "https://t.me/tokenika",
-      "wechat":""
+      "wechat":"Marcin_Tokenika"
     }
   },
   "nodes": [
     {
       "location": {
-        "name": "",
-        "country": "",
-        "latitude": 0,
-        "longitude": 0
+        "name": "Katowice",
+        "country": "PL",
+        "latitude": 50.2,
+        "longitude": 19.0
       },
-      "is_producer": true,
+      "is_producer": false,
       "p2p_endpoint": "",
       "api_endpoint": "",
       "ssl_endpoint": ""
     },
     {
       "location": {
-        "name": "",
-        "country": "",
-        "latitude": 0,
-        "longitude": 0
+        "name": "Cracow",
+        "country": "PL",
+        "latitude": 50.0,
+        "longitude": 19.9
+      },
+      "is_producer": false,
+      "p2p_endpoint": "",
+      "api_endpoint": "",
+      "ssl_endpoint": ""
+    }
+    {
+      "location": {
+        "name": "Warsaw",
+        "country": "PL",
+        "latitude": 52.2,
+        "longitude": 21.0
       },
       "is_producer": false,
       "p2p_endpoint": "",
