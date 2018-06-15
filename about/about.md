@@ -22,7 +22,7 @@ We’re creating [EOSFactory](https://github.com/tokenika/eosfactory), a Python-
 
 #### Contributing to EOS publicity
 
-We spread the word and present EOS at high-profile events [[blockchain connect](http://connectwarsaw.org/) in Warsaw] and at blockchain conferences in Poland, Europe & Asia [[Warsaw](https://www.facebook.com/events/903326303125907/), [Wrocław](https://www.meetup.com/pl-pl/wroclaw-blockchain-meetup/events/246349912/?eventid=246349912), [Łódź](https://www.facebook.com/events/160585741214328/), [Poznań](https://www.facebook.com/events/873585539479089/), [Szczecin](https://www.meetup.com/pl-pl/szczecin-blockchain-meetup/events/247984199/), [Oslo](https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway), [Beijing](https://medium.com/@oraclechain/2018-global-eos-developer-conference-9db444ec2cd7)].
+We spread the word and present EOS at high-profile events [[Blockchain Connect](http://connectwarsaw.org/) in Warsaw] and at blockchain conferences in Poland, Europe & Asia [[Warsaw](https://www.facebook.com/events/903326303125907/), [Wrocław](https://www.meetup.com/pl-pl/wroclaw-blockchain-meetup/events/246349912/?eventid=246349912), [Łódź](https://www.facebook.com/events/160585741214328/), [Poznań](https://www.facebook.com/events/873585539479089/), [Szczecin](https://www.meetup.com/pl-pl/szczecin-blockchain-meetup/events/247984199/), [Oslo](https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway), [Beijing](https://medium.com/@oraclechain/2018-global-eos-developer-conference-9db444ec2cd7)].
 
 #### Contributing to the community
 
