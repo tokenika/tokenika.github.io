@@ -1,6 +1,6 @@
 ## Tokenika as an EOS block producer
 
-![video](D:\Workspaces\GitHub\tokenika.github.io\about\video.png)
+![video](video.png)
 
 ## Latest news
 
@@ -20,7 +20,7 @@ We started as one of the earliest entities aiming to become an EOS block produce
 
 We’re creating [EOSFactory](https://github.com/tokenika/eosfactory), a Python-based smart-contract development & testing framework, similar to Ethereum’s [Truffle Framework](http://truffleframework.com/). Also, we’re the team behind [EOS Projects](https://eosprojects.org/), a comprehensive directory of apps, sites and tools in the EOS ecosystem, and [EOS Offline Voting](https://github.com/tokenika/secure-bp-voting), a secure mechanism for casting votes for block producers.
 
-#### Contributing to eos publicity
+#### Contributing to EOS publicity
 
 We spread the word and present EOS at high-profile events [[blockchain connect](http://connectwarsaw.org/) in Warsaw] and at blockchain conferences in Poland, Europe & Asia [[Warsaw](https://www.facebook.com/events/903326303125907/), [Wrocław](https://www.meetup.com/pl-pl/wroclaw-blockchain-meetup/events/246349912/?eventid=246349912), [Łódź](https://www.facebook.com/events/160585741214328/), [Poznań](https://www.facebook.com/events/873585539479089/), [Szczecin](https://www.meetup.com/pl-pl/szczecin-blockchain-meetup/events/247984199/), [Oslo](https://steemit.com/eos/@bitspace/bitspace-hosts-scandinavia-s-first-ever-eos-meetup-in-oslo-norway), [Beijing](https://medium.com/@oraclechain/2018-global-eos-developer-conference-9db444ec2cd7)].
 
