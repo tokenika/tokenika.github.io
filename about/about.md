@@ -59,7 +59,8 @@ Having said that, we are not advocates for heavy regulation of business practice
 
 ## Block production infrastructure
 
-- It has been setup and fine-tuned by [GTG](https://steemit.com/@gtg), one of the best performing Steem witness nodes, consistently scoring in the top 3 for the least amount of dropped blocks.
+Our BP infrastructure has been setup and fine-tuned by [GTG](https://steemit.com/@gtg), one of the best performing Steem witness nodes, consistently scoring in the top 3 for the least amount of dropped blocks.
+
 - It is robust and most importantly, rapidly scalable, largely due to our Steem witness know-how. We are not just hoping this is the case, we know it.
 - We use industry grade Tier 3+ datacenters with fail-over protection and an up-time of around 99.9%.
 
@@ -67,4 +68,4 @@ All the above separates us from many inexperienced witness candidates who are fo
 
 ## How to support us?
 
-Our block producer node is called `tokenika4eos`. If security is your primary concern, we advise you to use our [off-line voting mechanism](https://github.com/tokenika/secure-bp-voting). If you prefer a more straight-forward approach, please refer to [this excellent guide](https://steemit.com/eos/@eosnewyork/the-eos-mainnet-launch-survival-guide-how-to-avoid-scams) provided by EOS New York.
+Our block producer node is called `tokenika4eos`. If security is your primary concern, we recommend using our [off-line voting mechanism](https://github.com/tokenika/secure-bp-voting). If you prefer a more straight-forward approach, please refer to [this excellent guide](https://steemit.com/eos/@eosnewyork/the-eos-mainnet-launch-survival-guide-how-to-avoid-scams) provided by EOS New York.
