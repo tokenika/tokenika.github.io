@@ -21,7 +21,6 @@
 ##  Organizacyjne
 
 - Przywrócić używanie Asany
-
 - Zaimplementować procedury bezpieczeństwa
 
  
