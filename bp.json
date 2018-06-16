@@ -38,9 +38,9 @@
         "longitude": 19.0
       },
       "is_producer": false,
-      "p2p_endpoint": "",
-      "api_endpoint": "",
-      "ssl_endpoint": ""
+      "p2p_endpoint": "api.tokenika.io:9876",
+      "api_endpoint": "https://api.tokenika.io/",
+      "ssl_endpoint": "https://api.tokenika.io/"
     },
     {
       "location": {
