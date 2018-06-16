@@ -1,0 +1,70 @@
+{
+  "producer_account_name": "tokenika4eos",
+  "producer_public_key": "EOS7HTS1mrkbvTP8RLHgSJGBnWTvqARKJYKEeVHx6fFNQ2Df8ZBeU",
+  "org": {
+    "candidate_name": "TOKENIKA",
+    "website": "https://tokenika.io",
+    "code_of_conduct":"https://steemit.com/eos/@tokenika/tokenika-official-candidacy-for-the-eos-block-producer-node-full-specification",
+    "email":"contact@tokenika.io",
+    "branding":{
+      "logo_256":"https://tokenika.github.io/digital/bp/tokenika_256x256.png",
+      "logo_1024":"https://tokenika.github.io/digital/bp/tokenika_1024x1024.png",
+      "logo_svg":""
+    },
+    "location": {
+      "name": "Warsaw",
+      "country": "PL",
+      "latitude": 52.2,
+      "longitude": 21.0
+    },
+    "social": {
+      "steemit": "https://steemit.com/@tokenika",
+      "twitter": "https://twitter.com/tokenika_io",
+      "youtube": "https://www.youtube.com/channel/UCWloHGgpHAFfx81Nt0F7eUg",
+      "facebook": "https://www.facebook.com/tokenika.io/",
+      "github":"https://github.com/tokenika",
+      "reddit": "",
+      "keybase": "",
+      "telegram": "https://t.me/tokenika",
+      "wechat":"Marcin_Tokenika"
+    }
+  },
+  "nodes": [
+    {
+      "location": {
+        "name": "Katowice",
+        "country": "PL",
+        "latitude": 50.2,
+        "longitude": 19.0
+      },
+      "is_producer": false,
+      "p2p_endpoint": "api.tokenika.io:9876",
+      "api_endpoint": "https://api.tokenika.io/",
+      "ssl_endpoint": "https://api.tokenika.io/"
+    },
+    {
+      "location": {
+        "name": "Cracow",
+        "country": "PL",
+        "latitude": 50.0,
+        "longitude": 19.9
+      },
+      "is_producer": false,
+      "p2p_endpoint": "",
+      "api_endpoint": "",
+      "ssl_endpoint": ""
+    }
+    {
+      "location": {
+        "name": "Warsaw",
+        "country": "PL",
+        "latitude": 52.2,
+        "longitude": 21.0
+      },
+      "is_producer": false,
+      "p2p_endpoint": "",
+      "api_endpoint": "",
+      "ssl_endpoint": ""
+    }
+  ]
+}
