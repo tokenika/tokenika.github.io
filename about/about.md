@@ -6,11 +6,13 @@
 
 ## Who we are?
 
-[**Tokenika**](https://tokenika.io/) is a Warsaw based, Eastern European blockchain expert, software house and a think-tank specializing in blockchain and distributed ledger technologies. Consisting of a strong team of experts from the fields of IT, coding, artificial intelligence, trading, law and regulatory environments, we strive to create a foundation for the most promising blockchain related tech. 
+[Tokenika](https://tokenika.io/) is a Warsaw-based, Eastern European blockchain expert, software house and a think-tank specializing in blockchain and distributed ledger technologies. Consisting of a strong team of experts from the fields of IT, coding, artificial intelligence, trading, law and regulatory environments, we strive to create a foundation for the most promising blockchain related tech.
 
-Our team members have been involved in blockchain and DLT tech since 2012, and have been firm supporters of Dan Larimer’s (the creator of EOS) projects since the introduction of BitSharesX, the first incarnation of [BitShares](https://bitshares.org/).
+Our team members have been involved in blockchain and DLT tech since 2012, and have been firm supporters of [Dan Larimer](	https://en.wikipedia.org/wiki/Daniel_Larimer)’s projects since the introduction of BitSharesX, the first incarnation of [BitShares](https://bitshares.org/).
 
-Currently Tokenika’s efforts are exclusively dedicated to successful deployment of EOSIO ecosystem, in our eyes being one of the brightest new stars on the blockchain scene. As a potential block producer, we are acutely aware of the scale and complexity of this task.
+Currently Tokenika’s efforts are exclusively dedicated to successful deployment of [EOSIO](https://eos.io/) ecosystem, in our eyes being one of the brightest new stars on the blockchain scene.
+
+As a potential block producer, we are acutely aware of the scale and complexity of this task.
 
 ## What we do?
 
@@ -18,7 +20,7 @@ We started as one of the earliest entities aiming to become an EOS block produce
 
 #### Contributing to EOS ecosystem
 
-We’re creating [EOSFactory](https://github.com/tokenika/eosfactory), a Python-based smart-contract development & testing framework, similar to Ethereum’s [Truffle Framework](http://truffleframework.com/). Also, we’re the team behind [EOS Projects](https://eosprojects.org/), a comprehensive directory of apps, sites and tools in the EOS ecosystem, and [EOS Offline Voting](https://github.com/tokenika/secure-bp-voting), a secure mechanism for casting votes for block producers.
+We’re creating [EOS Factory](https://github.com/tokenika/eosfactory), a Python-based smart-contract development & testing framework, similar to Ethereum’s [Truffle Framework](http://truffleframework.com/). Also, we’re the team behind [EOS Projects](https://eosprojects.org/), a comprehensive directory of apps, sites and tools in the EOS ecosystem, and [EOS Offline Voting](https://github.com/tokenika/secure-bp-voting), a secure mechanism for casting votes for block producers.
 
 #### Contributing to EOS publicity
 
@@ -32,13 +34,13 @@ We lead an active EOS community and have a [lively following](https://steemit.co
 
 We provide consultancy services for companies who consider building or migrating large-scale businesses to EOS. To-date cooperation includes work with [Parsec Frontiers](http://parsecfrontiers.com/), [Builder Commerce](http://buildercommerce.com/), [Send Gold](http://sendgold.com/), [Trans EU](https://www.trans.eu/en/).
 
-#### Building dapps on EOS
+#### Building dApps on EOS
 
 We’ve set out to create our own dApps on EOS. We’re building [Sygnet](http://sygnet.eu/), a cryptographic identity verification tool taking advantage of the opportunities opened up by [the European PSD2 legislation](https://www.evry.com/en/news/articles/psd2-the-directive-that-will-change-banking-as-we-know-it/), and [Joint](https://mail.google.com/mail/u/0/?api_endpoint=), an ontology-based social network.
 
 #### Advising public institutions
 
-As we believe in a smooth transition from traditional economy to decentralized one, we advise the Polish Ministry of Digitization on blockchain-related matters, and have early insight into Poland’s and EU’s blockchain regulatory landscape.
+As we believe in a smooth transition from traditional economy to decentralized one, we advise the Polish Ministry of Digitization on [blockchain-related matters](http://bitcoin.pl/wiadomosci/prawo-i-polityka/1636-powstala-grupa-robocza-ds-blockchain-i-kryptowalut-przy-knf), and have early insight into Poland’s and EU’s blockchain regulatory landscape.
 
 ## Financing and transparency
 
@@ -57,9 +59,9 @@ As to the written policy on vote buying and governance, it can be summarised in 
 
 Having said that, we are not advocates for heavy regulation of business practices around EOS. In our view, young distributed systems must find a natural market equilibrium. Stark regulation, arbitration and other penalizing measures open up a can of worms, in which authority has to be imposed externally, and might result in forking of chains, endless disputes, or even render the system unstable. We are libertarians at heart and believe that market forces always find a way to balance things out.
 
-## Block production infrastructure
+## BP infrastructure
 
-Our BP infrastructure has been setup and fine-tuned by [GTG](https://steemit.com/@gtg), one of the best performing Steem witness nodes, consistently scoring in the top 3 for the least amount of dropped blocks.
+Our block production infrastructure has been setup and fine-tuned by [GTG](https://steemit.com/@gtg), one of the best performing Steem witness nodes, consistently scoring in the top 3 for the least amount of dropped blocks.
 
 - It is robust and most importantly, rapidly scalable, largely due to our Steem witness know-how. We are not just hoping this is the case, we know it.
 - We use industry grade Tier 3+ datacenters with fail-over protection and an up-time of around 99.9%.
@@ -68,4 +70,4 @@ All the above separates us from many inexperienced witness candidates who are fo
 
 ## How to support us?
 
-Our block producer node is called `tokenika4eos`. If security is your primary concern, we recommend using our [off-line voting mechanism](https://github.com/tokenika/secure-bp-voting). If you prefer a more straight-forward approach, please refer to [this excellent guide](https://steemit.com/eos/@eosnewyork/the-eos-mainnet-launch-survival-guide-how-to-avoid-scams) provided by EOS New York.
+Our block producer node is called `tokenika4eos`. If security is your primary concern, we recommend using our [off-line voting mechanism](https://github.com/tokenika/secure-bp-voting). If you prefer a more straight-forward approach, please refer to [this excellent guide](https://steemit.com/eos/@eosnewyork/the-eos-mainnet-launch-survival-guide-how-to-avoid-scams) provided by [EOS New York](https://www.eosnewyork.io/).
